@@ -1,0 +1,702 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+}
+
+.sr-only {
+    position: absolute;
+    z-index: -100;
+    width: 1px;
+    height: 1px;
+    overflow: hidden;
+    opacity: 0;
+}
+
+body {
+    font-family: "Noto Sans KR", sans-serif;
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    height: 100vh;
+    height: calc(var(--vh, 1vh) * 100);
+    overflow-x: auto;
+}
+
+/* RESET CSS */
+ol,
+ul,
+li {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+}
+
+button {
+    font-family: "Noto Sans KR", sans-serif;
+    border: none;
+    outline: none;
+    background-color: transparent;
+}
+
+input {
+    background-color: #fff;
+}
+/* Entire Layout */
+
+.practice-section {
+    width: 100vw;
+    height: 100vh;
+}
+
+.nav-section {
+    width: 400px;
+    height: 100vh;
+    position: relative;
+    background-color: #fff;
+    overflow: auto;
+}
+
+/* Working Space Section */
+.practice-section {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: baseline;
+    background-color: rgb(199, 199, 199);
+    overflow: auto;
+}
+
+.practice-section #working-space {
+    display: none;
+    width: 100vw;
+    height: 100vh;
+    overflow: auto;
+}
+
+.click-area {
+    position: relative;
+    overflow: auto;
+}
+
+.click-area img {
+    width: auto;
+    min-width: 400px;
+    max-height:768px;
+    overflow: auto;
+
+}
+
+/* Nav Header Section */
+
+.nav-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-size: 15px;
+    font-weight: 700;
+    line-height: 1.3333333333;
+    letter-spacing: -0.01em;
+    height: 60px;
+    padding: 15px 10px;
+    border-bottom: 1px solid rgb(82, 82, 82);
+}
+
+.nav-header .hint-button {
+    padding-left: 10px;
+    transition: color 100ms ease-in-out;
+    cursor: pointer;
+}
+
+.nav-header .hint-button:hover {
+    color: rgb(153, 153, 153);
+}
+
+/* full-screen */
+.full-screen-button {
+    border-left: 1px solid rgb(82, 82, 82);
+    padding: 10px 0 10px 15px;
+    transition: color 100ms ease-in-out;
+    cursor: pointer;
+}
+
+.full-screen-button:hover {
+    color: rgb(153, 153, 153);
+}
+
+/* nav Content Section */
+
+.nav-index-contents {
+    margin: 20vh 30px;
+    height: 10vh;
+    text-align: center;
+}
+
+.nav-index-contents .nav-contents-title {
+    font-size: 30px;
+    font-weight: 700;
+    line-height: 1.5;
+    letter-spacing: 0.01em;
+}
+
+.nav-index-contents .fill-button {
+    display: block;
+    text-decoration: none;
+    text-align: center;
+    width: 200px;
+    height: 66px;
+    font-size: 25px;
+    font-weight: 700;
+    line-height: 1.5;
+    letter-spacing: 0.01em;
+    color: #fff;
+    border-style: none;
+    border-radius: 4px;
+    background-color: rgb(26, 26, 26);
+    cursor: pointer;
+    margin: 7vh auto;
+    box-shadow: 3px 3px 10px rgb(85, 85, 85, 0.7);
+    transition: transform 100ms ease-in;
+}
+
+.nav-index-contents .fill-button:hover {
+    background-color: rgba(85, 85, 85, 0.9);
+    transform: translateY(-2px);
+}
+
+/* nav-main-contents Section */
+
+.nav-main-contents .main-information {
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 1.5;
+    letter-spacing: -0.01em;
+    height: 60px;
+    border-bottom: 1px solid rgb(82, 82, 82);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.nav-main-contents .main-contents-desc {
+    width: 100%;
+    height: 30vh;
+    overflow: auto;
+    padding: 10px 10px 10px 20px;
+}
+
+.content-desc {
+    font-size: 1.2em;
+    font-weight: 400;
+    line-height: 1.5;
+    letter-spacing: -0.01em;
+}
+
+/* Main Conrtoller */
+
+.main-controller {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+}
+
+.main-controller li {
+    font-size: 15px;
+    font-weight: 500;
+    line-height: 1.5;
+    letter-spacing: -0.01em;
+    text-align: center;
+    border-bottom: 1px solid rgb(82, 82, 82);
+    width: 100%;
+    cursor: pointer;
+    transition: color 100ms ease-in-out;
+}
+
+.main-controller li {
+    padding: 15px 0;
+}
+
+.step {
+    display: flex;
+    justify-content: space-around;
+    border-top: 1px solid rgb(82, 82, 82);
+}
+
+.go-home:hover,
+.previous:hover,
+.next:hover,
+.font-resize:hover,
+.audio-control:hover {
+    color: rgb(153, 153, 153);
+}
+
+/* font resize selector section */
+.font-resize-selector .small:hover,
+.font-resize-selector .medium:hover,
+.font-resize-selector .large:hover {
+    color: rgb(153, 153, 153);
+}
+
+.font-resize-selector {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.small,
+.medium,
+.large {
+    padding: 0 25px;
+}
+
+/* volume-control-bar section */
+.audio-control-selector {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.audio-control-selector button {
+    font-size: 15px;
+    font-weight: 500;
+    line-height: 1.5;
+    letter-spacing: -0.01em;
+}
+
+.audio-control-selector button:hover {
+    color: rgb(153, 153, 153);
+}
+
+/* play-speed controller section */
+.play-speed {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.play-speed button {
+    font-size: 15px;
+    font-weight: 500;
+    line-height: 1.5;
+    letter-spacing: -0.01em;
+}
+
+.play-speed button:hover {
+    color: rgb(153, 153, 153);
+}
+
+/* About JS */
+.hidden {
+    display: none;
+}
+
+/* About Mobile */
+.mobile-icon {
+    display: none;
+}
+
+/* MOBILE STYLE (0~576px) */
+/* portait */
+@media only screen and (max-device-width: 650px){
+    /* RESET CSS */
+    .nav-header .hint-button:hover,
+    .full-screen-button:hover,
+    .go-home:hover,
+    .previous:hover,
+    .next:hover {
+        color: inherit;
+    }
+
+    .nav-header .hint-button:active,
+    .full-screen-button:active,
+    .go-home:active,
+    .previous:active,
+    .next:active {
+        color: rgb(153, 153, 153);
+    }
+
+    .mobile-icon {
+        display: block;
+    }
+
+    body {
+        flex-direction: column;
+        overflow: auto;
+    }
+
+    /* Index */
+    /* Nav Index Section */
+    .nav-section {
+        width: 100%;
+        height: auto;
+        padding: 0 10px;
+        overflow: hidden;
+    }
+
+    /* nav header */
+    .nav-header {
+        border-bottom: none;
+        justify-content: flex-end;
+    }
+
+    /* Full Screen button */
+    .full-screen-button {
+        border-left: none;
+        display: none;
+    }
+
+    /* nav index content */
+    .nav-index-contents {
+        padding: 0;
+        margin: 0;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .nav-index-contents .fill-button {
+    height: 77px;
+    font-size: 38px;
+}
+
+    .index-contents-title {
+        display: none;
+    }
+
+    #go-main-page {
+        margin: 0;
+        padding: 0;
+        width: 100%;
+    }
+
+    /* Main */
+    /* Practice Section */
+    .practice-section {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: baseline;
+        background-color: rgb(199, 199, 199);
+        overflow: auto;
+    }
+
+    .practice-section #working-space {
+    display: none;
+    width: 100vw;
+    height: 100vh;
+    overflow: auto;
+}
+
+.click-area {
+    position: relative;
+    overflow: auto;
+}
+
+.click-area img {
+    width: auto;
+    min-width: 400px;
+    /* max-height:1650px;  */
+    overflow: auto;
+}
+
+
+    /* Nav Main Section */
+    .nav-main-contents {
+        height: 10vh;
+    }
+
+    /* Main Controller Section */
+    .main-controller {
+        flex-direction: row;
+        margin: 0;
+    }
+
+    .main-controller .go-home {
+        border-top: none;
+    }
+
+    .main-controller li {
+            font-size: 33px;
+    text-align: center;
+        border-bottom: none;
+        padding-bottom: 10;
+        padding-top: 10px;
+    }
+
+    /* About JS */
+    .mobile-hidden {
+        display: none;
+    }
+}
+
+/* landscape */
+@media only screen and (max-device-width: 927px) and (max-device-height: 428px) and (orientation: landscape) {
+    /* RESET CSS */
+    .nav-header .hint-button:hover,
+    .full-screen-button:hover,
+    .go-home:hover,
+    .previous:hover,
+    .next:hover,
+    .font-resize:hover,
+    .audio-control:hover,
+    .font-resize-selector .small:hover,
+    .font-resize-selector .medium:hover,
+    .font-resize-selector .large:hover,
+    .audio-control-selector button:hover {
+        color: inherit;
+    }
+
+    .nav-header .hint-button:active,
+    .full-screen-button:active,
+    .go-home:active,
+    .previous:active,
+    .next:active,
+    .font-resize:active,
+    .audio-control:active,
+    .font-resize-selector .small:active,
+    .font-resize-selector .medium:active,
+    .font-resize-selector .large:active,
+    .audio-control-selector button:active {
+        color: rgb(153, 153, 153);
+    }
+
+    /* Index */
+    /* Nav Index Section */
+    /* nav index content */
+    .nav-section {
+        padding: 0;
+    }
+
+    .fill-button {
+        max-width: 160px;
+    }
+
+    /* Main */
+    /* Nav Section */
+    .small,
+    .medium,
+    .large {
+        padding: 0 6px;
+        font-size: 12px;
+    }
+
+    /* Nav header */
+    /* Full Screen button */
+    .full-screen-button {
+        border-left: none;
+        display: none;
+    }
+
+    .audio-control-selector {
+        justify-content: space-around;
+    }
+
+    .audio-control-selector button {
+        color: #000;
+        font-size: 12px;
+    }
+}
+
+/* TABELET STYLE (577px~768px) */
+@media only screen and (min-device-width: 576px) and (max-device-width: 767.98px) and (orientation: portrait) {
+    /* RESET CSS */
+    .nav-header .hint-button:hover,
+    .full-screen-button:hover,
+    .go-home:hover,
+    .previous:hover,
+    .next:hover,
+    .font-resize:hover,
+    .audio-control:hover,
+    .font-resize-selector .small:hover,
+    .font-resize-selector .medium:hover,
+    .font-resize-selector .large:hover,
+    .audio-control-selector button:hover {
+        color: inherit;
+    }
+
+    .nav-header .hint-button:active,
+    .full-screen-button:active,
+    .go-home:active,
+    .previous:active,
+    .next:active,
+    .font-resize:active,
+    .audio-control:active,
+    .font-resize-selector .small:active,
+    .font-resize-selector .medium:active,
+    .font-resize-selector .large:active,
+    .audio-control-selector button:active {
+        color: rgb(153, 153, 153);
+    }
+
+    /* Index */
+    /* Nav Index Section */
+    /* nav index content */
+    .nav-section {
+        padding: 0;
+    }
+
+    .fill-button {
+        max-width: 180px;
+    }
+
+    /* Main */
+    /* Practice Section */
+    .practice-section {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+        background-color: rgb(199, 199, 199);
+        overflow: auto;
+    }
+    
+    /* Nav Section */
+    .small,
+    .medium,
+    .large {
+        padding: 0 6px;
+        font-size: 12px;
+    }
+
+    .audio-control-selector {
+        justify-content: space-around;
+    }
+
+    .audio-control-selector button {
+        color: #000;
+        font-size: 12px;
+    }
+
+    .click-area img {
+        max-width: 640px;
+        min-height: 1200px;
+    }
+
+}
+
+/* TABELET STYLE (769px~998px) */
+@media only screen and (min-device-width: 768px) and (max-device-width: 998.98px) and (orientation: portrait) {
+    /* RESET CSS */
+    .nav-header .hint-button:hover,
+    .full-screen-button:hover,
+    .go-home:hover,
+    .previous:hover,
+    .next:hover,
+    .font-resize:hover,
+    .audio-control:hover,
+    .font-resize-selector .small:hover,
+    .font-resize-selector .medium:hover,
+    .font-resize-selector .large:hover,
+    .audio-control-selector button:hover {
+        color: inherit;
+    }
+
+    .nav-header .hint-button:active,
+    .full-screen-button:active,
+    .go-home:active,
+    .previous:active,
+    .next:active,
+    .font-resize:active,
+    .audio-control:active,
+    .font-resize-selector .small:active,
+    .font-resize-selector .medium:active,
+    .font-resize-selector .large:active,
+    .audio-control-selector button:active {
+        color: rgb(153, 153, 153);
+    }
+
+    /* Index */
+    /* Nav Index Section */
+    /* nav index content */
+    .nav-section {
+        padding: 0;
+    }
+
+    /* Main */
+    /* Nav Section */
+    .small,
+    .medium,
+    .large {
+        padding: 0 6px;
+        font-size: 12px;
+    }
+
+    .audio-control-selector {
+        justify-content: space-around;
+    }
+
+    .audio-control-selector button {
+        color: #000;
+        font-size: 12px;
+    }
+
+    .click-area img {
+        max-width: 640px;
+        min-height: 1200px;
+    }
+    
+}
+
+/* TABELET STYLE (999px~1119px) */
+@media only screen and (min-device-width: 999px) and (max-device-width: 1119.98px) and (orientation: landscape) {
+    /* RESET CSS */
+    .nav-header .hint-button:hover,
+    .full-screen-button:hover,
+    .go-home:hover,
+    .previous:hover,
+    .next:hover,
+    .font-resize:hover,
+    .audio-control:hover,
+    .font-resize-selector .small:hover,
+    .font-resize-selector .medium:hover,
+    .font-resize-selector .large:hover,
+    .audio-control-selector button:hover {
+        color: inherit;
+    }
+
+    .nav-header .hint-button:active,
+    .full-screen-button:active,
+    .go-home:active,
+    .previous:active,
+    .next:active,
+    .font-resize:active,
+    .audio-control:active,
+    .font-resize-selector .small:active,
+    .font-resize-selector .medium:active,
+    .font-resize-selector .large:active,
+    .audio-control-selector button:active {
+        color: rgb(153, 153, 153);
+    }
+
+    /* Index */
+    /* Nav Index Section */
+    /* nav index content */
+    .nav-section {
+        padding: 0;
+    }
+
+    /* Main */
+    /* Nav Section */
+    .small,
+    .medium,
+    .large {
+        padding: 0 6px;
+        font-size: 12px;
+    }
+
+    .audio-control-selector {
+        justify-content: space-around;
+    }
+
+    .audio-control-selector button {
+        color: #000;
+        font-size: 12px;
+    }
+
+/*    .click-area img {
+        min-width: 1080px;
+        min-height: 1920px;
+    }
+    */
+}
