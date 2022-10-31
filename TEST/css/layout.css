@@ -6,3 +6,149 @@ a[x-apple-data-detectors] {
   font-weight: inherit !important;
   line-height: inherit !important;
 }
+
+header {
+  height: 7vh;
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  overflow: hidden;
+
+  background: #fafafa;
+}
+
+h1 {
+  font-size: clamp(24px, 20px + 2.3vw, 2.3em);
+  margin-block-start: 0.67em;
+  margin-block-end: 0.67em;
+  margin-inline-start: 0px;
+  margin-inline-end: 0px;
+  font-weight: bold;
+  color: #fff;
+  display: inline;
+}
+
+
+h2 {
+  font-size: clamp(24px, 13px + 2vw, 2em);
+  margin-block-start: 0.1em;
+  margin-block-end: 0.67em;
+  margin-inline-start: 0px;
+  margin-inline-end: 0px;
+  font-weight: bold;
+  display: inline;
+}
+
+h3 {
+  font-size: clamp(18px, 18px + 1.3vw, 1.3em);
+  margin-block-start: 0.1em;
+  margin-block-end: 0.67em;
+  margin-inline-start: 0px;
+  margin-inline-end: 0px;
+  font-weight: bold;
+  display: inline;
+  letter-spacing: 4px;
+}
+
+p {
+  font-size: clamp(18px, 20px + 1.5vw, 1.5em);
+}
+
+
+#wrap {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 0 auto;
+  min-width: 375px;
+  width: 100%;
+  height: 100%;
+  background: #eee;
+}
+
+#wrap .view {
+  overflow: hidden;
+  box-sizing: content-box;
+  flex-basis: var(--screen-width);
+  width: 50vh;
+  min-height: 100vh;
+  position: relative;
+  background: #fff;
+}
+
+#main {
+  min-width: auto;
+  height: 78vh;
+  position: relative;
+  /* padding-right: 1rem;
+  padding-left: 1rem;
+  padding-top: 1rem;
+  margin-right: auto;
+  margin-left: auto;
+  margin-top: auto; */
+}
+
+#main {
+  scroll-behavior: smooth;
+  overflow-y: scroll;
+  -ms-overflow-style: none;
+  /* IE and Edge */
+}
+
+#main::-webkit-scrollbar {
+  display: none;
+  /* Chrome, Safari, Opera*/
+}
+
+.container {
+  width: 100%;
+  max-width: calc(100vh / 2);
+}
+
+.hd_left,
+.hd_right {
+  width: 13%;
+  text-align: center;
+}
+
+.hd_center {
+  width: 70%;
+  text-align: center;
+}
+
+.ctrlbar {
+  position: absolute;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  background: #E0E0E0;
+  width: 100%;
+  height: 15vh;
+  padding: .5em;
+}
+
+.ctrlbar .baricon_wrap {
+  width: 20%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.ctrlbar .baricon_wrap .baricon{
+  width: clamp(80px, 80px + 1.3vw, 1em);
+  height: clamp(80px, 80px + 1.3vw, 1em);
+  background: #FFFFFF;
+  box-shadow: 0px 0px 3px 2px rgba(0, 0, 0, 0.2);
+  border-radius: 20px;
+}
+
+.ctrlbar .baricon_wrap .bartext{
+  font-size: clamp(28px, 28px + 1.2vw, 1.5em);
+  color: #424242;
+}
