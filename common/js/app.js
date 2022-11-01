@@ -1,10 +1,3 @@
-// 콘텐츠 연동
-var JS = document.createElement("script");
-JS.type = "text/javascript";
-JS.charset = "UTF-8";
-JS.src = "https://ssc.seoul.kr/common/js/content_tracking.js";
-document.getElementsByTagName("head")[0].appendChild(JS);
-
 // Audio Section
 const pauseButton = document.querySelector(".pause-button");
 const playButton = document.querySelector(".play-button");
@@ -111,30 +104,23 @@ window.addEventListener("load", function () {
 // About Move Page
 // Index 의 시작 버튼 기능 구현
 goToMainPage.addEventListener("click", function () {
-    fn_FinishPage();
     goToMain(pageVariable);
     showDescriptionText(pageVariable);
-    fn_StartPage(pageVariable);
 });
 
 // 처음 단계, 이전 단계, 다음 단계 버튼 기능 구현
 // 처음 단계 버튼 기능 구현
 goToIndexPage.addEventListener("click", function () {
-    fn_FinishPage();
     goToIndex(pageVariable);
     loadBackgroundImage(pageVariable);
-    fn_StartPage(pageVariable);
 });
 
 mobileGoToIndexPage.addEventListener("click", function () {
-    fn_FinishPage();
     goToIndex(pageVariable);
-    fn_StartPage(pageVariable);
 });
 
 // 다음 단계 버튼 기능 구현
 goToNextPage.addEventListener("click", function () {
-    fn_FinishPage();
     pageVariable++;
     if (pageVariable >= 0 && pageVariable < contentImage.length) {
         goToNext(pageVariable);
@@ -146,11 +132,9 @@ goToNextPage.addEventListener("click", function () {
         indexNav.classList.toggle(HIDDEN_CLASSNAME);
         MainNav.classList.toggle(HIDDEN_CLASSNAME);
     }
-    fn_StartPage(pageVariable);
 });
 
 mobileGoToNextPage.addEventListener("click", function () {
-    fn_FinishPage();
     pageVariable++;
     if (pageVariable >= 0 && pageVariable < contentImage.length) {
         goToNext(pageVariable);
@@ -165,7 +149,6 @@ mobileGoToNextPage.addEventListener("click", function () {
         MainNav.classList.toggle(HIDDEN_MOBILE_CLASSNAME);
         mainDesc.classList.toggle(HIDDEN_MOBILE_CLASSNAME);
     }
-    fn_StartPage(pageVariable);
 });
 
 clickButton.addEventListener("click", function () {
@@ -174,11 +157,9 @@ clickButton.addEventListener("click", function () {
 
 practiceClickArea.addEventListener("click", function () {
     if (isClick === true) {
-        fn_FinishPage();
-        handleClickBox();
+            handleClickBox();
         isClick = false;
-        fn_StartPage(pageVariable);
-    } else if (document.querySelector(".click-button") === null) {
+        } else if (document.querySelector(".click-button") === null) {
         return;
     } else {
         alert(RETRY_MESSAGE);
@@ -187,7 +168,6 @@ practiceClickArea.addEventListener("click", function () {
 
 // 이전 단계 버튼 기능 구현
 goToPreviousPage.addEventListener("click", function () {
-    fn_FinishPage();
     pageVariable--;
     if (pageVariable >= 0) {
         goToPrevious(pageVariable);
@@ -195,18 +175,15 @@ goToPreviousPage.addEventListener("click", function () {
     } else {
         pageVariable = 0;
     }
-    fn_StartPage(pageVariable);
 });
 
 mobileGoToPreviousPage.addEventListener("click", function () {
-    fn_FinishPage();
     pageVariable--;
     if (pageVariable >= 0) {
         goToPrevious(pageVariable);
     } else {
         pageVariable = 0;
     }
-    fn_StartPage(pageVariable);
 });
 
 // Play Speed Control

@@ -1,10 +1,10 @@
-fullScreenButton.addEventListener("click", function () {
-    if (!document.fullscreenElement) {
-        fullScreen(document.body);
-    } else if (document.exitFullscreen) {
-        exitFullScreen();
-    }
-});
+// fullScreenButton.addEventListener("click", function () {
+//     if (!document.fullscreenElement) {
+//         fullScreen(document.body);
+//     } else if (document.exitFullscreen) {
+//         exitFullScreen();
+//     }
+// });
 
 const fullScreen = (element) => {
     if (element.requestFullscreen) return element.requestFullscreen();
