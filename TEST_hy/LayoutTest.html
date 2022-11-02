@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta name="viewport" content="width=device-width,height=640,initial-scale=1.0,minimum-scale=1.0,maximum-scale=1.0">
+    <title>jQuery active test</title>
+    <link href="./css/reset.css" rel="stylesheet" />
+    <link href="./css/main.css" rel="stylesheet" />
+    <link href="./css/layout.css" rel="stylesheet" />
+    <link href="./css/animate.css" rel="stylesheet" />
+    <link rel="stylesheet" href="http://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.css" />
+    <script src="https://unpkg.com/@popperjs/core@2"></script>
+    <!-- <script type="text/javascript" src="./js/jquery.js"></script> -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+</head>
+
+<body>
+    <div class="bg_phone">
+        <!--form-theme-background-->
+        <div id="wrap">
+            <div class="view">
+                <!-- <header class="hd_Intro"></header> -->
+                <div class="container">
+                    <header>
+                        <div class="hd_left" id="backBtn">
+                            <p>좌</p>
+                        </div>
+                        <div class="hd_center">
+                            <h1 class="title_h1 talk_title_h1" style="color:black;">
+                                TITLE(H1)
+                            </h1>
+                        </div>
+                        <div class="hd_right">
+                            <p>우</p>
+                        </div>
+                        
+                    </header>
+                    <main class="main" id="main" role="main">
+
+                        <div class = "pages_wrap">
+                        <!------------------------------ page 0 (시작 화면) ------------------------------>
+                            <div class="page" id="p0">
+                                <div class="page_wrap">
+                                    <img src="0.png" alt="bg" class="tempo_img" />
+                                    <div class="pg_title">Page 0 = 시작 화면</div>
+                                </div>
+                            </div>
+                        <!------------------------------ page 1 ------------------------------>
+                            <div class="page" id="p1">
+                                <div class="page_wrap">
+                                    <img src="1.png" alt="bg" class="tempo_img" />
+                                    <div class="pg_title">Page 1</div>
+                                </div>
+                            </div>
+                        <!------------------------------ page 2 ------------------------------>
+                            <div class="page" id="p2">
+                                <div class="page_wrap">
+                                    <img src="2.png" alt="bg" class="tempo_img" />
+                                    <div class="pg_title">Page 2</div>
+                                </div>
+                            </div>
+                        <!------------------------------ page 3 ------------------------------>
+                            <div class="page" id="p3">
+                                <div class="page_wrap">
+                                    <img src="3.png" alt="bg" class="tempo_img" />
+                                    <div class="pg_title">Page 3</div>
+                                </div>
+                            </div>
+                        </div>
+
+                    </main>
+                    <div class="ctrlbar">
+                        <div class="baricon_wrap prev">
+                            <div class="baricon"></div>
+                            <div class="bartext">이전</div>
+                        </div>
+                        <div class="baricon_wrap">
+                            <div class="baricon"></div>
+                            <div class="bartext">멈춤</div>
+                        </div>
+                        <div class="baricon_wrap">
+                            <div class="baricon"></div>
+                            <div class="bartext">힌트</div>
+                        </div>
+                        <div class="baricon_wrap">
+                            <div class="baricon"></div>
+                            <div class="bartext">크기</div>
+                        </div>
+                        <div class="baricon_wrap next">
+                            <div class="baricon"></div>
+                            <div class="bartext">다음</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="test.js"> </script>
+</body>
+
+</html>
