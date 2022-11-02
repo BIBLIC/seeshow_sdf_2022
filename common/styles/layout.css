@@ -15,6 +15,7 @@
 .page{
   position: relative;
   overflow: auto;
+  height: 100%;
 }
 
 .page .page_wrap {
@@ -22,6 +23,7 @@
   justify-content: center;
   align-items: center;
   flex-direction: column;
+  height: 100%;
 }
 
 .tempo_img{
@@ -50,38 +52,24 @@ header {
   justify-content: center;
   align-items: center;
   overflow: hidden;
-
   background: #e0e0e0;
 }
 
 h1 {
   font-size: clamp(24px, 20px + 2.3vw, 2.3em);
-  margin-block-start: 0.67em;
-  margin-block-end: 0.67em;
-  margin-inline-start: 0px;
-  margin-inline-end: 0px;
   font-weight: bold;
-  color: #fff;
   display: inline;
 }
 
 
 h2 {
   font-size: clamp(24px, 13px + 2vw, 2em);
-  margin-block-start: 0.1em;
-  margin-block-end: 0.67em;
-  margin-inline-start: 0px;
-  margin-inline-end: 0px;
   font-weight: bold;
   display: inline;
 }
 
 h3 {
   font-size: clamp(18px, 18px + 1.3vw, 1.3em);
-  margin-block-start: 0.1em;
-  margin-block-end: 0.67em;
-  margin-inline-start: 0px;
-  margin-inline-end: 0px;
   font-weight: bold;
   display: inline;
   letter-spacing: 4px;
@@ -115,7 +103,7 @@ p {
 
 #main {
   min-width: auto;
-  height: 80vh;
+  height: 87vh;
   position: relative;
   /* padding-right: 1rem;
   padding-left: 1rem;
@@ -189,4 +177,26 @@ p {
   font-size: clamp(20px, 20px + 1vw, 1.2em);
   font-weight: bold;
   color: #424242;
+}
+
+.btn1 {
+  display: block;
+  text-decoration: none;
+  text-align: center;
+  width: 200px;
+  height: 66px;
+  font-size: 25px;
+  font-weight: 700;
+  line-height: 1.5;
+  letter-spacing: 0.01em;
+  color: #fff;
+  border-style: none;
+  border-radius: 4px;
+  background-color: #000;
+  cursor: pointer;
+  box-shadow: 3px 3px 10px rgb(85, 85, 85, 0.7);
+  position: absolute;
+  top: 90%;
+  left: 50%;
+  transform: translate(-50%, -50%);
 }
