@@ -17,7 +17,13 @@
         <section class="practice-section">
             <h1 class="sr-only">작업 영역</h1>
             <iframe src="../common/content-1.html" frameborder="0" id="working-space"></iframe>
-            <div class="click-area"><img src="../assets/SD12/image/0.JPG" alt="bg" class="bg-image" />
+            <div class="click-area">
+                <img src="../assets/SD12/image/0.JPG" alt="bg" class="bg-image" />
+                <div class="nav-content-section">
+                    <div class="nav-index-contents">
+                        <button type="submit" class="fill-button" id="go-main-page">시작</button>
+                    </div>
+                </div>
             </div>
         </section>
         <!-- <nav class="nav-section">
@@ -98,30 +104,24 @@
                 </div>
             </div>
         </nav> -->
-
-        <div class="nav-index-contents">
-            <button type="submit" class="fill-button" id="go-main-page">시작</button>
-        </div>
-
-
         <div class="ctrlbar">
-            <div class="baricon_wrap mobile-previous">
+            <div class="baricon_wrap mobile-previous previous">
                 <div class="baricon"></div>
                 <div class="bartext">이전</div>
             </div>
-            <div class="baricon_wrap pause-button">
+            <div class="baricon_wrap pause-button mobile-pause-button">
                 <div class="baricon"></div>
                 <div class="bartext">멈춤</div>
             </div>
-            <div class="baricon_wrap mobile-hint-button">
+            <div class="baricon_wrap hint-button mobile-hint-button">
                 <div class="baricon"></div>
                 <div class="bartext">힌트</div>
             </div>
-            <div class="baricon_wrap font-resize-selector">
+            <div class="baricon_wrap font-resize-selector large">
                 <div class="baricon"></div>
                 <div class="bartext">크기</div>
             </div>
-            <div class="baricon_wrap nextBtn mobile-next" id="go-main-page">
+            <div class="baricon_wrap nextBtn mobile-next next" id="go-main-page">
                 <div class="baricon"></div>
                 <div class="bartext">다음</div>
             </div>

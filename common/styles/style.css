@@ -4,34 +4,34 @@
     justify-content: space-around;
     align-items: center;
     background: #E0E0E0;
-    width: 413px;
+    width: 410px;
     height: 10vh;
     padding: .5em;
-  }
-  
-  .ctrlbar .baricon_wrap {
+}
+
+.ctrlbar .baricon_wrap {
     width: 20%;
     height: 100%;
     display: flex;
     flex-direction: column;
     justify-content: space-around;
     align-items: center;
-  }
-  
-  .ctrlbar .baricon_wrap .baricon{
+}
+
+.ctrlbar .baricon_wrap .baricon {
     width: clamp(53px, 80px + 1.3vw, 1em);
     height: clamp(53px, 80px + 1.3vw, 1em);
     background: #FFFFFF;
     box-shadow: 0px 0px 3px 2px rgba(0, 0, 0, 0.2);
     border-radius: 20px;
-  }
-  
-  .ctrlbar .baricon_wrap .bartext{
+}
+
+.ctrlbar .baricon_wrap .bartext {
     font-size: 15px;
     font-weight: bold;
     color: #424242;
-  }
-  
+}
+
 
 
 
@@ -80,6 +80,7 @@ button {
 input {
     background-color: #fff;
 }
+
 /* Entire Layout */
 
 .practice-section {
@@ -121,7 +122,7 @@ input {
 .click-area img {
     width: auto;
     min-width: 400px;
-    max-height:768px;
+    max-height: 762px;
     overflow: auto;
 
 }
@@ -189,15 +190,19 @@ input {
     color: #fff;
     border-style: none;
     border-radius: 4px;
-    background-color: rgb(26, 26, 26);
+    background-color: #000;
     cursor: pointer;
     box-shadow: 3px 3px 10px rgb(85, 85, 85, 0.7);
     transition: transform 100ms ease-in;
+    z-index: 1;
+    position: absolute;
+    top: 90%;
+    left: 50%;
+    transform: translate(-50%, -50%);
 }
 
 .nav-index-contents .fill-button:hover {
     background-color: rgba(85, 85, 85, 0.9);
-    transform: translateY(-2px);
 }
 
 /* nav-main-contents Section */
@@ -335,7 +340,8 @@ input {
 
 /* MOBILE STYLE (0~576px) */
 /* portait */
-@media only screen and (max-device-width: 650px){
+@media only screen and (max-device-width: 650px) {
+
     /* RESET CSS */
     .nav-header .hint-button:hover,
     .full-screen-button:hover,
@@ -392,10 +398,10 @@ input {
         align-items: center;
     }
 
-    .nav-index-contents .fill-button {
-    height: 77px;
-    font-size: 38px;
-}
+    /* .nav-index-contents .fill-button {
+        height: 77px;
+        font-size: 38px;
+    } */
 
     .index-contents-title {
         display: none;
@@ -404,35 +410,34 @@ input {
     /* Main */
     /* Practice Section */
     .practice-section {
-    position: relative;
-    display: flex;
-    justify-content: center;
-    align-items: center;
+        position: relative;
+        display: flex;
+        justify-content: center;
+        align-items: center;
         background-color: rgb(199, 199, 199);
         overflow: auto;
     }
 
     .practice-section #working-space {
-    display: none;
-    width: 100vw;
-    height: 100vh;
-    overflow: auto;
-}
+        display: none;
+        width: 100vw;
+        height: 100vh;
+        overflow: auto;
+    }
 
-.click-area {
-    position: relative;
-    overflow: auto;
-}
+    .click-area {
+        position: relative;
+        overflow: auto;
+    }
 
-.click-area img {
-    width: auto;
-    min-width: 400px;
-    /* max-height:1650px;  */
-    overflow: auto;
-}
+    .click-area img {
+        width: auto;
+        min-width: 400px;
+        overflow: auto;
+    }
 
 
- 
+
 
     /* Main Controller Section */
     .main-controller {
@@ -445,8 +450,8 @@ input {
     }
 
     .main-controller li {
-            font-size: 33px;
-    text-align: center;
+        font-size: 33px;
+        text-align: center;
         border-bottom: none;
         padding-bottom: 10;
         padding-top: 10px;
@@ -458,14 +463,15 @@ input {
     }
 }
 
-   /* Nav Main Section */
-   .nav-main-contents {
+/* Nav Main Section */
+.nav-main-contents {
     height: 15vh;
 }
 
 
 /* landscape */
 @media only screen and (max-device-width: 927px) and (max-device-height: 428px) and (orientation: landscape) {
+
     /* RESET CSS */
     .nav-header .hint-button:hover,
     .full-screen-button:hover,
@@ -534,6 +540,7 @@ input {
 
 /* TABELET STYLE (577px~768px) */
 @media only screen and (min-device-width: 576px) and (max-device-width: 767.98px) and (orientation: portrait) {
+
     /* RESET CSS */
     .nav-header .hint-button:hover,
     .full-screen-button:hover,
@@ -570,21 +577,21 @@ input {
         padding: 0;
     }
 
-    .fill-button {
+    /* .fill-button {
         max-width: 180px;
-    }
+    } */
 
     /* Main */
     /* Practice Section */
     .practice-section {
-    position: relative;
-    display: flex;
-    justify-content: center;
-    align-items: center;
+        position: relative;
+        display: flex;
+        justify-content: center;
+        align-items: center;
         background-color: rgb(199, 199, 199);
         overflow: auto;
     }
-    
+
     /* Nav Section */
     .small,
     .medium,
@@ -604,13 +611,14 @@ input {
 
     .click-area img {
         max-width: 413px;
-        min-height: 768px;
+        min-height: 762px;
     }
 
 }
 
 /* TABELET STYLE (769px~998px) */
 @media only screen and (min-device-width: 768px) and (max-device-width: 998.98px) and (orientation: portrait) {
+
     /* RESET CSS */
     .nav-header .hint-button:hover,
     .full-screen-button:hover,
@@ -667,13 +675,14 @@ input {
 
     .click-area img {
         max-width: 413px;
-        min-height: 768px;
+        min-height: 762px;
     }
-    
+
 }
 
 /* TABELET STYLE (999px~1119px) */
 @media only screen and (min-device-width: 999px) and (max-device-width: 1119.98px) and (orientation: landscape) {
+
     /* RESET CSS */
     .nav-header .hint-button:hover,
     .full-screen-button:hover,
@@ -728,7 +737,7 @@ input {
         font-size: 12px;
     }
 
-/*    .click-area img {
+    /*    .click-area img {
         min-width: 1080px;
         min-height: 1920px;
     }

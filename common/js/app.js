@@ -110,14 +110,14 @@ goToMainPage.addEventListener("click", function () {
 
 // 처음 단계, 이전 단계, 다음 단계 버튼 기능 구현
 // 처음 단계 버튼 기능 구현
-goToIndexPage.addEventListener("click", function () {
-    goToIndex(pageVariable);
-    loadBackgroundImage(pageVariable);
-});
+// goToIndexPage.addEventListener("click", function () {
+//     goToIndex(pageVariable);
+//     loadBackgroundImage(pageVariable);
+// });
 
-mobileGoToIndexPage.addEventListener("click", function () {
-    goToIndex(pageVariable);
-});
+// mobileGoToIndexPage.addEventListener("click", function () {
+//     goToIndex(pageVariable);
+// });
 
 // 다음 단계 버튼 기능 구현
 goToNextPage.addEventListener("click", function () {
@@ -187,20 +187,20 @@ mobileGoToPreviousPage.addEventListener("click", function () {
 });
 
 // Play Speed Control
-playSpeedSlow.addEventListener("click", function () {
-    currentSpeed = 0.7;
-    audioArray[pageVariable].playbackRate = currentSpeed;
-});
+// playSpeedSlow.addEventListener("click", function () {
+//     currentSpeed = 0.7;
+//     audioArray[pageVariable].playbackRate = currentSpeed;
+// });
 
-playSpeedMedium.addEventListener("click", function () {
-    currentSpeed = 1;
-    audioArray[pageVariable].playbackRate = currentSpeed;
-});
+// playSpeedMedium.addEventListener("click", function () {
+//     currentSpeed = 1;
+//     audioArray[pageVariable].playbackRate = currentSpeed;
+// });
 
-playSpeedFast.addEventListener("click", function () {
-    currentSpeed = 1.3;
-    audioArray[pageVariable].playbackRate = currentSpeed;
-});
+// playSpeedFast.addEventListener("click", function () {
+//     currentSpeed = 1.3;
+//     audioArray[pageVariable].playbackRate = currentSpeed;
+// });
 
 // About hint button
 hintButton.addEventListener("click", function () {
@@ -233,16 +233,16 @@ pauseButton.addEventListener("click", function () {
     audioArray[pageVariable].pause();
 });
 
-playButton.addEventListener("click", function () {
-    audioArray[pageVariable].play();
-});
+// playButton.addEventListener("click", function () {
+//     audioArray[pageVariable].play();
+// });
 
 // Mobile Audio AutoPlay
 
-mobilePlayButton.addEventListener("click", function () {
-    audioArray[pageVariable].load();
-    audioArray[pageVariable].play();
-});
+// mobilePlayButton.addEventListener("click", function () {
+//     audioArray[pageVariable].load();
+//     audioArray[pageVariable].play();
+// });
 
 mobilePauseButton.addEventListener("click", function () {
     audioArray[pageVariable].pause();
