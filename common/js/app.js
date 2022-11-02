@@ -321,7 +321,7 @@ function handleClickBox() {
     pageVariable++;
     if (pageVariable >= 0 && pageVariable < contentImage.length) {
         goToNext(pageVariable);
-        showDescriptionText(pageVariable);
+        showDescriptionText(pageVariable); 
     } else if (pageVariable === contentImage.length) {
         goToIndex(pageVariable);
         loadBackgroundImage(pageVariable);

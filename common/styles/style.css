@@ -116,7 +116,7 @@ input {
 
 .click-area {
     position: relative;
-    overflow: auto;
+    /* overflow: auto; */
 }
 
 .click-area img {
