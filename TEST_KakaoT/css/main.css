@@ -14,12 +14,6 @@
     /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
 }
 
-.banner {
-    width: 100%;
-    height: 5em;
-    background: #e0e0e0;
-}
-
 #p1 .tab_bar {
     font-weight: normal;
     display: flex;
@@ -96,34 +90,58 @@
 #p1 .pg_bottom .top .icon_area{
     width: 100%;
     height: 65%;
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-    align-items: center;
 }
 
 #p1 .pg_bottom .top .icon_area .icon_wrap{
     width: 100%;
     height: 30%;
-    display: flex;
-    justify-content: space-around;
-    align-items: center;
 }
 
 #p1 .pg_bottom .top .icon_area .icon_wrap .icon {
     width: 3em;
     height: 3em;
-    background: #e0e0e0;
 }
 
 #p1 .pg_bottom .under_bar {
     width: 100%;
     height: 15%;
-    display: flex;
-    justify-content: space-around;
-    align-items: center;
     box-shadow: 0px -5px 10px rgba(0, 0, 0, 0.1);
-    border-top-left-radius: 15px;
-    border-top-right-radius: 15px;
 }
 
+#p3 .under_bar {
+    position: absolute;
+    left: 0; right: 0; bottom: 0;
+    width: 100%;
+    height: 21vh;
+    background: #fff;
+}
+
+#p4 .under_bar {
+    position: absolute;
+    left: 0; right: 0; bottom: 0;
+    width: 100%;
+    height: 50vh;
+    background: #fff;
+}
+
+#p4 .under_bar .tab {
+    width: 100%;
+    height: 20%;
+}
+
+#p4 .under_bar .tab .icon {
+    width: 25%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#p4 .under_bar .tab .txt-wrap {
+    flex: 1;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-bottom: 1px solid #e0e0e0;
+}
