@@ -5,7 +5,7 @@ for (j = 1; j <= pageNum; j++) {
     audio = new Audio(`../assets/${pageName}/audio/${j}.mp3`);
     audioArray.push(audio);
 }
-
+console.log(audioArray);
 const page1 =
     "지도 앱을 활용해서 보다 편하고 정확한 길 찾기를 실습하겠습니다. 실습에서는 남부터미널 역 3호선에서 서울디지털재단까지 가는 길을 찾아보겠습니다. 화면을 눌러서 다음 페이지로 진행해 주세요.";
 const page2 =

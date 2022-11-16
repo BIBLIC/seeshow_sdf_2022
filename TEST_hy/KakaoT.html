@@ -1,0 +1,224 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta name="viewport" content="width=device-width,height=640,initial-scale=1.0,minimum-scale=1.0,maximum-scale=1.0">
+    <title>jQuery active test</title>
+    <link href="./css/reset.css" rel="stylesheet" />
+    <link href="./css/main.css" rel="stylesheet" />
+    <link href="../common/styles/layout.css" rel="stylesheet" />
+    <link href="./css/animate.css" rel="stylesheet" />
+    <!-- CSS only -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" crossorigin="anonymous">
+    <!-- JavaScript Bundle with Popper -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-OERcA2EqjJCMA+/3y+gxIOqMEjwtxJY7qPCqsdltbNJuaOe923+mo//f6V8Qbsw3"
+        crossorigin="anonymous"></script>
+    <script src="https://code.jquery.com/jquery-3.6.1.min.js"></script>
+</head>
+
+<body>
+    <div class="bg_phone">
+        <!--form-theme-background-->
+        <div id="wrap">
+            <div class="view">
+                <div class="contain">
+                    <main class="main" id="main" role="main">
+                        <!------------------------------ page 0 (시작 화면) ------------------------------>
+                        <div class="page" id="p0">
+                            <div class="page_wrap">
+                                <h1 class="title_h1">시작화면</h1>
+                                <!-- Button trigger modal -->
+                                <button type="button" class="btn btn-primary m-5" data-bs-toggle="modal"
+                                    data-bs-target="#staticBackdrop">
+                                    모달 show
+                                </button>
+
+                                <!-- Modal -->
+                                <div class="modal fade" id="staticBackdrop">
+                                    <div class="modal-dialog modal-sm">
+                                        <div class="modal-content">
+                                            <div class="modal-header border-0">
+                                                <h5 class="modal-title">
+                                                    Modal title
+                                                </h5>
+                                                <button type="button" class="btn-close" data-bs-dismiss="modal"
+                                                    aria-label="Close"></button>
+                                            </div>
+                                            <div class="modal-body">
+                                                모달 내용
+                                            </div>
+                                            <div class="modal-footer border-0">
+                                                <button type="button" class="btn btn-secondary"
+                                                    data-bs-dismiss="modal">닫기</button>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+
+                            </div>
+                        </div>
+                        <!------------------------------ page 1 ------------------------------>
+                        <div class="page" id="p1">
+                            <h1 class="pg_title" style="color: #fff;">Page1</h1>
+                            <div class="page_wrap">
+                                <div class="pg_top">
+                                    <div class="tab_bar">
+                                        <h1 class="tab selected">홈</h1>
+                                        <h1 class="tab">마이카</h1>
+                                        <h1 class="tab">여행</h1>
+                                    </div>
+                                    <div class="cont">
+                                        <p>
+                                            택시의 신세계!<br>
+                                            카카오택시 사용 가이드
+                                        </p>
+                                    </div>
+                                </div>
+                                <div class="pg_bottom">
+                                    <div class="top">
+                                        <div class="tab_bar">
+                                            <div class="tab_wrap">
+                                                <div class="tab" style="color: #8E9198;">🪙더 스마트한 이동!</div>
+                                                <div class="tab">
+                                                    <div>충전&nbsp;|</div>
+                                                    <div>&nbsp;선물&nbsp;|</div>
+                                                    <div>&nbsp;무료적립</div>
+                                                </div>
+                                            </div>
+                                            <div class="banner"></div>
+                                        </div>
+                                        <div class="icon_area">
+                                            <div class="icon_wrap">
+                                                <div class="icon"></div>
+                                                <div class="icon"></div>
+                                                <div class="icon"></div>
+                                                <div class="icon"></div>
+                                            </div>
+                                            <div class="icon_wrap">
+                                                <div class="icon"></div>
+                                                <div class="icon"></div>
+                                                <div class="icon"></div>
+                                                <div class="icon"></div>
+                                            </div>
+                                            <div class="icon_wrap">
+                                                <div class="icon"></div>
+                                                <div class="icon"></div>
+                                                <div class="icon"></div>
+                                                <div class="icon"></div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="under_bar">
+                                        <div class="tab">1</div>
+                                        <div class="tab">2</div>
+                                        <div class="tab">3</div>
+                                        <div class="tab">4</div>
+                                        <div class="tab">5</div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <!------------------------------ page 2 ------------------------------>
+                        <div class="page" id="p2">
+                            <h1 class="pg_title" style="color: red;">Page2</h1>
+                            <div class="page_wrap">
+                                <div class="pg_top">
+                                    <div class="tab_bar">
+                                        <h1 class="tab selected">홈</h1>
+                                        <h1 class="tab">마이카</h1>
+                                        <h1 class="tab">여행</h1>
+                                    </div>
+                                    <div class="cont">
+                                        <p>
+                                            두 번째 페이지<br>
+                                            카카오택시 사용 가이드
+                                        </p>
+                                    </div>
+                                </div>
+                                <div class="pg_bottom">
+                                    <div class="top">
+                                        <div class="tab_bar">
+                                            <div class="tab_wrap">
+                                                <div class="tab" style="color: #8E9198;">🪙더 스마트한 이동!</div>
+                                                <div class="tab">
+                                                    <div>충전&nbsp;|</div>
+                                                    <div>&nbsp;선물&nbsp;|</div>
+                                                    <div>&nbsp;무료적립</div>
+                                                </div>
+                                            </div>
+                                            <div class="banner"></div>
+                                        </div>
+                                        <div class="icon_area">
+                                            <div class="icon_wrap">
+                                                <div class="icon"></div>
+                                                <div class="icon"></div>
+                                                <div class="icon"></div>
+                                                <div class="icon"></div>
+                                            </div>
+                                            <div class="icon_wrap">
+                                                <div class="icon"></div>
+                                                <div class="icon"></div>
+                                                <div class="icon"></div>
+                                                <div class="icon"></div>
+                                            </div>
+                                            <div class="icon_wrap">
+                                                <div class="icon"></div>
+                                                <div class="icon"></div>
+                                                <div class="icon"></div>
+                                                <div class="icon"></div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="under_bar">
+                                        <div class="tab">1</div>
+                                        <div class="tab">2</div>
+                                        <div class="tab">3</div>
+                                        <div class="tab">4</div>
+                                        <div class="tab">5</div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <!------------------------------ page 3 ------------------------------>
+                        <div class="page" id="p3">
+                            <div class="page_wrap">
+                                <h1 class="title_h1">Page3</h1>
+                            </div>
+                        </div>
+                </div>
+
+                </main>
+                <div class="ctrlbar">
+                    <div class="baricon_wrap prev">
+                        <div class="baricon"></div>
+                        <div class="bartext">이전</div>
+                    </div>
+                    <div class="baricon_wrap pause">
+                        <!--추가하기 -->
+                        <div class="baricon"></div>
+                        <div class="bartext">멈춤</div>
+                    </div>
+                    <div class="baricon_wrap">
+                        <div class="baricon"></div>
+                        <div class="bartext">힌트</div>
+                    </div>
+                    <div class="baricon_wrap">
+                        <div class="baricon"></div>
+                        <div class="bartext">크기</div>
+                    </div>
+                    <div class="baricon_wrap next">
+                        <div class="baricon"></div>
+                        <div class="bartext">다음</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    </div>
+
+    <script src="test.js"> </script>
+</body>
+
+</html>
