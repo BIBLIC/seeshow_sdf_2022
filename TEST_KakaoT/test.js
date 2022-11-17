@@ -20,7 +20,7 @@ for (j = 1; j <= total_page; j++) {
 // }
 
 
-const pageHandler = [
+const pageClickArea = [
     { 
         page: 1, 
         correctAnswer: "here" },
@@ -38,10 +38,10 @@ const pageHandler = [
 ];
 
 // function handleInput(page_num) {
-//     for (i = 0; i < pageHandler.length; i++) {
-//         if (page_num === pageHandler[i].page) {//현재 페이지와 pageHandler의 페이지 같으면
+//     for (i = 0; i < pageClickArea.length; i++) {
+//         if (page_num === pageClickArea[i].page) {//현재 페이지와 pageClickArea의 페이지 같으면
 //             DrawInputBox(coordinateArray[page_num]);
-//             let answer = pageHandler[i].correctAnswer;
+//             let answer = pageClickArea[i].correctAnswer;
 //             document.querySelector(".input-answer").addEventListener("keydown", function (event) {
 //                 if (event.keyCode === 13) {
 //                     if (this.value === answer) {

@@ -14,7 +14,7 @@ for (j = 1; j <= total_page; j++) {
     audioArray.push(audio);
 }
 
-const pageHandler = [
+const pageClickArea = [
     {
         page: 0,
         correctAnswer: "title_h1"
@@ -39,9 +39,9 @@ const pageHandler = [
 
 //특정 영역 외 클릭시 이벤트 처리 (class 명으로 가져오기)
 document.querySelector("body").addEventListener("click", function (e) {
-    for (i = 0; i < pageHandler.length; i++) {
-        if (page_num === pageHandler[i].page) {//현재 페이지와 pageHandler의 페이지 같으면
-            let answer = pageHandler[i].correctAnswer;
+    for (i = 0; i < pageClickArea.length; i++) {
+        if (page_num === pageClickArea[i].page) {//현재 페이지와 pageClickArea의 페이지 같으면
+            let answer = pageClickArea[i].correctAnswer;
             console.log("현재 페이지 ", page_num, "정답은", answer); //마지막에 모두 지우기
             //alert(answer);
             if (e.target.className == answer) {

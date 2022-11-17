@@ -25,38 +25,31 @@
             <div class="view">
                 <div class="contain">
                     <main class="main" id="main" role="main">
+                        <!-- Modal -->
+                        <div class="modal fade" id="staticBackdrop">
+                            <div class="modal-dialog modal-sm">
+                                <div class="modal-content">
+                                    <div class="modal-header border-0">
+                                        <h5 class="modal-title">
+                                            Modal title
+                                        </h5>
+                                        <button type="button" class="btn-close" data-bs-dismiss="modal"
+                                            aria-label="Close"></button>
+                                    </div>
+                                    <div class="modal-body">
+                                        모달 내용
+                                    </div>
+                                    <div class="modal-footer border-0 ">
+                                        <button type="button" class="btn btn-secondary "
+                                            data-bs-dismiss="modal">닫기</button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
                         <!------------------------------ page 0 (시작 화면) ------------------------------>
                         <div class="page" id="p0">
                             <div class="page_wrap">
                                 <h1 class="title_h1">시작화면</h1>
-                                <!-- Button trigger modal -->
-                                <button type="button" class="btn btn-primary m-5" data-bs-toggle="modal"
-                                    data-bs-target="#staticBackdrop">
-                                    모달 show
-                                </button>
-
-                                <!-- Modal -->
-                                <div class="modal fade" id="staticBackdrop">
-                                    <div class="modal-dialog modal-sm">
-                                        <div class="modal-content">
-                                            <div class="modal-header border-0">
-                                                <h5 class="modal-title">
-                                                    Modal title
-                                                </h5>
-                                                <button type="button" class="btn-close" data-bs-dismiss="modal"
-                                                    aria-label="Close"></button>
-                                            </div>
-                                            <div class="modal-body">
-                                                모달 내용
-                                            </div>
-                                            <div class="modal-footer border-0">
-                                                <button type="button" class="btn btn-secondary"
-                                                    data-bs-dismiss="modal">닫기</button>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-
                             </div>
                         </div>
                         <!------------------------------ page 1 ------------------------------>
@@ -201,10 +194,13 @@
                         </div>
 
                     </main>
+
+                    <div class="ctrlbar" id="ctrlbar">
+                        <button type="button" class="btn btn-lg btn-dark" id="start-btn">시작하기</button>
+                    </div>
+
                 </div>
-                <div class="ctrlbar" id="ctrlbar">
-                    <button type="button" class="btn btn-lg btn-dark" id="start-btn">시작하기</button>
-                </div>
+                
             </div>
         </div>
     </div>
