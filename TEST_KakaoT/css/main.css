@@ -116,12 +116,22 @@
     background: #fff;
 }
 
+#p4 .top_bar {
+    position: absolute;
+    left: 0; right: 0; top: 5%;
+    width: 90%;
+    height: 5vh;
+    background: #fff;
+    border-radius: 20px;
+}
+
 #p4 .under_bar {
     position: absolute;
     left: 0; right: 0; bottom: 0;
     width: 100%;
     height: 50vh;
     background: #fff;
+    padding-top: 1em;
 }
 
 #p4 .under_bar .tab {
@@ -130,7 +140,7 @@
 }
 
 #p4 .under_bar .tab .icon {
-    width: 25%;
+    width: 20%;
     height: 100%;
     display: flex;
     justify-content: center;
@@ -144,4 +154,17 @@
     justify-content: center;
     align-items: center;
     border-bottom: 1px solid #e0e0e0;
+}
+
+#p4 .under_bar .tab .txt-wrap .txt {
+    padding: .7em;
+}
+
+#p4 .under_bar .tab .txt-wrap .text-left {
+    min-width: 60%;
+}
+
+
+#p4 .under_bar .tab .txt-wrap .text-right {
+    min-width: 38%;
 }

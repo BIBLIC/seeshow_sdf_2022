@@ -1,7 +1,7 @@
 //페이지 수 -> 시나리오마다 total_page 수 바꾸기 
 var page_num = 0;
 
-var total_page = 6;
+var total_page = 8;
 console.log(page_num); //마지막에 모두 지우기
 
 const prevBtn = document.getElementById("prev");
