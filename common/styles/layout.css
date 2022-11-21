@@ -9,7 +9,9 @@
 #p2,
 #p3,
 #p4,
-#p5
+#p5,
+#p6,
+#p7
 {
    display:none;
 }/*가장 큰 페이지 수 만큼 늘리기*/
@@ -264,6 +266,11 @@ p {
   align-items: center;
   border-top-left-radius: 15px;
   border-top-right-radius: 15px;
+}
+
+.under_bar {
+  position: absolute;
+  left: 0; right: 0; bottom: 0;
 }
 
 .p-l-1 {

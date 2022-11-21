@@ -3,7 +3,7 @@
 
 <head>
     <meta name="viewport" content="width=device-width,height=640,initial-scale=1.0,minimum-scale=1.0,maximum-scale=1.0">
-    <title>카카오택시</title>
+    <title>jQuery active test</title>
     <link href="./css/reset.css" rel="stylesheet" />
     <link href="./css/main.css" rel="stylesheet" />
     <link href="../common/styles/layout.css" rel="stylesheet" />
@@ -11,8 +11,6 @@
     <!-- CSS only -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" crossorigin="anonymous">
-    <!-- Icon -->
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.2/font/bootstrap-icons.css">
     <!-- JavaScript Bundle with Popper -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-OERcA2EqjJCMA+/3y+gxIOqMEjwtxJY7qPCqsdltbNJuaOe923+mo//f6V8Qbsw3"
@@ -26,20 +24,28 @@
         <div id="wrap">
             <div class="view">
                 <div class="contain">
-                    <!-- <header>
-                        <div class="hd_left" id="backBtn">
-                            <p>L</p>
-                        </div>
-                        <div class="hd_center">
-                            <h1 class="title_h1 talk_title_h1" style="color:black;">
-                                TITLE(H1)
-                            </h1>
-                        </div>
-                        <div class="hd_right">
-                            <p>R</p>
-                        </div>
-                    </header> -->
                     <main class="main" id="main" role="main">
+                        <!-- Modal -->
+                        <div class="modal fade" id="staticBackdrop">
+                            <div class="modal-dialog modal-sm">
+                                <div class="modal-content">
+                                    <div class="modal-header border-0">
+                                        <h5 class="modal-title">
+                                            Modal title
+                                        </h5>
+                                        <button type="button" class="btn-close" data-bs-dismiss="modal"
+                                            aria-label="Close"></button>
+                                    </div>
+                                    <div class="modal-body">
+                                        모달 내용
+                                    </div>
+                                    <div class="modal-footer border-0 ">
+                                        <button type="button" class="btn btn-secondary "
+                                            data-bs-dismiss="modal">닫기</button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
                         <!------------------------------ page 0 (시작 화면) ------------------------------>
                         <div class="page" id="p0">
                             <div class="page_wrap">
@@ -199,13 +205,16 @@
                             <div class="page_wrap">
                                 <h1 class="pg_title" style="color: #fff;">Page4</h1>
 
-                                <div class="bg-image" style="background-image: url('../assets/KakaoT/image/map.png');  height: 100%;">
-                                    <div class="container top_bar d-flex flex-column justify-content-center align-items-start">
+                                <div class="bg-image"
+                                    style="background-image: url('../assets/KakaoT/image/map.png');  height: 100%;">
+                                    <div
+                                        class="container top_bar d-flex flex-column justify-content-center align-items-start">
                                         <div class="d-flex justify-content-center align-items-start">
                                             <div class="tab"></div>
                                         </div>
                                     </div>
-                                    <div class="container under_bar d-flex flex-column justify-content-center align-items-start">
+                                    <div
+                                        class="container under_bar d-flex flex-column justify-content-center align-items-start">
                                         <div class="tab d-flex justify-content-center align-items-start">
                                             <div class="icon">1</div>
                                             <div class="txt-wrap d-flex">
@@ -274,17 +283,59 @@
                         <div class="page" id="p5">
                             <div class="page_wrap">
                                 <h1 class="pg_title" style="color: #fff;">Page5</h1>
-                                <div class="bg-image" style="background-image: url('../assets/KakaoT/image/map.png');  height: 100%;">
-                                    <div class="container under_bar d-flex flex-column justify-content-center align-items-start">
-                                        <div class="tab d-flex justify-content-center align-items-start">
-                                            <div class="icon">1</div>
-                                            <div class="txt-wrap d-flex">
-                                                <div class="txt text-left">
-                                                    <div>블랙</div>
-                                                    <div class="text-black-50">프리미엄 이동 서비스 블랙</div>
+                                <div class="bg-image"
+                                    style="background-image: url('../assets/KakaoT/image/map.png');  height: 100%;">
+                                    <div class="under_bar d-flex flex-column justify-content-center align-items-center">
+                                        <div class="container d-flex flex-column align-items-center" style="height:65%">
+                                            <div class="h-25">X</div>
+                                            <div class="icon h-25">1</div>
+                                            <div class="tab w-100 h-50 d-flex justify-content-center">
+                                                <div class="txt-wrap d-flex w-100">
+                                                    <div class="txt">
+                                                        <h3>블랙</h3>
+                                                        <div>
+                                                            빠른 이동이 필요할 떄 부르면 바로 오는 블루를 불러보세요.<br>
+                                                            전문교육을 이수한 친절한 기사님이 운행하는 쾌적한 차량이 찾아가요!<br>
+                                                            블루는 기사님에게 목적지가 표시되지 않은 카카오 T의 자동 배차 시스템이 적용됩니다.
+                                                        </div>
+                                                    </div>
                                                 </div>
-                                                <div class="txt text-right">
-                                                    예상 19,500원
+                                            </div>
+                                        </div>
+                                        <div class="p-3 w-100 bg-secondary bg-opacity-10" style="height:35%">
+                                            <div class=" h-100 d-flex flex-column align-items-center">
+                                                <div class="w-100 h-25 d-flex justify-content-between">
+                                                    <ul class="nav justify-content-center">
+                                                        <li class="nav-item">
+                                                            <a class="nav-link active p-2" aria-current="page">자동결제 등록</a>
+                                                        </li>
+                                                    </ul>
+                                                    <ul class="nav justify-content-center">
+                                                        <li class="nav-item">
+                                                            <a class="nav-link disabled p-2">쿠폰·포인트 0P</a>
+                                                        </li>
+                                                    </ul>
+                                                </div>
+                                                <div class="w-100 h-75 border-top pt-3">
+                                                    <div class="h-50 d-flex justify-content-between align-items-center">
+                                                        <ul class="nav justify-content-center align-items-center">
+                                                            <li class="nav-item">
+                                                                <a class="nav-link disabled active p-2" aria-current="page">본인탑승 &gt;</a>
+                                                            </li>
+                                                        </ul>
+                                                        <ul class="nav flex-column align-items-end">
+                                                            <li class="nav-item d-flex">
+                                                                <div>예상</div>
+                                                                <h4>13,900원</h4>
+                                                            </li>
+                                                            <li class="nav-item">
+                                                                <div>지도</div>
+                                                            </li>
+                                                        </ul>
+                                                    </div>
+                                                    <button type="button" class="btn btn-primary w-100 mt-2">
+                                                        호출하기
+                                                    </button>
                                                 </div>
                                             </div>
                                         </div>
@@ -292,49 +343,27 @@
                                 </div>
                             </div>
                         </div>
-<!------------------------------ page 6 ------------------------------>
-<div class="page" id="p6">
-    <div class="page_wrap">
-        <h1 class="pg_title" style="color: #fff;">Page6</h1>
-    </div>
-</div>
-<!------------------------------ page 7 ------------------------------>
-<div class="page" id="p7">
-    <div class="page_wrap">
-        <h1 class="pg_title" style="color: #fff;">Page7</h1>
-    </div>
-</div>
-
-
+                        <!------------------------------ page 6 ------------------------------>
+                        <div class="page" id="p6">
+                            <div class="page_wrap">
+                                <!-- <h1 class="pg_title" style="color: #fff;">Page6</h1> -->
+                                    <h1 class="title_h1">완료화면</h1>
+                            </div>
+                        </div>
                     </main>
-                    <div class="ctrlbar">
-                        <div class="baricon_wrap prev">
-                            <div class="baricon"></div>
-                            <div class="bartext">이전</div>
-                        </div>
-                        <div class="baricon_wrap">
-                            <div class="baricon"></div>
-                            <div class="bartext">멈춤</div>
-                        </div>
-                        <div class="baricon_wrap">
-                            <div class="baricon"></div>
-                            <div class="bartext">힌트</div>
-                        </div>
-                        <div class="baricon_wrap">
-                            <div class="baricon"></div>
-                            <div class="bartext">크기</div>
-                        </div>
-                        <div class="baricon_wrap next">
-                            <div class="baricon"></div>
-                            <div class="bartext">다음</div>
-                        </div>
+
+                    <div class="ctrlbar" id="ctrlbar">
+                        <button type="button" class="btn btn-lg btn-dark" id="start-btn">시작하기</button>
                     </div>
+
                 </div>
+
             </div>
         </div>
     </div>
-
-    <script src="test.js"> </script>
+    </div>
+    <script src="pg_info.js"> </script>
+    <script src="pg_handler.js"> </script>
 </body>
 
 </html>
