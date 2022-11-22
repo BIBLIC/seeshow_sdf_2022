@@ -1,4 +1,4 @@
-var total_page = 5;//페이지 수 -> 시나리오마다 total_page 수 바꾸기 
+var total_page = 6;//페이지 수 -> 시나리오마다 total_page 수 바꾸기 
 
 
 //정답 처리할 영역 클래스 명
@@ -6,26 +6,37 @@ var total_page = 5;//페이지 수 -> 시나리오마다 total_page 수 바꾸�
 const pageClickArea = [
     {
         page: 0,
-        correctAnswer: "title_h1"
+        correctAnswer: "pg_0_answer"
     },
     {
         page: 1,
-        correctAnswer: "banner"
+        correctAnswer: "pg_1_answer"
     },
     {
         page: 2,
-        correctAnswer: "pg2_answer",
+        correctAnswer: "pg_2_answer"
     },
     {
         page: 3,
-        correctAnswer: "title_h1"
+        correctAnswer: "pg_3_answer"
     },
     {
         page: 4,
-        correctAnswer: "title_h1",
+        correctAnswer: "pg_4_answer"
+    },
+    {
+        page: 5,
+        correctAnswer: "pg_5_answer"
+    },
+    {
+        page: 6,
+        correctAnswer: "pg_6_answer"
     },
 ];
 
-const ctrlBtnNames = [
-    "prev_btn","pause_btn","hint_btn","size_btn","next_btn"
-]
+const inputAnswer = [
+    {
+        page: 2,
+        correctAnswer: "출발"
+    },
+];
