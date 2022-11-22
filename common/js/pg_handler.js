@@ -3,7 +3,13 @@ var page_num = 0;
 const prevBtn = document.getElementById("prev");
 const nextBtn = document.getElementById("next");
 const ctrlbar = document.querySelector('.ctrlbar');
+const textModal = document.getElementById("textModal");
+const size_btn = document.getElementById("size_btn");
 
+
+//popovers 초기화 작업
+const popoverTriggerList = document.querySelectorAll('[data-bs-toggle="popover"]')
+const popoverList = [...popoverTriggerList].map(popoverTriggerEl => new bootstrap.Popover(popoverTriggerEl))
 
 //*******************************************************************************
 //**************************+   이벤트 동작   +*********************************** 
@@ -47,8 +53,12 @@ $('#start-btn').click(function () {
                 <div class="baricon"></div>
                 <div class="bartext">힌트</div>
             </div>
-            <div class="baricon_wrap" id="size_btn">
-                <div class="baricon"></div>
+            <div class="baricon_wrap" id="size_btn" >
+                <select class="form-select form-select-lg mb-2" aria-label=".form-select-lg example">
+                    <option selected>T</option>
+                    <option value="1">One</option>
+                    <option value="2">Two</option>
+                </select>
                 <div class="bartext">크기</div>
             </div>
             <div class="baricon_wrap next" id="next_btn">
@@ -60,19 +70,19 @@ $('#start-btn').click(function () {
     ctrlbar.innerHTML = ctrlBar_inner;
 
     //시작하기 버튼 클릭 후 페이지 1로 전환되게 하기
-        page_num = 1;
-        $(".active").removeClass("active");//active 클래스에서 'active'클래스 제거하고 -> 없어도 되는 코드
-        $("#p" + page_num).addClass("active");//클릭한 곳에 'active' 클래스 추가
-        $(".pactive").fadeOut(0).promise().done(function () {//pactive -> active 추가된 p?
-            //promise() -> 자바스크립트 비동기 처리에 사용되는 객체 -> fadeout 완료 후 실행되는 함수
-            //.toggleClass('추가클래스') //해당 jquery로 가져온 요소를 클릭마다 클래스를 추가하고 삭제.
-            $(".pactive").toggleClass("pactive");
-            $("#p" + page_num).toggleClass("pactive");
-            $(".pactive").fadeIn(0);
-        });
-        console.log(page_num);//나중에 다 지우기
-        audioArray[page_num - 1].load();// 해당 페이지 오디오 로딩
-        audioArray[page_num - 1].play();// 해당 페이지 오디오 재생
+    page_num = 1;
+    $(".active").removeClass("active");//active 클래스에서 'active'클래스 제거하고 -> 없어도 되는 코드
+    $("#p" + page_num).addClass("active");//클릭한 곳에 'active' 클래스 추가
+    $(".pactive").fadeOut(0).promise().done(function () {//pactive -> active 추가된 p?
+        //promise() -> 자바스크립트 비동기 처리에 사용되는 객체 -> fadeout 완료 후 실행되는 함수
+        //.toggleClass('추가클래스') //해당 jquery로 가져온 요소를 클릭마다 클래스를 추가하고 삭제.
+        $(".pactive").toggleClass("pactive");
+        $("#p" + page_num).toggleClass("pactive");
+        $(".pactive").fadeIn(0);
+    });
+    console.log(page_num);//나중에 다 지우기
+    audioArray[page_num - 1].load();// 해당 페이지 오디오 로딩
+    audioArray[page_num - 1].play();// 해당 페이지 오디오 재생
 });
 
 
@@ -129,18 +139,39 @@ $(document).on("click", "#pause_btn", function () {
 });
 
 
+//크기 버튼 : 클릭 시 텍스트 모달 띄우기
+// $(document).on("click", "#size_btn", function () {
+//     $('#textModal').modal('show');
+//     $('.modal-backdrop').remove();
+// });
+
+// 크기 모달 팝오버
+// const { createPopper } = Popper;
+// createPopper(size_btn, textModal, {
+//     placement: 'top',
+//     modifiers: [
+//         {
+//             name: 'offset',
+//             options: {
+//                 offset: [0,0],
+//             },
+//         },
+//     ],
+// });
+
+
 function next(page_num) {
     console.log('cc');
-        page_num += 1;
-        $(".active").removeClass("active");//active 클래스에서 'active'클래스 제거하고 -> 없어도 되는 코드
-        $("#p" + page_num).addClass("active");//클릭한 곳에 'active' 클래스 추가
-        $(".pactive").fadeOut(0).promise().done(function () {//pactive -> active 추가된 p?
-            //promise() -> 자바스크립트 비동기 처리에 사용되는 객체 -> fadeout 완료 후 실행되는 함수
-            //.toggleClass('추가클래스') //해당 jquery로 가져온 요소를 클릭마다 클래스를 추가하고 삭제.
-            $(".pactive").toggleClass("pactive");
-            $("#p" + page_num).toggleClass("pactive");
-            $(".pactive").fadeIn(0);
-        });
+    page_num += 1;
+    $(".active").removeClass("active");//active 클래스에서 'active'클래스 제거하고 -> 없어도 되는 코드
+    $("#p" + page_num).addClass("active");//클릭한 곳에 'active' 클래스 추가
+    $(".pactive").fadeOut(0).promise().done(function () {//pactive -> active 추가된 p?
+        //promise() -> 자바스크립트 비동기 처리에 사용되는 객체 -> fadeout 완료 후 실행되는 함수
+        //.toggleClass('추가클래스') //해당 jquery로 가져온 요소를 클릭마다 클래스를 추가하고 삭제.
+        $(".pactive").toggleClass("pactive");
+        $("#p" + page_num).toggleClass("pactive");
+        $(".pactive").fadeIn(0);
+    });
     console.log(page_num);
     audioArray[page_num - 1].load();
     audioArray[page_num - 1].play();
@@ -161,7 +192,7 @@ document.querySelector("main").addEventListener("click", function (e) {//메인 
             let clickableArea = pageClickArea[i].correctAnswer;
             console.log("현재 페이지 ", page_num, "정답은", clickableArea); //마지막에 모두 지우기
             //alert(answer);
-            console.log("클릭한 요소는 ",e.target.className);
+            console.log("클릭한 요소는 ", e.target.className);
 
 
             if (e.target.className.includes(clickableArea)) {
