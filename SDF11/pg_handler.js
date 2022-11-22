@@ -17,7 +17,7 @@ $(document).ready(function () {
 //오디오 배열 선언, 페이지 수 대로 배열에 mp3 넣기
 const audioArray = [];
 for (j = 1; j <= total_page; j++) {
-    audio = new Audio(`${j}.mp3`);
+    audio = new Audio(`../TEST_hy/${j}.mp3`);
     audioArray.push(audio);
 }
 

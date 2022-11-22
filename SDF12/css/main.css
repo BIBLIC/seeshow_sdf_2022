@@ -149,11 +149,15 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    border-bottom: 1px solid #e0e0e0;
 }
+#p4 .under_bar .tab:not(:last-child) {
+    border-bottom: 1px solid #e0e0e0;
+  }
+  
 
 #p4 .under_bar .tab .txt-wrap .txt {
-    padding: .7em;
+    padding-left: .7em;
+    padding-right: .7em;
 }
 
 #p4 .under_bar .tab .txt-wrap .text-left {
