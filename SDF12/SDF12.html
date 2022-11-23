@@ -1,24 +1,23 @@
 <!DOCTYPE html>
 <html>
 
-<head>
-    <meta name="viewport" content="width=device-width,height=640,initial-scale=1.0,minimum-scale=1.0,maximum-scale=1.0">
-    <title>jQuery active test</title>
-    <link href="../common/styles/reset.css" rel="stylesheet" />
-    <link href="./css/main.css" rel="stylesheet" />
-    <link href="../common/styles/layout.css" rel="stylesheet" />
-    <link href="../common/styles/animate.css" rel="stylesheet" />
-    <script src="https://unpkg.com/@popperjs/core@2"></script>
-    <script src="https://code.jquery.com/jquery-3.6.1.min.js"></script>
-    <!-- CSS only -->
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet"
-        integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" crossorigin="anonymous">
-    <!-- JavaScript Bundle with Popper -->
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js"
-        integrity="sha384-OERcA2EqjJCMA+/3y+gxIOqMEjwtxJY7qPCqsdltbNJuaOe923+mo//f6V8Qbsw3"
-        crossorigin="anonymous"></script>
-
-</head>
+    <head>
+        <meta name="viewport" content="width=device-width,height=640,initial-scale=1.0,minimum-scale=1.0,maximum-scale=1.0">
+        <title>SDF</title>
+        <link href="../common/styles/reset.css" rel="stylesheet" />
+        <link href="./css/main.css" rel="stylesheet" />
+        <link href="../common/styles/layout.css" rel="stylesheet" />
+        <link href="../common/styles/animate.css" rel="stylesheet" />
+        <!-- CSS only -->
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet"
+            integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" crossorigin="anonymous">
+        <!-- JavaScript Bundle with Popper -->
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js"
+            integrity="sha384-OERcA2EqjJCMA+/3y+gxIOqMEjwtxJY7qPCqsdltbNJuaOe923+mo//f6V8Qbsw3"
+            crossorigin="anonymous"></script>
+        <script src="https://code.jquery.com/jquery-3.6.1.min.js"></script>
+    </head>
+    
 
 <body>
     <div class="bg_phone">
@@ -142,66 +141,68 @@
                         <div class="page" id="p2">
                             <div class="page_wrap">
                                 <h1 class="pg_title" style="color: #fff;">Page1</h1>
-                                <div class="pg_top">
-                                    <div class="back_btn" style="box-shadow:0 0 0;">
-                                        <div>&lt;</div>
-                                    </div>
-                                    <div class="search_area">
-                                        <nav class="navbar">
-                                            <div class="container-fluid">
-                                                <form class="d-flex form departures" role="search">
-                                                    <div class="form-control me-2 bg-secondary bg-opacity-10">내위치
-                                                    </div>
-                                                    <!-- <button class="btn btn-outline-success" type="submit">Search</button> -->
-                                                </form>
-                                                <form class="d-flex form arrivals" role="search">
-                                                    <input class="form-control me-2" type="search" placeholder="도착지"
-                                                        aria-label="Search">
-                                                    <!-- <button class="btn btn-outline-success" type="submit">Search</button> -->
-                                                </form>
-                                            </div>
-                                        </nav>
-                                    </div>
-                                    <div class="d-flex justify-content-between">
-                                        <ul class="nav justify-content-center">
-                                            <li class="nav-item">
-                                                <a class="nav-link active" aria-current="page">집</a>
-                                            </li>
-                                            <li class="nav-item">
-                                                <a class="nav-link">회사</a>
-                                            </li>
-                                        </ul>
-                                        <ul class="nav justify-content-center">
-                                            <li class="nav-item">
-                                                <a class="nav-link">내위치</a>
-                                            </li>
-                                            <li class="nav-item">
-                                                <a class="nav-link disabled">지도</a>
-                                            </li>
-                                        </ul>
-                                    </div>
-                                    <div class="w-100 bg-secondary bg-opacity-10 border-top border-bottom border-secondary border-opacity-25"
-                                        style="height: .5em;"></div>
+                                <div class="page_wrap">
+                                    <div class="pg_top">
+                                        <div class="back_btn" style="box-shadow:0 0 0;">
+                                            <div>&lt;</div>
+                                        </div>
+                                        <div class="search_area">
+                                            <nav class="navbar">
+                                                <div class="container-fluid">
+                                                    <form class="d-flex form departures" role="search">
+                                                        <div class="form-control me-2 bg-secondary bg-opacity-10">내위치
+                                                        </div>
+                                                        <!-- <button class="btn btn-outline-success" type="submit">Search</button> -->
+                                                    </form>
+                                                    <form class="d-flex form arrivals" role="search">
+                                                        <input class="form-control me-2" type="search" placeholder="도착지"
+                                                            aria-label="Search">
+                                                        <!-- <button class="btn btn-outline-success" type="submit">Search</button> -->
+                                                    </form>
+                                                </div>
+                                            </nav>
+                                        </div>
+                                        <div class="d-flex justify-content-between">
+                                            <ul class="nav justify-content-center">
+                                                <li class="nav-item">
+                                                    <a class="nav-link active" aria-current="page">집</a>
+                                                </li>
+                                                <li class="nav-item">
+                                                    <a class="nav-link">회사</a>
+                                                </li>
+                                            </ul>
+                                            <ul class="nav justify-content-center">
+                                                <li class="nav-item">
+                                                    <a class="nav-link">내위치</a>
+                                                </li>
+                                                <li class="nav-item">
+                                                    <a class="nav-link disabled">지도</a>
+                                                </li>
+                                            </ul>
+                                        </div>
+                                        <div class="w-100 bg-secondary bg-opacity-10 border-top border-bottom border-secondary border-opacity-25"
+                                            style="height: .5em;"></div>
 
-                                    <div class="container pt-3">
-                                        <div class="banner"></div>
-                                    </div>
+                                        <div class="container pt-3">
+                                            <div class="banner"></div>
+                                        </div>
 
-                                    <div class="container pt-3">
-                                        <ul class="nav d-flex flex-column justify-content-center">
-                                            <li class="nav-item">
-                                                <a class="nav-link">1</a>
-                                            </li>
-                                            <li class="nav-item">
-                                                <a class="nav-link">2</a>
-                                            </li>
-                                            <li class="nav-item">
-                                                <a class="nav-link">3</a>
-                                            </li>
-                                            <li class="nav-item">
-                                                <a class="nav-link disabled">4</a>
-                                            </li>
-                                        </ul>
+                                        <div class="container pt-3">
+                                            <ul class="nav d-flex flex-column justify-content-center">
+                                                <li class="nav-item">
+                                                    <a class="nav-link">1</a>
+                                                </li>
+                                                <li class="nav-item">
+                                                    <a class="nav-link">2</a>
+                                                </li>
+                                                <li class="nav-item">
+                                                    <a class="nav-link">3</a>
+                                                </li>
+                                                <li class="nav-item">
+                                                    <a class="nav-link disabled">4</a>
+                                                </li>
+                                            </ul>
+                                        </div>
                                     </div>
                                 </div>
                             </div>
@@ -330,8 +331,7 @@
                                                 <div class="w-100 h-25 d-flex justify-content-between">
                                                     <ul class="nav justify-content-center">
                                                         <li class="nav-item">
-                                                            <a class="nav-link active p-2" aria-current="page">자동결제
-                                                                등록</a>
+                                                            <a class="nav-link active p-2" aria-current="page">자동결제 등록</a>
                                                         </li>
                                                     </ul>
                                                     <ul class="nav justify-content-center">
@@ -344,8 +344,7 @@
                                                     <div class="h-50 d-flex justify-content-between align-items-center">
                                                         <ul class="nav justify-content-center align-items-center">
                                                             <li class="nav-item">
-                                                                <a class="nav-link disabled active p-2"
-                                                                    aria-current="page">본인탑승 &gt;</a>
+                                                                <a class="nav-link disabled active p-2" aria-current="page">본인탑승 &gt;</a>
                                                             </li>
                                                         </ul>
                                                         <ul class="nav flex-column align-items-end">
@@ -372,14 +371,56 @@
                         <div class="page" id="p6">
                             <div class="page_wrap">
                                 <!-- <h1 class="pg_title" style="color: #fff;">Page6</h1> -->
-                                <h1 class="title_h1">완료화면</h1>
+                                    <h1 class="title_h1">완료화면</h1>
                             </div>
                         </div>
                     </main>
 
-                    <div class="ctrlbar" id="ctrlbar">
-                        <button type="button" class="btn btn-lg btn-dark" id="start-btn">시작하기</button>
-                </div>
+                     <div class="ctrlbar" id="ctrlbar">
+                        <div class="start_btn_wrap">
+                            <button type="button" class="btn btn-lg btn-dark" id="start-btn">시작하기</button>
+                        </div>
+                        <div class="nav_btn_wrap">
+                            <div class="baricon_wrap prev" id="prev_btn">
+                                <div class="baricon"></div>
+                                <div class="bartext">이전</div>
+                            </div>
+                            <div class="baricon_wrap pause" id="pause_btn">
+                                <!--추가하기 -->
+                                <div class="baricon"></div>
+                                <div class="bartext">멈춤</div>
+                            </div>
+                            <div class="baricon_wrap" id="hint_btn">
+                                <div class="baricon"></div>
+                                <div class="bartext">힌트</div>
+                            </div>
+                            <div class="baricon_wrap" id="size_btn" >
+                                <a id="tSlider"
+                                        class="btn btn-lg baricon" 
+                                        role="button" 
+                                        data-bs-toggle="popover"></a>
+                                <div class="bartext">크기</div>
+                            </div>
+                            <div class="baricon_wrap next" id="next_btn">
+                                <div class="baricon"></div>
+                                <div class="bartext">다음</div>
+                            </div>
+                        </div>
+                        <!-- popover : slider --------------- -->
+                            <div hidden>
+                                <div data-name="popover-content">
+                    
+                                    <!-- /////////////// -->
+                    
+                                            <!-- <input type="range" name="slider" id="slider" value="0" min="0" max="2"  /> -->
+                                            <input type="range" min="0" max="2" value="0" class="slider" id="tSliderRange">
+                                            <!-- <p>Value: <span id="value"></span></p> -->
+                    
+                    
+                                    <!-- /////////////// -->
+                                </div>
+                            </div>
+                    </div>
 
             </div>
         </div>
@@ -387,6 +428,7 @@
     </div>
     <script src="pg_info.js"> </script>
     <script src="../common/js/pg_handler.js"> </script>
+    <!-- <script type="text/javascript" src="bootstrap-slider.js"></script> -->
 </body>
 
 </html>

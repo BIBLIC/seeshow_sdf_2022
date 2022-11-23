@@ -2,9 +2,16 @@ var page_num = 0;
 
 const prevBtn = document.getElementById("prev");
 const nextBtn = document.getElementById("next");
+
 const ctrlbar = document.querySelector('.ctrlbar');
+//const start_btn_wrap = document.querySelector('.start_btn_wrap');
+//const nav_btn_wrap = document.querySelector('.nav_btn_wrap');
+
 const textModal = document.getElementById("textModal");
 const size_btn = document.getElementById("size_btn");
+$('.nav_btn_wrap').css('display', 'none');
+
+
 
 
 //popovers 초기화 작업
@@ -16,6 +23,7 @@ const popoverList = [...popoverTriggerList].map(popoverTriggerEl => new bootstra
 
 //페이지 로드 시 전체 동작 코드 (DOM 로딩 후 동작)
 $(document).ready(function () {
+    //$('.nav_btn_wrap').css('display', 'none');
     firstPageLoader();
     console.log(audioArray);
 });
@@ -38,36 +46,13 @@ function firstPageLoader() {
 
 //시작하기 버튼 클릭 후 컨트롤 바 내부 변경
 $('#start-btn').click(function () {
-    var ctrlBar_inner = [
-        `
-            <div class="baricon_wrap prev" id="prev_btn">
-                <div class="baricon"></div>
-                <div class="bartext">이전</div>
-            </div>
-            <div class="baricon_wrap pause" id="pause_btn">
-                <!--추가하기 -->
-                <div class="baricon"></div>
-                <div class="bartext">멈춤</div>
-            </div>
-            <div class="baricon_wrap" id="hint_btn">
-                <div class="baricon"></div>
-                <div class="bartext">힌트</div>
-            </div>
-            <div class="baricon_wrap" id="size_btn" >
-                <select class="form-select form-select-lg mb-2" aria-label=".form-select-lg example">
-                    <option selected>T</option>
-                    <option value="1">One</option>
-                    <option value="2">Two</option>
-                </select>
-                <div class="bartext">크기</div>
-            </div>
-            <div class="baricon_wrap next" id="next_btn">
-                <div class="baricon"></div>
-                <div class="bartext">다음</div>
-            </div>
-        `
-    ]
-    ctrlbar.innerHTML = ctrlBar_inner;
+    console.log('클릭');
+
+    $('.nav_btn_wrap').css('display', 'block');
+    //$('.nav_btn_wrap').css('display', 'flex');
+    $('.start_btn_wrap').css('display', 'none');
+    //$('.nav_btn_wrap').unwrap();
+    $('.nav_btn_wrap').contents().unwrap();
 
     //시작하기 버튼 클릭 후 페이지 1로 전환되게 하기
     page_num = 1;
@@ -160,6 +145,60 @@ $(document).on("click", "#pause_btn", function () {
 // });
 
 
+
+
+
+
+//텍스트 크기 조절 버튼 클릭 시 토글 뜰 수 있게
+var options = {
+    html: true,
+    // title: "Optional: HELLO(Will overide the default-the inline title)",
+
+    content: $('[data-name="popover-content"]')
+
+}
+
+//토글 안에 슬라이더 넣기
+var tSliderEl = document.getElementById('tSlider')
+var popover = new bootstrap.Popover(tSliderEl, options)
+var slider = document.getElementById("tSliderRange");
+var output = document.getElementById("value");
+
+//슬라이더 바에 맞추어 텍스트 사이즈 조절
+var $txt_area = $(".main");
+//$txt_area.css("background-color","black");
+var currentSize = $txt_area.css("font-size");   /* 폰트사이즈를 알아낸다. */
+var num = parseFloat(currentSize, 10); /* parseFloat()은 숫자가 아니면 숫자가 아니라는 뜻의 NaN을 반환한다. */
+var unit = currentSize.slice(-2);   /* 끝에서부터 두자리의 문자를 가져온다. */
+console.log("현재 텍스트 사이즈",currentSize);
+console.log("num",num);
+var textSizeValue=0;
+//output.innerHTML = slider.value;//슬라이더 값 출력할 곳
+slider.oninput = function () {
+    // output.innerHTML = this.value;
+    textSizeValue = this.value;
+    console.log("슬라이더 값", textSizeValue);
+    console.log("현재 텍스트 사이즈",currentSize);
+    console.log("num",num);
+
+    if (textSizeValue == "0") {
+        $txt_area.css("fontSize", "1em");
+    } else if (textSizeValue == "1") {
+        $txt_area.css("fontSize", "1.2em");
+    } else if (textSizeValue == "2") {
+        $txt_area.css("fontSize", "1.4em");
+    }
+    
+}
+
+
+
+
+
+
+
+
+//다음으로 가기 함수 
 function next(page_num) {
     console.log('cc');
     page_num += 1;
