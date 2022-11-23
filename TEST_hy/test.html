@@ -1,29 +1,53 @@
 <!DOCTYPE html>
-<html lang="en">
+<html>
 
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Momentum App</title>
-    <link rel="stylesheet" href="css/style.css">
+    <meta name="viewport" content="width=device-width,height=640,initial-scale=1.0,minimum-scale=1.0,maximum-scale=1.0">
+    <title>test of test</title>
+    <link href="test.css" rel="stylesheet" />
+
+    <!-- CSS only -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" crossorigin="anonymous">
+    <!-- JavaScript Bundle with Popper -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-OERcA2EqjJCMA+/3y+gxIOqMEjwtxJY7qPCqsdltbNJuaOe923+mo//f6V8Qbsw3"
+        crossorigin="anonymous"></script>
+    <script src="https://code.jquery.com/jquery-3.6.1.min.js"></script>
 </head>
 
 <body>
-  <div class="js-clock">
-    <h1>00:00</h1>
-  </div>
-  <form class="js-form form">
-    <input type="text" placeholder="당신의 이름은?" />
-  </form>
-  <h4 class="js-greetings greetings"></h4>
-  <button type="submit" class="js-logout logout" onclick="removeName()">로그아웃</button>
-  <form class="js-toDoForm">
-    <input type="text" placeholder="Write a to do" />
-  </form>
-  <ul class="js-toDoList"></ul>
-  <script src="test.js"></script>
+  <div class="container">
+    <!-- Popover #1 -->
+<a href="#" class="btn btn-primary" tabindex="0" data-toggle="popover" data-trigger="focus" data-popover-content="#a1" data-placement="top">Popover Example</a>
 
+<hr>
+
+<!-- Popover #2 -->
+<a href="#" class="btn btn-primary" tabindex="0" data-toggle="popover" data-trigger="focus" data-popover-content="#a2">Popover Example</a>
+
+
+
+<!-- Content for Popover #1 -->    
+<div id="a1" class="hidden">
+    <div class="popover-heading">This is the heading for #1</div>
+    
+    <div class="popover-body">This is the body for #1</div>
+</div>   
+    
+<!-- Content for Popover #2 -->
+<div id="a2" class="hidden">
+    <div class="popover-heading">This is the heading for #2</div>
+    
+    <div class="popover-body">This is the body for #2<br>
+        With <b>html</b> content    
+    </div>
+</div>    
+  </div>
+  
+  
+    <script src="test.js"> </script>
+    
 </body>
 
 </html>
