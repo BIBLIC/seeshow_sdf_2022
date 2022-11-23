@@ -3,8 +3,29 @@
   min-height: 6vh;
 }
 
+.under_bar .btn {
+  min-height: 8vh;
+}
+
 .btn-y {
-  background: #FAE100;
+  background: #FAE100!important;
+}
+
+.btn-b {
+  color: #fff!important;
+  background: #014B98!important;
+}
+
+.pop {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  width: 80%;
+  min-height: 60%;
+  background-color: #fff;
+  border-radius: 10px;
+  box-shadow: 0 2px 55px -25px rgb(0 0 0 / 100%);
 }
 
 /* -------------------------------------------------------------------------------------- */
@@ -216,6 +237,7 @@ p {
 
 .form{
   width: 100%;
+  min-height: 6vh;
   padding-top: .5em;
   padding-bottom: .5em;
 }
