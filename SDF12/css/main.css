@@ -114,6 +114,11 @@
     background: #fff;
 }
 
+#p3 .btn,
+#p5 .btn {
+    min-height: 6vh;
+}
+
 #p4 .top_bar {
     position: absolute;
     left: 0; right: 0; top: 5%;

@@ -125,6 +125,46 @@
     background: #fff;
 }
 
+#p3 .btn {
+    min-height: 6vh;
+}
+
+#p3 .tab_bar .tab{
+    padding: .5em;
+}
+
+#p3 .tab_bar .t1 {
+    border-bottom: 2px solid #000;
+}
+
+#p3 .tab_bar.picker{
+    padding-top: 1em;
+    padding-bottom: 1em;
+    padding-left: 2em;
+    padding-right: 1.5em;
+}
+
+#p3 .tab_bar.picker .tab,
+#p3 .tab_bar.picker .tab .tab_content,
+#p3 .tab_bar.picker .tab .tab_content > div,
+#p3 .tab_bar.picker .tab .tab_content > h4 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#p3 .tab_bar.picker .tab{
+    width: 100%;
+}
+
+#p3 .tab_bar.picker .tab .tab_content > div {
+    width: 30%;
+}
+
+#p3 .tab_bar.picker .tab .tab_content > h4 {
+    width: 30%;
+}
+
 #p4 .container .tab {
     padding-top: .5em;
     padding-bottom: .5em;
