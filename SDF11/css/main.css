@@ -127,6 +127,8 @@
     min-height: 60%;
     background-color: #fff;
     border-radius: 30px;
+    padding-top: 1em;
+    padding-bottom: 1em;
     padding-left: 2em;
     padding-right: 2em;
     box-shadow: 0 2px 55px -25px rgb(0 0 0 / 100%);
