@@ -16,6 +16,15 @@
   background: #014B98!important;
 }
 
+.modal .modal-footer,
+.modal .modal-footer .btn {
+  width: 100%;
+}
+
+.modal .modal-footer .btn {
+  min-height: 5vh;
+}
+
 .pop {
   display: flex;
   flex-direction: column;

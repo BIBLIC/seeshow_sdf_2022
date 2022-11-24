@@ -51,31 +51,31 @@ const inputAnswer = [
 const modalCont = [
     {
         page: 0,
-        instruction: "pg_0_answer"
+        instruction: "'시작하기' 버튼을 클릭하세요."
     },
     {
         page: 1,
-        instruction: "pg_1_answer"
+        instruction: "택시 아이콘을 클릭하세요."
     },
     {
         page: 2,
-        instruction: "pg_2_answer"
+        instruction: "도착지에 '서울디지털재단'을 입력하세요."
     },
     {
         page: 3,
-        instruction: "pg_3_answer"
+        instruction: "하단의 '출발지로 설정 버튼을 클릭하세요."
     },
     {
         page: 4,
-        instruction: "pg_4_answer"
+        instruction: "'일반호출' 탭을 클릭하세요."
     },
     {
         page: 5,
-        instruction: "pg_5_answer"
+        instruction: "하단의 '호출하기 버튼을 클릭하세요."
     },
     {
         page: 6,
-        instruction: "pg_6_answer"
+        instruction: "마지막 페이지"
     },
 ];
 

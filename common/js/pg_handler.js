@@ -139,6 +139,7 @@ $('.play').css('display', 'none');
 $(document).on("click", "#pause_btn", function () {
     $('.stop').css('display', 'none');
     $('.play').css('display', 'block');
+    $('.play').css('display', 'flex');
     audioArray[page_num - 1].pause();
 });
 
@@ -146,9 +147,9 @@ $(document).on("click", "#pause_btn", function () {
 $(document).on("click", "#play_btn", function () {
     $('.stop').css('display', 'block');
     $('.play').css('display', 'none');
+    $('.stop').css('display', 'flex');
     audioArray[page_num - 1].play();
 });
-
 
 
 
@@ -225,6 +226,7 @@ $('#hint_btn').click(function () {
 function next(page_num) {
     console.log('cc');
     page_num += 1;
+    
     $(".active").removeClass("active");//active 클래스에서 'active'클래스 제거하고 -> 없어도 되는 코드
     $("#p" + page_num).addClass("active");//클릭한 곳에 'active' 클래스 추가
     $(".pactive").fadeOut(0).promise().done(function () {//pactive -> active 추가된 p?
@@ -240,6 +242,7 @@ function next(page_num) {
     if (page_num > 1) {
         audioArray[page_num - 2].pause();
     }
+    
 
 }
 
@@ -263,6 +266,14 @@ document.querySelector("main").addEventListener("click", function (e) {//메인 
                 $('#staticBackdrop').modal('show');
             }
 
+
+            let instruction = modalCont[i].instruction;
+            console.log("현재 페이지 ", page_num, "지시는", instruction); //마지막에 모두 지우기
+            $('.modal-body').text(instruction);
+            
+            
+            
+            
             //let answer = inputAnswer[i].correctAnswer;
 
             // document.querySelector(".input_answer").addEventListener("keydown", function (e) {
