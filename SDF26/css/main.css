@@ -1,13 +1,11 @@
 #p1 .pg_top {
     width: 100%;
     height: auto;
-    padding-left: 1.5em;
-    padding-right: 1.5em;
 }
-
+/* 
 #p1 .pg_top .top {
-    height: 25vh;
-}
+    height: 15vh;
+} */
 
 #p1 .pg_top .nav .nav-item {
     min-height: 3.5em;
@@ -15,5 +13,31 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
+}
 
+#p1 h2{
+    margin: 0;
+}
+
+#p1 .btn {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-radius: 0;
+    margin-right: 1em;
+    min-height: 5vh;
+}
+
+#p1 .btn .svg {
+    margin-left: 3em;
+}
+
+.giro.btn-b {
+    color: #fff!important;
+    background: #386CE2!important;
+  }
+
+.btn-outline-b {
+    border-color: #386CE2!important;
+    color: #386CE2!important;;
 }
