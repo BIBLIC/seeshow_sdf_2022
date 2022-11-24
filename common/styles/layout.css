@@ -35,34 +35,114 @@
 /* -------------------------------------------------------------------------------------- */
 /*희영 test*/
 
-.slider {
-  -webkit-appearance: none; /* 기본 CSS 스타일을 적용하지 않기 위해서 */
-  width: 100%; /* 슬라이더 길이 */
-  height: 5px; /* 슬라이더 두께 */
-  border-radius: 5px; /* 슬라이더 모서리를 약간 둥글게 */
-  background: #ccc; /* 슬라이더 색상 */
-  outline: none; /* 슬라이더 테두리 없이 */
+.show {display:block !important} /*보여주기*/
+.hide {display:none} /*숨기기*/
+
+
+.cursor_pos_1 ,
+.cursor_pos_2 ,
+.cursor_pos_3 ,
+.cursor_pos_4 ,
+.cursor_pos_5 ,
+.cursor_pos_6 ,
+.cursor_pos_7 ,
+.cursor_pos_8 ,
+.cursor_pos_9 ,
+.cursor_pos_10 ,
+.cursor_pos_11 
+{
+  position: relative;
+}/*페이지 수 만큼 추가...*/
+
+.cursor_wrap {
+  position: absolute;
+  top: 50%;
+  right: 1em;
+  overflow: visible;
 }
 
-/* 슬라이더 핸들(클릭해서 드래그하는 부분) 커스텀 
-(Chrome, Opera, Safari, Edge 브라우저를 위해서는 -webkit-을,
-Firefox 브라우저를 위해서는 -moz- 를 사용하세요 */
-.slider::-webkit-slider-thumb {
-  -webkit-appearance: none; /* 기본 CSS 스타일을 적용하지 않기 위해서 */
-  appearance: none; /* 기본 CSS 스타일을 적용하지 않기 위해서 */
-  width: 25px; /* 슬라이더 핸들 길이 */
-  height: 25px; /* 슬라이더 핸들 높이 */
-  border-radius: 50%; /* 핸들 모양을 원모양으로 만들기 위함 */
-  background: #50ab64; /* 슬라이더 핸들 색상 */
-  cursor: pointer; /* 슬라이더 핸들에 마우스를 갖다대면 포인터로 변경 */
+
+.cursor {
+  cursor: help;
+  display: inline-flex;
+  flex-direction: column;
+  z-index: 200;
+  position: absolute;
+  will-change: transform;
+  top: 0px;
+  left: 0px;
+  /* transform: translate3d(337px, 297px, 0px); */
 }
 
-.slider::-moz-range-thumb {
-  width: 25px; /* 슬라이더 핸들 길이 */
-  height: 25px; /* 슬라이더 핸들 높이 */
-  border-radius: 50%; /* 핸들 모양을 원모양으로 만들기 위함 */
-  background: #50ab64; /* 슬라이더 핸들 색상 */
-  cursor: pointer; /* 슬라이더 핸들에 마우스를 갖다대면 포인터로 변경 */
+.cursor_outer {
+  /* animation: 1.2s ease-in-out 0s infinite normal none running joyride-beacon-inner; */
+  background-color: rgb(255, 0, 68);
+  border-radius: 50%;
+  display: block;
+  height: 70%;
+  left: 50%;
+  opacity: 0.7;
+  position: absolute;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  width: 70%;
+}
+
+.cursor_inner {
+  animation: 1.2s ease-in-out 0.2s infinite normal none running joyride-beacon-outer;
+  background-color: rgba(255, 0, 68, 0.2);
+  border: 2px solid rgb(255, 0, 68);
+  border-radius: 70%;
+  box-sizing: border-box;
+  display: block;
+  height: 100%;
+  left: 0px;
+  opacity: 0.9;
+  position: absolute;
+  top: 0px;
+  transform-origin: center center;
+  width: 100%;
+}
+
+.react-joyride__beacon {
+  background-color: transparent;
+  border: 0px;
+  border-radius: 0px;
+  color: rgb(85, 85, 85);
+  cursor: pointer;
+  font-size: 16px;
+  line-height: 1;
+  padding: 8px;
+  appearance: none;
+  display: inline-block;
+  height: 36px;
+  position: relative;
+  width: 36px;
+  z-index: 100;
+}
+
+@keyframes joyride-beacon-outer {
+  0% {
+    transform: scale(1);
+  }
+
+  45% {
+    opacity: 0.7;
+    transform: scale(2.5);
+  }
+
+  100% {
+    opacity: 0.9;
+    transform: scale(1);
+  }
+}
+
+.txt_ex1,.txt_ex2{
+  padding: 1em;
+}
+.txt_ex1 {
+  padding-left: 2em;
+  padding-right: 2em;
 }
 
 .slider {
@@ -272,13 +352,19 @@ p {
   padding: .5em;
 }
 
-.ctrlbar .baricon_wrap {
-  width: 20%;
+
+.ctrlbar .baricon_wrap,
+.ctrlbar .baricon_wrap .stop,
+.ctrlbar .baricon_wrap .play {
   height: 100%;
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
+}
+
+.ctrlbar .baricon_wrap {
+  width: 20%;
 }
 
 .ctrlbar .baricon_wrap .baricon{

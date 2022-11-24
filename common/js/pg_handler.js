@@ -1,4 +1,4 @@
-var page_num = 0;
+var page_num = 0; // 수정 XXX -> 맨 처음 페이지 초기화하기 위함
 
 const prevBtn = document.getElementById("prev");
 const nextBtn = document.getElementById("next");
@@ -42,7 +42,7 @@ function firstPageLoader() {
 
 
 //*******************************************************************************
-//**************************+    버튼 제어   +*********************************** 
+//**************************+    시작하기 버튼   +***********************************  
 
 //시작하기 버튼 클릭 후 컨트롤 바 내부 변경
 $('#start-btn').click(function () {
@@ -71,6 +71,11 @@ $('#start-btn').click(function () {
 });
 
 
+
+//*******************************************************************************
+//**************************+    다음 버튼   +*********************************** 
+
+
 //다음 버튼 : 클릭 시 페이지 이동, 해당 페이지오디오만 재생(배열 인덱스라 페이지 넘버-1) 
 $(document).on("click", "#next_btn", function () {
     //$('#next_btn').click(function () {
@@ -93,6 +98,11 @@ $(document).on("click", "#next_btn", function () {
         audioArray[page_num - 2].pause();
     }
 });
+
+
+//*******************************************************************************
+//**************************+    이전 버튼   +*********************************** 
+
 
 
 //이전 버튼
@@ -118,34 +128,32 @@ $(document).on("click", "#prev_btn", function () {
 });
 
 
+
+//*******************************************************************************
+//**************************+    정지 버튼   +*********************************** 
+
+
+$('.play').css('display', 'none');
+
 //정지 버튼
 $(document).on("click", "#pause_btn", function () {
+    $('.stop').css('display', 'none');
+    $('.play').css('display', 'block');
     audioArray[page_num - 1].pause();
 });
 
-
-//크기 버튼 : 클릭 시 텍스트 모달 띄우기
-// $(document).on("click", "#size_btn", function () {
-//     $('#textModal').modal('show');
-//     $('.modal-backdrop').remove();
-// });
-
-// 크기 모달 팝오버
-// const { createPopper } = Popper;
-// createPopper(size_btn, textModal, {
-//     placement: 'top',
-//     modifiers: [
-//         {
-//             name: 'offset',
-//             options: {
-//                 offset: [0,0],
-//             },
-//         },
-//     ],
-// });
+//재생 버튼
+$(document).on("click", "#play_btn", function () {
+    $('.stop').css('display', 'block');
+    $('.play').css('display', 'none');
+    audioArray[page_num - 1].play();
+});
 
 
 
+
+//*******************************************************************************
+//**************************+    사이즈 버튼   +*********************************** 
 
 
 
@@ -165,38 +173,53 @@ var slider = document.getElementById("tSliderRange");
 var output = document.getElementById("value");
 
 //슬라이더 바에 맞추어 텍스트 사이즈 조절
-var $txt_area = $(".main");
+var $txt_area = $(".fontSz");
 //$txt_area.css("background-color","black");
 var currentSize = $txt_area.css("font-size");   /* 폰트사이즈를 알아낸다. */
 var num = parseFloat(currentSize, 10); /* parseFloat()은 숫자가 아니면 숫자가 아니라는 뜻의 NaN을 반환한다. */
 var unit = currentSize.slice(-2);   /* 끝에서부터 두자리의 문자를 가져온다. */
-console.log("현재 텍스트 사이즈",currentSize);
-console.log("num",num);
-var textSizeValue=0;
+console.log("현재 텍스트 사이즈", currentSize);
+console.log("num", num);
+var textSizeValue = 0;
 //output.innerHTML = slider.value;//슬라이더 값 출력할 곳
 slider.oninput = function () {
     // output.innerHTML = this.value;
     textSizeValue = this.value;
     console.log("슬라이더 값", textSizeValue);
-    console.log("현재 텍스트 사이즈",currentSize);
-    console.log("num",num);
+    console.log("현재 텍스트 사이즈", currentSize);
+    console.log("num", num);
 
     if (textSizeValue == "0") {
-        $txt_area.css("fontSize", "1em");
+        //$txt_area.css("fontSize", "1em");
+        $txt_area.attr("style", "font-size: 1em !important");
     } else if (textSizeValue == "1") {
-        $txt_area.css("fontSize", "1.2em");
+        //$txt_area.css("fontSize", "1.2em");
+        $txt_area.attr("style", "font-size: 1.2rem !important");
     } else if (textSizeValue == "2") {
-        $txt_area.css("fontSize", "1.4em");
+        //$txt_area.css("fontSize", "1.4em");
+        $txt_area.attr("style", "font-size: 1.4em !important");
+
     }
-    
+
+
 }
 
 
+//*******************************************************************************
+//**************************+    힌트 버튼   +*********************************** 
+
+$(".cursor_wrap").css('display', 'none');
+
+//시작하기 버튼 클릭 후 컨트롤 바 내부 변경
+$('#hint_btn').click(function () {
+    console.log('zmfflr');
+    $(".cursor_wrap").toggleClass('show');
+})
 
 
 
-
-
+//*******************************************************************************
+//**************************+    클릭 제어   +*********************************** 
 
 //다음으로 가기 함수 
 function next(page_num) {
@@ -220,9 +243,6 @@ function next(page_num) {
 
 }
 
-
-//*******************************************************************************
-//**************************+    클릭 제어   +*********************************** 
 
 //특정 영역 외 클릭시 이벤트 처리 (class 명으로 가져오기)
 document.querySelector("main").addEventListener("click", function (e) {//메인 영역에서만 이벤트 발생
@@ -261,3 +281,7 @@ document.querySelector("main").addEventListener("click", function (e) {//메인 
         }
     }
 })
+
+
+
+
