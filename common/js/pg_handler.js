@@ -223,10 +223,9 @@ $('#hint_btn').click(function () {
 //**************************+    클릭 제어   +*********************************** 
 
 //다음으로 가기 함수 
-function next(page_num) {
+function next(real_pg) {
     console.log('cc');
     page_num += 1;
-    
     $(".active").removeClass("active");//active 클래스에서 'active'클래스 제거하고 -> 없어도 되는 코드
     $("#p" + page_num).addClass("active");//클릭한 곳에 'active' 클래스 추가
     $(".pactive").fadeOut(0).promise().done(function () {//pactive -> active 추가된 p?
@@ -247,27 +246,36 @@ function next(page_num) {
 }
 
 
+
+
+
 //특정 영역 외 클릭시 이벤트 처리 (class 명으로 가져오기)
 document.querySelector("main").addEventListener("click", function (e) {//메인 영역에서만 이벤트 발생
-    for (i = 0; i < pageClickArea.length; i++) {
-        if (page_num === pageClickArea[i].page) {//현재 페이지와 pageClickArea의 페이지 같으면
-            let clickableArea = pageClickArea[i].correctAnswer;
-            console.log("현재 페이지 ", page_num, "정답은", clickableArea); //마지막에 모두 지우기
-            //alert(answer);
+
+    
+    var myPgNum = $(".active").attr('id');
+    var real_pg = myPgNum.slice(-1);
+    
+    console.log("진짜 페이지 " , real_pg);
+
+    
+        //if (page_num == pageClickArea[i].page) {//현재 페이지와 pageClickArea의 페이지 같으면
+            let clickableArea = pageClickArea[real_pg].correctAnswer;
+            console.log("현재 페이지 ", real_pg, "정답은", clickableArea); //마지막에 모두 지우기
             console.log("클릭한 요소는 ", e.target.className);
 
 
             if (e.target.className.includes(clickableArea)) {
                 //맞게 클릭하면
                 console.log("correct");
-                next(page_num);
+                next(real_pg);
             } else {
                 //틀리게 클릭하면
                 $('#staticBackdrop').modal('show');
             }
 
 
-            let instruction = modalCont[i].instruction;
+            let instruction = modalCont[real_pg].instruction;
             console.log("현재 페이지 ", page_num, "지시는", instruction); //마지막에 모두 지우기
             $('.modal-body').text(instruction);
             
@@ -289,8 +297,8 @@ document.querySelector("main").addEventListener("click", function (e) {//메인 
             //     // }
             // });
 
-        }
-    }
+        //}
+    
 })
 
 
