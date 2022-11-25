@@ -1,4 +1,4 @@
-var total_page = 7;//페이지 수 -> 시나리오마다 total_page 수 바꾸기 
+var total_page = 8;//페이지 수 -> 시나리오마다 total_page 수 바꾸기 
 
 //오디오 배열 선언, 페이지 수 대로 배열에 mp3 넣기
 const audioArray = [];
@@ -43,7 +43,7 @@ const pageClickArea = [
 const inputAnswer = [
     {
         page: 2,
-        correctAnswer: "출발"
+        correctAnswer: "서울디지털재단"
     },
 ];
 
@@ -59,7 +59,7 @@ const modalCont = [
     },
     {
         page: 2,
-        instruction: "출발지를 현재 위치로 지정하세요."
+        instruction: "출발지를 확인하고 '어디로 갈까요?'를 클릭해 도착지 설정 페이지로 이동하세요."
     },
     {
         page: 3,
@@ -89,14 +89,14 @@ const modalCont = [
 //**************************+    커서   +*********************************** 
 
 const cursor_pos_1 = document.querySelector('.cursor_pos_1');
-//const cursor_pos_2 = document.querySelector('.cursor_pos_2');
+const cursor_pos_2 = document.querySelector('.cursor_pos_2');
 const cursor_pos_3 = document.querySelector('.cursor_pos_3');
 const cursor_pos_4 = document.querySelector('.cursor_pos_4');
 const cursor_pos_5 = document.querySelector('.cursor_pos_5');
 const cursor_pos_6 = document.querySelector('.cursor_pos_6');
 
 const cursor_wrap_1 = document.querySelector('.cursor_wrap_1');
-// const cursor_wrap_2 = document.querySelector('.cursor_wrap_2');
+const cursor_wrap_2 = document.querySelector('.cursor_wrap_2');
 const cursor_wrap_3 = document.querySelector('.cursor_wrap_3');
 const cursor_wrap_4 = document.querySelector('.cursor_wrap_4');
 const cursor_wrap_5 = document.querySelector('.cursor_wrap_5');
@@ -104,7 +104,7 @@ const cursor_wrap_6 = document.querySelector('.cursor_wrap_6');
 
 
 cursor_wrap_1.style.zIndex = "100";
-// cursor_wrap_2.style.zIndex = "100";
+cursor_wrap_2.style.zIndex = "100";
 cursor_wrap_3.style.zIndex = "100";
 cursor_wrap_4.style.zIndex = "100";
 cursor_wrap_5.style.zIndex = "100";
@@ -123,17 +123,17 @@ createPopper(cursor_pos_1, cursor_wrap_1, {
         },
     ],
 });
-// createPopper(cursor_pos_2, cursor_wrap_2, {
-//     placement: 'right',
-//     modifiers: [
-//         {
-//             name: 'offset',
-//             options: {
-//                 offset: [0,0],
-//             },
-//         },
-//     ],
-// });
+createPopper(cursor_pos_2, cursor_wrap_2, {
+    placement: 'right',
+    modifiers: [
+        {
+            name: 'offset',
+            options: {
+                offset: [-35,100],
+            },
+        },
+    ],
+});
 createPopper(cursor_pos_3, cursor_wrap_3, {
     placement: 'right',
     modifiers: [

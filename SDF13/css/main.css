@@ -241,3 +241,7 @@
     background: #fff;
     padding-top: 1em;
 }
+
+#p7 .btn {
+    min-height: 5vh;
+}
