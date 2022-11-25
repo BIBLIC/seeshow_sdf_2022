@@ -42,8 +42,7 @@
                                         모달 내용
                                     </div>
                                     <div class="modal-footer border-0">
-                                        <button type="button" class="btn btn-secondary"
-                                            data-bs-dismiss="modal">닫기</button>
+                                        <button type="button" class="btn btn-secondary btn-lg" data-bs-dismiss="modal">닫기</button>
                                     </div>
                                 </div>
                             </div>
@@ -63,7 +62,7 @@
                                         모달 내용물
                                     </div>
                                     <div class="modal-footer border-0 ">
-                                        <button type="button" class="btn btn-secondary "
+                                        <button type="button" class="btn btn-secondary btn-lg"
                                             data-bs-dismiss="modal">닫기</button>
                                     </div>
                                 </div>
@@ -72,7 +71,7 @@
                         <!------------------------------ page 0 (시작 화면) ------------------------------>
                         <div class="page" id="p0">
                             <div class="page_wrap">
-                                <h1 class="title_h1">시작화면</h1>
+                                <h1 class="title_h1"><img src="./assets/image/0.png" width=100%></h1>
                             </div>
                         </div>
                         <!------------------------------ page 1 ------------------------------>
@@ -157,6 +156,11 @@
                                 <div class="bg-image"
                                     style="background-image: url('../assets/KakaoT/image/map2.png');  height: 100%;">
                                     <h1 class="pg_title" style="color: #fff;">Page2</h1>
+                                    <div class="back_btn" style="box-shadow:0 0 0;">
+                                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="currentColor" class="bi bi-arrow-left" viewBox="0 0 16 16">
+                                            <path fill-rule="evenodd" d="M15 8a.5.5 0 0 0-.5-.5H2.707l3.147-3.146a.5.5 0 1 0-.708-.708l-4 4a.5.5 0 0 0 0 .708l4 4a.5.5 0 0 0 .708-.708L2.707 8.5H14.5A.5.5 0 0 0 15 8z"/>
+                                          </svg>
+                                    </div>
                                     <div class="fixed-bottom position-absolute">
                                         <div class="fontSz container d-flex justify-content-between align-items-center">
                                             <div class="bg-white border-secondary rounded-pill px-3 py-1">
@@ -228,20 +232,22 @@
                                 <div class="page_wrap">
                                     <div class="pg_top">
                                         <div class="back_btn" style="box-shadow:0 0 0;">
-                                            <div>&lt;</div>
+                                            <div class="back_btn" style="box-shadow:0 0 0;">
+                                                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="currentColor" class="bi bi-arrow-left" viewBox="0 0 16 16">
+                                                    <path fill-rule="evenodd" d="M15 8a.5.5 0 0 0-.5-.5H2.707l3.147-3.146a.5.5 0 1 0-.708-.708l-4 4a.5.5 0 0 0 0 .708l4 4a.5.5 0 0 0 .708-.708L2.707 8.5H14.5A.5.5 0 0 0 15 8z"/>
+                                                  </svg>
+                                            </div>
                                         </div>
                                         <div class="search_area">
                                             <nav class="navbar">
                                                 <div class="container-fluid">
-                                                    <form class="d-flex form departures" role="search">
-                                                        <div
-                                                            class="form-control me-2 bg-secondary bg-opacity-10 fontSz">
-                                                            내위치
-                                                        </div>
+                                                        <form class="d-flex form arrival" role="search">
+                                                            <input class="form-control form-control-lg me-2 fontSz cursor_pos_3" disabled="true"
+                                                                type="search" placeholder="현위치:마포구청" aria-label="Search">
                                                         <!-- <button class="btn btn-outline-success" type="submit">Search</button> -->
                                                     </form>
                                                     <form class="d-flex form arrival" role="search">
-                                                        <input class="form-control me-2 fontSz cursor_pos_3"
+                                                        <input class="form-control form-control-lg me-2 fontSz cursor_pos_3"
                                                             type="search" placeholder="도착지" aria-label="Search">
                                                         <!-- 커서 가이드 -->
                                                         <div class="cursor_wrap cursor_wrap_3">
