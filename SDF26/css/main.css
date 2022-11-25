@@ -1,3 +1,27 @@
+.giro.btn-b {
+    color: #fff!important;
+    background: #386CE2!important;
+    border-radius: 0;
+  }
+
+.btn-outline-b {
+    background: #fff;
+    border-color: #386CE2!important;
+    color: #386CE2!important;
+    border-radius: 0;
+}
+
+.text-lightgray {
+    color:#D1D1D1;
+}
+
+
+.text-b{
+    color: #386CE2!important;
+}
+
+/* ----------------------------------------------------------------------------- */
+
 #p1 .pg_top {
     width: 100%;
     height: auto;
@@ -32,12 +56,201 @@
     margin-left: 3em;
 }
 
-.giro.btn-b {
-    color: #fff!important;
-    background: #386CE2!important;
-  }
+#p2 .btn,
+#p5 .btn {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    min-height: 5vh;
+    padding: 0;
+}
 
-.btn-outline-b {
-    border-color: #386CE2!important;
-    color: #386CE2!important;;
+#p2 .pw_wrap,
+#p5 .pw_wrap {
+    height: 15vh;
+    background: #E5E5E5;
+    border: 1px solid #a9a9a962;
+    border-radius: 3px;
+}
+
+#p2 .nav .nav-item,
+#p5 .nav .nav-item {
+    width: 100%;
+    display: flex;
+    align-items: center;
+}
+
+#p2 .nav .nav-item .dot,
+#p5 .nav .nav-item .dot {
+        display: block;
+        width: 1.5em;
+        height: 1.5em;
+        background: #a9a9a9;
+        border-radius: 100%;
+        margin: 0 .5em;
+}
+
+#p2 .under_bar,
+#p5 .under_bar {
+    width: 100%;
+    height: 26vh;
+    background: #D2D2D2;
+    border-radius: 0;
+    display: flex;
+    flex-direction: column;
+}
+
+#p2 .under_bar .tab,
+#p5 .under_bar .tab {
+    width: 100%;
+    height: 25%;
+    display: flex;
+    align-items: center;
+    margin-top: .25em;
+    margin-bottom: .25em;
+}
+
+#p2 .under_bar .tab .key,
+#p5 .under_bar .tab .key {
+    width: 25%;
+    height: 100%;
+    background: #fff;
+    color: #375BA9;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-left: .25em;
+    margin-right: .25em;
+}
+
+#p2 .under_bar .tab .key.none,
+#p5 .under_bar .tab .key.none {
+    background: none;
+}
+
+#p2 .under_bar .tab .btn,
+#p5 .under_bar .tab .btn{
+    width: 50%;
+    margin-left: .25em;
+    margin-right: .25em;
+    border-radius: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#p2 .under_bar .tab .btn-w,
+#p5 .under_bar .tab .btn-w {
+    background: #fff;
+    color: #375BA9;
+    font-weight: bold;
+}
+
+#p2 .under_bar .tab .btn-b,
+#p5 .under_bar .tab .btn-b {
+    background: #375BA9;
+    color: #fff;
+}
+
+#p3 .icon,
+#p7 .icon {
+    height: 100%;
+    border: 0;
+}
+
+#p3 .pg_btm,
+#p7 .pg_btm {
+    width: 100%;
+    height: 35vh;
+}
+
+#p3 .capsule,
+#p7 .capsule {
+    font-size: small;
+}
+
+#p3 .under_bar,
+#p7 .under_bar {
+    min-height: 8vh;
+    background: #F0F0F0;
+    border-radius: 0;
+}
+
+#p3 .under_bar .baricon_wrap,
+#p7 .under_bar .baricon_wrap {
+    width: 20%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+#p3 .under_bar .baricon_wrap .bartext,
+#p7 .under_bar .baricon_wrap .bartext {
+    font-size: small;
+}
+
+.w-48{
+    width: 48%;
+    height: 6vh;
+}
+
+#p4 .tab {
+    width: 100%;
+    padding-right: 1em;
+    padding-left: 1em;
+}
+
+#p4 .bg-b {
+    width: 100%;
+    min-height: 23vh;
+    background: #EEF2FD;
+    padding: 1em;
+    font-size: smaller;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#p4 .tab .pw,
+#p8 .tab .pw {
+    border-radius: 0;
+    border: 0;
+    border-bottom: 1px solid #ced4da;
+}
+
+#p4 .under_bar .btn,
+#p8 .under_bar .btn {
+    min-height: 6vh;
+}
+
+#p4 .under_bar .btn.left,
+#p8 .under_bar .btn.left {
+    background: #989CA5;
+    color: #fff;
+}
+
+.text-sm{
+    font-size: small;
+}
+
+#p6 .container {
+    padding-left: 3em;
+    padding-right: 3em;
+    min-height: 40vh;
+}
+
+#p8 .bg-lightgray {
+    width: 100%;
+    min-height: 23vh;
+    background: #F0F0F0;
+    padding: 1em;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: flex-start;
+}
+
+#p8 .bg-lightgray .text-b {
+    padding-left: 1rem;
 }
