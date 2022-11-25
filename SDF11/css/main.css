@@ -134,23 +134,23 @@
     /* Chrome, Safari, Opera*/
   }
 
-#p4 .pop .nav .nav-item {
+#p4 .pop .nav .nav-top {
     padding-bottom: 1em;
   }
 
-  #p4 .pop .nav .nav-item:not(.li1) {
+  #p4 .pop .nav-top:not(.li1) {
     padding-left: 1.8em;
 }
 
-#p4 .pop .nav .nav-item:not(:first-child) {
+#p4 .pop .nav .nav-top:not(:first-child) {
     padding-top: 1em;
 }
 
-#p4 .pop .nav .nav-item:not(:last-child) {
+#p4 .pop .nav .nav-top:not(:last-child) {
     border-bottom: var(--bs-border-width) var(--bs-border-style) var(--bs-border-color);
 }
 
-#p4 .pop .nav .nav-item svg {
+#p4 .pop .nav .nav-top svg {
     min-width: 1.3rem;
 }
 
