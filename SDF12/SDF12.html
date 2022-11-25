@@ -154,8 +154,70 @@
                          <!------------------------------ page 2 ------------------------------>
                          <div class="page" id="p2">
                             <div class="page_wrap">
-                                <!-- <h1 class="pg_title" style="color: #fff;">Page2</h1> -->
-                                <h1 class="title_h1">추가된 화면</h1>
+                                <div class="bg-image"
+                                    style="background-image: url('../assets/KakaoT/image/map.png');  height: 100%;">
+                                    <h1 class="pg_title" style="color: #fff;">Page2</h1>
+                                    <div class="fixed-bottom position-absolute">
+                                        <div class="fontSz container d-flex justify-content-between align-items-center">
+                                            <div class="bg-white border-secondary rounded-pill px-3 py-1">
+                                                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-calendar-check" viewBox="0 0 16 16">
+                                                    <path d="M10.854 7.146a.5.5 0 0 1 0 .708l-3 3a.5.5 0 0 1-.708 0l-1.5-1.5a.5.5 0 1 1 .708-.708L7.5 9.793l2.646-2.647a.5.5 0 0 1 .708 0z"/>
+                                                    <path d="M3.5 0a.5.5 0 0 1 .5.5V1h8V.5a.5.5 0 0 1 1 0V1h1a2 2 0 0 1 2 2v11a2 2 0 0 1-2 2H2a2 2 0 0 1-2-2V3a2 2 0 0 1 2-2h1V.5a.5.5 0 0 1 .5-.5zM1 4v10a1 1 0 0 0 1 1h12a1 1 0 0 0 1-1V4H1z"/>
+                                                  </svg>
+                                                  예약
+                                            </div>
+                                            <div class="bg-white border-secondary rounded-pill px-2 py-1">
+                                                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-compass" viewBox="0 0 16 16">
+                                                    <path d="M8 16.016a7.5 7.5 0 0 0 1.962-14.74A1 1 0 0 0 9 0H7a1 1 0 0 0-.962 1.276A7.5 7.5 0 0 0 8 16.016zm6.5-7.5a6.5 6.5 0 1 1-13 0 6.5 6.5 0 0 1 13 0z"/>
+                                                    <path d="m6.94 7.44 4.95-2.83-2.83 4.95-4.949 2.83 2.828-4.95z"/>
+                                                  </svg>
+                                            </div>
+                                        </div>
+                                        <div
+                                            class="fontSz container under_bar d-flex flex-column justify-content-center align-items-start">
+                                            <div class="form w-100 tab border-bottom">
+                                                <svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" fill="currentColor" class="bi bi-dot" viewBox="0 0 16 16">
+                                                    <path d="M8 9.5a1.5 1.5 0 1 0 0-3 1.5 1.5 0 0 0 0 3z"/>
+                                                  </svg>
+                                                현위치: 서울디지털재단
+                                            </div>
+                                            <div class="form w-100 tab text-black-50 pg_2_answer cursor_pos_2">
+                                                <svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" fill="currentColor" class="bi bi-dot text-danger" viewBox="0 0 16 16">
+                                                    <path d="M8 9.5a1.5 1.5 0 1 0 0-3 1.5 1.5 0 0 0 0 3z"></path>
+                                                  </svg>
+                                                  어디로 갈까요?
+
+                                                  <div class="icon pg_2_answer cursor_pos_2">
+                                                    <!-- 커서 가이드 -->
+                                                    <div class="cursor_wrap cursor_wrap_2">
+                                                        <span class="cursor" x-placement="bottom">
+                                                            <button class="react-joyride__beacon" type="button">
+                                                                <span class="cursor_outer"></span>
+                                                                <span class="cursor_inner"><span>
+                                                            </button>
+                                                        </span>
+                                                    </div>
+                                                    <!-- 커서 가이드 -->
+                                                </div>
+                                                </div>
+                                            <div class="fontSz w-100 d-flex justify-content-start align-items-center">
+                                                <div class="bg-light border-secondary rounded-pill px-3 py-1">
+                                                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-house-door" viewBox="0 0 16 16">
+                                                        <path d="M8.354 1.146a.5.5 0 0 0-.708 0l-6 6A.5.5 0 0 0 1.5 7.5v7a.5.5 0 0 0 .5.5h4.5a.5.5 0 0 0 .5-.5v-4h2v4a.5.5 0 0 0 .5.5H14a.5.5 0 0 0 .5-.5v-7a.5.5 0 0 0-.146-.354L13 5.793V2.5a.5.5 0 0 0-.5-.5h-1a.5.5 0 0 0-.5.5v1.293L8.354 1.146ZM2.5 14V7.707l5.5-5.5 5.5 5.5V14H10v-4a.5.5 0 0 0-.5-.5h-3a.5.5 0 0 0-.5.5v4H2.5Z"/>
+                                                      </svg>
+                                                      집
+                                                </div>
+                                                <div class="bg-light border-secondary rounded-pill px-3 py-1 mx-3">
+                                                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-building" viewBox="0 0 16 16">
+                                                        <path d="M4 2.5a.5.5 0 0 1 .5-.5h1a.5.5 0 0 1 .5.5v1a.5.5 0 0 1-.5.5h-1a.5.5 0 0 1-.5-.5v-1Zm3 0a.5.5 0 0 1 .5-.5h1a.5.5 0 0 1 .5.5v1a.5.5 0 0 1-.5.5h-1a.5.5 0 0 1-.5-.5v-1Zm3.5-.5a.5.5 0 0 0-.5.5v1a.5.5 0 0 0 .5.5h1a.5.5 0 0 0 .5-.5v-1a.5.5 0 0 0-.5-.5h-1ZM4 5.5a.5.5 0 0 1 .5-.5h1a.5.5 0 0 1 .5.5v1a.5.5 0 0 1-.5.5h-1a.5.5 0 0 1-.5-.5v-1ZM7.5 5a.5.5 0 0 0-.5.5v1a.5.5 0 0 0 .5.5h1a.5.5 0 0 0 .5-.5v-1a.5.5 0 0 0-.5-.5h-1Zm2.5.5a.5.5 0 0 1 .5-.5h1a.5.5 0 0 1 .5.5v1a.5.5 0 0 1-.5.5h-1a.5.5 0 0 1-.5-.5v-1ZM4.5 8a.5.5 0 0 0-.5.5v1a.5.5 0 0 0 .5.5h1a.5.5 0 0 0 .5-.5v-1a.5.5 0 0 0-.5-.5h-1Zm2.5.5a.5.5 0 0 1 .5-.5h1a.5.5 0 0 1 .5.5v1a.5.5 0 0 1-.5.5h-1a.5.5 0 0 1-.5-.5v-1Zm3.5-.5a.5.5 0 0 0-.5.5v1a.5.5 0 0 0 .5.5h1a.5.5 0 0 0 .5-.5v-1a.5.5 0 0 0-.5-.5h-1Z"/>
+                                                        <path d="M2 1a1 1 0 0 1 1-1h10a1 1 0 0 1 1 1v14a1 1 0 0 1-1 1H3a1 1 0 0 1-1-1V1Zm11 0H3v14h3v-2.5a.5.5 0 0 1 .5-.5h3a.5.5 0 0 1 .5.5V15h3V1Z"/>
+                                                      </svg>
+                                                      회사
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
                             </div>
                         </div>
 
@@ -301,13 +363,13 @@
                                         </div>
                                         <div
                                             class="tab d-flex justify-content-center align-items-start cursor_pos_5 pg_5_answer">
-                                            <div class="icon">1</div>
-                                            <div class="txt-wrap d-flex">
-                                                <div class="txt text-left fontSz">
-                                                    <div>일반호출</div>
-                                                    <div class="text-black-50">주변 택시 호출</div>
+                                            <div class="icon pg_5_answer">1</div>
+                                            <div class="txt-wrap d-flex pg_5_answer">
+                                                <div class="txt text-left fontSz pg_5_answer">
+                                                    <div class="pg_5_answer">일반호출</div>
+                                                    <div class="text-black-50 pg_5_answer">주변 택시 호출</div>
                                                 </div>
-                                                <div class="txt text-right fontSz">
+                                                <div class="txt text-right fontSz pg_5_answer">
                                                     예상 9,500원
                                                 </div>
                                             </div>
