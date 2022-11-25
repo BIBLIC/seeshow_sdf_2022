@@ -5,15 +5,19 @@
     align-items: center;
 }
 
+#p1 .page_wrap{
+    display: unset;
+}
+
 #p1 .under_bar {
     width: 100%;
-    height: 70vh;
+    height: 80%;
     background: #fff;
     padding-top: 1em;
 }
 
 #p1 .btn {
-    height: 6vh;
+    min-height: 5vh;
 }
 
 #p2 .under_bar {
@@ -109,12 +113,6 @@
     border-bottom: solid;
 }
 
-.page_wrap {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-}
-
 #p5 .page_wrap,
 #p6 .page_wrap {
     background: #F5F6F7;
@@ -160,12 +158,10 @@
     min-height: 5vh;
 }
 
-#p7 .line {
-    border-bottom: solid;
-}
-
 #p7 .pop {
-    margin-top: 15%;
+    margin-top: 5%;
+    margin-bottom: 5%;
+    box-shadow: none;
 }
 
 #p7 .pop .wrap {
@@ -194,9 +190,7 @@
     padding-left: 1.8em;
 }
 
-#p7 .pop .nav .nav-item:not(:first-child) {
-    padding-top: 1em;
-}
+
 
 #p7 .pop .nav .nav-under .nav-item:not(:last-child) {
     border-bottom: var(--bs-border-width) var(--bs-border-style) var(--bs-border-color);
@@ -208,16 +202,16 @@
 
 #p7 .btn{
     height: 8vh;
-    border-top-left-radius: 10px;
-    border-top-right-radius: 10px;
-    border-bottom-left-radius: 10px;
-    border-bottom-right-radius: 10px;
+    border-top-left-radius: 5px;
+    border-top-right-radius: 5px;
+    border-bottom-left-radius: 5px;
+    border-bottom-right-radius: 5px;
 }
 
 #p7 .line {
     border-bottom: solid;
 }
 
-#p7 .btn {
-    margin: 0.5em;
+#p7 .under_bar {
+    padding-top: 1em;
 }

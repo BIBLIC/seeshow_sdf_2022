@@ -60,37 +60,40 @@
                                     style="background-image: url('./assets/image/map.png');  height: 100%;">
                                     <div class="under_bar d-flex flex-column justify-content-center align-items-center">
                                         <div class="container d-flex flex-column align-items-center" style="height:65%">
-
+                                            <div class="w-100 h-25 p-3">
+                                                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16"
+                                                    fill="currentColor" class="bi bi-x-lg" viewBox="0 0 16 16">
+                                                    <path
+                                                        d="M2.146 2.854a.5.5 0 1 1 .708-.708L8 7.293l5.146-5.147a.5.5 0 0 1 .708.708L8.707 8l5.147 5.146a.5.5 0 0 1-.708.708L8 8.707l-5.146 5.147a.5.5 0 0 1-.708-.708L7.293 8 2.146 2.854Z" />
+                                                </svg>
+                                            </div>
                                             <div class="icon h-25">1</div>
                                             <div class="tab w-100 h-50 d-flex justify-content-center">
                                                 <div class="txt-wrap d-flex w-100">
-                                                    <div class="txt">
-                                                        <h3>벤티 예약</h3>
-                                                        <div>
-                                                            넓고 쾌적한 이동이 필요할 때, 벤티 예약 서비스를<br>
-                                                            이용해보세요.<br>
-                                                            설정한 도착지까지 확정된 요금으로 예약 가능합니다.<br>
-                                                            현재 예약비 무료 프로모션 기간입니다. (운행요금 제외)
+                                                    <div class="txt fontSz">
+                                                        <div class="fontSz">
+                                                            <p>블루</p>
                                                         </div>
-                                                        <div class="text-black-50">
-                                                            <br>이용 안내<br>
-                                                            최대 탑승 인원 : 5명
+                                                        <div>
+                                                            빠른 이동이 필요할 때 부르면 바로 오는 블루를 불러보세요.<br>
+                                                            전문교육을 이수한 친절한 기사님이 운행하는 쾌적한 차량이 찾아가요!<br>
+                                                            블루는 기사님에게 목적지가 표시되지 않은 카카오 T의 자동 배차 시스템이 적용됩니다.<br>
                                                         </div>
                                                     </div>
                                                 </div>
                                             </div>
                                         </div>
                                         <div class="p-3 w-100 bg-secondary bg-opacity-10" style="height:35%">
-                                            <div class="0 d-flex flex-column align-items-center">
+                                            <div class=" h-100 d-flex flex-column align-items-center">
                                                 <div class="w-100 h-25 d-flex justify-content-between">
                                                     <ul class="nav justify-content-center">
-                                                        <li class="nav-item">
-                                                            <a class="nav-link active p-2 text-black-50"
-                                                                aria-current="page">카카오페이 카드</a>
+                                                        <li class="nav-item fontSz">
+                                                            <a class="nav-link active p-2" aria-current="page">자동결제
+                                                                등록</a>
                                                         </li>
                                                     </ul>
                                                     <ul class="nav justify-content-center">
-                                                        <li class="nav-item">
+                                                        <li class="nav-item fontSz">
                                                             <a class="nav-link disabled p-2">쿠폰·포인트 0P</a>
                                                         </li>
                                                     </ul>
@@ -99,28 +102,35 @@
                                                     <div class="h-50 d-flex justify-content-between align-items-center">
                                                         <ul class="nav justify-content-center align-items-center">
                                                             <li class="nav-item">
-                                                                <a class="nav-link disabled active p-2"
-                                                                    aria-current="page">본인탑승 &gt;</a>
+                                                                <a class="nav-link disabled active p-2 fontSz"
+                                                                    aria-current="page ">본인탑승 &gt;</a>
                                                             </li>
                                                         </ul>
                                                         <ul class="nav flex-column align-items-end">
                                                             <li class="nav-item d-flex">
-                                                                <div>확정 </div>
-                                                                <h4>36,800원</h4>
+                                                                <div class="fontSz">예상</div>
+                                                                <h4 class="fontSz">13,900원</h4>
                                                             </li>
-                                                            <li class="nav-item text-black-50 text-sm">
-                                                                <div>1.7배 피크 / 예약비 무료</div>
+                                                            <li class="nav-item txt-sm">
+                                                                <div>이용료 3,000원 포함</div>
                                                             </li>
                                                         </ul>
                                                     </div>
-                                                    <div class="w-100 d-flex justify-content-around">
+                                                    <div class="w-100 cursor_pos_6">
                                                         <button type="button"
-                                                            class="w-25 btn btn-light text-primary mt-2">
-                                                            오늘 21:40
+                                                            class="btn btn-primary w-100 mt-3 fontSz pg_6_answer">
+                                                            호출하기
                                                         </button>
-                                                        <button type="button" class="w-75 btn btn-primary mt-2">
-                                                            예약하기
-                                                        </button>
+                                                        <!-- 커서 가이드 -->
+                                                        <div class="cursor_wrap cursor_wrap_6">
+                                                            <span class="cursor" x-placement="bottom">
+                                                                <button class="react-joyride__beacon" type="button">
+                                                                    <span class="cursor_outer"></span>
+                                                                    <span class="cursor_inner"><span>
+                                                                </button>
+                                                            </span>
+                                                        </div>
+                                                        <!-- 커서 가이드 -->
                                                     </div>
                                                 </div>
                                             </div>
@@ -138,7 +148,7 @@
                                     <div class="under_bar d-flex flex-column justify-content-center align-items-center">
                                         <div class="container d-flex flex-column align-items-center" style="height:65%">
                                             <div
-                                                class="w-100 h-10 mt-2 d-flex justify-content-between align-items-center">
+                                                class="w-100 h-10 mt-2 d-flex justify-content-between align-items-center fontSz">
                                                 <div class="w-25" style="font-size: larger;">
                                                     결제수단
                                                 </div>
@@ -149,7 +159,7 @@
                                             <div
                                                 class="w-100 flex-fill d-flex justify-content-center align-items-center">
                                                 <button type="button"
-                                                    class="btn w-75 h-75 btn-outline-secondary d-flex flex-column justify-content-center align-items-center">
+                                                    class="btn w-75 h-75 btn-outline-secondary d-flex flex-column justify-content-center align-items-center fontSz">
                                                     <svg xmlns="http://www.w3.org/2000/svg" width="40" height="40"
                                                         fill="currentColor" class="bi bi-plus" viewBox="0 0 16 16">
                                                         <path
@@ -162,7 +172,7 @@
                                             </div>
                                         </div>
                                         <div class="w-100 d-flex justify-content-between align-items-center">
-                                            <div class="d-flex align-items-center p-2">
+                                            <div class="d-flex align-items-center p-2 fontSz">
                                                 <svg xmlns="http://www.w3.org/2000/svg" width="25" height="25"
                                                     fill="currentColor" class="bi bi-coin" viewBox="0 0 16 16">
                                                     <path
@@ -193,7 +203,7 @@
                                             </div>
                                         </div>
                                         <div class="w-100 d-flex justify-content-between align-items-center">
-                                            <div class="d-flex align-items-center p-2">
+                                            <div class="d-flex align-items-center p-2 fontSz">
                                                 <svg xmlns="http://www.w3.org/2000/svg" width="25" height="25"
                                                     fill="currentColor" class="bi bi-ticket-fill" viewBox="0 0 16 16">
                                                     <path
@@ -223,13 +233,13 @@
                                             <div class="0 d-flex flex-column align-items-center justify-content-center">
                                                 <div class="w-100 h-25 d-flex justify-content-between">
                                                     <ul class="nav justify-content-center">
-                                                        <li class="nav-item">
+                                                        <li class="nav-item fontSz">
                                                             <a class="nav-link active p-2 text-black-50"
                                                                 aria-current="page">할인 내역</a>
                                                         </li>
                                                     </ul>
                                                     <ul class="nav justify-content-center">
-                                                        <li class="nav-item">
+                                                        <li class="nav-item fontSz">
                                                             <a class="nav-link disabled p-2">0P / 0원</a>
                                                         </li>
                                                     </ul>
@@ -237,21 +247,20 @@
                                                 <div class="w-100 h-75">
                                                     <div class="h-50 d-flex justify-content-between align-items-center">
                                                         <ul class="nav justify-content-center align-items-center">
-                                                            <li class="nav-item">
+                                                            <li class="nav-item fontSz">
                                                                 <a class="nav-link disabled active p-2"
                                                                     aria-current="page">예상 결제 금액</a>
                                                             </li>
                                                         </ul>
                                                         <ul class="nav flex-column align-items-end">
-                                                            <li class="nav-item d-flex">
+                                                            <li class="nav-item fontSz">
                                                                 <div>36,800원</div>
                                                             </li>
                                                         </ul>
                                                     </div>
-
                                                 </div>
                                             </div>
-                                            <button type="button"
+                                            <button type="button fontSz"
                                                 class="w-100 btn btn-secondary d-flex justify-content-center align-items-center mt-2"
                                                 disabled>
                                                 예약하기
@@ -259,7 +268,7 @@
                                         </div>
                                     </div>
                                 </div>
-                                <div class="border-bottom text-white-50 mt-3">
+                                <div class="border-bottom text-white-50 mt-3 fontSz">
                                     취소
                                 </div>
                             </div>
@@ -270,7 +279,7 @@
                                 <h1 class="pg_title" style="color: #fff;">Page3</h1>
                                 <div class="bg-image"
                                     style="background-image: url('./assets/image/map.png');  height: 100%;">
-                                    <div class="under_bar d-flex flex-column justify-content-center align-items-center">
+                                    <div class="under_bar d-flex flex-column justify-content-center align-items-center fontSz">
                                         <div class="position-absolute top-0 start-0 m-4" style="font-size: larger;">
                                             결제수단
                                         </div>
@@ -279,13 +288,13 @@
                                             <div
                                                 class="w-100 flex-column d-flex justify-content-center align-items-center">
                                                 <button type="button"
-                                                    class="btn w-75 h-50 btn-lg btn-light d-flex flex-column justify-content-center align-items-center">
+                                                    class="btn w-75 h-50 btn-lg btn-light d-flex flex-column justify-content-center align-items-center fontSz">
                                                     <div>
                                                         카카오 T 포인트
                                                     </div>
                                                 </button>
                                                 <button type="button"
-                                                    class="btn w-75 h-50 mt-3 btn-lg btn-light d-flex flex-column justify-content-center align-items-center">
+                                                    class="btn w-75 h-50 mt-3 btn-lg btn-light d-flex flex-column justify-content-center align-items-center fontSz">
                                                     <div>
                                                         신용/체크카드
                                                     </div>
@@ -311,7 +320,7 @@
                                                         <img class="icon" src="./img/2.png" alt="">
                                                     </div>
                                                     <div
-                                                        class="d-flex flex-fill flex-column justify-content-start align-items-start px-1">
+                                                        class="d-flex flex-fill flex-column justify-content-start align-items-start px-1 fontSz">
                                                         <div class="flex-fill font-weight-bold">
                                                             카카오페이
                                                         </div>
@@ -325,7 +334,7 @@
                                                 <div class="w-100 d-flex justify-content-start align-items-start">
 
                                                     <div
-                                                        class="nav d-flex flex-fill flex-column justify-content-start align-items-start px-2">
+                                                        class="nav d-flex flex-fill flex-column justify-content-start align-items-start px-2 fontSz">
                                                         <div class="w-100 font-weight-bold d-flex align-items-center">
                                                             <svg xmlns="http://www.w3.org/2000/svg" width="20"
                                                                 height="20" fill="currentColor"
@@ -337,7 +346,7 @@
                                                             </svg>
                                                             전체 동의하기
                                                         </div>
-                                                        <div class="w-100 text-black-50" style="font-size: small;">
+                                                        <div class="w-100 text-black-50 fontSz" style="font-size: small;">
                                                             카카오페이 서비스 제공을 위해 회원번호와 함께 개인정
                                                             보가 제공됩니다. 보다 자세한 개인정보 제공항목은 동
                                                             의 내용에서 확인하실 수 있습니다. 정보는 서비스 탈퇴
@@ -348,8 +357,8 @@
                                             </li>
                                             <div class="nav-under text-secondary txt-sm mt-4">
                                                 <div
-                                                    class="nav-under w-100 text-secondary d-flex justify-content-between">
-                                                    <div style="font-size: small;">
+                                                    class="nav-under w-100 text-secondary d-flex justify-content-between fontSz">
+                                                    <div class="fontSz" style="font-size: small;">
                                                         <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16"
                                                             fill="currentColor" class="bi bi-check-lg"
                                                             viewBox="0 0 16 16">
@@ -357,12 +366,12 @@
                                                                 d="M12.736 3.97a.733.733 0 0 1 1.047 0c.286.289.29.756.01 1.05L7.88 12.01a.733.733 0 0 1-1.065.02L3.217 8.384a.757.757 0 0 1 0-1.06.733.733 0 0 1 1.047 0l3.052 3.093 5.4-6.425a.247.247 0 0 1 .02-.022Z" />
                                                         </svg>[필수] 카카오 개인정보 제3자 제공 동의
                                                     </div>
-                                                    <div style="font-size: small;">보기</div>
+                                                    <div class="fontSz" style="font-size: small;">보기</div>
                                                 </div>
                                                 <div class="nav-under text-secondary txt-sm">
                                                     <div
-                                                        class="nav-under w-100 text-secondary d-flex justify-content-between">
-                                                        <div style="font-size: small;">
+                                                        class="nav-under w-100 text-secondary d-flex justify-content-between fontSz">
+                                                        <div class="fontSz" style="font-size: small;">
                                                             <svg xmlns="http://www.w3.org/2000/svg" width="16"
                                                                 height="16" fill="currentColor" class="bi bi-check-lg"
                                                                 viewBox="0 0 16 16">
@@ -370,11 +379,11 @@
                                                                     d="M12.736 3.97a.733.733 0 0 1 1.047 0c.286.289.29.756.01 1.05L7.88 12.01a.733.733 0 0 1-1.065.02L3.217 8.384a.757.757 0 0 1 0-1.06.733.733 0 0 1 1.047 0l3.052 3.093 5.4-6.425a.247.247 0 0 1 .02-.022Z" />
                                                             </svg>[필수] 서비스 접근 권한
                                                         </div>
-                                                        <div style="font-size: small;">보기</div>
+                                                        <div class="fontSz" style="font-size: small;">보기</div>
                                                     </div>
                                         </ul>
                                     </div>
-                                    <button type="button" class="btn btn-light w-100 ">
+                                    <button type="button" class="btn btn-light w-100 fontSz">
                                         동의하고 계속하기
                                     </button>
                                 </div>
@@ -395,8 +404,8 @@
                                     </div>
                                 </div>
                                 <div class="agree w-100 h-20 d-flex justify-content-between align-items-center px-5">
-                                    <div class="wait d-flex flex-column">
-                                        <div style="font-size: x-large;">
+                                    <div class="wait d-flex flex-column fontSz">
+                                        <div class="fontSz" style="font-size: x-large;">
                                             잠깐만요!
                                         </div>
                                         <div class="text-black-50">
@@ -414,7 +423,7 @@
                                 <div
                                     class="container w-100 mt-3 d-flex flex-column justify-content-center align-items-center">
                                     <button type="button"
-                                        class="btn w-75 h-10 btn-light tab text-left d-flex justify-content-start align-items-center mb-3 rounded-1">
+                                        class="btn w-75 h-10 btn-light tab text-left d-flex justify-content-start align-items-center mb-3 rounded-1 fontSz">
                                         <div class="check">
                                             <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20"
                                                 fill="currentColor" class="bi bi-check-circle" viewBox="0 0 16 16">
@@ -430,75 +439,75 @@
                                     </button>
 
                                     <div class="w-75 container d-flex flex-column text-secondary">
-                                        <div class="nav-under text-secondary">
-                                            <div style="font-size: small;">
+                                        <div class="nav-under text-secondary fontSz">
+                                            <div class="fontSz" style="font-size: small;">
                                                 <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16"
                                                     fill="currentColor" class="bi bi-check-lg" viewBox="0 0 16 16">
                                                     <path
                                                         d="M12.736 3.97a.733.733 0 0 1 1.047 0c.286.289.29.756.01 1.05L7.88 12.01a.733.733 0 0 1-1.065.02L3.217 8.384a.757.757 0 0 1 0-1.06.733.733 0 0 1 1.047 0l3.052 3.093 5.4-6.425a.247.247 0 0 1 .02-.022Z" />
                                                 </svg>서비스이용약관 관련 전체동의
                                             </div>
-                                            <div class="line" style="font-size: small;">접기</div>
+                                            <div class="line fontSz" style="font-size: small;">접기</div>
                                         </div>
                                         <div class="nav-under text-secondary">
-                                            <div style="font-size: small;">
+                                            <div class="fontSz" style="font-size: small;">
                                                 <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16"
                                                     fill="currentColor" class="bi bi-check-lg" viewBox="0 0 16 16">
                                                     <path
                                                         d="M12.736 3.97a.733.733 0 0 1 1.047 0c.286.289.29.756.01 1.05L7.88 12.01a.733.733 0 0 1-1.065.02L3.217 8.384a.757.757 0 0 1 0-1.06.733.733 0 0 1 1.047 0l3.052 3.093 5.4-6.425a.247.247 0 0 1 .02-.022Z" />
                                                 </svg>(필수) 카카오페이 이용약관
                                             </div>
-                                            <div style="font-size: small;">&#62;</div>
+                                            <div class="fontSz" style="font-size: small;">&#62;</div>
                                         </div>
                                         <div class="nav-under text-secondary">
-                                            <div style="font-size: small;">
+                                            <div class="fontSz" style="font-size: small;">
                                                 <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16"
                                                     fill="currentColor" class="bi bi-check-lg" viewBox="0 0 16 16">
                                                     <path
                                                         d="M12.736 3.97a.733.733 0 0 1 1.047 0c.286.289.29.756.01 1.05L7.88 12.01a.733.733 0 0 1-1.065.02L3.217 8.384a.757.757 0 0 1 0-1.06.733.733 0 0 1 1.047 0l3.052 3.093 5.4-6.425a.247.247 0 0 1 .02-.022Z" />
                                                 </svg>(필수) 카카오페이 전자금융거래이용약관
                                             </div>
-                                            <div style="font-size: small;">&#62;</div>
+                                            <div class="fontSz" style="font-size: small;">&#62;</div>
                                         </div>
                                         <div class="nav-under text-secondary">
-                                            <div style="font-size: small;">
+                                            <div class="fontSz" style="font-size: small;">
                                                 <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16"
                                                     fill="currentColor" class="bi bi-check-lg" viewBox="0 0 16 16">
                                                     <path
                                                         d="M12.736 3.97a.733.733 0 0 1 1.047 0c.286.289.29.756.01 1.05L7.88 12.01a.733.733 0 0 1-1.065.02L3.217 8.384a.757.757 0 0 1 0-1.06.733.733 0 0 1 1.047 0l3.052 3.093 5.4-6.425a.247.247 0 0 1 .02-.022Z" />
                                                 </svg>(필수) 개인정보 수집 및 이용 동의
                                             </div>
-                                            <div style="font-size: small;">&#62;</div>
+                                            <div class="fontSz" style="font-size: small;">&#62;</div>
                                         </div>
                                         <div class="nav-under text-secondary">
-                                            <div style="font-size: small;">
+                                            <div class="fontSz" style="font-size: small;">
                                                 <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16"
                                                     fill="currentColor" class="bi bi-check-lg" viewBox="0 0 16 16">
                                                     <path
                                                         d="M12.736 3.97a.733.733 0 0 1 1.047 0c.286.289.29.756.01 1.05L7.88 12.01a.733.733 0 0 1-1.065.02L3.217 8.384a.757.757 0 0 1 0-1.06.733.733 0 0 1 1.047 0l3.052 3.093 5.4-6.425a.247.247 0 0 1 .02-.022Z" />
                                                 </svg>(필수) 카카오페이 개인정보 제3차 제공동의
                                             </div>
-                                            <div style="font-size: small;">&#62;</div>
+                                            <div class="fontSz" style="font-size: small;">&#62;</div>
                                         </div>
                                         <div class="nav-under text-secondary">
-                                            <div style="font-size: small;">
+                                            <div class="fontSz" style="font-size: small;">
                                                 <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16"
                                                     fill="currentColor" class="bi bi-check-lg" viewBox="0 0 16 16">
                                                     <path
                                                         d="M12.736 3.97a.733.733 0 0 1 1.047 0c.286.289.29.756.01 1.05L7.88 12.01a.733.733 0 0 1-1.065.02L3.217 8.384a.757.757 0 0 1 0-1.06.733.733 0 0 1 1.047 0l3.052 3.093 5.4-6.425a.247.247 0 0 1 .02-.022Z" />
                                                 </svg>(선택) 마케팅 활용 및 광고성 정보 수신 동의
                                             </div>
-                                            <div style="font-size: small;">&#62;</div>
+                                            <div class="fontSz" style="font-size: small;">&#62;</div>
                                         </div>
                                         <div class="nav-under text-secondary">
-                                            <div style="font-size: small;">
+                                            <div class="fontSz" style="font-size: small;">
                                                 <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16"
                                                     fill="currentColor" class="bi bi-check-lg" viewBox="0 0 16 16">
                                                     <path
                                                         d="M12.736 3.97a.733.733 0 0 1 1.047 0c.286.289.29.756.01 1.05L7.88 12.01a.733.733 0 0 1-1.065.02L3.217 8.384a.757.757 0 0 1 0-1.06.733.733 0 0 1 1.047 0l3.052 3.093 5.4-6.425a.247.247 0 0 1 .02-.022Z" />
                                                 </svg>(선택) 위치기반서비스 이용약관
                                             </div>
-                                            <div style="font-size: small;">&#62;</div>
+                                            <div class="fontSz" style="font-size: small;">&#62;</div>
                                         </div>
                                     </div>
                                 </div>
@@ -518,8 +527,8 @@
                                     </div>
                                 </div>
                                 <div class="agree w-100 h-20 d-flex justify-content-between align-items-center px-5">
-                                    <div class="wait d-flex flex-column">
-                                        <div style="font-size: x-large;">
+                                    <div class="wait d-flex flex-column fontSz">
+                                        <div class="fontSz" style="font-size: x-large;">
                                             잠깐만요!
                                         </div>
                                         <div class="text-black-50">
@@ -537,7 +546,7 @@
                                 <div
                                     class="container w-100 mt-3 d-flex flex-column justify-content-center align-items-center">
                                     <button type="button"
-                                        class="btn w-75 h-10 btn-light tab text-left d-flex justify-content-start align-items-center mb-3 rounded-1">
+                                        class="btn w-75 h-10 btn-light tab text-left d-flex justify-content-start align-items-center mb-3 rounded-1 fontSz">
                                         <div class="check">
                                             <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20"
                                                 fill="currentColor" class="bi bi-check-circle" viewBox="0 0 16 16">
@@ -554,39 +563,39 @@
 
                                     <div class="w-75 container d-flex flex-column text-secondary">
                                         <div class="nav-under text-secondary">
-                                            <div style="font-size: small;">
+                                            <div class="fontSz" style="font-size: small;">
                                                 <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16"
                                                     fill="currentColor" class="bi bi-check-lg" viewBox="0 0 16 16">
                                                     <path
                                                         d="M12.736 3.97a.733.733 0 0 1 1.047 0c.286.289.29.756.01 1.05L7.88 12.01a.733.733 0 0 1-1.065.02L3.217 8.384a.757.757 0 0 1 0-1.06.733.733 0 0 1 1.047 0l3.052 3.093 5.4-6.425a.247.247 0 0 1 .02-.022Z" />
                                                 </svg>서비스이용약관 관련 전체동의
                                             </div>
-                                            <div class="line" style="font-size: small;">펼치기</div>
+                                            <div class="line fontSz" style="font-size: small;">펼치기</div>
                                         </div>
                                         <div class="nav-under text-secondary">
-                                            <div style="font-size: small;">
+                                            <div class="fontSz" style="font-size: small;">
                                                 <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16"
                                                     fill="currentColor" class="bi bi-check-lg" viewBox="0 0 16 16">
                                                     <path
                                                         d="M12.736 3.97a.733.733 0 0 1 1.047 0c.286.289.29.756.01 1.05L7.88 12.01a.733.733 0 0 1-1.065.02L3.217 8.384a.757.757 0 0 1 0-1.06.733.733 0 0 1 1.047 0l3.052 3.093 5.4-6.425a.247.247 0 0 1 .02-.022Z" />
                                                 </svg>(선택) 마케팅 활용 및 광고성 정보 수신 동의
                                             </div>
-                                            <div style="font-size: small;">&#62;</div>
+                                            <div class="fontSz" style="font-size: small;">&#62;</div>
                                         </div>
-                                        <div class="nav-under text-secondary">
-                                            <div style="font-size: small;">
+                                        <div class="nav-under text-secondary fontSz">
+                                            <div class="fontSz" style="font-size: small;">
                                                 <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16"
                                                     fill="currentColor" class="bi bi-check-lg" viewBox="0 0 16 16">
                                                     <path
                                                         d="M12.736 3.97a.733.733 0 0 1 1.047 0c.286.289.29.756.01 1.05L7.88 12.01a.733.733 0 0 1-1.065.02L3.217 8.384a.757.757 0 0 1 0-1.06.733.733 0 0 1 1.047 0l3.052 3.093 5.4-6.425a.247.247 0 0 1 .02-.022Z" />
                                                 </svg>(선택) 위치기반서비스 이용약관
                                             </div>
-                                            <div style="font-size: small;">&#62;</div>
+                                            <div class="fontSz" style="font-size: small;">&#62;</div>
                                         </div>
                                     </div>
                                 </div>
-                                <div class="fontSz under_bar">
-                                    <button type="button" class="btn btn-y w-100 rounded-0">
+                                <div class="fontSz under_bar fontSz">
+                                    <button type="button" class="btn btn-y w-100 rounded-0 fontSz">
                                         확인
                                     </button>
                                 </div>
@@ -606,8 +615,8 @@
                                     </div>
                                 </div>
                                 <div class="agree w-100 h-20 d-flex justify-content-between align-items-center px-5">
-                                    <div class="wait d-flex flex-column">
-                                        <div style="font-size: x-large;">
+                                    <div class="wait d-flex flex-column fontSz">
+                                        <div class="fontSz" style="font-size: x-large;">
                                             앗, 잠시만요!
                                         </div>
                                         <div class="text-black-50">
@@ -615,27 +624,36 @@
                                         </div>
                                     </div>
                                     <div class="post">
-                                        <svg xmlns="http://www.w3.org/2000/svg" width="50" height="50" fill="currentColor" class="bi bi-stickies-fill" viewBox="0 0 16 16">
-                                            <path d="M0 1.5V13a1 1 0 0 0 1 1V1.5a.5.5 0 0 1 .5-.5H14a1 1 0 0 0-1-1H1.5A1.5 1.5 0 0 0 0 1.5z"/>
-                                            <path d="M3.5 2A1.5 1.5 0 0 0 2 3.5v11A1.5 1.5 0 0 0 3.5 16h6.086a1.5 1.5 0 0 0 1.06-.44l4.915-4.914A1.5 1.5 0 0 0 16 9.586V3.5A1.5 1.5 0 0 0 14.5 2h-11zm6 8.5a1 1 0 0 1 1-1h4.396a.25.25 0 0 1 .177.427l-5.146 5.146a.25.25 0 0 1-.427-.177V10.5z"/>
-                                          </svg>
+                                        <svg xmlns="http://www.w3.org/2000/svg" width="50" height="50"
+                                            fill="currentColor" class="bi bi-stickies-fill" viewBox="0 0 16 16">
+                                            <path
+                                                d="M0 1.5V13a1 1 0 0 0 1 1V1.5a.5.5 0 0 1 .5-.5H14a1 1 0 0 0-1-1H1.5A1.5 1.5 0 0 0 0 1.5z" />
+                                            <path
+                                                d="M3.5 2A1.5 1.5 0 0 0 2 3.5v11A1.5 1.5 0 0 0 3.5 16h6.086a1.5 1.5 0 0 0 1.06-.44l4.915-4.914A1.5 1.5 0 0 0 16 9.586V3.5A1.5 1.5 0 0 0 14.5 2h-11zm6 8.5a1 1 0 0 1 1-1h4.396a.25.25 0 0 1 .177.427l-5.146 5.146a.25.25 0 0 1-.427-.177V10.5z" />
+                                        </svg>
                                     </div>
                                 </div>
                                 <div class="pop">
-                                    <div class="wrap">
-                                        <ul class="w-100 nav d-flex flex-fill flex-column justify-content-start  px-3">
+                                    <div class="wrap w-100 px-3">
+                                        <ul class="w-100 nav d-flex flex-fill flex-column justify-content-start px-1">
                                             <li class="nav-item li1">
                                                 <div class="d-flex justify-content-start align-items-center mt-3">
                                                     <div
-                                                        class="d-flex flex-fill flex-column justify-content-start align-items-start px-1">
-                                                        <div class="flex-fill font-weight-bold" style="font-size: x-large; font-weight: bolder;">
+                                                        class="d-flex flex-fill flex-column justify-content-start align-items-start fontSz">
+                                                        <div class="flex-fill font-weight-bold fontSz"
+                                                            style="font-size: x-large; font-weight: bolder;">
                                                             휴대폰 인증
                                                         </div>
-                                                        <div class="w-100 d-flex justify-content-start">
+                                                        <div class="w-100 d-flex justify-content-start fontSz">
                                                             <div class="mx-1">
-                                                                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-exclamation-circle" viewBox="0 0 16 16">
-                                                                    <path d="M8 15A7 7 0 1 1 8 1a7 7 0 0 1 0 14zm0 1A8 8 0 1 0 8 0a8 8 0 0 0 0 16z"/>
-                                                                    <path d="M7.002 11a1 1 0 1 1 2 0 1 1 0 0 1-2 0zM7.1 4.995a.905.905 0 1 1 1.8 0l-.35 3.507a.552.552 0 0 1-1.1 0L7.1 4.995z"/>
+                                                                <svg xmlns="http://www.w3.org/2000/svg" width="16"
+                                                                    height="16" fill="currentColor"
+                                                                    class="bi bi-exclamation-circle"
+                                                                    viewBox="0 0 16 16">
+                                                                    <path
+                                                                        d="M8 15A7 7 0 1 1 8 1a7 7 0 0 1 0 14zm0 1A8 8 0 1 0 8 0a8 8 0 0 0 0 16z" />
+                                                                    <path
+                                                                        d="M7.002 11a1 1 0 1 1 2 0 1 1 0 0 1-2 0zM7.1 4.995a.905.905 0 1 1 1.8 0l-.35 3.507a.552.552 0 0 1-1.1 0L7.1 4.995z" />
                                                                 </svg>
                                                             </div>
                                                             <div class="line text-black-50 txt-sm">
@@ -645,50 +663,47 @@
                                                     </div>
                                                 </div>
                                             </li>
-                                            <li class="nav-item li1">
-                                                <div class="w-100 d-flex justify-content-start align-items-start">
-
-                                                    <div
-                                                        class="nav d-flex flex-fill flex-column justify-content-start align-items-start px-2">
-                                                        <div class="w-100 text-black-50" style="font-size: small;">
-                                                            이름
-                                                        </div>
-                                                        <div class="w-100 text-black-50" style="font-size: x-large;"">
-                                                            홍길동
-                                                        </div>
+                                            <li class="nav-item li1 w-100">
+                                                <button type="button"
+                                                    class="btn w-100 btn-outline-warning d-flex flex-column justify-content-start align-items-start fontSz">
+                                                    <div class="text-black-50 d-flex justify-content-start"
+                                                        style="font-size: small;">
+                                                        이름
                                                     </div>
-                                                </div>
+                                                    <div class="text-black-50 d-flex justify-content-start fontSz"
+                                                        style="font-size: x-large;">
+                                                        홍길동
+                                                    </div>
+                                                </button>
                                             </li>
-                                            <div class="nav-under container d-flex flex-column text-secondary txt-sm mt-4">
-                                                <div
-                                                    class="nav-under w-100 text-secondary d-flex justify-content-between">
-                                                    <div style="font-size: small;">
-                                                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16"
-                                                            fill="currentColor" class="bi bi-check-lg"
-                                                            viewBox="0 0 16 16">
-                                                            <path
-                                                                d="M12.736 3.97a.733.733 0 0 1 1.047 0c.286.289.29.756.01 1.05L7.88 12.01a.733.733 0 0 1-1.065.02L3.217 8.384a.757.757 0 0 1 0-1.06.733.733 0 0 1 1.047 0l3.052 3.093 5.4-6.425a.247.247 0 0 1 .02-.022Z" />
-                                                        </svg>[필수] 카카오 개인정보 제3자 제공 동의
+                                            <li class="nav-item li1">
+                                                <button type="button" class="btn w-100 fontSz">
+                                                    <div class="w-100 text-secondary d-flex justify-content-start"
+                                                        style="font-size: x-large;">
+                                                        주민등록번호
                                                     </div>
-                                                    <div style="font-size: small;">보기</div>
-                                                </div>
-                                                <div class="nav-under text-secondary txt-sm">
-                                                    <div
-                                                        class="nav-under w-100 text-secondary d-flex justify-content-between">
-                                                        <div style="font-size: small;">
+                                                </button>
+                                            </li>
+                                            <li class="nav-item li1">
+                                                <button type="button" class="btn w-100 d-flex justify-content-start">
+                                                    <div class="w-100 text-secondary d-flex justify-content-between fontSz"
+                                                        style="font-size: x-large;">
+                                                        <div>휴대폰번호</div>
+                                                        <div>
                                                             <svg xmlns="http://www.w3.org/2000/svg" width="16"
-                                                                height="16" fill="currentColor" class="bi bi-check-lg"
-                                                                viewBox="0 0 16 16">
-                                                                <path
-                                                                    d="M12.736 3.97a.733.733 0 0 1 1.047 0c.286.289.29.756.01 1.05L7.88 12.01a.733.733 0 0 1-1.065.02L3.217 8.384a.757.757 0 0 1 0-1.06.733.733 0 0 1 1.047 0l3.052 3.093 5.4-6.425a.247.247 0 0 1 .02-.022Z" />
-                                                            </svg>[필수] 서비스 접근 권한
+                                                                height="16" fill="currentColor"
+                                                                class="bi bi-chevron-expand" viewBox="0 0 16 16">
+                                                                <path fill-rule="evenodd"
+                                                                    d="M3.646 9.146a.5.5 0 0 1 .708 0L8 12.793l3.646-3.647a.5.5 0 0 1 .708.708l-4 4a.5.5 0 0 1-.708 0l-4-4a.5.5 0 0 1 0-.708zm0-2.292a.5.5 0 0 0 .708 0L8 3.207l3.646 3.647a.5.5 0 0 0 .708-.708l-4-4a.5.5 0 0 0-.708 0l-4 4a.5.5 0 0 0 0 .708z" />
+                                                            </svg>
                                                         </div>
-                                                        <div style="font-size: small;">보기</div>
                                                     </div>
+                                                </button>
+                                            </li>
                                         </ul>
                                     </div>
-                                    <button type="button" class="btn btn-y w-75">
-                                        동의하고 계속하기
+                                    <button type="button" class="btn my-1 btn-secondary w-75 fontSz" disabled>
+                                        인증번호 요청
                                     </button>
                                 </div>
                             </div>
@@ -717,7 +732,7 @@
                                 </div>
                                 <div class="bartext">이전</div>
                             </div>
-                            <div class="baricon_wrap pause" >
+                            <div class="baricon_wrap pause">
 
                                 <div class="stop" id="pause_btn">
                                     <div class="baricon">
@@ -734,9 +749,12 @@
                                     <div class="baricon">
                                         <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16"
                                             fill="currentColor" class="bi bi-volume-up-fill svg" viewBox="0 0 16 16">
-                                            <path d="M11.536 14.01A8.473 8.473 0 0 0 14.026 8a8.473 8.473 0 0 0-2.49-6.01l-.708.707A7.476 7.476 0 0 1 13.025 8c0 2.071-.84 3.946-2.197 5.303l.708.707z"/>
-                                            <path d="M10.121 12.596A6.48 6.48 0 0 0 12.025 8a6.48 6.48 0 0 0-1.904-4.596l-.707.707A5.483 5.483 0 0 1 11.025 8a5.483 5.483 0 0 1-1.61 3.89l.706.706z"/>
-                                            <path d="M8.707 11.182A4.486 4.486 0 0 0 10.025 8a4.486 4.486 0 0 0-1.318-3.182L8 5.525A3.489 3.489 0 0 1 9.025 8 3.49 3.49 0 0 1 8 10.475l.707.707zM6.717 3.55A.5.5 0 0 1 7 4v8a.5.5 0 0 1-.812.39L3.825 10.5H1.5A.5.5 0 0 1 1 10V6a.5.5 0 0 1 .5-.5h2.325l2.363-1.89a.5.5 0 0 1 .529-.06z"/>
+                                            <path
+                                                d="M11.536 14.01A8.473 8.473 0 0 0 14.026 8a8.473 8.473 0 0 0-2.49-6.01l-.708.707A7.476 7.476 0 0 1 13.025 8c0 2.071-.84 3.946-2.197 5.303l.708.707z" />
+                                            <path
+                                                d="M10.121 12.596A6.48 6.48 0 0 0 12.025 8a6.48 6.48 0 0 0-1.904-4.596l-.707.707A5.483 5.483 0 0 1 11.025 8a5.483 5.483 0 0 1-1.61 3.89l.706.706z" />
+                                            <path
+                                                d="M8.707 11.182A4.486 4.486 0 0 0 10.025 8a4.486 4.486 0 0 0-1.318-3.182L8 5.525A3.489 3.489 0 0 1 9.025 8 3.49 3.49 0 0 1 8 10.475l.707.707zM6.717 3.55A.5.5 0 0 1 7 4v8a.5.5 0 0 1-.812.39L3.825 10.5H1.5A.5.5 0 0 1 1 10V6a.5.5 0 0 1 .5-.5h2.325l2.363-1.89a.5.5 0 0 1 .529-.06z" />
                                         </svg>
                                     </div>
                                     <div class="bartext text-center">재생</div>
