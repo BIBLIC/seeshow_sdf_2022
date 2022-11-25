@@ -44,6 +44,12 @@
 /* -------------------------------------------------------------------------------------- */
 /*희영 test*/
 
+.modal-body {
+  word-break: keep-all;
+  word-wrap: break-word;
+}
+
+
 .show {display:block !important} /*보여주기*/
 .hide {display:none} /*숨기기*/
 

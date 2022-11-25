@@ -135,6 +135,8 @@ $(document).on("click", "#prev_btn", function () {
 
 $('.play').css('display', 'none');
 
+
+
 //정지 버튼
 $(document).on("click", "#pause_btn", function () {
     $('.stop').css('display', 'none');
@@ -244,8 +246,6 @@ function next(real_pg) {
     
 
 }
-
-
 
 
 

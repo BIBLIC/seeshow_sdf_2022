@@ -1,4 +1,4 @@
-var total_page = 7;//페이지 수 -> 시나리오마다 total_page 수 바꾸기 
+var total_page = 8;//페이지 수 -> 시나리오마다 total_page 수 바꾸기 
 
 //오디오 배열 선언, 페이지 수 대로 배열에 mp3 넣기
 const audioArray = [];
@@ -43,7 +43,7 @@ const pageClickArea = [
 const inputAnswer = [
     {
         page: 2,
-        correctAnswer: "출발"
+        correctAnswer: "서울디지털재단"
     },
 ];
 
@@ -59,7 +59,7 @@ const modalCont = [
     },
     {
         page: 2,
-        instruction: "출발지를 현재 위치로 지정하세요."
+        instruction: "출발지를 확인하고 '어디로 갈까요?'를 클릭해 도착지 설정 페이지로 이동하세요."
     },
     {
         page: 3,
@@ -129,7 +129,7 @@ createPopper(cursor_pos_2, cursor_wrap_2, {
         {
             name: 'offset',
             options: {
-                offset: [0,0],
+                offset: [-35,100],
             },
         },
     ],
