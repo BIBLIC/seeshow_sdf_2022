@@ -1,3 +1,15 @@
+.scroll {
+  height: 77.6vh;
+  scroll-behavior: smooth;
+  overflow-y: scroll;
+  -ms-overflow-style: none;
+  /* IE and Edge */
+}
+
+.scroll::-webkit-scrollbar {
+  display: none;
+  /* Chrome, Safari, Opera*/
+}
 
 .btn {
   min-height: 6vh;
@@ -227,7 +239,7 @@ Firefox 브라우저를 위해서는 -moz- 를 사용하세요 */
 
 .page{
   position: relative;
-  overflow: auto;
+  /* overflow: auto; */
   width: 100%;
   height: 100%;
 }
@@ -329,14 +341,15 @@ p {
 }
 
 #main {
-  scroll-behavior: smooth;
+  /* scroll-behavior: smooth;
   overflow-y: scroll;
-  -ms-overflow-style: none;
+  -ms-overflow-style: none; */
+
   /* IE and Edge */
 }
 
 #main::-webkit-scrollbar {
-  display: none;
+  /* display: none; */
   /* Chrome, Safari, Opera*/
 }
 
