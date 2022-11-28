@@ -406,8 +406,8 @@ p {
 .ctrlbar .baricon_wrap .baricon .svg.hint {
   width: 70%;
   height: 70%;
-  color: #50ab64;
-}
+  color: #5465ae;
+}/*네비바 힌트버튼 전구색 변경*/
 
 .ctrlbar .baricon_wrap .baricon .svg.front {
   color: #fff;
