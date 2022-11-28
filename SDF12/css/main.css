@@ -154,12 +154,11 @@
     width: 100%;
     height: 50vh;
     background: #fff;
-    padding-top: 1em;
 }
 
 #p5 .under_bar .tab {
     width: 100%;
-    height: 20%;
+    /* height: 20%; */
 }
 
 #p5 .under_bar .tab .icon {
@@ -178,18 +177,24 @@
     justify-content: space-between;
     align-items: center;
 }
+
 #p5 .under_bar .tab:not(:last-child) {
     border-bottom: 1px solid #e0e0e0;
   }
   
 
 #p5 .under_bar .tab .txt-wrap .txt {
-    padding-left: .7em;
-    padding-right: .7em;
+    padding-left: .5em;
+    padding-right: .5em;
 }
 
 #p5 .under_bar .tab .txt-wrap .text-left {
-    min-width: 60%;
+    width: 60%;
+}
+
+#p5 .under_bar .tab .txt-wrap .text-left .detail {
+    word-break: keep-all;
+    word-wrap: break-word;
 }
 
 
@@ -200,6 +205,8 @@
     flex: 1;
     /* min-width: 38%; */
 }
+
+
 
 #p6 .under_bar {
     width: 100%;

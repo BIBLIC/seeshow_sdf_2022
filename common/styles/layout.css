@@ -1,5 +1,4 @@
 .scroll {
-  height: 77.6vh;
   scroll-behavior: smooth;
   overflow-y: scroll;
   -ms-overflow-style: none;
