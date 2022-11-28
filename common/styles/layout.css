@@ -499,3 +499,7 @@ p {
   margin-right: 1em;
 }
 
+
+.text-sm{
+  font-size: small;
+}
