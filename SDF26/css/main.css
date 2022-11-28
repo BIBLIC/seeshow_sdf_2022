@@ -53,7 +53,7 @@
 }
 
 #p1 .btn .svg {
-    margin-left: 3em;
+    margin-left: 1em;
 }
 
 #p2 .btn,
@@ -230,19 +230,14 @@
     color: #fff;
 }
 
-.text-sm{
-    font-size: small;
-}
-
 #p6 .container {
     padding-left: 3em;
     padding-right: 3em;
     min-height: 40vh;
 }
 
-#p8 .bg-lightgray {
+.bg-lightgray {
     width: 100%;
-    min-height: 23vh;
     background: #F0F0F0;
     padding: 1em;
     display: flex;
@@ -251,6 +246,42 @@
     align-items: flex-start;
 }
 
+#p8 .bg-lightgray {
+    min-height: 23vh;
+}
+
 #p8 .bg-lightgray .text-b {
     padding-left: 1rem;
+}
+
+#p9 .bg-lightgray {
+    min-height: 10vh;
+}
+
+#p9 .tab {
+    width: 100%;
+    min-height: 5vh;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+#p9 .detail {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+}
+
+#p9 .detail .wrap {
+    width: 48%;
+}
+
+#p9 .tab .left{
+    flex:1;
+}
+
+#p9 .tab .right{
+    font-weight: bold;
+    min-width: fit-content;
 }
