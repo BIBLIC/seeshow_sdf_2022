@@ -55,6 +55,11 @@
 /* -------------------------------------------------------------------------------------- */
 /*희영 test*/
 
+.addShadow {
+  box-shadow : rgba(0,0,0,0.5) 0 0 0 9999px;
+  z-index : 10;
+}
+
 .modal-body {
   word-break: keep-all;
   word-wrap: break-word;

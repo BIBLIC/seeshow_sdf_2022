@@ -210,10 +210,14 @@ slider.oninput = function () {
 //**************************+    힌트 버튼   +*********************************** 
 
 $(".cursor_wrap").css('display', 'none');
+$(".pg_"+page_num+"_answer").css('box-shadow', '#00000');
 
 //시작하기 버튼 클릭 후 컨트롤 바 내부 변경
 $('#hint_btn').click(function () {
-    $(".cursor_wrap").toggleClass('show');
+    var myPgNum = $(".active").attr('id');
+    var real_pg = myPgNum.slice(1);
+    $(".cursor_wrap_"+real_pg).toggleClass('show');
+    $(".pg_"+real_pg+"_answer:first").toggleClass("addShadow");
 })
 
 
@@ -247,7 +251,6 @@ document.querySelector("main").addEventListener("click", function (e) {//메인 
 
     var myPgNum = $(".active").attr('id');
     var real_pg = myPgNum.slice(1);
-    console.log('wlsWk', real_pg);
 
     //if (page_num == pageClickArea[i].page) {//현재 페이지와 pageClickArea의 페이지 같으면
     let clickableArea = pageClickArea[real_pg].correctAnswer;
