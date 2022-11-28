@@ -238,8 +238,6 @@ function next(real_pg) {
     if (page_num > 1) {
         audioArray[page_num - 2].pause();
     }
-
-
 }
 
 
@@ -248,11 +246,14 @@ function next(real_pg) {
 document.querySelector("main").addEventListener("click", function (e) {//메인 영역에서만 이벤트 발생
 
     var myPgNum = $(".active").attr('id');
-    var real_pg = myPgNum.slice(-1);
+    var real_pg = myPgNum.slice(1);
+    console.log('wlsWk', real_pg);
 
     //if (page_num == pageClickArea[i].page) {//현재 페이지와 pageClickArea의 페이지 같으면
     let clickableArea = pageClickArea[real_pg].correctAnswer;
-    let inputAnswer = inputAnswer[real_pg].correctAnswer;
+    let inputableAnswer = inputAnswer[real_pg].inputableAnswer;
+    let instruction = modalCont[real_pg].instruction;
+    //
 
 
 
@@ -265,11 +266,44 @@ document.querySelector("main").addEventListener("click", function (e) {//메인 
 
     if (e.target.className.includes(clickableArea)) {
         //맞게 클릭하면
-        console.log("correct");
+        //console.log("correct");
 
-        if (e.target.className.includes("answer_txt")){
+        if (e.target.className.includes("answer_txt")) {
             
-            alert('입력 처리'); 
+            
+            //var inputClass = $('#'+real_pg+'_input') ;
+            //var value = inputClass.val();
+
+
+            $('.'+real_pg+'_input').keydown(function(e) {
+                if (event.which === 13) {
+                    let unspacedValue = this.value.split(' ').join('');
+                    if ( unspacedValue == inputableAnswer){
+                        next(real_pg);
+                    } else {
+                        $('.modal-body').text(instruction);
+                        $('#staticBackdrop').modal('show');
+                    }
+                }
+                
+            });
+            // $(document).on("keyup", "#inputClass", function () {
+            //   alert('입력완');
+            
+            // });
+            // 엔터키 처리 이벤트
+            // inputClass.addEventListener("keyup", function (event) {
+            //     var input_txt = this.value;
+            //     console.log(input_txt);
+            //     // if (event.keyCode === 13) {
+            //     //     event.preventDefault();
+            //     //     inputBtn.click();
+            //     // }
+            // });
+
+
+
+            //alert(inputableAnswer);
 
         } else {
             next(real_pg);
@@ -279,7 +313,7 @@ document.querySelector("main").addEventListener("click", function (e) {//메인 
         //틀리게 클릭하면
         $('#staticBackdrop').modal('show');
     }
-    let instruction = modalCont[real_pg].instruction;
+    
     $('.modal-body').text(instruction);
 
 
