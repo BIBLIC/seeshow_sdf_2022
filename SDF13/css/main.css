@@ -242,6 +242,12 @@
     padding-top: 1em;
 }
 
+#p7 .icon{
+    min-width: 135px;
+    min-height: 135px;
+    border: 0;
+}
+
 #p7 .btn {
     min-height: 5vh;
 }
