@@ -219,12 +219,8 @@ $('#hint_btn').click(function () {
     var myPgNum = $(".active").attr('id');
     var real_pg = myPgNum.slice(1);
     $(".cursor_wrap_"+real_pg).toggleClass('show');
-
-    document.querySelector("main").addEventListener("click", function (e) {
-        
-    });
-
     $(".pg_"+real_pg+"_answer:first").toggleClass("addShadow");
+    $('.shadow_ext').toggleClass("addShadow");
 })
 
 
