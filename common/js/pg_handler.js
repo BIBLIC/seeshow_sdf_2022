@@ -11,8 +11,7 @@ const textModal = document.getElementById("textModal");
 const size_btn = document.getElementById("size_btn");
 $('.nav_btn_wrap').css('display', 'none');
 
-
-
+var audio_stat = 1;
 
 //popovers 초기화 작업
 const popoverTriggerList = document.querySelectorAll('[data-bs-toggle="popover"]')
@@ -25,9 +24,7 @@ const popoverList = [...popoverTriggerList].map(popoverTriggerEl => new bootstra
 $(document).ready(function () {
     //$('.nav_btn_wrap').css('display', 'none');
     firstPageLoader();
-    console.log(audioArray);
 });
-
 
 
 //시작 페이지 로딩
@@ -46,8 +43,6 @@ function firstPageLoader() {
 
 //시작하기 버튼 클릭 후 컨트롤 바 내부 변경
 $('#start-btn').click(function () {
-    console.log('클릭');
-
     $('.nav_btn_wrap').css('display', 'block');
     //$('.nav_btn_wrap').css('display', 'flex');
     $('.start_btn_wrap').css('display', 'none');
@@ -65,7 +60,6 @@ $('#start-btn').click(function () {
         $("#p" + page_num).toggleClass("pactive");
         $(".pactive").fadeIn(0);
     });
-    console.log(page_num);//나중에 다 지우기
     audioArray[page_num - 1].load();// 해당 페이지 오디오 로딩
     audioArray[page_num - 1].play();// 해당 페이지 오디오 재생
 });
@@ -97,6 +91,15 @@ $(document).on("click", "#next_btn", function () {
     if (page_num > 1) {
         audioArray[page_num - 2].pause();
     }
+    if (audio_stat == 0) {
+        audioArray[page_num - 1].pause();
+    } else if (audio_stat == 1) {
+        audioArray[page_num - 1].play();
+    }
+    //if ($(".active").children().hasClass(".answer_txt")){
+    // if ($(".active > .answer_txt")){
+    // alert('폼 영역 확인');
+    // }
 });
 
 
@@ -125,6 +128,12 @@ $(document).on("click", "#prev_btn", function () {
         audioArray[page_num - 1].play();
     }
     audioArray[page_num].pause();
+    if (audio_stat == 0) {
+        audioArray[page_num - 1].pause();
+    } else if (audio_stat == 1) {
+        audioArray[page_num - 1].play();
+    }
+
 });
 
 
@@ -135,14 +144,13 @@ $(document).on("click", "#prev_btn", function () {
 
 $('.play').css('display', 'none');
 
-
-
 //정지 버튼
 $(document).on("click", "#pause_btn", function () {
     $('.stop').css('display', 'none');
     $('.play').css('display', 'block');
     $('.play').css('display', 'flex');
     audioArray[page_num - 1].pause();
+    audio_stat = 0;
 });
 
 //재생 버튼
@@ -151,8 +159,8 @@ $(document).on("click", "#play_btn", function () {
     $('.play').css('display', 'none');
     $('.stop').css('display', 'flex');
     audioArray[page_num - 1].play();
+    audio_stat = 1;
 });
-
 
 
 //*******************************************************************************
@@ -164,7 +172,6 @@ $(document).on("click", "#play_btn", function () {
 var options = {
     html: true,
     // title: "Optional: HELLO(Will overide the default-the inline title)",
-
     content: $('[data-name="popover-content"]')
 
 }
@@ -181,17 +188,11 @@ var $txt_area = $(".fontSz");
 var currentSize = $txt_area.css("font-size");   /* 폰트사이즈를 알아낸다. */
 var num = parseFloat(currentSize, 10); /* parseFloat()은 숫자가 아니면 숫자가 아니라는 뜻의 NaN을 반환한다. */
 var unit = currentSize.slice(-2);   /* 끝에서부터 두자리의 문자를 가져온다. */
-console.log("현재 텍스트 사이즈", currentSize);
-console.log("num", num);
 var textSizeValue = 0;
 //output.innerHTML = slider.value;//슬라이더 값 출력할 곳
 slider.oninput = function () {
     // output.innerHTML = this.value;
     textSizeValue = this.value;
-    console.log("슬라이더 값", textSizeValue);
-    console.log("현재 텍스트 사이즈", currentSize);
-    console.log("num", num);
-
     if (textSizeValue == "0") {
         //$txt_area.css("fontSize", "1em");
         $txt_area.attr("style", "font-size: 1em !important");
@@ -201,10 +202,7 @@ slider.oninput = function () {
     } else if (textSizeValue == "2") {
         //$txt_area.css("fontSize", "1.4em");
         $txt_area.attr("style", "font-size: 1.4em !important");
-
     }
-
-
 }
 
 
@@ -212,11 +210,14 @@ slider.oninput = function () {
 //**************************+    힌트 버튼   +*********************************** 
 
 $(".cursor_wrap").css('display', 'none');
+$(".pg_"+page_num+"_answer").css('box-shadow', '#00000');
 
 //시작하기 버튼 클릭 후 컨트롤 바 내부 변경
 $('#hint_btn').click(function () {
-    console.log('zmfflr');
-    $(".cursor_wrap").toggleClass('show');
+    var myPgNum = $(".active").attr('id');
+    var real_pg = myPgNum.slice(1);
+    $(".cursor_wrap_"+real_pg).toggleClass('show');
+    $(".pg_"+real_pg+"_answer:first").toggleClass("addShadow");
 })
 
 
@@ -226,7 +227,6 @@ $('#hint_btn').click(function () {
 
 //다음으로 가기 함수 
 function next(real_pg) {
-    console.log('cc');
     page_num += 1;
     $(".active").removeClass("active");//active 클래스에서 'active'클래스 제거하고 -> 없어도 되는 코드
     $("#p" + page_num).addClass("active");//클릭한 곳에 'active' 클래스 추가
@@ -237,14 +237,11 @@ function next(real_pg) {
         $("#p" + page_num).toggleClass("pactive");
         $(".pactive").fadeIn(0);
     });
-    console.log(page_num);
     audioArray[page_num - 1].load();
     audioArray[page_num - 1].play();
     if (page_num > 1) {
         audioArray[page_num - 2].pause();
     }
-    
-
 }
 
 
@@ -252,53 +249,79 @@ function next(real_pg) {
 //특정 영역 외 클릭시 이벤트 처리 (class 명으로 가져오기)
 document.querySelector("main").addEventListener("click", function (e) {//메인 영역에서만 이벤트 발생
 
-    
     var myPgNum = $(".active").attr('id');
-    var real_pg = myPgNum.slice(-1);
-    
-    console.log("진짜 페이지 " , real_pg);
+    var real_pg = myPgNum.slice(1);
 
-    
-        //if (page_num == pageClickArea[i].page) {//현재 페이지와 pageClickArea의 페이지 같으면
-            let clickableArea = pageClickArea[real_pg].correctAnswer;
-            console.log("현재 페이지 ", real_pg, "정답은", clickableArea); //마지막에 모두 지우기
-            console.log("클릭한 요소는 ", e.target.className);
+    //if (page_num == pageClickArea[i].page) {//현재 페이지와 pageClickArea의 페이지 같으면
+    let clickableArea = pageClickArea[real_pg].correctAnswer;
+    let inputableAnswer = inputAnswer[real_pg].inputableAnswer;
+    let instruction = modalCont[real_pg].instruction;
+    //
 
 
-            if (e.target.className.includes(clickableArea)) {
-                //맞게 클릭하면
-                console.log("correct");
-                next(real_pg);
-            } else {
-                //틀리게 클릭하면
-                $('#staticBackdrop').modal('show');
-            }
+
+    // if($("#div_test").hasClass("apple") === true) {
+
+    //     // 속성값이 존재함.
+
+    //     }
 
 
-            let instruction = modalCont[real_pg].instruction;
-            console.log("현재 페이지 ", page_num, "지시는", instruction); //마지막에 모두 지우기
-            $('.modal-body').text(instruction);
+    if (e.target.className.includes(clickableArea)) {
+        //맞게 클릭하면
+        //console.log("correct");
+
+        if (e.target.className.includes("answer_txt")) {
             
             
-            
-            
-            //let answer = inputAnswer[i].correctAnswer;
+            //var inputClass = $('#'+real_pg+'_input') ;
+            //var value = inputClass.val();
 
-            // document.querySelector(".input_answer").addEventListener("keydown", function (e) {
 
-            //     console.log('ss');
+            $('.'+real_pg+'_input').keydown(function(e) {
+                if (event.which === 13) {
+                    let unspacedValue = this.value.split(' ').join('');
+                    if ( unspacedValue == inputableAnswer){
+                        next(real_pg);
+                    } else {
+                        $('.modal-body').text(instruction);
+                        $('#staticBackdrop').modal('show');
+                    }
+                }
+                
+            });
+            // $(document).on("keyup", "#inputClass", function () {
+            //   alert('입력완');
+            
+            // });
+            // 엔터키 처리 이벤트
+            // inputClass.addEventListener("keyup", function (event) {
+            //     var input_txt = this.value;
+            //     console.log(input_txt);
             //     // if (event.keyCode === 13) {
-            //     //     if (this.value === answer) {
-            //     //         //handleClickBox();
-            //     //         alert("성공");
-            //     //     } else if (this.value !== answer) {
-            //     //         alert("실패");
-            //     //     }
+            //     //     event.preventDefault();
+            //     //     inputBtn.click();
             //     // }
             // });
 
-        //}
+
+
+            //alert(inputableAnswer);
+
+        } else {
+            next(real_pg);
+        }
+
+    } else {
+        //틀리게 클릭하면
+        $('#staticBackdrop').modal('show');
+    }
     
+    $('.modal-body').text(instruction);
+
+
+
+
 })
 
 

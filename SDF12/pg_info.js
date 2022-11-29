@@ -41,12 +41,17 @@ const pageClickArea = [
 ];
 
 const inputAnswer = [
+    {},
+    {},
+    {},
     {
-        page: 2,
-        correctAnswer: "서울디지털재단"
+        page: 3,
+        inputableAnswer: "서울디지털재단"
     },
+    {},
+    {},
+    {},
 ];
-
 
 const modalCont = [
     {

@@ -1,3 +1,14 @@
+.scroll {
+  scroll-behavior: smooth;
+  overflow-y: scroll;
+  -ms-overflow-style: none;
+  /* IE and Edge */
+}
+
+.scroll::-webkit-scrollbar {
+  display: none;
+  /* Chrome, Safari, Opera*/
+}
 
 .btn {
   min-height: 6vh;
@@ -43,6 +54,11 @@
 
 /* -------------------------------------------------------------------------------------- */
 /*희영 test*/
+
+.addShadow {
+  box-shadow : rgba(0,0,0,0.5) 0 0 0 9999px;
+  z-index : 10;
+}
 
 .modal-body {
   word-break: keep-all;
@@ -227,7 +243,7 @@ Firefox 브라우저를 위해서는 -moz- 를 사용하세요 */
 
 .page{
   position: relative;
-  overflow: auto;
+  /* overflow: auto; */
   width: 100%;
   height: 100%;
 }
@@ -294,6 +310,10 @@ p {
   font-size: clamp(18px, 20px + 1.5vw, 1.5em);
 }
 
+body {
+  min-height: 640px;
+}
+
 #wrap {
   display: flex;
   align-items: center;
@@ -329,14 +349,15 @@ p {
 }
 
 #main {
-  scroll-behavior: smooth;
+  /* scroll-behavior: smooth;
   overflow-y: scroll;
-  -ms-overflow-style: none;
+  -ms-overflow-style: none; */
+
   /* IE and Edge */
 }
 
 #main::-webkit-scrollbar {
-  display: none;
+  /* display: none; */
   /* Chrome, Safari, Opera*/
 }
 
@@ -499,3 +520,7 @@ p {
   margin-right: 1em;
 }
 
+
+.text-sm{
+  font-size: small;
+}

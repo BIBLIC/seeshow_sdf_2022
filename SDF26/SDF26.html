@@ -2,7 +2,7 @@
 <html>
 
 <head>
-    <meta name="viewport" content="width=device-width,height=640,initial-scale=1.0,minimum-scale=1.0,maximum-scale=1.0">
+    <meta name="viewport" content="width=device-width,height=device-height,initial-scale=1.0,minimum-scale=1.0,maximum-scale=1.0">
     <title>SDF</title>
     <link href="../common/styles/reset.css" rel="stylesheet" />
     <link href="./css/main.css" rel="stylesheet" />
@@ -94,7 +94,7 @@
                                                     d="M4.646 1.646a.5.5 0 0 1 .708 0l6 6a.5.5 0 0 1 0 .708l-6 6a.5.5 0 0 1-.708-.708L10.293 8 4.646 2.354a.5.5 0 0 1 0-.708z" />
                                             </svg>
                                         </button>
-                                        <button type="button" class="fontSz btn btn-outline-b">
+                                        <button type="button" class="pg_1_answer fontSz btn btn-outline-b">
                                             로그인
                                             <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16"
                                                 fill="currentColor" class="bi bi-chevron-right svg" viewBox="0 0 16 16">
@@ -111,7 +111,7 @@
                             <div class="page_wrap">
                                 <h1 class="pg_title" style="color: #fff;">Page2</h1>
                                 <div class="w-100 d-flex justify-content-between align-items-center px-4 py-3">
-                                    <div class="w-30 h-100 d-flex justify-content-start align-items-center">
+                                    <div class="h-100 d-flex justify-content-start align-items-center">
                                         <svg xmlns="http://www.w3.org/2000/svg" width="23" height="23"
                                             fill="currentColor" class="bi bi-arrow-left" viewBox="0 0 16 16">
                                             <path fill-rule="evenodd"
@@ -215,7 +215,7 @@
                                                     d="M15 8a.5.5 0 0 0-.5-.5H2.707l3.147-3.146a.5.5 0 1 0-.708-.708l-4 4a.5.5 0 0 0 0 .708l4 4a.5.5 0 0 0 .708-.708L2.707 8.5H14.5A.5.5 0 0 0 15 8z" />
                                             </svg>
                                         </button>
-                                        <button type="button" class="fontSz btn btn-b">
+                                        <button type="button" class="pg_2_answer fontSz btn btn-b">
                                             입력완료
                                         </button>
                                     </div>
@@ -296,7 +296,7 @@
                                         </div>
                                         <div class="bartext">홈</div>
                                     </div>
-                                    <div class="fontSz baricon_wrap prev" id="prev_btn">
+                                    <div class="pg_3_answer fontSz baricon_wrap prev" id="prev_btn">
                                         <div class="baricon">
                                             <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16"
                                                 fill="currentColor" class="bi bi-folder2-open" viewBox="0 0 16 16">
@@ -363,31 +363,35 @@
 
                                 <div class="container">
                                     <div class="tab pt-4 pb-3">
-                                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-check-square-fill text-lightgray" viewBox="0 0 16 16">
-                                            <path d="M2 0a2 2 0 0 0-2 2v12a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V2a2 2 0 0 0-2-2H2zm10.03 4.97a.75.75 0 0 1 .011 1.05l-3.992 4.99a.75.75 0 0 1-1.08.02L4.324 8.384a.75.75 0 1 1 1.06-1.06l2.094 2.093 3.473-4.425a.75.75 0 0 1 1.08-.022z"/>
-                                          </svg>
-                                          개인정보동의
+                                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16"
+                                            fill="currentColor" class="bi bi-check-square-fill text-lightgray"
+                                            viewBox="0 0 16 16">
+                                            <path
+                                                d="M2 0a2 2 0 0 0-2 2v12a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V2a2 2 0 0 0-2-2H2zm10.03 4.97a.75.75 0 0 1 .011 1.05l-3.992 4.99a.75.75 0 0 1-1.08.02L4.324 8.384a.75.75 0 1 1 1.06-1.06l2.094 2.093 3.473-4.425a.75.75 0 0 1 1.08-.022z" />
+                                        </svg>
+                                        개인정보동의
                                     </div>
                                     <div class="tab mb-1">
                                         <div class="bg-b">
                                             <ul class="fontSz m-0">
-                                                <li>인터넷지로는 고객의 납부편의 제공(주민등록번호 등 입력 및 인증서 확인과정 생략)을 위하여 관계법령이 정한 범위 내에서 아래의 요금을 납부하는 고객에 대하여 고유식별정보를 수집 및 이용합니다.</li>
+                                                <li>인터넷지로는 고객의 납부편의 제공(주민등록번호 등 입력 및 인증서 확인과정 생략)을 위하여 관계법령이 정한 범위 내에서
+                                                    아래의 요금을 납부하는 고객에 대하여 고유식별정보를 수집 및 이용합니다.</li>
                                                 <li>수집된 고유식별정보는 해당목적 이외의 용도로는 이용되지 않습니다.</li>
                                                 <li class="text-b">대상요금 : 지방세입금, 국세 등 국고금, 국민연금보험료</li>
                                                 <li class="text-b">상기 요금을 납부하지 않는 고객은 등록이 필요치 않습니다.</li>
-                                            </ul>                                    
+                                            </ul>
                                         </div>
                                     </div>
                                     <form class="tab d-flex form" role="search">
-                                        <input class="pw form-control me-2 fontSz"
-                                            type="password" placeholder="주민등록번호" aria-label="Search">
+                                        <input class="pw form-control me-2 fontSz" type="password" placeholder="주민등록번호"
+                                            aria-label="Search">
                                     </form>
                                 </div>
                                 <div class="fontSz under_bar">
                                     <button type="button" class="btn left w-100 rounded-0">
                                         이전
                                     </button>
-                                    <button type="button" class="btn giro btn-b w-100 rounded-0">
+                                    <button type="button" class="pg_4_answer btn giro btn-b w-100 rounded-0">
                                         다음
                                     </button>
                                 </div>
@@ -482,13 +486,13 @@
                                     </div>
                                     <div class="tab key_wrap">
                                         <div class="key  none">
-                                            
+
                                         </div>
                                         <div class="key">
                                             9
                                         </div>
                                         <div class="key none">
-                                            
+
                                         </div>
                                         <div class="key">
                                             0
@@ -502,7 +506,7 @@
                                                     d="M15 8a.5.5 0 0 0-.5-.5H2.707l3.147-3.146a.5.5 0 1 0-.708-.708l-4 4a.5.5 0 0 0 0 .708l4 4a.5.5 0 0 0 .708-.708L2.707 8.5H14.5A.5.5 0 0 0 15 8z" />
                                             </svg>
                                         </button>
-                                        <button type="button" class="fontSz btn btn-b">
+                                        <button type="button" class="pg_5_answer fontSz btn btn-b">
                                             입력완료
                                         </button>
                                     </div>
@@ -513,7 +517,7 @@
                         <div class="page" id="p6">
                             <div class="page_wrap">
                                 <h1 class="pg_title" style="color: #fff;">Page6</h1>
-                                <div class="w-100 d-flex justify-content-between align-items-center px-4 py-3">
+                                <div class="w-100 d-flex justify-content-between align-items-center ps-3 pe-4 py-3">
                                     <div class="flex-fill h-100 d-flex justify-content-start align-items-center">
                                         <h5 class="px-3 m-0">주민등록번호 설정</h5>
                                     </div>
@@ -524,15 +528,23 @@
                                     </svg>
                                 </div>
                                 <div class="container d-flex flex-column justify-content-center align-items-center">
-                                    <svg xmlns="http://www.w3.org/2000/svg" width="100" height="100" fill="currentColor" class="bi bi-check2-circle text-b" viewBox="0 0 16 16">
-                                        <path d="M2.5 8a5.5 5.5 0 0 1 8.25-4.764.5.5 0 0 0 .5-.866A6.5 6.5 0 1 0 14.5 8a.5.5 0 0 0-1 0 5.5 5.5 0 1 1-11 0z"/>
-                                        <path d="M15.354 3.354a.5.5 0 0 0-.708-.708L8 9.293 5.354 6.646a.5.5 0 1 0-.708.708l3 3a.5.5 0 0 0 .708 0l7-7z"/>
-                                      </svg>
-                                      <h5 class="my-3">등록 완료</h5>
-                                      <div class="text-center text-sm text-black-50">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="100" height="100" fill="currentColor"
+                                        class="bi bi-check2-circle text-b" viewBox="0 0 16 16">
+                                        <path
+                                            d="M2.5 8a5.5 5.5 0 0 1 8.25-4.764.5.5 0 0 0 .5-.866A6.5 6.5 0 1 0 14.5 8a.5.5 0 0 0-1 0 5.5 5.5 0 1 1-11 0z" />
+                                        <path
+                                            d="M15.354 3.354a.5.5 0 0 0-.708-.708L8 9.293 5.354 6.646a.5.5 0 1 0-.708.708l3 3a.5.5 0 0 0 .708 0l7-7z" />
+                                    </svg>
+                                    <h5 class="my-3">등록 완료</h5>
+                                    <div class="text-center text-sm text-black-50">
                                         고객님의 주민등록번호 등록이 완료되었습니다.<br><br>
                                         고객님께서는 지방세 등 고지내역 조회 시 주민등록번호 입력 및 인증서 확인 없이 간편하게 본인의 고지서내역을 조회 및 납부하실 수 있습니다.
-                                      </div>
+                                    </div>
+                                </div>
+                                <div class="fontSz under_bar">
+                                    <button type="button" class="pg_6_answer btn giro btn-b w-100 rounded-0">
+                                        확인
+                                    </button>
                                 </div>
                             </div>
                         </div>
@@ -610,7 +622,7 @@
                                         </div>
                                         <div class="bartext">홈</div>
                                     </div>
-                                    <div class="fontSz baricon_wrap prev" id="prev_btn">
+                                    <div class="pg_7_answer fontSz baricon_wrap prev" id="prev_btn">
                                         <div class="baricon">
                                             <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16"
                                                 fill="currentColor" class="bi bi-folder2-open" viewBox="0 0 16 16">
@@ -674,29 +686,28 @@
                                             d="M2.5 12a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5zm0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5zm0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5z" />
                                     </svg>
                                 </div>
-
-                                <div class="">
-                                    <div class="tab w-100">
-                                        <div class="bg-lightgray">
-                                            <div class="text-b">통합조회 가능 공과금</div>
-                                            <ul class="fontSz m-0 text-sm">
-                                                <li>내용 보충</li>
-                                                <li>내용 보충</li>
-                                                <li>내용 보충</li>
-                                                <li>내용 보충</li>
-                                            </ul>                                    
-                                        </div>
+                                <div class="tab w-100">
+                                    <div class="bg-lightgray">
+                                        <div class="text-b">통합조회 가능 공과금</div>
+                                        <ul class="fontSz m-0 text-sm">
+                                            <li>지방세, 세외수입, 환경개선부담금(상하수도요금 제외)</li>
+                                            <li>국세, 관세, 경찰청범칙금, 법무부국고금</li>
+                                            <li>특허수수료, 항만수수료, 기금 및 기타 국고</li>
+                                            <li>그 밖에 요금은 개별 조회하여 주시기 바랍니다.</li>
+                                        </ul>
                                     </div>
-                                    <form class="tab d-flex form" role="search">
-                                        <input class="pw form-control fontSz mx-3"
-                                            type="password" placeholder="주민등록번호" aria-label="Search">
-                                    </form>
                                 </div>
+                                <form class="tab d-flex flex-column justify-content-center align-items-start form px-3"
+                                    role="search">
+                                    <div class="text-sm">주민등록번호</div>
+                                    <input class="pw form-control fontSz" type="password" placeholder="●●●●●●-●●●●●●●"
+                                        aria-label="Search">
+                                </form>
                                 <div class="fontSz under_bar">
                                     <button type="button" class="btn left w-100 rounded-0">
                                         이전
                                     </button>
-                                    <button type="button" class="btn giro btn-b w-100 rounded-0">
+                                    <button type="button" class="pg_8_answer btn giro btn-b w-100 rounded-0">
                                         다음
                                     </button>
                                 </div>
@@ -706,14 +717,134 @@
                         <div class="page" id="p9">
                             <div class="page_wrap">
                                 <h1 class="pg_title" style="color: #fff;">Page9</h1>
-                                9
+                                <div class="w-100 d-flex justify-content-between align-items-center px-4 py-3">
+                                    <div class="flex-fill h-100 d-flex justify-content-start align-items-center">
+                                        <svg xmlns="http://www.w3.org/2000/svg" width="23" height="23"
+                                            fill="currentColor" class="bi bi-arrow-left" viewBox="0 0 16 16">
+                                            <path fill-rule="evenodd"
+                                                d="M15 8a.5.5 0 0 0-.5-.5H2.707l3.147-3.146a.5.5 0 1 0-.708-.708l-4 4a.5.5 0 0 0 0 .708l4 4a.5.5 0 0 0 .708-.708L2.707 8.5H14.5A.5.5 0 0 0 15 8z" />
+                                        </svg>
+                                        <h5 class="px-3 m-0">공과금 통합조회</h5>
+                                    </div>
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" fill="currentColor"
+                                        class="bi bi-list" viewBox="0 0 16 16">
+                                        <path fill-rule="evenodd"
+                                            d="M2.5 12a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5zm0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5zm0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5z" />
+                                    </svg>
+                                </div>
+                                <div class="scroll">
+                                    <div class="w-100">
+                                        <div class="bg-lightgray">
+                                            <ul class="fontSz m-0 text-sm">
+                                                <li>국고금 및 지방세·세외수입만 조회됩니다.<br>(상하수도요금 제외)<br></li>
+                                                <li>조회된 요금명을 선택 후 납부하여 주십시오.</li>
+                                            </ul>
+                                        </div>
+                                        <div class="container px-4 py-2">
+                                                <div class="fontSz tab top">
+                                                    <div class="left">
+                                                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16"
+                                                            fill="currentColor" class="bi bi-receipt me-2" viewBox="0 0 16 16">
+                                                            <path
+                                                                d="M1.92.506a.5.5 0 0 1 .434.14L3 1.293l.646-.647a.5.5 0 0 1 .708 0L5 1.293l.646-.647a.5.5 0 0 1 .708 0L7 1.293l.646-.647a.5.5 0 0 1 .708 0L9 1.293l.646-.647a.5.5 0 0 1 .708 0l.646.647.646-.647a.5.5 0 0 1 .708 0l.646.647.646-.647a.5.5 0 0 1 .801.13l.5 1A.5.5 0 0 1 15 2v12a.5.5 0 0 1-.053.224l-.5 1a.5.5 0 0 1-.8.13L13 14.707l-.646.647a.5.5 0 0 1-.708 0L11 14.707l-.646.647a.5.5 0 0 1-.708 0L9 14.707l-.646.647a.5.5 0 0 1-.708 0L7 14.707l-.646.647a.5.5 0 0 1-.708 0L5 14.707l-.646.647a.5.5 0 0 1-.708 0L3 14.707l-.646.647a.5.5 0 0 1-.801-.13l-.5-1A.5.5 0 0 1 1 14V2a.5.5 0 0 1 .053-.224l.5-1a.5.5 0 0 1 .367-.27zm.217 1.338L2 2.118v11.764l.137.274.51-.51a.5.5 0 0 1 .707 0l.646.647.646-.646a.5.5 0 0 1 .708 0l.646.646.646-.646a.5.5 0 0 1 .708 0l.646.646.646-.646a.5.5 0 0 1 .708 0l.646.646.646-.646a.5.5 0 0 1 .708 0l.646.646.646-.646a.5.5 0 0 1 .708 0l.509.509.137-.274V2.118l-.137-.274-.51.51a.5.5 0 0 1-.707 0L12 1.707l-.646.647a.5.5 0 0 1-.708 0L10 1.707l-.646.647a.5.5 0 0 1-.708 0L8 1.707l-.646.647a.5.5 0 0 1-.708 0L6 1.707l-.646.647a.5.5 0 0 1-.708 0L4 1.707l-.646.647a.5.5 0 0 1-.708 0l-.509-.51z" />
+                                                            <path
+                                                                d="M3 4.5a.5.5 0 0 1 .5-.5h6a.5.5 0 1 1 0 1h-6a.5.5 0 0 1-.5-.5zm0 2a.5.5 0 0 1 .5-.5h6a.5.5 0 1 1 0 1h-6a.5.5 0 0 1-.5-.5zm0 2a.5.5 0 0 1 .5-.5h6a.5.5 0 1 1 0 1h-6a.5.5 0 0 1-.5-.5zm0 2a.5.5 0 0 1 .5-.5h6a.5.5 0 0 1 0 1h-6a.5.5 0 0 1-.5-.5zm8-6a.5.5 0 0 1 .5-.5h1a.5.5 0 0 1 0 1h-1a.5.5 0 0 1-.5-.5zm0 2a.5.5 0 0 1 .5-.5h1a.5.5 0 0 1 0 1h-1a.5.5 0 0 1-.5-.5zm0 2a.5.5 0 0 1 .5-.5h1a.5.5 0 0 1 0 1h-1a.5.5 0 0 1-.5-.5zm0 2a.5.5 0 0 1 .5-.5h1a.5.5 0 0 1 0 1h-1a.5.5 0 0 1-.5-.5z" />
+                                                        </svg>
+                                                        총 고지건수
+                                                    </div>
+                                                    <div class="right">0건</div>
+                                                </div>
+                                                <div class="fontSz tab">
+                                                    <div class="left">
+                                                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-coin me-2" viewBox="0 0 16 16">
+                                                            <path d="M5.5 9.511c.076.954.83 1.697 2.182 1.785V12h.6v-.709c1.4-.098 2.218-.846 2.218-1.932 0-.987-.626-1.496-1.745-1.76l-.473-.112V5.57c.6.068.982.396 1.074.85h1.052c-.076-.919-.864-1.638-2.126-1.716V4h-.6v.719c-1.195.117-2.01.836-2.01 1.853 0 .9.606 1.472 1.613 1.707l.397.098v2.034c-.615-.093-1.022-.43-1.114-.9H5.5zm2.177-2.166c-.59-.137-.91-.416-.91-.836 0-.47.345-.822.915-.925v1.76h-.005zm.692 1.193c.717.166 1.048.435 1.048.91 0 .542-.412.914-1.135.982V8.518l.087.02z"/>
+                                                            <path d="M8 15A7 7 0 1 1 8 1a7 7 0 0 1 0 14zm0 1A8 8 0 1 0 8 0a8 8 0 0 0 0 16z"/>
+                                                            <path d="M8 13.5a5.5 5.5 0 1 1 0-11 5.5 5.5 0 0 1 0 11zm0 .5A6 6 0 1 0 8 2a6 6 0 0 0 0 12z"/>
+                                                          </svg>
+                                                        총 납부금액
+                                                    </div>
+                                                    <div class="right text-b">0원</div>
+                                                </div>
+                                        </div>
+                                    </div>
+                                    
+                                    <div class="w-100 bg-secondary bg-opacity-10 border-top border-bottom border-secondary border-opacity-25" style="height: .5em;"></div>
+                                    <div class="container px-4 py-2">
+                                        <div class="fontSz tab mb-3">
+                                            <div class="left d-inline-flex">국고금<div class="text-b">(0건)</div></div>
+                                            <div class="right text-b">0원</div>
+                                        </div>
+                                        <div class="detail">
+                                            <div class="wrap">
+                                                <div class="pg_9_answer fontSz tab">
+                                                    <div class="left">국세</div>
+                                                    <div class="right">1건</div>
+                                                </div>
+                                                <div class="fontSz tab">
+                                                    <div class="left">경찰청범칙금(과태료)</div>
+                                                    <div class="right">0건</div>
+                                                </div>
+                                                <div class="fontSz tab">
+                                                    <div class="left">특허수수료</div>
+                                                    <div class="right">0건</div>
+                                                </div>
+                                            </div>
+        
+                                            <div class="wrap">
+                                                <div class="fontSz tab">
+                                                    <div class="left">관세</div>
+                                                    <div class="right">0건</div>
+                                                </div>
+                                                <div class="fontSz tab">
+                                                    <div class="left"></div>
+                                                    <div class="right">0건</div>
+                                                </div>
+                                                <div class="fontSz tab">
+                                                    <div class="left"></div>
+                                                    <div class="right">0건</div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="fontSz tab">
+                                            <div class="left">기금 및 기타국고</div>
+                                            <div class="right">0건</div>
+                                        </div>
+                                    </div>
+                                    
+                                    <div class="w-100 bg-secondary bg-opacity-10 border-top border-bottom border-secondary border-opacity-25" style="height: .5em;"></div>
+                                    <div class="container px-4 py-2">
+                                        <div class="fontSz tab mb-3">
+                                            <div class="left d-inline-flex">지방세·세외수입<div class="text-b">(0건)</div></div>
+                                            <div class="right text-b">0원</div>
+                                        </div>
+                                        <div class="detail">
+                                            <div class="wrap">
+                                                <div class="fontSz tab">
+                                                    <div class="left">지방세</div>
+                                                    <div class="right">0건</div>
+                                                </div>
+                                            </div>
+        
+                                            <div class="wrap">
+                                                <div class="fontSz tab">
+                                                    <div class="left">세외수입</div>
+                                                    <div class="right">0건</div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="fontSz tab">
+                                            <div class="left">환경개선부담금</div>
+                                            <div class="right">0건</div>
+                                        </div>
+                                    </div>
+                                </div>
                             </div>
                         </div>
                         <!------------------------------ page 10 ------------------------------>
                         <div class="page" id="p10">
                             <div class="page_wrap">
                                 <!-- <h1 class="pg_title" style="color: #fff;">Page10</h1> -->
-                                <h1 class="title_h1">완료화면</h1>
+                                <h1 class="title_h1 pg_10_answer">완료화면</h1>
                             </div>
                         </div>
                         <!------------------------------ page 11 ------------------------------>
