@@ -17,6 +17,8 @@ var audio_stat = 1;
 const popoverTriggerList = document.querySelectorAll('[data-bs-toggle="popover"]')
 const popoverList = [...popoverTriggerList].map(popoverTriggerEl => new bootstrap.Popover(popoverTriggerEl))
 
+
+
 //*******************************************************************************
 //**************************+   이벤트 동작   +*********************************** 
 
@@ -217,6 +219,11 @@ $('#hint_btn').click(function () {
     var myPgNum = $(".active").attr('id');
     var real_pg = myPgNum.slice(1);
     $(".cursor_wrap_"+real_pg).toggleClass('show');
+
+    document.querySelector("main").addEventListener("click", function (e) {
+        
+    });
+
     $(".pg_"+real_pg+"_answer:first").toggleClass("addShadow");
 })
 
@@ -256,6 +263,7 @@ document.querySelector("main").addEventListener("click", function (e) {//메인 
     let clickableArea = pageClickArea[real_pg].correctAnswer;
     let inputableAnswer = inputAnswer[real_pg].inputableAnswer;
     let instruction = modalCont[real_pg].instruction;
+    let introModalCont = modalCont[0].instruction;
     //
 
 
@@ -316,8 +324,12 @@ document.querySelector("main").addEventListener("click", function (e) {//메인 
         //틀리게 클릭하면
         $('#staticBackdrop').modal('show');
     }
+    if (page_num == 0){
+        $('.modal-body').text(introModalCont);
+    } else {
+        $('.modal-body').text(instruction);
+    }
     
-    $('.modal-body').text(instruction);
 
 
 
