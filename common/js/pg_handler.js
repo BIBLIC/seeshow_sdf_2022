@@ -14,6 +14,7 @@ const start_btn_wrap = document.getElementById("start_btn_wrap");
 $('.nav_btn_wrap').css('display', 'none');
 
 var audio_stat = 1;
+var pwArr = [];
 
 //popovers 초기화 작업
 const popoverTriggerList = document.querySelectorAll('[data-bs-toggle="popover"]')
@@ -62,7 +63,7 @@ $('#start-btn').click(function () {
         $("#p" + page_num).toggleClass("pactive");
         $(".pactive").fadeIn(0);
     });
-    ctrlbar.style.background="#E0E0E0";
+    ctrlbar.style.background = "#E0E0E0";
     audioArray[page_num - 1].load();// 해당 페이지 오디오 로딩
     audioArray[page_num - 1].play();// 해당 페이지 오디오 재생
 });
@@ -215,15 +216,15 @@ slider.oninput = function () {
 //**************************+    힌트 버튼   +*********************************** 
 
 $(".cursor_wrap").css('display', 'none');
-$(".pg_"+page_num+"_answer").css('box-shadow', '#00000');
+$(".pg_" + page_num + "_answer").css('box-shadow', '#00000');
 $('.shadow_ext').css('box-shadow', '#00000');
 
 //시작하기 버튼 클릭 후 컨트롤 바 내부 변경
 $('#hint_btn').click(function () {
     var myPgNum = $(".active").attr('id');
     var real_pg = myPgNum.slice(1);
-    $(".cursor_wrap_"+real_pg).toggleClass('show');
-    $(".pg_"+real_pg+"_answer:first").toggleClass("addShadow");
+    $(".cursor_wrap_" + real_pg).toggleClass('show');
+    $(".pg_" + real_pg + "_answer:first").toggleClass("addShadow");
     $('.shadow_ext').toggleClass("addShadow");
 })
 
@@ -268,11 +269,11 @@ document.querySelector("main").addEventListener("click", function (e) {//메인 
 
 
 
-    if($("#div_test").hasClass("apple") === true) {
+    // if($("#div_test").hasClass("apple") === true) {
 
-    //     // 속성값이 존재함.
+    // //     // 속성값이 존재함.
 
-    }
+    // }
 
 
     if (e.target.className.includes(clickableArea)) {
@@ -280,41 +281,54 @@ document.querySelector("main").addEventListener("click", function (e) {//메인 
         //console.log("correct");
 
         if (e.target.className.includes("answer_txt")) {
-            
-            
+
+
             //var inputClass = $('#'+real_pg+'_input') ;
             //var value = inputClass.val();
 
 
-            $('.'+real_pg+'_input').keydown(function(e) {
+            $('.' + real_pg + '_input').keydown(function (e) {
                 if (event.which === 13) {
                     let unspacedValue = this.value.split(' ').join('');
-                    if ( unspacedValue == inputableAnswer){
+                    if (unspacedValue == inputableAnswer) {
                         next(real_pg);
                     } else {
                         $('.modal-body').text(instruction);
                         $('#staticBackdrop').modal('show');
                     }
                 }
-                
-            });
-            // $(document).on("keyup", "#inputClass", function () {
-            //   alert('입력완');
+
+            })
+
+        } else if (e.target.className.includes("pw_input")) {
+            console.log('pw');
             
-            // });
-            // 엔터키 처리 이벤트
-            // inputClass.addEventListener("keyup", function (event) {
-            //     var input_txt = this.value;
-            //     console.log(input_txt);
-            //     // if (event.keyCode === 13) {
-            //     //     event.preventDefault();
-            //     //     inputBtn.click();
-            //     // }
-            // });
-
-
-
-            //alert(inputableAnswer);
+            for (j = 0; j < 10; j++) {
+                if (e.target.className.includes("input_" + j)) {
+                    //let pressedKey = j;
+                    if (pwArr.length<6){
+                        var num_cnt = pwArr.length 
+                        pwArr[num_cnt]=j;
+                        console.log(pwArr);
+                        console.log("길이는",pwArr.length);
+                        $(".dot"+num_cnt).css("background-color","#375BA9");
+                        
+                    } 
+                    else if (pwArr.length=6){
+                        
+                        $('.submit_btn').click(function () {
+                            console.log("길이는",pwArr.length);
+                            var pw_set = pwArr.join('');
+                            console.log(pw_set);
+                            $(".submit_btn").addClass("pg"+real_pg+"_answer");
+                            $(document).ready(function(){
+                                next(real_pg);
+                            });
+                        });
+                        
+                    }
+                }
+            }
 
         } else {
             next(real_pg);
@@ -328,18 +342,13 @@ document.querySelector("main").addEventListener("click", function (e) {//메인 
 
 
     //----------- 모달 내부 내용 넣기 -----------------------
-    if (page_num == 0){
+    if (page_num == 0) {
         $('.modal-body').text(introModalCont);
     } else {
         $('.modal-body').text(instruction);
     }
-    
 
 
-
-
-})
-
-
+});
 
 
