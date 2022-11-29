@@ -1,4 +1,3 @@
-.icon { border: 0;}
 /* ------------------------------------------P1------------------------------------------- */
 #p1 .page_wrap {
     width: 100%;
@@ -78,7 +77,6 @@
     justify-content: space-between;
     align-items: flex-start;
     border: none;
-    margin-bottom: .5em;
 }
 
 #p1 .pg_bottom .top .tab_bar .tab_wrap {
@@ -100,34 +98,14 @@
 }
 
 #p1 .pg_bottom .top .icon_area .icon_wrap .icon {
-    min-width: 85px;
-    min-height: 85px;
-    border: 0;
+    width: 3em;
+    height: 3em;
 }
 
 #p1 .pg_bottom .under_bar {
     width: 100%;
     height: 10%;
     box-shadow: 0px -5px 10px rgba(0, 0, 0, 0.1);
-}
-
-#p1 .pg_bottom .under_bar .under_icon {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-}
-
-#p2 .under_bar {
-    width: 100%;
-    margin-top: .7em;
-    min-height: 21vh;
-    background: #fff;
-    position: unset;
-}
-
-#p2 .btn {
-    border-radius: 90px;
 }
 
 #p4 .under_bar {
@@ -154,11 +132,12 @@
     width: 100%;
     height: 50vh;
     background: #fff;
+    padding-top: 1em;
 }
 
 #p5 .under_bar .tab {
     width: 100%;
-    /* height: 20%; */
+    height: 20%;
 }
 
 #p5 .under_bar .tab .icon {
@@ -167,7 +146,6 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    border: 0;
 }
 
 #p5 .under_bar .tab .txt-wrap {
@@ -177,24 +155,18 @@
     justify-content: space-between;
     align-items: center;
 }
-
 #p5 .under_bar .tab:not(:last-child) {
     border-bottom: 1px solid #e0e0e0;
   }
   
 
 #p5 .under_bar .tab .txt-wrap .txt {
-    padding-left: .5em;
-    padding-right: .5em;
+    padding-left: .7em;
+    padding-right: .7em;
 }
 
 #p5 .under_bar .tab .txt-wrap .text-left {
-    width: 60%;
-}
-
-#p5 .under_bar .tab .txt-wrap .text-left .detail {
-    word-break: keep-all;
-    word-wrap: break-word;
+    min-width: 60%;
 }
 
 
@@ -206,18 +178,17 @@
     /* min-width: 38%; */
 }
 
-
-
 #p6 .under_bar {
     width: 100%;
     height: 80%;
     background: #fff;
 }
 
-#p6 .icon{
-    min-width: 135px;
-    min-height: 135px;
-    border: 0;
+#p6 .under_bar {
+    width: 100%;
+    height: 70vh;
+    background: #fff;
+    padding-top: 1em;
 }
 
 #p6 .btn {
