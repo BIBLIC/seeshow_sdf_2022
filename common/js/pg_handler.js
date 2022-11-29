@@ -19,18 +19,6 @@ var audio_stat = 1;
 const popoverTriggerList = document.querySelectorAll('[data-bs-toggle="popover"]')
 const popoverList = [...popoverTriggerList].map(popoverTriggerEl => new bootstrap.Popover(popoverTriggerEl))
 
-createPopper(ctrlbar, start_btn_wrap, {
-    placement: 'top',
-    modifiers: [
-        {
-            name: 'offset',
-            options: {
-                offset: [0,0],
-            },
-        },
-    ],
-});
-
 //*******************************************************************************
 //**************************+   이벤트 동작   +*********************************** 
 
