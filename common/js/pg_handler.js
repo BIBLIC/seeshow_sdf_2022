@@ -4,11 +4,13 @@ const prevBtn = document.getElementById("prev");
 const nextBtn = document.getElementById("next");
 
 const ctrlbar = document.querySelector('.ctrlbar');
+
 //const start_btn_wrap = document.querySelector('.start_btn_wrap');
 //const nav_btn_wrap = document.querySelector('.nav_btn_wrap');
 
 const textModal = document.getElementById("textModal");
 const size_btn = document.getElementById("size_btn");
+const start_btn_wrap = document.getElementById("start_btn_wrap");
 $('.nav_btn_wrap').css('display', 'none');
 
 var audio_stat = 1;
@@ -17,7 +19,17 @@ var audio_stat = 1;
 const popoverTriggerList = document.querySelectorAll('[data-bs-toggle="popover"]')
 const popoverList = [...popoverTriggerList].map(popoverTriggerEl => new bootstrap.Popover(popoverTriggerEl))
 
-
+createPopper(ctrlbar, start_btn_wrap, {
+    placement: 'top',
+    modifiers: [
+        {
+            name: 'offset',
+            options: {
+                offset: [0,0],
+            },
+        },
+    ],
+});
 
 //*******************************************************************************
 //**************************+   이벤트 동작   +*********************************** 
@@ -62,6 +74,7 @@ $('#start-btn').click(function () {
         $("#p" + page_num).toggleClass("pactive");
         $(".pactive").fadeIn(0);
     });
+    ctrlbar.style.background="#E0E0E0";
     audioArray[page_num - 1].load();// 해당 페이지 오디오 로딩
     audioArray[page_num - 1].play();// 해당 페이지 오디오 재생
 });
@@ -74,6 +87,7 @@ $('#start-btn').click(function () {
 
 //다음 버튼 : 클릭 시 페이지 이동, 해당 페이지오디오만 재생(배열 인덱스라 페이지 넘버-1) 
 $(document).on("click", "#next_btn", function () {
+    console.log("다음");
     //$('#next_btn').click(function () {
     if (page_num < total_page) {
         page_num += 1;
@@ -112,6 +126,7 @@ $(document).on("click", "#next_btn", function () {
 
 //이전 버튼
 $(document).on("click", "#prev_btn", function () {
+    console.log("이전");
     if (page_num > 0) {
         page_num -= 1;
         $(".active").removeClass("active");//active 클래스에서 'active'클래스 제거하고 -> 없어도 되는 코드
@@ -213,6 +228,7 @@ slider.oninput = function () {
 
 $(".cursor_wrap").css('display', 'none');
 $(".pg_"+page_num+"_answer").css('box-shadow', '#00000');
+$('.shadow_ext').css('box-shadow', '#00000');
 
 //시작하기 버튼 클릭 후 컨트롤 바 내부 변경
 $('#hint_btn').click(function () {
@@ -264,11 +280,11 @@ document.querySelector("main").addEventListener("click", function (e) {//메인 
 
 
 
-    // if($("#div_test").hasClass("apple") === true) {
+    if($("#div_test").hasClass("apple") === true) {
 
     //     // 속성값이 존재함.
 
-    //     }
+    }
 
 
     if (e.target.className.includes(clickableArea)) {
@@ -320,6 +336,10 @@ document.querySelector("main").addEventListener("click", function (e) {//메인 
         //틀리게 클릭하면
         $('#staticBackdrop').modal('show');
     }
+
+
+
+    //----------- 모달 내부 내용 넣기 -----------------------
     if (page_num == 0){
         $('.modal-body').text(introModalCont);
     } else {

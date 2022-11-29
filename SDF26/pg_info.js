@@ -34,16 +34,16 @@ const pageClickArea = [
         correctAnswer: "pg_6_answer"
     },
     {
-        page: 6,
-        correctAnswer: "pg_6_answer"
+        page: 7,
+        correctAnswer: "pg_7_answer"
     },
     {
-        page: 6,
-        correctAnswer: "pg_6_answer"
+        page: 8,
+        correctAnswer: "pg_8_answer"
     },
     {
-        page: 6,
-        correctAnswer: "pg_6_answer"
+        page: 9,
+        correctAnswer: "pg_9_answer"
     },
     {
         page: 10,
