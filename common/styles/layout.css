@@ -1,9 +1,3 @@
-.flex-center-center{
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
-
 .absolute-bottom {
   position: absolute;
   left: 0;
@@ -563,8 +557,8 @@ body {
 }
 
 .icon {
-  min-width: 3em;
-  min-height: 3em;
+  width: 3em;
+  height: 3em;
   border: 2px solid #e0e0e0;
   /* background: #e0e0e0; */
 }
@@ -583,9 +577,15 @@ body {
 }
 
 .text-sm{
-  font-size: small;
+  font-size: smaller;
 }
 
 .h-10{  height: 10%;} .h-20{  height: 20%;} .h-30 {  height: 30%;} .h-40{  height: 40%;}
 .w-10{  width: 10%; } .w-20{  width: 20%;} .w-30 {  width: 30%;} .w-40{  width: 40%;} .w-45{  width: 45%;} .w-60{  width: 60%;} 
 .w-80{  width: 80%;} .w-90{  width: 90%;}
+
+.flex-center-center{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}

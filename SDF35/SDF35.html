@@ -172,7 +172,7 @@
                                         <div>모두 동의</div>
                                     </li>
                                     <li>
-                                        <div class="list-item d-flex justify-content-between fontSz">
+                                        <div class="list-item d-flex justify-content-between align-items-center fontSz">
                                             <div>
                                                 <svg xmlns="http://www.w3.org/2000/svg" width="23" height="23" fill="currentColor" class="bi bi-check2 text-black-50" viewBox="0 0 16 16">
                                                     <path d="M13.854 3.646a.5.5 0 0 1 0 .708l-7 7a.5.5 0 0 1-.708 0l-3.5-3.5a.5.5 0 1 1 .708-.708L6.5 10.293l6.646-6.647a.5.5 0 0 1 .708 0z"/>
@@ -183,7 +183,7 @@
                                                 <path fill-rule="evenodd" d="M4.646 1.646a.5.5 0 0 1 .708 0l6 6a.5.5 0 0 1 0 .708l-6 6a.5.5 0 0 1-.708-.708L10.293 8 4.646 2.354a.5.5 0 0 1 0-.708z"/>
                                               </svg>
                                         </div>
-                                        <div class="list-item d-flex justify-content-between">
+                                        <div class="list-item d-flex justify-content-between align-items-center fontSz">
                                             <div>
                                                 <svg xmlns="http://www.w3.org/2000/svg" width="23" height="23" fill="currentColor" class="bi bi-check2 text-black-50" viewBox="0 0 16 16">
                                                     <path d="M13.854 3.646a.5.5 0 0 1 0 .708l-7 7a.5.5 0 0 1-.708 0l-3.5-3.5a.5.5 0 1 1 .708-.708L6.5 10.293l6.646-6.647a.5.5 0 0 1 .708 0z"/>
@@ -229,7 +229,7 @@
                                 </div>
 
                                 <div class="w-100 flex-column flex-center-center pt-3 px-4">
-                                    <div class="txt-wrap w-100 mb-3">
+                                    <div class="txt-wrap w-100 mb-3 fontSz">
                                         <h4 class="fw-bold">
                                             안녕하세요!<br>
                                             휴대폰 번호로 가입해주세요.
@@ -237,30 +237,80 @@
                                         <div>휴대폰 번호는 안전하게 보관되며 이웃들에게 공개되지 않아요.</div>
                                     </div>
                                     <div class="form mb-1" role="search">
-                                        <input class="form-control fontSz" type="search" placeholder="휴대폰 번호(- 없이 숫자만 입력)"
+                                        <input class="form-control fontSz" type="password" placeholder="휴대폰 번호(- 없이 숫자만 입력)"
                                             aria-label="Search">
                                     </div>
     
                                     <button type="button" class="btn btn-or w-100 fontSz mb-3">
                                         인증문자 받기
                                     </button>
-                                    <div class="text-sm d-inline-flex">휴대폰 번호가 변경되었나요?<u>이메일로 계정 찾기</u></div>
+                                    <div class="text-sm fontSz">휴대폰 번호가 변경되었나요?<u>이메일로 계정 찾기</u></div>
                                 </div>
-
                             </div>
                         </div>
                         <!------------------------------ page 6 ------------------------------>
                         <div class="page" id="p6">
                             <div class="page_wrap">
                                 <h1 class="pg_title" style="color: #fff;">Page6</h1>
-                                6
+                                <div class="pt-3 px-4 mb-4">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="23" height="23" fill="currentColor" class="bi bi-chevron-left" viewBox="0 0 16 16">
+                                    <path fill-rule="evenodd" d="M11.354 1.646a.5.5 0 0 1 0 .708L5.707 8l5.647 5.646a.5.5 0 0 1-.708.708l-6-6a.5.5 0 0 1 0-.708l6-6a.5.5 0 0 1 .708 0z"/>
+                                  </svg>
+                                </div>
+
+                                <div class="w-100 flex-column flex-center-center px-4">
+                                    <div class="form mb-1" role="search">
+                                        <div class="form-control phonenum fontSz">⦁⦁⦁⦁⦁⦁⦁⦁⦁⦁⦁</div>
+                                        <div class="fake-btn flex-center-center fontSz">인증문자 다시 받기</div>
+                                    </div>
+                                    <div class="form mb-1" role="search">
+                                        <input class="form-control fontSz" type="search" placeholder="인증번호 입력"
+                                            aria-label="Search">
+                                        <div class="text-sm text-black-50 d-inline-flex fontSz">어떤 경우에도 타인에게 공유하지 마세요!</div>
+                                    </div>
+    
+                                    <button type="button" class="btn btn-or w-100 fontSz mb-3">
+                                        동의하고 시작하기
+                                    </button>
+                                    <u class="text-sm text-black-50 d-inline-flex fontSz">인증번호가 오지 않나요?</u>
+                                </div>
+
+                                <div class="flex-center-center under_bar h-20 rounded border border-5 border-danger p-3 m-3">
+                                    <h4 class="text-danger fw-bold m-0">인증번호 입력란에 '123456'을 입력하세요</h4>
+                                </div>
                             </div>
                         </div>
                         <!------------------------------ page 7 ------------------------------>
                         <div class="page" id="p7">
                             <div class="page_wrap">
                                 <h1 class="pg_title" style="color: #fff;">Page7</h1>
-                                7
+                                <div class="container pg_top">
+
+                                </div>
+                                <div class="container">
+                                    <div class="scroll pt-2">
+                                        <div class="tab flex-center-center">
+                                            <img src="./assets/image/" class="icon">
+                                            <div class="txt-wrap fontSz">
+                                                <div class="txt">제목</div>
+                                                <div class="txt text-sm detail text-black-50">
+                                                    <div class="">동네이름</div>
+                                                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-dot svg" viewBox="0 0 16 16">
+                                                        <path d="M8 9.5a1.5 1.5 0 1 0 0-3 1.5 1.5 0 0 0 0 3z"/>
+                                                    </svg>
+                                                    <div class="">업로드 시간</div>
+                                                </div>
+                                                <div class="txt price">가격</div>
+                                                <div class="txt react">
+                                                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-heart svg me-1" viewBox="0 0 16 16">
+                                                        <path d="m8 2.748-.717-.737C5.6.281 2.514.878 1.4 3.053c-.523 1.023-.641 2.5.314 4.385.92 1.815 2.834 3.989 6.286 6.357 3.452-2.368 5.365-4.542 6.286-6.357.955-1.886.838-3.362.314-4.385C13.486.878 10.4.28 8.717 2.01L8 2.748zM8 15C-7.333 4.868 3.279-3.04 7.824 1.143c.06.055.119.112.176.171a3.12 3.12 0 0 1 .176-.17C12.72-3.042 23.333 4.867 8 15z"/>
+                                                      </svg>
+                                                    하트 수
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
                             </div>
                         </div>
                         <!------------------------------ page 8 ------------------------------>

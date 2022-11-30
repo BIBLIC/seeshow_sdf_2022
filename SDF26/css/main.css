@@ -166,7 +166,7 @@
 
 #p3 .capsule,
 #p7 .capsule {
-    font-size: small;
+    font-size: smaller;
 }
 
 #p3 .under_bar,
@@ -187,7 +187,7 @@
 
 #p3 .under_bar .baricon_wrap .bartext,
 #p7 .under_bar .baricon_wrap .bartext {
-    font-size: small;
+    font-size: smaller;
 }
 
 .w-48{
