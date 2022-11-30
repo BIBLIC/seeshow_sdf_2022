@@ -7,6 +7,12 @@ for (j = 1; j <= total_page; j++) {
     audioArray.push(audio);
 }
 
+$('#date-picker').datepicker({
+              
+    language: "ko",
+
+})
+
 //정답 처리할 영역 클래스 명
 //-> 후에 for 문 써서 pg_n_answer 로 통일하기
 const pageClickArea = [

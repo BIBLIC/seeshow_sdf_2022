@@ -319,6 +319,32 @@ document.querySelector("main").addEventListener("click", function (e) {//메인 
             });
         }
 
+        //----주민번호 7자리... 있을 경우-------------------
+        else if (e.target.className.includes("ID_num7")) {
+
+            //키보드 누르고 13자리 이상일 때 엔터 누르면 다음 페이지로 넘어가게 
+            $('.' + real_pg + '_input').keydown(function (e) {
+                if (event.which === 13) {
+                    let unspacedValue = this.value.split(' ').join('');
+                    if (unspacedValue.length == 7 ) {
+                        console.log(unspacedValue);
+                        console.log(unspacedValue.length);
+                        next(real_pg);
+                    } else {
+                        $('.modal-body').text(instruction);
+                        $('#staticBackdrop').modal('show');
+                    }
+                }
+            });
+
+            //키보드 떼고 13자리 이상이면 다음 버튼 활성화되게 
+            $('.' + real_pg + '_input').keyup(function(){
+                if (this.value.length ==7 ) {
+                    $(".input_nxt_btn").addClass("pg_" + real_pg + "_answer");
+                }
+            });
+        }
+
         //----주민번호 끊어져서... 있을 경우-------------------
         else if (e.target.className.includes("ID_num13")) {
 
@@ -382,17 +408,12 @@ document.querySelector("main").addEventListener("click", function (e) {//메인 
 
         //----날짜 선택창 있는 경우 -------------------
         else if (e.target.className.includes("calendar")) {
-            $(document).ready(function() {
-                $('#date-picker').datepicker({
-              
-                    language: "ko",
-              
-                })
-              
-              });
-
-            
         
+            $('.datepicker').click(function () {
+                $('.datepicker').css('display', 'none');
+                $(".next_btn").addClass("pg_" + real_pg + "_answer");
+                
+            });
         }
         
         //암것도 없으면 모달 띄우기
