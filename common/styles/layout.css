@@ -13,7 +13,7 @@
 
 .start_btn_wrap {
   width: 100%;
-  height: 350%;
+  height: 250%;
   display: flex;
     justify-content: center;
     align-items: flex-start;
@@ -77,18 +77,41 @@
 /* -------------------------------------------------------------------------------------- */
 /*희영 test*/
 
-.addShadow {
+#modal_ {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 80%;
+  min-height: 45%;
+  background-color: #fff;
+  border-radius: 30px;
+  padding-left: 2em;
+  padding-right: 2em;
   box-shadow : rgba(0,0,0,0.2) 0 0 0 9999px;
   z-index : 2;
 }
 
-.modal-body {
+.addShadow {
+  box-shadow : rgba(0,0,0,0.3) 0 0 0 9999px;
+  z-index : 2;
+}
+
+.modal-body, #modal_ {
   word-break: keep-all;
   word-wrap: break-word;
 }
 
 .modal {
   top : 35vh !important;
+}
+
+.text-lb {
+  color: #0088d2 !important;
 }
 
 .show {display:block !important} /*보여주기*/

@@ -95,19 +95,19 @@ const modalCont = [
     },
     {
         page: 2,
-        instruction: "화면의 키패드를 이용해 비밀번호 6자리를 입력해주세요"
+        instruction: "화면의 키패드를 이용해 비밀번호 6자리를 입력하세요"
     },
     {
         page: 3,
-        instruction: "'공과금 통합조회' 탭을 클릭하세요."
+        instruction: "팝업창의 '예' 버튼을 클릭하세요"
     },
     {
         page: 4,
-        instruction: "주민번호 13자리를 입력하고 '다음' 버튼을 클릭하세요"
+        instruction: "주민번호 13자리를 입력하고 입력하고 엔터를 누르거나 '다음'버튼을 클릭하세요"
     },
     {
         page: 5,
-        instruction: "앞서 등록한 비밀번호 6자리를 입력하고 '입력완료' 버튼을 클릭해주세요."
+        instruction: "비밀번호 6자리를 입력하고 '입력완료' 버튼을 클릭하세요."
     },
     {
         page: 6,
@@ -119,7 +119,7 @@ const modalCont = [
     },
     {
         page: 8,
-        instruction: "주민번호 13자리를 입력하고 '다음' 버튼을 클릭하세요."
+        instruction: "주민번호 13자리를 입력하고 엔터를 누르거나 '다음'버튼을 클릭하세요"
     },
     {
         page: 9,
@@ -130,3 +130,101 @@ const modalCont = [
         instruction: "마지막 페이지"
     },
 ];
+
+
+
+//*******************************************************************************
+//**************************+    커서   +*********************************** 
+
+const cursor_pos_1 = document.querySelector('.cursor_pos_1');
+const cursor_pos_2 = document.querySelector('.cursor_pos_2');
+// const cursor_pos_3 = document.querySelector('.cursor_pos_3');
+// const cursor_pos_4 = document.querySelector('.cursor_pos_4');
+// const cursor_pos_5 = document.querySelector('.cursor_pos_5');
+// const cursor_pos_6 = document.querySelector('.cursor_pos_6');
+
+const cursor_wrap_1 = document.querySelector('.cursor_wrap_1');
+const cursor_wrap_2 = document.querySelector('.cursor_wrap_2');
+// const cursor_wrap_3 = document.querySelector('.cursor_wrap_3');
+// const cursor_wrap_4 = document.querySelector('.cursor_wrap_4');
+// const cursor_wrap_5 = document.querySelector('.cursor_wrap_5');
+// const cursor_wrap_6 = document.querySelector('.cursor_wrap_6');
+
+
+cursor_wrap_1.style.zIndex = "100";
+cursor_wrap_2.style.zIndex = "100";
+// cursor_wrap_3.style.zIndex = "100";
+// cursor_wrap_4.style.zIndex = "100";
+// cursor_wrap_5.style.zIndex = "100";
+// cursor_wrap_6.style.zIndex = "100";
+
+
+const { createPopper } = Popper;
+createPopper(cursor_pos_1, cursor_wrap_1, {
+    placement: 'right',
+    modifiers: [
+        {
+            name: 'offset',
+            options: {
+                offset: [0,0],
+            },
+        },
+    ],
+});
+createPopper(cursor_pos_2, cursor_wrap_2, {
+    placement: 'right',
+    modifiers: [
+        {
+            name: 'offset',
+            options: {
+                offset: [0,70],
+            },
+        },
+    ],
+});
+// createPopper(cursor_pos_3, cursor_wrap_3, {
+//     placement: 'right',
+//     modifiers: [
+//         {
+//             name: 'offset',
+//             options: {
+//                 offset: [70,80],
+//             },
+//         },
+//     ],
+// });
+// //cursor_wrap_4.style.left="60%";
+
+// createPopper(cursor_pos_4, cursor_wrap_4, {
+//     placement: 'bottom',
+//     modifiers: [
+//         {
+//             name: 'offset',
+//             options: {
+//                 offset: [250,10],
+//             },
+//         },
+//     ],
+// });
+// createPopper(cursor_pos_5, cursor_wrap_5, {
+//     placement: 'right',
+//     modifiers: [
+//         {
+//             name: 'offset',
+//             options: {
+//                 offset: [25,200],
+//             },
+//         },
+//     ],
+// });
+// createPopper(cursor_pos_6, cursor_wrap_6, {
+//     placement: 'bottom',
+//     modifiers: [
+//         {
+//             name: 'offset',
+//             options: {
+//                 offset: [250,10],
+//             },
+//         },
+//     ],
+// });

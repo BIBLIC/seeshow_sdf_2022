@@ -250,6 +250,7 @@ function next(real_pg) {
     if (page_num > 1) {
         audioArray[page_num - 2].pause();
     }
+    $(".submit_btn").removeClass("pg_" + real_pg + "_answer");
 }
 
 
@@ -280,13 +281,8 @@ document.querySelector("main").addEventListener("click", function (e) {//메인 
         //맞게 클릭하면
         //console.log("correct");
 
+        //----엔터값 있을 경우-------------------
         if (e.target.className.includes("answer_txt")) {
-
-
-            //var inputClass = $('#'+real_pg+'_input') ;
-            //var value = inputClass.val();
-
-
             $('.' + real_pg + '_input').keydown(function (e) {
                 if (event.which === 13) {
                     let unspacedValue = this.value.split(' ').join('');
@@ -297,39 +293,68 @@ document.querySelector("main").addEventListener("click", function (e) {//메인 
                         $('#staticBackdrop').modal('show');
                     }
                 }
-
             })
+        }
 
-        } else if (e.target.className.includes("pw_input")) {
+        //----주민번호 있을 경우-------------------
+        else if (e.target.className.includes("ID_num")) {
+            //키보드 누르고 13자리 이상일 때 엔터 누르면 다음 페이지로 넘어가게 
+            $('.' + real_pg + '_input').keydown(function (e) {
+                if (event.which === 13) {
+                    let unspacedValue = this.value.split(' ').join('');
+                    if (unspacedValue.length == 13 ) {
+                        console.log(unspacedValue);
+                        console.log(unspacedValue.length);
+                        next(real_pg);
+                    } else {
+                        $('.modal-body').text(instruction);
+                        $('#staticBackdrop').modal('show');
+                    }
+                }
+            });
+            //키보드 떼고 13자리 이상이면 다음 버튼 활성화되게 
+            $('.' + real_pg + '_input').keyup(function(){
+                if (this.value.length ==13 ) {
+                    $(".input_nxt_btn").addClass("pg_" + real_pg + "_answer");
+                }
+            });
+        }
+
+        //----비번6자리 있을 경우-------------------
+        else if (e.target.className.includes("pw_input")) {
             console.log('pw');
             
             for (j = 0; j < 10; j++) {
                 if (e.target.className.includes("input_" + j)) {
                     //let pressedKey = j;
-                    if (pwArr.length<6){
-                        var num_cnt = pwArr.length 
-                        pwArr[num_cnt]=j;
+                    if (pwArr.length < 5) {
+                        console.log(j + '이전 clicked');
+                        var num_cnt = pwArr.length
+                        pwArr.push(j);
                         console.log(pwArr);
-                        console.log("길이는",pwArr.length);
-                        $(".dot"+num_cnt).css("background-color","#375BA9");
-                        
-                    } 
-                    else if (pwArr.length=6){
-                        
+                        console.log("길이는", pwArr.length);
+                        $(".dot" + num_cnt).css("background-color", "#375BA9");
+
+                    } else if (pwArr.length = 5) {
+                        console.log(j + '이후 clicked');
+                        pwArr.push(j);
+                        console.log("길이는", pwArr.length);
+                        console.log(pwArr);
+                        $(".dot5").css("background-color", "#375BA9");
                         $('.submit_btn').click(function () {
-                            console.log("길이는",pwArr.length);
                             var pw_set = pwArr.join('');
                             console.log(pw_set);
-                            $(".submit_btn").addClass("pg"+real_pg+"_answer");
-                            $(document).ready(function(){
-                                next(real_pg);
-                            });
+                            $(".submit_btn").addClass("pg_" + real_pg + "_answer");
+                            pwArr = [];
+                            for ( i =0; i <6; i++) {
+                                $(".dot"+i).css("background-color", "#a9a9a9");
+                            }
                         });
-                        
                     }
                 }
             }
-
+        
+        //----정답영역만 있을 경우-------------------
         } else {
             next(real_pg);
         }
