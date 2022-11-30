@@ -258,17 +258,14 @@ function next(real_pg) {
 //특정 영역 외 클릭시 이벤트 처리 (class 명으로 가져오기)
 document.querySelector("main").addEventListener("click", function (e) {//메인 영역에서만 이벤트 발생
 
-    var myPgNum = $(".active").attr('id');
-    var real_pg = myPgNum.slice(1);
+    var myPgNum = $(".active").attr('id');// active 되어있는 페이지 id 값
+    var real_pg = myPgNum.slice(1); // id값 앞에 붙은 p 떼어내기
 
     //if (page_num == pageClickArea[i].page) {//현재 페이지와 pageClickArea의 페이지 같으면
-    let clickableArea = pageClickArea[real_pg].correctAnswer;
-    let inputableAnswer = inputAnswer[real_pg].inputableAnswer;
-    let instruction = modalCont[real_pg].instruction;
-    let introModalCont = modalCont[0].instruction;
-    //
-
-
+    let clickableArea = pageClickArea[real_pg].correctAnswer; //페이지별 선택 영역 정답 불러오기
+    let inputableAnswer = inputAnswer[real_pg].inputableAnswer;//페이지별 입력 정답 불러오기
+    let instruction = modalCont[real_pg].instruction;//페이지별 모달 내용 불러오기
+    let introModalCont = modalCont[0].instruction;//첫 번째 페이지 모달 내용
 
     // if($("#div_test").hasClass("apple") === true) {
 
@@ -296,8 +293,9 @@ document.querySelector("main").addEventListener("click", function (e) {//메인 
             })
         }
 
-        //----주민번호 있을 경우-------------------
-        else if (e.target.className.includes("ID_num")) {
+        //----주민번호 13자리... 있을 경우-------------------
+        else if (e.target.className.includes("ID_num13")) {
+
             //키보드 누르고 13자리 이상일 때 엔터 누르면 다음 페이지로 넘어가게 
             $('.' + real_pg + '_input').keydown(function (e) {
                 if (event.which === 13) {
@@ -312,6 +310,33 @@ document.querySelector("main").addEventListener("click", function (e) {//메인 
                     }
                 }
             });
+
+            //키보드 떼고 13자리 이상이면 다음 버튼 활성화되게 
+            $('.' + real_pg + '_input').keyup(function(){
+                if (this.value.length ==13 ) {
+                    $(".input_nxt_btn").addClass("pg_" + real_pg + "_answer");
+                }
+            });
+        }
+
+        //----주민번호 끊어져서... 있을 경우-------------------
+        else if (e.target.className.includes("ID_num13")) {
+
+            //키보드 누르고 13자리 이상일 때 엔터 누르면 다음 페이지로 넘어가게 
+            $('.' + real_pg + '_input').keydown(function (e) {
+                if (event.which === 13) {
+                    let unspacedValue = this.value.split(' ').join('');
+                    if (unspacedValue.length == 13 ) {
+                        console.log(unspacedValue);
+                        console.log(unspacedValue.length);
+                        next(real_pg);
+                    } else {
+                        $('.modal-body').text(instruction);
+                        $('#staticBackdrop').modal('show');
+                    }
+                }
+            });
+
             //키보드 떼고 13자리 이상이면 다음 버튼 활성화되게 
             $('.' + real_pg + '_input').keyup(function(){
                 if (this.value.length ==13 ) {
@@ -323,7 +348,7 @@ document.querySelector("main").addEventListener("click", function (e) {//메인 
         //----비번6자리 있을 경우-------------------
         else if (e.target.className.includes("pw_input")) {
             console.log('pw');
-            
+            //키패드 번호 누르기
             for (j = 0; j < 10; j++) {
                 if (e.target.className.includes("input_" + j)) {
                     //let pressedKey = j;
@@ -333,30 +358,46 @@ document.querySelector("main").addEventListener("click", function (e) {//메인 
                         pwArr.push(j);
                         console.log(pwArr);
                         console.log("길이는", pwArr.length);
-                        $(".dot" + num_cnt).css("background-color", "#375BA9");
+                        $(".dot" + num_cnt).css("background-color", "#375BA9");//색칠
 
-                    } else if (pwArr.length = 5) {
+                    } else if (pwArr.length = 5) { //배열 길이 5 -> 6개까지 입력하고 일어날 이벤트
                         console.log(j + '이후 clicked');
                         pwArr.push(j);
                         console.log("길이는", pwArr.length);
                         console.log(pwArr);
-                        $(".dot5").css("background-color", "#375BA9");
+                        $(".dot5").css("background-color", "#375BA9");//색칠
                         $('.submit_btn').click(function () {
                             var pw_set = pwArr.join('');
                             console.log(pw_set);
                             $(".submit_btn").addClass("pg_" + real_pg + "_answer");
                             pwArr = [];
                             for ( i =0; i <6; i++) {
-                                $(".dot"+i).css("background-color", "#a9a9a9");
+                                $(".dot"+i).css("background-color", "#a9a9a9");//버튼누르면 색칠초기화
                             }
                         });
                     }
                 }
             }
+        } 
+
+        //----날짜 선택창 있는 경우 -------------------
+        else if (e.target.className.includes("calendar")) {
+            $(document).ready(function() {
+                $('#date-picker').datepicker({
+              
+                    language: "ko",
+              
+                })
+              
+              });
+
+            
         
-        //----정답영역만 있을 경우-------------------
-        } else {
-            next(real_pg);
+        }
+        
+        //암것도 없으면 모달 띄우기
+        else {
+            next(real_pg);//다음 페이지로 이동
         }
 
     } else {
