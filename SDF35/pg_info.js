@@ -64,7 +64,10 @@ const pageClickArea = [
 const inputAnswer = [
     {},
     {},
-    {},
+    {
+        page: 2,
+        inputableAnswer: "인사동"
+    },
     {},
     {},
     {},

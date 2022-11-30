@@ -9,7 +9,6 @@
 .btn-or{
     background: #ED7732!important;
     color: #fff!important;
-    min-height: 6vh;
 }
 
 #p1 .pg_top{
@@ -30,11 +29,15 @@
     min-height: 6vh;
 }
 
-#p2 .btn {
+#p2 .btn,
+#p3 .btn,
+#p4 .btn {
     min-height: 5vh;
 }
 
-#p2 .form {
+#p2 .form,
+#p3 .form,
+#p4 .form {
     border-bottom: 1px solid #ced4da;
     padding: 0;
     min-height: 5vh;
@@ -42,7 +45,59 @@
     align-items: center;
 }
 
-#p2 .form .form-control {
+#p2 .form .form-control,
+#p3 .form .form-control,
+#p4 .form .form-control {
     border-radius: 0;
     border: 0;
+}
+
+.list > li {
+    min-height: 5vh;
+    border-bottom: 1px solid #ced4da;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+#p4{
+    position: relative;
+}
+
+#p4 .under_bar{
+    min-height: 50vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    margin: 0;
+}
+
+#p4 .under_bar .svg {
+    margin-right: .5em;
+}
+
+#p4 .under_bar > li {
+    width: 100%;
+    min-height: 5vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+    padding-top: 1em;
+    padding-bottom: 1em;
+}
+
+#p4 .under_bar > li:not(:last-child) {
+    border-bottom: 1px solid #ced4da;
+}
+
+#p4 .under_bar > li .list-item{
+    width: 100%;
+    padding-top: .7em;
+    padding-bottom: .7em;
+}
+
+#p5 .form-control {
+    min-height: 6vh;
 }

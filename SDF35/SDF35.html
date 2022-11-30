@@ -80,8 +80,8 @@
                                         시작하기
                                     </button>
                                     <div class="d-flex justify-content-center align-items-center">
-                                        <div class="text-black-50 text-sm">이미 계정이 있나요?</div>
-                                        <div class="text-or text-sm fw-bold">로그인</div>
+                                        <div class="text-black-50 text-sm fontSz">이미 계정이 있나요?</div>
+                                        <div class="text-or text-sm fw-bold fontSz">로그인</div>
                                     </div>
                                 </div>
                             </div>
@@ -90,20 +90,20 @@
                         <div class="page" id="p2">
                             <div class="page_wrap">
                                 <h1 class="pg_title" style="color: #fff;">Page2</h1>
-                                <div class="container flex-column flex-center-center px-3">
+                                <div class="container flex-column flex-center-center px-4">
                                     <div class="w-100 flex-center-center mt-3 mb-4">
                                         <div class="flex-fill">
-                                            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-chevron-left" viewBox="0 0 16 16">
+                                            <svg xmlns="http://www.w3.org/2000/svg" width="23" height="23" fill="currentColor" class="bi bi-chevron-left" viewBox="0 0 16 16">
                                             <path fill-rule="evenodd" d="M11.354 1.646a.5.5 0 0 1 0 .708L5.707 8l5.647 5.646a.5.5 0 0 1-.708.708l-6-6a.5.5 0 0 1 0-.708l6-6a.5.5 0 0 1 .708 0z"/>
                                           </svg>
                                         </div>
-                                        <form class="w-90 tab d-flex form" role="search">
+                                        <div class="w-90 tab d-flex form" role="search">
                                             <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-search text-black-50" viewBox="0 0 16 16">
                                                 <path d="M11.742 10.344a6.5 6.5 0 1 0-1.397 1.398h-.001c.03.04.062.078.098.115l3.85 3.85a1 1 0 0 0 1.415-1.414l-3.85-3.85a1.007 1.007 0 0 0-.115-.1zM12 6.5a5.5 5.5 0 1 1-11 0 5.5 5.5 0 0 1 11 0z"/>
                                               </svg>
-                                            <input class="form-control fontSz" type="search" placeholder="동명(읍,면)으로 검색(ex. 서초동)"
+                                            <input class="form-control fontSz answer_txt pg_2_answer 2_input" type="search" placeholder="동명(읍,면)으로 검색(ex. 서초동)"
                                                 aria-label="Search">
-                                        </form>
+                                        </div>
                                     </div>
                                     <button type="button" class="btn btn-or w-100 fontSz">
                                         현재위치로 찾기
@@ -115,21 +115,138 @@
                         <div class="page" id="p3">
                             <div class="page_wrap">
                                 <h1 class="pg_title" style="color: #fff;">Page3</h1>
-                                3
+                                <div class="container flex-column flex-center-center px-4">
+                                    <div class="w-100 flex-center-center mt-3 mb-4">
+                                        <div class="flex-fill">
+                                            <svg xmlns="http://www.w3.org/2000/svg" width="23" height="23" fill="currentColor" class="bi bi-chevron-left" viewBox="0 0 16 16">
+                                            <path fill-rule="evenodd" d="M11.354 1.646a.5.5 0 0 1 0 .708L5.707 8l5.647 5.646a.5.5 0 0 1-.708.708l-6-6a.5.5 0 0 1 0-.708l6-6a.5.5 0 0 1 .708 0z"/>
+                                          </svg>
+                                        </div>
+                                        <form class="w-90 tab d-flex form" role="search">
+                                            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-search text-black-50" viewBox="0 0 16 16">
+                                                <path d="M11.742 10.344a6.5 6.5 0 1 0-1.397 1.398h-.001c.03.04.062.078.098.115l3.85 3.85a1 1 0 0 0 1.415-1.414l-3.85-3.85a1.007 1.007 0 0 0-.115-.1zM12 6.5a5.5 5.5 0 1 1-11 0 5.5 5.5 0 0 1 11 0z"/>
+                                              </svg>
+                                            <input class="form-control fontSz" type="search" placeholder="인사동"
+                                                aria-label="Search">
+                                        </form>
+                                    </div>
+                                    <button type="button" class="btn btn-or w-100 fontSz">
+                                        현재위치로 찾기
+                                    </button>
+                                </div>
+                                <div class="w-100 px-4 d-flex flex-column">
+                                    <div class="text-sm fw-bold py-3 fontSz">'인사동' 검색 결과</div>
+                                    <ul class="list list-unstyled fontSz">
+                                        <li>경남 진주시 인사동</li>
+                                        <li>경남 창원시 진해구 인사동</li>
+                                        <li class="pg_3_answer">서울 종로구 인사동</li>
+                                    </ul>
+                                </div>
                             </div>
                         </div>
                         <!------------------------------ page 4 ------------------------------>
                         <div class="page" id="p4">
                             <div class="page_wrap">
                                 <h1 class="pg_title" style="color: #fff;">Page4</h1>
-                                4
+                                <div class="container flex-column flex-center-center px-4">
+                                    <div class="w-100 flex-center-center mt-3 mb-4">
+                                        <div class="flex-fill">
+                                            <svg xmlns="http://www.w3.org/2000/svg" width="23" height="23" fill="currentColor" class="bi bi-chevron-left" viewBox="0 0 16 16">
+                                            <path fill-rule="evenodd" d="M11.354 1.646a.5.5 0 0 1 0 .708L5.707 8l5.647 5.646a.5.5 0 0 1-.708.708l-6-6a.5.5 0 0 1 0-.708l6-6a.5.5 0 0 1 .708 0z"/>
+                                          </svg>
+                                        </div>
+                                        <form class="w-90 tab d-flex form" role="search">
+                                            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-search text-black-50" viewBox="0 0 16 16">
+                                                <path d="M11.742 10.344a6.5 6.5 0 1 0-1.397 1.398h-.001c.03.04.062.078.098.115l3.85 3.85a1 1 0 0 0 1.415-1.414l-3.85-3.85a1.007 1.007 0 0 0-.115-.1zM12 6.5a5.5 5.5 0 1 1-11 0 5.5 5.5 0 0 1 11 0z"/>
+                                              </svg>
+                                            <input class="form-control fontSz" type="search" placeholder="서울 종로구 인사동"
+                                                aria-label="Search">
+                                        </form>
+                                    </div>
+                                </div>
+                                <ul class="scroll under_bar list-unstyled addShadow pt-3 px-4">
+                                    <li class="fontSz flex-row align-items-center">
+                                        <svg xmlns="http://www.w3.org/2000/svg" width="23" height="23" fill="currentColor" class="bi bi-check-circle-fill text-black-50 svg" viewBox="0 0 16 16">
+                                            <path d="M16 8A8 8 0 1 1 0 8a8 8 0 0 1 16 0zm-3.97-3.03a.75.75 0 0 0-1.08.022L7.477 9.417 5.384 7.323a.75.75 0 0 0-1.06 1.06L6.97 11.03a.75.75 0 0 0 1.079-.02l3.992-4.99a.75.75 0 0 0-.01-1.05z"/>
+                                          </svg>
+                                        <div>모두 동의</div>
+                                    </li>
+                                    <li>
+                                        <div class="list-item d-flex justify-content-between fontSz">
+                                            <div>
+                                                <svg xmlns="http://www.w3.org/2000/svg" width="23" height="23" fill="currentColor" class="bi bi-check2 text-black-50" viewBox="0 0 16 16">
+                                                    <path d="M13.854 3.646a.5.5 0 0 1 0 .708l-7 7a.5.5 0 0 1-.708 0l-3.5-3.5a.5.5 0 1 1 .708-.708L6.5 10.293l6.646-6.647a.5.5 0 0 1 .708 0z"/>
+                                                  </svg>
+                                                (필수) 당근마켓 약관 및 동의사항
+                                            </div>
+                                            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-chevron-right text-black-50 svg" viewBox="0 0 16 16">
+                                                <path fill-rule="evenodd" d="M4.646 1.646a.5.5 0 0 1 .708 0l6 6a.5.5 0 0 1 0 .708l-6 6a.5.5 0 0 1-.708-.708L10.293 8 4.646 2.354a.5.5 0 0 1 0-.708z"/>
+                                              </svg>
+                                        </div>
+                                        <div class="list-item d-flex justify-content-between">
+                                            <div>
+                                                <svg xmlns="http://www.w3.org/2000/svg" width="23" height="23" fill="currentColor" class="bi bi-check2 text-black-50" viewBox="0 0 16 16">
+                                                    <path d="M13.854 3.646a.5.5 0 0 1 0 .708l-7 7a.5.5 0 0 1-.708 0l-3.5-3.5a.5.5 0 1 1 .708-.708L6.5 10.293l6.646-6.647a.5.5 0 0 1 .708 0z"/>
+                                                  </svg>
+                                                (선택) 마케팅 정보 수신 동의
+                                            </div>
+                                            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-chevron-right text-black-50 svg" viewBox="0 0 16 16">
+                                                <path fill-rule="evenodd" d="M4.646 1.646a.5.5 0 0 1 .708 0l6 6a.5.5 0 0 1 0 .708l-6 6a.5.5 0 0 1-.708-.708L10.293 8 4.646 2.354a.5.5 0 0 1 0-.708z"/>
+                                              </svg>
+                                        </div>
+                                    </li>
+                                    <li class="fontSz flex-fill justify-content-between">
+                                        <div>
+                                            <div class="list-item fw-bold">최소 연령 확인</div>
+                                            <div class="list-item">
+                                                <svg xmlns="http://www.w3.org/2000/svg" width="23" height="23" fill="currentColor" class="bi bi-record-circle-fill text-or svg" viewBox="0 0 16 16">
+                                                    <path d="M16 8A8 8 0 1 1 0 8a8 8 0 0 1 16 0zm-8 3a3 3 0 1 0 0-6 3 3 0 0 0 0 6z"/>
+                                                  </svg>
+                                                <div class="d-inline-flex">만 <div class="fw-bold">14세 이상</div>이에요.</div>
+                                            </div>
+                                            <div class="list-item">
+                                                <svg xmlns="http://www.w3.org/2000/svg" width="23" height="23" fill="currentColor" class="bi bi-circle text-black-50 svg" viewBox="0 0 16 16">
+                                                    <path d="M8 15A7 7 0 1 1 8 1a7 7 0 0 1 0 14zm0 1A8 8 0 1 0 8 0a8 8 0 0 0 0 16z"/>
+                                                  </svg>
+                                                  <div class="d-inline-flex">만 <div class="fw-bold">14세 미만</div>이에요.</div>
+                                            </div>
+                                        </div>
+                                        <button type="button" class="btn btn-or w-100 fontSz mt-3">
+                                            시작하기
+                                        </button>
+                                    </li>
+                                </ul>
                             </div>
                         </div>
                         <!------------------------------ page 5 ------------------------------>
                         <div class="page" id="p5">
                             <div class="page_wrap">
                                 <h1 class="pg_title" style="color: #fff;">Page5</h1>
-                                5
+                                <div class="pt-3 px-4 mb-4">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="23" height="23" fill="currentColor" class="bi bi-chevron-left" viewBox="0 0 16 16">
+                                    <path fill-rule="evenodd" d="M11.354 1.646a.5.5 0 0 1 0 .708L5.707 8l5.647 5.646a.5.5 0 0 1-.708.708l-6-6a.5.5 0 0 1 0-.708l6-6a.5.5 0 0 1 .708 0z"/>
+                                  </svg>
+                                </div>
+
+                                <div class="w-100 flex-column flex-center-center pt-3 px-4">
+                                    <div class="txt-wrap w-100 mb-3">
+                                        <h4 class="fw-bold">
+                                            안녕하세요!<br>
+                                            휴대폰 번호로 가입해주세요.
+                                        </h4>
+                                        <div>휴대폰 번호는 안전하게 보관되며 이웃들에게 공개되지 않아요.</div>
+                                    </div>
+                                    <div class="form mb-1" role="search">
+                                        <input class="form-control fontSz" type="search" placeholder="휴대폰 번호(- 없이 숫자만 입력)"
+                                            aria-label="Search">
+                                    </div>
+    
+                                    <button type="button" class="btn btn-or w-100 fontSz mb-3">
+                                        인증문자 받기
+                                    </button>
+                                    <div class="text-sm d-inline-flex">휴대폰 번호가 변경되었나요?<u>이메일로 계정 찾기</u></div>
+                                </div>
+
                             </div>
                         </div>
                         <!------------------------------ page 6 ------------------------------>
