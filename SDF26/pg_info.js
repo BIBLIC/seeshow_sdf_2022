@@ -1,4 +1,4 @@
-var total_page = 10;//페이지 수 -> 시나리오마다 total_page 수 바꾸기 
+var total_page = 11;//페이지 수 -> 시나리오마다 total_page 수 바꾸기 
 
 //오디오 배열 선언, 페이지 수 대로 배열에 mp3 넣기
 const audioArray = [];
@@ -56,6 +56,10 @@ const pageClickArea = [
         page: 10,
         correctAnswer: "pg_10_answer"
     },
+    {
+        page: 11,
+        correctAnswer: "pg_11_answer"
+    },
 ];
 
 // -=----------------------------------------------------------------------------------------------------------------------
@@ -69,6 +73,7 @@ const pageClickArea = [
 // 위 형식 맞춰서 ""안에 답 넣으면 됨
 // 답에는 공백이 없어야 함
 const inputAnswer = [
+    {},
     {},
     {},
     {},
@@ -103,30 +108,34 @@ const modalCont = [
     },
     {
         page: 4,
-        instruction: "주민번호 13자리를 입력하고 입력하고 엔터를 누르거나 '다음'버튼을 클릭하세요"
+        instruction: "개인정보동의 체크박스를 클릭하세요"
     },
     {
         page: 5,
-        instruction: "비밀번호 6자리를 입력하고 '입력완료' 버튼을 클릭하세요."
+        instruction: "주민번호 13자리를 입력하고 입력하고 엔터를 누르거나 '다음'버튼을 클릭하세요"
     },
     {
         page: 6,
-        instruction: "'확인' 버튼을 클릭하세요."
+        instruction: "비밀번호 6자리를 입력하고 '입력완료' 버튼을 클릭하세요."
     },
     {
         page: 7,
-        instruction: "'공과금 통합조회' 탭을 클릭하세요."
+        instruction: "'확인' 버튼을 클릭하세요."
     },
     {
         page: 8,
-        instruction: "주민번호 13자리를 입력하고 엔터를 누르거나 '다음'버튼을 클릭하세요"
+        instruction: "'공과금 통합조회' 탭을 클릭하세요."
     },
     {
         page: 9,
-        instruction: "'국세' 탭을 클릭하세요."
+        instruction: "주민번호 13자리를 입력하고 엔터를 누르거나 '다음'버튼을 클릭하세요"
     },
     {
         page: 10,
+        instruction: "'국세' 탭을 클릭하세요."
+    },
+    {
+        page: 11,
         instruction: "마지막 페이지"
     },
 ];

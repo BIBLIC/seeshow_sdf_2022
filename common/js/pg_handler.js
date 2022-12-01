@@ -293,6 +293,32 @@ document.querySelector("main").addEventListener("click", function (e) {//메인 
             })
         }
 
+        //----아무거나 입력해도 될 때-------------------
+        else if (e.target.className.includes("ID_num7")) {
+
+            //키보드 누르고 13자리 이상일 때 엔터 누르면 다음 페이지로 넘어가게 
+            $('.' + real_pg + '_input').keydown(function (e) {
+                if (event.which === 13) {
+                    let unspacedValue = this.value.split(' ').join('');
+                    if (unspacedValue.length >= 1 ) {
+                        console.log(unspacedValue);
+                        console.log(unspacedValue.length);
+                        next(real_pg);
+                    } else {
+                        $('.modal-body').text(instruction);
+                        $('#staticBackdrop').modal('show');
+                    }
+                }
+            });
+
+            //키보드 떼고 13자리 이상이면 다음 버튼 활성화되게 
+            $('.' + real_pg + '_input').keyup(function(){
+                if (this.value.length >=1 ) {
+                    $(".input_nxt_btn").addClass("pg_" + real_pg + "_answer");
+                }
+            });
+        }
+
         //----주민번호 13자리... 있을 경우-------------------
         else if (e.target.className.includes("ID_num13")) {
 
@@ -319,57 +345,6 @@ document.querySelector("main").addEventListener("click", function (e) {//메인 
             });
         }
 
-        //----주민번호 7자리... 있을 경우-------------------
-        else if (e.target.className.includes("ID_num7")) {
-
-            //키보드 누르고 13자리 이상일 때 엔터 누르면 다음 페이지로 넘어가게 
-            $('.' + real_pg + '_input').keydown(function (e) {
-                if (event.which === 13) {
-                    let unspacedValue = this.value.split(' ').join('');
-                    if (unspacedValue.length == 7 ) {
-                        console.log(unspacedValue);
-                        console.log(unspacedValue.length);
-                        next(real_pg);
-                    } else {
-                        $('.modal-body').text(instruction);
-                        $('#staticBackdrop').modal('show');
-                    }
-                }
-            });
-
-            //키보드 떼고 13자리 이상이면 다음 버튼 활성화되게 
-            $('.' + real_pg + '_input').keyup(function(){
-                if (this.value.length ==7 ) {
-                    $(".input_nxt_btn").addClass("pg_" + real_pg + "_answer");
-                }
-            });
-        }
-
-        //----주민번호 끊어져서... 있을 경우-------------------
-        else if (e.target.className.includes("ID_num13")) {
-
-            //키보드 누르고 13자리 이상일 때 엔터 누르면 다음 페이지로 넘어가게 
-            $('.' + real_pg + '_input').keydown(function (e) {
-                if (event.which === 13) {
-                    let unspacedValue = this.value.split(' ').join('');
-                    if (unspacedValue.length == 13 ) {
-                        console.log(unspacedValue);
-                        console.log(unspacedValue.length);
-                        next(real_pg);
-                    } else {
-                        $('.modal-body').text(instruction);
-                        $('#staticBackdrop').modal('show');
-                    }
-                }
-            });
-
-            //키보드 떼고 13자리 이상이면 다음 버튼 활성화되게 
-            $('.' + real_pg + '_input').keyup(function(){
-                if (this.value.length ==13 ) {
-                    $(".input_nxt_btn").addClass("pg_" + real_pg + "_answer");
-                }
-            });
-        }
 
         //----비번6자리 있을 경우-------------------
         else if (e.target.className.includes("pw_input")) {
@@ -406,12 +381,47 @@ document.querySelector("main").addEventListener("click", function (e) {//메인 
             }
         } 
 
+        //----주민번호 뒷자리만 입력하는 경우-------------------
+        else if (e.target.className.includes("ID7_input")) {
+            console.log('pw');
+            //키패드 번호 누르기
+            for (j = 0; j < 10; j++) {
+                if (e.target.className.includes("input_" + j)) {
+                    //let pressedKey = j;
+                    if (pwArr.length < 6) {
+                        console.log(j + '이전 clicked');
+                        var num_cnt = pwArr.length
+                        pwArr.push(j);
+                        console.log(pwArr);
+                        console.log("길이는", pwArr.length);
+                        $(".dot_" + num_cnt).css("background-color", "#000000");//색칠
+
+                    } else if (pwArr.length = 6) { //배열 길이 6 -> 7개까지 입력하고 일어날 이벤트
+                        console.log(j + '이후 clicked');
+                        pwArr.push(j);
+                        console.log("길이는", pwArr.length);
+                        console.log(pwArr);
+                        $(".dot_6").css("background-color", "#000000");//색칠
+                        $('.submit_btn').click(function () {
+                            var pw_set = pwArr.join('');
+                            console.log(pw_set);
+                            $(".submit_btn").addClass("pg_" + real_pg + "_answer");
+                            pwArr = [];
+                            for ( i =0; i <7; i++) {
+                                $(".dot_"+i).css("background-color", "#fff");//버튼누르면 색칠초기화
+                            }
+                        });
+                    }
+                } 
+            }
+        } 
+
         //----날짜 선택창 있는 경우 -------------------
         else if (e.target.className.includes("calendar")) {
         
             $('.datepicker').click(function () {
                 $('.datepicker').css('display', 'none');
-                $(".next_btn").addClass("pg_" + real_pg + "_answer");
+                $(".cal_next_btn").addClass("pg_" + real_pg + "_answer");
                 
             });
         }

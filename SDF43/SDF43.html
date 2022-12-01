@@ -17,9 +17,18 @@
         crossorigin="anonymous"></script>
     <script src="https://code.jquery.com/jquery-3.6.1.min.js"></script>
     <!-- DatePicker -->
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-datepicker/1.9.0/js/bootstrap-datepicker.min.js" integrity="sha512-T/tUfKSV1bihCnd+MxKD0Hm1uBBroVYBOYSk1knyvQ9VyZJpc/ALb4P0r6ubwVPSGB2GvjeoMAJJImBG12TiaQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
-<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-datepicker/1.9.0/css/bootstrap-datepicker.min.css" integrity="sha512-mSYUmp1HYZDFaVKK//63EcZq4iFWFjxSL+Z3T/aCt4IO9Cejm03q3NKKYN6pFQzY0SBOr8h+eCIAZHPXcpZaNw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
-<script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-datepicker/1.9.0/locales/bootstrap-datepicker.ko.min.js" integrity="sha512-L4qpL1ZotXZLLe8Oo0ZyHrj/SweV7CieswUODAAPN/tnqN3PA1P+4qPu5vIryNor6HQ5o22NujIcAZIfyVXwbQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-datepicker/1.9.0/js/bootstrap-datepicker.min.js"
+        integrity="sha512-T/tUfKSV1bihCnd+MxKD0Hm1uBBroVYBOYSk1knyvQ9VyZJpc/ALb4P0r6ubwVPSGB2GvjeoMAJJImBG12TiaQ=="
+        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <link rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-datepicker/1.9.0/css/bootstrap-datepicker.min.css"
+        integrity="sha512-mSYUmp1HYZDFaVKK//63EcZq4iFWFjxSL+Z3T/aCt4IO9Cejm03q3NKKYN6pFQzY0SBOr8h+eCIAZHPXcpZaNw=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <script
+        src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-datepicker/1.9.0/locales/bootstrap-datepicker.ko.min.js"
+        integrity="sha512-L4qpL1ZotXZLLe8Oo0ZyHrj/SweV7CieswUODAAPN/tnqN3PA1P+4qPu5vIryNor6HQ5o22NujIcAZIfyVXwbQ=="
+        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="https://unpkg.com/@popperjs/core@2"></script>
 </head>
 
 <body>
@@ -60,9 +69,9 @@
                         <div class="page" id="p1">
                             <div class="page_wrap">
                                 <h1 class="pg_title" style="color: #fff;">Page1</h1>
-                                <div class="agree w-100 h-10 d-flex justify-content-between align-items-center">
+                                <div class="agree w-100 h-10 d-flex justify-content-between align-items-center fontSz">
                                     <div class="w-25"></div>
-                                    <div class="w-50 d-flex justify-content-center fontSz" style="font-size: large;">
+                                    <div class="w-50 d-flex justify-content-center " style="font-size: large;">
                                         전체
                                     </div>
                                     <div class="w-25 d-flex justify-content-center">
@@ -103,14 +112,25 @@
                                                 보험 전문가에게 물어보기
                                             </div>
                                         </button>
-                                        <button type="button"
-                                            class="btn w-100 h-10 tab text-left d-flex justify-content-start align-items-center rounded-1 fontSz pg_1_answer">
+                                        <div 
+                                            class="btn w-100 h-10 tab text-left d-flex justify-content-start align-items-center rounded-1 fontSz pg_1_answer cursor_pos_1">
                                             <div class="icon pg_1_answer">4
                                             </div>
                                             <div class="mx-1 pg_1_answer">
                                                 병원비 돌려받기
                                             </div>
-                                        </button>
+                                             <!-- 커서 가이드 -->
+                                        <div class="cursor_wrap cursor_wrap_1">
+                                            <span class="cursor" x-placement="bottom">
+                                                <button class="react-joyride__beacon" type="button">
+                                                    <span class="cursor_outer"></span>
+                                                    <span class="cursor_inner"><span>
+                                                </button>
+                                            </span>
+                                        </div>
+                                        <!-- 커서 가이드 -->
+                                        </div>
+                                       
                                         <button type="button"
                                             class="btn w-100 h-10 tab text-left d-flex justify-content-start align-items-center rounded-1 fontSz">
                                             <div class="icon">5
@@ -188,14 +208,13 @@
                             <div class="page_wrap">
                                 <h1 class="pg_title" style="color: #fff;">Page2</h1>
                                 <div class="top d-flex align-items-center">
-                                    <div class="back w-25">
-                                        <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20"
-                                            fill="currentColor" class="bi bi-chevron-left" viewBox="0 0 16 16">
-                                            <path fill-rule="evenodd"
-                                                d="M11.354 1.646a.5.5 0 0 1 0 .708L5.707 8l5.647 5.646a.5.5 0 0 1-.708.708l-6-6a.5.5 0 0 1 0-.708l6-6a.5.5 0 0 1 .708 0z" />
-                                        </svg>
+                                    <div class="pt-3 px-4 mb-4">
+                                        <svg xmlns="http://www.w3.org/2000/svg" width="23" height="23" fill="currentColor" class="bi bi-chevron-left" viewBox="0 0 16 16">
+                                        <path fill-rule="evenodd" d="M11.354 1.646a.5.5 0 0 1 0 .708L5.707 8l5.647 5.646a.5.5 0 0 1-.708.708l-6-6a.5.5 0 0 1 0-.708l6-6a.5.5 0 0 1 .708 0z"/>
+                                      </svg>
                                     </div>
-                                    <div class="w-50 h-10 mt-3 d-flex justify-content-center fontSz" style="font-size:x-large">
+                                    <div class="w-50 h-10 mt-3 d-flex justify-content-center fontSz"
+                                        style="font-size:x-large">
                                         병원비 돌려받기
                                     </div>
                                     <div class="w-25 h-10 fontSz"></div>
@@ -204,7 +223,8 @@
                                     <div class="tab d-flex justify-content-center fontSz" style="font-size:x-large;">
                                         병원비
                                     </div>
-                                    <div class="d-flex justify-content-center text-black-50 fontSz" style="font-size:x-large;">
+                                    <div class="d-flex justify-content-center text-black-50 fontSz"
+                                        style="font-size:x-large;">
                                         신청 내역
                                     </div>
                                 </div>
@@ -217,8 +237,9 @@
                                         이미지
                                     </div>
                                 </div>
-                                <div class="under_bar d-flex flex-column">
-                                    <div class="w-90 h-10 d-flex justify-content-start align-items-center">
+
+                                <div class="w-100 absolute-bottom flex-column flex-center-center p-3">
+                                    <div class="w-100 d-flex justify-content-start align-items-center">
                                         <div class="w-10 d-flex justify-content-center fontSz">
                                             <svg xmlns="http://www.w3.org/2000/svg" width="25" height="25"
                                                 fill="currentColor" class="bi bi-camera-fill" viewBox="0 0 16 16">
@@ -227,15 +248,27 @@
                                                     d="M2 4a2 2 0 0 0-2 2v6a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V6a2 2 0 0 0-2-2h-1.172a2 2 0 0 1-1.414-.586l-.828-.828A2 2 0 0 0 9.172 2H6.828a2 2 0 0 0-1.414.586l-.828.828A2 2 0 0 1 3.172 4H2zm.5 2a.5.5 0 1 1 0-1 .5.5 0 0 1 0 1zm9 2.5a3.5 3.5 0 1 1-7 0 3.5 3.5 0 0 1 7 0z" />
                                             </svg>
                                         </div>
-                                        <div class="w-50text-black-50 fontSz">
+                                        <div class="text-black-50 fontSz">
                                             병원비 영수증만 찍어서 바로 신청
                                         </div>
                                         <div class="w-10"></div>
-                                    </div>
-                                    <button type="button" class="btn w-90 toss btn-b btn-lg fontSz pg_2_answer">
-                                        내 병원비 돌려받기
-                                    </button>
+                                    </div>     
+                                        <button type="button" class="btn flex-center-center w-100 toss btn-b btn-lg ms-1 fontSz pg_2_answer cursor_pos_2">
+                                            받았어요
+                                        </button>   
+                                        <!-- 커서 가이드 -->
+                                        <div class="cursor_wrap cursor_wrap_2">
+                                            <span class="cursor" x-placement="bottom">
+                                                <button class="react-joyride__beacon" type="button">
+                                                    <span class="cursor_outer"></span>
+                                                    <span class="cursor_inner"><span>
+                                                </button>
+                                            </span>
+                                        </div>
+                                        <!-- 커서 가이드 -->                                  
                                 </div>
+
+
                             </div>
                         </div>
                         <!------------------------------ page 3 ------------------------------>
@@ -243,14 +276,13 @@
                             <div class="page_wrap">
                                 <h1 class="pg_title" style="color: #fff;">Page3</h1>
                                 <div class="top d-flex align-items-center">
-                                    <div class="back w-25">
-                                        <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20"
-                                            fill="currentColor" class="bi bi-chevron-left" viewBox="0 0 16 16">
-                                            <path fill-rule="evenodd"
-                                                d="M11.354 1.646a.5.5 0 0 1 0 .708L5.707 8l5.647 5.646a.5.5 0 0 1-.708.708l-6-6a.5.5 0 0 1 0-.708l6-6a.5.5 0 0 1 .708 0z" />
-                                        </svg>
+                                    <div class="pt-3 px-4 mb-4">
+                                        <svg xmlns="http://www.w3.org/2000/svg" width="23" height="23" fill="currentColor" class="bi bi-chevron-left" viewBox="0 0 16 16">
+                                        <path fill-rule="evenodd" d="M11.354 1.646a.5.5 0 0 1 0 .708L5.707 8l5.647 5.646a.5.5 0 0 1-.708.708l-6-6a.5.5 0 0 1 0-.708l6-6a.5.5 0 0 1 .708 0z"/>
+                                      </svg>
                                     </div>
-                                    <div class="w-50 h-10 mt-3 d-flex justify-content-center fontSz" style="font-size:x-large">
+                                    <div class="w-50 h-10 mt-3 d-flex justify-content-center fontSz"
+                                        style="font-size:x-large">
                                         병원비 돌려받기
                                     </div>
                                     <div class="w-25 h-10"></div>
@@ -277,13 +309,14 @@
                                         <div></div>
                                     </div>
                                 </div>
-                                <div class="under_bar d-flex justify-content-center">
-                                    <button type="button" class="btn w-45 mx-1 toss btn-c btn-lg fontSz">
+
+                                <div class="w-100 absolute-bottom flex-center-center p-3">
+                                    <button type="button" class="btn flex-center-center w-50 toss btn-c btn-lg me-1 fontSz">
                                         아직이요
-                                    </button>
-                                    <button type="button" class="btn w-45 mx-1 toss btn-b btn-lg fontSz pg_3_answer">
+                                    </button>     
+                                    <button type="button" class="btn flex-center-center w-50 toss btn-b btn-lg ms-1 fontSz pg_3_answer">
                                         받았어요
-                                    </button>
+                                    </button>                                     
                                 </div>
                             </div>
                         </div>
@@ -292,12 +325,10 @@
                         <div class="page" id="p4">
                             <div class="page_wrap">
                                 <h1 class="pg_title" style="color: #666;">Page4</h1>
-                                <div class="back d-flex justify-content-start">
-                                    <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor"
-                                        class="bi bi-chevron-left" viewBox="0 0 16 16">
-                                        <path fill-rule="evenodd"
-                                            d="M11.354 1.646a.5.5 0 0 1 0 .708L5.707 8l5.647 5.646a.5.5 0 0 1-.708.708l-6-6a.5.5 0 0 1 0-.708l6-6a.5.5 0 0 1 .708 0z" />
-                                    </svg>
+                                <div class="pt-3 px-4 mb-4">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="23" height="23" fill="currentColor" class="bi bi-chevron-left" viewBox="0 0 16 16">
+                                    <path fill-rule="evenodd" d="M11.354 1.646a.5.5 0 0 1 0 .708L5.707 8l5.647 5.646a.5.5 0 0 1-.708.708l-6-6a.5.5 0 0 1 0-.708l6-6a.5.5 0 0 1 .708 0z"/>
+                                  </svg>
                                 </div>
                                 <div class="container h-75 mt-4">
                                     <div class="h-10 m-4 fontSz" style="font-weight:bold; font-size:x-large;">
@@ -323,10 +354,11 @@
                                         </button>
 
                                     </div>
-                                    <div class="under_bar d-flex justify-content-center">
-                                        <button type="button" class="btn w-90 toss btn-c btn-lg fontSz">
+
+                                    <div class="w-100 absolute-bottom flex-center-center p-3">
+                                        <button type="button" class="btn flex-center-center w-100 toss btn-c btn-lg fontSz">
                                             내가 갖고있는 보험 보기
-                                        </button>
+                                        </button>                                    
                                     </div>
                                 </div>
                             </div>
@@ -336,61 +368,80 @@
                         <div class="page" id="p5">
                             <div class="page_wrap">
                                 <h1 class="pg_title" style="color: #fff;">Page5</h1>
-                                <div class="back d-flex justify-content-start">
-                                    <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20"
-                                        fill="currentColor" class="bi bi-chevron-left" viewBox="0 0 16 16">
-                                        <path fill-rule="evenodd"
-                                            d="M11.354 1.646a.5.5 0 0 1 0 .708L5.707 8l5.647 5.646a.5.5 0 0 1-.708.708l-6-6a.5.5 0 0 1 0-.708l6-6a.5.5 0 0 1 .708 0z" />
-                                    </svg>
+                                <div class="pt-3 px-4 mb-4">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="23" height="23" fill="currentColor" class="bi bi-chevron-left" viewBox="0 0 16 16">
+                                    <path fill-rule="evenodd" d="M11.354 1.646a.5.5 0 0 1 0 .708L5.707 8l5.647 5.646a.5.5 0 0 1-.708.708l-6-6a.5.5 0 0 1 0-.708l6-6a.5.5 0 0 1 .708 0z"/>
+                                  </svg>
                                 </div>
-                                <div class="container h-40 mt-4">
-                                    <div class="mt-4 align-items-center fontSz" style="font-weight:bold; font-size:x-large;">
+                                <div class="container h-30 mt-4">
+                                    <div class="mt-4 align-items-center fontSz"
+                                        style="font-weight:bold; font-size:x-large;">
                                         ㅇㅇㅇ님의 주민번호를 알려주세요
                                     </div>
                                     <div class="mx-2 text-black-50 fontSz">
                                         병원비를 돌려받기 위해 필요해요
                                     </div>
-                                    <div
-                                        class="container w-100 h-60 mt-4 d-flex flex-column">
+                                    <div class="container w-100 h-60 mt-4 d-flex flex-column">
                                         <div class="w-100 text-black-50 d-flex justify-content-start fontSz">
                                             주민번호
                                         </div>
                                         <div class="d-flex justify-content-start">
-                                            <div class="tab w-45">● ● ● ● ● ●</div>
+                                            <div class="tab w-45">
+                                                <div class="nav-item flex-center-center my-3">
+                                                    <span class="dot "></span>
+                                                    <span class="dot "></span>
+                                                    <span class="dot "></span>
+                                                    <span class="dot "></span>
+                                                    <span class="dot "></span>
+                                                    <span class="dot "></span>
+                                                </div>
+                                            </div>
                                             <div class="fontSz" style="font-size:x-large;">-</div>
-                                            <input class="tab w-45 ID_num7 pg_5_answer 5_input" type="password" maxlength='7'>
-                                            <!-- <div>●</div>
-                                            <div>●</div>
-                                            <div>●</div>
-                                            <div>●</div>
-                                            <div>●</div>
-                                            <div>●</div>
-                                            <div>●</div> -->
-                                        </input>
+                                            <div class="tab w-45" type="password"
+                                                maxlength='7'>
+                                                <div class="nav-item flex-center-center my-3">
+                                                    <span class="dot_none dot_0"></span>
+                                                    <span class="dot_none dot_1"></span>
+                                                    <span class="dot_none dot_2"></span>
+                                                    <span class="dot_none dot_3"></span>
+                                                    <span class="dot_none dot_4"></span>
+                                                    <span class="dot_none dot_5"></span>
+                                                    <span class="dot_none dot_6"></span>
+                                                </div>
+                                            </div>
                                         </div>
                                     </div>
                                 </div>
                                 <div class="container h-40 mt-4">
                                     <div class="mt-4 d-flex justify-content-around">
-                                        <div class="num fontSz">8</div><div class="num fontSz">5</div><div class="num fontSz">9</div>
+                                        <div class="num input_8 pg_5_answer ID7_input pw7">8</div>
+                                        <div class="num input_5 pg_5_answer ID7_input pw7">5</div>
+                                        <div class="num input_9 pg_5_answer ID7_input pw7">9</div>
                                     </div>
                                     <div class="mt-4 d-flex justify-content-around">
-                                        <div class="num fontSz">2</div><div class="num fontSz">1</div><div class="num fontSz">4</div>
+                                        <div class="num input_2 pg_5_answer ID7_input pw7">2</div>
+                                        <div class="num input_1 pg_5_answer ID7_input pw7">1</div>
+                                        <div class="num input_4 pg_5_answer ID7_input pw7">4</div>
                                     </div>
                                     <div class="mt-4 d-flex justify-content-around">
-                                        <div class="num fontSz">7</div><div class="num fontSz">3</div><div class="num fontSz">6</div>
+                                        <div class="num input_7 pg_5_answer ID7_input pw7">7</div>
+                                        <div class="num input_3 pg_5_answer ID7_input pw7">3</div>
+                                        <div class="num input_6 pg_5_answer ID7_input pw7">6</div>
                                     </div>
                                     <div class="mt-4 d-flex justify-content-around">
-                                        <div class="num fontSz">0</div><div class="num fontSz">0</div>
-                                        <div class="num fontSz">
-                                            <svg xmlns="http://www.w3.org/2000/svg" width="50" height="50" fill="currentColor" class="bi bi-arrow-left-short" viewBox="0 0 16 16">
-                                            <path fill-rule="evenodd" d="M12 8a.5.5 0 0 1-.5.5H5.707l2.147 2.146a.5.5 0 0 1-.708.708l-3-3a.5.5 0 0 1 0-.708l3-3a.5.5 0 1 1 .708.708L5.707 7.5H11.5a.5.5 0 0 1 .5.5z"/>
-                                        </svg>
+                                        <div class="num w-30 "></div>
+                                        <div class="num w-30 input_0 pg_5_answer ID7_input pw7">0</div>
+                                        <div class="num w-30 pop_input pg_5_answer ID7_input pw7">
+                                            <svg xmlns="http://www.w3.org/2000/svg" width="50" height="50"
+                                                fill="currentColor" class="bi bi-arrow-left-short pop_input pg_5_answer ID7_input pw7" viewBox="0 0 16 16">
+                                                <path fill-rule="evenodd"
+                                                    d="M12 8a.5.5 0 0 1-.5.5H5.707l2.147 2.146a.5.5 0 0 1-.708.708l-3-3a.5.5 0 0 1 0-.708l3-3a.5.5 0 1 1 .708.708L5.707 7.5H11.5a.5.5 0 0 1 .5.5z" />
+                                            </svg>
                                         </div>
                                     </div>
                                 </div>
-                                <div class="under_bar d-flex justify-content-center">
-                                    <button type="button" class="btn w-90 toss btn-b btn-lg fontSz" >
+                                <div class="w-100 absolute-bottom flex-center-center p-3">
+                                    <button type="button" class="submit_btn btn flex-center-center w-100 toss btn-b btn-lg fontSz">
                                         다음
                                     </button>
                                 </div>
@@ -400,53 +451,56 @@
                         <div class="page" id="p6">
                             <div class="page_wrap">
                                 <h1 class="pg_title" style="color: #fff;">Page6</h1>
-                                <div class="back d-flex justify-content-start">
-                                    <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20"
-                                        fill="currentColor" class="bi bi-chevron-left" viewBox="0 0 16 16">
-                                        <path fill-rule="evenodd"
-                                            d="M11.354 1.646a.5.5 0 0 1 0 .708L5.707 8l5.647 5.646a.5.5 0 0 1-.708.708l-6-6a.5.5 0 0 1 0-.708l6-6a.5.5 0 0 1 .708 0z" />
-                                    </svg>
+                                <div class="pt-3 px-4 mb-4">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="23" height="23" fill="currentColor" class="bi bi-chevron-left" viewBox="0 0 16 16">
+                                    <path fill-rule="evenodd" d="M11.354 1.646a.5.5 0 0 1 0 .708L5.707 8l5.647 5.646a.5.5 0 0 1-.708.708l-6-6a.5.5 0 0 1 0-.708l6-6a.5.5 0 0 1 .708 0z"/>
+                                  </svg>
                                 </div>
                                 <div class="container h-20 fontSz">
-                                    <div class="mt-4 mx-3 align-items-center" style="font-weight:bold; font-size:x-large;">
+                                    <div class="mt-4 mx-3 align-items-center"
+                                        style="font-weight:bold; font-size:x-large;">
                                         병원에 방문한 이유를 알려주세요
                                     </div>
-                                    <div
-                                        class="container w-100 h-60 mt-4 d-flex flex-column">
+                                    <div class="container w-100 h-60 mt-4 d-flex flex-column">
                                         <div class="w-100 text-black-50 d-flex justify-content-start fontSz">
                                             간단하게 작성
                                         </div>
-                                        <div class="d-flex justify-content-start">
-                                            <input class="tab w-90 d-flex justify-content-start pg_6_an" placeholder="간단하게 작성" style="font-size:x-large;"></input>
+                                        <div class="d-flex justify-content-start pg_6_answer">
+                                            <input class="tab w-90 d-flex justify-content-start ID_num7 pg_6_answer 6_input"
+                                                placeholder="간단하게 작성" style="font-size:x-large;"></input>
                                         </div>
                                     </div>
                                 </div>
                                 <div class="container h-25 mx-3 d-flex flex-column">
                                     <div class="text-black-50 fontSz">예시</div>
                                     <div class="w-100 mt-1 d-flex justify-content-start">
-                                        <div class="text-black-50"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-dot" viewBox="0 0 16 16">
-                                                <path d="M8 9.5a1.5 1.5 0 1 0 0-3 1.5 1.5 0 0 0 0 3z"/>
+                                        <div class="text-black-50"><svg xmlns="http://www.w3.org/2000/svg" width="16"
+                                                height="16" fill="currentColor" class="bi bi-dot" viewBox="0 0 16 16">
+                                                <path d="M8 9.5a1.5 1.5 0 1 0 0-3 1.5 1.5 0 0 0 0 3z" />
                                             </svg>
                                         </div>
                                         <div class="text-black-50 fontSz">운동하다 넘어져 발목을 다침</div>
                                     </div>
                                     <div class="w-100 mt-1 d-flex justify-content-start">
-                                        <div class="text-black-50"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-dot" viewBox="0 0 16 16">
-                                                <path d="M8 9.5a1.5 1.5 0 1 0 0-3 1.5 1.5 0 0 0 0 3z"/>
+                                        <div class="text-black-50"><svg xmlns="http://www.w3.org/2000/svg" width="16"
+                                                height="16" fill="currentColor" class="bi bi-dot" viewBox="0 0 16 16">
+                                                <path d="M8 9.5a1.5 1.5 0 1 0 0-3 1.5 1.5 0 0 0 0 3z" />
                                             </svg>
                                         </div>
                                         <div class="text-black-50 fontSz">감기 몸살</div>
                                     </div>
                                     <div class="w-100 mt-1 d-flex justify-content-start">
-                                        <div class="text-black-50 fontSz"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-dot" viewBox="0 0 16 16">
-                                                <path d="M8 9.5a1.5 1.5 0 1 0 0-3 1.5 1.5 0 0 0 0 3z"/>
+                                        <div class="text-black-50 fontSz"><svg xmlns="http://www.w3.org/2000/svg"
+                                                width="16" height="16" fill="currentColor" class="bi bi-dot"
+                                                viewBox="0 0 16 16">
+                                                <path d="M8 9.5a1.5 1.5 0 1 0 0-3 1.5 1.5 0 0 0 0 3z" />
                                             </svg>
                                         </div>
                                         <div class="text-black-50 fontSz">차 사고 이후 통증이 느껴져서</div>
                                     </div>
                                 </div>
-                                <div class="under_bar d-flex justify-content-center">
-                                    <button type="button" class="btn w-90 toss btn-b btn-lg fontSz pg_6_answer">
+                                <div class="w-100 absolute-bottom flex-center-center p-3">
+                                    <button type="button" class="btn flex-center-center w-100 toss btn-b btn-lg fontSz input_nxt_btn">
                                         다음
                                     </button>
                                 </div>
@@ -456,29 +510,29 @@
                         <div class="page" id="p7">
                             <div class="page_wrap">
                                 <h1 class="pg_title" style="color: #fff;">Page7</h1>
-                                <div class="back d-flex justify-content-start">
-                                    <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20"
-                                        fill="currentColor" class="bi bi-chevron-left" viewBox="0 0 16 16">
-                                        <path fill-rule="evenodd"
-                                            d="M11.354 1.646a.5.5 0 0 1 0 .708L5.707 8l5.647 5.646a.5.5 0 0 1-.708.708l-6-6a.5.5 0 0 1 0-.708l6-6a.5.5 0 0 1 .708 0z" />
-                                    </svg>
+                                <div class="pt-3 px-4 mb-4">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="23" height="23" fill="currentColor" class="bi bi-chevron-left" viewBox="0 0 16 16">
+                                    <path fill-rule="evenodd" d="M11.354 1.646a.5.5 0 0 1 0 .708L5.707 8l5.647 5.646a.5.5 0 0 1-.708.708l-6-6a.5.5 0 0 1 0-.708l6-6a.5.5 0 0 1 .708 0z"/>
+                                  </svg>
                                 </div>
                                 <div class="container h-20">
-                                    <div class="mt-4 mx-3 align-items-center fontSz" style="font-weight:bold; font-size:x-large;">
+                                    <div class="mt-4 mx-3 align-items-center fontSz"
+                                        style="font-weight:bold; font-size:x-large;">
                                         아프기 시작한 날이나 사고일을 알려주세요
                                     </div>
-                                    <div
-                                        class="container w-100 h-60 mt-4 d-flex flex-column">
+                                    <div class="container w-100 h-60 mt-4 d-flex flex-column">
                                         <div class="w-100 text-black-50 d-flex justify-content-start fontSz">
                                             날짜 선택
                                         </div>
                                         <div class="d-flex justify-content-start">
-                                            <input type="text" class="tab w-90 d-flex justify-content-center fontSz form-control pg_7_answer calendar" id="date-picker" placeholder="2022-11-30">
+                                            <input type="text"
+                                                class="tab w-90 d-flex justify-content-center fontSz form-control pg_7_answer calendar"
+                                                id="date-picker" placeholder="2022-11-30">
                                         </div>
                                     </div>
                                 </div>
-                                <div class="under_bar d-flex justify-content-center">
-                                    <button type="button" class="btn next_btn w-90 toss btn-b btn-lg fontSz">
+                                <div class="w-100 absolute-bottom flex-center-center p-3">
+                                    <button type="button" class="cal_next_btn btn flex-center-center w-100 toss btn-b btn-lg fontSz">
                                         다음
                                     </button>
                                 </div>
@@ -488,23 +542,22 @@
                         <div class="page" id="p8">
                             <div class="page_wrap">
                                 <h1 class="pg_title" style="color: #fff;">Page8</h1>
-                                <div class="back d-flex justify-content-start">
-                                    <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20"
-                                        fill="currentColor" class="bi bi-chevron-left" viewBox="0 0 16 16">
-                                        <path fill-rule="evenodd"
-                                            d="M11.354 1.646a.5.5 0 0 1 0 .708L5.707 8l5.647 5.646a.5.5 0 0 1-.708.708l-6-6a.5.5 0 0 1 0-.708l6-6a.5.5 0 0 1 .708 0z" />
-                                    </svg>
+                                <div class="pt-3 px-4 mb-4">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="23" height="23" fill="currentColor" class="bi bi-chevron-left" viewBox="0 0 16 16">
+                                    <path fill-rule="evenodd" d="M11.354 1.646a.5.5 0 0 1 0 .708L5.707 8l5.647 5.646a.5.5 0 0 1-.708.708l-6-6a.5.5 0 0 1 0-.708l6-6a.5.5 0 0 1 .708 0z"/>
+                                  </svg>
                                 </div>
                                 <div class="container h-20 p-4">
                                     <div class="align-items-center fontSz" style="font-weight:bold; font-size:x-large;">
                                         병원에서 받은 서류를<br>
                                         사진으로 올려주세요
                                     </div>
-                                    <div class="text-black-50 fontSz">
+                                    <div class="text-black-50 p-3 fontSz">
                                         최대 10장
                                     </div>
                                     <div class="h-10"></div>
-                                    <div class="box w-20 h-20 d-flex flex-column justify-content-center align-items-center fontSz">
+                                    <div
+                                        class="box w-20 my-2 d-flex flex-column justify-content-center align-items-center fontSz pg_8_answer">
                                         <svg xmlns="http://www.w3.org/2000/svg" width="30" height="30"
                                             fill="currentColor" class="bi bi-camera-fill" viewBox="0 0 16 16">
                                             <path d="M10.5 8.5a2.5 2.5 0 1 1-5 0 2.5 2.5 0 0 1 5 0z" />
@@ -513,15 +566,17 @@
                                         </svg>
                                         사진 첨부
                                     </div>
+                                    <div class="pat mx-3 d-flex align-items-end">
+                                        <div class="text-black-50 fontSz">어떤 서류가 필요한가요?</div>
+                                        <div class="mx-1"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16"
+                                                fill="currentColor" class="bi bi-chevron-right" viewBox="0 0 16 16">
+                                                <path fill-rule="evenodd"
+                                                    d="M4.646 1.646a.5.5 0 0 1 .708 0l6 6a.5.5 0 0 1 0 .708l-6 6a.5.5 0 0 1-.708-.708L10.293 8 4.646 2.354a.5.5 0 0 1 0-.708z" />
+                                            </svg></div>
+                                    </div>
                                 </div>
-                                <div class="h-10 mx-3 d-flex align-items-end">
-                                    <div class="text-black-50 fontSz">어떤 서류가 필요한가요?</div>
-                                    <div class="mx-1"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-chevron-right" viewBox="0 0 16 16">
-                                            <path fill-rule="evenodd" d="M4.646 1.646a.5.5 0 0 1 .708 0l6 6a.5.5 0 0 1 0 .708l-6 6a.5.5 0 0 1-.708-.708L10.293 8 4.646 2.354a.5.5 0 0 1 0-.708z"/>
-                                        </svg></div>
-                                </div>
-                                <div class="under_bar d-flex justify-content-center">
-                                    <button type="button" class="btn w-90 toss btn-b btn-lg fontSz pg_8_answer">
+                                <div class="w-100 absolute-bottom flex-center-center p-3">
+                                    <button type="button" class="btn flex-center-center w-100 toss btn-b btn-lg fontSz">
                                         다음
                                     </button>
                                 </div>
@@ -531,12 +586,110 @@
                         <div class="page" id="p9">
                             <div class="page_wrap">
                                 <h1 class="pg_title" style="color: #fff;">Page9</h1>
-                                <div class="back d-flex justify-content-start">
-                                    <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20"
-                                        fill="currentColor" class="bi bi-chevron-left" viewBox="0 0 16 16">
-                                        <path fill-rule="evenodd"
-                                            d="M11.354 1.646a.5.5 0 0 1 0 .708L5.707 8l5.647 5.646a.5.5 0 0 1-.708.708l-6-6a.5.5 0 0 1 0-.708l6-6a.5.5 0 0 1 .708 0z" />
-                                    </svg>
+                                <div class="pt-3 px-4 mb-4">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="23" height="23" fill="currentColor" class="bi bi-chevron-left" viewBox="0 0 16 16">
+                                    <path fill-rule="evenodd" d="M11.354 1.646a.5.5 0 0 1 0 .708L5.707 8l5.647 5.646a.5.5 0 0 1-.708.708l-6-6a.5.5 0 0 1 0-.708l6-6a.5.5 0 0 1 .708 0z"/>
+                                  </svg>
+                                </div>
+                                <div class="container h-20 p-4">
+                                    <div class="align-items-center fontSz" style="font-weight:bold; font-size:x-large;">
+                                        병원에서 받은 서류를<br>
+                                        사진으로 올려주세요
+                                    </div>
+                                    <div class="text-black-50 p-3 fontSz">
+                                        최대 10장
+                                    </div>
+                                    <div class="h-10"></div>
+                                    <div
+                                        class="box w-20 my-2 d-flex flex-column justify-content-center align-items-center fontSz">
+                                        <svg xmlns="http://www.w3.org/2000/svg" width="30" height="30"
+                                            fill="currentColor" class="bi bi-camera-fill" viewBox="0 0 16 16">
+                                            <path d="M10.5 8.5a2.5 2.5 0 1 1-5 0 2.5 2.5 0 0 1 5 0z" />
+                                            <path
+                                                d="M2 4a2 2 0 0 0-2 2v6a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V6a2 2 0 0 0-2-2h-1.172a2 2 0 0 1-1.414-.586l-.828-.828A2 2 0 0 0 9.172 2H6.828a2 2 0 0 0-1.414.586l-.828.828A2 2 0 0 1 3.172 4H2zm.5 2a.5.5 0 1 1 0-1 .5.5 0 0 1 0 1zm9 2.5a3.5 3.5 0 1 1-7 0 3.5 3.5 0 0 1 7 0z" />
+                                        </svg>
+                                        사진 첨부
+                                    </div>
+                                    <div class="pat mx-3 d-flex align-items-end">
+                                        <div class="text-black-50 fontSz">어떤 서류가 필요한가요?</div>
+                                        <div class="mx-1"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16"
+                                                fill="currentColor" class="bi bi-chevron-right" viewBox="0 0 16 16">
+                                                <path fill-rule="evenodd"
+                                                    d="M4.646 1.646a.5.5 0 0 1 .708 0l6 6a.5.5 0 0 1 0 .708l-6 6a.5.5 0 0 1-.708-.708L10.293 8 4.646 2.354a.5.5 0 0 1 0-.708z" />
+                                            </svg></div>
+                                    </div>
+                                    <h1>선택하는 팝엄 뜨는 화면</h1><!--지우기-->
+                                </div>
+                                <div class="w-100 absolute-bottom flex-center-center p-3">
+                                    <button type="button" class="btn flex-center-center w-100 toss btn-b btn-lg fontSz">
+                                        다음
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+                        <!------------------------------ page 10 ------------------------------>
+                        <div class="page" id="p10">
+                            <div class="page_wrap">
+                                갤러리 화면
+                            </div>
+                        </div>
+                        <!------------------------------ page 11 ------------------------------>
+                        <div class="page" id="p11">
+                            <div class="page_wrap">
+                                <h1 class="pg_title" style="color: #fff;">Page11</h1>
+                                <div class="pt-3 px-4 mb-4">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="23" height="23" fill="currentColor" class="bi bi-chevron-left" viewBox="0 0 16 16">
+                                    <path fill-rule="evenodd" d="M11.354 1.646a.5.5 0 0 1 0 .708L5.707 8l5.647 5.646a.5.5 0 0 1-.708.708l-6-6a.5.5 0 0 1 0-.708l6-6a.5.5 0 0 1 .708 0z"/>
+                                  </svg>
+                                </div>
+                                <div class="container h-20 p-4">
+                                    <div class="align-items-center fontSz" style="font-weight:bold; font-size:x-large;">
+                                        병원에서 받은 서류를<br>
+                                        사진으로 올려주세요
+                                    </div>
+                                    <div class="text-black-50 p-3 fontSz">
+                                        최대 10장
+                                    </div>
+                                    <div class="h-10"></div>
+                                    <div
+                                        class="box w-20 my-2 d-flex flex-column justify-content-center align-items-center fontSz">
+                                        선택사진
+                                    </div>
+                                    <div
+                                        class="box w-20 my-2 d-flex flex-column justify-content-center align-items-center fontSz">
+                                        <svg xmlns="http://www.w3.org/2000/svg" width="30" height="30"
+                                            fill="currentColor" class="bi bi-camera-fill" viewBox="0 0 16 16">
+                                            <path d="M10.5 8.5a2.5 2.5 0 1 1-5 0 2.5 2.5 0 0 1 5 0z" />
+                                            <path
+                                                d="M2 4a2 2 0 0 0-2 2v6a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V6a2 2 0 0 0-2-2h-1.172a2 2 0 0 1-1.414-.586l-.828-.828A2 2 0 0 0 9.172 2H6.828a2 2 0 0 0-1.414.586l-.828.828A2 2 0 0 1 3.172 4H2zm.5 2a.5.5 0 1 1 0-1 .5.5 0 0 1 0 1zm9 2.5a3.5 3.5 0 1 1-7 0 3.5 3.5 0 0 1 7 0z" />
+                                        </svg>
+                                        사진 첨부
+                                    </div>
+                                    <div class="pat mx-3 d-flex align-items-end">
+                                        <div class="text-black-50 fontSz">어떤 서류가 필요한가요?</div>
+                                        <div class="mx-1"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16"
+                                                fill="currentColor" class="bi bi-chevron-right" viewBox="0 0 16 16">
+                                                <path fill-rule="evenodd"
+                                                    d="M4.646 1.646a.5.5 0 0 1 .708 0l6 6a.5.5 0 0 1 0 .708l-6 6a.5.5 0 0 1-.708-.708L10.293 8 4.646 2.354a.5.5 0 0 1 0-.708z" />
+                                            </svg></div>
+                                    </div>
+                                </div>
+                                <div class="w-100 absolute-bottom flex-center-center p-3">
+                                    <button type="button" class="btn flex-center-center w-100 toss btn-b btn-lg fontSz pg_11_answer">
+                                        다음
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <!------------------------------ page 12 ------------------------------>
+                        <div class="page" id="p12">
+                            <div class="page_wrap">
+                                <h1 class="pg_title" style="color: #fff;">Page12</h1>
+                                <div class="pt-3 px-4 mb-4">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="23" height="23" fill="currentColor" class="bi bi-chevron-left" viewBox="0 0 16 16">
+                                    <path fill-rule="evenodd" d="M11.354 1.646a.5.5 0 0 1 0 .708L5.707 8l5.647 5.646a.5.5 0 0 1-.708.708l-6-6a.5.5 0 0 1 0-.708l6-6a.5.5 0 0 1 .708 0z"/>
+                                  </svg>
                                 </div>
                                 <div class="container w-100 h-100 p-4">
                                     <div class="align-items-center fontSz" style="font-weight:bold; font-size:x-large;">
@@ -545,100 +698,106 @@
                                 </div>
                                 <div class="under_bar d-flex flex-column justify-content-start align-items-start">
                                     <div class="d-flex fontSz" style="font-weight:bold; font-size:x-large;">
-                                    계좌를 선택해주세요
+                                        계좌를 선택해주세요
                                     </div>
-                                    <button type="button"
-                                        class="btn w-100 h-10 tab d-flex justify-content-start align-items-center rounded-1 pg_9_answer fontSz">
-                                        <div class="icon">1
-                                        </div>
-                                        <div class="w-100  d-flex justify-content-between">
-                                            <div class="mx-2 d-flex flex-column align-items-center pg_9_answer">
-                                               <div class="w-100 d-flex text-left fontSz pg_9_answer">입출금 통장</div>
-                                               <div class="fontS pg_9_answer">3333-3333-33333</div>
+                                    <div class="btn w-100 h-10 tab d-flex justify-content-start align-items-center rounded-1 pg_12_answer fontSz">
+                                        <div class="icon pg_12_answer">1</div>
+                                        <div class="w-100  d-flex justify-content-between align-items-center pg_12_answer">
+                                            <div class="mx-2 d-flex flex-column align-items-center pg_12_answer">
+                                                <div class="w-100 d-flex text-left fontSz pg_12_answer">입출금 통장</div>
+                                                <div class="fontS pg_12_answer">3333-3333-33333</div>
                                             </div>
-                                            <div class="pg_9_answer">
-                                                <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor" class="bi bi-chevron-right" viewBox="0 0 16 16">
-                                                    <path fill-rule="evenodd" d="M4.646 1.646a.5.5 0 0 1 .708 0l6 6a.5.5 0 0 1 0 .708l-6 6a.5.5 0 0 1-.708-.708L10.293 8 4.646 2.354a.5.5 0 0 1 0-.708z"/>
+                                            <div class="pg_12_answer">
+                                                <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20"
+                                                    fill="currentColor" class="bi bi-chevron-right" viewBox="0 0 16 16">
+                                                    <path fill-rule="evenodd"
+                                                        d="M4.646 1.646a.5.5 0 0 1 .708 0l6 6a.5.5 0 0 1 0 .708l-6 6a.5.5 0 0 1-.708-.708L10.293 8 4.646 2.354a.5.5 0 0 1 0-.708z" />
                                                 </svg>
                                             </div>
                                         </div>
-                                    </button>
-                                    <button type="button"
-                                        class="btn w-100 h-10 tab d-flex justify-content-start align-items-center rounded-1 fontSz">
-                                        <div class="icon fontSz">2
-                                        </div>
-                                        <div class="w-100  d-flex justify-content-between">
+                                    </div>
+                                    <div class="btn w-100 h-10 tab d-flex justify-content-start align-items-center rounded-1 fontSz">
+                                        <div class="icon">2</div>
+                                        <div class="w-100  d-flex justify-content-between align-items-center">
                                             <div class="mx-2 d-flex flex-column align-items-center">
-                                               <div class="fontSz">KB국민ONE통장-저축예금</div>
-                                               <div class="w-100 d-flex text-left fontSz">3333-3333-33333</div>
+                                                <div class="fontSz">KB국민ONE통장-저축예금</div>
+                                                <div class="w-100 d-flex text-left fontSz">3333-3333-33333</div>
                                             </div>
                                             <div>
-                                                <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor" class="bi bi-chevron-right" viewBox="0 0 16 16">
-                                                    <path fill-rule="evenodd" d="M4.646 1.646a.5.5 0 0 1 .708 0l6 6a.5.5 0 0 1 0 .708l-6 6a.5.5 0 0 1-.708-.708L10.293 8 4.646 2.354a.5.5 0 0 1 0-.708z"/>
+                                                <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20"
+                                                    fill="currentColor" class="bi bi-chevron-right" viewBox="0 0 16 16">
+                                                    <path fill-rule="evenodd"
+                                                        d="M4.646 1.646a.5.5 0 0 1 .708 0l6 6a.5.5 0 0 1 0 .708l-6 6a.5.5 0 0 1-.708-.708L10.293 8 4.646 2.354a.5.5 0 0 1 0-.708z" />
                                                 </svg>
                                             </div>
                                         </div>
-                                    </button>
-                                    <button type="button"
-                                        class="btn w-100 h-10 tab text-left d-flex justify-content-start align-items-center rounded-1 fontSz">
-                                        <div class="icon fontSz">3
-                                        </div>
+                                    </div>
+                                    <div class="btn w-100 h-10 tab text-left d-flex justify-content-start align-items-center rounded-1 fontSz">
+                                        <div class="icon">3</div>
                                         <div class="mx-2 d-flex flex-column align-items-center fontSz">
-                                           다른 계좌 선택
+                                            다른 계좌 선택
                                         </div>
-                                    </button>
+                                    </div>
                                 </div>
                             </div>
                         </div>
-                        <!------------------------------ page 10 ------------------------------>
-                        <div class="page" id="p10">
+                        <!------------------------------ page 13 ------------------------------>
+                        <div class="page" id="p13">
                             <div class="page_wrap">
-                                <h1 class="pg_title" style="color: #fff;">Page10</h1>
-                                <div class="back d-flex justify-content-start">
-                                    <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20"
-                                        fill="currentColor" class="bi bi-chevron-left" viewBox="0 0 16 16">
-                                        <path fill-rule="evenodd"
-                                            d="M11.354 1.646a.5.5 0 0 1 0 .708L5.707 8l5.647 5.646a.5.5 0 0 1-.708.708l-6-6a.5.5 0 0 1 0-.708l6-6a.5.5 0 0 1 .708 0z" />
-                                    </svg>
+                                <h1 class="pg_title" style="color: #fff;">Page13</h1>
+                                <div class="pt-3 px-4 mb-4">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="23" height="23" fill="currentColor" class="bi bi-chevron-left" viewBox="0 0 16 16">
+                                    <path fill-rule="evenodd" d="M11.354 1.646a.5.5 0 0 1 0 .708L5.707 8l5.647 5.646a.5.5 0 0 1-.708.708l-6-6a.5.5 0 0 1 0-.708l6-6a.5.5 0 0 1 .708 0z"/>
+                                  </svg>
                                 </div>
-                                <div class="p-4 align-items-center fontSz" style="font-weight:bold; font-size:x-large;">
-                                    신청 정보를 확인해주세요
-                                </div>                         
-                                <div class="infomation d-flex justify-content-between">
-                                    <div class="fontSz">보험사</div>
-                                    <div class="fontSz">삼성해상화재보험</div>
+                                <div class="w-100 d-flex flex-column justify-content-start align-items-center">
+                                    <div class="w-100 scroll">
+                                        <div class="p-4 align-items-center fontSz" style="font-weight:bold; font-size:x-large;">
+                                            신청 정보를 확인해주세요
+                                        </div>
+                                        <div class="infomation d-flex justify-content-between">
+                                            <div class="fontSz">보험사</div>
+                                            <div class="fontSz">삼성해상화재보험</div>
+                                        </div>
+                                        <div class="infomation d-flex justify-content-between">
+                                            <div class="fontSz">사고(발생일)</div>
+                                            <div class="fontSz">2022.10.27</div>
+                                        </div>
+                                        <div class="infomation d-flex justify-content-between">
+                                            <div class="fontSz">내원이유</div>
+                                            <div class="fontSz">감기</div>
+                                        </div>
+                                        <div class="infomation d-flex justify-content-between">
+                                            <div class="fontSz">은행</div>
+                                            <div class="fontSz">ㅇㅇㅇㅇㅇ</div>
+                                        </div>
+                                        <div class="infomation d-flex justify-content-between">
+                                            <div class="fontSz">계좌번호</div>
+                                            <div class="fontSz">1234-5678-90</div>
+                                        </div>
+                                        <div class="w-100 bg-secondary bg-opacity-10 border-top border-bottom border-secondary border-opacity-25"
+                                            style="height: .5em;">
+                                        </div>
+                                        <div class="icon m-3 d-flex justify-content-center fontSz">이미지</div>
+                                    </div>
+                                    <div class="w-100 absolute-bottom flex-center-center p-3">
+                                        <button type="button" class="btn flex-center-center w-100 toss btn-b btn-lg fontSz pg_13_answer">
+                                            다음
+                                        </button>
+                                    </div>
                                 </div>
-                                <div class="infomation d-flex justify-content-between">
-                                    <div class="fontSz">사고(발생일)</div>
-                                    <div class="fontSz">2022.10.27</div>
-                                </div>
-                                <div class="infomation d-flex justify-content-between">
-                                    <div class="fontSz">내원이유</div>
-                                    <div class="fontSz">감기</div>
-                                </div>
-                                <div class="infomation d-flex justify-content-between">
-                                    <div class="fontSz">은행</div>
-                                    <div class="fontSz">ㅇㅇㅇㅇㅇ</div>
-                                </div>
-                                <div class="infomation d-flex justify-content-between">
-                                    <div class="fontSz">계좌번호</div>
-                                    <div class="fontSz">1234-5678-90</div>
-                                </div>
-                                <div class="w-100 bg-secondary bg-opacity-10 border-top border-bottom border-secondary border-opacity-25"
-                                        style="height: .5em;">
-                                </div>
-                                <div class="icon m-3 d-flex justify-content-center fontSz">이미지</div>
-                                <div class="under_bar d-flex justify-content-center">
-                                    <button type="button" class="btn w-90 toss btn-b btn-lg fontSz pg_10_answer">
-                                        다음
-                                    </button>
-                                </div>
+                            </div>
+                        </div>
+                        <!------------------------------ page 14 ------------------------------>
+                        <div class="page" id="p14">
+                            <div class="page_wrap">
+                                완료화면
                             </div>
                         </div>
                     </main>
                     <div class="ctrlbar" id="ctrlbar">
                         <div class="start_btn_wrap">
-                            <button type="button" class="btn btn-lg btn-dark" id="start-btn">시작하기</button>
+                            <button type="button" class="btn btn-lg btn-dark start_btn" id="start-btn">시작하기</button>
                         </div>
                         <div class="nav_btn_wrap">
                             <div class="baricon_wrap prev" id="prev_btn">
