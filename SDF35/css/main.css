@@ -11,6 +11,14 @@
     color: #fff!important;
 }
 
+.btn-lightgray {
+        background:#D1D1D1!important;
+}
+
+.bg-lightgray {
+    background:#D1D1D1!important;
+}
+
 #p1 .pg_top{
     width: 100%;
     min-height: 83%;
@@ -31,13 +39,15 @@
 
 #p2 .btn,
 #p3 .btn,
-#p4 .btn {
+#p4 .btn,
+#p5 .btn {
     min-height: 5vh;
 }
 
 #p2 .form,
 #p3 .form,
-#p4 .form {
+#p4 .form,
+#p5 .form {
     border-bottom: 1px solid #ced4da;
     padding: 0;
     min-height: 5vh;
@@ -47,7 +57,8 @@
 
 #p2 .form .form-control,
 #p3 .form .form-control,
-#p4 .form .form-control {
+#p4 .form .form-control,
+#p5 .form .form-control {
     border-radius: 0;
     border: 0;
 }
@@ -60,11 +71,8 @@
     align-items: center;
 }
 
-#p4{
-    position: relative;
-}
-
-#p4 .under_bar{
+#p4 .under_bar,
+#p5 .under_bar {
     min-height: 50vh;
     display: flex;
     flex-direction: column;
@@ -73,11 +81,13 @@
     margin: 0;
 }
 
-#p4 .under_bar .svg {
+#p4 .under_bar .svg,
+#p5 .under_bar .svg {
     margin-right: .5em;
 }
 
-#p4 .under_bar > li {
+#p4 .under_bar > li,
+#p5 .under_bar > li {
     width: 100%;
     min-height: 5vh;
     display: flex;
@@ -88,22 +98,24 @@
     padding-bottom: 1em;
 }
 
-#p4 .under_bar > li:not(:last-child) {
+#p4 .under_bar > li:not(:last-child),
+#p5 .under_bar > li:not(:last-child) {
     border-bottom: 1px solid #ced4da;
 }
 
-#p4 .under_bar > li .list-item{
+#p4 .under_bar > li .list-item,
+#p5 .under_bar > li .list-item {
     width: 100%;
     padding-top: .7em;
     padding-bottom: .7em;
 }
 
-#p5 .form-control,
-#p6 .form-control {
+#p6 .form-control,
+#p7 .form-control {
     min-height: 6vh;
 }
 
-#p6 .phonenum {
+#p7 .phonenum {
     font-size: 5px;
     letter-spacing: 5px;
     display: flex;
@@ -111,7 +123,7 @@
     margin-bottom: 1em;
 }
 
-#p6 .fake-btn {
+#p7 .fake-btn {
     min-height: 6vh;
     width: 100%;
     padding: 0.375rem 0.75rem;
@@ -129,48 +141,131 @@
     transition: border-color .15s ease-in-out,box-shadow .15s ease-in-out;
 }
 
-#p7 .scroll .tab {
+#p8 .pg_top {
     width: 100%;
-    height: auto;
+    max-height: 79vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
 }
 
-#p7 .scroll .tab .icon {
-    width: 20%;
-    height: 100%;
-    border: 0;
-    /* 위 세 줄은 이미지 삽입 후 주석 해제*/
+#p8 .pg_top .top {
+    width: 100%;
+    min-height: 8%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: 1px solid #ced4da;
+
+}
+
+#p8 .pg_top .svg {
+    margin-left: .5em;
+}
+
+
+#p8 .scroll .tab {
+    width: 100%;
+    height: auto;
+    padding-top: .5em;
+    padding-bottom: .8em;
+}
+#p8 .scroll .tab:not(:last-child) {
+    border-bottom: 1px solid #ced4da;
+}
+
+#p8 .scroll .tab .icon {
+    width: 25%;
+    height: auto;
+    /* border: 0; */
+    /* 나중에 주석 해제(수정) */
     display: flex;
     justify-content: center;
     align-items: center;
 }
 
-#p7 .scroll .tab .txt-wrap {
+#p8 .scroll .tab .txt-wrap {
     flex: 1;
     height: 100%;
     display: flex;
     flex-direction: column;
     justify-content: flex-start;
     align-items: flex-start;
-    padding: 0.5em;
+    padding-left: 0.5em;
 }
 
-#p7 .scroll .tab .txt-wrap .txt {
+#p8 .scroll .tab .txt-wrap .txt {
     width: 100%;
     display: flex;
     justify-content: flex-start;
     align-items: center;
 }
 
-#p7 .scroll .tab .txt-wrap .txt .svg {
+#p8 .scroll .tab .txt-wrap .txt .svg {
     --bs-text-opacity: 1;
     color: rgba(0,0,0,.5)!important;
 }
 
-#p7 .scroll .tab .txt-wrap .txt.price {
+#p8 .scroll .tab .txt-wrap .txt.price {
     font-weight: bold;
+    /* font-size: smaller; */
+}
+
+#p8 .scroll .tab .txt-wrap .txt.react {
+    justify-content: flex-end;
+}
+
+#p8 .under_bar,
+#p9 .under_bar {
+    width: 100%;
+    min-height: 8vh;
+    border-radius: 0;
+    background: #fff;
+    border-top: 1px solid #ced4da;
+}
+
+#p8 .under_bar .baricon_wrap,
+#p9 .under_bar .baricon_wrap {
+    width: 20%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+#p8 .under_bar .baricon_wrap .bartext,
+#p9 .under_bar .baricon_wrap .bartext {
     font-size: smaller;
 }
 
-#p7 .scroll .tab .txt-wrap .txt.react {
-    justify-content: flex-end;
+#p9 .profile_wrap {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+#p9 .pay_wrap {
+    width: 100%;
+    min-height: 17vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    padding: 1em;
+}
+
+#p9 .pay_wrap .btn {
+    width: 50%;
+    margin-left: .7em;
+    margin-right: .7em;
+}
+
+#p9 .btn {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 5vh;
+    background:#F2F3F7!important;
 }
