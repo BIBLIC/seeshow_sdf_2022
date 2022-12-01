@@ -16,6 +16,7 @@
         integrity="sha384-OERcA2EqjJCMA+/3y+gxIOqMEjwtxJY7qPCqsdltbNJuaOe923+mo//f6V8Qbsw3"
         crossorigin="anonymous"></script>
     <script src="https://code.jquery.com/jquery-3.6.1.min.js"></script>
+    <script src="https://unpkg.com/@popperjs/core@2"></script>
 </head>
 
 <body>
@@ -54,296 +55,122 @@
                         </div>
                         <!------------------------------ page 1 ------------------------------>
                         <div class="page" id="p1">
-                            <div class="page_wrap bg-secondary bg-opacity-10">
+                            <div class="page_wrap">
                                 <h1 class="pg_title" style="color: #fff;">Page1</h1>
-                                <div class="top_bar d-flex justify-content-between align-items-center">
-                                    
-                                    <div class="w-25 d-flex justify-content-start">
-                                        <svg xmlns="http://www.w3.org/2000/svg" width="35" height="35" fill="currentColor" class="bi bi-x" viewBox="0 0 16 16">
-                                            <path d="M4.646 4.646a.5.5 0 0 1 .708 0L8 7.293l2.646-2.647a.5.5 0 0 1 .708.708L8.707 8l2.647 2.646a.5.5 0 0 1-.708.708L8 8.707l-2.646 2.647a.5.5 0 0 1-.708-.708L7.293 8 4.646 5.354a.5.5 0 0 1 0-.708z"/>
-                                        </svg>
-                                    </div>
-                                    <div class="w-50 d-flex justify-content-center fontSz" style="font-size: large; font-weight: bold;">
-                                        계좌 추가하기
-                                    </div>
-                                    <div class="w-25"></div>
-                                    
+                                <div class="top_bar">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="50" height="50" fill="currentColor"
+                                        class="bi bi-arrow-left-short" viewBox="0 0 16 16">
+                                        <path fill-rule="evenodd"
+                                            d="M12 8a.5.5 0 0 1-.5.5H5.707l2.147 2.146a.5.5 0 0 1-.708.708l-3-3a.5.5 0 0 1 0-.708l3-3a.5.5 0 1 1 .708.708L5.707 7.5H11.5a.5.5 0 0 1 .5.5z" />
+                                    </svg>
                                 </div>
-                                <div class="scroll">
-                                    <div class="menu mx-4 d-flex flex-column justify-content-start fontSz">
-                                        <div class="txtx mt-3" style="font-size: large;">공인인증서가 없어도 OK</div>
-                                        <div class="txtx text-black-50">계좌번호, 또는 해당 은행 ID로 간편하게 등록 가능합니다</div>
-                                        <div class="txtx mt-3" style="font-size: large;">은행 선택</div>
-
+                                <div class="info">
+                                    토스를 시작하기 위해<br>이름을 알려주세요
+                                </div>
+                                <div class="container w-100 h-60 d-flex flex-column">
+                                    <div class="w-100 text-black-50 d-flex justify-content-start fontSz"
+                                        style="font-size: sm;">
+                                        이름
                                     </div>
-                                    <div
-                                        class="container w-100 mt-3 d-flex flex-column justify-content-center align-items-center">
-                                        <div class="bank d-flex justify-content-around">
-                                            <div class="tab rounded-1 fontSz">
-                                                <div class="icon">1
-                                                </div>
-                                                <div class="txtx pg_1_answer">
-                                                    NH농협
-                                                </div>
-                                            </div>
-                                            <div class="tab rounded-1 fontSz">
-                                                <div class="icon">2
-                                                </div>
-                                                <div class="txtx">
-                                                    우리
-                                                </div>
-                                            </div>
-                                            <div class="tab rounded-1 fontSz">
-                                                <div class="icon">3
-                                                </div>
-                                                <div class="txtx">
-                                                    신한
-                                                </div>
-                                            </div>
-                                        </div>
-                                        <div class="bank d-flex justify-content-around">
-                                            <div class="tab rounded-1 fontSz">
-                                                <div class="icon">1
-                                                </div>
-                                                <div class="txt">
-                                                    KB국민
-                                                </div>
-                                            </div>
-                                            <div class="tab rounded-1 fontSz">
-                                                <div class="icon">2
-                                                </div>
-                                                <div class="txt">
-                                                    하나
-                                                </div>
-                                            </div>
-                                            <div class="tab rounded-1 fontSz">
-                                                <div class="icon">3
-                                                </div>
-                                                <div class="txt">
-                                                    외환
-                                                </div>
-                                            </div>
-                                        </div>
-                                        <div class="bank d-flex justify-content-around">
-                                            <div class="tab rounded-1 fontSz">
-                                                <div class="icon">1
-                                                </div>
-                                                <div class="txt">
-                                                    IBK기업
-                                                </div>
-                                            </div>
-                                            <div class="tab rounded-1 fontSz">
-                                                <div class="icon">2
-                                                </div>
-                                                <div class="txt">
-                                                    카카오뱅크
-                                                </div>
-                                            </div>
-                                            <div class="tab rounded-1 fontSz">
-                                                <div class="icon">3
-                                                </div>
-                                                <div class="txt">
-                                                    새마을
-                                                </div>
-                                            </div>
-                                        </div>
-                                        <div class="bank d-flex justify-content-around">
-                                            <div class="tab rounded-1 fontSz">
-                                                <div class="icon">1
-                                                </div>
-                                                <div class="txt">
-                                                    부산
-                                                </div>
-                                            </div>
-                                            <div class="tab rounded-1 fontSz">
-                                                <div class="icon">2
-                                                </div>
-                                                <div class="txt">
-                                                    경남
-                                                </div>
-                                            </div>
-                                            <div class="tab rounded-1 fontSz">
-                                                <div class="icon">3
-                                                </div>
-                                                <div class="txt">
-                                                    광주
-                                                </div>
-                                            </div>
-                                        </div>
-                                        <div class="bank d-flex justify-content-around">
-                                            <div class="tab rounded-1 fontSz">
-                                                <div class="icon">1
-                                                </div>
-                                                <div class="txt">
-                                                    전북
-                                                </div>
-                                            </div>
-                                            <div class="tab rounded-1 fontSz">
-                                                <div class="icon">2
-                                                </div>
-                                                <div class="txt">
-                                                    신협
-                                                </div>
-                                            </div>
-                                            <div class="tab rounded-1 fontSz">
-                                                <div class="icon">3
-                                                </div>
-                                                <div class="txt">
-                                                    SC제일
-                                                </div>
-                                            </div>
-                                        </div>
-                                        <div class="bank d-flex justify-content-around">
-                                            <div class="tab rounded-1 fontSz">
-                                                <div class="icon">1
-                                                </div>
-                                                <div class="txt">
-                                                    KDB산업
-                                                </div>
-                                            </div>
-                                            <div class="tab rounded-1 fontSz">
-                                                <div class="icon">2
-                                                </div>
-                                                <div class="txt">
-                                                    대구
-                                                </div>
-                                            </div>
-                                            <div class="tab rounded-1 fontSz">
-                                                <div class="icon">3
-                                                </div>
-                                                <div class="txt">
-                                                    제주
-                                                </div>
-                                            </div>
-                                        </div>
-                                        <div class="bank d-flex justify-content-around">
-                                            <div class="tab rounded-1 fontSz">
-                                                <div class="icon">1
-                                                </div>
-                                                <div class="txt">
-                                                    우체국
-                                                </div>
-                                            </div>
-                                            <div class="tab rounded-1 fontSz">
-                                                <div class="icon">2
-                                                </div>
-                                                <div class="txt">
-                                                    수협
-                                                </div>
-                                            </div>
+                                    <div class="d-flex justify-content-start">
+                                        <input class="tab w-90 d-flex justify-content-center fontSz" placeholder=""
+                                            style="font-size:x-large;"></input>
+                                    </div>
+                                    <div class="under_bar d-flex justify-content-center flex-column">
+                                        <button type="button" class="btn w-90 toss btn-b btn-lg fontSz" disabled>
+                                            본인 인증하기
+                                        </button>
+                                        <div>내 명의의 휴대폰이 아니라면?
+                                            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16"
+                                                fill="currentColor" class="bi bi-chevron-right" viewBox="0 0 16 16">
+                                                <path fill-rule="evenodd"
+                                                    d="M4.646 1.646a.5.5 0 0 1 .708 0l6 6a.5.5 0 0 1 0 .708l-6 6a.5.5 0 0 1-.708-.708L10.293 8 4.646 2.354a.5.5 0 0 1 0-.708z" />
+                                            </svg>
                                         </div>
                                     </div>
                                 </div>
                             </div>
-                        </div>    
+                        </div>
                         <!------------------------------ page 2 ------------------------------>
                         <div class="page" id="p2">
                             <div class="page_wrap">
                                 <h1 class="pg_title" style="color: #fff;">Page2</h1>
-                                <div class="w-100 d-flex justify-content-start">
-                                    <svg xmlns="http://www.w3.org/2000/svg" width="50" height="50" fill="currentColor" class="bi bi-arrow-left-short" viewBox="0 0 16 16">
-                                        <path fill-rule="evenodd" d="M12 8a.5.5 0 0 1-.5.5H5.707l2.147 2.146a.5.5 0 0 1-.708.708l-3-3a.5.5 0 0 1 0-.708l3-3a.5.5 0 1 1 .708.708L5.707 7.5H11.5a.5.5 0 0 1 .5.5z"/>
+                                <div class="top_bar">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="50" height="50" fill="currentColor"
+                                        class="bi bi-arrow-left-short" viewBox="0 0 16 16">
+                                        <path fill-rule="evenodd"
+                                            d="M12 8a.5.5 0 0 1-.5.5H5.707l2.147 2.146a.5.5 0 0 1-.708.708l-3-3a.5.5 0 0 1 0-.708l3-3a.5.5 0 1 1 .708.708L5.707 7.5H11.5a.5.5 0 0 1 .5.5z" />
                                     </svg>
                                 </div>
-                                <div class="container h-50 fontSz">
-                                    <div class="w-100 mt-4 d-flex justify-content-start align-items-center fontSz" style="font-weight:bold; font-size:x-large;">
-                                        출금이체에 동의해 주세요
+                                <div class="info">
+                                    주민등록번호를 입력해주세요
+                                </div>
+                                <div class="container w-100 h-60 d-flex flex-column" style="font-size: sm;">
+                                    <div class="sm_info w-100 text-black-50 d-flex justify-content-start fontSz">
+                                        주민번호
                                     </div>
-                                    <div class="w-100 mt-2 d-flex justify-content-start">
-                                            토스 간편송금 등의 서비스를 원활하게 이용하<br>
-                                            기 위하여 앞서 입력한 계좌에 대한 출금이체 등<br>
-                                            동의가 필요합니다. 간편송금 등 서비스 이용 시<br>
-                                            출금에 동의하신 계좌에서 오픈뱅킹 또는 펌뱅킹<br>
-                                            을 통해 출금이체가 진행됩니다.
+                                    <div class="d-flex justify-content-start">
+                                        <input class="tab w-45"></input>
+                                        <div class="fontSz" style="font-size:x-large;">-</div>
+                                        <input class="tab w-45"></input>
                                     </div>
                                 </div>
-                                <div class="container h-40 d-flex flex-column align-items-center">
-                                    <div class="w-100 mt-1 d-flex justify-content-start">
-                                        <div class="text-black-50 fontSz">금융기관 출금이체 약관</div>
-                                        <div class="text-black-50">
-                                            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-chevron-right" viewBox="0 0 16 16">
-                                                <path fill-rule="evenodd" d="M4.646 1.646a.5.5 0 0 1 .708 0l6 6a.5.5 0 0 1 0 .708l-6 6a.5.5 0 0 1-.708-.708L10.293 8 4.646 2.354a.5.5 0 0 1 0-.708z"/>
-                                            </svg>
-                                        </div>
+                                <div class="container w-100 h-60 d-flex flex-column">
+                                    <div class="sm_info w-100 text-black-50 d-flex justify-content-start fontSz"
+                                        style="font-size: sm;">
+                                        이름
                                     </div>
-                                    <div class="w-100 mt-1 d-flex justify-content-start">
-                                        <div class="text-black-50 fontSz">개인정보 제3자 제공 동의</div>
-                                        <div class="text-black-50">
-                                            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-chevron-right" viewBox="0 0 16 16">
-                                                <path fill-rule="evenodd" d="M4.646 1.646a.5.5 0 0 1 .708 0l6 6a.5.5 0 0 1 0 .708l-6 6a.5.5 0 0 1-.708-.708L10.293 8 4.646 2.354a.5.5 0 0 1 0-.708z"/>
-                                            </svg>
-                                        </div>
-                                    </div>
-                                    <div class="w-100 mt-1 d-flex justify-content-start">
-                                        <div class="text-black-50 fontSz">은행 출금이체 약관</div>
-                                        <div class="text-black-50">
-                                            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-chevron-right" viewBox="0 0 16 16">
-                                                <path fill-rule="evenodd" d="M4.646 1.646a.5.5 0 0 1 .708 0l6 6a.5.5 0 0 1 0 .708l-6 6a.5.5 0 0 1-.708-.708L10.293 8 4.646 2.354a.5.5 0 0 1 0-.708z"/>
-                                            </svg>
-                                        </div>
+                                    <div class="d-flex justify-content-start">
+                                        <input class="tab w-90 d-flex justify-content-center fontSz" placeholder="김토스"
+                                            style="font-size:x-large;"></input>
                                     </div>
                                 </div>
-                                <div class="under_bar d-flex justify-content-center">
-                                    <button type="button" class="btn w-90 toss btn-b btn-lg fontSz">
-                                        동의하기
+                                <div class="under_bar d-flex justify-content-center flex-column">
+                                    <button type="button" class="btn w-90 toss btn-b btn-lg fontSz" disabled>
+                                        본인 인증하기
                                     </button>
+                                    <div>내 명의의 휴대폰이 아니라면?
+                                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16"
+                                            fill="currentColor" class="bi bi-chevron-right" viewBox="0 0 16 16">
+                                            <path fill-rule="evenodd"
+                                                d="M4.646 1.646a.5.5 0 0 1 .708 0l6 6a.5.5 0 0 1 0 .708l-6 6a.5.5 0 0 1-.708-.708L10.293 8 4.646 2.354a.5.5 0 0 1 0-.708z" />
+                                        </svg>
+                                    </div>
                                 </div>
                             </div>
                         </div>
                         <!------------------------------ page 3 ------------------------------>
                         <div class="page" id="p3">
-                            <div class="page_wrap">
+                            <div class="page_wrap bg-secondary bg-opacity-10">
                                 <h1 class="pg_title" style="color: #fff;">Page3</h1>
-                                <div class="back d-flex justify-content-between">
-                                    <svg xmlns="http://www.w3.org/2000/svg" width="30" height="30"
-                                        fill="currentColor" class="bi bi-chevron-left" viewBox="0 0 16 16">
+                                <div class="top_bar">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="50" height="50" fill="currentColor"
+                                        class="bi bi-arrow-left-short" viewBox="0 0 16 16">
                                         <path fill-rule="evenodd"
-                                            d="M11.354 1.646a.5.5 0 0 1 0 .708L5.707 8l5.647 5.646a.5.5 0 0 1-.708.708l-6-6a.5.5 0 0 1 0-.708l6-6a.5.5 0 0 1 .708 0z" />
+                                            d="M12 8a.5.5 0 0 1-.5.5H5.707l2.147 2.146a.5.5 0 0 1-.708.708l-3-3a.5.5 0 0 1 0-.708l3-3a.5.5 0 1 1 .708.708L5.707 7.5H11.5a.5.5 0 0 1 .5.5z" />
                                     </svg>
-                                    <div class="txt">
-                                        비밀번호 재설정
+                                </div>
+                                <div class="info">
+                                    지금 쓰는 휴대폰은<br>통신사가 어디인가요?
+                                </div>
+                                <div class="container w-100 h-60 d-flex flex-column">
+                                    <div class="sm_info w-100 text-black-50 d-flex justify-content-start fontSz"
+                                        style="font-size: sm;">
+                                    </div>
+                                    <div class="d-flex justify-content-start">
+                                        <input class="tab w-90 d-flex justify-content-center fontSz" placeholder="통신사"
+                                            style="font-size:x-large;"></input>
                                     </div>
                                 </div>
-                                    <div class="container align-items-center">
-                                        <div class="txt align-items-center fontSz" style="font-size:x-large;">
-                                            토스에서 사용하는
-                                        </div>
-                                        <div class="txt align-items-center fontSz" style="font-size:x-large;">
-                                            비밀번호를 입력해주세요
-                                        </div>
-                                        <div class="fontSz" style="color: #3C4055;">
-                                            숫자 4자리 + 영문자 1자리
-                                        </div>
-                                    </div>
-                                    <div class="nav-item d-flex justify-content-center my-3">
-                                        <span class="dot dot0"></span>
-                                        <span class="dot dot1"></span>
-                                        <span class="dot dot2"></span>
-                                        <span class="dot dot3"></span>
-                                        <div class="txt" style="font-weight:bold;">
-                                            <svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" fill="currentColor" class="bi bi-plus-lg" viewBox="0 0 16 16">
-                                                <path fill-rule="evenodd" d="M8 2a.5.5 0 0 1 .5.5v5h5a.5.5 0 0 1 0 1h-5v5a.5.5 0 0 1-1 0v-5h-5a.5.5 0 0 1 0-1h5v-5A.5.5 0 0 1 8 2Z"/>
-                                            </svg>
-                                        </div>
-                                        <span class="dot dot4"></span>
-                                    </div>
-                                <div class="container h-40 mt-4">
-                                    <div class="mt-4 d-flex justify-content-around">
-                                        <div class="num fontSz">8</div><div class="num fontSz">5</div><div class="num fontSz">9</div>
-                                    </div>
-                                    <div class="mt-4 d-flex justify-content-around">
-                                        <div class="num fontSz">2</div><div class="num fontSz">1</div><div class="num fontSz">4</div>
-                                    </div>
-                                    <div class="mt-4 d-flex justify-content-around">
-                                        <div class="num fontSz">7</div><div class="num fontSz">3</div><div class="num fontSz">6</div>
-                                    </div>
-                                    <div class="mt-4 d-flex justify-content-around">
-                                        <div class="num fontSz">*</div><div class="num fontSz">0</div>
-                                        <div class="num fontSz">
-                                            <svg xmlns="http://www.w3.org/2000/svg" width="50" height="50" fill="currentColor" class="bi bi-arrow-left-short" viewBox="0 0 16 16">
-                                            <path fill-rule="evenodd" d="M12 8a.5.5 0 0 1-.5.5H5.707l2.147 2.146a.5.5 0 0 1-.708.708l-3-3a.5.5 0 0 1 0-.708l3-3a.5.5 0 1 1 .708.708L5.707 7.5H11.5a.5.5 0 0 1 .5.5z"/>
-                                        </svg>
-                                        </div>
+                                <div class="under_bar d-flex justify-content-center flex-column">
+                                    <div class="info">통신사를 선택해주세요</div>
+                                    <div class="w-100 h-100 ps-3 d-flex justify-content-start flex-column">
+                                        <div class="list">SKT</div>
+                                        <div class="list">KT</div>
+                                        <div class="list">LG U+</div>
+                                        <div class="list">SKT 알뜰폰</div>
+                                        <div class="list">KT 알뜰폰</div>
+                                        <div class="list">LG U+ 알뜰폰</div>
                                     </div>
                                 </div>
                             </div>
@@ -352,82 +179,609 @@
                         <div class="page" id="p4">
                             <div class="page_wrap">
                                 <h1 class="pg_title" style="color: #fff;">Page4</h1>
+                                <div class="top_bar">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="50" height="50" fill="currentColor"
+                                        class="bi bi-arrow-left-short" viewBox="0 0 16 16">
+                                        <path fill-rule="evenodd"
+                                            d="M12 8a.5.5 0 0 1-.5.5H5.707l2.147 2.146a.5.5 0 0 1-.708.708l-3-3a.5.5 0 0 1 0-.708l3-3a.5.5 0 1 1 .708.708L5.707 7.5H11.5a.5.5 0 0 1 .5.5z" />
+                                    </svg>
+                                </div>
+                                <div class="info">
+                                    김토스님 정보가 맞나요?
+                                </div>
+                                <div class="ps-1">
+                                    <div class="container w-100 h-60 d-flex flex-column">
+                                        <div class="sm_info w-100 text-black-50 d-flex justify-content-start fontSz"
+                                            style="font-size: sm;">
+                                            휴대폰 번호
+                                        </div>
+                                        <div class="d-flex justify-content-start">
+                                            <input class="tab w-90 d-flex justify-content-center fontSz"
+                                                style="font-size:x-large;"></input>
+                                        </div>
+                                    </div>
+                                    <div class="container w-100 h-60 d-flex flex-column">
+                                        <div class="sm_info w-100 text-black-50 d-flex justify-content-start fontSz"
+                                            style="font-size: sm;">
+                                            통신사
+                                        </div>
+                                        <div class="d-flex justify-content-start">
+                                            <input class="tab w-90 d-flex justify-content-center fontSz"
+                                                placeholder="SKT" style="font-size:x-large;"></input>
+                                        </div>
+                                    </div>
+                                    <div class="container w-100 h-60 d-flex flex-column" style="font-size: sm;">
+                                        <div class="sm_info w-100 text-black-50 d-flex justify-content-start fontSz">
+                                            주민번호
+                                        </div>
+                                        <div class="d-flex justify-content-start">
+                                            <input class="tab w-45" placeholder="7777777"></input>
+                                            <div class="fontSz" style="font-size:x-large;">-</div>
+                                            <input class="tab w-45" placeholder="1234567"></input>
+                                        </div>
+                                    </div>
+                                    <div class="container w-100 h-60 d-flex flex-column">
+                                        <div class="sm_info w-100 text-black-50 d-flex justify-content-start fontSz"
+                                            style="font-size: sm;">
+                                            이름
+                                        </div>
+                                        <div class="d-flex justify-content-start">
+                                            <input class="tab w-90 d-flex justify-content-center fontSz"
+                                                placeholder="김토스" style="font-size:x-large;"></input>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="under_bar d-flex justify-content-center flex-column">
+                                    <button type="button" class="btn w-90 toss btn-b btn-lg fontSz">
+                                        본인 인증하기
+                                    </button>
+                                    <div>내 명의의 휴대폰이 아니라면?
+                                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16"
+                                            fill="currentColor" class="bi bi-chevron-right" viewBox="0 0 16 16">
+                                            <path fill-rule="evenodd"
+                                                d="M4.646 1.646a.5.5 0 0 1 .708 0l6 6a.5.5 0 0 1 0 .708l-6 6a.5.5 0 0 1-.708-.708L10.293 8 4.646 2.354a.5.5 0 0 1 0-.708z" />
+                                        </svg>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <!------------------------------ page 5 ------------------------------>
+                        <div class="page" id="p5">
+                            <div class="page_wrap bg-secondary bg-opacity-10">
+                                <h1 class="pg_title" style="color: #fff;">Page5</h1>
+                                <div class="top_bar">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="50" height="50" fill="currentColor"
+                                        class="bi bi-arrow-left-short" viewBox="0 0 16 16">
+                                        <path fill-rule="evenodd"
+                                            d="M12 8a.5.5 0 0 1-.5.5H5.707l2.147 2.146a.5.5 0 0 1-.708.708l-3-3a.5.5 0 0 1 0-.708l3-3a.5.5 0 1 1 .708.708L5.707 7.5H11.5a.5.5 0 0 1 .5.5z" />
+                                    </svg>
+                                </div>
+                                <div class="info">
+                                    김토스님 정보가 맞나요?
+                                </div>
+                                <div class="">
+                                    <div class="container w-100 h-60 d-flex flex-column">
+                                        <div class="sm_info w-100 text-black-50 d-flex justify-content-start fontSz"
+                                            placeholder="010-1234-5678" style="font-size: sm;">
+                                            휴대폰 번호
+                                        </div>
+                                        <div class="d-flex justify-content-start">
+                                            <input class="tab w-90 d-flex justify-content-center fontSz"
+                                                style="font-size:x-large;"></input>
+                                        </div>
+                                    </div>
+                                    <div class="container w-100 h-60 d-flex flex-column">
+                                        <div class="sm_info w-100 text-black-50 d-flex justify-content-start fontSz"
+                                            style="font-size: sm;">
+                                            통신사
+                                        </div>
+                                        <div class="d-flex justify-content-start">
+                                            <input class="tab w-90 d-flex justify-content-center fontSz"
+                                                placeholder="SKT" style="font-size:x-large;"></input>
+                                        </div>
+                                    </div>
+                                    <div class="container w-100 h-60 d-flex flex-column" style="font-size: sm;">
+                                        <div class="sm_info w-100 text-black-50 d-flex justify-content-start fontSz">
+                                            주민번호
+                                        </div>
+                                        <div class="d-flex justify-content-start">
+                                            <input class="tab w-45" placeholder="7777777"></input>
+                                            <div class="fontSz" style="font-size:x-large;">-</div>
+                                            <input class="tab w-45" placeholder="1234567"></input>
+                                        </div>
+                                    </div>
+                                    <div class="container w-100 h-60 d-flex flex-column">
+                                        <div class="sm_info w-100 text-black-50 d-flex justify-content-start fontSz"
+                                            style="font-size: sm;">
+                                            이름
+                                        </div>
+                                        <div class="d-flex justify-content-start">
+                                            <input class="tab w-90 d-flex justify-content-center fontSz"
+                                                placeholder="김토스" style="font-size:x-large;"></input>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="under_bar d-flex justify-content-center flex-column">
+                                    <div class="info">토스를 쓰려면 동의가 필요해요</div>
+                                    <div class="w-100 h-100 d-flex justify-content-start flex-column">
+                                        <div class="list d-flex justify-content-between mb-1">
+                                            <div>
+                                                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16"
+                                                    fill="currentColor" class="bi bi-check-lg" viewBox="0 0 16 16">
+                                                    <path
+                                                        d="M12.736 3.97a.733.733 0 0 1 1.047 0c.286.289.29.756.01 1.05L7.88 12.01a.733.733 0 0 1-1.065.02L3.217 8.384a.757.757 0 0 1 0-1.06.733.733 0 0 1 1.047 0l3.052 3.093 5.4-6.425a.247.247 0 0 1 .02-.022Z" />
+                                                </svg> &nbsp; [필수]토스 회원 약관 및 동의사항
+                                            </div>
+                                            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16"
+                                                fill="currentColor" class="bi bi-chevron-right" viewBox="0 0 16 16">
+                                                <path fill-rule="evenodd"
+                                                    d="M4.646 1.646a.5.5 0 0 1 .708 0l6 6a.5.5 0 0 1 0 .708l-6 6a.5.5 0 0 1-.708-.708L10.293 8 4.646 2.354a.5.5 0 0 1 0-.708z" />
+                                            </svg>
+                                        </div>
+                                        <div class="list d-flex justify-content-between mb-1">
+                                            <div>
+                                                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16"
+                                                    fill="currentColor" class="bi bi-check-lg" viewBox="0 0 16 16">
+                                                    <path
+                                                        d="M12.736 3.97a.733.733 0 0 1 1.047 0c.286.289.29.756.01 1.05L7.88 12.01a.733.733 0 0 1-1.065.02L3.217 8.384a.757.757 0 0 1 0-1.06.733.733 0 0 1 1.047 0l3.052 3.093 5.4-6.425a.247.247 0 0 1 .02-.022Z" />
+                                                </svg> &nbsp; [필수]본인 확인 서비스 약관 및 동의사항
+                                            </div>
+                                            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16"
+                                                fill="currentColor" class="bi bi-chevron-right" viewBox="0 0 16 16">
+                                                <path fill-rule="evenodd"
+                                                    d="M4.646 1.646a.5.5 0 0 1 .708 0l6 6a.5.5 0 0 1 0 .708l-6 6a.5.5 0 0 1-.708-.708L10.293 8 4.646 2.354a.5.5 0 0 1 0-.708z" />
+                                            </svg>
+                                        </div>
+                                        <div class="list d-flex justify-content-between mb-1">
+                                            <div>
+                                                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16"
+                                                    fill="currentColor" class="bi bi-check-lg" viewBox="0 0 16 16">
+                                                    <path
+                                                        d="M12.736 3.97a.733.733 0 0 1 1.047 0c.286.289.29.756.01 1.05L7.88 12.01a.733.733 0 0 1-1.065.02L3.217 8.384a.757.757 0 0 1 0-1.06.733.733 0 0 1 1.047 0l3.052 3.093 5.4-6.425a.247.247 0 0 1 .02-.022Z" />
+                                                </svg> &nbsp; [선택]맞춤형 서비스 제공 개인정보 청리 동의
+                                            </div>
+                                            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16"
+                                                fill="currentColor" class="bi bi-chevron-right" viewBox="0 0 16 16">
+                                                <path fill-rule="evenodd"
+                                                    d="M4.646 1.646a.5.5 0 0 1 .708 0l6 6a.5.5 0 0 1 0 .708l-6 6a.5.5 0 0 1-.708-.708L10.293 8 4.646 2.354a.5.5 0 0 1 0-.708z" />
+                                            </svg>
+                                        </div>
+                                        <div class="list d-flex justify-content-between mb-1">
+                                            <div>
+                                                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16"
+                                                    fill="currentColor" class="bi bi-check-lg" viewBox="0 0 16 16">
+                                                    <path
+                                                        d="M12.736 3.97a.733.733 0 0 1 1.047 0c.286.289.29.756.01 1.05L7.88 12.01a.733.733 0 0 1-1.065.02L3.217 8.384a.757.757 0 0 1 0-1.06.733.733 0 0 1 1.047 0l3.052 3.093 5.4-6.425a.247.247 0 0 1 .02-.022Z" />
+                                                </svg> &nbsp; [선택]마케팅 수신 동의사항
+                                            </div>
+                                            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16"
+                                                fill="currentColor" class="bi bi-chevron-right" viewBox="0 0 16 16">
+                                                <path fill-rule="evenodd"
+                                                    d="M4.646 1.646a.5.5 0 0 1 .708 0l6 6a.5.5 0 0 1 0 .708l-6 6a.5.5 0 0 1-.708-.708L10.293 8 4.646 2.354a.5.5 0 0 1 0-.708z" />
+                                            </svg>
+                                        </div>
+                                        <div class="list d-flex justify-content-between mb-1">
+                                            <div>
+                                                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16"
+                                                    fill="currentColor" class="bi bi-check-lg" viewBox="0 0 16 16">
+                                                    <path
+                                                        d="M12.736 3.97a.733.733 0 0 1 1.047 0c.286.289.29.756.01 1.05L7.88 12.01a.733.733 0 0 1-1.065.02L3.217 8.384a.757.757 0 0 1 0-1.06.733.733 0 0 1 1.047 0l3.052 3.093 5.4-6.425a.247.247 0 0 1 .02-.022Z" />
+                                                </svg> &nbsp; [선택]토스앱을 통한 토스뱅크 서비스 제공 동의
+                                            </div>
+                                            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16"
+                                                fill="currentColor" class="bi bi-chevron-right" viewBox="0 0 16 16">
+                                                <path fill-rule="evenodd"
+                                                    d="M4.646 1.646a.5.5 0 0 1 .708 0l6 6a.5.5 0 0 1 0 .708l-6 6a.5.5 0 0 1-.708-.708L10.293 8 4.646 2.354a.5.5 0 0 1 0-.708z" />
+                                            </svg>
+                                        </div>
+                                        <div class="list d-flex justify-content-between mb-1">
+                                            <div>
+                                                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16"
+                                                    fill="currentColor" class="bi bi-check-lg" viewBox="0 0 16 16">
+                                                    <path
+                                                        d="M12.736 3.97a.733.733 0 0 1 1.047 0c.286.289.29.756.01 1.05L7.88 12.01a.733.733 0 0 1-1.065.02L3.217 8.384a.757.757 0 0 1 0-1.06.733.733 0 0 1 1.047 0l3.052 3.093 5.4-6.425a.247.247 0 0 1 .02-.022Z" />
+                                                </svg> &nbsp; [선택]토스앱을 통한 토스증권 서비스 제공 동의
+                                            </div>
+                                            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16"
+                                                fill="currentColor" class="bi bi-chevron-right" viewBox="0 0 16 16">
+                                                <path fill-rule="evenodd"
+                                                    d="M4.646 1.646a.5.5 0 0 1 .708 0l6 6a.5.5 0 0 1 0 .708l-6 6a.5.5 0 0 1-.708-.708L10.293 8 4.646 2.354a.5.5 0 0 1 0-.708z" />
+                                            </svg>
+                                        </div>
+                                    </div>
+                                    <button type="button" class="btn w-90 toss btn-b btn-lg fontSz">
+                                        동의하기
+                                    </button>
+                                    <div class="w-100 p-3 d-flex justify-content-center text-black-50 fontSz"
+                                        style="font-size:large; font-weight: bold;">
+                                        닫기
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <!------------------------------ page 6 ------------------------------>
+                        <div class="page" id="p6">
+                            <div class="page_wrap">
+                                <h1 class="pg_title" style="color: #fff;">Page6</h1>
+                                <div class="top_bar">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="50" height="50" fill="currentColor"
+                                        class="bi bi-arrow-left-short" viewBox="0 0 16 16">
+                                        <path fill-rule="evenodd"
+                                            d="M12 8a.5.5 0 0 1-.5.5H5.707l2.147 2.146a.5.5 0 0 1-.708.708l-3-3a.5.5 0 0 1 0-.708l3-3a.5.5 0 1 1 .708.708L5.707 7.5H11.5a.5.5 0 0 1 .5.5z" />
+                                    </svg>
+                                </div>
+                                <div class="info">
+                                    문자로 받은<br>인증번호 6자리를 입력해주세요
+                                </div>
+                                <div class="container w-100 h-60 d-flex flex-column">
+                                    <div class="d-flex justify-content-start">
+                                        <input class="tab w-90 d-flex justify-content-center fontSz"
+                                            placeholder="6자리 숫자" style="font-size:xx-large;"></input>
+                                    </div>
+                                    <button type="button" class="btn mt-3 w-30 h-10 btn-light btn-sm" disabled>문자 다시
+                                        받기</button>
+                                    <div class="under_bar d-flex justify-content-center flex-column">
+                                        <button type="button" class="btn w-90 toss btn-b btn-lg fontSz" disabled>
+                                            확인
+                                        </button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <!------------------------------ page 7 ------------------------------>
+                        <div class="page" id="p7">
+                            <div class="page_wrap bg-secondary bg-opacity-10">
+                                <h1 class="pg_title" style="color: #fff;">Page7</h1>
+                                <div class="top_bar">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="50" height="50" fill="currentColor"
+                                        class="bi bi-arrow-left-short" viewBox="0 0 16 16">
+                                        <path fill-rule="evenodd"
+                                            d="M12 8a.5.5 0 0 1-.5.5H5.707l2.147 2.146a.5.5 0 0 1-.708.708l-3-3a.5.5 0 0 1 0-.708l3-3a.5.5 0 1 1 .708.708L5.707 7.5H11.5a.5.5 0 0 1 .5.5z" />
+                                    </svg>
+                                </div>
+                                <div class="info justify-content-start" style="font-size: x-large;">
+                                    인증을 완료하려면<br>전화 권한을 혀용해주세요
+                                </div>
+                                <div class="p-3 w-100 text-black-50 d-flex justify-content-start fontSz">
+                                    김토스님이 입력한 전화번호를 쓰고 있는지만<br>확인해요. 인증 외엔 사용되지 않아요.
+                                </div>
+                                <div class="under_bar d-flex justify-content-center flex-column">
+                                    <div class="d-flex flex-column justify-content-center align-items-center">
+                                        <svg xmlns="http://www.w3.org/2000/svg" width="30" height="30"
+                                            fill="currentColor" class="bi bi-telephone-fill" viewBox="0 0 16 16"
+                                            style="color:#0833BB">
+                                            <path fill-rule="evenodd"
+                                                d="M1.885.511a1.745 1.745 0 0 1 2.61.163L6.29 2.98c.329.423.445.974.315 1.494l-.547 2.19a.678.678 0 0 0 .178.643l2.457 2.457a.678.678 0 0 0 .644.178l2.189-.547a1.745 1.745 0 0 1 1.494.315l2.306 1.794c.829.645.905 1.87.163 2.611l-1.034 1.034c-.74.74-1.846 1.065-2.877.702a18.634 18.634 0 0 1-7.01-4.42 18.634 18.634 0 0 1-4.42-7.009c-.362-1.03-.037-2.137.703-2.877L1.885.511z" />
+                                        </svg>
+                                        <div class="mt-3">토스에서 전화를 걸고 관리하도록<br>허용하시겠습니까?</div>
+                                    </div>
+                                    <div class="info">허용</div>
+                                    <div class="info">허용 안함</div>
+                                </div>
+                            </div>
+                        </div>
+                        <!------------------------------ page 8 ------------------------------>
+                        <div class="page" id="p8">
+                            <div class="page_wrap">
+                                <h1 class="pg_title" style="color: #fff;">Page8</h1>
+                                <div class="top_bar mb-4">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="50" height="50" fill="currentColor"
+                                        class="bi bi-arrow-left-short" viewBox="0 0 16 16">
+                                        <path fill-rule="evenodd"
+                                            d="M12 8a.5.5 0 0 1-.5.5H5.707l2.147 2.146a.5.5 0 0 1-.708.708l-3-3a.5.5 0 0 1 0-.708l3-3a.5.5 0 1 1 .708.708L5.707 7.5H11.5a.5.5 0 0 1 .5.5z" />
+                                    </svg>
+                                </div>
+                                <div class="p-4 h-10"></div>
+                                <div class="d-flex justify-content-center">
+                                    <button type="button" class="btn mx-1 btn-lg btn-light">0</button>
+                                    <button type="button" class="btn mx-1 btn-lg btn-light">0</button>
+                                    <button type="button" class="btn mx-1 btn-lg btn-light">0</button>
+                                    <button type="button" class="btn mx-1 btn-lg btn-light">0</button>
+                                </div>
+                                <div class="container w-100 d-flex flex-column">
+                                    <div class="info d-flex flex-column justify-content-center align-items-center"
+                                        style="font-size: large;">
+                                        <div>인증 전화가 오면</div>
+                                        <div>안내 음성에 따라</div>
+                                        <div>위 숫자를 입력하세요</div>
+                                    </div>
+                                    <div class="under_bar d-flex justify-content-center flex-column">
+                                        <button type="button" class="w-90 toss btn-b btn-lg fontSz">
+                                            인증 전화 받기
+                                        </button>
+                                        <div class="text-black-50 fontSz">착신전환 기능이나 수신차단 앱 사용 시<br>인증이 불가합니다.</div>
+                                        <div class="text-black-50 p-4"><svg xmlns="http://www.w3.org/2000/svg"
+                                                width="16" height="16" fill="currentColor"
+                                                class="bi bi-exclamation-circle" viewBox="0 0 16 16"
+                                                style="color: orange;">
+                                                <path
+                                                    d="M8 15A7 7 0 1 1 8 1a7 7 0 0 1 0 14zm0 1A8 8 0 1 0 8 0a8 8 0 0 0 0 16z" />
+                                                <path
+                                                    d="M7.002 11a1 1 0 1 1 2 0 1 1 0 0 1-2 0zM7.1 4.995a.905.905 0 1 1 1.8 0l-.35 3.507a.552.552 0 0 1-1.1 0L7.1 4.995z" />
+                                            </svg>혹시, 소리를 듣기 어려우신가요?
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <!------------------------------ page 9 ------------------------------>
+                        <div class="page" id="p9">
+                            <div class="page_wrap">
+                                <h1 class="pg_title" style="color: #fff;">Page9</h1>
                                 <div class="back d-flex justify-content-between">
-                                    <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20"
-                                        fill="currentColor" class="bi bi-chevron-left" viewBox="0 0 16 16">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" fill="currentColor"
+                                        class="bi bi-chevron-left" viewBox="0 0 16 16">
                                         <path fill-rule="evenodd"
                                             d="M11.354 1.646a.5.5 0 0 1 0 .708L5.707 8l5.647 5.646a.5.5 0 0 1-.708.708l-6-6a.5.5 0 0 1 0-.708l6-6a.5.5 0 0 1 .708 0z" />
                                     </svg>
+                                    <div class="txt">
+                                        비밀번호 재설정
+                                    </div>
+                                </div>
+                                <div class="container align-items-center">
+                                    <div class="txt align-items-center fontSz" style="font-size:x-large;">
+                                        토스에서 사용할
+                                    </div>
+                                    <div class="txt align-items-center fontSz" style="font-size:x-large;">
+                                        비밀번호를 입력해주세요
+                                    </div>
+                                    <div class="fontSz" style="color: #3C4055;">
+                                        숫자 4자리 + 영문자 1자리
+                                    </div>
+                                </div>
+                                <div class="nav-item d-flex justify-content-center my-3">
+                                    <span class="dot dot0"></span>
+                                    <span class="dot dot1"></span>
+                                    <span class="dot dot2"></span>
+                                    <span class="dot dot3"></span>
+                                    <div class="txt" style="font-weight:bold;">
+                                        <svg xmlns="http://www.w3.org/2000/svg" width="30" height="30"
+                                            fill="currentColor" class="bi bi-plus-lg" viewBox="0 0 16 16">
+                                            <path fill-rule="evenodd"
+                                                d="M8 2a.5.5 0 0 1 .5.5v5h5a.5.5 0 0 1 0 1h-5v5a.5.5 0 0 1-1 0v-5h-5a.5.5 0 0 1 0-1h5v-5A.5.5 0 0 1 8 2Z" />
+                                        </svg>
+                                    </div>
+                                    <span class="dot dot4"></span>
+                                </div>
+                                <div class="container h-40 mt-4">
+                                    <div class="mt-4 d-flex justify-content-around">
+                                        <div class="num fontSz">8</div>
+                                        <div class="num fontSz">5</div>
+                                        <div class="num fontSz">9</div>
+                                    </div>
+                                    <div class="mt-4 d-flex justify-content-around">
+                                        <div class="num fontSz">2</div>
+                                        <div class="num fontSz">1</div>
+                                        <div class="num fontSz">4</div>
+                                    </div>
+                                    <div class="mt-4 d-flex justify-content-around">
+                                        <div class="num fontSz">7</div>
+                                        <div class="num fontSz">3</div>
+                                        <div class="num fontSz">6</div>
+                                    </div>
+                                    <div class="mt-4 d-flex justify-content-around">
+                                        <div class="num fontSz">*</div>
+                                        <div class="num fontSz">0</div>
+                                        <div class="num fontSz">
+                                            <svg xmlns="http://www.w3.org/2000/svg" width="50" height="50"
+                                                fill="currentColor" class="bi bi-arrow-left-short" viewBox="0 0 16 16">
+                                                <path fill-rule="evenodd"
+                                                    d="M12 8a.5.5 0 0 1-.5.5H5.707l2.147 2.146a.5.5 0 0 1-.708.708l-3-3a.5.5 0 0 1 0-.708l3-3a.5.5 0 1 1 .708.708L5.707 7.5H11.5a.5.5 0 0 1 .5.5z" />
+                                            </svg>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <!------------------------------ page 10 ------------------------------>
+                        <div class="page" id="p10">
+                            <div class="page_wrap" style="background-color:#F3F4F6;">
+                                <h1 class="pg_title" style="color: #fff;">Page10</h1>
+                                <div class="top_bar">
+                                    <div class="icon">
+                                        toss
+                                    </div>
+                                    <div style="color:#B1B8C0">
+                                        <svg xmlns="http://www.w3.org/2000/svg" width="30" height="30"
+                                            fill="currentColor" class="bi bi-qr-code-scan" viewBox="0 0 16 16">
+                                            <path
+                                                d="M0 .5A.5.5 0 0 1 .5 0h3a.5.5 0 0 1 0 1H1v2.5a.5.5 0 0 1-1 0v-3Zm12 0a.5.5 0 0 1 .5-.5h3a.5.5 0 0 1 .5.5v3a.5.5 0 0 1-1 0V1h-2.5a.5.5 0 0 1-.5-.5ZM.5 12a.5.5 0 0 1 .5.5V15h2.5a.5.5 0 0 1 0 1h-3a.5.5 0 0 1-.5-.5v-3a.5.5 0 0 1 .5-.5Zm15 0a.5.5 0 0 1 .5.5v3a.5.5 0 0 1-.5.5h-3a.5.5 0 0 1 0-1H15v-2.5a.5.5 0 0 1 .5-.5ZM4 4h1v1H4V4Z" />
+                                            <path d="M7 2H2v5h5V2ZM3 3h3v3H3V3Zm2 8H4v1h1v-1Z" />
+                                            <path d="M7 9H2v5h5V9Zm-4 1h3v3H3v-3Zm8-6h1v1h-1V4Z" />
+                                            <path
+                                                d="M9 2h5v5H9V2Zm1 1v3h3V3h-3ZM8 8v2h1v1H8v1h2v-2h1v2h1v-1h2v-1h-3V8H8Zm2 2H9V9h1v1Zm4 2h-1v1h-2v1h3v-2Zm-4 2v-1H8v1h2Z" />
+                                            <path d="M12 9h2V8h-2v1Z" />
+                                        </svg>
+                                        <svg xmlns="http://www.w3.org/2000/svg" width="30" height="30"
+                                            fill="currentColor" class="bi bi-chat-dots-fill mx-3" viewBox="0 0 16 16">
+                                            <path
+                                                d="M16 8c0 3.866-3.582 7-8 7a9.06 9.06 0 0 1-2.347-.306c-.584.296-1.925.864-4.181 1.234-.2.032-.352-.176-.273-.362.354-.836.674-1.95.77-2.966C.744 11.37 0 9.76 0 8c0-3.866 3.582-7 8-7s8 3.134 8 7zM5 8a1 1 0 1 0-2 0 1 1 0 0 0 2 0zm4 0a1 1 0 1 0-2 0 1 1 0 0 0 2 0zm3 1a1 1 0 1 0 0-2 1 1 0 0 0 0 2z" />
+                                        </svg>
+                                        <svg xmlns="http://www.w3.org/2000/svg" width="30" height="30"
+                                            fill="currentColor" class="bi bi-bell-fill" viewBox="0 0 16 16">
+                                            <path
+                                                d="M8 16a2 2 0 0 0 2-2H6a2 2 0 0 0 2 2zm.995-14.901a1 1 0 1 0-1.99 0A5.002 5.002 0 0 0 3 6c0 1.098-.5 6-2 7h14c-1.5-1-2-5.902-2-7 0-2.42-1.72-4.44-4.005-4.901z" />
+                                        </svg>
+                                    </div>
+                                </div>
+                                <div class="gap">
+                                    <div class="box">
+                                        <div
+                                            class="w-100 h-10 d-flex justify-content-start align-items-center rounded-1 fontSz">
+                                            <div class="icon">1
+                                            </div>
+                                            <div class="w-100 d-flex justify-content-between align-items-center">
+                                                <div class="mx-2 d-flex flex-column align-items-center">
+                                                    <div class="w-100 d-flex text-left text-black-50 fontSz">매주 20만 명이
+                                                        캐시백 받아요</div>
+                                                    <div class="w-100 d-flex text-left fontS"
+                                                        style="font-weight: bold; color: #4C82EA;">캐시백 받을 브랜드 고르기</div>
+                                                </div>
+                                                <div>
+                                                    <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20"
+                                                        fill="currentColor" class="bi bi-chevron-right"
+                                                        viewBox="0 0 16 16">
+                                                        <path fill-rule="evenodd"
+                                                            d="M4.646 1.646a.5.5 0 0 1 .708 0l6 6a.5.5 0 0 1 0 .708l-6 6a.5.5 0 0 1-.708-.708L10.293 8 4.646 2.354a.5.5 0 0 1 0-.708z" />
+                                                    </svg>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="gap">
+                                    <div class="box">
+                                        <div
+                                            class="w-100 h-10 d-flex justify-content-start align-items-center rounded-1 fontSz">
+                                            <div class="w-100 d-flex justify-content-between align-items-center">
+                                                <div class="d-flex flex-column align-items-center">
+                                                    <div class="w-100 d-flex justify-content-start fontSz"
+                                                        style="font-weight: bold; font-size: x-large;">토스뱅크</div>
+                                                </div>
+                                                <div>
+                                                    <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20"
+                                                        fill="currentColor" class="bi bi-chevron-right"
+                                                        viewBox="0 0 16 16">
+                                                        <path fill-rule="evenodd"
+                                                            d="M4.646 1.646a.5.5 0 0 1 .708 0l6 6a.5.5 0 0 1 0 .708l-6 6a.5.5 0 0 1-.708-.708L10.293 8 4.646 2.354a.5.5 0 0 1 0-.708z" />
+                                                    </svg>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="gap">
+                                    <div class="box">
+                                        <div
+                                            class="w-100 h-10 d-flex justify-content-start flex-column align-items-center rounded-1 fontSz">
+                                            <div class="w-100 d-flex flex-column align-items-center">
+                                                <div class="w-100 mx-2 d-flex flex-column align-items-center">
+                                                    <div
+                                                        class="w-100 d-flex justify-content-between align-items-center">
+                                                        <div class="w-100 d-flex text-left fontSz"
+                                                            style="font-weight: bold; font-size: x-large;">연결한 계좌</div>
+                                                        <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20"
+                                                            fill="currentColor" class="bi bi-chevron-right"
+                                                            viewBox="0 0 16 16">
+                                                            <path fill-rule="evenodd"
+                                                                d="M4.646 1.646a.5.5 0 0 1 .708 0l6 6a.5.5 0 0 1 0 .708l-6 6a.5.5 0 0 1-.708-.708L10.293 8 4.646 2.354a.5.5 0 0 1 0-.708z" />
+                                                        </svg>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="w-100 mt-3 d-flex justify-content-between">
+                                                <div class="icon">1
+                                                </div>
+                                                <div class="w-100 d-flex justify-content-between align-items-center">
+                                                    <div class="mx-2 d-flex flex-column align-items-center">
+                                                        <div class="w-100 d-flex text-left text-black-50 fontSz">토스뱅크 통장
+                                                        </div>
+                                                        <div class="w-100 d-flex text-left f_lg fontSz">잔액보기</div>
+                                                    </div>
+                                                </div>
+                                                <button type="button" class="btn btn-light">
+                                                    송금
+                                                </button>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="gap">
+                                    <div class="box">
+                                        <div
+                                            class="w-100 d-flex justify-content-start flex-column align-items-center rounded-1 fontSz">
+                                            <div class="w-100 d-flex flex-column align-items-center">
+                                                <div class="w-100 mx-2 d-flex flex-column align-items-center">
+                                                    <div class="w-100 d-flex justify-content-start align-items-center">
+                                                        <div class="w-100 d-flex text-left fontSz"
+                                                            style="font-weight: bold; font-size: x-large;">소비</div>
+                                                    </div>
+                                                </div>
+                                                <div class="w-100 mt-3 d-flex justify-content-between">
+                                                    <div class="icon">1
+                                                    </div>
+                                                    <div
+                                                        class="w-100 d-flex justify-content-between align-items-center">
+                                                        <div class="mx-2 d-flex flex-column align-items-center">
+                                                            <div class="w-100 d-flex text-left text-black-50 fontSz">이번
+                                                                달 쓴 금액</div>
+                                                            <div class="w-100 f_lg d-flex text-left fontSz">금액 보기</div>
+                                                        </div>
+                                                    </div>
+                                                    <button type="button" class="btn btn-light">
+                                                        내역
+                                                    </button>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="d-flex justify-content-between">
+                                    <div class="gap">
+                                        <div class="box">
+                                            <div
+                                                class="w-100 d-flex justify-content-start align-items-center rounded-1 fontSz">
+                                                <div class="w-100 d-flex justify-content-between align-items-center">
+                                                    <div
+                                                        class="mx-2 d-flex flex-column justify-content-start align-items-center">
+                                                        <div class="w-100 d-flex text-left text-black-50 fontSz">못
+                                                            받은</div>
+                                                        <div class="w-100 f_lg d-flex text-left fontSz">숨은 보험금 찾기
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="gap">
+                                        <div class="box">
+                                            <div
+                                                class="w-100 d-flex justify-content-start align-items-center rounded-1 fontSz">
+                                                <div class="w-100 d-flex justify-content-between align-items-center">
+                                                    <div class="mx-2 d-flex flex-column align-items-center">
+                                                        <div class="w-100 d-flex text-left text-black-50 fontSz">최근
+                                                        </div>
+                                                        <div class="w-100 f_lg d-flex text-left fontSz">만 보기<br>&nbsp;</div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="gap">
+                                        <div class="box">
+                                            <div
+                                                class="w-100 d-flex justify-content-start align-items-center rounded-1 fontSz">
+                                                <div class="w-100 d-flex justify-content-between align-items-center">
+                                                    <div class="mx-2 d-flex flex-column align-items-center">
+                                                        <div class="w-100 d-flex text-left text-black-50 fontSz">자주
+                                                        </div>
+                                                        <div class="w-100 f_lg d-flex text-left fontSz">신용점수 보기</div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="under_bar fontSz" style="background-color:#FFFFFF;">
                                     <div>
-                                        KB국민ONE통장-저축예금
+                                        <div class="icon">1</div>
+                                        <div class="d-flex justify-content-center">홈</div>
                                     </div>
-                                    <div>관리</div>
-                                </div>
-                                <div>
-                                    <div class="p-4 align-items-center fontSz" style="font-weight:bold; font-size:xx-large;">
-                                        100,000원
+                                    <div>
+                                        <div class="icon">2</div>
+                                        <div class="d-flex justify-content-center">혜택</div>
                                     </div>
-                                    <div class="d-flex justify-content-center">
-                                        <button type="button" class="btn w-45 mx-1 toss btn-c btn-lg fontSz">
-                                            채우기
-                                        </button>
-                                        <button type="button" class="btn w-45 mx-1 toss btn-b btn-lg fontSz">
-                                            보내기
-                                        </button>
-                                    </div> 
-                                    <div class="banner w-100">
-                                        배너 광고
+                                    <div>
+                                        <div class="icon">3</div>
+                                        <div class="d-flex justify-content-center">송금</div>
                                     </div>
-                                </div>                        
-                                <div class="w-100 bg-secondary bg-opacity-10 border-top border-bottom border-secondary border-opacity-25"
-                                        style="height: 1em;">
-                                </div>
-                                <div class="p-4 d-flex justify-content-between">
-                                    <div class="text-black-50">
-                                        전체
-                                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-chevron-down" viewBox="0 0 16 16">
-                                            <path fill-rule="evenodd" d="M1.646 4.646a.5.5 0 0 1 .708 0L8 10.293l5.646-5.647a.5.5 0 0 1 .708.708l-6 6a.5.5 0 0 1-.708 0l-6-6a.5.5 0 0 1 0-.708z"/>
-                                        </svg>
+                                    <div>
+                                        <div class="icon">4</div>
+                                        <div class="d-flex justify-content-center">주식</div>
                                     </div>
-                                    <div class="text-black-50">
-                                        방금 전
-                                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-arrow-clockwise" viewBox="0 0 16 16">
-                                            <path fill-rule="evenodd" d="M8 3a5 5 0 1 0 4.546 2.914.5.5 0 0 1 .908-.417A6 6 0 1 1 8 2v1z"/>
-                                            <path d="M8 4.466V.534a.25.25 0 0 1 .41-.192l2.36 1.966c.12.1.12.284 0 .384L8.41 4.658A.25.25 0 0 1 8 4.466z"/>
-                                        </svg>
-                                    </div>  
-                                </div>
-                                <div class="mx-4 mt-3 text-black-50 d-flex justify-content-start fontSz">
-                                    10월 14일
-                                </div>
-                                <div class="container w-100 mt-3 d-flex flex-column justify-content-center align-items-center">
-                                    <div class="btn w-100 h-10 mb-3 tab text-left d-flex justify-content-start align-items-end fontSz">
-                                        <div class="icon">1
-                                        </div>
-                                        <div class="text-black-50 mx-4">
-                                            17:40
-                                        </div>
-                                    </div>
-                                    <div class="btn w-100 h-10 mb-3 tab text-left d-flex justify-content-start align-items-end fontSz">
-                                        <div class="icon">2
-                                        </div>
-                                        <div class="text-black-50 mx-4">
-                                            17:40
-                                        </div>
-                                    </div>
-                                    <div class="btn w-100 h-10 mb-3 tab text-left d-flex justify-content-start align-items-end fontSz">
-                                        <div class="icon">3
-                                        </div>
-                                        <div class="text-black-50 mx-4">
-                                            16:02
-                                        </div>
-                                    </div>
-                                    <div class="btn w-100 h-10 mb-3 text-black-50 tab text-left d-flex justify-content-start align-items-end fontSz">
-                                        <div class="icon">4
-                                        </div>
-                                        <div class="mx-4">
-                                            16:02
-                                        </div>
+                                    <div>
+                                        <div class="icon">5</div>
+                                        <div class="d-flex justify-content-center">전체</div>
                                     </div>
                                 </div>
                             </div>
@@ -529,10 +883,8 @@
                         </div>
                     </div>
                 </div>
-
             </div>
         </div>
-    </div>
     </div>
     <script src="pg_info.js"> </script>
     <script src="../common/js/pg_handler.js"> </script>
