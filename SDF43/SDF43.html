@@ -557,7 +557,7 @@
                                     </div>
                                     <div class="h-10"></div>
                                     <div
-                                        class="box w-20 my-2 d-flex flex-column justify-content-center align-items-center fontSz pg_8_answer">
+                                        class="box w-20 my-2 text-black-50 d-flex flex-column justify-content-center align-items-center fontSz pg_8_answer">
                                         <svg xmlns="http://www.w3.org/2000/svg" width="30" height="30"
                                             fill="currentColor" class="bi bi-camera-fill" viewBox="0 0 16 16">
                                             <path d="M10.5 8.5a2.5 2.5 0 1 1-5 0 2.5 2.5 0 0 1 5 0z" />
@@ -576,7 +576,7 @@
                                     </div>
                                 </div>
                                 <div class="w-100 absolute-bottom flex-center-center p-3">
-                                    <button type="button" class="btn flex-center-center w-100 toss btn-b btn-lg fontSz">
+                                    <button type="button" class="btn flex-center-center w-100 toss btn-b btn-lg fontSz" disabled>
                                         다음
                                     </button>
                                 </div>
@@ -601,7 +601,7 @@
                                     </div>
                                     <div class="h-10"></div>
                                     <div
-                                        class="box w-20 my-2 d-flex flex-column justify-content-center align-items-center fontSz">
+                                        class="box w-20 my-2 text-black-50 d-flex flex-column justify-content-center align-items-center fontSz pg_8_answer">
                                         <svg xmlns="http://www.w3.org/2000/svg" width="30" height="30"
                                             fill="currentColor" class="bi bi-camera-fill" viewBox="0 0 16 16">
                                             <path d="M10.5 8.5a2.5 2.5 0 1 1-5 0 2.5 2.5 0 0 1 5 0z" />
@@ -610,18 +610,29 @@
                                         </svg>
                                         사진 첨부
                                     </div>
-                                    <div class="pat mx-3 d-flex align-items-end">
-                                        <div class="text-black-50 fontSz">어떤 서류가 필요한가요?</div>
-                                        <div class="mx-1"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16"
-                                                fill="currentColor" class="bi bi-chevron-right" viewBox="0 0 16 16">
-                                                <path fill-rule="evenodd"
-                                                    d="M4.646 1.646a.5.5 0 0 1 .708 0l6 6a.5.5 0 0 1 0 .708l-6 6a.5.5 0 0 1-.708-.708L10.293 8 4.646 2.354a.5.5 0 0 1 0-.708z" />
-                                            </svg></div>
+                                    
+                                </div>
+                                <div class="pop addShadow d-flex flex-column align-items-start">
+                                    <div class="text-black-50 d-flex justify-content-start">
+                                        <div class="p-3"><svg xmlns="http://www.w3.org/2000/svg" width="25" height="25" fill="currentColor" class="bi bi-image" viewBox="0 0 16 16">
+                                                <path d="M6.002 5.5a1.5 1.5 0 1 1-3 0 1.5 1.5 0 0 1 3 0z"/>
+                                                <path d="M2.002 1a2 2 0 0 0-2 2v10a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V3a2 2 0 0 0-2-2h-12zm12 1a1 1 0 0 1 1 1v6.5l-3.777-1.947a.5.5 0 0 0-.577.093l-3.71 3.71-2.66-1.772a.5.5 0 0 0-.63.062L1.002 12V3a1 1 0 0 1 1-1h12z"/>
+                                            </svg>
+                                        </div>
+                                        <div class="p-3" style="font-size: large; font-weight: bold;">사진첩에서 가져오기</div>
                                     </div>
-                                    <h1>선택하는 팝엄 뜨는 화면</h1><!--지우기-->
+                                    <div class="text-black-50 d-flex justify-content-start">
+                                        <div class="p-3">
+                                            <svg xmlns="http://www.w3.org/2000/svg" width="25" height="25" fill="currentColor" class="bi bi-camera" viewBox="0 0 16 16">
+                                                <path d="M15 12a1 1 0 0 1-1 1H2a1 1 0 0 1-1-1V6a1 1 0 0 1 1-1h1.172a3 3 0 0 0 2.12-.879l.83-.828A1 1 0 0 1 6.827 3h2.344a1 1 0 0 1 .707.293l.828.828A3 3 0 0 0 12.828 5H14a1 1 0 0 1 1 1v6zM2 4a2 2 0 0 0-2 2v6a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V6a2 2 0 0 0-2-2h-1.172a2 2 0 0 1-1.414-.586l-.828-.828A2 2 0 0 0 9.172 2H6.828a2 2 0 0 0-1.414.586l-.828.828A2 2 0 0 1 3.172 4H2z"/>
+                                                <path d="M8 11a2.5 2.5 0 1 1 0-5 2.5 2.5 0 0 1 0 5zm0 1a3.5 3.5 0 1 0 0-7 3.5 3.5 0 0 0 0 7zM3 6.5a.5.5 0 1 1-1 0 .5.5 0 0 1 1 0z"/>
+                                          </svg>
+                                        </div>
+                                        <div class="p-3" style="font-size: large; font-weight: bold;">사진 촬영하기</div>
+                                    </div>
                                 </div>
                                 <div class="w-100 absolute-bottom flex-center-center p-3">
-                                    <button type="button" class="btn flex-center-center w-100 toss btn-b btn-lg fontSz">
+                                    <button type="button" class="btn flex-center-center w-100 toss btn-b btn-lg fontSz" disabled>
                                         다음
                                     </button>
                                 </div>
@@ -630,7 +641,20 @@
                         <!------------------------------ page 10 ------------------------------>
                         <div class="page" id="p10">
                             <div class="page_wrap">
-                                갤러리 화면
+                                <div class="top_bar">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="50" height="50" fill="currentColor"
+                                        class="bi bi-arrow-left-short" viewBox="0 0 16 16">
+                                        <path fill-rule="evenodd"
+                                            d="M12 8a.5.5 0 0 1-.5.5H5.707l2.147 2.146a.5.5 0 0 1-.708.708l-3-3a.5.5 0 0 1 0-.708l3-3a.5.5 0 1 1 .708.708L5.707 7.5H11.5a.5.5 0 0 1 .5.5z" />
+                                    </svg>
+                                    <div class="p-3" style="font-size: large;">앨범선택</div>
+                                </div>
+                                <div class="w-100 d-flex align-items-center">
+                                    <div class="icon" style="background-color: cyan;"></div>
+                                    <div class="icon" style="background-color: magenta;"></div>
+                                    <div class="icon" style="background-color: yellow;"></div>
+                                    <div class="icon" style="background-color: black;"></div>
+                                </div>
                             </div>
                         </div>
                         <!------------------------------ page 11 ------------------------------>
@@ -651,21 +675,27 @@
                                         최대 10장
                                     </div>
                                     <div class="h-10"></div>
-                                    <div
-                                        class="box w-20 my-2 d-flex flex-column justify-content-center align-items-center fontSz">
-                                        선택사진
+                                    <div class="d-flex align-items-center">
+                                        <div
+                                            class="icon w-20 my-2 text-black-50 d-flex justify-content-end align-items-start fontSz" style="background-color: cyan;">
+                                            <div class="">
+                                                <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor" class="bi bi-x-circle-fill" viewBox="0 0 16 16">
+                                                    <path d="M16 8A8 8 0 1 1 0 8a8 8 0 0 1 16 0zM5.354 4.646a.5.5 0 1 0-.708.708L7.293 8l-2.647 2.646a.5.5 0 0 0 .708.708L8 8.707l2.646 2.647a.5.5 0 0 0 .708-.708L8.707 8l2.647-2.646a.5.5 0 0 0-.708-.708L8 7.293 5.354 4.646z"/>
+                                                </svg>
+                                            </div>
+                                        </div>
+                                        <div
+                                            class="box w-20 mx-3 my-2 text-black-50 d-flex flex-column justify-content-center align-items-center fontSz">
+                                            <svg xmlns="http://www.w3.org/2000/svg" width="30" height="30"
+                                                fill="currentColor" class="bi bi-camera-fill" viewBox="0 0 16 16">
+                                                <path d="M10.5 8.5a2.5 2.5 0 1 1-5 0 2.5 2.5 0 0 1 5 0z" />
+                                                <path
+                                                    d="M2 4a2 2 0 0 0-2 2v6a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V6a2 2 0 0 0-2-2h-1.172a2 2 0 0 1-1.414-.586l-.828-.828A2 2 0 0 0 9.172 2H6.828a2 2 0 0 0-1.414.586l-.828.828A2 2 0 0 1 3.172 4H2zm.5 2a.5.5 0 1 1 0-1 .5.5 0 0 1 0 1zm9 2.5a3.5 3.5 0 1 1-7 0 3.5 3.5 0 0 1 7 0z" />
+                                            </svg>
+                                            사진 첨부
+                                        </div>
                                     </div>
-                                    <div
-                                        class="box w-20 my-2 d-flex flex-column justify-content-center align-items-center fontSz">
-                                        <svg xmlns="http://www.w3.org/2000/svg" width="30" height="30"
-                                            fill="currentColor" class="bi bi-camera-fill" viewBox="0 0 16 16">
-                                            <path d="M10.5 8.5a2.5 2.5 0 1 1-5 0 2.5 2.5 0 0 1 5 0z" />
-                                            <path
-                                                d="M2 4a2 2 0 0 0-2 2v6a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V6a2 2 0 0 0-2-2h-1.172a2 2 0 0 1-1.414-.586l-.828-.828A2 2 0 0 0 9.172 2H6.828a2 2 0 0 0-1.414.586l-.828.828A2 2 0 0 1 3.172 4H2zm.5 2a.5.5 0 1 1 0-1 .5.5 0 0 1 0 1zm9 2.5a3.5 3.5 0 1 1-7 0 3.5 3.5 0 0 1 7 0z" />
-                                        </svg>
-                                        사진 첨부
-                                    </div>
-                                    <div class="pat mx-3 d-flex align-items-end">
+                                    <div class="pat pt-3 d-flex align-items-start">
                                         <div class="text-black-50 fontSz">어떤 서류가 필요한가요?</div>
                                         <div class="mx-1"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16"
                                                 fill="currentColor" class="bi bi-chevron-right" viewBox="0 0 16 16">
@@ -675,7 +705,7 @@
                                     </div>
                                 </div>
                                 <div class="w-100 absolute-bottom flex-center-center p-3">
-                                    <button type="button" class="btn flex-center-center w-100 toss btn-b btn-lg fontSz pg_11_answer">
+                                    <button type="button" class="btn flex-center-center w-100 toss btn-b btn-lg fontSz">
                                         다음
                                     </button>
                                 </div>
