@@ -296,7 +296,8 @@ Firefox 브라우저를 위해서는 -moz- 를 사용하세요 */
 #p8,
 #p9,
 #p10,
-#p11
+#p11,
+#p12
 {
    display:none;
 }/*가장 큰 페이지 수 만큼 늘리기*/
@@ -580,7 +581,9 @@ body {
   font-size: smaller;
 }
 
-.h-10{  height: 10%;} .h-20{  height: 20%;} .h-30 {  height: 30%;} .h-40{  height: 40%;}
+.h-10{  height: 10%;} .h-20{  height: 20%;} .h-30 {  height: 30%;} .h-40{  height: 40%;} .h-45{  height: 45%;} .h-60{  height: 60%;} 
+.h-80{  height: 80%;} .h-90{  height: 90%;}
+
 .w-10{  width: 10%; } .w-20{  width: 20%;} .w-30 {  width: 30%;} .w-40{  width: 40%;} .w-45{  width: 45%;} .w-60{  width: 60%;} 
 .w-80{  width: 80%;} .w-90{  width: 90%;}
 
@@ -588,4 +591,10 @@ body {
   display: flex;
   justify-content: center;
   align-items: center;
+}
+
+.flex-start-start {
+  display: flex;
+  justify-content: flex-start;
+  align-items: flex-start;
 }

@@ -19,6 +19,16 @@
     background:#D1D1D1!important;
 }
 
+svg {
+    margin-right: .3em;
+    width: 1em;
+    height: 1em;
+}
+
+.baricon > svg {
+    margin: 0;
+}
+
 #p1 .pg_top{
     width: 100%;
     min-height: 83%;
@@ -219,7 +229,7 @@
 #p8 .under_bar,
 #p9 .under_bar {
     width: 100%;
-    min-height: 8vh;
+    height: 8vh;
     border-radius: 0;
     background: #fff;
     border-top: 1px solid #ced4da;
@@ -228,15 +238,27 @@
 #p8 .under_bar .baricon_wrap,
 #p9 .under_bar .baricon_wrap {
     width: 20%;
+    height: 100%;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    padding-top: .5em;
+    padding-bottom: .5em;
 }
 
 #p8 .under_bar .baricon_wrap .bartext,
 #p9 .under_bar .baricon_wrap .bartext {
     font-size: smaller;
+}
+
+#p8 .under_bar .baricon_wrap .baricon > svg,
+#p9 .under_bar .baricon_wrap .baricon > svg {
+    margin: 0;
+}
+
+#p9 .scroll {
+    height: 79vh;
 }
 
 #p9 .profile_wrap {
@@ -248,7 +270,7 @@
 
 #p9 .pay_wrap {
     width: 100%;
-    min-height: 17vh;
+    min-height: 20vh;
     display: flex;
     flex-direction: column;
     justify-content: space-around;
@@ -258,8 +280,8 @@
 
 #p9 .pay_wrap .btn {
     width: 50%;
-    margin-left: .7em;
-    margin-right: .7em;
+    margin-left: .3em;
+    margin-right: .3em;
 }
 
 #p9 .btn {
@@ -268,4 +290,58 @@
     align-items: center;
     min-height: 5vh;
     background:#F2F3F7!important;
+}
+
+#p9 ul{
+    margin: 0;
+}
+
+
+#p9 ul li {
+    width: 100%;
+    min-height: 5vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+    padding-top: 1em;
+    padding-bottom: 1em;
+}
+
+#p9 ul li:not(:last-child) {
+    border-bottom: 1px solid #ced4da;
+}
+
+#p9 ul li .list-item {
+    width: 100%;
+    padding-top: .7em;
+    padding-bottom: .7em;
+    padding-left: 1.5rem;
+    padding-right: 1.5rem;
+}
+
+.top_icon > svg {
+    width: 1.3em;
+    height: 1.3em;
+}
+
+#p10 .tab,
+#p11 .tab {
+    min-height: 5vh;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: 1px solid #ced4da;
+    padding: 0;
+}
+
+#p10 .tab > input,
+#p11 .tab > input {
+    border: 0;
+}
+
+#p11 .keyword {
+    border: 1px solid #ced4da;
+    padding: .5em;
+    padding-left: 1em;
 }

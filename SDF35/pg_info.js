@@ -1,4 +1,4 @@
-var total_page = 10;//페이지 수 -> 시나리오마다 total_page 수 바꾸기 
+var total_page = 11;//페이지 수 -> 시나리오마다 total_page 수 바꾸기 
 
 // -----------------------------------------------------------------------------------------------------------------------
 //정답 처리할 영역 클래스 명
@@ -49,6 +49,14 @@ const pageClickArea = [
         page: 10,
         correctAnswer: "pg_10_answer"
     },
+    {
+        page: 11,
+        correctAnswer: "pg_11_answer"
+    },
+    {
+        page: 12,
+        correctAnswer: "pg_12_answer"
+    },
 ];
 
 // -=----------------------------------------------------------------------------------------------------------------------
@@ -68,6 +76,8 @@ const inputAnswer = [
         page: 2,
         inputableAnswer: "인사동"
     },
+    {},
+    {},
     {},
     {},
     {},
@@ -123,6 +133,14 @@ const modalCont = [
     },
     {
         page: 10,
+        instruction: "하단의 '호출하기 버튼을 클릭하세요."
+    },
+    {
+        page: 11,
+        instruction: "하단의 '호출하기 버튼을 클릭하세요."
+    },
+    {
+        page: 12,
         instruction: "마지막 페이지"
     },
 ];
