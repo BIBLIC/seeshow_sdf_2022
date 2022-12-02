@@ -2,7 +2,8 @@
 <html>
 
 <head>
-    <meta name="viewport" content="width=device-width,height=device-height,initial-scale=1.0,minimum-scale=1.0,maximum-scale=1.0">
+    <meta name="viewport"
+        content="width=device-width,height=device-height,initial-scale=1.0,minimum-scale=1.0,maximum-scale=1.0">
     <title>SDF</title>
     <link href="../common/styles/reset.css" rel="stylesheet" />
     <link href="./css/main.css" rel="stylesheet" />
@@ -122,11 +123,23 @@
                                             휴대폰 설정 &gt; 앱 &gt; 카카오 T<br>
                                         </div>
                                     </div>
-                                        <button type="button" class="under_bar btn w-100 rounded-0 fontSz">
+                                    <div class="under_bar cursor_pos_1">
+                                        <button type="button" class="btn w-100 rounded-0 fontSz pg_1_answer">
                                             확인
                                         </button>
+                                        <!-- 커서 가이드 -->
+                                        <div class="cursor_wrap cursor_wrap_1">
+                                            <span class="cursor" x-placement="bottom">
+                                                <button class="react-joyride__beacon" type="button">
+                                                    <span class="cursor_outer"></span>
+                                                    <span class="cursor_inner"><span>
+                                                </button>
+                                            </span>
+                                        </div>
+                                        <!-- 커서 가이드 -->
+                                    </div>
                                 </div>
-                                
+
 
                             </div>
                         </div>
@@ -197,12 +210,50 @@
                                             휴대폰 설정 &gt; 앱 &gt; 카카오 T<br>
                                         </div>
                                     </div>
-                                        <button type="button" class="under_bar btn w-100 rounded-0 fontSz">
-                                            확인
-                                        </button>
+                                    <button type="button" class="under_bar btn w-100 rounded-0 fontSz">
+                                        확인
+                                    </button>
                                 </div>
-                                
 
+                                <!--  모달창 입니다  -->
+                                <div class="" id="modal_">
+                                    <div class="content">
+                                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16"
+                                            fill="currentColor" class="bi bi-geo-alt-fill" viewBox="0 0 16 16"
+                                            style="color:#009688;">
+                                            <path
+                                                d="M8 16s6-5.686 6-10A6 6 0 0 0 2 6c0 4.314 6 10 6 10zm0-7a3 3 0 1 1 0-6 3 3 0 0 1 0 6z" />
+                                        </svg>
+                                        <div class="modal_cont fontSz text-center">
+                                            <a class="fw-bold">카카오T</a>의 다음 작업을 허용하시겠습니까?
+                                            이 기기의 위치정보에 액세스
+                                        </div>
+                                    </div>
+                                    <div class="modal_bottom_wrap">
+                                        <div class="">
+                                            1/3
+                                        </div>
+                                        <div class="btn_wrap">
+                                            <div class="px-3" type="button" style="color:#009688;">거부</div>
+                                            <div class=" cursor_pos_2">
+                                                <div class="px-3 pg_2_answer" type="button" style="color:#009688;">허용
+                                                </div>
+                                                <!-- 커서 가이드 -->
+                                                <div class="cursor_wrap cursor_wrap_2 pg_2_answer">
+                                                    <span class="cursor" x-placement="bottom pg_2_answer">
+                                                        <button class="react-joyride__beacon pg_2_answer" type="button">
+                                                            <span class="cursor_outer pg_2_answer"></span>
+                                                            <span class="cursor_inner pg_2_answer"><span>
+                                                        </button>
+                                                    </span>
+                                                </div>
+                                                <!-- 커서 가이드 -->
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                </div>
+                                <!-- 여기까지 모달창 -->
                             </div>
                         </div>
                         <!------------------------------ page 3 ------------------------------>
@@ -272,11 +323,36 @@
                                             휴대폰 설정 &gt; 앱 &gt; 카카오 T<br>
                                         </div>
                                     </div>
-                                        <button type="button" class="under_bar btn w-100 rounded-0 fontSz">
-                                            확인
-                                        </button>
+                                    <button type="button" class="under_bar btn w-100 rounded-0 fontSz">
+                                        확인
+                                    </button>
                                 </div>
-                                
+                                <!--  모달창 입니다  -->
+                                <div class="" id="modal_">
+                                    <div class="content">
+                                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16"
+                                            fill="currentColor" class="bi bi-folder-fill" viewBox="0 0 16 16">
+                                            <path
+                                                d="M9.828 3h3.982a2 2 0 0 1 1.992 2.181l-.637 7A2 2 0 0 1 13.174 14H2.825a2 2 0 0 1-1.991-1.819l-.637-7a1.99 1.99 0 0 1 .342-1.31L.5 3a2 2 0 0 1 2-2h3.672a2 2 0 0 1 1.414.586l.828.828A2 2 0 0 0 9.828 3zm-8.322.12C1.72 3.042 1.95 3 2.19 3h5.396l-.707-.707A1 1 0 0 0 6.172 2H2.5a1 1 0 0 0-1 .981l.006.139z"
+                                                style="color:#009688;" />
+                                        </svg>
+                                        <div class="modal_cont fontSz text-center">
+                                            <a class="fw-bold">카카오T</a>의 다음 작업을 허용하시겠습니까?
+                                            기기 사진, 미디어, 파일 액세스
+                                        </div>
+                                    </div>
+                                    <div class="modal_bottom_wrap">
+                                        <div class="">
+                                            2/3
+                                        </div>
+                                        <div class="btn_wrap">
+                                            <div class="px-3" type="button" style="color:#009688;">거부</div>
+                                            <div class="px-3 pg_3_answer" type="button" style="color:#009688;">허용</div>
+                                        </div>
+                                    </div>
+
+                                </div>
+                                <!-- 여기까지 모달창 -->
 
                             </div>
                         </div>
@@ -347,11 +423,36 @@
                                             휴대폰 설정 &gt; 앱 &gt; 카카오 T<br>
                                         </div>
                                     </div>
-                                        <button type="button" class="under_bar btn w-100 rounded-0 fontSz">
-                                            확인
-                                        </button>
+                                    <button type="button" class="under_bar btn w-100 rounded-0 fontSz">
+                                        확인
+                                    </button>
                                 </div>
-                                
+                                <!--  모달창 입니다  -->
+                                <div class="" id="modal_">
+                                    <div class="content">
+                                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16"
+                                            fill="currentColor" class="bi bi-telephone-fill" viewBox="0 0 16 16"
+                                            style="color:#009688;">
+                                            <path fill-rule="evenodd"
+                                                d="M1.885.511a1.745 1.745 0 0 1 2.61.163L6.29 2.98c.329.423.445.974.315 1.494l-.547 2.19a.678.678 0 0 0 .178.643l2.457 2.457a.678.678 0 0 0 .644.178l2.189-.547a1.745 1.745 0 0 1 1.494.315l2.306 1.794c.829.645.905 1.87.163 2.611l-1.034 1.034c-.74.74-1.846 1.065-2.877.702a18.634 18.634 0 0 1-7.01-4.42 18.634 18.634 0 0 1-4.42-7.009c-.362-1.03-.037-2.137.703-2.877L1.885.511z" />
+                                        </svg>
+                                        <div class="modal_cont fontSz text-center">
+                                            <a class="fw-bold">카카오T</a>의 다음 작업을 허용하시겠습니까?
+                                            전화 걸기 및 관리
+                                        </div>
+                                    </div>
+                                    <div class="modal_bottom_wrap">
+                                        <div class="">
+                                            3/3
+                                        </div>
+                                        <div class="btn_wrap">
+                                            <div class="px-3" type="button" style="color:#009688;">거부</div>
+                                            <div class="px-3 pg_4_answer" type="button" style="color:#009688;">허용</div>
+                                        </div>
+                                    </div>
+
+                                </div>
+                                <!-- 여기까지 모달창 -->
 
                             </div>
                         </div>
@@ -379,71 +480,59 @@
                         <div class="page" id="p6">
                             <div class="page_wrap">
                                 <h1 class="pg_title" style="color: #fff;">Page6</h1>
-                                <div class="pop">
-                                    <div class="wrap">
-                                        <ul class="w-100 nav flex-fill flex-column justify-content-center px-3">
-                                            <li class="nav-item li1">
-                                                <div class="w-100 d-flex justify-content-start align-items-center mt-3">
-                                                    <div class="image">
-                                                        <!-- 이미지 추가 -->
-                                                        <img class="icon" src="./img/2.png" alt="">
-                                                    </div>
-                                                    <div
-                                                        class="d-flex flex-fill flex-column justify-content-start align-items-start px-1">
-                                                        <div class="flex-fill fw-bold">
-                                                            카카오 T
-                                                        </div>
-                                                        <div class="text-black-50 text-sm">
-                                                            Kakao Mobility Corp.
-                                                        </div>
-                                                    </div>
-                                                </div>
-                                            </li>
-                                            <li class="nav-item li1">
-                                                <div class="w-100 d-flex justify-content-start align-items-start">
-                                                    <svg xmlns="http://www.w3.org/2000/svg" width="25" height="25"
-                                                        fill="currentColor" class="bi bi-check-circle"
-                                                        viewBox="0 0 16 16">
-                                                        <path
-                                                            d="M8 15A7 7 0 1 1 8 1a7 7 0 0 1 0 14zm0 1A8 8 0 1 0 8 0a8 8 0 0 0 0 16z" />
-                                                        <path
-                                                            d="M10.97 4.97a.235.235 0 0 0-.02.022L7.477 9.417 5.384 7.323a.75.75 0 0 0-1.06 1.06L6.97 11.03a.75.75 0 0 0 1.079-.02l3.992-4.99a.75.75 0 0 0-1.071-1.05z" />
-                                                    </svg>
-                                                    <div
-                                                        class="d-flex flex-fill flex-column justify-content-start align-items-start px-2">
-                                                        <div class="w-100 fw-bold">
-                                                            전체 동의하기
-                                                        </div>
-                                                        <div class="w-100 text-black-50">
-                                                            내용 채워주세요<br>
-                                                            (전체동의는 카카오 및 Kakao Mobility Corp.의 서비스 동의를 포함하고 있습니다.
-                                                            전체동의는~~~)
-                                                        </div>
-                                                    </div>
-                                                </div>
-                                            </li>
-                                            <li class="nav-item text-secondary" style="padding-left: 1.8em;">
-                                                내용 채워주세요<br>
-                                                (전체동의는 카카오 및 Kakao Mobility Corp.의 서비스 동의를 포함하고 있습니다. 전체동의는~~~)
-                                            </li>
-                                            <li class="nav-item">
-                                                내용 채워주세요<br>
-                                            </li>
-                                            <li class="nav-item">
-                                                내용 채워주세요<br>
-                                                내용 채워주세요<br>
-                                                내용 채워주세요<br>
-                                                내용 채워주세요<br>
-                                                내용 채워주세요<br>
-                                            </li>
-                                        </ul>
+                                <div class="pg_top d-flex flex-column justify-content-center align-items-center">
+                                    <div
+                                        class="fontSz top w-100 d-flex flex-column justify-content-center align-items-center">
+                                        <h4>kakaoT</h4>
+                                        <div>권한 허용 후 서비스를 이용할 수 있습니다.</div>
                                     </div>
-                                    <button type="button" class="btn btn-y w-100 ">
-                                        동의하고 계속하기
+                                    <ul class="w-100 nav flex-column justify-content-center">
+                                        <li class="fontSz nav-item">
+                                            <div>전화</div>
+                                            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16"
+                                                fill="currentColor" class="bi bi-chevron-down" viewBox="0 0 16 16">
+                                                <path fill-rule="evenodd"
+                                                    d="M1.646 4.646a.5.5 0 0 1 .708 0L8 10.293l5.646-5.647a.5.5 0 0 1 .708.708l-6 6a.5.5 0 0 1-.708 0l-6-6a.5.5 0 0 1 0-.708z" />
+                                            </svg>
+                                        </li>
+                                        <li class="fontSz nav-item">
+                                            <div>저장</div>
+                                            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16"
+                                                fill="currentColor" class="bi bi-chevron-down" viewBox="0 0 16 16">
+                                                <path fill-rule="evenodd"
+                                                    d="M1.646 4.646a.5.5 0 0 1 .708 0L8 10.293l5.646-5.647a.5.5 0 0 1 .708.708l-6 6a.5.5 0 0 1-.708 0l-6-6a.5.5 0 0 1 0-.708z" />
+                                            </svg>
+                                        </li>
+                                        <li class="fontSz nav-item">
+                                            <div>주소록</div>
+                                            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16"
+                                                fill="currentColor" class="bi bi-chevron-down" viewBox="0 0 16 16">
+                                                <path fill-rule="evenodd"
+                                                    d="M1.646 4.646a.5.5 0 0 1 .708 0L8 10.293l5.646-5.647a.5.5 0 0 1 .708.708l-6 6a.5.5 0 0 1-.708 0l-6-6a.5.5 0 0 1 0-.708z" />
+                                            </svg>
+                                        </li>
+                                    </ul>
+                                    <div
+                                        class="fontSz w-100 d-flex flex-column justify-content-start align-items-center mt-3">
+                                        <div class="fontSz w-100 d-flex justify-content-start align-items-center">
+                                            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16"
+                                                fill="currentColor" class="bi bi-info-circle" viewBox="0 0 16 16">
+                                                <path
+                                                    d="M8 15A7 7 0 1 1 8 1a7 7 0 0 1 0 14zm0 1A8 8 0 1 0 8 0a8 8 0 0 0 0 16z" />
+                                                <path
+                                                    d="m8.93 6.588-2.29.287-.082.38.45.083c.294.07.352.176.288.469l-.738 3.468c-.194.897.105 1.319.808 1.319.545 0 1.178-.252 1.465-.598l.088-.416c-.2.176-.492.246-.686.246-.275 0-.375-.193-.304-.533L8.93 6.588zM9 4.5a1 1 0 1 1-2 0 1 1 0 0 1 2 0z" />
+                                            </svg>
+                                            <div class="w-100 text-black-50">
+                                                &nbsp;권한 허용 후 카카오톡을 시작합니다.
+                                            </div>
+                                        </div>
+                                        <div class="w-100 text-black-50">
+                                            &nbsp;&nbsp;&nbsp; 아래 '허용하기'를 눌러 권한을 허용해 주세요.
+                                        </div>
+                                    </div>
+                                    <button type="button" class="fontSz btn btn-y w-100 mt-5 pg_6_answer">
+                                        허용하기
                                     </button>
-                                </div>
-                                <div class="border-bottom text-white-50 mt-3">
-                                    취소
                                 </div>
                             </div>
                         </div>
@@ -451,216 +540,258 @@
                         <div class="page" id="p7">
                             <div class="page_wrap">
                                 <h1 class="pg_title" style="color: #fff;">Page7</h1>
-                                <div class="pop">
-                                    <div class="wrap">
-                                        <ul class="w-100 nav flex-fill flex-column justify-content-center px-3">
-                                            <li class="nav-item li1">
-                                                <div class="w-100 d-flex justify-content-start align-items-center mt-3">
-                                                    <div class="image">
-                                                        <!-- 이미지 추가 -->
-                                                        <img class="icon" src="./img/2.png" alt="">
-                                                    </div>
-                                                    <div
-                                                        class="d-flex flex-fill flex-column justify-content-start align-items-start px-1">
-                                                        <div class="flex-fill fw-bold">
-                                                            카카오 T
-                                                        </div>
-                                                        <div class="text-black-50 text-sm">
-                                                            Kakao Mobility Corp.
-                                                        </div>
-                                                    </div>
-                                                </div>
-                                            </li>
-                                            <li class="nav-item li1">
-                                                <div class="w-100 d-flex justify-content-start align-items-start">
-                                                    <svg xmlns="http://www.w3.org/2000/svg" width="25" height="25"
-                                                        fill="currentColor" class="bi bi-check-circle"
-                                                        viewBox="0 0 16 16">
-                                                        <path
-                                                            d="M8 15A7 7 0 1 1 8 1a7 7 0 0 1 0 14zm0 1A8 8 0 1 0 8 0a8 8 0 0 0 0 16z" />
-                                                        <path
-                                                            d="M10.97 4.97a.235.235 0 0 0-.02.022L7.477 9.417 5.384 7.323a.75.75 0 0 0-1.06 1.06L6.97 11.03a.75.75 0 0 0 1.079-.02l3.992-4.99a.75.75 0 0 0-1.071-1.05z" />
-                                                    </svg>
-                                                    <div
-                                                        class="d-flex flex-fill flex-column justify-content-start align-items-start px-2">
-                                                        <div class="w-100 fw-bold">
-                                                            전체 동의하기
-                                                        </div>
-                                                        <div class="w-100 text-black-50">
-                                                            내용 채워주세요<br>
-                                                            (전체동의는 카카오 및 Kakao Mobility Corp.의 서비스 동의를 포함하고 있습니다.
-                                                            전체동의는~~~)
-                                                        </div>
-                                                    </div>
-                                                </div>
-                                            </li>
-                                            <li class="nav-item text-secondary" style="padding-left: 1.8em;">
-                                                내용 채워주세요<br>
-                                                (전체동의는 카카오 및 Kakao Mobility Corp.의 서비스 동의를 포함하고 있습니다. 전체동의는~~~)
-                                            </li>
-                                            <li class="nav-item">
-                                                내용 채워주세요<br>
-                                            </li>
-                                            <li class="nav-item">
-                                                내용 채워주세요<br>
-                                                내용 채워주세요<br>
-                                                내용 채워주세요<br>
-                                                내용 채워주세요<br>
-                                                내용 채워주세요<br>
-                                            </li>
-                                        </ul>
+                                <div class="pg_top d-flex flex-column justify-content-center align-items-center">
+                                    <div
+                                        class="fontSz top w-100 d-flex flex-column justify-content-center align-items-center">
+                                        <h4>kakaoT</h4>
+                                        <div>권한 허용 후 서비스를 이용할 수 있습니다.</div>
                                     </div>
-                                    <button type="button" class="btn btn-y w-100 ">
-                                        동의하고 계속하기
+                                    <ul class="w-100 nav flex-column justify-content-center">
+                                        <li class="fontSz nav-item">
+                                            <div>전화</div>
+                                            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16"
+                                                fill="currentColor" class="bi bi-chevron-down" viewBox="0 0 16 16">
+                                                <path fill-rule="evenodd"
+                                                    d="M1.646 4.646a.5.5 0 0 1 .708 0L8 10.293l5.646-5.647a.5.5 0 0 1 .708.708l-6 6a.5.5 0 0 1-.708 0l-6-6a.5.5 0 0 1 0-.708z" />
+                                            </svg>
+                                        </li>
+                                        <li class="fontSz nav-item">
+                                            <div>저장</div>
+                                            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16"
+                                                fill="currentColor" class="bi bi-chevron-down" viewBox="0 0 16 16">
+                                                <path fill-rule="evenodd"
+                                                    d="M1.646 4.646a.5.5 0 0 1 .708 0L8 10.293l5.646-5.647a.5.5 0 0 1 .708.708l-6 6a.5.5 0 0 1-.708 0l-6-6a.5.5 0 0 1 0-.708z" />
+                                            </svg>
+                                        </li>
+                                        <li class="fontSz nav-item">
+                                            <div>주소록</div>
+                                            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16"
+                                                fill="currentColor" class="bi bi-chevron-down" viewBox="0 0 16 16">
+                                                <path fill-rule="evenodd"
+                                                    d="M1.646 4.646a.5.5 0 0 1 .708 0L8 10.293l5.646-5.647a.5.5 0 0 1 .708.708l-6 6a.5.5 0 0 1-.708 0l-6-6a.5.5 0 0 1 0-.708z" />
+                                            </svg>
+                                        </li>
+                                    </ul>
+                                    <div
+                                        class="fontSz w-100 d-flex flex-column justify-content-start align-items-center mt-3">
+                                        <div class="fontSz w-100 d-flex justify-content-start align-items-center">
+                                            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16"
+                                                fill="currentColor" class="bi bi-info-circle" viewBox="0 0 16 16">
+                                                <path
+                                                    d="M8 15A7 7 0 1 1 8 1a7 7 0 0 1 0 14zm0 1A8 8 0 1 0 8 0a8 8 0 0 0 0 16z" />
+                                                <path
+                                                    d="m8.93 6.588-2.29.287-.082.38.45.083c.294.07.352.176.288.469l-.738 3.468c-.194.897.105 1.319.808 1.319.545 0 1.178-.252 1.465-.598l.088-.416c-.2.176-.492.246-.686.246-.275 0-.375-.193-.304-.533L8.93 6.588zM9 4.5a1 1 0 1 1-2 0 1 1 0 0 1 2 0z" />
+                                            </svg>
+                                            <div class="w-100 text-black-50">
+                                                &nbsp;권한 허용 후 카카오톡을 시작합니다.
+                                            </div>
+                                        </div>
+                                        <div class="w-100 text-black-50">
+                                            &nbsp;&nbsp;&nbsp; 아래 '허용하기'를 눌러 권한을 허용해 주세요.
+                                        </div>
+                                    </div>
+                                    <button type="button" class="fontSz btn btn-y w-100 mt-5">
+                                        허용하기
                                     </button>
                                 </div>
-                                <div class="border-bottom text-white-50 mt-3">
-                                    취소
+                                <!--  모달창 입니다  -->
+                                <div class="" id="modal_">
+                                    <div class="content">
+                                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16"
+                                            fill="currentColor" class="bi bi-telephone-fill" viewBox="0 0 16 16"
+                                            style="color:#009688;">
+                                            <path fill-rule="evenodd"
+                                                d="M1.885.511a1.745 1.745 0 0 1 2.61.163L6.29 2.98c.329.423.445.974.315 1.494l-.547 2.19a.678.678 0 0 0 .178.643l2.457 2.457a.678.678 0 0 0 .644.178l2.189-.547a1.745 1.745 0 0 1 1.494.315l2.306 1.794c.829.645.905 1.87.163 2.611l-1.034 1.034c-.74.74-1.846 1.065-2.877.702a18.634 18.634 0 0 1-7.01-4.42 18.634 18.634 0 0 1-4.42-7.009c-.362-1.03-.037-2.137.703-2.877L1.885.511z" />
+                                        </svg>
+                                        <div class="modal_cont fontSz text-center">
+                                            <a class="fw-bold">카카오톡</a>의 다음 작업을 허용하시겠습니까?
+                                            전화 걸기 및 관리
+                                        </div>
+                                    </div>
+                                    <div class="modal_bottom_wrap">
+                                        <div class="">
+                                            1/3
+                                        </div>
+                                        <div class="btn_wrap">
+                                            <div class="px-3" type="button" style="color:#009688;">거부</div>
+                                            <div class="px-3 pg_7_answer" type="button" style="color:#009688;">허용</div>
+                                        </div>
+                                    </div>
+
                                 </div>
+                                <!-- 여기까지 모달창 -->
                             </div>
                         </div>
                         <!------------------------------ page 8 ------------------------------>
                         <div class="page" id="p8">
                             <div class="page_wrap">
                                 <h1 class="pg_title" style="color: #fff;">Page8</h1>
-                                <div class="pop">
-                                    <div class="wrap">
-                                        <ul class="w-100 nav flex-fill flex-column justify-content-center px-3">
-                                            <li class="nav-item li1">
-                                                <div class="w-100 d-flex justify-content-start align-items-center mt-3">
-                                                    <div class="image">
-                                                        <!-- 이미지 추가 -->
-                                                        <img class="icon" src="./img/2.png" alt="">
-                                                    </div>
-                                                    <div
-                                                        class="d-flex flex-fill flex-column justify-content-start align-items-start px-1">
-                                                        <div class="flex-fill fw-bold">
-                                                            카카오 T
-                                                        </div>
-                                                        <div class="text-black-50 text-sm">
-                                                            Kakao Mobility Corp.
-                                                        </div>
-                                                    </div>
-                                                </div>
-                                            </li>
-                                            <li class="nav-item li1">
-                                                <div class="w-100 d-flex justify-content-start align-items-start">
-                                                    <svg xmlns="http://www.w3.org/2000/svg" width="25" height="25"
-                                                        fill="currentColor" class="bi bi-check-circle"
-                                                        viewBox="0 0 16 16">
-                                                        <path
-                                                            d="M8 15A7 7 0 1 1 8 1a7 7 0 0 1 0 14zm0 1A8 8 0 1 0 8 0a8 8 0 0 0 0 16z" />
-                                                        <path
-                                                            d="M10.97 4.97a.235.235 0 0 0-.02.022L7.477 9.417 5.384 7.323a.75.75 0 0 0-1.06 1.06L6.97 11.03a.75.75 0 0 0 1.079-.02l3.992-4.99a.75.75 0 0 0-1.071-1.05z" />
-                                                    </svg>
-                                                    <div
-                                                        class="d-flex flex-fill flex-column justify-content-start align-items-start px-2">
-                                                        <div class="w-100 fw-bold">
-                                                            전체 동의하기
-                                                        </div>
-                                                        <div class="w-100 text-black-50">
-                                                            내용 채워주세요<br>
-                                                            (전체동의는 카카오 및 Kakao Mobility Corp.의 서비스 동의를 포함하고 있습니다.
-                                                            전체동의는~~~)
-                                                        </div>
-                                                    </div>
-                                                </div>
-                                            </li>
-                                            <li class="nav-item text-secondary" style="padding-left: 1.8em;">
-                                                내용 채워주세요<br>
-                                                (전체동의는 카카오 및 Kakao Mobility Corp.의 서비스 동의를 포함하고 있습니다. 전체동의는~~~)
-                                            </li>
-                                            <li class="nav-item">
-                                                내용 채워주세요<br>
-                                            </li>
-                                            <li class="nav-item">
-                                                내용 채워주세요<br>
-                                                내용 채워주세요<br>
-                                                내용 채워주세요<br>
-                                                내용 채워주세요<br>
-                                                내용 채워주세요<br>
-                                            </li>
-                                        </ul>
+                                <div class="pg_top d-flex flex-column justify-content-center align-items-center">
+                                    <div
+                                        class="fontSz top w-100 d-flex flex-column justify-content-center align-items-center">
+                                        <h4>kakaoT</h4>
+                                        <div>권한 허용 후 서비스를 이용할 수 있습니다.</div>
                                     </div>
-                                    <button type="button" class="btn btn-y w-100 ">
-                                        동의하고 계속하기
+                                    <ul class="w-100 nav flex-column justify-content-center">
+                                        <li class="fontSz nav-item">
+                                            <div>전화</div>
+                                            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16"
+                                                fill="currentColor" class="bi bi-chevron-down" viewBox="0 0 16 16">
+                                                <path fill-rule="evenodd"
+                                                    d="M1.646 4.646a.5.5 0 0 1 .708 0L8 10.293l5.646-5.647a.5.5 0 0 1 .708.708l-6 6a.5.5 0 0 1-.708 0l-6-6a.5.5 0 0 1 0-.708z" />
+                                            </svg>
+                                        </li>
+                                        <li class="fontSz nav-item">
+                                            <div>저장</div>
+                                            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16"
+                                                fill="currentColor" class="bi bi-chevron-down" viewBox="0 0 16 16">
+                                                <path fill-rule="evenodd"
+                                                    d="M1.646 4.646a.5.5 0 0 1 .708 0L8 10.293l5.646-5.647a.5.5 0 0 1 .708.708l-6 6a.5.5 0 0 1-.708 0l-6-6a.5.5 0 0 1 0-.708z" />
+                                            </svg>
+                                        </li>
+                                        <li class="fontSz nav-item">
+                                            <div>주소록</div>
+                                            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16"
+                                                fill="currentColor" class="bi bi-chevron-down" viewBox="0 0 16 16">
+                                                <path fill-rule="evenodd"
+                                                    d="M1.646 4.646a.5.5 0 0 1 .708 0L8 10.293l5.646-5.647a.5.5 0 0 1 .708.708l-6 6a.5.5 0 0 1-.708 0l-6-6a.5.5 0 0 1 0-.708z" />
+                                            </svg>
+                                        </li>
+                                    </ul>
+                                    <div
+                                        class="fontSz w-100 d-flex flex-column justify-content-start align-items-center mt-3">
+                                        <div class="fontSz w-100 d-flex justify-content-start align-items-center">
+                                            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16"
+                                                fill="currentColor" class="bi bi-info-circle" viewBox="0 0 16 16">
+                                                <path
+                                                    d="M8 15A7 7 0 1 1 8 1a7 7 0 0 1 0 14zm0 1A8 8 0 1 0 8 0a8 8 0 0 0 0 16z" />
+                                                <path
+                                                    d="m8.93 6.588-2.29.287-.082.38.45.083c.294.07.352.176.288.469l-.738 3.468c-.194.897.105 1.319.808 1.319.545 0 1.178-.252 1.465-.598l.088-.416c-.2.176-.492.246-.686.246-.275 0-.375-.193-.304-.533L8.93 6.588zM9 4.5a1 1 0 1 1-2 0 1 1 0 0 1 2 0z" />
+                                            </svg>
+                                            <div class="w-100 text-black-50">
+                                                &nbsp;권한 허용 후 카카오톡을 시작합니다.
+                                            </div>
+                                        </div>
+                                        <div class="w-100 text-black-50">
+                                            &nbsp;&nbsp;&nbsp; 아래 '허용하기'를 눌러 권한을 허용해 주세요.
+                                        </div>
+                                    </div>
+                                    <button type="button" class="fontSz btn btn-y w-100 mt-5">
+                                        허용하기
                                     </button>
                                 </div>
-                                <div class="border-bottom text-white-50 mt-3">
-                                    취소
+                                <!--  모달창 입니다  -->
+                                <div class="" id="modal_">
+                                    <div class="content">
+                                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16"
+                                            fill="currentColor" class="bi bi-folder-fill" viewBox="0 0 16 16">
+                                            <path
+                                                d="M9.828 3h3.982a2 2 0 0 1 1.992 2.181l-.637 7A2 2 0 0 1 13.174 14H2.825a2 2 0 0 1-1.991-1.819l-.637-7a1.99 1.99 0 0 1 .342-1.31L.5 3a2 2 0 0 1 2-2h3.672a2 2 0 0 1 1.414.586l.828.828A2 2 0 0 0 9.828 3zm-8.322.12C1.72 3.042 1.95 3 2.19 3h5.396l-.707-.707A1 1 0 0 0 6.172 2H2.5a1 1 0 0 0-1 .981l.006.139z"
+                                                style="color:#009688;" />
+                                        </svg>
+                                        <div class="modal_cont fontSz text-center">
+                                            <a class="fw-bold">카카오톡</a>의 다음 작업을 허용하시겠습니까?
+                                            기기 사진, 미디어, 파일 액세스
+                                        </div>
+                                    </div>
+                                    <div class="modal_bottom_wrap">
+                                        <div class="">
+                                            2/3
+                                        </div>
+                                        <div class="btn_wrap">
+                                            <div class="px-3" type="button" style="color:#009688;">거부</div>
+                                            <div class="px-3 pg_8_answer" type="button" style="color:#009688;">허용</div>
+                                        </div>
+                                    </div>
+
                                 </div>
+                                <!-- 여기까지 모달창 -->
                             </div>
                         </div>
                         <!------------------------------ page 9 ------------------------------>
                         <div class="page" id="p9">
                             <div class="page_wrap">
                                 <h1 class="pg_title" style="color: #fff;">Page9</h1>
-                                <div class="pop">
-                                    <div class="wrap">
-                                        <ul class="w-100 nav flex-fill flex-column justify-content-center px-3">
-                                            <li class="nav-item li1">
-                                                <div class="w-100 d-flex justify-content-start align-items-center mt-3">
-                                                    <div class="image">
-                                                        <!-- 이미지 추가 -->
-                                                        <img class="icon" src="./img/2.png" alt="">
-                                                    </div>
-                                                    <div
-                                                        class="d-flex flex-fill flex-column justify-content-start align-items-start px-1">
-                                                        <div class="flex-fill fw-bold">
-                                                            카카오 T
-                                                        </div>
-                                                        <div class="text-black-50 text-sm">
-                                                            Kakao Mobility Corp.
-                                                        </div>
-                                                    </div>
-                                                </div>
-                                            </li>
-                                            <li class="nav-item li1">
-                                                <div class="w-100 d-flex justify-content-start align-items-start">
-                                                    <svg xmlns="http://www.w3.org/2000/svg" width="25" height="25"
-                                                        fill="currentColor" class="bi bi-check-circle"
-                                                        viewBox="0 0 16 16">
-                                                        <path
-                                                            d="M8 15A7 7 0 1 1 8 1a7 7 0 0 1 0 14zm0 1A8 8 0 1 0 8 0a8 8 0 0 0 0 16z" />
-                                                        <path
-                                                            d="M10.97 4.97a.235.235 0 0 0-.02.022L7.477 9.417 5.384 7.323a.75.75 0 0 0-1.06 1.06L6.97 11.03a.75.75 0 0 0 1.079-.02l3.992-4.99a.75.75 0 0 0-1.071-1.05z" />
-                                                    </svg>
-                                                    <div
-                                                        class="d-flex flex-fill flex-column justify-content-start align-items-start px-2">
-                                                        <div class="w-100 fw-bold">
-                                                            전체 동의하기
-                                                        </div>
-                                                        <div class="w-100 text-black-50">
-                                                            내용 채워주세요<br>
-                                                            (전체동의는 카카오 및 Kakao Mobility Corp.의 서비스 동의를 포함하고 있습니다.
-                                                            전체동의는~~~)
-                                                        </div>
-                                                    </div>
-                                                </div>
-                                            </li>
-                                            <li class="nav-item text-secondary" style="padding-left: 1.8em;">
-                                                내용 채워주세요<br>
-                                                (전체동의는 카카오 및 Kakao Mobility Corp.의 서비스 동의를 포함하고 있습니다. 전체동의는~~~)
-                                            </li>
-                                            <li class="nav-item">
-                                                내용 채워주세요<br>
-                                            </li>
-                                            <li class="nav-item">
-                                                내용 채워주세요<br>
-                                                내용 채워주세요<br>
-                                                내용 채워주세요<br>
-                                                내용 채워주세요<br>
-                                                내용 채워주세요<br>
-                                            </li>
-                                        </ul>
+                                <div class="pg_top d-flex flex-column justify-content-center align-items-center">
+                                    <div
+                                        class="fontSz top w-100 d-flex flex-column justify-content-center align-items-center">
+                                        <h4>kakaoT</h4>
+                                        <div>권한 허용 후 서비스를 이용할 수 있습니다.</div>
                                     </div>
-                                    <button type="button" class="btn btn-y w-100 ">
-                                        동의하고 계속하기
+                                    <ul class="w-100 nav flex-column justify-content-center">
+                                        <li class="fontSz nav-item">
+                                            <div>전화</div>
+                                            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16"
+                                                fill="currentColor" class="bi bi-chevron-down" viewBox="0 0 16 16">
+                                                <path fill-rule="evenodd"
+                                                    d="M1.646 4.646a.5.5 0 0 1 .708 0L8 10.293l5.646-5.647a.5.5 0 0 1 .708.708l-6 6a.5.5 0 0 1-.708 0l-6-6a.5.5 0 0 1 0-.708z" />
+                                            </svg>
+                                        </li>
+                                        <li class="fontSz nav-item">
+                                            <div>저장</div>
+                                            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16"
+                                                fill="currentColor" class="bi bi-chevron-down" viewBox="0 0 16 16">
+                                                <path fill-rule="evenodd"
+                                                    d="M1.646 4.646a.5.5 0 0 1 .708 0L8 10.293l5.646-5.647a.5.5 0 0 1 .708.708l-6 6a.5.5 0 0 1-.708 0l-6-6a.5.5 0 0 1 0-.708z" />
+                                            </svg>
+                                        </li>
+                                        <li class="fontSz nav-item">
+                                            <div>주소록</div>
+                                            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16"
+                                                fill="currentColor" class="bi bi-chevron-down" viewBox="0 0 16 16">
+                                                <path fill-rule="evenodd"
+                                                    d="M1.646 4.646a.5.5 0 0 1 .708 0L8 10.293l5.646-5.647a.5.5 0 0 1 .708.708l-6 6a.5.5 0 0 1-.708 0l-6-6a.5.5 0 0 1 0-.708z" />
+                                            </svg>
+                                        </li>
+                                    </ul>
+                                    <div
+                                        class="fontSz w-100 d-flex flex-column justify-content-start align-items-center mt-3">
+                                        <div class="fontSz w-100 d-flex justify-content-start align-items-center">
+                                            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16"
+                                                fill="currentColor" class="bi bi-info-circle" viewBox="0 0 16 16">
+                                                <path
+                                                    d="M8 15A7 7 0 1 1 8 1a7 7 0 0 1 0 14zm0 1A8 8 0 1 0 8 0a8 8 0 0 0 0 16z" />
+                                                <path
+                                                    d="m8.93 6.588-2.29.287-.082.38.45.083c.294.07.352.176.288.469l-.738 3.468c-.194.897.105 1.319.808 1.319.545 0 1.178-.252 1.465-.598l.088-.416c-.2.176-.492.246-.686.246-.275 0-.375-.193-.304-.533L8.93 6.588zM9 4.5a1 1 0 1 1-2 0 1 1 0 0 1 2 0z" />
+                                            </svg>
+                                            <div class="w-100 text-black-50">
+                                                &nbsp;권한 허용 후 카카오톡을 시작합니다.
+                                            </div>
+                                        </div>
+                                        <div class="w-100 text-black-50">
+                                            &nbsp;&nbsp;&nbsp; 아래 '허용하기'를 눌러 권한을 허용해 주세요.
+                                        </div>
+                                    </div>
+                                    <button type="button" class="fontSz btn btn-y w-100 mt-5">
+                                        허용하기
                                     </button>
                                 </div>
-                                <div class="border-bottom text-white-50 mt-3">
-                                    취소
+                                <!--  모달창 입니다  -->
+                                <div class="" id="modal_">
+                                    <div class="content">
+                                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16"
+                                            fill="currentColor" class="bi bi-geo-alt-fill" viewBox="0 0 16 16"
+                                            style="color:#009688;">
+                                            <path
+                                                d="M8 16s6-5.686 6-10A6 6 0 0 0 2 6c0 4.314 6 10 6 10zm0-7a3 3 0 1 1 0-6 3 3 0 0 1 0 6z" />
+                                        </svg>
+                                        <div class="modal_cont fontSz text-center">
+                                            <a class="fw-bold">카카오톡</a>의 다음 작업을 허용하시겠습니까?
+                                            이 기기의 위치정보에 액세스
+                                        </div>
+                                    </div>
+                                    <div class="modal_bottom_wrap">
+                                        <div class="">
+                                            3/3
+                                        </div>
+                                        <div class="btn_wrap">
+                                            <div class="px-3" type="button" style="color:#009688;">거부</div>
+                                            <div class="px-3 pg_9_answer" type="button" style="color:#009688;">허용</div>
+                                        </div>
+                                    </div>
+
                                 </div>
+                                <!-- 여기까지 모달창 -->
                             </div>
                         </div>
                         <!------------------------------ page 10 ------------------------------>
@@ -687,10 +818,11 @@
                                                     </div>
                                                 </div>
                                             </li>
-                                            <li class="nav-item li1">
-                                                <div class="w-100 d-flex justify-content-start align-items-start">
+                                            <li class="nav-item li1 pg_10_answer">
+                                                <div
+                                                    class="w-100 d-flex justify-content-start align-items-start pg_10_answer">
                                                     <svg xmlns="http://www.w3.org/2000/svg" width="25" height="25"
-                                                        fill="currentColor" class="bi bi-check-circle"
+                                                        fill="currentColor" class="bi bi-check-circle pg_10_answer"
                                                         viewBox="0 0 16 16">
                                                         <path
                                                             d="M8 15A7 7 0 1 1 8 1a7 7 0 0 1 0 14zm0 1A8 8 0 1 0 8 0a8 8 0 0 0 0 16z" />
@@ -698,24 +830,25 @@
                                                             d="M10.97 4.97a.235.235 0 0 0-.02.022L7.477 9.417 5.384 7.323a.75.75 0 0 0-1.06 1.06L6.97 11.03a.75.75 0 0 0 1.079-.02l3.992-4.99a.75.75 0 0 0-1.071-1.05z" />
                                                     </svg>
                                                     <div
-                                                        class="d-flex flex-fill flex-column justify-content-start align-items-start px-2">
-                                                        <div class="w-100 fw-bold">
+                                                        class="d-flex flex-fill flex-column justify-content-start align-items-start px-2 pg_10_answer">
+                                                        <div class="w-100 fw-bold pg_10_answer">
                                                             전체 동의하기
                                                         </div>
-                                                        <div class="w-100 text-black-50">
-                                                            내용 채워주세요<br>
-                                                            (전체동의는 카카오 및 Kakao Mobility Corp.의 서비스 동의를 포함하고 있습니다.
-                                                            전체동의는~~~)
+                                                        <div class="w-100 text-black-50 pg_10_answer">
+                                                            전체동의는 카카오 및 Kakao Mobility Corp.의 서비스 동의를 포함하고 있습니다.
+                                                            전체동의는 선택목적에 대한 동의를 포함하고 있으며, 선택목적에 대한 동의를 거부해도 서비스 이용이
+                                                            가능합니다.
                                                         </div>
                                                     </div>
                                                 </div>
                                             </li>
                                             <li class="nav-item text-secondary" style="padding-left: 1.8em;">
-                                                내용 채워주세요<br>
-                                                (전체동의는 카카오 및 Kakao Mobility Corp.의 서비스 동의를 포함하고 있습니다. 전체동의는~~~)
+                                                카카오 T 서비스 제공을 위해 회원번호와 함께 개인정보가 제공됩니다.
+                                                보다 자세한 개인정보 제공항목은 동의 내용에서 확인하실 수 있습니다.
+                                                정보는 탈퇴 시 지체없이 파기됩니다.
                                             </li>
                                             <li class="nav-item">
-                                                내용 채워주세요<br>
+                                                카카오 동의 항목<br>
                                             </li>
                                             <li class="nav-item">
                                                 내용 채워주세요<br>
@@ -726,7 +859,7 @@
                                             </li>
                                         </ul>
                                     </div>
-                                    <button type="button" class="btn btn-y w-100 ">
+                                    <button type="button" class="btn btn-g w-100 ">
                                         동의하고 계속하기
                                     </button>
                                 </div>
@@ -775,19 +908,20 @@
                                                             전체 동의하기
                                                         </div>
                                                         <div class="w-100 text-black-50">
-                                                            내용 채워주세요<br>
-                                                            (전체동의는 카카오 및 Kakao Mobility Corp.의 서비스 동의를 포함하고 있습니다.
-                                                            전체동의는~~~)
+                                                            전체동의는 카카오 및 Kakao Mobility Corp.의 서비스 동의를 포함하고 있습니다.
+                                                            전체동의는 선택목적에 대한 동의를 포함하고 있으며, 선택목적에 대한 동의를 거부해도 서비스 이용이
+                                                            가능합니다.
                                                         </div>
                                                     </div>
                                                 </div>
                                             </li>
                                             <li class="nav-item text-secondary" style="padding-left: 1.8em;">
-                                                내용 채워주세요<br>
-                                                (전체동의는 카카오 및 Kakao Mobility Corp.의 서비스 동의를 포함하고 있습니다. 전체동의는~~~)
+                                                카카오 T 서비스 제공을 위해 회원번호와 함께 개인정보가 제공됩니다.
+                                                보다 자세한 개인정보 제공항목은 동의 내용에서 확인하실 수 있습니다.
+                                                정보는 탈퇴 시 지체없이 파기됩니다.
                                             </li>
                                             <li class="nav-item">
-                                                내용 채워주세요<br>
+                                                카카오 동의 항목<br>
                                             </li>
                                             <li class="nav-item">
                                                 내용 채워주세요<br>
@@ -798,7 +932,7 @@
                                             </li>
                                         </ul>
                                     </div>
-                                    <button type="button" class="btn btn-y w-100 ">
+                                    <button type="button" class="btn btn-y w-100 pg_11_answer">
                                         동의하고 계속하기
                                     </button>
                                 </div>
@@ -825,24 +959,18 @@
                                                     <option selected>+82</option>
                                                 </select>
                                                 <input type="text" style="display:none;">
-                                                <input class="fontSz form-control" type="search" placeholder="휴대폰 번호"
-                                                    aria-label="Search">
-                                                <input type="submit" value="보내기"
-                                                    class="fontSz btn btn-b h-75 rounded-0 mx-1">
+                                                <input class="fontSz form-control ID_num11 pg_12_answer 12_input"
+                                                    type="search" placeholder="휴대폰 번호" aria-label="Search"
+                                                    maxlength="11">
+                                                <div class="fontSz btn btn-b h-75 rounded-0 mx-1 w-30 input_nxt_btn">
+                                                    보내기 </div>
                                             </form>
                                         </li>
-                                        <li class="nav-item">
-                                            <form class="d-flex form arrivals" role="search">
-                                                <input type="text" style="display:none;">
-                                                <input class="fontSz form-control" type="search" placeholder="인증번호 입력"
-                                                    aria-label="Search">
-                                                <!-- <button class="btn btn-outline-success" type="submit">Search</button> -->
-                                            </form>
-                                        </li>
+
                                     </ul>
 
                                     <div class="under_bar fontSz">
-                                        <button type="button" class="btn btn-b w-100 rounded-0">
+                                        <button type="button" class="btn btn-g w-100 rounded-0">
                                             변경하기
                                         </button>
                                     </div>
@@ -869,22 +997,24 @@
                                                 <input type="text" style="display:none;">
                                                 <input class="fontSz form-control" type="search" placeholder="휴대폰 번호"
                                                     aria-label="Search">
-                                                <input type="submit" value="보내기"
-                                                    class="fontSz btn btn-b h-75 rounded-0 mx-1">
+                                                <div class="fontSz btn btn-b h-75 rounded-0 mx-1 w-30"> 보내기 </div>
                                             </form>
                                         </li>
                                         <li class="nav-item">
                                             <form class="d-flex form arrivals" role="search">
                                                 <input type="text" style="display:none;">
-                                                <input class="fontSz form-control" type="search" placeholder="인증번호 입력"
-                                                    aria-label="Search">
+                                                <!-- <input class="fontSz form-control" type="search" placeholder="인증번호 입력"
+                                                    aria-label="Search answer_txt pg_13_answer 13_input"> -->
+                                                <input class="fontSz form-control answer_txt pg_13_answer 13_input"
+                                                    type="search" placeholder="인증번호 입력" aria-label="Search"
+                                                    maxlength="6">
                                                 <!-- <button class="btn btn-outline-success" type="submit">Search</button> -->
                                             </form>
                                         </li>
                                     </ul>
 
                                     <div class="under_bar fontSz">
-                                        <button type="button" class="btn btn-b w-100 rounded-0">
+                                        <button type="button" class="btn btn-b w-100 rounded-0 input_nxt_btn_txt">
                                             변경하기
                                         </button>
                                     </div>

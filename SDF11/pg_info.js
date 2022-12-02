@@ -86,6 +86,9 @@ const inputAnswer = [
     {},
     {},
     {},
+    {
+        page: 13,
+        inputableAnswer: "123456"},
     {},
 ];
 
@@ -96,58 +99,58 @@ const modalCont = [
     },
     {
         page: 1,
-        instruction: "노란 택시 버튼을 눌러 주세요."
+        instruction: "'확인' 버튼을 클릭하세요"
     },
     {
         page: 2,
-        instruction: "출발지와 도착지 설정입니다. GPS의 내 위치가 현재 위치로 자동으로 선택됩니다. 현재 위치가 맞는지 확인하고, 도착지 입력창을 눌러 주세요."
+        instruction: "기기의 위치정보 액세스를 허용하기 위해 '허용' 버튼을 클릭하세요."
     },
     {
         page: 3,
-        instruction: "도착지 입력창에 ‘서울디지털재단’을 입력하고 키보드에 확인 또는 이동을 눌러주세요."
+        instruction: "기기의 사진, 미디어, 파일 액세스를 허용하기 위해 '허용' 버튼을 클릭하세요."
     },
     {
         page: 4,
-        instruction: "지도에 표시된 위치를 확인하고, ‘도착지로 설정’ 버튼을 눌러주세요."
+        instruction: "전화 걸기 및 관리를 허용하기 위해 '허용' 버튼을 클릭하세요."
     },
     {
         page: 5,
-        instruction: "택시의 유형을 선택할 수 있는 화면입니다. 설명을 읽고, 알맞은 택시를 선택합니다. 실습에서는 ‘일반호출’을 눌러주세요."
+        instruction: "'카카오 계정으로 시작하기' 버튼을 클릭하세요."
     },
     {
         page: 6,
-        instruction: "블루택시를 호출합니다. 예상 가격을 확인하고 호출하기 버튼을 눌러주세요."
+        instruction: "'허용하기' 버튼을 클릭하세요."
     },
     {
         page: 7,
-        instruction: "'시작하기' 버튼을 클릭하세요."
+        instruction: "전화 걸기 및 관리를 허용하기 위해 '허용' 버튼을 클릭하세요."
     },
     {
         page: 8,
-        instruction: "노란 택시 버튼을 눌러 주세요."
+        instruction: "기기의 사진, 미디어, 파일 액세스를 허용하기 위해 '허용' 버튼을 클릭하세요."
     },
     {
         page: 9,
-        instruction: "출발지와 도착지 설정입니다. GPS의 내 위치가 현재 위치로 자동으로 선택됩니다. 현재 위치가 맞는지 확인하고, 도착지 입력창을 눌러 주세요."
+        instruction: "기기의 위치정보 액세스를 허용하기 위해 '허용' 버튼을 클릭하세요."
     },
     {
         page: 10,
-        instruction: "도착지 입력창에 ‘서울디지털재단’을 입력하고 키보드에 확인 또는 이동을 눌러주세요."
+        instruction: "약관 내용 확인 후 '전체 동의하기'영역을 클릭하세요."
     },
     {
         page: 11,
-        instruction: "지도에 표시된 위치를 확인하고, ‘도착지로 설정’ 버튼을 눌러주세요."
+        instruction: "'동의하고 계속하기' 버튼을 클릭하세요."
     },
     {
         page: 12,
-        instruction: "택시의 유형을 선택할 수 있는 화면입니다. 설명을 읽고, 알맞은 택시를 선택합니다. 실습에서는 ‘일반호출’을 눌러주세요."
+        instruction: "휴대폰 번호 11자리를 '-'없이 입력하고 '보내기' 버튼을 클릭하세요."
     },
     {
         page: 13,
-        instruction: "블루택시를 호출합니다. 예상 가격을 확인하고 호출하기 버튼을 눌러주세요."
+        instruction: "인증번호 '123456'을 입력하고 '변경하기' 버튼을 클릭하세요."
     },{
         page: 14,
-        instruction: "블루택시를 호출합니다. 예상 가격을 확인하고 호출하기 버튼을 눌러주세요."
+        instruction: "완료"
     },
 ];
 
@@ -156,52 +159,52 @@ const modalCont = [
 //*******************************************************************************
 //**************************+    커서   +*********************************** 
 
-// const cursor_pos_1 = document.querySelector('.cursor_pos_1');
-// const cursor_pos_2 = document.querySelector('.cursor_pos_2');
+const cursor_pos_1 = document.querySelector('.cursor_pos_1');
+const cursor_pos_2 = document.querySelector('.cursor_pos_2');
 // const cursor_pos_3 = document.querySelector('.cursor_pos_3');
 // const cursor_pos_4 = document.querySelector('.cursor_pos_4');
 // const cursor_pos_5 = document.querySelector('.cursor_pos_5');
 // const cursor_pos_6 = document.querySelector('.cursor_pos_6');
 
-// const cursor_wrap_1 = document.querySelector('.cursor_wrap_1');
-// const cursor_wrap_2 = document.querySelector('.cursor_wrap_2');
+const cursor_wrap_1 = document.querySelector('.cursor_wrap_1');
+const cursor_wrap_2 = document.querySelector('.cursor_wrap_2');
 // const cursor_wrap_3 = document.querySelector('.cursor_wrap_3');
 // const cursor_wrap_4 = document.querySelector('.cursor_wrap_4');
 // const cursor_wrap_5 = document.querySelector('.cursor_wrap_5');
 // const cursor_wrap_6 = document.querySelector('.cursor_wrap_6');
 
 
-// cursor_wrap_1.style.zIndex = "100";
-// cursor_wrap_2.style.zIndex = "100";
+cursor_wrap_1.style.zIndex = "100";
+cursor_wrap_2.style.zIndex = "100";
 // cursor_wrap_3.style.zIndex = "100";
 // cursor_wrap_4.style.zIndex = "100";
 // cursor_wrap_5.style.zIndex = "100";
 // cursor_wrap_6.style.zIndex = "100";
 
 
-// const { createPopper } = Popper;
-// createPopper(cursor_pos_1, cursor_wrap_1, {
-//     placement: 'right',
-//     modifiers: [
-//         {
-//             name: 'offset',
-//             options: {
-//                 offset: [0,0],
-//             },
-//         },
-//     ],
-// });
-// createPopper(cursor_pos_2, cursor_wrap_2, {
-//     placement: 'right',
-//     modifiers: [
-//         {
-//             name: 'offset',
-//             options: {
-//                 offset: [-35,100],
-//             },
-//         },
-//     ],
-// });
+const { createPopper } = Popper;
+createPopper(cursor_pos_1, cursor_wrap_1, {
+    placement: 'right',
+    modifiers: [
+        {
+            name: 'offset',
+            options: {
+                offset: [10,180],
+            },
+        },
+    ],
+});
+createPopper(cursor_pos_2, cursor_wrap_2, {
+    placement: 'right',
+    modifiers: [
+        {
+            name: 'offset',
+            options: {
+                offset: [-50,0],
+            },
+        },
+    ],
+});
 // createPopper(cursor_pos_3, cursor_wrap_3, {
 //     placement: 'right',
 //     modifiers: [
