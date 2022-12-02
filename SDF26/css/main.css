@@ -20,6 +20,24 @@
     color: #386CE2!important;
 }
 
+#modal_ .content .title {
+    font-weight: bold;
+    margin-bottom: .5em;
+  }
+  
+  #modal_ .btn_wrap {
+  width: 100%;
+  border-top: 1px solid #ced4da;
+  }
+  
+  #modal_ .btn_wrap .btn {
+    width: 50%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
 /* ----------------------------------------------------------------------------- */
 
 #p1 .pg_top {
