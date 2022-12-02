@@ -1,4 +1,4 @@
-var total_page = 9;//페이지 수 -> 시나리오마다 total_page 수 바꾸기 
+var total_page = 7;//페이지 수 -> 시나리오마다 total_page 수 바꾸기 
 
 //오디오 배열 선언, 페이지 수 대로 배열에 mp3 넣기
 const audioArray = [];
@@ -42,89 +42,59 @@ const pageClickArea = [
         page: 7,
         correctAnswer: "pg_7_answer"
     },
-    {
-        page: 8,
-        correctAnswer: "pg_8_answer"
-    },
-    {
-        page: 9,
-        correctAnswer: "pg_9_answer"
-    },
-    {
-        page: 10,
-        correctAnswer: "pg_10_answer"
-    },
 ];
 
-// const inputAnswer = [
-//     {},
-//     {},
-//     {},
-//     {},
-//     {
-//         page: 4,
-//         inputableAnswer: ""
-//     },
-//     {
-//         page: 5,
-//         inputableAnswer: "감기"
-//     },
-//     {},
-//     {
-//         page: 7,
-//         inputableAnswer: "2022.10.27"
-//     },
-//     {},
-//     {},
-//     {},
-// ];
+const inputAnswer = [
+    {},
+    {},
+    {},
+    {},
+    {
+        page: 4,
+        inputableAnswer: "123456-789-10"
+    },
+    {
+        page: 5,
+        inputableAnswer: "0000"
+    },
+    {},
+    {},
+];
 
-// const modalCont = [
-//     {
-//         page: 0,
-//         instruction: "'시작하기' 버튼을 클릭하세요."
-//     },
-//     {
-//         page: 1,
-//         instruction: "'병원비 돌려받기'를 클릭하세요."
-//     },
-//     {
-//         page: 2,
-//         instruction: "'내 병원비 돌려받기' 버튼을 클릭하세요."
-//     },
-//     {
-//         page: 3,
-//         instruction: "서류를 받았다면 '받았어요' 버튼을 클릭하세요."
-//     },
-//     {
-//         page: 4,
-//         instruction: "'삼성해상화재보험'을 클릭하세요."
-//     },
-//     {
-//         page: 5,
-//         instruction: "주민번호를 입력 후 '다음' 버튼을 클릭하세요."
-//     },
-//     {
-//         page: 6,
-//         instruction: "병원에 방문한 이유를 간단하게 작성 후 '다음'버튼을 클릭하세요."
-//     },
-//     {
-//         page: 7,
-//         instruction: "날짜를 입력한 후 '다음'버튼을 클릭하세요."
-//     },
-//     {
-//         page: 8,
-//         instruction: "병원에서 받은 서류 사진을 올린 후 '다음' 버튼을 클릭하세요."
-//     },
-//     {
-//         page: 9,
-//         instruction: "'입출금 통장'을 클릭하세요."
-//     },
-//     {
-//         page: 10,
-//         instruction: "신청 정보를 확인 후 '버튼'을 클릭하세요."
-//     },
-// ];
+const modalCont = [
+    {
+        page: 0,
+        instruction: "'시작하기' 버튼을 클릭하세요."
+    },
+    {
+        page: 1,
+        instruction: "'연결한 계좌'를 클릭하세요."
+    },
+    {
+        page: 2,
+        instruction: "'계좌 추가하기' 버튼을 클릭하세요."
+    },
+    {
+        page: 3,
+        instruction: "추가할 계좌의 은행인 'NH농협' 버튼을 클릭하세요."
+    },
+    {
+        page: 4,
+        instruction: "계좌번호 '123456-789-10'를 입력 후 '다음' 버튼을 클릭하세요.."
+    },
+    {
+        page: 5,
+        instruction: "계좌 비밀번호를 입력 후 '다음' 버튼을 클릭하세요."
+    },
+    {
+        page: 6,
+        instruction: "출금이체 동의를 위해 '동의하기' 버튼을 클릭하세요."
+    },
+    {
+        page: 7,
+        instruction: "마지막 페이지 입니다."
+    },
+];
 
 
 
@@ -138,9 +108,6 @@ const pageClickArea = [
 // const cursor_pos_5 = document.querySelector('.cursor_pos_5');
 // const cursor_pos_6 = document.querySelector('.cursor_pos_6');
 // const cursor_pos_7 = document.querySelector('.cursor_pos_7');
-// const cursor_pos_8 = document.querySelector('.cursor_pos_8');
-// const cursor_pos_9 = document.querySelector('.cursor_pos_9');
-// const cursor_pos_10 = document.querySelector('.cursor_pos_10');
 
 // const cursor_wrap_1 = document.querySelector('.cursor_wrap_1');
 // const cursor_wrap_2 = document.querySelector('.cursor_wrap_2');
@@ -149,9 +116,7 @@ const pageClickArea = [
 // const cursor_wrap_5 = document.querySelector('.cursor_wrap_5');
 // const cursor_wrap_6 = document.querySelector('.cursor_wrap_6');
 // const cursor_wrap_7 = document.querySelector('.cursor_wrap_7');
-// const cursor_wrap_8 = document.querySelector('.cursor_wrap_8');
-// const cursor_wrap_9 = document.querySelector('.cursor_wrap_9');
-// const cursor_wrap_10 = document.querySelector('.cursor_wrap_10');
+
 
 
 // cursor_wrap_1.style.zIndex = "100";
@@ -161,9 +126,6 @@ const pageClickArea = [
 // cursor_wrap_5.style.zIndex = "100";
 // cursor_wrap_6.style.zIndex = "100";
 // cursor_wrap_7.style.zIndex = "100";
-// cursor_wrap_8.style.zIndex = "100";
-// cursor_wrap_9.style.zIndex = "100";
-// cursor_wrap_10.style.zIndex = "100";
 
 
 // const { createPopper } = Popper;
@@ -225,6 +187,17 @@ const pageClickArea = [
 //     ],
 // });
 // createPopper(cursor_pos_6, cursor_wrap_6, {
+//     placement: 'bottom',
+//     modifiers: [
+//         {
+//             name: 'offset',
+//             options: {
+//                 offset: [250,10],
+//             },
+//         },
+//     ],
+// });
+// createPopper(cursor_pos_7, cursor_wrap_7, {
 //     placement: 'bottom',
 //     modifiers: [
 //         {
