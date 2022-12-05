@@ -16,6 +16,7 @@
         integrity="sha384-OERcA2EqjJCMA+/3y+gxIOqMEjwtxJY7qPCqsdltbNJuaOe923+mo//f6V8Qbsw3"
         crossorigin="anonymous"></script>
     <script src="https://code.jquery.com/jquery-3.6.1.min.js"></script>
+    <script src="https://unpkg.com/@popperjs/core@2"></script>
 </head>
 
 <body>
@@ -56,86 +57,71 @@
                         <div class="page" id="p1">
                             <div class="page_wrap" style="background-color:#F3F4F6;">
                                 <h1 class="pg_title" style="color: #fff;">Page1</h1>
-                                <div class="top_bar">
-                                    <div class="icon fontSz">
-                                        toss
+                                <div class="scroller">
+                                    <div class="top_bar">
+                                        <div class="icon border_darker fontSz">
+                                            toss
+                                        </div>
+                                        <div class="fontSz" style="color:#B1B8C0">
+                                            <svg xmlns="http://www.w3.org/2000/svg" width="30" height="30"
+                                                fill="currentColor" class="bi bi-qr-code-scan" viewBox="0 0 16 16">
+                                                <path
+                                                    d="M0 .5A.5.5 0 0 1 .5 0h3a.5.5 0 0 1 0 1H1v2.5a.5.5 0 0 1-1 0v-3Zm12 0a.5.5 0 0 1 .5-.5h3a.5.5 0 0 1 .5.5v3a.5.5 0 0 1-1 0V1h-2.5a.5.5 0 0 1-.5-.5ZM.5 12a.5.5 0 0 1 .5.5V15h2.5a.5.5 0 0 1 0 1h-3a.5.5 0 0 1-.5-.5v-3a.5.5 0 0 1 .5-.5Zm15 0a.5.5 0 0 1 .5.5v3a.5.5 0 0 1-.5.5h-3a.5.5 0 0 1 0-1H15v-2.5a.5.5 0 0 1 .5-.5ZM4 4h1v1H4V4Z" />
+                                                <path d="M7 2H2v5h5V2ZM3 3h3v3H3V3Zm2 8H4v1h1v-1Z" />
+                                                <path d="M7 9H2v5h5V9Zm-4 1h3v3H3v-3Zm8-6h1v1h-1V4Z" />
+                                                <path
+                                                    d="M9 2h5v5H9V2Zm1 1v3h3V3h-3ZM8 8v2h1v1H8v1h2v-2h1v2h1v-1h2v-1h-3V8H8Zm2 2H9V9h1v1Zm4 2h-1v1h-2v1h3v-2Zm-4 2v-1H8v1h2Z" />
+                                                <path d="M12 9h2V8h-2v1Z" />
+                                            </svg>
+                                            <svg xmlns="http://www.w3.org/2000/svg" width="30" height="30"
+                                                fill="currentColor" class="bi bi-chat-dots-fill mx-3"
+                                                viewBox="0 0 16 16">
+                                                <path
+                                                    d="M16 8c0 3.866-3.582 7-8 7a9.06 9.06 0 0 1-2.347-.306c-.584.296-1.925.864-4.181 1.234-.2.032-.352-.176-.273-.362.354-.836.674-1.95.77-2.966C.744 11.37 0 9.76 0 8c0-3.866 3.582-7 8-7s8 3.134 8 7zM5 8a1 1 0 1 0-2 0 1 1 0 0 0 2 0zm4 0a1 1 0 1 0-2 0 1 1 0 0 0 2 0zm3 1a1 1 0 1 0 0-2 1 1 0 0 0 0 2z" />
+                                            </svg>
+                                            <svg xmlns="http://www.w3.org/2000/svg" width="30" height="30"
+                                                fill="currentColor" class="bi bi-bell-fill" viewBox="0 0 16 16">
+                                                <path
+                                                    d="M8 16a2 2 0 0 0 2-2H6a2 2 0 0 0 2 2zm.995-14.901a1 1 0 1 0-1.99 0A5.002 5.002 0 0 0 3 6c0 1.098-.5 6-2 7h14c-1.5-1-2-5.902-2-7 0-2.42-1.72-4.44-4.005-4.901z" />
+                                            </svg>
+                                        </div>
                                     </div>
-                                    <div class="fontSz" style="color:#B1B8C0">
-                                        <svg xmlns="http://www.w3.org/2000/svg" width="30" height="30"
-                                            fill="currentColor" class="bi bi-qr-code-scan" viewBox="0 0 16 16">
-                                            <path
-                                                d="M0 .5A.5.5 0 0 1 .5 0h3a.5.5 0 0 1 0 1H1v2.5a.5.5 0 0 1-1 0v-3Zm12 0a.5.5 0 0 1 .5-.5h3a.5.5 0 0 1 .5.5v3a.5.5 0 0 1-1 0V1h-2.5a.5.5 0 0 1-.5-.5ZM.5 12a.5.5 0 0 1 .5.5V15h2.5a.5.5 0 0 1 0 1h-3a.5.5 0 0 1-.5-.5v-3a.5.5 0 0 1 .5-.5Zm15 0a.5.5 0 0 1 .5.5v3a.5.5 0 0 1-.5.5h-3a.5.5 0 0 1 0-1H15v-2.5a.5.5 0 0 1 .5-.5ZM4 4h1v1H4V4Z" />
-                                            <path d="M7 2H2v5h5V2ZM3 3h3v3H3V3Zm2 8H4v1h1v-1Z" />
-                                            <path d="M7 9H2v5h5V9Zm-4 1h3v3H3v-3Zm8-6h1v1h-1V4Z" />
-                                            <path
-                                                d="M9 2h5v5H9V2Zm1 1v3h3V3h-3ZM8 8v2h1v1H8v1h2v-2h1v2h1v-1h2v-1h-3V8H8Zm2 2H9V9h1v1Zm4 2h-1v1h-2v1h3v-2Zm-4 2v-1H8v1h2Z" />
-                                            <path d="M12 9h2V8h-2v1Z" />
-                                        </svg>
-                                        <svg xmlns="http://www.w3.org/2000/svg" width="30" height="30"
-                                            fill="currentColor" class="bi bi-chat-dots-fill mx-3" viewBox="0 0 16 16">
-                                            <path
-                                                d="M16 8c0 3.866-3.582 7-8 7a9.06 9.06 0 0 1-2.347-.306c-.584.296-1.925.864-4.181 1.234-.2.032-.352-.176-.273-.362.354-.836.674-1.95.77-2.966C.744 11.37 0 9.76 0 8c0-3.866 3.582-7 8-7s8 3.134 8 7zM5 8a1 1 0 1 0-2 0 1 1 0 0 0 2 0zm4 0a1 1 0 1 0-2 0 1 1 0 0 0 2 0zm3 1a1 1 0 1 0 0-2 1 1 0 0 0 0 2z" />
-                                        </svg>
-                                        <svg xmlns="http://www.w3.org/2000/svg" width="30" height="30"
-                                            fill="currentColor" class="bi bi-bell-fill" viewBox="0 0 16 16">
-                                            <path
-                                                d="M8 16a2 2 0 0 0 2-2H6a2 2 0 0 0 2 2zm.995-14.901a1 1 0 1 0-1.99 0A5.002 5.002 0 0 0 3 6c0 1.098-.5 6-2 7h14c-1.5-1-2-5.902-2-7 0-2.42-1.72-4.44-4.005-4.901z" />
-                                        </svg>
-                                    </div>
-                                </div>
-                                <div class="gap">
-                                    <div class="box">
-                                        <div
-                                            class="w-100 h-10 d-flex justify-content-start align-items-center rounded-1">
-                                            <div class="icon fontSz">1
-                                            </div>
-                                            <div class="w-100 d-flex justify-content-between align-items-center">
-                                                <div class="mx-2 d-flex flex-column align-items-center">
-                                                    <div class="w-100 d-flex text-left text-black-50 fontSz">매주 20만 명이
-                                                        캐시백 받아요</div>
-                                                    <div class="bank w-100 d-flex text-left fw-bold fontSz">캐시백 받을 브랜드 고르기</div>
+                                    <div class="gap">
+                                        <div class="box">
+                                            <div
+                                                class="w-100 h-10 d-flex justify-content-start align-items-center rounded-1">
+                                                <div class="icon border_darker fontSz">1
                                                 </div>
-                                                <div class="fontSz">
-                                                    <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20"
-                                                        fill="currentColor" class="bi bi-chevron-right fontSz"
-                                                        viewBox="0 0 16 16">
-                                                        <path fill-rule="evenodd"
-                                                            d="M4.646 1.646a.5.5 0 0 1 .708 0l6 6a.5.5 0 0 1 0 .708l-6 6a.5.5 0 0 1-.708-.708L10.293 8 4.646 2.354a.5.5 0 0 1 0-.708z" />
-                                                    </svg>
+                                                <div class="w-100 d-flex justify-content-between align-items-center">
+                                                    <div class="mx-2 d-flex flex-column align-items-center">
+                                                        <div class="w-100 d-flex text-left text-black-50 fontSz">매주 20만
+                                                            명이
+                                                            캐시백 받아요</div>
+                                                        <div class="bank w-100 d-flex text-left fw-bold fontSz">캐시백 받을
+                                                            브랜드 고르기</div>
+                                                    </div>
+                                                    <div class="fontSz">
+                                                        <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20"
+                                                            fill="currentColor" class="bi bi-chevron-right fontSz"
+                                                            viewBox="0 0 16 16">
+                                                            <path fill-rule="evenodd"
+                                                                d="M4.646 1.646a.5.5 0 0 1 .708 0l6 6a.5.5 0 0 1 0 .708l-6 6a.5.5 0 0 1-.708-.708L10.293 8 4.646 2.354a.5.5 0 0 1 0-.708z" />
+                                                        </svg>
+                                                    </div>
                                                 </div>
                                             </div>
                                         </div>
                                     </div>
-                                </div>
-                                <div class="gap">
-                                    <div class="box">
-                                        <div
-                                            class="w-100 h-10 d-flex justify-content-start align-items-center rounded-1">
-                                            <div class="w-100 d-flex justify-content-between align-items-center">
-                                                <div class="d-flex flex-column align-items-center">
-                                                    <h4 class="w-100 d-flex justify-content-start fw-bold fontSz">토스뱅크</h4>
-                                                </div>
-                                                <div class="fontSz">
-                                                    <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20"
-                                                        fill="currentColor" class="bi bi-chevron-right"
-                                                        viewBox="0 0 16 16">
-                                                        <path fill-rule="evenodd"
-                                                            d="M4.646 1.646a.5.5 0 0 1 .708 0l6 6a.5.5 0 0 1 0 .708l-6 6a.5.5 0 0 1-.708-.708L10.293 8 4.646 2.354a.5.5 0 0 1 0-.708z" />
-                                                    </svg>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="gap">
-                                    <div class="box cursor_pos_4">
-                                        <div
-                                            class="w-100 h-10 d-flex justify-content-start flex-column align-items-center rounded-1">
-                                            <div class="w-100 d-flex flex-column align-items-center">
-                                                <div class="w-100 mx-2 d-flex flex-column align-items-center">
-                                                    <div
-                                                        class="w-100 d-flex justify-content-between align-items-center">
-                                                        <h4 class="w-100 d-flex text-left fontSz">연결한 계좌</h4>
+                                    <div class="gap">
+                                        <div class="box">
+                                            <div
+                                                class="w-100 h-10 d-flex justify-content-start align-items-center rounded-1">
+                                                <div class="w-100 d-flex justify-content-between align-items-center">
+                                                    <div class="d-flex flex-column align-items-center">
+                                                        <h4 class="w-100 d-flex justify-content-start fw-bold fontSz">
+                                                            토스뱅크</h4>
+                                                    </div>
+                                                    <div class="fontSz">
                                                         <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20"
                                                             fill="currentColor" class="bi bi-chevron-right"
                                                             viewBox="0 0 16 16">
@@ -145,117 +131,162 @@
                                                     </div>
                                                 </div>
                                             </div>
-                                            <div class="w-100 mt-3 d-flex justify-content-between">
-                                                <div class="icon fontSz">1
-                                                </div>
-                                                <div class="w-100 d-flex justify-content-between align-items-center">
-                                                    <div class="mx-2 d-flex flex-column align-items-center">
-                                                        <div class="w-100 d-flex text-left text-black-50 fontSz">토스뱅크 통장
-                                                        </div>
-                                                        <h5 class="w-100 d-flex text-left fw-bold fontSz">잔액보기</h5>
-                                                    </div>
-                                                </div>
-                                                <button type="button" class="btn btn-light fontSz">
-                                                    송금
-                                                </button>
-                                            </div>
                                         </div>
                                     </div>
-                                </div>
-                                <div class="gap">
-                                    <div class="box">
-                                        <div
-                                            class="w-100 d-flex justify-content-start flex-column align-items-center rounded-1">
-                                            <div class="w-100 d-flex flex-column align-items-center">
-                                                <div class="w-100 mx-2 d-flex flex-column align-items-center">
-                                                    <div class="w-100 d-flex justify-content-start align-items-center">
-                                                        <h4 class="w-100 d-flex text-left fw-bold fontSz">소비</h4>
+                                    <div class="gap">
+                                        <div class="">
+                                            <div
+                                                class="w-100 h-10 d-flex justify-content-start flex-column align-items-center rounded-1 box gap ">
+                                                <div class="w-100 d-flex flex-column align-items-center">
+                                                    <div class="w-100 mx-2 d-flex flex-column align-items-center">
+                                                        <div
+                                                            class="w-100 d-flex justify-content-between align-items-center pg_1_answer">
+                                                            <div class="cursor_pos_1">
+                                                                <h4 class="w-100 d-flex text-left fontSz pg_1_answer">
+                                                                    연결한 계좌</h4>
+                                                                <!-- 커서 가이드 -->
+                                                                <div class="cursor_wrap cursor_wrap_1">
+                                                                    <span class="cursor" x-placement="bottom">
+                                                                        <button class="react-joyride__beacon"
+                                                                            type="button">
+                                                                            <span class="cursor_outer"></span>
+                                                                            <span class="cursor_inner"><span>
+                                                                        </button>
+                                                                    </span>
+                                                                </div>
+                                                                <!-- 커서 가이드 -->
+                                                            </div>
+                                                            <svg xmlns="http://www.w3.org/2000/svg" width="20"
+                                                                height="20" fill="currentColor"
+                                                                class="bi bi-chevron-right" viewBox="0 0 16 16" class=>
+                                                                <path fill-rule="evenodd"
+                                                                    d="M4.646 1.646a.5.5 0 0 1 .708 0l6 6a.5.5 0 0 1 0 .708l-6 6a.5.5 0 0 1-.708-.708L10.293 8 4.646 2.354a.5.5 0 0 1 0-.708z" />
+                                                            </svg>
+                                                        </div>
+
                                                     </div>
                                                 </div>
                                                 <div class="w-100 mt-3 d-flex justify-content-between">
-                                                    <div class="icon fontSz">1
+                                                    <div class="icon  fontSz">1
                                                     </div>
                                                     <div
                                                         class="w-100 d-flex justify-content-between align-items-center">
                                                         <div class="mx-2 d-flex flex-column align-items-center">
-                                                            <div class="w-100 d-flex text-left text-black-50 fontSz">이번
-                                                                달 쓴 금액</div>
-                                                            <h5 class="w-100 d-flex text-left fontSz">금액 보기</h5>
+                                                            <div class="w-100 d-flex text-left text-black-50 fontSz">
+                                                                토스뱅크 통장
+                                                            </div>
+                                                            <h5 class="w-100 d-flex text-left fw-bold fontSz">잔액보기</h5>
                                                         </div>
                                                     </div>
                                                     <button type="button" class="btn btn-light fontSz">
-                                                        내역
+                                                        송금
                                                     </button>
                                                 </div>
                                             </div>
                                         </div>
                                     </div>
-                                </div>
-                                <div class="d-flex justify-content-between">
                                     <div class="gap">
                                         <div class="box">
                                             <div
-                                                class="w-100 d-flex justify-content-start align-items-center rounded-1">
-                                                <div class="w-100 d-flex justify-content-between align-items-center">
+                                                class="w-100 d-flex justify-content-start flex-column align-items-center rounded-1">
+                                                <div class="w-100 d-flex flex-column align-items-center">
+                                                    <div class="w-100 mx-2 d-flex flex-column align-items-center">
+                                                        <div
+                                                            class="w-100 d-flex justify-content-start align-items-center">
+                                                            <h4 class="w-100 d-flex text-left fw-bold fontSz">소비</h4>
+                                                        </div>
+                                                    </div>
+                                                    <div class="w-100 mt-3 d-flex justify-content-between">
+                                                        <div class="icon fontSz">1
+                                                        </div>
+                                                        <div
+                                                            class="w-100 d-flex justify-content-between align-items-center">
+                                                            <div class="mx-2 d-flex flex-column align-items-center">
+                                                                <div
+                                                                    class="w-100 d-flex text-left text-black-50 fontSz">
+                                                                    이번
+                                                                    달 쓴 금액</div>
+                                                                <h5 class="w-100 d-flex text-left fontSz">금액 보기</h5>
+                                                            </div>
+                                                        </div>
+                                                        <button type="button" class="btn btn-light fontSz ">
+                                                            내역
+                                                        </button>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="d-flex justify-content-between">
+                                        <div class="gap">
+                                            <div class="box">
+                                                <div
+                                                    class="w-100 d-flex justify-content-start align-items-center rounded-1">
                                                     <div
-                                                        class="mx-2 d-flex flex-column justify-content-start align-items-center">
-                                                        <div class="w-100 d-flex text-left text-black-50 fontSz">못
-                                                            받은</div>
-                                                        <h5 class="w-100 d-flex text-left fontSz">숨은 보험금 찾기
-                                                        </h5>
+                                                        class="w-100 d-flex justify-content-between align-items-center">
+                                                        <div
+                                                            class="mx-2 d-flex flex-column justify-content-start align-items-center">
+                                                            <div class="w-100 d-flex text-left text-black-50 fontSz">못
+                                                                받은</div>
+                                                            <h5 class="w-100 d-flex text-left fontSz">숨은 보험금 찾기
+                                                            </h5>
+                                                        </div>
                                                     </div>
                                                 </div>
                                             </div>
                                         </div>
-                                    </div>
-                                    <div class="gap">
-                                        <div class="box">
-                                            <div
-                                                class="w-100 d-flex justify-content-start align-items-center rounded-1">
-                                                <div class="w-100 d-flex justify-content-between align-items-center">
-                                                    <div class="mx-2 d-flex flex-column align-items-center">
-                                                        <div class="w-100 d-flex text-left text-black-50 fontSz">최근
+                                        <div class="gap">
+                                            <div class="box">
+                                                <div
+                                                    class="w-100 d-flex justify-content-start align-items-center rounded-1">
+                                                    <div
+                                                        class="w-100 d-flex justify-content-between align-items-center">
+                                                        <div class="mx-2 d-flex flex-column align-items-center">
+                                                            <div class="w-100 d-flex text-left text-black-50 fontSz">최근
+                                                            </div>
+                                                            <h5 class="w-100 d-flex text-left fontSz">만 보기<br>&nbsp;
+                                                            </h5>
                                                         </div>
-                                                        <h5 class="w-100 d-flex text-left fontSz">만 보기<br>&nbsp;</h5>
                                                     </div>
                                                 </div>
                                             </div>
                                         </div>
-                                    </div>
-                                    <div class="gap">
-                                        <div class="box">
-                                            <div
-                                                class="w-100 d-flex justify-content-start align-items-center rounded-1">
-                                                <div class="w-100 d-flex justify-content-between align-items-center">
-                                                    <div class="mx-2 d-flex flex-column align-items-center">
-                                                        <div class="w-100 d-flex text-left text-black-50 fontSz">자주
+                                        <div class="gap">
+                                            <div class="box">
+                                                <div
+                                                    class="w-100 d-flex justify-content-start align-items-center rounded-1">
+                                                    <div
+                                                        class="w-100 d-flex justify-content-between align-items-center">
+                                                        <div class="mx-2 d-flex flex-column align-items-center">
+                                                            <div class="w-100 d-flex text-left text-black-50 fontSz">자주
+                                                            </div>
+                                                            <h5 class="w-100 d-flex text-left fontSz">신용점수 보기</h5>
                                                         </div>
-                                                        <h5 class="w-100 d-flex text-left fontSz">신용점수 보기</h5>
                                                     </div>
                                                 </div>
                                             </div>
                                         </div>
                                     </div>
                                 </div>
-                                <div class="under_bar" style="background-color:#FFFFFF;">
+                                <div class="under_bar shadow_inner" style="background-color:#FFFFFF;">
                                     <div>
-                                        <div class="icon fontSz">1</div>
+                                        <div class="icon border_darker fontSz">1</div>
                                         <div class="d-flex justify-content-center fontSz">홈</div>
                                     </div>
                                     <div>
-                                        <div class="icon fontSz">2</div>
+                                        <div class="icon border_darker fontSz">2</div>
                                         <div class="d-flex justify-content-center fontSz">혜택</div>
                                     </div>
                                     <div>
-                                        <div class="icon fontSz">3</div>
+                                        <div class="icon border_darker fontSz">3</div>
                                         <div class="d-flex justify-content-center fontSz">송금</div>
                                     </div>
                                     <div>
-                                        <div class="icon fontSz">4</div>
+                                        <div class="icon border_darker fontSz">4</div>
                                         <div class="d-flex justify-content-center fontSz">주식</div>
                                     </div>
                                     <div>
-                                        <div class="icon fontSz">5</div>
+                                        <div class="icon border_darker fontSz">5</div>
                                         <div class="d-flex justify-content-center fontSz">전체</div>
                                     </div>
                                 </div>
@@ -266,8 +297,8 @@
                             <div class="page_wrap">
                                 <h1 class="pg_title" style="color: #fff;">Page2</h1>
                                 <div class="back d-flex justify-content-between fontSz">
-                                    <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20"
-                                        fill="currentColor" class="bi bi-chevron-left fontSz" viewBox="0 0 16 16">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor"
+                                        class="bi bi-chevron-left fontSz" viewBox="0 0 16 16">
                                         <path fill-rule="evenodd"
                                             d="M11.354 1.646a.5.5 0 0 1 0 .708L5.707 8l5.647 5.646a.5.5 0 0 1-.708.708l-6-6a.5.5 0 0 1 0-.708l6-6a.5.5 0 0 1 .708 0z" />
                                     </svg>
@@ -296,36 +327,52 @@
                                         </button>
                                     </div>
                                     <div
-                                        class="w-100 p-3 d-flex justify-content-between align-items-center cursor_pos_4">
-                                        <div class="d-flex align-items-center">
-                                            <div class="dot d-flex flex-center-center fw-bold fontSz">
-                                                <svg xmlns="http://www.w3.org/2000/svg" width="25" height="25" fill="currentColor" class="bi bi-plus-lg" viewBox="0 0 16 16" style="color: #4D8ADF;">
-                                                    <path fill-rule="evenodd" d="M8 2a.5.5 0 0 1 .5.5v5h5a.5.5 0 0 1 0 1h-5v5a.5.5 0 0 1-1 0v-5h-5a.5.5 0 0 1 0-1h5v-5A.5.5 0 0 1 8 2Z"/>
+                                        class="w-100 p-3 d-flex justify-content-between align-items-center pg_2_answer">
+                                        <div class="d-flex align-items-center pg_2_answer">
+                                            <div class="dot d-flex flex-center-center fw-bold fontSz pg_2_answer">
+                                                <svg xmlns="http://www.w3.org/2000/svg" width="25" height="25"
+                                                    fill="currentColor" class="bi bi-plus-lg" viewBox="0 0 16 16"
+                                                    style="color: #4D8ADF;">
+                                                    <path fill-rule="evenodd"
+                                                        d="M8 2a.5.5 0 0 1 .5.5v5h5a.5.5 0 0 1 0 1h-5v5a.5.5 0 0 1-1 0v-5h-5a.5.5 0 0 1 0-1h5v-5A.5.5 0 0 1 8 2Z" />
                                                 </svg>
                                             </div>
-                                            <h4 class="mx-2 d-flex text-left fw-bold fontSz">계좌 추가하기</h4>
+                                            <div class="cursor_pos_2">
+                                                <h4 class="mx-2 d-flex text-left fw-bold fontSz pg_2_answer">계좌 추가하기</h4>
+                                                <!-- 커서 가이드 -->
+                                            <div class="cursor_wrap cursor_wrap_2">
+                                                <span class="cursor" x-placement="bottom">
+                                                    <button class="react-joyride__beacon" type="button">
+                                                        <span class="cursor_outer"></span>
+                                                        <span class="cursor_inner"><span>
+                                                    </button>
+                                                </span>
+                                            </div>
+                                            <!-- 커서 가이드 -->
+                                            </div>
                                         </div>
                                         <div class="mx-2 fontSz">
                                             <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20"
-                                                fill="currentColor" class="bi bi-chevron-right"
-                                                viewBox="0 0 16 16">
+                                                fill="currentColor" class="bi bi-chevron-right" viewBox="0 0 16 16">
                                                 <path fill-rule="evenodd"
                                                     d="M4.646 1.646a.5.5 0 0 1 .708 0l6 6a.5.5 0 0 1 0 .708l-6 6a.5.5 0 0 1-.708-.708L10.293 8 4.646 2.354a.5.5 0 0 1 0-.708z" />
                                             </svg>
                                         </div>
                                     </div>
-                                </div>                        
+                                </div>
                             </div>
                         </div>
                         <!------------------------------ page 3 ------------------------------>
                         <div class="page" id="p3">
                             <div class="page_wrap bg-secondary bg-opacity-10">
                                 <h1 class="pg_title" style="color: #fff;">Page3</h1>
-                                <div class="top_bar d-flex justify-content-between align-items-center">
+                                <div class="top_bar d-flex justify-content-between align-items-center shadow_inner">
                                     <div class="w-25 d-flex justify-content-start fontSz">
-                                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-x-lg" viewBox="0 0 16 16">
-                                            <path d="M2.146 2.854a.5.5 0 1 1 .708-.708L8 7.293l5.146-5.147a.5.5 0 0 1 .708.708L8.707 8l5.147 5.146a.5.5 0 0 1-.708.708L8 8.707l-5.146 5.147a.5.5 0 0 1-.708-.708L7.293 8 2.146 2.854Z"/>
-                                          </svg>
+                                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16"
+                                            fill="currentColor" class="bi bi-x-lg" viewBox="0 0 16 16">
+                                            <path
+                                                d="M2.146 2.854a.5.5 0 1 1 .708-.708L8 7.293l5.146-5.147a.5.5 0 0 1 .708.708L8.707 8l5.147 5.146a.5.5 0 0 1-.708.708L8 8.707l-5.146 5.147a.5.5 0 0 1-.708-.708L7.293 8 2.146 2.854Z" />
+                                        </svg>
                                     </div>
                                     <h4 class="w-50 d-flex justify-content-center fw-bold fontSz">
                                         계좌 추가하기
@@ -341,10 +388,10 @@
                                     <div
                                         class="container w-100 d-flex flex-column justify-content-center align-items-center">
                                         <div class="bank d-flex justify-content-around">
-                                            <div class="tab rounded-1 ">
-                                                <div class="icon fontSz">1
+                                            <div class="tab rounded-1 pg_3_answer">
+                                                <div class="icon fontSz pg_3_answer">1
                                                 </div>
-                                                <div class="txtx cursor_pos_3 fontSz">
+                                                <div class="txtx pg_3_answer fontSz">
                                                     NH농협
                                                 </div>
                                             </div>
@@ -503,23 +550,34 @@
                             <div class="page_wrap">
                                 <h1 class="pg_title" style="color: #fff;">Page4</h1>
                                 <div class="top_bar fontSz">
-                                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-arrow-left" viewBox="0 0 16 16">
-                                        <path fill-rule="evenodd" d="M15 8a.5.5 0 0 0-.5-.5H2.707l3.147-3.146a.5.5 0 1 0-.708-.708l-4 4a.5.5 0 0 0 0 .708l4 4a.5.5 0 0 0 .708-.708L2.707 8.5H14.5A.5.5 0 0 0 15 8z"/>
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+                                        class="bi bi-arrow-left" viewBox="0 0 16 16">
+                                        <path fill-rule="evenodd"
+                                            d="M15 8a.5.5 0 0 0-.5-.5H2.707l3.147-3.146a.5.5 0 1 0-.708-.708l-4 4a.5.5 0 0 0 0 .708l4 4a.5.5 0 0 0 .708-.708L2.707 8.5H14.5A.5.5 0 0 0 15 8z" />
                                     </svg>
                                 </div>
-                                <h3 class="info fw-bold fontSz">NH농협 계좌 번호를<br>입력해주세요</h3>
-                                <div class="container w-100 d-flex flex-column">
+                                <h3 class="info ps-4 fw-bold fontSz">NH농협 계좌 번호를<br>입력해주세요</h3>
+                                <div class="container ps-4 w-100 d-flex flex-column">
                                     <div class="d-flex justify-content-start">
-                                        <input class="tab w-90 d-flex justify-content-center fs-4 fontSz"
+                                        <input
+                                            class="tab w-90 d-flex justify-content-center fs-4 fontSz answer_txt pg_4_answer 4_input"
                                             placeholder="계좌 번호"></input>
                                     </div>
-                                    <button type="button" class="btn mt-3 w-40 h-10 btn-light btn-sm fontSz" disabled>계좌 번호를 모른다면?</button>
+                                    <button type="button" class="btn mt-3 w-40 h-10 btn-light btn-sm fontSz" disabled>계좌
+                                        번호를 모른다면?</button>
+                                    <div class="flex-center-center h-40 rounded border border-5 border-danger p-3 m-3">
+                                        <h4 class="text-danger fw-bold m-0">계좌번호 '123456-789-10'를 입력 후 '다음' 버튼을 클릭하세요.
+                                        </h4>
+                                    </div>
+
                                     <div class="under_bar d-flex justify-content-center flex-column">
-                                        <button type="button" class="btn w-90 toss btn-b btn-lg fontSz cursor_pos_4">
+                                        <button type="button"
+                                            class="btn w-90 toss btn-b btn-lg fontSz input_nxt_btn_txt">
                                             다음
                                         </button>
                                     </div>
                                 </div>
+
                             </div>
                         </div>
                         <!------------------------------ page 5 ------------------------------>
@@ -527,24 +585,28 @@
                             <div class="page_wrap">
                                 <h1 class="pg_title" style="color: #fff;">Page5</h1>
                                 <div class="top_bar fontSz">
-                                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-arrow-left" viewBox="0 0 16 16">
-                                        <path fill-rule="evenodd" d="M15 8a.5.5 0 0 0-.5-.5H2.707l3.147-3.146a.5.5 0 1 0-.708-.708l-4 4a.5.5 0 0 0 0 .708l4 4a.5.5 0 0 0 .708-.708L2.707 8.5H14.5A.5.5 0 0 0 15 8z"/>
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+                                        class="bi bi-arrow-left" viewBox="0 0 16 16">
+                                        <path fill-rule="evenodd"
+                                            d="M15 8a.5.5 0 0 0-.5-.5H2.707l3.147-3.146a.5.5 0 1 0-.708-.708l-4 4a.5.5 0 0 0 0 .708l4 4a.5.5 0 0 0 .708-.708L2.707 8.5H14.5A.5.5 0 0 0 15 8z" />
                                     </svg>
                                 </div>
                                 <div class="p-4 fontSz">
                                     <h3 class="info fw-bold fontSz">계좌 비밀번호를<br>입력해주세요</h3>
                                     <div class="bank w-90 mt-2 d-flex text-left bold">
-                                        농협은행 000000000000
+                                        농협은행 123456-789-10
                                     </div>
                                 </div>
-                                <div class="container w-100 h-60 d-flex flex-column">
+                                <div class="container ps-4 w-100 h-60 d-flex flex-column">
                                     <div class="d-flex justify-content-start">
-                                        <input class="tab w-90 d-flex justify-content-center fs-4 fontSz"
-                                            placeholder="계좌 비밀번호(숫자 4자리)"></input>
+                                        <input
+                                            class="tab w-90 d-flex justify-content-center fs-4 fontSz ID_num4 pg_5_answer 5_input"
+                                            maxlength="4" placeholder="계좌 비밀번호(숫자 4자리)"></input>
                                     </div>
-                                    <button type="button" class="btn mt-3 w-40 btn-light btn-sm fontSz" disabled>계좌 비밀번호를 몰라요</button>
+                                    <button type="button" class="btn mt-3 w-40 btn-light btn-sm fontSz" disabled>계좌
+                                        비밀번호를 몰라요</button>
                                     <div class="under_bar d-flex justify-content-center flex-column">
-                                        <button type="button" class="btn w-90 toss btn-b btn-lg fontSz cursor_pos_5">
+                                        <button type="button" class="btn w-90 toss btn-b btn-lg fontSz input_nxt_btn">
                                             다음
                                         </button>
                                     </div>
@@ -556,12 +618,15 @@
                             <div class="page_wrap">
                                 <h1 class="pg_title" style="color: #fff;">Page6</h1>
                                 <div class="top_bar fontSz">
-                                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-arrow-left" viewBox="0 0 16 16">
-                                        <path fill-rule="evenodd" d="M15 8a.5.5 0 0 0-.5-.5H2.707l3.147-3.146a.5.5 0 1 0-.708-.708l-4 4a.5.5 0 0 0 0 .708l4 4a.5.5 0 0 0 .708-.708L2.707 8.5H14.5A.5.5 0 0 0 15 8z"/>
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+                                        class="bi bi-arrow-left" viewBox="0 0 16 16">
+                                        <path fill-rule="evenodd"
+                                            d="M15 8a.5.5 0 0 0-.5-.5H2.707l3.147-3.146a.5.5 0 1 0-.708-.708l-4 4a.5.5 0 0 0 0 .708l4 4a.5.5 0 0 0 .708-.708L2.707 8.5H14.5A.5.5 0 0 0 15 8z" />
                                     </svg>
                                 </div>
                                 <div class="container px-4 h-50">
-                                    <h3 class="w-100 mt-4 d-flex justify-content-start align-items-center fw-bold fontSz">
+                                    <h3
+                                        class="w-100 mt-4 d-flex justify-content-start align-items-center fw-bold fontSz">
                                         출금이체에 동의해 주세요
                                     </h3>
                                     <h5 class="w-100 mt-3 text-black-50 d-flex justify-content-start fontSz">
@@ -577,29 +642,36 @@
                                         <div class="w-100 mt-1 d-flex justify-content-start">
                                             <h5 class="text-black-50 fontSz">금융기관 출금이체 약관</h5>
                                             <div class="text-black-50">
-                                                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-chevron-right" viewBox="0 0 16 16">
-                                                    <path fill-rule="evenodd" d="M4.646 1.646a.5.5 0 0 1 .708 0l6 6a.5.5 0 0 1 0 .708l-6 6a.5.5 0 0 1-.708-.708L10.293 8 4.646 2.354a.5.5 0 0 1 0-.708z"/>
+                                                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16"
+                                                    fill="currentColor" class="bi bi-chevron-right" viewBox="0 0 16 16">
+                                                    <path fill-rule="evenodd"
+                                                        d="M4.646 1.646a.5.5 0 0 1 .708 0l6 6a.5.5 0 0 1 0 .708l-6 6a.5.5 0 0 1-.708-.708L10.293 8 4.646 2.354a.5.5 0 0 1 0-.708z" />
                                                 </svg>
                                             </div>
                                         </div>
                                         <div class="w-100 mt-1 d-flex justify-content-start">
                                             <h5 class="text-black-50 fontSz">개인정보 제3자 제공 동의</h5>
                                             <div class="text-black-50">
-                                                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-chevron-right" viewBox="0 0 16 16">
-                                                    <path fill-rule="evenodd" d="M4.646 1.646a.5.5 0 0 1 .708 0l6 6a.5.5 0 0 1 0 .708l-6 6a.5.5 0 0 1-.708-.708L10.293 8 4.646 2.354a.5.5 0 0 1 0-.708z"/>
+                                                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16"
+                                                    fill="currentColor" class="bi bi-chevron-right" viewBox="0 0 16 16">
+                                                    <path fill-rule="evenodd"
+                                                        d="M4.646 1.646a.5.5 0 0 1 .708 0l6 6a.5.5 0 0 1 0 .708l-6 6a.5.5 0 0 1-.708-.708L10.293 8 4.646 2.354a.5.5 0 0 1 0-.708z" />
                                                 </svg>
                                             </div>
                                         </div>
                                         <div class="w-100 mt-1 d-flex justify-content-start">
                                             <h5 class="text-black-50 fontSz">은행 출금이체 약관</h5>
                                             <div class="text-black-50">
-                                                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-chevron-right" viewBox="0 0 16 16">
-                                                    <path fill-rule="evenodd" d="M4.646 1.646a.5.5 0 0 1 .708 0l6 6a.5.5 0 0 1 0 .708l-6 6a.5.5 0 0 1-.708-.708L10.293 8 4.646 2.354a.5.5 0 0 1 0-.708z"/>
+                                                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16"
+                                                    fill="currentColor" class="bi bi-chevron-right" viewBox="0 0 16 16">
+                                                    <path fill-rule="evenodd"
+                                                        d="M4.646 1.646a.5.5 0 0 1 .708 0l6 6a.5.5 0 0 1 0 .708l-6 6a.5.5 0 0 1-.708-.708L10.293 8 4.646 2.354a.5.5 0 0 1 0-.708z" />
                                                 </svg>
                                             </div>
                                         </div>
                                         <div class="w-100 d-flex justify-content align-items-end">
-                                            <button type="button" class="btn w-100 mb-0 toss btn-b btn-lg fontSz cursor_pos_6">
+                                            <button type="button"
+                                                class="btn w-100 mb-0 toss btn-b btn-lg fontSz pg_6_answer">
                                                 동의하기
                                             </button>
                                         </div>
@@ -612,8 +684,8 @@
                             <div class="page_wrap">
                                 <h1 class="pg_title" style="color: #fff;">Page7</h1>
                                 <div class="top_bar d-flex justify-content-between fontSz">
-                                    <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20"
-                                        fill="currentColor" class="bi bi-chevron-left" viewBox="0 0 16 16">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor"
+                                        class="bi bi-chevron-left" viewBox="0 0 16 16">
                                         <path fill-rule="evenodd"
                                             d="M11.354 1.646a.5.5 0 0 1 0 .708L5.707 8l5.647 5.646a.5.5 0 0 1-.708.708l-6-6a.5.5 0 0 1 0-.708l6-6a.5.5 0 0 1 .708 0z" />
                                     </svg>
@@ -633,55 +705,66 @@
                                         <button type="button" class="btn w-75 mx-3 toss btn-b btn-lg fontSz">
                                             보내기
                                         </button>
-                                    </div> 
+                                    </div>
                                     <div class="banner w-100 d-flex flex-center-center fontSz">
                                         배너 광고
                                     </div>
-                                </div>                        
-                                <div class="bar bg-secondary bg-opacity-10 border-top border-bottom border-secondary border-opacity-25">
+                                </div>
+                                <div
+                                    class="bar bg-secondary bg-opacity-10 border-top border-bottom border-secondary border-opacity-25">
                                 </div>
                                 <div>
                                     <div class="p-4 d-flex justify-content-between">
                                         <div class="text-black-50 fontSz">
                                             전체
-                                            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-chevron-down" viewBox="0 0 16 16">
-                                                <path fill-rule="evenodd" d="M1.646 4.646a.5.5 0 0 1 .708 0L8 10.293l5.646-5.647a.5.5 0 0 1 .708.708l-6 6a.5.5 0 0 1-.708 0l-6-6a.5.5 0 0 1 0-.708z"/>
+                                            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16"
+                                                fill="currentColor" class="bi bi-chevron-down" viewBox="0 0 16 16">
+                                                <path fill-rule="evenodd"
+                                                    d="M1.646 4.646a.5.5 0 0 1 .708 0L8 10.293l5.646-5.647a.5.5 0 0 1 .708.708l-6 6a.5.5 0 0 1-.708 0l-6-6a.5.5 0 0 1 0-.708z" />
                                             </svg>
                                         </div>
                                         <div class="text-black-50 fontSz">
                                             방금 전
-                                            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-arrow-clockwise" viewBox="0 0 16 16">
-                                                <path fill-rule="evenodd" d="M8 3a5 5 0 1 0 4.546 2.914.5.5 0 0 1 .908-.417A6 6 0 1 1 8 2v1z"/>
-                                                <path d="M8 4.466V.534a.25.25 0 0 1 .41-.192l2.36 1.966c.12.1.12.284 0 .384L8.41 4.658A.25.25 0 0 1 8 4.466z"/>
+                                            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16"
+                                                fill="currentColor" class="bi bi-arrow-clockwise" viewBox="0 0 16 16">
+                                                <path fill-rule="evenodd"
+                                                    d="M8 3a5 5 0 1 0 4.546 2.914.5.5 0 0 1 .908-.417A6 6 0 1 1 8 2v1z" />
+                                                <path
+                                                    d="M8 4.466V.534a.25.25 0 0 1 .41-.192l2.36 1.966c.12.1.12.284 0 .384L8.41 4.658A.25.25 0 0 1 8 4.466z" />
                                             </svg>
-                                        </div>  
+                                        </div>
                                     </div>
                                     <div class="mx-4 mt-3 text-black-50 d-flex justify-content-start fontSz">
                                         10월 14일
                                     </div>
-                                    <div class="container w-100 mt-3 d-flex flex-column justify-content-center align-items-center">
-                                        <div class="btn w-100 h-10 mb-3 tab text-left d-flex justify-content-start align-items-end">
+                                    <div
+                                        class="container w-100 mt-3 d-flex flex-column justify-content-center align-items-center">
+                                        <div
+                                            class="btn w-100 h-10 mb-3 tab text-left d-flex justify-content-start align-items-end">
                                             <div class="icon fontSz">1
                                             </div>
                                             <div class="text-black-50 mx-4 fontSz">
                                                 17:40
                                             </div>
                                         </div>
-                                        <div class="btn w-100 h-10 mb-3 tab text-left d-flex justify-content-start align-items-end">
+                                        <div
+                                            class="btn w-100 h-10 mb-3 tab text-left d-flex justify-content-start align-items-end">
                                             <div class="icon fontSz">2
                                             </div>
                                             <div class="text-black-50 mx-4 fontSz">
                                                 17:40
                                             </div>
                                         </div>
-                                        <div class="btn w-100 h-10 mb-3 tab text-left d-flex justify-content-start align-items-end">
+                                        <div
+                                            class="btn w-100 h-10 mb-3 tab text-left d-flex justify-content-start align-items-end">
                                             <div class="icon fontSz">3
                                             </div>
                                             <div class="text-black-50 mx-4 fontSz">
                                                 16:02
                                             </div>
                                         </div>
-                                        <div class="btn w-100 h-10 mb-3 text-black-50 tab text-left d-flex justify-content-start align-items-end">
+                                        <div
+                                            class="btn w-100 h-10 mb-3 text-black-50 tab text-left d-flex justify-content-start align-items-end">
                                             <div class="icon fontSz">4
                                             </div>
                                             <div class="mx-4 fontSz">
@@ -692,10 +775,18 @@
                                 </div>
                             </div>
                         </div>
+                        <!------------------------------ page 8 ------------------------------>
+                        <div class="page" id="p8">
+                            <div class="page_wrap">
+                                <h1 class="pg_title" style="color: #fff;">Page8</h1>
+                                <h1 class="title_h1">완료화면</h1>
+                            </div>
+                        </div>
+
                     </main>
                     <div class="ctrlbar" id="ctrlbar">
                         <div class="start_btn_wrap">
-                            <button type="button" class="btn btn-lg btn-dark" id="start-btn">시작하기</button>
+                            <button type="button" class="btn start_btn btn-lg" id="start-btn">시작하기</button>
                         </div>
                         <div class="nav_btn_wrap">
                             <div class="baricon_wrap prev" id="prev_btn">
@@ -778,11 +869,11 @@
                             <div data-name="popover-content" class="d-flex justify-content-center align-items-center">
 
                                 <!-- /////////////// -->
-                                <div class="txt_ex1 font-weight-bold fw-bold">가</div>
+                                <div class="txt_ex1 fw-bold">가</div>
                                 <!-- <input type="range" name="slider" id="slider" value="0" min="0" max="2"  /> -->
                                 <input type="range" min="0" max="2" value="0" class="slider" id="tSliderRange">
                                 <!-- <p>Value: <span id="value"></span></p> -->
-                                <div class="txt_ex2 font-weight-bold fs-3 fw-bold">가</div>
+                                <div class="txt_ex2 fs-3 fw-bold">가</div>
                                 <!-- /////////////// -->
 
                             </div>

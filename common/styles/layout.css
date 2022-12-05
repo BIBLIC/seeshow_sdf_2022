@@ -124,12 +124,16 @@
 
 .addShadow {
   box-shadow : rgba(0,0,0,0.3) 0 0 0 9999px;
-  z-index : 2;
+  z-index : 30;
 }
 
 .addInnerShadow {
   box-shadow : inset rgba(0,0,0,0.3) 0 0 0 9999px;
-  z-index : 2;
+  z-index : 30;
+}
+
+.mk_border_darker {
+  border : #B2B2B2 !important;
 }
 
 .modal-body, #modal_ {

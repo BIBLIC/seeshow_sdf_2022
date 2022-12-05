@@ -218,6 +218,7 @@ slider.oninput = function () {
 $(".cursor_wrap").css('display', 'none');
 $(".pg_" + page_num + "_answer").css('box-shadow', '#00000');
 $('.shadow_ext').css('box-shadow', '#00000');
+$('.shadow_inner').css('box-shadow', 'inset #00000');
 
 //시작하기 버튼 클릭 후 컨트롤 바 내부 변경
 $('#hint_btn').click(function () {
@@ -227,7 +228,7 @@ $('#hint_btn').click(function () {
     $(".pg_" + real_pg + "_answer:first").toggleClass("addShadow");
     $('.shadow_ext').toggleClass("addShadow");
     $('.shadow_inner').toggleClass("addInnerShadow");
-
+    $('.border_darker').toggleClass("mk_border_darker");
 })
 
 
@@ -281,6 +282,7 @@ document.querySelector("main").addEventListener("click", function (e) {//메인 
         //console.log("correct");
 
         //----엔터값 있을 경우-------------------
+        //anwer_txt pg_n_answer n_input
         if (e.target.className.includes("answer_txt")) {
             $('.' + real_pg + '_input').keydown(function (e) {
                 if (event.which === 13) {
@@ -303,6 +305,7 @@ document.querySelector("main").addEventListener("click", function (e) {//메인 
         }
 
         //----아무거나 입력해도 될 때-------------------
+        //anwer_any_txt pg_n_answer n_input
         else if (e.target.className.includes("anwer_any_txt")) {
 
             //키보드 누르고 1자리 이상일 때 엔터 누르면 다음 페이지로 넘어가게 
@@ -328,7 +331,8 @@ document.querySelector("main").addEventListener("click", function (e) {//메인 
             });
         }
 
-        //----주민번호 13자리... 있을 경우-------------------
+        //----주민번호 13자리... 있을 경우(-없이 13자리 입력)-------------------
+        // ID_num13 pg_n_answer n_input
         else if (e.target.className.includes("ID_num13")) {
 
             //키보드 누르고 13자리 이상일 때 엔터 누르면 다음 페이지로 넘어가게 
@@ -354,7 +358,8 @@ document.querySelector("main").addEventListener("click", function (e) {//메인 
             });
         }
 
-        //----전화번호 입력... 있을 경우-------------------
+        //----전화번호 입력... 있을 경우 (-없이 11자리 입력)-------------------
+        // ID_num11 pg_n_answer n_input
         else if (e.target.className.includes("ID_num11")) {
 
             //키보드 누르고 13자리 이상일 때 엔터 누르면 다음 페이지로 넘어가게 
@@ -380,8 +385,36 @@ document.querySelector("main").addEventListener("click", function (e) {//메인 
             });
         }
 
+        //----비번 4자리 입력... 있을 경우 (-없이 4자리 입력)-------------------
+        // ID_num4 pg_n_answer n_input
+        else if (e.target.className.includes("ID_num4")) {
 
-        //----비번6자리 있을 경우-------------------
+            //키보드 누르고 4자리 이상일 때 엔터 누르면 다음 페이지로 넘어가게 
+            $('.' + real_pg + '_input').keydown(function (e) {
+                if (event.which === 13) {
+                    let unspacedValue = this.value.split(' ').join('');
+                    if (unspacedValue.length == 4 ) {
+                        console.log(unspacedValue);
+                        console.log(unspacedValue.length);
+                        next(real_pg);
+                    } else {
+                        $('.modal-body').text(instruction);
+                        $('#staticBackdrop').modal('show');
+                    }
+                }
+            });
+
+            //키보드 떼고 4자리 이상이면 다음 버튼 활성화되게 
+            $('.' + real_pg + '_input').keyup(function(){
+                if (this.value.length ==4 ) {
+                    $(".input_nxt_btn").addClass("pg_" + real_pg + "_answer");
+                }
+            });
+        }
+
+
+        //----비번6자리 있을 경우 + dot -------------------
+        //pw_input pg_n_answer pwn input_(키패드 넘버)
         else if (e.target.className.includes("pw_input")) {
             console.log('pw');
             //키패드 번호 누르기
@@ -416,7 +449,8 @@ document.querySelector("main").addEventListener("click", function (e) {//메인 
             }
         } 
 
-        //----주민번호 뒷자리만 입력하는 경우-------------------
+        //----주민번호 뒷자리만 입력하는 경우  + dot -------------------
+        //input_8 pg_n_answer IDn_input pw(키패드 넘버)
         else if (e.target.className.includes("ID7_input")) {
             console.log('pw');
             //키패드 번호 누르기

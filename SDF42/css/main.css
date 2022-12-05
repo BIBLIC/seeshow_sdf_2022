@@ -102,6 +102,10 @@ svg {
     min-height: 3vh;
 }
 
+#p1 .btn_edit {
+    border : none !important;
+}
+
 #p2 .btn {
     width: 20%;
 }
