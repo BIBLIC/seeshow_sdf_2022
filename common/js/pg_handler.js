@@ -327,6 +327,7 @@ document.querySelector("main").addEventListener("click", function (e) {//메인 
             $('.' + real_pg + '_input').keyup(function(){
                 if (this.value.length >=1 ) {
                     $(".input_nxt_btn").addClass("pg_" + real_pg + "_answer");
+                    $(".nxt_btn_able").addClass("btn_able_color");
                 }
             });
         }
@@ -384,6 +385,7 @@ document.querySelector("main").addEventListener("click", function (e) {//메인 
                 }
             });
         }
+
 
         //----비번 4자리 입력... 있을 경우 (-없이 4자리 입력)-------------------
         // ID_num4 pg_n_answer n_input
