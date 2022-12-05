@@ -1,4 +1,4 @@
-var total_page = 8;//페이지 수 -> 시나리오마다 total_page 수 바꾸기 
+var total_page = 11;//페이지 수 -> 시나리오마다 total_page 수 바꾸기 
 
 
 //정답 처리할 영역 클래스 명
@@ -40,6 +40,18 @@ const pageClickArea = [
     {
         page: 8,
         correctAnswer: "pg_8_answer"
+    },
+    {
+        page: 9,
+        correctAnswer: "pg_9_answer"
+    },
+    {
+        page: 10,
+        correctAnswer: "pg_10_answer"
+    },
+    {
+        page: 11,
+        correctAnswer: "pg_11_answer"
     },
 ];
 
