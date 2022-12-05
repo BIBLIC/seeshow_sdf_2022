@@ -199,7 +199,6 @@
     text-decoration: unset;
 }
 /* --------- */
-
 #p10 .page_wrap,
 #p11 .page_wrap {
     background: #666;
@@ -215,7 +214,7 @@
     min-width: auto;
     height: 54vh;
     position: relative;
-  }
+}
 
 #p10 .pop .wrap,
 #p11 .pop .wrap {
@@ -223,41 +222,41 @@
     overflow-y: scroll;
     -ms-overflow-style: none;
     /* IE and Edge */
-  }
-  
-  #p10 .pop .wrap::-webkit-scrollbar,
-  #p11 .pop .wrap::-webkit-scrollbar {
+}
+
+#p10 .pop .wrap::-webkit-scrollbar,
+#p11 .pop .wrap::-webkit-scrollbar {
     display: none;
     /* Chrome, Safari, Opera*/
-  }
+}
 
-#p10 .pop .nav .nav-top,
-#p11 .pop .nav .nav-top {
+#p10 .pop .nav .nav-item,
+#p11 .pop .nav .nav-item {
     padding-bottom: 1em;
-  }
+}
 
-#p10 .pop .nav-top:not(.li1),
-#p11 .pop .nav-top:not(.li1) {
+#p10 .pop .nav .nav-item:not(.li1),
+#p11 .pop .nav .nav-item:not(.li1) {
     padding-left: 1.8em;
 }
 
-#p10 .pop .nav .nav-top:not(:first-child),
-#p11 .pop .nav .nav-top:not(:first-child) {
+#p10 .pop .nav .nav-item:not(:first-child),
+#p11 .pop .nav .nav-item:not(:first-child) {
     padding-top: 1em;
 }
 
-#p10 .pop .nav .nav-top:not(:last-child),
-#p11 .pop .nav .nav-top:not(:last-child) {
+#p10 .pop .nav .nav-item:not(:last-child),
+#p11 .pop .nav .nav-item:not(:last-child) {
     border-bottom: var(--bs-border-width) var(--bs-border-style) var(--bs-border-color);
 }
 
-#p10 .pop .nav .nav-top svg,
-#p11 .pop .nav .nav-top svg {
+#p10 .pop .nav .nav-item svg,
+#p11 .pop .nav .nav-item svg {
     min-width: 1.3rem;
 }
 
 #p10 .btn,
-#p11 .btn{
+#p11 .btn {
     height: 8vh;
     border-top-left-radius: 0;
     border-top-right-radius: 0;
