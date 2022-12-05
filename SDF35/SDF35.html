@@ -53,7 +53,7 @@
                         <!------------------------------ page 0 (시작 화면) ------------------------------>
                         <div class="page" id="p0">
                             <div class="page_wrap">
-                                <h1 class="title_h1 fontSz">시작화면</h1>
+                                <h1 class="title_h1 ">시작화면</h1>
                             </div>
                         </div>
                         <!------------------------------ page 1 ------------------------------>
@@ -65,8 +65,8 @@
                                         <!-- 로고 이미지 추가 -->
                                         <img class="icon" src="./img/1.png" alt="">
                                     </div>
-                                    <div class="w-100 d-flex flex-column justify-content-center align-items-center">
-                                        <h4 class="fontSz fw-bold">
+                                    <div class="w-100 d-flex flex-column justify-content-center align-items-center fontSz">
+                                        <h4 class="fw-bold fontSz">
                                             당신 근처의 당근마켓
                                         </h4>
                                         <div class="fontSz text-center">
@@ -77,9 +77,21 @@
                                 </div>
 
                                 <div class="w-100 px-4 under_bar">
-                                    <button type="button" class="pg_1_answer btn btn-or btn-lg w-100 fontSz mb-3">
-                                        시작하기
-                                    </button>
+                                    <div class="cursor_pos_1">
+                                        <button type="button" class="pg_1_answer btn btn-or btn-lg w-100 fontSz mb-3">
+                                            시작하기
+                                        </button>
+                                        <!-- 커서 가이드 -->
+                                        <div class="cursor_wrap cursor_wrap_1">
+                                            <span class="cursor" x-placement="bottom">
+                                                <button class="react-joyride__beacon" type="button">
+                                                    <span class="cursor_outer"></span>
+                                                    <span class="cursor_inner"><span>
+                                                </button>
+                                            </span>
+                                        </div>
+                                        <!-- 커서 가이드 -->
+                                    </div>
                                     <div class="d-flex justify-content-center align-items-center">
                                         <div class="text-black-50 text-sm fontSz">이미 계정이 있나요?</div>
                                         <div class="text-or text-sm fw-bold fontSz">로그인</div>
@@ -107,8 +119,20 @@
                                                 <path
                                                     d="M11.742 10.344a6.5 6.5 0 1 0-1.397 1.398h-.001c.03.04.062.078.098.115l3.85 3.85a1 1 0 0 0 1.415-1.414l-3.85-3.85a1.007 1.007 0 0 0-.115-.1zM12 6.5a5.5 5.5 0 1 1-11 0 5.5 5.5 0 0 1 11 0z" />
                                             </svg>
-                                            <input class="form-control fontSz answer_txt pg_2_answer 2_input"
-                                                type="search" placeholder="동명(읍,면)으로 검색(ex. 서초동)" aria-label="Search">
+                                            <div class="cursor_pos_2">
+                                                <input class="form-control fontSz answer_txt pg_2_answer 2_input"
+                                                    type="search" placeholder="동명(읍,면)으로 검색(ex. 서초동)" aria-label="Search">
+                                                <!-- 커서 가이드 -->
+                                                <div class="cursor_wrap cursor_wrap_2">
+                                                    <span class="cursor" x-placement="bottom">
+                                                        <button class="react-joyride__beacon" type="button">
+                                                            <span class="cursor_outer"></span>
+                                                            <span class="cursor_inner"><span>
+                                                        </button>
+                                                    </span>
+                                                </div>
+                                                <!-- 커서 가이드 -->
+                                            </div>
                                         </div>
                                     </div>
                                     <button type="button" class="btn btn-or w-100 fontSz input_nxt_btn_txt">
@@ -180,7 +204,7 @@
                                         </form>
                                     </div>
                                 </div>
-                                <ul class="scroll under_bar list-unstyled addShadow pt-3 px-4">
+                                <ul class="scroller under_bar list-unstyled addShadow pt-3 px-4">
                                     <li class="flex-row align-items-center fontSz  pg_4_answer">
                                         <div class="pg_4_answer">
                                             <svg xmlns="http://www.w3.org/2000/svg" width="23" height="23"
@@ -282,7 +306,7 @@
                                         </form>
                                     </div>
                                 </div>
-                                <ul class="scroll under_bar list-unstyled addShadow pt-3 px-4">
+                                <ul class="scroller under_bar list-unstyled addShadow pt-3 px-4">
                                     <li class="fontSz flex-row align-items-center">
                                         <svg xmlns="http://www.w3.org/2000/svg" width="23" height="23"
                                             fill="currentColor" class="bi bi-check-circle-fill text-or svg"
@@ -413,7 +437,7 @@
                                         </div>
                                     </div>
 
-                                    <button type="button" class="btn btn-or w-100 fontSz mb-3">
+                                    <button type="button" class="btn btn-or w-100 fontSz mb-3 input_nxt_btn_txt">
                                         동의하고 시작하기
                                     </button>
                                     <u class="text-sm text-black-50 d-inline-flex fontSz">인증번호가 오지 않나요?</u>
@@ -460,7 +484,7 @@
                                             </div>
                                         </div>
 
-                                        <div class="container flex-fill scroll">
+                                        <div class="container flex-fill scroller">
                                             <div
                                                 class="px-3 d-flex flex-column justify-content-start align-items-center">
                                                 <div class="tab w-100 d-flex justify-content-center ">
@@ -680,14 +704,14 @@
                                             <div class="bartext">채팅</div>
                                         </div>
                                         <div class="fontSz baricon_wrap prev pg_8_answer">
-                                            <div class="baricon">
+                                            <div class="baricon pg_8_answer">
                                                 <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16"
-                                                    fill="currentColor" class="bi bi-person" viewBox="0 0 16 16">
+                                                    fill="currentColor" class="bi bi-person pg_8_answer" viewBox="0 0 16 16">
                                                     <path
                                                         d="M8 8a3 3 0 1 0 0-6 3 3 0 0 0 0 6Zm2-3a2 2 0 1 1-4 0 2 2 0 0 1 4 0Zm4 8c0 1-1 1-1 1H3s-1 0-1-1 1-4 6-4 6 3 6 4Zm-1-.004c-.001-.246-.154-.986-.832-1.664C11.516 10.68 10.289 10 8 10c-2.29 0-3.516.68-4.168 1.332-.678.678-.83 1.418-.832 1.664h10Z" />
                                                 </svg>
                                             </div>
-                                            <div class="bartext">나의 당근</div>
+                                            <div class="bartext pg_8_answer">나의 당근</div>
                                         </div>
                                     </div>
                                 </div>
@@ -698,7 +722,7 @@
                         <div class="page" id="p9">
                             <div class="page_wrap">
                                 <h1 class="pg_title" style="color: #fff;">Page9</h1>
-                                <div class="flex-fill scroll">
+                                <div class="flex-fill scroller">
                                     <div class="w-100 pt-3">
                                         <div class="top_icon w-100 d-flex justify-content-end align-items-center px-4 pb-3 fontSz">
                                             <svg xmlns="http://www.w3.org/2000/svg" width="23" height="23" fill="currentColor" class="bi bi-gear m-0" viewBox="0 0 16 16">
@@ -840,7 +864,7 @@
                                                           동네 인증하기
                                                     </div>
                                                     <div class="list-item pg_9_answer">
-                                                        <svg xmlns="http://www.w3.org/2000/svg"  fill="currentColor" class="bi bi-tag" viewBox="0 0 16 16">
+                                                        <svg xmlns="http://www.w3.org/2000/svg"  fill="currentColor" class="bi bi-tag pg_9_answer" viewBox="0 0 16 16">
                                                             <path d="M6 4.5a1.5 1.5 0 1 1-3 0 1.5 1.5 0 0 1 3 0zm-1 0a.5.5 0 1 0-1 0 .5.5 0 0 0 1 0z"/>
                                                             <path d="M2 1h4.586a1 1 0 0 1 .707.293l7 7a1 1 0 0 1 0 1.414l-4.586 4.586a1 1 0 0 1-1.414 0l-7-7A1 1 0 0 1 1 6.586V2a1 1 0 0 1 1-1zm0 5.586 7 7L13.586 9l-7-7H2v4.586z"/>
                                                           </svg>
@@ -865,7 +889,7 @@
                                 </div>
 
 
-                                <div class="under_bar">
+                                <div class="under_bar shadow_inner">
                                     <div class="fontSz baricon_wrap prev">
                                         <div class="baricon">
                                             <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16"
@@ -947,7 +971,7 @@
                                     <div class="tab form fontSz" role="search">
                                         <input class="form-control me-2 answer_txt pg_10_answer 10_input fontSz" type="search"
                                             placeholder="키워드를 입력해주세요. (예: 자전거)" aria-label="Search"> 
-                                        <div class="flex-center-center text-or w-20 h-80">등록</div>
+                                        <button class="flex-center-center text-or w-20 h-80 input_nxt_btn_txt">등록</button>
                                     </div>
                                 </div>
                                 <div

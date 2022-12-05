@@ -175,17 +175,17 @@ svg {
 }
 
 
-#p8 .scroll .tab {
+#p8 .scroller .tab {
     width: 100%;
     height: auto;
     padding-top: .5em;
     padding-bottom: .8em;
 }
-#p8 .scroll .tab:not(:last-child) {
+#p8 .scroller .tab:not(:last-child) {
     border-bottom: 1px solid #ced4da;
 }
 
-#p8 .scroll .tab .icon {
+#p8 .scroller .tab .icon {
     width: 25%;
     height: auto;
     /* border: 0; */
@@ -195,7 +195,7 @@ svg {
     align-items: center;
 }
 
-#p8 .scroll .tab .txt-wrap {
+#p8 .scroller .tab .txt-wrap {
     flex: 1;
     height: 100%;
     display: flex;
@@ -205,24 +205,24 @@ svg {
     padding-left: 0.5em;
 }
 
-#p8 .scroll .tab .txt-wrap .txt {
+#p8 .scroller .tab .txt-wrap .txt {
     width: 100%;
     display: flex;
     justify-content: flex-start;
     align-items: center;
 }
 
-#p8 .scroll .tab .txt-wrap .txt .svg {
+#p8 .scroller .tab .txt-wrap .txt .svg {
     --bs-text-opacity: 1;
     color: rgba(0,0,0,.5)!important;
 }
 
-#p8 .scroll .tab .txt-wrap .txt.price {
+#p8 .scroller .tab .txt-wrap .txt.price {
     font-weight: bold;
     /* font-size: smaller; */
 }
 
-#p8 .scroll .tab .txt-wrap .txt.react {
+#p8 .scroller .tab .txt-wrap .txt.react {
     justify-content: flex-end;
 }
 
@@ -257,7 +257,7 @@ svg {
     margin: 0;
 }
 
-#p9 .scroll {
+#p9 .scroller {
     height: 79vh;
 }
 
