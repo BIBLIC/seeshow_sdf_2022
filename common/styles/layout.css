@@ -19,14 +19,14 @@
   color: #fff!important;
 }
 
-.scroll {
+.scroller {
   scroll-behavior: smooth;
   overflow-y: scroll;
   -ms-overflow-style: none;
   /* IE and Edge */
 }
 
-.scroll::-webkit-scrollbar {
+.scroller::-webkit-scrollbar {
   display: none;
   /* Chrome, Safari, Opera*/
 }
@@ -124,6 +124,11 @@
 
 .addShadow {
   box-shadow : rgba(0,0,0,0.3) 0 0 0 9999px;
+  z-index : 2;
+}
+
+.addInnerShadow {
+  box-shadow : inset rgba(0,0,0,0.3) 0 0 0 9999px;
   z-index : 2;
 }
 

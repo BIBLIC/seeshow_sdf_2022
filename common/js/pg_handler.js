@@ -226,6 +226,8 @@ $('#hint_btn').click(function () {
     $(".cursor_wrap_" + real_pg).toggleClass('show');
     $(".pg_" + real_pg + "_answer:first").toggleClass("addShadow");
     $('.shadow_ext').toggleClass("addShadow");
+    $('.shadow_inner').toggleClass("addInnerShadow");
+
 })
 
 
@@ -291,7 +293,7 @@ document.querySelector("main").addEventListener("click", function (e) {//메인 
                     }
                 }
             });
-            //키보드 떼고 1자리 이상이면 다음 버튼 활성화되게 
+            //키보드 떼고 값 일치하면 다음 버튼 활성화되게 
             $('.' + real_pg + '_input').keyup(function(){
                 let unspacedValue = this.value.split(' ').join('');
                 if (unspacedValue == inputableAnswer) {
