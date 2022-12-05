@@ -345,3 +345,7 @@ svg {
     padding: .5em;
     padding-left: 1em;
 }
+
+.cursor_pos_1, .cursor_pos_2 {
+   width: 100%; 
+}
