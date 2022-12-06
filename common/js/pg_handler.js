@@ -282,7 +282,7 @@ document.querySelector("main").addEventListener("click", function (e) {//메인 
         //console.log("correct");
 
         //----엔터값 있을 경우-------------------
-        //anwer_txt pg_n_answer n_input
+        //answer_txt pg_n_answer n_input
         if (e.target.className.includes("answer_txt")) {
             $('.' + real_pg + '_input').keydown(function (e) {
                 if (event.which === 13) {
@@ -300,6 +300,42 @@ document.querySelector("main").addEventListener("click", function (e) {//메인 
                 let unspacedValue = this.value.split(' ').join('');
                 if (unspacedValue == inputableAnswer) {
                     $(".input_nxt_btn_txt").addClass("pg_" + real_pg + "_answer");
+                }
+            });
+        }
+
+        //----자동으로 페이지 넘겨야할 때 : 6자리 입력 --토스 등등-----------------
+        //ID6_auto_txt pg_n_answer n_input
+        else if (e.target.className.includes("ID6_auto_txt")) {
+            //키보드 떼고 값 일치하면 다음 버튼 활성화되게 
+            $('.' + real_pg + '_input').keyup(function(){
+                if (this.value.length ==6) {
+                    next(real_pg);
+                    
+                }
+            });
+        }
+
+        //----자동으로 페이지 넘겨야할 때 : 7자리 입력 --토스 등등-----------------
+        //ID7_auto_txt pg_n_answer n_input
+        else if (e.target.className.includes("ID7_auto_txt")) {
+            //키보드 떼고 값 일치하면 다음 버튼 활성화되게 
+            $('.' + real_pg + '_input').keyup(function(){
+                if (this.value.length ==7) {
+                    next(real_pg);
+                    
+                }
+            });
+        }
+
+        //----자동으로 페이지 넘겨야할 때 : 텍스트 입력 --토스 등등-----------------
+        //anwer_auto_txt pg_n_answer n_input
+        else if (e.target.className.includes("answer_auto_txt")) {
+            //키보드 떼고 값 일치하면 다음 버튼 활성화되게 
+            $('.' + real_pg + '_input').keyup(function(){
+                let unspacedValue = this.value.split(' ').join('');
+                if (unspacedValue == inputableAnswer) {
+                    next(real_pg);
                 }
             });
         }
@@ -381,6 +417,10 @@ document.querySelector("main").addEventListener("click", function (e) {//메인 
             //키보드 떼고 13자리 이상이면 다음 버튼 활성화되게 
             $('.' + real_pg + '_input').keyup(function(){
                 if (this.value.length ==11 ) {
+                    if (e.target.className.includes("toss_btn_chng")) {
+                        $(".input_nxt_btn").removeClass("btn-disabled");
+                        $(".input_nxt_btn").addClass("btn-b");
+                    }
                     $(".input_nxt_btn").addClass("pg_" + real_pg + "_answer");
                 }
             });
@@ -414,6 +454,42 @@ document.querySelector("main").addEventListener("click", function (e) {//메인 
             });
         }
 
+        //----비번4자리 있을 경우 + dot -------------------
+        //pw_4_input pg_n_answer input_(키패드 넘버)
+        else if (e.target.className.includes("pw_4_input")) {
+            console.log('pw');
+            //키패드 번호 누르기
+            for (j = 0; j < 10; j++) {
+                if (e.target.className.includes("input_" + j)) {
+                    //let pressedKey = j;
+                    if (pwArr.length < 3) {
+                        console.log(j + '이전 clicked');
+                        var num_cnt = pwArr.length
+                        pwArr.push(j);
+                        console.log(pwArr);
+                        console.log("길이는", pwArr.length);
+                        $(".dot" + num_cnt).css("background-color", "#ffffff");//색칠
+
+                    } else if (pwArr.length = 3) { //배열 길이 5 -> 6개까지 입력하고 일어날 이벤트
+                        console.log(j + '이후 clicked');
+                        pwArr.push(j);
+                        console.log("길이는", pwArr.length);
+                        console.log(pwArr);
+                        $(".dot3").css("background-color", "#ffffff");//색칠
+                        next(real_pg);
+                        $('.submit_btn').click(function () {
+                            var pw_set = pwArr.join('');
+                            console.log(pw_set);
+                            $(".submit_btn").addClass("pg_" + real_pg + "_answer");
+                            pwArr = [];
+                            for ( i =0; i <4; i++) {
+                                $(".dot"+i).css("background-color", "#4f4f5a");//버튼누르면 색칠초기화
+                            }
+                        });
+                    }
+                }
+            }
+        } 
 
         //----비번6자리 있을 경우 + dot -------------------
         //pw_input pg_n_answer pwn input_(키패드 넘버)
@@ -450,6 +526,7 @@ document.querySelector("main").addEventListener("click", function (e) {//메인 
                 }
             }
         } 
+        
 
         //----주민번호 뒷자리만 입력하는 경우  + dot -------------------
         //input_8 pg_n_answer IDn_input pw(키패드 넘버)

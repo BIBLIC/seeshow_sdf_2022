@@ -89,7 +89,7 @@ const modalCont = [
     },
     {
         page: 7,
-        instruction: "추가된 계좌 정보 확인하고 하단 바의 '다음'버튼을 클릭하세요."
+        instruction: "추가된 계좌 정보를 확인하고 하단 바의 '다음'버튼을 클릭하세요."
     },
     {
         page: 8,

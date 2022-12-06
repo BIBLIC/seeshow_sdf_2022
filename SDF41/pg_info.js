@@ -1,4 +1,4 @@
-var total_page = 12;//페이지 수 -> 시나리오마다 total_page 수 바꾸기 
+var total_page = 13;//페이지 수 -> 시나리오마다 total_page 수 바꾸기 
 
 //오디오 배열 선언, 페이지 수 대로 배열에 mp3 넣기
 const audioArray = [];
@@ -58,6 +58,10 @@ const pageClickArea = [
         page: 11,
         correctAnswer: "pg_11_answer"
     },
+    {
+        page: 12,
+        correctAnswer: "pg_12_answer"
+    },
 ];
 
 const inputAnswer = [
@@ -66,21 +70,16 @@ const inputAnswer = [
         page: 1,
         inputableAnswer: "김토스"
     },
-    {
-        page: 2,
-        inputableAnswer: ""
-    },
     {},
-    {
-        page: 4,
-        inputableAnswer: ""
-    },
+    {},
+    {},
     {},
     {},
     {
         page: 7,
         inputableAnswer: "123456"
     },
+    {},
     {},
     {},
     {},
@@ -95,51 +94,51 @@ const modalCont = [
     },
     {
         page: 1,
-        instruction: "'병원비 돌려받기'를 클릭하세요."
+        instruction: "이름 입력란에 '김토스'를 입력하세요."
     },
     {
         page: 2,
-        instruction: "'내 병원비 돌려받기' 버튼을 클릭하세요."
+        instruction: "주민등록번호 앞자리 여섯글자를 주민번호 입력란의 첫 번째 칸에 입력하세요."
     },
     {
         page: 3,
-        instruction: "서류를 받았다면 '받았어요' 버튼을 클릭하세요."
+        instruction: "주민등록번호 뒷자리 일곱글자를 주민번호 입력란의 두 번째 칸에 입력하세요."
     },
     {
         page: 4,
-        instruction: "'삼성해상화재보험'을 클릭하세요."
+        instruction: "휴대폰 통신사 선택지 중 'SKT'를 선택하세요."
     },
     {
         page: 5,
-        instruction: "주민번호를 입력 후 '다음' 버튼을 클릭하세요."
+        instruction: "'-'를 제외한 휴대폰 번호 11자리를 휴대폰 번호 입력란에 입력하고 '본인 인증하기' 버튼을 클릭하세요."
     },
     {
         page: 6,
-        instruction: "병원에 방문한 이유를 간단하게 작성 후 '다음'버튼을 클릭하세요."
+        instruction: "약관 내용 확인 후 '동의하기' 버튼을 클릭하세요."
     },
     {
         page: 7,
-        instruction: "날짜를 입력한 후 '다음'버튼을 클릭하세요."
+        instruction: "인증번호 입력란에 '123456'을 입력하세요."
     },
     {
         page: 8,
-        instruction: "병원에서 받은 서류 사진을 올린 후 '다음' 버튼을 클릭하세요."
+        instruction: "전화 걸기 권한을 허용하기 위해 '허용'을 클릭하세요."
     },
     {
         page: 9,
-        instruction: "'입출금 통장'을 클릭하세요."
+        instruction: "'인증 전화 받기' 버튼을 클릭하세요."
     },
     {
         page: 10,
-        instruction: "신청 정보를 확인 후 '버튼'을 클릭하세요."
+        instruction: "비밀번호를 설정하기 위해 먼저 숫자 네자리를 화면 상의 키패드를 이용해 클릭하세요."
     },
     {
         page: 11,
-        instruction: "신청 정보를 확인 후 '버튼'을 클릭하세요."
+        instruction: "화면 상의 키패드를 이용해 알파벳 한 글자를 입력하세요."
     },
     {
         page: 12,
-        instruction: "신청 정보를 확인 후 '버튼'을 클릭하세요."
+        instruction: "가입된 정보를 확인하고 하단 바의 '다음'버튼을 클릭하세요."
     },
 ];
 
@@ -185,12 +184,12 @@ cursor_wrap_2.style.zIndex = "100";
 
 const { createPopper } = Popper;
 createPopper(cursor_pos_1, cursor_wrap_1, {
-    placement: 'right',
+    placement: 'left',
     modifiers: [
         {
             name: 'offset',
             options: {
-                offset: [0,0],
+                offset: [0,100],
             },
         },
     ],
@@ -201,7 +200,7 @@ createPopper(cursor_pos_2, cursor_wrap_2, {
         {
             name: 'offset',
             options: {
-                offset: [-35,100],
+                offset: [0,100],
             },
         },
     ],
