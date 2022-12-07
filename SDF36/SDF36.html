@@ -1132,9 +1132,9 @@
                                                         </div>
 
                                                         <div class="tab">
-                                                            <form class="w-100 d-flex form">
+                                                            <div class="w-100 d-flex form">
                                                                 <input class="form-control fontSz" placeholder="글 제목">
-                                                            </form>
+                                                            </div>
                                                         </div>
 
                                                         <div class="tab">
@@ -1469,10 +1469,10 @@
                                                         </div>
 
                                                         <div class="tab">
-                                                            <form class="w-70 d-flex form">
+                                                            <div class="w-70 d-flex form">
                                                                 <input class="form-control fontSz"
                                                                     placeholder="￦ 가격 (선택사항)" type="number">
-                                                            </form>
+                                                            </div>
                                                             <div class="fontSz">
                                                                 <svg xmlns="http://www.w3.org/2000/svg" width="16"
                                                                     height="16" fill="currentColor"
@@ -1662,16 +1662,18 @@
                                                                 </svg>
                                                                 가격 제안받기
                                                             </div>
-                                                            <form class="w-100 d-flex form">
+                                                            <div class="w-100 d-flex form">
                                                                 <textarea class="form-control fontSz textarea"
                                                                     placeholder="인사동에 올릴 게시글 내용을 작성해주세요. (판매 금지 물품은 게시가 제한될 수 있어요.)"></textarea>
-                                                            </form>
+                                                            </div>
                                                         </div>
 
                                                         <div class="tab">
                                                             <div class="fontSz">거래 희망 장소</div>
                                                             <div class="d-inline-flex fontSz">
+                                                                <!-- 게시글 내용 작성 시 정답 활성화 -->
                                                                 <div class="text-black-50 me-2">장소 선택</div>
+                                                                <!--  -->
                                                                 <svg xmlns="http://www.w3.org/2000/svg" width="16"
                                                                     height="16" fill="currentColor"
                                                                     class="bi bi-chevron-right" viewBox="0 0 16 16">
@@ -1731,7 +1733,20 @@
                                             <h4 class="fontSz fw-bold m-0 pt-4">이웃과 만나서<br>거래하고 싶은 장소를 선택해주세요.</h4>
                                         </div>
                                     </div>
-                                    <div class="under_bar">
+
+
+                                     <!--하단 플로팅 버튼 시작-->
+                                     <div class="floating-button">
+                                        <div class="btn-w fontSz">
+                                            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-geo-alt" viewBox="0 0 16 16">
+                                                <path d="M12.166 8.94c-.524 1.062-1.234 2.12-1.96 3.07A31.493 31.493 0 0 1 8 14.58a31.481 31.481 0 0 1-2.206-2.57c-.726-.95-1.436-2.008-1.96-3.07C3.304 7.867 3 6.862 3 6a5 5 0 0 1 10 0c0 .862-.305 1.867-.834 2.94zM8 16s6-5.686 6-10A6 6 0 0 0 2 6c0 4.314 6 10 6 10z"/>
+                                                <path d="M8 8a2 2 0 1 1 0-4 2 2 0 0 1 0 4zm0 1a3 3 0 1 0 0-6 3 3 0 0 0 0 6z"/>
+                                              </svg>
+                                        </div>
+                                    </div>
+
+
+                                    <div class="container under_bar">
                                         <button type="button" class="btn btn-or btn-lg w-100 fontSz mb-3">
                                             선택 완료
                                         </button>
@@ -1744,6 +1759,40 @@
                         <div class="page" id="p12">
                             <div class="page_wrap">
                                 <h1 class="pg_title" style="color: #fff;">Page12</h1>
+                                <div class="bg-image w-100 h-100 d-flex flex-column" style="background-image: url('./assets/image/1.png');">
+                                    <div class="pg_top fontSz flex-fill">
+                                        <div class="top bg-white py-4 px-4">
+                                            <div class="top_icon d-flex align-items-center mb-2">
+                                                <svg xmlns="http://www.w3.org/2000/svg" width="22" height="22"
+                                                    fill="currentColor" class="bi bi-x-lg" viewBox="0 0 16 16">
+                                                    <path
+                                                        d="M2.146 2.854a.5.5 0 1 1 .708-.708L8 7.293l5.146-5.147a.5.5 0 0 1 .708.708L8.707 8l5.147 5.146a.5.5 0 0 1-.708.708L8 8.707l-5.146 5.147a.5.5 0 0 1-.708-.708L7.293 8 2.146 2.854Z" />
+                                                </svg>
+                                            </div>
+                                            <h4 class="fontSz fw-bold m-0 pt-4">이웃과 만나서<br>거래하고 싶은 장소를 선택해주세요.</h4>
+                                        </div>
+                                    </div>
+
+                                    <div class="under_bar addShadow">
+                                        <div class="w-100 p-3">
+                                            <div class="fontSz fw-bold mt-2">선택한 곳의 장소명을 입력해주세요.</div>
+                                            <div class="d-flex form mt-2">
+                                                <input class="form-control fontSz"
+                                                    placeholder="예) 강남역 1번 출구, 당근빌딩 앞">
+                                            </div>
+                                        </div>
+                                        <!-- 장소명 입력시 버튼 활성화 -->
+                                        <button type="button" class="btn btn-or btn-lg w-100 fontSz">
+                                            선택 완료
+                                        </button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <!------------------------------ page 13 ------------------------------>
+                        <div class="page" id="p13">
+                            <div class="page_wrap">
+                                <h1 class="pg_title" style="color: #fff;">Page13</h1>
                                 <h1 class="title_h1">완료화면</h1>
                             </div>
                         </div>

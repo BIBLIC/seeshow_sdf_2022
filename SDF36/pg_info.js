@@ -57,6 +57,10 @@ const pageClickArea = [
         page: 12,
         correctAnswer: "pg_12_answer"
     },
+    {
+        page: 13,
+        correctAnswer: "pg_13_answer"
+    },
 ];
 
 // -=----------------------------------------------------------------------------------------------------------------------
@@ -89,6 +93,7 @@ const inputAnswer = [
     {},
     {},
     {},
+    {},
 ];
 
 
@@ -100,50 +105,54 @@ const modalCont = [
     },
     {
         page: 1,
-        instruction: "택시 아이콘을 클릭하세요."
+        instruction: "1"
     },
     {
         page: 2,
-        instruction: "출발지를 확인하고 '어디로 갈까요?'를 클릭해 도착지 설정 페이지로 이동하세요."
+        instruction: "2"
     },
     {
         page: 3,
-        instruction: "도착지에 '서울디지털재단'을 입력하세요."
+        instruction: "3"
     },
     {
         page: 4,
-        instruction: "하단의 '출발지로 설정 버튼을 클릭하세요."
+        instruction: "4"
     },
     {
         page: 5,
-        instruction: "'일반호출' 탭을 클릭하세요."
+        instruction: "5"
     },
     {
         page: 6,
-        instruction: "하단의 '호출하기 버튼을 클릭하세요."
+        instruction: "6"
     },
     {
         page: 7,
-        instruction: "하단의 '호출하기 버튼을 클릭하세요."
+        instruction: "7"
     },
     {
         page: 8,
-        instruction: "하단의 '호출하기 버튼을 클릭하세요."
+        instruction: "8"
     },
     {
         page: 9,
-        instruction: "하단의 '호출하기 버튼을 클릭하세요."
+        instruction: "9"
     },
     {
         page: 10,
-        instruction: "하단의 '호출하기 버튼을 클릭하세요."
+        instruction: "10"
     },
     {
         page: 11,
-        instruction: "하단의 '호출하기 버튼을 클릭하세요."
+        instruction: "11"
     },
     {
         page: 12,
+        instruction: "12"
+    },
+    {
+        page: 13,
         instruction: "마지막 페이지"
     },
 ];
