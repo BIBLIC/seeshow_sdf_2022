@@ -1,4 +1,4 @@
-var total_page = 9;//페이지 수 -> 시나리오마다 total_page 수 바꾸기 
+var total_page = 11;//페이지 수 -> 시나리오마다 total_page 수 바꾸기 
 
 
 //정답 처리할 영역 클래스 명
@@ -42,8 +42,16 @@ const pageClickArea = [
         correctAnswer: "pg_8_answer"
     },
     {
-        page: 8,
-        correctAnswer: "pg_8_answer"
+        page: 9,
+        correctAnswer: "pg_9_answer"
+    },
+    {
+        page: 10,
+        correctAnswer: "pg_10_answer"
+    },
+    {
+        page: 11,
+        correctAnswer: "pg_11_answer"
     },
 ];
 
@@ -58,6 +66,7 @@ const pageClickArea = [
 // 위 형식 맞춰서 ""안에 답 넣으면 됨
 // 답에는 공백이 없어야 함
 const inputAnswer = [
+    {},
     {},
     {},
     {},
@@ -113,6 +122,10 @@ const modalCont = [
     {
         page: 9,
         instruction: "하단의 '호출하기 버튼을 클릭하세요."
+    },
+    {
+        page: 10,
+        instruction: "마지막 페이지"
     },
     {
         page: 10,

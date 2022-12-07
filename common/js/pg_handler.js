@@ -89,6 +89,9 @@ $(document).on("click", "#next_btn", function () {
             $("#p" + page_num).toggleClass("pactive");
             $(".pactive").fadeIn(0);
         });
+//         $('.shadow_ext').removeClass("addShadow");
+// $('.shadow_inner').removeClass("addInnerShadow");
+// $('.border_darker').removeClass("mk_border_darker");
     }
     console.log(page_num);
     audioArray[page_num - 1].load();
@@ -127,6 +130,9 @@ $(document).on("click", "#prev_btn", function () {
             $("#p" + page_num).toggleClass("pactive");
             $(".pactive").fadeIn(0);
         });
+//         $('.shadow_ext').removeClass("addShadow");
+// $('.shadow_inner').removeClass("addInnerShadow");
+// $('.border_darker').removeClass("mk_border_darker");
     }
     console.log(page_num);
     if (page_num != 0) {
@@ -226,12 +232,11 @@ $('#hint_btn').click(function () {
     var real_pg = myPgNum.slice(1);
     $(".cursor_wrap_" + real_pg).toggleClass('show');
     $(".pg_" + real_pg + "_answer:first").toggleClass("addShadow");
-    $('.shadow_ext').toggleClass("addShadow");
-    $('.shadow_inner').toggleClass("addInnerShadow");
-    $('.border_darker').toggleClass("mk_border_darker");
+    $("#p"+real_pg>'.shadow_ext').toggleClass("addShadow");
+    $("#p"+real_pg>'.shadow_inner').toggleClass("addInnerShadow");
+    $("#p"+real_pg>'.border_darker').toggleClass("mk_border_darker");
+    // $("#p"+real_pg>'.shadow_ext').toggleClass("addShadow");
 })
-
-
 
 //*******************************************************************************
 //**************************+    클릭 제어   +*********************************** 
@@ -254,6 +259,9 @@ function next(real_pg) {
         audioArray[page_num - 2].pause();
     }
     $(".submit_btn").removeClass("pg_" + real_pg + "_answer");
+    $('.shadow_ext').removeClass("addShadow");
+$('.shadow_inner').removeClass("addInnerShadow");
+$('.border_darker').removeClass("mk_border_darker");
 }
 
 
@@ -303,6 +311,7 @@ document.querySelector("main").addEventListener("click", function (e) {//메인 
                 }
             });
         }
+        
 
         //----자동으로 페이지 넘겨야할 때 : 6자리 입력 --토스 등등-----------------
         //ID6_auto_txt pg_n_answer n_input
@@ -341,8 +350,8 @@ document.querySelector("main").addEventListener("click", function (e) {//메인 
         }
 
         //----아무거나 입력해도 될 때-------------------
-        //anwer_any_txt pg_n_answer n_input
-        else if (e.target.className.includes("anwer_any_txt")) {
+        //answer_any_txt pg_n_answer n_input
+        else if (e.target.className.includes("answer_any_txt")) {
 
             //키보드 누르고 1자리 이상일 때 엔터 누르면 다음 페이지로 넘어가게 
             $('.' + real_pg + '_input').keydown(function (e) {
@@ -364,6 +373,18 @@ document.querySelector("main").addEventListener("click", function (e) {//메인 
                 if (this.value.length >=1 ) {
                     $(".input_nxt_btn").addClass("pg_" + real_pg + "_answer");
                     $(".nxt_btn_able").addClass("btn_able_color");
+                }
+            });
+        }
+
+        
+        //----아무거나 입력해도 될 때 // 다 입력하고 다음 값 입력할 수 있도록 페이지 넘겨줄 때 -------------------
+        //answer_autoNxt_any_txt pg_n_answer n_input
+        else if (e.target.className.includes("answer_autoNxt_any_txt")) {
+
+            $('.' + real_pg + '_input').keyup(function(){
+                if (this.value.length >=1 ) {
+                    $(".nxt_Input").addClass("pg_" + real_pg + "_answer");
                 }
             });
         }
@@ -399,7 +420,7 @@ document.querySelector("main").addEventListener("click", function (e) {//메인 
         // ID_num11 pg_n_answer n_input
         else if (e.target.className.includes("ID_num11")) {
 
-            //키보드 누르고 13자리 이상일 때 엔터 누르면 다음 페이지로 넘어가게 
+            //키보드 누르고 11자리 이상일 때 엔터 누르면 다음 페이지로 넘어가게 
             $('.' + real_pg + '_input').keydown(function (e) {
                 if (event.which === 13) {
                     let unspacedValue = this.value.split(' ').join('');
@@ -414,7 +435,7 @@ document.querySelector("main").addEventListener("click", function (e) {//메인 
                 }
             });
 
-            //키보드 떼고 13자리 이상이면 다음 버튼 활성화되게 
+            //키보드 떼고 11자리 이상이면 다음 버튼 활성화되게 
             $('.' + real_pg + '_input').keyup(function(){
                 if (this.value.length ==11 ) {
                     if (e.target.className.includes("toss_btn_chng")) {
