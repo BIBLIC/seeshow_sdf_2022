@@ -64,6 +64,10 @@ svg {
     padding: 3em;
 }
 
+.bluef {
+    color: #4C82EA;
+}
+
 /* <--------------------------------------> */
 
 #p1 .btn {
@@ -95,7 +99,6 @@ svg {
 
 #p1 .icon {
     padding: 1em;
-    margin-right: 1em;
 }
 
 #p1 .btn {
