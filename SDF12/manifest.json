@@ -8,7 +8,7 @@
         "type": "image/png"
       }
     ],
-    "start_url": "https://biblic.github.io/seeshow_sdf_2022/SDF12/SDF12",
+    "start_url": "https://biblic.github.io/seeshow_sdf_2022/SDF12/index",
     "display": "standalone",
     "orientation": "landscape"
   }
