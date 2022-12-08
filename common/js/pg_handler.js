@@ -29,6 +29,13 @@ window.addEventListener("resize", () => {
     let vh = window.innerHeight * 0.01;
     document.documentElement.style.setProperty("--vh", `${vh}px`);
 });
+// New event listener:
+window.addEventListener("load",function() {
+    setTimeout(function(){
+        // Hide the address bar:
+        window.scrollTo(0, 1);
+    }, 0);
+});
 
 //*******************************************************************************
 //**************************+   이벤트 동작   +*********************************** 
