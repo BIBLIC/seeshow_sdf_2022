@@ -328,9 +328,6 @@ Firefox 브라우저를 위해서는 -moz- 를 사용하세요 */
   width: 100%;
   height: 100vh;
   height: calc(var(--vh, 1vh)*100);
-  min-height: 100vh;
-  min-height: -webkit-fill-available; 
-  /* 20212081300 테스트 */
 }
 
 .tempo_img{
