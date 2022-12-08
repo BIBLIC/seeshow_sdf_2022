@@ -37,24 +37,17 @@ window.addEventListener("load",function() {
     }, 0);
 });
 
-
-const page_wrap = document.querySelector('.page_wrap');
-//자동 스크롤
-function scrollToBottom() {
-    page_wrap.scrollTop = page_wrap.scrollHeight;
-}
-
 // ios 또는 android Chrome 일 때 스크롤 맨 밑으로 스크롤 해서 
 // function Mobile() {return /Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent);}
 // if (Mobile()){// 모바일일 경우
-//     console.log('모바일 환경');
 //     window.addEventListener('load', function(){
-//         // document.body.style.height = (document.documentElement.clientHeight + 5) + 'px';
-//         // window.scrollTo(0, 1);
-//         scrollToBottom()
+//         document.body.style.height = (document.documentElement.clientHeight + 5) + 'px';
+//         window.scrollTo(0, 1);
 //     }, false);
         
-// } 
+// } else {// 모바일 외
+    
+// }
 
 //*******************************************************************************
 //**************************+   이벤트 동작   +*********************************** 
@@ -80,6 +73,22 @@ function firstPageLoader() {
 //*******************************************************************************
 //**************************+    시작하기 버튼   +***********************************  
 
+const fullScreen = (element) => {
+    if (element.requestFullscreen) return element.requestFullscreen();
+    if (element.webkitRequestFullscreen) return element.webkitRequestFullscreen();
+    if (element.mozRequestFullScreen) return element.mozRequestFullScreen();
+    if (element.msRequestFullscreen) return element.msRequestFullscreen();
+};
+
+const exitFullScreen = () => {
+    if (document.exitFullscreen) return document.exitFullscreen();
+    if (document.webkitCancelFullscreen) return document.webkitCancelFullscreen();
+    if (document.mozCancelFullScreen) return document.mozCancelFullScreen();
+    if (document.msExitFullscreen) return document.msExitFullscreen();
+};
+
+
+
 //시작하기 버튼 클릭 후 컨트롤 바 내부 변경
 $('#start-btn').click(function () {
     $('.nav_btn_wrap').css('display', 'block');
@@ -102,12 +111,29 @@ $('#start-btn').click(function () {
     ctrlbar.style.background = "#E0E0E0";
     audioArray[page_num - 1].load();// 해당 페이지 오디오 로딩
     audioArray[page_num - 1].play();// 해당 페이지 오디오 재생
+
     function Mobile() {return /Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent);}
 if (Mobile()){// 모바일일 경우
-    document.querySelector('.page_wrap').requestFullscreen();
+
+
+    window.addEventListener('load', function(){
+        if (!document.fullscreenElement) {
+            fullScreen(document.body);
+        } else if (document.exitFullscreen) {
+            exitFullScreen();
+        }
+
+
+    }, false);
         
 } 
+
+
+   
 });
+
+
+
 
 
 
