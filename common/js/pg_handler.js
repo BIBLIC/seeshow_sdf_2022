@@ -45,16 +45,16 @@ function scrollToBottom() {
 }
 
 // ios 또는 android Chrome 일 때 스크롤 맨 밑으로 스크롤 해서 
-function Mobile() {return /Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent);}
-if (Mobile()){// 모바일일 경우
-    console.log('모바일 환경');
-    window.addEventListener('load', function(){
-        // document.body.style.height = (document.documentElement.clientHeight + 5) + 'px';
-        // window.scrollTo(0, 1);
-        scrollToBottom()
-    }, false);
+// function Mobile() {return /Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent);}
+// if (Mobile()){// 모바일일 경우
+//     console.log('모바일 환경');
+//     window.addEventListener('load', function(){
+//         // document.body.style.height = (document.documentElement.clientHeight + 5) + 'px';
+//         // window.scrollTo(0, 1);
+//         scrollToBottom()
+//     }, false);
         
-} 
+// } 
 
 //*******************************************************************************
 //**************************+   이벤트 동작   +*********************************** 
@@ -74,15 +74,6 @@ function firstPageLoader() {
         $("#p" + page_num).toggleClass("pactive");
         $(".pactive").fadeIn(0);
     });
-    if (Mobile()){// 모바일일 경우
-        console.log('모바일 환경');
-        window.addEventListener('load', function(){
-            // document.body.style.height = (document.documentElement.clientHeight + 5) + 'px';
-            // window.scrollTo(0, 1);
-            scrollToBottom()
-        }, false);
-            
-    } 
 }
 
 
@@ -111,6 +102,16 @@ $('#start-btn').click(function () {
     ctrlbar.style.background = "#E0E0E0";
     audioArray[page_num - 1].load();// 해당 페이지 오디오 로딩
     audioArray[page_num - 1].play();// 해당 페이지 오디오 재생
+    function Mobile() {return /Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent);}
+if (Mobile()){// 모바일일 경우
+    console.log('모바일 환경');
+    window.addEventListener('load', function(){
+        // document.body.style.height = (document.documentElement.clientHeight + 5) + 'px';
+        // window.scrollTo(0, 1);
+        scrollToBottom()
+    }, false);
+        
+} 
 });
 
 
