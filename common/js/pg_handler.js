@@ -37,12 +37,21 @@ window.addEventListener("load",function() {
     }, 0);
 });
 
+
+const page_wrap = document.querySelector('.page_wrap');
+//자동 스크롤
+function scrollToBottom() {
+    page_wrap.scrollTop = page_wrap.scrollHeight;
+}
+
 // ios 또는 android Chrome 일 때 스크롤 맨 밑으로 스크롤 해서 
 function Mobile() {return /Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent);}
 if (Mobile()){// 모바일일 경우
+    //alert('모바일 환경');
     window.addEventListener('load', function(){
-        document.body.style.height = (document.documentElement.clientHeight + 5) + 'px';
-        window.scrollTo(0, 1);
+        // document.body.style.height = (document.documentElement.clientHeight + 5) + 'px';
+        // window.scrollTo(0, 1);
+        scrollToBottom()
     }, false);
         
 } else {// 모바일 외
