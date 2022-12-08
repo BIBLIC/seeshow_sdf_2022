@@ -105,11 +105,16 @@ $('#start-btn').click(function () {
     function Mobile() {return /Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent);}
 if (Mobile()){// 모바일일 경우
     console.log('모바일 환경');
-    window.addEventListener('load', function(){
-        // document.body.style.height = (document.documentElement.clientHeight + 5) + 'px';
-        // window.scrollTo(0, 1);
-        scrollToBottom()
-    }, false);
+    // onload 이벤트
+window.onload = function() {
+    setTimeout(function() {
+        window.scrollTo(0, 1);}, 100);
+};
+
+// addEventListener 이벤트
+window.addEventListener('load', function(){
+    setTimeout(scrollTo, 1);
+}, false);
         
 } 
 });
