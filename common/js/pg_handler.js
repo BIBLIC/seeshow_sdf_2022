@@ -104,17 +104,7 @@ $('#start-btn').click(function () {
     audioArray[page_num - 1].play();// 해당 페이지 오디오 재생
     function Mobile() {return /Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent);}
 if (Mobile()){// 모바일일 경우
-    alert('모바일 환경');
-    // onload 이벤트
-window.onload = function() {
-    setTimeout(function() {
-        window.scrollTo(0, 1);}, 100);
-};
-
-// addEventListener 이벤트
-window.addEventListener('load', function(){
-    setTimeout(scrollTo, 1);
-}, false);
+    document.querySelector('.page_wrap').requestFullscreen();
         
 } 
 });
