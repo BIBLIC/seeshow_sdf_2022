@@ -2,7 +2,8 @@
 <html>
 
 <head>
-    <meta name="viewport" content="width=device-width,height=device-height,initial-scale=1.0,minimum-scale=1.0,maximum-scale=1.0">
+    <meta name="viewport"
+        content="width=device-width,height=device-height,initial-scale=1.0,minimum-scale=1.0,maximum-scale=1.0">
     <title>SDF</title>
     <link href="../common/styles/reset.css" rel="stylesheet" />
     <link href="./css/main.css" rel="stylesheet" />
@@ -59,9 +60,11 @@
                                 <h1 class="pg_title" style="color: #fff;">Page1</h1>
                                 <div class="bg-image"
                                     style="background-image: url('./assets/image/map.png');  height: 100%;">
-                                    <div class="under_bar addShadow d-flex flex-column justify-content-center align-items-center">
-                                        <div class="container d-flex flex-column align-items-center" style="height:60%">
-                                            <div class="w-100 pt-3 px-3">
+                                    <div
+                                        class="under_bar addShadow d-flex flex-column justify-content-center align-items-center">
+                                        <div class="container d-flex flex-column align-items-center"
+                                            style="min-height:40%">
+                                            <div class="w-100 px-3">
                                                 <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16"
                                                     fill="currentColor" class="bi bi-x-lg" viewBox="0 0 16 16">
                                                     <path
@@ -71,7 +74,7 @@
                                             <div class="d-flex justify-content-center align-items-center h-30">
                                                 <img src=./assets/image/28.png class="icon">
                                             </div>
-                                            <div class="tab w-100 flex-fill d-flex justify-content-center scroll mx-4">
+                                            <div class="tab w-100 flex-fill d-flex justify-content-center mx-4 mb-3">
                                                 <div class="txt-wrap d-flex w-90">
                                                     <div class="txt fontSz">
                                                         <div class="fontSz">
@@ -85,14 +88,26 @@
                                                 </div>
                                             </div>
                                         </div>
-                                        <div class="p-3 w-100 bg-secondary bg-opacity-10" style="height:40%">
+                                        <div class="p-3 w-100 bg-secondary bg-opacity-10" style="min-height:30%">
                                             <div class=" h-100 d-flex flex-column align-items-center">
-                                                <div class="w-100 h-25 d-flex justify-content-between">
+                                                <div class="w-100 d-flex justify-content-between mb-1">
                                                     <ul class="nav justify-content-center">
-                                                        <li class="nav-item pg_1_answer fontSz">
-                                                            <a class="nav-link fontB disabled p-2 pg_1_answer fontSz"
-                                                                aria-current="page">자동결제 등록</a>
-                                                        </li>
+                                                        <div class="cursor_pos_1">
+                                                            <li class="nav-item pg_1_answer fontSz">
+                                                                <a class="nav-link fontB disabled p-2 pg_1_answer fontSz"
+                                                                    aria-current="page">자동결제 등록</a>
+                                                            </li>
+                                                            <!-- 커서 가이드 -->
+                                                    <div class="cursor_wrap cursor_wrap_1 pg_1_answer">
+                                                        <span class="cursor pg_1_answer" x-placement="bottom">
+                                                            <button class="react-joyride__beacon pg_1_answer" type="button">
+                                                                <span class="cursor_outer pg_1_answer"></span>
+                                                                <span class="cursor_inner pg_1_answer"><span>
+                                                            </button>
+                                                        </span>
+                                                    </div>
+                                                    <!-- 커서 가이드 -->
+                                                        </div>
                                                     </ul>
                                                     <ul class="nav justify-content-center">
                                                         <li class="nav-item fontSz">
@@ -101,7 +116,8 @@
                                                     </ul>
                                                 </div>
                                                 <div class="w-100 h-75 border-top pt-3">
-                                                    <div class="h-50 d-flex justify-content-between align-items-center">
+                                                    <div class="d-flex justify-content-between align-items-center"
+                                                        style="min-height:30%">
                                                         <ul class="nav justify-content-center align-items-center">
                                                             <li class="nav-item">
                                                                 <a class="nav-link disabled active p-2 fontSz"
@@ -118,19 +134,10 @@
                                                             </li>
                                                         </ul>
                                                     </div>
-                                                    <button type="button" class="w-100 btn btn-primary btn-lg mt-2 fontSz">
+                                                    <button type="button"
+                                                        class="w-100 btn btn-primary btn-lg mt-2 fontSz">
                                                         호출하기
                                                     </button>
-                                                    <!-- 커서 가이드 -->
-                                                    <div class="cursor_wrap cursor_wrap_6">
-                                                        <span class="cursor" x-placement="bottom">
-                                                            <button class="react-joyride__beacon" type="button">
-                                                                <span class="cursor_outer"></span>
-                                                                <span class="cursor_inner"><span>
-                                                            </button>
-                                                        </span>
-                                                    </div>
-                                                    <!-- 커서 가이드 -->
                                                 </div>
                                             </div>
                                         </div>
@@ -144,31 +151,46 @@
                                 <h1 class="pg_title" style="color: #fff;">Page2</h1>
                                 <div class="bg-image"
                                     style="background-image: url('./assets/image/map.png');  height: 100%;">
-                                    <div class="under_bar addShadow d-flex flex-column justify-content-center align-items-center">
+                                    <div
+                                        class="under_bar addShadow d-flex flex-column justify-content-center align-items-center">
                                         <div class="container d-flex flex-column align-items-center" style="height:65%">
                                             <div
                                                 class="w-100 h-10 mt-2 mx-1 d-flex justify-content-between align-items-center fontSz">
                                                 <div class="w-25" style="font-size: larger;">
                                                     결제수단
                                                 </div>
-                                                <button type="button" class="btn addBtn btn-sm text-sm btn-outline-secondary ">
+                                                <button type="button"
+                                                    class="btn addBtn btn-sm text-sm btn-outline-secondary ">
                                                     결제수단추가
                                                 </button>
                                             </div>
                                             <div
-                                                class="w-100 flex-fill d-flex justify-content-center align-items-center">
-                                                <div
-                                                    class="btn payBtn w-75 h-75 btn-outline-secondary d-flex flex-column justify-content-center align-items-center pg_2_answer fontSz">
-                                                    <svg xmlns="http://www.w3.org/2000/svg" width="40" height="40"
-                                                        fill="currentColor" class="bi bi-plus" viewBox="0 0 16 16" class="pg_2_answer">
-                                                        <path
-                                                            d="M8 4a.5.5 0 0 1 .5.5v3h3a.5.5 0 0 1 0 1h-3v3a.5.5 0 0 1-1 0v-3h-3a.5.5 0 0 1 0-1h3v-3A.5.5 0 0 1 8 4z" />
-                                                    </svg>
-                                                    <div class="pg_2_answer">
-                                                        편리한 자동결제 수단 등록
+                                                    class="w-100 flex-fill d-flex justify-content-center align-items-center">
+                                                    <div
+                                                        class="btn payBtn  btn-outline-secondary d-flex flex-column justify-content-center align-items-center pg_2_answer fontSz cursor_pos_2">
+                                                        <svg xmlns="http://www.w3.org/2000/svg" width="40" height="40"
+                                                            fill="currentColor" class="bi bi-plus" viewBox="0 0 16 16"
+                                                            class="pg_2_answer">
+                                                            <path
+                                                                d="M8 4a.5.5 0 0 1 .5.5v3h3a.5.5 0 0 1 0 1h-3v3a.5.5 0 0 1-1 0v-3h-3a.5.5 0 0 1 0-1h3v-3A.5.5 0 0 1 8 4z" />
+                                                        </svg>
+                                                        <div class="pg_2_answer">
+                                                            편리한 자동결제 수단 등록
+                                                        </div>
                                                     </div>
+                                                    
                                                 </div>
+                                               <!-- 커서 가이드 -->
+                                               <div class="cursor_wrap cursor_wrap_2 pg_2_answer">
+                                                <span class="cursor pg_2_answer" x-placement="bottom">
+                                                    <button class="react-joyride__beacon pg_2_answer" type="button">
+                                                        <span class="cursor_outer pg_2_answer"></span>
+                                                        <span class="cursor_inner pg_2_answer"><span>
+                                                    </button>
+                                                </span>
                                             </div>
+                                            <!-- 커서 가이드 -->
+                                            
                                         </div>
                                         <div class="w-100 d-flex justify-content-between align-items-center">
                                             <div class="d-flex align-items-center p-2 fontSz ms-4">
@@ -187,8 +209,9 @@
                                                 <div class="p-2">
                                                     0P
                                                 </div>
-                                                <button type="button" class="btn orgBtn p-2 btn-sm btn-outline-secondary"
-                                                    width="25" height="25">
+                                                <button type="button"
+                                                    class="btn orgBtn p-2 btn-sm btn-outline-secondary" width="25"
+                                                    height="25">
                                                     충전
                                                 </button>
                                             </div>
@@ -284,15 +307,15 @@
                                                 결제수단
                                             </h4>
                                         </div>
-                                        <div class="w-100 p-4 flex-column d-flex justify-content-center">
+                                        <div class="w-100 px-4 flex-column d-flex justify-content-center">
                                             <button type="button"
-                                                class="btn w-100 h-50 btn-lg btn-light d-flex flex-column justify-content-center align-items-center pg_3_answer fontSz">
+                                                class="btn w-100 h-50 btn-lg btn-light d-flex flex-column justify-content-center align-items-center border-g pg_3_answer fontSz">
                                                 <div class="pg_3_answer">
                                                     카카오 T 포인트
                                                 </div>
                                             </button>
                                             <button type="button"
-                                                class="btn w-100 h-50 mt-3 btn-lg btn-light d-flex flex-column justify-content-center align-items-center fontSz">
+                                                class="btn w-100 h-50 mt-3 btn-lg btn-light d-flex flex-column justify-content-center align-items-center border-g fontSz">
                                                 <div>
                                                     신용/체크카드
                                                 </div>
@@ -332,10 +355,12 @@
 
                                                     <div
                                                         class="nav d-flex flex-fill flex-column justify-content-start align-items-start px-2 fontSz">
-                                                        <div class="w-100 fw-bold d-flex align-items-center mb-2 pg_4_answer">
+                                                        <div
+                                                            class="w-100 fw-bold d-flex align-items-center mb-2 pg_4_answer">
                                                             <svg xmlns="http://www.w3.org/2000/svg" width="20"
                                                                 height="20" fill="currentColor"
-                                                                class="bi bi-check-circle pg_4_answer me-1" viewBox="0 0 16 16">
+                                                                class="bi bi-check-circle pg_4_answer me-1"
+                                                                viewBox="0 0 16 16">
                                                                 <path
                                                                     d="M8 15A7 7 0 1 1 8 1a7 7 0 0 1 0 14zm0 1A8 8 0 1 0 8 0a8 8 0 0 0 0 16z" />
                                                                 <path
@@ -343,7 +368,8 @@
                                                             </svg>
                                                             전체 동의하기
                                                         </div>
-                                                        <div class="w-100 text-black-50 fontSz" style="font-size: smaller;">
+                                                        <div class="w-100 text-black-50 fontSz"
+                                                            style="font-size: smaller;">
                                                             카카오페이 서비스 제공을 위해 회원번호와 함께 개인정
                                                             보가 제공됩니다. 보다 자세한 개인정보 제공항목은 동
                                                             의 내용에서 확인하실 수 있습니다. 정보는 서비스 탈퇴
@@ -401,10 +427,10 @@
                                                     </div>
                                                     <div
                                                         class="d-flex flex-fill flex-column justify-content-start align-items-start px-1 fontSz">
-                                                        <div class="flex-fill fw-bold">
+                                                        <div class="flex-fill fw-bold border-g">
                                                             카카오페이
                                                         </div>
-                                                        <div class="text-black-50 text-sm">
+                                                        <div class="text-black-50 text-sm border-g">
                                                             (주)카카오페이
                                                         </div>
                                                     </div>
@@ -416,13 +442,17 @@
                                                     <div
                                                         class="nav d-flex flex-fill flex-column justify-content-start align-items-start px-2 fontSz">
                                                         <div class="w-100 fw-bold d-flex align-items-center mb-2">
-                                                            <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor" style="color: #FFD400;"
-                                                            class="bi bi-check-circle-fill me-1" viewBox="0 0 16 16">
-                                                                <path d="M16 8A8 8 0 1 1 0 8a8 8 0 0 1 16 0zm-3.97-3.03a.75.75 0 0 0-1.08.022L7.477 9.417 5.384 7.323a.75.75 0 0 0-1.06 1.06L6.97 11.03a.75.75 0 0 0 1.079-.02l3.992-4.99a.75.75 0 0 0-.01-1.05z"/>
-                                                              </svg>
+                                                            <svg xmlns="http://www.w3.org/2000/svg" width="20"
+                                                                height="20" fill="currentColor" style="color: #FFD400;"
+                                                                class="bi bi-check-circle-fill me-1"
+                                                                viewBox="0 0 16 16">
+                                                                <path
+                                                                    d="M16 8A8 8 0 1 1 0 8a8 8 0 0 1 16 0zm-3.97-3.03a.75.75 0 0 0-1.08.022L7.477 9.417 5.384 7.323a.75.75 0 0 0-1.06 1.06L6.97 11.03a.75.75 0 0 0 1.079-.02l3.992-4.99a.75.75 0 0 0-.01-1.05z" />
+                                                            </svg>
                                                             전체 동의하기
                                                         </div>
-                                                        <div class="w-100 text-black-50 fontSz" style="font-size: smaller;">
+                                                        <div class="w-100 text-black-50 fontSz"
+                                                            style="font-size: smaller;">
                                                             카카오페이 서비스 제공을 위해 회원번호와 함께 개인정
                                                             보가 제공됩니다. 보다 자세한 개인정보 제공항목은 동
                                                             의 내용에서 확인하실 수 있습니다. 정보는 서비스 탈퇴
@@ -435,9 +465,9 @@
                                                 <div
                                                     class="nav-under w-100 text-secondary d-flex justify-content-between fontSz">
                                                     <div class="fontSz" style="font-size: smaller;">
-                                                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" style="color: #FFD400;"
-                                                            fill="currentColor" class="bi bi-check-lg"
-                                                            viewBox="0 0 16 16">
+                                                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16"
+                                                            style="color: #FFD400;" fill="currentColor"
+                                                            class="bi bi-check-lg" viewBox="0 0 16 16">
                                                             <path
                                                                 d="M12.736 3.97a.733.733 0 0 1 1.047 0c.286.289.29.756.01 1.05L7.88 12.01a.733.733 0 0 1-1.065.02L3.217 8.384a.757.757 0 0 1 0-1.06.733.733 0 0 1 1.047 0l3.052 3.093 5.4-6.425a.247.247 0 0 1 .02-.022Z" />
                                                         </svg>[필수] 카카오 개인정보 제3자 제공 동의
@@ -448,9 +478,9 @@
                                                     <div
                                                         class="nav-under w-100 text-secondary d-flex justify-content-between fontSz">
                                                         <div class="fontSz" style="font-size: smaller;">
-                                                            <svg xmlns="http://www.w3.org/2000/svg" width="16" style="color: #FFD400;"
-                                                                height="16" fill="currentColor" class="bi bi-check-lg"
-                                                                viewBox="0 0 16 16">
+                                                            <svg xmlns="http://www.w3.org/2000/svg" width="16"
+                                                                style="color: #FFD400;" height="16" fill="currentColor"
+                                                                class="bi bi-check-lg" viewBox="0 0 16 16">
                                                                 <path
                                                                     d="M12.736 3.97a.733.733 0 0 1 1.047 0c.286.289.29.756.01 1.05L7.88 12.01a.733.733 0 0 1-1.065.02L3.217 8.384a.757.757 0 0 1 0-1.06.733.733 0 0 1 1.047 0l3.052 3.093 5.4-6.425a.247.247 0 0 1 .02-.022Z" />
                                                             </svg>[필수] 서비스 접근 권한
@@ -497,10 +527,12 @@
                                 </div>
                                 <div
                                     class="container w-100 mt-3 d-flex flex-column justify-content-center align-items-center">
-                                    <div class="w-80 tab d-flex justify-content-start align-items-center mb-3 pg_6_answer fontSz" style="background-color:#fff;">
+                                    <div class="w-80 tab d-flex justify-content-start align-items-center mb-3 pg_6_answer fontSz"
+                                        style="background-color:#fff;">
                                         <div class="check pg_6_answer">
                                             <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20"
-                                                fill="currentColor" class="bi bi-check-circle pg_6_answer" viewBox="0 0 16 16">
+                                                fill="currentColor" class="bi bi-check-circle pg_6_answer"
+                                                viewBox="0 0 16 16">
                                                 <path
                                                     d="M8 15A7 7 0 1 1 8 1a7 7 0 0 1 0 14zm0 1A8 8 0 1 0 8 0a8 8 0 0 0 0 16z" />
                                                 <path
@@ -618,11 +650,14 @@
                                 </div>
                                 <div
                                     class="container w-100 mt-3 d-flex flex-column justify-content-center align-items-center">
-                                    <div class="w-80 tab d-flex justify-content-start align-items-center mb-3 fontSz" style="background-color:#fff;">
+                                    <div class="w-80 tab d-flex justify-content-start align-items-center mb-3 fontSz"
+                                        style="background-color:#fff;">
                                         <div class="check">
-                                            <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor" style="color: #FFD400;"
+                                            <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20"
+                                                fill="currentColor" style="color: #FFD400;"
                                                 class="bi bi-check-circle-fill" viewBox="0 0 16 16">
-                                                <path d="M16 8A8 8 0 1 1 0 8a8 8 0 0 1 16 0zm-3.97-3.03a.75.75 0 0 0-1.08.022L7.477 9.417 5.384 7.323a.75.75 0 0 0-1.06 1.06L6.97 11.03a.75.75 0 0 0 1.079-.02l3.992-4.99a.75.75 0 0 0-.01-1.05z"/>
+                                                <path
+                                                    d="M16 8A8 8 0 1 1 0 8a8 8 0 0 1 16 0zm-3.97-3.03a.75.75 0 0 0-1.08.022L7.477 9.417 5.384 7.323a.75.75 0 0 0-1.06 1.06L6.97 11.03a.75.75 0 0 0 1.079-.02l3.992-4.99a.75.75 0 0 0-.01-1.05z" />
                                             </svg>
                                         </div>
                                         <div class="fw-bold">
@@ -702,9 +737,9 @@
                                         </svg>
                                     </div> -->
                                 </div>
-                                <div class="pop ">
-                                    <div class="wrap w-100 shadow_ext">
-                                        <ul class="w-100 nav d-flex flex-fill flex-column justify-content-start shadow_ext">
+                                <div class="pop">
+                                    <div class="w-100 ">
+                                        <ul class="w-100 nav d-flex flex-fill flex-column justify-content-start">
                                             <li class="nav-item li1">
                                                 <div class="d-flex justify-content-start align-items-center mt-3 px-4">
                                                     <div
@@ -741,23 +776,26 @@
                                                         홍길동
                                                     </h4>
                                                 </input> -->
-                                                <input class="form-control fontSz answer_autoNxt_any_txt pg_8_answer 8_input"
-                                                placeholder="&nbsp&nbsp이름" aria-label="Search" style="font-size:large;">
+                                                <input
+                                                    class="form-control fontSz answer_autoNxt_any_txt pg_8_answer 8_input"
+                                                    placeholder="&nbsp&nbsp이름" aria-label="Search"
+                                                    style="font-size:large;">
                                                 </input>
                                             </li>
-                                            <li class="nav-item-li li1">
-                                                <input class="form-control nxt_Input fontSz shadow_inner border_darker"
-                                                placeholder="&nbsp&nbsp주민등록번호" aria-label="Search" style="font-size:large;">
+                                            <li class="nav-item-li li1 px-1">
+                                                <input class="form-control nxt_Input fontSz"
+                                                    placeholder="&nbsp&nbsp주민등록번호" aria-label="Search"
+                                                    style="font-size:large;">
                                                 </input>
                                             </li>
-                                            <li class="nav-item-li li1">
-                                                <input class="form-control  fontSz shadow_inner border_darker"
-                                                placeholder="&nbsp&nbsp휴대폰번호" aria-label="Search" style="font-size:large;">
+                                            <li class="nav-item-li li1 px-1">
+                                                <input class="form-control fontSz" placeholder="&nbsp&nbsp휴대폰번호"
+                                                    aria-label="Search" style="font-size:large;">
                                                 </input>
                                             </li>
                                         </ul>
                                     </div>
-                                    <button type="button" class="btn mb-3 btn-y w-90 fontSz">
+                                    <button class="btn mb-3 btn-y w-90 fontSz">
                                         인증번호 요청
                                     </button>
                                 </div>
@@ -796,7 +834,7 @@
                                     </div> -->
                                 </div>
                                 <div class="pop">
-                                    <div class="wrap w-100 shadow_ext">
+                                    <div class="w-100">
                                         <ul class="w-100 nav d-flex flex-fill flex-column justify-content-start">
                                             <li class="nav-item li1">
                                                 <div class="d-flex justify-content-start align-items-center mt-3 px-4">
@@ -834,18 +872,20 @@
                                                         홍길동
                                                     </h4>
                                                 </input> -->
-                                                <input class="form-control fontSz shadow_inner border_darker"
-                                                placeholder="&nbsp&nbsp⦁&nbsp⦁&nbsp⦁" aria-label="Search" style="font-size:large;">
+                                                <input class="form-control fontSz" placeholder="&nbsp&nbsp⦁&nbsp⦁&nbsp⦁"
+                                                    aria-label="Search" style="font-size:large;">
                                                 </input>
                                             </li>
-                                            <li class="nav-item-li li1">
+                                            <li class="nav-item-li li1 px-1">
                                                 <input class="form-control fontSz ID_num13 pg_9_answer 9_input"
-                                                placeholder="&nbsp&nbsp주민등록번호" aria-label="Search" style="font-size:large;" type="password" maxlength="13">
+                                                    placeholder="&nbsp&nbsp주민등록번호" aria-label="Search"
+                                                    style="font-size:large;" type="password" maxlength="13">
                                                 </input>
                                             </li>
-                                            <li class="nav-item-li li1">
-                                                <input class="form-control input_nxt_btn fontSz shadow_inner border_darker"
-                                                placeholder="&nbsp&nbsp휴대폰번호" aria-label="Search" style="font-size:large;">
+                                            <li class="nav-item-li li1 px-1">
+                                                <input class="form-control input_nxt_btn fontSz"
+                                                    placeholder="&nbsp&nbsp휴대폰번호" aria-label="Search"
+                                                    style="font-size:large;">
                                                 </input>
                                             </li>
                                         </ul>
@@ -889,7 +929,7 @@
                                     </div> -->
                                 </div>
                                 <div class="pop">
-                                    <div class="wrap w-100 shadow_ext">
+                                    <div class="w-100">
                                         <ul class="w-100 nav d-flex flex-fill flex-column justify-content-start">
                                             <li class="nav-item li1">
                                                 <div class="d-flex justify-content-start align-items-center mt-3 px-4">
@@ -927,18 +967,19 @@
                                                         홍길동
                                                     </h4>
                                                 </input> -->
-                                                <input class="form-control fontSz shadow_inner border_darker"
-                                                placeholder="&nbsp&nbsp⦁&nbsp⦁&nbsp⦁" aria-label="Search" style="font-size:large;">
+                                                <input class="form-control fontSz" placeholder="&nbsp&nbsp⦁&nbsp⦁&nbsp⦁"
+                                                    aria-label="Search" style="font-size:large;">
                                                 </input>
                                             </li>
-                                            <li class="nav-item-li li1 shadow_inner border_darker">
-                                                <input class="form-control fontSz"
-                                                placeholder="&nbsp&nbsp⦁&nbsp⦁&nbsp⦁&nbsp⦁&nbsp⦁&nbsp⦁&nbsp⦁&nbsp⦁&nbsp⦁&nbsp⦁&nbsp⦁&nbsp⦁&nbsp⦁&nbsp" aria-label="Search" style="font-size:large;">
+                                            <li class="nav-item-li li1 px-1">
+                                                <input class="form-control fontSz" placeholder="&nbsp&nbsp⦁⦁⦁⦁⦁⦁⦁⦁⦁⦁⦁⦁⦁"
+                                                    aria-label="Search" style="font-size:large;">
                                                 </input>
                                             </li>
-                                            <li class="nav-item-li li1">
+                                            <li class="nav-item-li px-1 li1">
                                                 <input class="form-control fontSz ID_num11 pg_10_answer 10_input"
-                                                placeholder="&nbsp&nbsp휴대폰번호" aria-label="Search" style="font-size:large;" type="password" maxlength="11">
+                                                    placeholder="&nbsp&nbsp휴대폰번호" aria-label="Search"
+                                                    style="font-size:large;" type="password" maxlength="11">
                                                 </input>
                                             </li>
                                         </ul>
@@ -949,7 +990,7 @@
                                 </div>
                             </div>
                         </div>
-                        
+
                         <!------------------------------ page 11 ------------------------------>
                         <div class="page" id="p11">
                             <div class="page_wrap">

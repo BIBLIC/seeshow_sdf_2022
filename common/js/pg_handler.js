@@ -232,9 +232,9 @@ $('#hint_btn').click(function () {
     var real_pg = myPgNum.slice(1);
     $(".cursor_wrap_" + real_pg).toggleClass('show');
     $(".pg_" + real_pg + "_answer:first").toggleClass("addShadow");
-    $("#p"+real_pg>'.shadow_ext').toggleClass("addShadow");
-    $("#p"+real_pg>'.shadow_inner').toggleClass("addInnerShadow");
-    $("#p"+real_pg>'.border_darker').toggleClass("mk_border_darker");
+    $('shadow_ext').toggleClass("addShadow");
+    $('shadow_inner').toggleClass("addInnerShadow");
+    $('border_darker').toggleClass("mk_border_darker");
     // $("#p"+real_pg>'.shadow_ext').toggleClass("addShadow");
 })
 
@@ -260,8 +260,6 @@ function next(real_pg) {
     }
     $(".submit_btn").removeClass("pg_" + real_pg + "_answer");
     $('.shadow_ext').removeClass("addShadow");
-$('.shadow_inner').removeClass("addInnerShadow");
-$('.border_darker').removeClass("mk_border_darker");
 }
 
 

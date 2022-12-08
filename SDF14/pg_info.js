@@ -89,46 +89,143 @@ const modalCont = [
     },
     {
         page: 1,
-        instruction: "택시 아이콘을 클릭하세요."
+        instruction: "'자동결제 등록' 문구 부분을 눌러주세요."
     },
     {
         page: 2,
-        instruction: "출발지를 확인하고 '어디로 갈까요?'를 클릭해 도착지 설정 페이지로 이동하세요."
+        instruction: "'편리한 자동 결제 수단 등록' 박스를 눌러주세요."
     },
     {
         page: 3,
-        instruction: "도착지에 '서울디지털재단'을 입력하세요."
+        instruction: "'카카오 T 포인트' 영역을 눌러주세요."
     },
     {
         page: 4,
-        instruction: "하단의 '출발지로 설정 버튼을 클릭하세요."
+        instruction: "'전체 동의하기'를 눌러주세요."
     },
     {
         page: 5,
-        instruction: "'일반호출' 탭을 클릭하세요."
+        instruction: "'동의하고 계속하기' 버튼을 눌러주세요."
     },
     {
         page: 6,
-        instruction: "하단의 '호출하기 버튼을 클릭하세요."
+        instruction: "'약관 전체동의'를 눌러주세요."
     },
     {
         page: 7,
-        instruction: "하단의 '호출하기 버튼을 클릭하세요."
+        instruction: "'확인' 버튼을 눌러주세요."
     },
     {
         page: 8,
-        instruction: "하단의 '호출하기 버튼을 클릭하세요."
+        instruction: "이름을 입력해주세요."
     },
     {
         page: 9,
-        instruction: "하단의 '호출하기 버튼을 클릭하세요."
+        instruction: "'-'을 제외한 주민등록번호 13자리를 입력해주세요."
     },
     {
         page: 10,
-        instruction: "마지막 페이지"
+        instruction: "'-'을 제외한 휴대폰번호 11자리를 입력하고 '인증번호 요청'을 눌러주세요."
     },
     {
-        page: 10,
+        page: 11,
         instruction: "마지막 페이지"
     },
 ];
+
+
+//*******************************************************************************
+//**************************+    커서   +*********************************** 
+
+const cursor_pos_1 = document.querySelector('.cursor_pos_1');
+const cursor_pos_2 = document.querySelector('.cursor_pos_2');
+// const cursor_pos_3 = document.querySelector('.cursor_pos_3');
+// const cursor_pos_4 = document.querySelector('.cursor_pos_4');
+// const cursor_pos_5 = document.querySelector('.cursor_pos_5');
+// const cursor_pos_6 = document.querySelector('.cursor_pos_6');
+
+const cursor_wrap_1 = document.querySelector('.cursor_wrap_1');
+const cursor_wrap_2 = document.querySelector('.cursor_wrap_2');
+// const cursor_wrap_3 = document.querySelector('.cursor_wrap_3');
+// const cursor_wrap_4 = document.querySelector('.cursor_wrap_4');
+// const cursor_wrap_5 = document.querySelector('.cursor_wrap_5');
+// const cursor_wrap_6 = document.querySelector('.cursor_wrap_6');
+
+
+cursor_wrap_1.style.zIndex = "100";
+cursor_wrap_2.style.zIndex = "100";
+// cursor_wrap_3.style.zIndex = "100";
+// cursor_wrap_4.style.zIndex = "100";
+// cursor_wrap_5.style.zIndex = "100";
+// cursor_wrap_6.style.zIndex = "100";
+
+
+const { createPopper } = Popper;
+createPopper(cursor_pos_1, cursor_wrap_1, {
+    placement: 'right',
+    modifiers: [
+        {
+            name: 'offset',
+            options: {
+                offset: [0,0],
+            },
+        },
+    ],
+});
+createPopper(cursor_pos_2, cursor_wrap_2, {
+    placement: 'right',
+    modifiers: [
+        {
+            name: 'offset',
+            options: {
+                offset: [200,200],
+            },
+        },
+    ],
+});
+// createPopper(cursor_pos_3, cursor_wrap_3, {
+//     placement: 'right',
+//     modifiers: [
+//         {
+//             name: 'offset',
+//             options: {
+//                 offset: [70,80],
+//             },
+//         },
+//     ],
+// });
+// //cursor_wrap_4.style.left="60%";
+
+// createPopper(cursor_pos_4, cursor_wrap_4, {
+//     placement: 'bottom',
+//     modifiers: [
+//         {
+//             name: 'offset',
+//             options: {
+//                 offset: [250,10],
+//             },
+//         },
+//     ],
+// });
+// createPopper(cursor_pos_5, cursor_wrap_5, {
+//     placement: 'right',
+//     modifiers: [
+//         {
+//             name: 'offset',
+//             options: {
+//                 offset: [25,200],
+//             },
+//         },
+//     ],
+// });
+// createPopper(cursor_pos_6, cursor_wrap_6, {
+//     placement: 'bottom',
+//     modifiers: [
+//         {
+//             name: 'offset',
+//             options: {
+//                 offset: [250,10],
+//             },
+//         },
+//     ],
+// });
