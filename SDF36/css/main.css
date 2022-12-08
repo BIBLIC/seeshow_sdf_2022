@@ -137,7 +137,7 @@
 .floating-button {
     display: flex;
     flex-direction: column;
-    width: 50%;
+    min-width: 50%;
     justify-content: flex-end;
     align-items: flex-end;
     position: absolute;
@@ -153,9 +153,11 @@
 
 .floating-button .btn-or,
 .floating-button .btn-w {
-    width: fit-content;
-    height: fit-content;
-    padding: 1em;
+    min-width: 3.5em;
+    min-height: 3.5em;
+    display: flex;
+    justify-content: center;
+    align-items: center;
     border-radius: 100%;
 }
 
@@ -168,7 +170,7 @@
 }
 #p1 .under_bar,
 #p2 .under_bar {
-    height: 8vh;
+    min-height: 8vh;
 }
 #p1 .under_bar .baricon_wrap,
 #p2 .under_bar .baricon_wrap {
@@ -186,7 +188,7 @@
 
 #p2 .floating-button .bg-white {
     z-index: unset;
-    width: 70%;
+    min-width: 70%;
 
     border-radius: 11px;
 }
@@ -270,7 +272,12 @@ svg {
  .under_bar .baricon_wrap .baricon > svg {
     margin-right: .5em;
 }
-
+/* ----------------------------------------- */
+#p1 .btn-w {
+    z-index: 25;
+    background: transparent !important;
+    color: #fff!important;
+}
 /* ----------------------------------------- */
 
 #p3 #modal_ {

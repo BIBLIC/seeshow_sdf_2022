@@ -29,15 +29,8 @@ window.addEventListener("resize", () => {
     let vh = window.innerHeight * 0.01;
     document.documentElement.style.setProperty("--vh", `${vh}px`);
 });
-// New event listener:
-window.addEventListener("load",function() {
-    setTimeout(function(){
-        // Hide the address bar:
-        window.scrollTo(0, 1);
-    }, 0);
-});
 
-// ios 또는 android Chrome 일 때 스크롤 맨 밑으로 스크롤 해서 
+// ios 또는 android Chrome 일 때 스크롤 맨 밑으로 스크롤 해서 어쩌구 보류 
 // function Mobile() {return /Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent);}
 // if (Mobile()){// 모바일일 경우
 //     window.addEventListener('load', function(){
@@ -73,22 +66,6 @@ function firstPageLoader() {
 //*******************************************************************************
 //**************************+    시작하기 버튼   +***********************************  
 
-const fullScreen = (element) => {
-    if (element.requestFullscreen) return element.requestFullscreen();
-    if (element.webkitRequestFullscreen) return element.webkitRequestFullscreen();
-    if (element.mozRequestFullScreen) return element.mozRequestFullScreen();
-    if (element.msRequestFullscreen) return element.msRequestFullscreen();
-};
-
-const exitFullScreen = () => {
-    if (document.exitFullscreen) return document.exitFullscreen();
-    if (document.webkitCancelFullscreen) return document.webkitCancelFullscreen();
-    if (document.mozCancelFullScreen) return document.mozCancelFullScreen();
-    if (document.msExitFullscreen) return document.msExitFullscreen();
-};
-
-
-
 //시작하기 버튼 클릭 후 컨트롤 바 내부 변경
 $('#start-btn').click(function () {
     $('.nav_btn_wrap').css('display', 'block');
@@ -112,24 +89,6 @@ $('#start-btn').click(function () {
     audioArray[page_num - 1].load();// 해당 페이지 오디오 로딩
     audioArray[page_num - 1].play();// 해당 페이지 오디오 재생
 
-    function Mobile() {return /Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent);}
-if (Mobile()){// 모바일일 경우
-
-
-    window.addEventListener('load', function(){
-        if (!document.fullscreenElement) {
-            fullScreen(document.body);
-        } else if (document.exitFullscreen) {
-            exitFullScreen();
-        }
-
-
-    }, false);
-        
-} 
-
-
-   
 });
 
 
@@ -299,12 +258,10 @@ $('#hint_btn').click(function () {
     var real_pg = myPgNum.slice(1);
     $(".cursor_wrap_" + real_pg).toggleClass('show');
     $(".pg_" + real_pg + "_answer:first").toggleClass("addShadow");
-    $('shadow_ext').toggleClass("addShadow");
-    $('shadow_inner').toggleClass("addInnerShadow");
-    $('border_darker').toggleClass("mk_border_darker");
-    // $("#p"+real_pg>'.shadow_ext').toggleClass("addShadow");
+    $('.shadow_ext').toggleClass("addShadow");
+    $(".pg_" + real_pg + "_shadow_inner").toggleClass("addInnerShadow");
+    $('.border_darker').toggleClass("mk_border_darker");
 })
-
 //*******************************************************************************
 //**************************+    클릭 제어   +*********************************** 
 
