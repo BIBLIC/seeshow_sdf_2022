@@ -85,7 +85,7 @@ $('#start-btn').click(function () {
         $("#p" + page_num).toggleClass("pactive");
         $(".pactive").fadeIn(0);
     });
-    ctrlbar.style.background = "#E0E0E0";
+    ctrlbar.style.background = "#eeeeee";
     audioArray[page_num - 1].load();// 해당 페이지 오디오 로딩
     audioArray[page_num - 1].play();// 해당 페이지 오디오 재생
 
