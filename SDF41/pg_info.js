@@ -68,7 +68,7 @@ const inputAnswer = [
     {},
     {
         page: 1,
-        inputableAnswer: "김토스"
+        inputableAnswer: "김서울"
     },
     {},
     {},
