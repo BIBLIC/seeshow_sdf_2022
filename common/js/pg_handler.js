@@ -22,13 +22,12 @@ const popoverList = [...popoverTriggerList].map(popoverTriggerEl => new bootstra
 
 
 //창 비율 고정
-let vh = window.innerHeight * 0.01;
-document.documentElement.style.setProperty("--vh", `${vh}px`);
-
-window.addEventListener("resize", () => {
-    let vh = window.innerHeight * 0.01;
-    document.documentElement.style.setProperty("--vh", `${vh}px`);
-});
+const setVh = () => {
+    document.documentElement.style.setProperty('--vh', `${window.innerHeight}px`)
+  };
+  window.addEventListener('resize', setVh);
+  setVh();
+  
 // New event listener:
 window.addEventListener("load",function() {
     setTimeout(function(){
