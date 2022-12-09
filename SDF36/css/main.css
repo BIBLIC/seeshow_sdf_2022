@@ -174,12 +174,19 @@
 }
 #p1 .under_bar .baricon_wrap,
 #p2 .under_bar .baricon_wrap {
+    width: 25%;
     flex-direction: column;
     justify-content: center;
+    margin: 0;
 }
 #p1 .under_bar .baricon_wrap .baricon > svg,
 #p2 .under_bar .baricon_wrap .baricon > svg {
     margin: 0;
+}
+
+#p1 .scroller .tab .icon,
+#p2 .scroller .tab .icon {
+    border: 0;
 }
 
 #p1 .floating-button .btn-or {
