@@ -220,6 +220,11 @@ svg {
     max-height: 82vh;
 }
 
+#p4 .pg_top
+,#p6 .pg_top{
+    max-height: 87vh;
+}
+
 .scroller .tab {
     display: flex;
     justify-content: space-between;

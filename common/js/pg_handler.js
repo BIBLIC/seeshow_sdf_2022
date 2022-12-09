@@ -85,11 +85,10 @@ $('#start-btn').click(function () {
         $("#p" + page_num).toggleClass("pactive");
         $(".pactive").fadeIn(0);
     });
-    ctrlbar.style.background = "#eeeeee";
+    ctrlbar.style.background = "#E0E0E0";
     audioArray[page_num - 1].load();// 해당 페이지 오디오 로딩
     audioArray[page_num - 1].play();// 해당 페이지 오디오 재생
 
-    
     //---------ctrlbar shadow
     if (page_num == 0) {
         $(".ctrlbar").removeClass("ctrlbar_shadow");
@@ -138,7 +137,11 @@ $(document).on("click", "#next_btn", function () {
     } else if (audio_stat == 1) {
         audioArray[page_num - 1].play();
     }
-    
+    //if ($(".active").children().hasClass(".answer_txt")){
+    // if ($(".active > .answer_txt")){
+    // alert('폼 영역 확인');
+    // }
+
     //---------ctrlbar shadow
     if (page_num == 0) {
         $(".ctrlbar").removeClass("ctrlbar_shadow");
@@ -656,7 +659,5 @@ document.querySelector("main").addEventListener("click", function (e) {//메인 
 
 
 });
-
-
 
 
