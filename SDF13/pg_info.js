@@ -120,7 +120,7 @@ const modalCont = [
     },
     {
         page: 9,
-        instruction: "출발지와 도착지를 확인하고 '벤티 예약' 버튼을 눌러주세요."
+        instruction: "출발지와 도착지를 확인하고 '승합차 예약' 버튼을 눌러주세요."
     },
     {
         page: 10,
