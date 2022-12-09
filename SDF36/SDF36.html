@@ -53,8 +53,10 @@
                         <!------------------------------ page 0 (시작 화면) ------------------------------>
                         <div class="page" id="p0">
                             <div class="page_wrap">
-                                    <img src="./assets/image/0.png" class="pt-5" width="100%">
-                                    <div class="w-100 flex-center-center"><h3 class="fontSz">💎💎💎</h3></div>
+                                <img src="./assets/image/0.png" class="pt-5" width="100%">
+                                <div class="w-100 flex-center-center">
+                                    <h3 class="fontSz">💎💎💎</h3>
+                                </div>
                             </div>
                         </div>
                         <!------------------------------ page 1 ------------------------------>
@@ -266,24 +268,44 @@
                                     </div>
 
                                     <!--하단 플로팅 버튼 시작-->
+
+                                    <div class="floating-button">
+                                        <div class="btn-w mt-2 pg_1_answer fontSz">
+                                            <!-- <svg xmlns="http://www.w3.org/2000/svg" width="30" height="30"
+                                                        fill="currentColor" class="bi bi-plus-lg pg_1_answer" viewBox="0 0 16 16">
+                                                        <path fill-rule="evenodd"
+                                                            d="M8 2a.5.5 0 0 1 .5.5v5h5a.5.5 0 0 1 0 1h-5v5a.5.5 0 0 1-1 0v-5h-5a.5.5 0 0 1 0-1h5v-5A.5.5 0 0 1 8 2Z" />
+                                                    </svg> -->
+                                        </div>
+
+                                    </div>
                                     <div class="floating-button ">
-                                        <div class="btn-or fontSz">
+                                        <div class="btn-or fontSz cursor_pos_1">
                                             <svg xmlns="http://www.w3.org/2000/svg" width="30" height="30"
                                                 fill="currentColor" class="bi bi-plus-lg" viewBox="0 0 16 16">
                                                 <path fill-rule="evenodd"
                                                     d="M8 2a.5.5 0 0 1 .5.5v5h5a.5.5 0 0 1 0 1h-5v5a.5.5 0 0 1-1 0v-5h-5a.5.5 0 0 1 0-1h5v-5A.5.5 0 0 1 8 2Z" />
                                             </svg>
+                                            <!-- 커서 가이드 -->
+                                            <div class="cursor_wrap cursor_wrap_1 pg_1_answer">
+                                                <span class="cursor pg_1_answer" x-placement="bottom">
+                                                    <button class="react-joyride__beacon pg_1_answer" type="button">
+                                                        <span class="cursor_outer pg_1_answer"></span>
+                                                        <span class="cursor_inner pg_1_answer"><span>
+                                                    </button>
+                                                </span>
+                                            </div>
+                                            <!-- 커서 가이드 -->
                                         </div>
                                     </div>
-                                    <div class="floating-button">
-                                        <div class="btn-w mt-2 pg_1_answer fontSz">
-                                            <!-- <svg xmlns="http://www.w3.org/2000/svg" width="30" height="30"
-                                                fill="currentColor" class="bi bi-plus-lg pg_1_answer" viewBox="0 0 16 16">
-                                                <path fill-rule="evenodd"
-                                                    d="M8 2a.5.5 0 0 1 .5.5v5h5a.5.5 0 0 1 0 1h-5v5a.5.5 0 0 1-1 0v-5h-5a.5.5 0 0 1 0-1h5v-5A.5.5 0 0 1 8 2Z" />
-                                            </svg> -->
-                                        </div>
-                                    </div>
+
+
+
+
+
+
+
+
                                     <div class="under_bar">
                                         <div class="fontSz baricon_wrap">
                                             <div class="baricon">
@@ -576,13 +598,25 @@
                                                 중고차
                                             </div>
                                         </div>
-                                        <div class="bg-white fontSz mt-1 pg_2_answer">
-                                            <div class="tab pg_2_answer">
-                                                <div class="icon pg_2_answer"></div>
-                                                내 물건 팔기
+                                        <div class="cursor_pos_2">
+                                            <div class="bg-white fontSz mt-1 pg_2_answer">
+                                                <div class="tab pg_2_answer">
+                                                    <div class="icon pg_2_answer"></div>
+                                                    내 물건 팔기
+                                                </div>
                                             </div>
+                                            <!-- 커서 가이드 -->
+                                            <div class="cursor_wrap cursor_wrap_2 pg_2_answer">
+                                                <span class="cursor pg_2_answer" x-placement="bottom">
+                                                    <button class="react-joyride__beacon pg_2_answer" type="button">
+                                                        <span class="cursor_outer pg_2_answer"></span>
+                                                        <span class="cursor_inner pg_2_answer"><span>
+                                                    </button>
+                                                </span>
+                                            </div>
+                                            <!-- 커서 가이드 -->
                                         </div>
-                                        <div class="btn-w mt-2 fontSz pg_1_shadow_inner">
+                                        <div class="btn-w mt-2 fontSz pg_2_shadow_inner">
                                             <svg xmlns="http://www.w3.org/2000/svg" width="30" height="30"
                                                 fill="currentColor" class="bi bi-x-lg" viewBox="0 0 16 16">
                                                 <path
@@ -787,7 +821,8 @@
                                                 <div class="w-100 modal_bottom_wrap">
                                                     <div class="btn_wrap">
                                                         <!-- <div class="w-100 cursor_pos_"> -->
-                                                        <div class="btn btn-or fw-bold mb-2 pg_3_answer fontSz">지금 동네인증 하기</div>
+                                                        <div class="btn btn-or fw-bold mb-2 pg_3_answer fontSz">지금 동네인증
+                                                            하기</div>
                                                         <!-- 커서 가이드 -->
                                                         <!-- <div class="cursor_wrap cursor_wrap_2 pg_2_answer">
                                                             <span class="cursor" x-placement="bottom pg_2_answer">
@@ -829,7 +864,8 @@
                                             <div class="top_icon w-20"></div>
                                         </div>
 
-                                        <div class="bg-image pg_4_shadow_inner" style="background-image: url('./assets/image/1.png');">
+                                        <div class="bg-image pg_4_shadow_inner"
+                                            style="background-image: url('./assets/image/1.png');">
 
                                         </div>
 
@@ -852,7 +888,8 @@
                                                             </svg>
                                                         </div>
                                                         <div class="tab">
-                                                            <button type="button" class="btn btn-or w-100 fontSz mb-3 pg_4_answer">
+                                                            <button type="button"
+                                                                class="btn btn-or w-100 fontSz mb-3 pg_4_answer">
                                                                 동네인증 완료하기
                                                             </button>
                                                         </div>
@@ -896,7 +933,8 @@
                                                                 <div class="">
                                                                     <svg xmlns="http://www.w3.org/2000/svg" width="16"
                                                                         height="16" fill="currentColor"
-                                                                        class="bi bi-camera-fill pg_5_answer" viewBox="0 0 16 16">
+                                                                        class="bi bi-camera-fill pg_5_answer"
+                                                                        viewBox="0 0 16 16">
                                                                         <path
                                                                             d="M10.5 8.5a2.5 2.5 0 1 1-5 0 2.5 2.5 0 0 1 5 0z" />
                                                                         <path
@@ -1142,7 +1180,10 @@
                                                         <div class="tab">
                                                             <div class="w-100 d-flex form ">
                                                                 <!-- <input class="form-control fontSz anwer_txt pg_7_answer 7_input" placeholder="글 제목"> -->
-                                                                <input class="form-control fontSz answer_auto_txt pg_7_answer 7_input" type="search" placeholder="동명(읍,면)으로 검색(ex. 서초동)" aria-label="Search">
+                                                                <input
+                                                                    class="form-control fontSz answer_auto_txt pg_7_answer 7_input"
+                                                                    type="search" placeholder="동명(읍,면)으로 검색(ex. 서초동)"
+                                                                    aria-label="Search">
                                                             </div>
                                                         </div>
 
@@ -1479,7 +1520,8 @@
 
                                                         <div class="tab">
                                                             <div class="w-70 d-flex form">
-                                                                <input class="form-control fontSz answer_auto_txt pg_9_answer 9_input"
+                                                                <input
+                                                                    class="form-control fontSz answer_auto_txt pg_9_answer 9_input"
                                                                     placeholder="￦ 가격 (선택사항)" type="number">
                                                             </div>
                                                             <div class="fontSz">
@@ -1672,7 +1714,8 @@
                                                                 가격 제안받기
                                                             </div>
                                                             <div class="w-100 d-flex form">
-                                                                <textarea class="form-control fontSz textarea answer_auto_any_txt_save pg_10_answer 10_input"
+                                                                <textarea
+                                                                    class="form-control fontSz textarea answer_auto_any_txt_save pg_10_answer 10_input"
                                                                     placeholder="인사동에 올릴 게시글 내용을 작성해주세요. (판매 금지 물품은 게시가 제한될 수 있어요.)"></textarea>
                                                             </div>
                                                         </div>
@@ -1681,11 +1724,13 @@
                                                             <div class="fontSz">거래 희망 장소</div>
                                                             <div class="d-inline-flex fontSz input_nxt_btn">
                                                                 <!-- 게시글 내용 작성 시 정답 활성화 -->
-                                                                <div class="text-black-50 me-2 input_nxt_btn">장소 선택</div>
+                                                                <div class="text-black-50 me-2 input_nxt_btn">장소 선택
+                                                                </div>
                                                                 <!--  -->
                                                                 <svg xmlns="http://www.w3.org/2000/svg" width="16"
                                                                     height="16" fill="currentColor"
-                                                                    class="bi bi-chevron-right input_nxt_btn" viewBox="0 0 16 16">
+                                                                    class="bi bi-chevron-right input_nxt_btn"
+                                                                    viewBox="0 0 16 16">
                                                                     <path fill-rule="evenodd"
                                                                         d="M4.646 1.646a.5.5 0 0 1 .708 0l6 6a.5.5 0 0 1 0 .708l-6 6a.5.5 0 0 1-.708-.708L10.293 8 4.646 2.354a.5.5 0 0 1 0-.708z" />
                                                                 </svg>
@@ -1729,7 +1774,8 @@
                         <div class="page" id="p11">
                             <div class="page_wrap">
                                 <h1 class="pg_title" style="color: #fff;">Page11</h1>
-                                <div class="bg-image w-100 h-100 d-flex flex-column" style="background-image: url('./assets/image/1.png');">
+                                <div class="bg-image w-100 h-100 d-flex flex-column"
+                                    style="background-image: url('./assets/image/1.png');">
                                     <div class="pg_top fontSz flex-fill">
                                         <div class="top bg-white py-4 px-4">
                                             <div class="top_icon d-flex align-items-center mb-2">
@@ -1744,13 +1790,16 @@
                                     </div>
 
 
-                                     <!--하단 플로팅 버튼 시작-->
-                                     <div class="floating-button">
+                                    <!--하단 플로팅 버튼 시작-->
+                                    <div class="floating-button">
                                         <div class="btn-w fontSz">
-                                            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-geo-alt" viewBox="0 0 16 16">
-                                                <path d="M12.166 8.94c-.524 1.062-1.234 2.12-1.96 3.07A31.493 31.493 0 0 1 8 14.58a31.481 31.481 0 0 1-2.206-2.57c-.726-.95-1.436-2.008-1.96-3.07C3.304 7.867 3 6.862 3 6a5 5 0 0 1 10 0c0 .862-.305 1.867-.834 2.94zM8 16s6-5.686 6-10A6 6 0 0 0 2 6c0 4.314 6 10 6 10z"/>
-                                                <path d="M8 8a2 2 0 1 1 0-4 2 2 0 0 1 0 4zm0 1a3 3 0 1 0 0-6 3 3 0 0 0 0 6z"/>
-                                              </svg>
+                                            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16"
+                                                fill="currentColor" class="bi bi-geo-alt" viewBox="0 0 16 16">
+                                                <path
+                                                    d="M12.166 8.94c-.524 1.062-1.234 2.12-1.96 3.07A31.493 31.493 0 0 1 8 14.58a31.481 31.481 0 0 1-2.206-2.57c-.726-.95-1.436-2.008-1.96-3.07C3.304 7.867 3 6.862 3 6a5 5 0 0 1 10 0c0 .862-.305 1.867-.834 2.94zM8 16s6-5.686 6-10A6 6 0 0 0 2 6c0 4.314 6 10 6 10z" />
+                                                <path
+                                                    d="M8 8a2 2 0 1 1 0-4 2 2 0 0 1 0 4zm0 1a3 3 0 1 0 0-6 3 3 0 0 0 0 6z" />
+                                            </svg>
                                         </div>
                                     </div>
 
@@ -1768,7 +1817,8 @@
                         <div class="page" id="p12">
                             <div class="page_wrap">
                                 <h1 class="pg_title" style="color: #fff;">Page12</h1>
-                                <div class="bg-image w-100 h-100 d-flex flex-column" style="background-image: url('./assets/image/1.png');">
+                                <div class="bg-image w-100 h-100 d-flex flex-column"
+                                    style="background-image: url('./assets/image/1.png');">
                                     <div class="pg_top fontSz flex-fill">
                                         <div class="top bg-white py-4 px-4">
                                             <div class="top_icon d-flex align-items-center mb-2">
@@ -1914,7 +1964,8 @@
                                                             </div>
                                                             <div class="w-100 d-flex form">
                                                                 <div class="form-control fontSz textarea txt_user_input_fill"
-                                                                    placeholder="인사동에 올릴 게시글 내용을 작성해주세요. (판매 금지 물품은 게시가 제한될 수 있어요.)"></div>
+                                                                    placeholder="인사동에 올릴 게시글 내용을 작성해주세요. (판매 금지 물품은 게시가 제한될 수 있어요.)">
+                                                                </div>
                                                             </div>
                                                         </div>
 
