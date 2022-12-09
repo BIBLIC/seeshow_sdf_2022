@@ -455,9 +455,10 @@
 
 #p9 .under_bar {
     width: 100%;
-    min-height: 25vh;
+    min-height: 30vh;
     background: #fff;
     padding-top: 1em;
+    padding-bottom: 1em;
 }
 
 #p10 .under_bar {

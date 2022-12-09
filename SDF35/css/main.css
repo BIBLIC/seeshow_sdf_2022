@@ -188,8 +188,7 @@ svg {
 #p8 .scroller .tab .icon {
     width: 25%;
     height: auto;
-    /* border: 0; */
-    /* 나중에 주석 해제(수정) */
+    border: 0;
     display: flex;
     justify-content: center;
     align-items: center;
