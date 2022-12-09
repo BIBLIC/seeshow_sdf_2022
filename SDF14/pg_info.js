@@ -97,7 +97,7 @@ const modalCont = [
     },
     {
         page: 3,
-        instruction: "'카카오 T 포인트' 영역을 눌러주세요."
+        instruction: "'신용/체크카드' 영역을 눌러주세요."
     },
     {
         page: 4,
