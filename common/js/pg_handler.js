@@ -89,6 +89,14 @@ $('#start-btn').click(function () {
     audioArray[page_num - 1].load();// 해당 페이지 오디오 로딩
     audioArray[page_num - 1].play();// 해당 페이지 오디오 재생
 
+    
+    //---------ctrlbar shadow
+    if (page_num == 0) {
+        $(".ctrlbar").removeClass("ctrlbar_shadow");
+    } else {
+        $(".ctrlbar").addClass("ctrlbar_shadow");
+    }
+
 });
 
 
@@ -130,10 +138,13 @@ $(document).on("click", "#next_btn", function () {
     } else if (audio_stat == 1) {
         audioArray[page_num - 1].play();
     }
-    //if ($(".active").children().hasClass(".answer_txt")){
-    // if ($(".active > .answer_txt")){
-    // alert('폼 영역 확인');
-    // }
+    
+    //---------ctrlbar shadow
+    if (page_num == 0) {
+        $(".ctrlbar").removeClass("ctrlbar_shadow");
+    } else {
+        $(".ctrlbar").addClass("ctrlbar_shadow");
+    }
 });
 
 
@@ -170,6 +181,13 @@ $(document).on("click", "#prev_btn", function () {
         audioArray[page_num - 1].pause();
     } else if (audio_stat == 1) {
         audioArray[page_num - 1].play();
+    }
+
+    //---------ctrlbar shadow
+    if (page_num == 0) {
+        $(".ctrlbar").removeClass("ctrlbar_shadow");
+    } else {
+        $(".ctrlbar").addClass("ctrlbar_shadow");
     }
 
 });
@@ -638,5 +656,7 @@ document.querySelector("main").addEventListener("click", function (e) {//메인 
 
 
 });
+
+
 
 

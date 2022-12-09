@@ -486,6 +486,9 @@ body {
   backdrop-filter: blur(1px);
   border-radius: 11px;
   padding: .4em;
+}
+
+.ctrlbar_shadow{
   z-index : 200;/*1129hy*/
   /* border-top: 1px solid rgba(0, 0, 0, 0.136); */
   box-shadow: 2px 2px 0px #bbbbbb, -1px -1px 0px #ffffff;
