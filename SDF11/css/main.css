@@ -198,6 +198,11 @@
     color: unset;
     text-decoration: unset;
 }
+
+#p11 .form-check-input{
+    background-color:#FAE100;
+    border : #fff;
+    }
 /* --------- */
 #p10 .page_wrap,
 #p11 .page_wrap {
