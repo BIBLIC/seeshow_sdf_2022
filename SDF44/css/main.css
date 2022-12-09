@@ -113,8 +113,7 @@ svg {
     min-height: 6vh;
 }
 
-#p2 .under_bar .btn.left,
-#p8 .under_bar .btn.left {
+.under_bar .btn.left {
     background: #989CA5;
     color: #fff;
 }
@@ -422,4 +421,21 @@ svg {
  #p12 .form .form-control,
  #p13 .form .form-control {
     justify-content: space-between;
+ }
+
+ /* --------------------------------------- */
+ #p12 .bg-lightgray.detail {
+    min-height: 33vh;
+    flex-direction: column;
+    align-items: flex-start;
+    padding-top: 1.5em;
+ }
+
+ #p12 .bg-lightgray.detail .text-b {
+    padding-left: 1rem;
+ }
+
+ #p12 .bg-lightgray.detail > ul li {
+    padding-top: 1em;
+    padding-bottom: .2em;
  }

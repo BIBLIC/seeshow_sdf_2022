@@ -1,4 +1,4 @@
-var total_page = 11;//페이지 수 -> 시나리오마다 total_page 수 바꾸기 
+var total_page = 14;//페이지 수 -> 시나리오마다 total_page 수 바꾸기 
 
 //오디오 배열 선언, 페이지 수 대로 배열에 mp3 넣기
 const audioArray = [];
@@ -60,6 +60,18 @@ const pageClickArea = [
         page: 11,
         correctAnswer: "pg_11_answer"
     },
+    {
+        page: 12,
+        correctAnswer: "pg_12_answer"
+    },
+    {
+        page: 13,
+        correctAnswer: "pg_13_answer"
+    },
+    {
+        page: 14,
+        correctAnswer: "pg_14_answer"
+    },
 ];
 
 // -=----------------------------------------------------------------------------------------------------------------------
@@ -73,6 +85,9 @@ const pageClickArea = [
 // 위 형식 맞춰서 ""안에 답 넣으면 됨
 // 답에는 공백이 없어야 함
 const inputAnswer = [
+    {},
+    {},
+    {},
     {},
     {},
     {},
@@ -136,6 +151,18 @@ const modalCont = [
     },
     {
         page: 11,
+        instruction: "'국세' 탭을 클릭하세요."
+    },
+    {
+        page: 12,
+        instruction: "'국세' 탭을 클릭하세요."
+    },
+    {
+        page: 13,
+        instruction: "'국세' 탭을 클릭하세요."
+    },
+    {
+        page: 14,
         instruction: "마지막 페이지"
     },
 ];
