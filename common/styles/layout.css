@@ -481,7 +481,7 @@ body {
   align-items: center;
   background: #ffffff;
   width: 98%;
-  height: 13vh;
+  height: 12vh;
   margin: .2em;
   backdrop-filter: blur(1px);
   border-radius: 11px;
@@ -589,6 +589,13 @@ body {
   height: 3em;
   border: 2px solid #e0e0e0;
   /* background: #e0e0e0; */
+}
+
+.icon_b {
+  width: 3em;
+  height: 3em;
+  border: 1px solid #ffffff;
+  /* 아이콘보더없음 추가; */
 }
 
 .under_bar {
