@@ -59,11 +59,20 @@
     
     width: 100%;
     height: 9vh;
-    background: #fff;
-    padding-top: 1em;
-    border-radius: 0;
+    padding-top: .5em;
     min-height: 6vh;
     
+}
+
+#p1 .container .icon,
+#p2 .container .icon,
+#p3 .container .icon,
+#p4 .container .icon,
+#p12 .container .icon {
+    border: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
  .under_bar {
