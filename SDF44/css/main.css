@@ -432,10 +432,21 @@ svg {
  }
 
  #p12 .bg-lightgray.detail .text-b {
+    display: contents;
     padding-left: 1rem;
  }
 
  #p12 .bg-lightgray.detail > ul li {
     padding-top: 1em;
     padding-bottom: .2em;
+ }
+
+ .text-lg {
+    font-size: larger;
+ }
+
+ /* ------------------------------- */
+ #p13 .svg {
+    width: 100px;
+    height: 100px;
  }
