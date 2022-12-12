@@ -28,6 +28,12 @@
 .fontSkb {
     color: #5AA2E5;
 }
+
+.wScroller {
+    overflow: auto;
+    white-space: nowrap;
+    display: none; 
+}
 /* ---------------------------- */
 
 #p1 .under_bar {
@@ -49,6 +55,10 @@
     padding: 1em;
     min-height: 30vh;
     background-color: #FEE500;
+}
+
+#p2 .scroller {
+    height: 39vh;
 }
 
 #p2 .box {
@@ -240,7 +250,7 @@
 
 #p9 .icon {
     width: 100%;
-    height: 50%;
+    min-height: 45vh;
 }
 
 #p9 .product {
@@ -311,7 +321,7 @@
 
 #p12 .icon_card {
     width: 90%;
-    height: 43%;
+    min-height: 35vh;
     border: 2px solid #e0e0e0;
     margin-left: 1.5em;
     margin-right: 2em;
@@ -328,15 +338,20 @@
     border-bottom: 1px solid #e0e0e0;
 }
 
+#p13 .bar {
+    height: 8vh;
+}
+
+#p13 .scroller {
+    height: 79vh;
+}
+
 #p13 .top_col {
     padding: 1.5em;
     margin: 1em;
     border-radius: 10px;
 }
 
-#p14 .page_wrap {
-    background: #F5F6F7;
-}
 
 #p14 .container .tab {
     padding-top: .5em;
@@ -354,12 +369,15 @@
     min-height: 5vh;
 }
 
+#p14 .line,
 #p15 .line {
     border-bottom: solid;
 }
 
+#p16 .page_wrap,
+#p14 .page_wrap,
 #p15 .page_wrap {
-    background: #F5F6F7;
+    background-color: #F5F6F7;
 }
 
 #p15 .container .tab {
@@ -454,7 +472,7 @@
     padding-left: 0.2em;
 }
 
-#p18 .border_b {
+#p17 .border_b {
     border-bottom: 1px solid #e0e0e0;
 }
 
@@ -470,4 +488,12 @@
     margin: 1em;
     padding: 1em;
     background-color: #FAFAFA;
+}
+
+#p18 .bar {
+    height: 8vh;
+}
+
+#p18 .scroller {
+    height: 79vh;
 }

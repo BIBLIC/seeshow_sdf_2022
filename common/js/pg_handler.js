@@ -43,6 +43,7 @@ window.addEventListener("resize", () => {
     
 // }
 
+
 //*******************************************************************************
 //**************************+   이벤트 동작   +*********************************** 
 
@@ -470,6 +471,30 @@ document.querySelector("main").addEventListener("click", function (e) {//메인 
             //키보드 떼고 13자리 이상이면 다음 버튼 활성화되게 
             $('.' + real_pg + '_input').keyup(function(){
                 if (this.value.length ==13 ) {
+                    $(".input_nxt_btn").addClass("pg_" + real_pg + "_answer");
+                }
+            });
+        }
+
+        //----주민번호 14자리... 있을 경우(-없이 14자리 입력)-------------------
+        // ID_num14 pg_n_answer n_input
+        else if (e.target.className.includes("ID_num14")) {
+            //키보드 떼고 14자리 이상이면 다음 버튼 활성화되게 
+            $('.' + real_pg + '_input').keyup(function(){
+                if (this.value.length ==14 ) {
+                    next(real_pg);
+                }
+            });
+        }
+
+
+        //----10자리 입력 + 버튼 활성화 색 (-없이 10자리 입력)-------------------
+        // ID_num10 pg_n_answer n_input
+        else if (e.target.className.includes("ID_num10")) {
+            //키보드 떼고 10자리 이상이면 다음 버튼 활성화되게 
+            $('.' + real_pg + '_input').keyup(function(){
+                if (this.value.length == 10 ) {
+                    $(".nxt_btn_able").addClass("btn_able_color");
                     $(".input_nxt_btn").addClass("pg_" + real_pg + "_answer");
                 }
             });

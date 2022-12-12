@@ -1,3 +1,7 @@
+svg {
+  pointer-events: none;
+}
+
 .absolute-bottom {
   position: absolute;
   left: 0;
