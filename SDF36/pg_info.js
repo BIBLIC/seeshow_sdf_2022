@@ -68,6 +68,10 @@ const pageClickArea = [
         page: 13,
         correctAnswer: "pg_13_answer"
     },
+    {
+        page: 14,
+        correctAnswer: "pg_14_answer"
+    },
 ];
 
 // -=----------------------------------------------------------------------------------------------------------------------
@@ -103,6 +107,7 @@ const inputAnswer = [
         page: 12,
         inputableAnswer: "안국역"
     },
+    {},
     {},
 ];
 
@@ -174,13 +179,13 @@ const modalCont = [
 
 const txt_user_input_fill = document.querySelector('.txt_user_input_fill');
 //시작하기 버튼 클릭 후 컨트롤 바 내부 변경
-$('.pg_12_answer').click(function () {
-    txt_user_input_fill.innerText = user_input_txt;
-});
+    $('.pg_12_answer').click(function () {
+        txt_user_input_fill.innerText = user_input_txt;
+    });
 
-$(document).on("click", "#next_btn", function () {
-    txt_user_input_fill.innerText = user_input_txt;
-});
+    $(document).on("click", "#next_btn", function () {
+        txt_user_input_fill.innerText = user_input_txt;
+    });
 
 
 

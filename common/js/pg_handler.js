@@ -1,4 +1,5 @@
 var page_num = 0; // 수정 XXX -> 맨 처음 페이지 초기화하기 위함
+var user_input_txt='';
 
 const prevBtn = document.getElementById("prev");
 const nextBtn = document.getElementById("next");
@@ -355,6 +356,21 @@ document.querySelector("main").addEventListener("click", function (e) {//메인 
             });
         }
         
+
+        //----자동으로 페이지 넘겨야할 때 : 사용자 입력 값 저장??해두기?----------------
+        //answer_auto_any_txt_save pg_n_answer n_input
+        else if (e.target.className.includes("answer_auto_any_txt_save")) {
+            //키보드 떼고 값 일치하면 다음 버튼 활성화되게 
+            $('.' + real_pg + '_input').keyup(function(){
+                user_input_txt = this.value;
+                if (this.value.length >=1 ) {
+                    $(".input_nxt_btn").addClass("pg_" + real_pg + "_answer");
+                    console.log(user_input_txt);
+                }
+            });
+        }
+
+
 
         //----자동으로 페이지 넘겨야할 때 : 6자리 입력 --토스 등등-----------------
         //ID6_auto_txt pg_n_answer n_input

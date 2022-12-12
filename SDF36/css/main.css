@@ -46,7 +46,7 @@
 
 .pg_top .top {
     width: 100%;
-    min-height: 8%;
+    min-height: 7vh;
     display: flex;
     justify-content: space-between;
     align-items: center;
