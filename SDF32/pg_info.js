@@ -7,7 +7,9 @@ for (j = 1; j <= total_page; j++) {
     audioArray.push(audio);
 }
 
+// -----------------------------------------------------------------------------------------------------------------------
 //정답 처리할 영역 클래스 명
+//correctAnswer 로 지정한 class 외 영역 클릭 시 모달창 출력
 //-> 후에 for 문 써서 pg_n_answer 로 통일하기
 const pageClickArea = [
     {
@@ -70,8 +72,30 @@ const pageClickArea = [
         page: 14,
         correctAnswer: "pg_14_answer"
     },
+    {
+        page: 15,
+        correctAnswer: "pg_15_answer"
+    },
+    {
+        page: 16,
+        correctAnswer: "pg_16_answer"
+    },
+    {
+        page: 17,
+        correctAnswer: "pg_17_answer"
+    },
+    {
+        page: 18,
+        correctAnswer: "pg_18_answer"
+    },
+    {
+        page: 19,
+        correctAnswer: "pg_19_answer"
+    },
 ];
 
+// -=----------------------------------------------------------------------------------------------------------------------
+//페이지 수만큼 0부터 {}, 공간이 있어야 함
 const inputAnswer = [
     {},
     {},
@@ -86,168 +110,194 @@ const inputAnswer = [
     {},
     {},
     {},
-    {
-        page: 13,
-        inputableAnswer: "123456"},
+    {},
+    {},
+    {},
+    {},
+    {},
+    {},
     {},
 ];
 
+
+// -----------------------------------------------------------------------------------------------------------------------
 const modalCont = [
     {
         page: 0,
-        instruction: "'시작하기' 버튼을 클릭하세요."
+        instruction: ""
     },
     {
         page: 1,
-        instruction: "'확인' 버튼을 클릭하세요"
+        instruction: ""
     },
     {
         page: 2,
-        instruction: "기기의 위치정보 액세스를 허용하기 위해 '허용' 버튼을 클릭하세요."
+        instruction: ""
     },
     {
         page: 3,
-        instruction: "기기의 사진, 미디어, 파일 액세스를 허용하기 위해 '허용' 버튼을 클릭하세요."
+        instruction: ""
     },
     {
         page: 4,
-        instruction: "전화 걸기 및 관리를 허용하기 위해 '허용' 버튼을 클릭하세요."
+        instruction: ""
     },
     {
         page: 5,
-        instruction: "'카카오 계정으로 시작하기' 버튼을 클릭하세요."
+        instruction: ""
     },
     {
         page: 6,
-        instruction: "'허용하기' 버튼을 클릭하세요."
+        instruction: ""
     },
     {
         page: 7,
-        instruction: "전화 걸기 및 관리를 허용하기 위해 '허용' 버튼을 클릭하세요."
+        instruction: ""
     },
     {
         page: 8,
-        instruction: "기기의 사진, 미디어, 파일 액세스를 허용하기 위해 '허용' 버튼을 클릭하세요."
+        instruction: ""
     },
     {
         page: 9,
-        instruction: "기기의 위치정보 액세스를 허용하기 위해 '허용' 버튼을 클릭하세요."
+        instruction: ""
     },
     {
         page: 10,
-        instruction: "약관 내용 확인 후 '전체 동의하기'영역을 클릭하세요."
+        instruction: ""
     },
     {
         page: 11,
-        instruction: "'동의하고 계속하기' 버튼을 클릭하세요."
+        instruction: ""
     },
     {
         page: 12,
-        instruction: "휴대폰 번호 11자리를 '-'없이 입력하고 '보내기' 버튼을 클릭하세요."
+        instruction: ""
     },
     {
         page: 13,
-        instruction: "인증번호 '123456'을 입력하고 '변경하기' 버튼을 클릭하세요."
-    },{
+        instruction: ""
+    },
+    {
         page: 14,
-        instruction: "완료"
+        instruction: ""
+    },
+    {
+        page: 15,
+        instruction: ""
+    },
+    {
+        page: 16,
+        instruction: ""
+    },
+    {
+        page: 17,
+        instruction: ""
+    },
+    {
+        page: 18,
+        instruction: ""
+    },
+    {
+        page: 19,
+        instruction: ""
     },
 ];
 
 
 
-//*******************************************************************************
-//**************************+    커서   +*********************************** 
+// //*******************************************************************************
+// //**************************+    커서   +*********************************** 
 
-const cursor_pos_1 = document.querySelector('.cursor_pos_1');
-const cursor_pos_2 = document.querySelector('.cursor_pos_2');
-// const cursor_pos_3 = document.querySelector('.cursor_pos_3');
-// const cursor_pos_4 = document.querySelector('.cursor_pos_4');
-// const cursor_pos_5 = document.querySelector('.cursor_pos_5');
-// const cursor_pos_6 = document.querySelector('.cursor_pos_6');
+// const cursor_pos_1 = document.querySelector('.cursor_pos_1');
+// const cursor_pos_2 = document.querySelector('.cursor_pos_2');
+// // const cursor_pos_3 = document.querySelector('.cursor_pos_3');
+// // const cursor_pos_4 = document.querySelector('.cursor_pos_4');
+// // const cursor_pos_5 = document.querySelector('.cursor_pos_5');
+// // const cursor_pos_6 = document.querySelector('.cursor_pos_6');
 
-const cursor_wrap_1 = document.querySelector('.cursor_wrap_1');
-const cursor_wrap_2 = document.querySelector('.cursor_wrap_2');
-// const cursor_wrap_3 = document.querySelector('.cursor_wrap_3');
-// const cursor_wrap_4 = document.querySelector('.cursor_wrap_4');
-// const cursor_wrap_5 = document.querySelector('.cursor_wrap_5');
-// const cursor_wrap_6 = document.querySelector('.cursor_wrap_6');
-
-
-cursor_wrap_1.style.zIndex = "100";
-cursor_wrap_2.style.zIndex = "100";
-// cursor_wrap_3.style.zIndex = "100";
-// cursor_wrap_4.style.zIndex = "100";
-// cursor_wrap_5.style.zIndex = "100";
-// cursor_wrap_6.style.zIndex = "100";
+// const cursor_wrap_1 = document.querySelector('.cursor_wrap_1');
+// const cursor_wrap_2 = document.querySelector('.cursor_wrap_2');
+// // const cursor_wrap_3 = document.querySelector('.cursor_wrap_3');
+// // const cursor_wrap_4 = document.querySelector('.cursor_wrap_4');
+// // const cursor_wrap_5 = document.querySelector('.cursor_wrap_5');
+// // const cursor_wrap_6 = document.querySelector('.cursor_wrap_6');
 
 
-const { createPopper } = Popper;
-createPopper(cursor_pos_1, cursor_wrap_1, {
-    placement: 'right',
-    modifiers: [
-        {
-            name: 'offset',
-            options: {
-                offset: [10,180],
-            },
-        },
-    ],
-});
-createPopper(cursor_pos_2, cursor_wrap_2, {
-    placement: 'right',
-    modifiers: [
-        {
-            name: 'offset',
-            options: {
-                offset: [-50,0],
-            },
-        },
-    ],
-});
-// createPopper(cursor_pos_3, cursor_wrap_3, {
+// cursor_wrap_1.style.zIndex = "100";
+// cursor_wrap_2.style.zIndex = "100";
+// // cursor_wrap_3.style.zIndex = "100";
+// // cursor_wrap_4.style.zIndex = "100";
+// // cursor_wrap_5.style.zIndex = "100";
+// // cursor_wrap_6.style.zIndex = "100";
+
+
+// const { createPopper } = Popper;
+// createPopper(cursor_pos_1, cursor_wrap_1, {
 //     placement: 'right',
 //     modifiers: [
 //         {
 //             name: 'offset',
 //             options: {
-//                 offset: [70,80],
+//                 offset: [0,0],
 //             },
 //         },
 //     ],
 // });
-// //cursor_wrap_4.style.left="60%";
-
-// createPopper(cursor_pos_4, cursor_wrap_4, {
-//     placement: 'bottom',
-//     modifiers: [
-//         {
-//             name: 'offset',
-//             options: {
-//                 offset: [250,10],
-//             },
-//         },
-//     ],
-// });
-// createPopper(cursor_pos_5, cursor_wrap_5, {
+// createPopper(cursor_pos_2, cursor_wrap_2, {
 //     placement: 'right',
 //     modifiers: [
 //         {
 //             name: 'offset',
 //             options: {
-//                 offset: [25,200],
+//                 offset: [30,30],
 //             },
 //         },
 //     ],
 // });
-// createPopper(cursor_pos_6, cursor_wrap_6, {
-//     placement: 'bottom',
-//     modifiers: [
-//         {
-//             name: 'offset',
-//             options: {
-//                 offset: [250,10],
-//             },
-//         },
-//     ],
-// });
+// // createPopper(cursor_pos_3, cursor_wrap_3, {
+// //     placement: 'right',
+// //     modifiers: [
+// //         {
+// //             name: 'offset',
+// //             options: {
+// //                 offset: [70,80],
+// //             },
+// //         },
+// //     ],
+// // });
+// // //cursor_wrap_4.style.left="60%";
+
+// // createPopper(cursor_pos_4, cursor_wrap_4, {
+// //     placement: 'bottom',
+// //     modifiers: [
+// //         {
+// //             name: 'offset',
+// //             options: {
+// //                 offset: [250,10],
+// //             },
+// //         },
+// //     ],
+// // });
+// // createPopper(cursor_pos_5, cursor_wrap_5, {
+// //     placement: 'right',
+// //     modifiers: [
+// //         {
+// //             name: 'offset',
+// //             options: {
+// //                 offset: [25,200],
+// //             },
+// //         },
+// //     ],
+// // });
+// // createPopper(cursor_pos_6, cursor_wrap_6, {
+// //     placement: 'bottom',
+// //     modifiers: [
+// //         {
+// //             name: 'offset',
+// //             options: {
+// //                 offset: [250,10],
+// //             },
+// //         },
+// //     ],
+// // });
