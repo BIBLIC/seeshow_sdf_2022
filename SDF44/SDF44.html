@@ -53,8 +53,10 @@
                         <!------------------------------ page 0 (시작 화면) ------------------------------>
                         <div class="page" id="p0">
                             <div class="page_wrap">
-                                    <img src="./assets/image/0.png" class="pt-5" width="100%">
-                                    <div class="w-100 flex-center-center"><h3 class="fontSz">💎💎💎</h3></div>
+                                <img src="./assets/image/0.png" class="pt-5" width="100%">
+                                <div class="w-100 flex-center-center">
+                                    <h3 class="fontSz">💎💎💎</h3>
+                                </div>
                             </div>
                         </div>
                         <!------------------------------ page 1 ------------------------------>
@@ -142,15 +144,29 @@
                                         </div>
                                         <div class="bartext">공과금 통합조회</div>
                                     </div>
-                                    <div class=" baricon_wrap prev">
-                                        <div class="baricon">
-                                            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16"
-                                                fill="currentColor" class="bi bi-search" viewBox="0 0 16 16">
-                                                <path
-                                                    d="M11.742 10.344a6.5 6.5 0 1 0-1.397 1.398h-.001c.03.04.062.078.098.115l3.85 3.85a1 1 0 0 0 1.415-1.414l-3.85-3.85a1.007 1.007 0 0 0-.115-.1zM12 6.5a5.5 5.5 0 1 1-11 0 5.5 5.5 0 0 1 11 0z" />
-                                            </svg>
+                                    <div class="baricon_wrap prev cursor_pos_1 pg_1_answer">
+                                        <div class="flex-center-center flex-column prev pg_1_answer">
+                                            <div class="baricon pg_1_answer">
+                                                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16"
+                                                    fill="currentColor" class="bi bi-search pg_1_answer"
+                                                    viewBox="0 0 16 16">
+                                                    <path
+                                                        d="M11.742 10.344a6.5 6.5 0 1 0-1.397 1.398h-.001c.03.04.062.078.098.115l3.85 3.85a1 1 0 0 0 1.415-1.414l-3.85-3.85a1.007 1.007 0 0 0-.115-.1zM12 6.5a5.5 5.5 0 1 1-11 0 5.5 5.5 0 0 1 11 0z" />
+                                                </svg>
+                                            </div>
+                                            <div class="bartext pg_1_answer">조회/납부</div>
+                                            <!-- 커서 가이드 -->
+                                            <div class="cursor_wrap cursor_wrap_1 pg_1_answer">
+                                                <span class="cursor" x-placement="bottom pg_1_answer">
+                                                    <button class="react-joyride__beacon pg_1_answer" type="button">
+                                                        <span class="cursor_outer pg_1_answer"></span>
+                                                        <span class="cursor_inner pg_1_answer"><span>
+                                                    </button>
+                                                </span>
+                                            </div>
+                                            <!-- 커서 가이드 -->
                                         </div>
-                                        <div class="bartext">조회/납부</div>
+
                                     </div>
                                     <div class=" baricon_wrap prev">
                                         <div class="baricon">
@@ -177,195 +193,12 @@
                                 </div>
                             </div>
                         </div>
+
                         <!------------------------------ page 2 ------------------------------>
                         <div class="page" id="p2">
                             <div class="page_wrap">
                                 <h1 class="pg_title" style="color: #fff;">Page2</h1>
-                                <div class="top w-100 d-flex justify-content-between align-items-center px-4 py-3">
-                                    <div class="h-100 flex-fill d-flex justify-content-start align-items-center">
-                                        <svg xmlns="http://www.w3.org/2000/svg" width="23" height="23"
-                                            fill="currentColor" class="bi bi-arrow-left fontSz" viewBox="0 0 16 16">
-                                            <path fill-rule="evenodd"
-                                                d="M15 8a.5.5 0 0 0-.5-.5H2.707l3.147-3.146a.5.5 0 1 0-.708-.708l-4 4a.5.5 0 0 0 0 .708l4 4a.5.5 0 0 0 .708-.708L2.707 8.5H14.5A.5.5 0 0 0 15 8z" />
-                                        </svg>
-                                        <h5 class="px-3 m-0 fontSz">공과금 통합조회</h5>
-                                    </div>
-                                    <svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" fill="currentColor"
-                                        class="bi bi-list fontSz" viewBox="0 0 16 16">
-                                        <path fill-rule="evenodd"
-                                            d="M2.5 12a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5zm0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5zm0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5z" />
-                                    </svg>
-                                </div>
-                                <div class="tab w-100">
-                                    <div class="bg-lightgray">
-                                        <div class="text-b fontSz">통합조회 가능 공과금</div>
-                                        <ul class="fontSz m-0 text-sm">
-                                            <li>지방세, 세외수입, 환경개선부담금(상하수도요금 제외)</li>
-                                            <li>국세, 관세, 경찰청범칙금, 법무부국고금</li>
-                                            <li>특허수수료, 항만수수료, 기금 및 기타 국고</li>
-                                            <li>그 밖에 요금은 개별 조회하여 주시기 바랍니다.</li>
-                                        </ul>
-                                    </div>
-                                </div>
-                                <div class="tab d-flex flex-column justify-content-center align-items-start form px-3"
-                                    role="search">
-                                    <div class="text-sm fontSz">주민등록번호</div>
-                                    <input class="pw form-control fontSz ID_num13 pg_9_answer 9_input" type="password"
-                                        placeholder="●●●●●●-●●●●●●●" aria-label="Search" maxlength="13">
-                                </div>
-                                <div class="under_bar">
-                                    <button type="button" class="btn left w-100 rounded-0 fontSz">
-                                        이전
-                                    </button>
-                                    <button type="button" class="btn giro btn-b w-100 rounded-0 input_nxt_btn fontSz">
-                                        다음
-                                    </button>
-                                </div>
-                            </div>
-                        </div>
-                        <!------------------------------ page 3 ------------------------------>
-                        <div class="page" id="p3">
-                            <div class="page_wrap">
-                                <h1 class="pg_title" style="color: #fff;">Page3</h1>
-                                <div class="top w-100 d-flex justify-content-between align-items-center px-4 py-3">
-                                    <div class="h-100 flex-fill d-flex justify-content-start align-items-center">
-                                        <svg xmlns="http://www.w3.org/2000/svg" width="23" height="23"
-                                            fill="currentColor" class="bi bi-arrow-left fontSz" viewBox="0 0 16 16">
-                                            <path fill-rule="evenodd"
-                                                d="M15 8a.5.5 0 0 0-.5-.5H2.707l3.147-3.146a.5.5 0 1 0-.708-.708l-4 4a.5.5 0 0 0 0 .708l4 4a.5.5 0 0 0 .708-.708L2.707 8.5H14.5A.5.5 0 0 0 15 8z" />
-                                        </svg>
-                                        <h5 class="px-3 m-0 fontSz">공과금 통합조회</h5>
-                                    </div>
-                                    <svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" fill="currentColor"
-                                        class="bi bi-list fontSz" viewBox="0 0 16 16">
-                                        <path fill-rule="evenodd"
-                                            d="M2.5 12a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5zm0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5zm0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5z" />
-                                    </svg>
-                                </div>
-                                <div class="scroller">
-                                    <div class="w-100">
-                                        <div class="bg-lightgray">
-                                            <ul class="fontSz m-0 text-sm">
-                                                <li>국고금 및 지방세·세외수입만 조회됩니다.<br>(상하수도요금 제외)<br></li>
-                                                <li>조회된 요금명을 선택 후 납부하여 주십시오.</li>
-                                            </ul>
-                                        </div>
-                                        <div class="container px-4 py-2">
-                                            <div class="fontSz tab">
-                                                <div class="left">
-                                                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16"
-                                                        fill="currentColor" class="bi bi-receipt me-2"
-                                                        viewBox="0 0 16 16">
-                                                        <path
-                                                            d="M1.92.506a.5.5 0 0 1 .434.14L3 1.293l.646-.647a.5.5 0 0 1 .708 0L5 1.293l.646-.647a.5.5 0 0 1 .708 0L7 1.293l.646-.647a.5.5 0 0 1 .708 0L9 1.293l.646-.647a.5.5 0 0 1 .708 0l.646.647.646-.647a.5.5 0 0 1 .708 0l.646.647.646-.647a.5.5 0 0 1 .801.13l.5 1A.5.5 0 0 1 15 2v12a.5.5 0 0 1-.053.224l-.5 1a.5.5 0 0 1-.8.13L13 14.707l-.646.647a.5.5 0 0 1-.708 0L11 14.707l-.646.647a.5.5 0 0 1-.708 0L9 14.707l-.646.647a.5.5 0 0 1-.708 0L7 14.707l-.646.647a.5.5 0 0 1-.708 0L5 14.707l-.646.647a.5.5 0 0 1-.708 0L3 14.707l-.646.647a.5.5 0 0 1-.801-.13l-.5-1A.5.5 0 0 1 1 14V2a.5.5 0 0 1 .053-.224l.5-1a.5.5 0 0 1 .367-.27zm.217 1.338L2 2.118v11.764l.137.274.51-.51a.5.5 0 0 1 .707 0l.646.647.646-.646a.5.5 0 0 1 .708 0l.646.646.646-.646a.5.5 0 0 1 .708 0l.646.646.646-.646a.5.5 0 0 1 .708 0l.646.646.646-.646a.5.5 0 0 1 .708 0l.646.646.646-.646a.5.5 0 0 1 .708 0l.509.509.137-.274V2.118l-.137-.274-.51.51a.5.5 0 0 1-.707 0L12 1.707l-.646.647a.5.5 0 0 1-.708 0L10 1.707l-.646.647a.5.5 0 0 1-.708 0L8 1.707l-.646.647a.5.5 0 0 1-.708 0L6 1.707l-.646.647a.5.5 0 0 1-.708 0L4 1.707l-.646.647a.5.5 0 0 1-.708 0l-.509-.51z" />
-                                                        <path
-                                                            d="M3 4.5a.5.5 0 0 1 .5-.5h6a.5.5 0 1 1 0 1h-6a.5.5 0 0 1-.5-.5zm0 2a.5.5 0 0 1 .5-.5h6a.5.5 0 1 1 0 1h-6a.5.5 0 0 1-.5-.5zm0 2a.5.5 0 0 1 .5-.5h6a.5.5 0 1 1 0 1h-6a.5.5 0 0 1-.5-.5zm0 2a.5.5 0 0 1 .5-.5h6a.5.5 0 0 1 0 1h-6a.5.5 0 0 1-.5-.5zm8-6a.5.5 0 0 1 .5-.5h1a.5.5 0 0 1 0 1h-1a.5.5 0 0 1-.5-.5zm0 2a.5.5 0 0 1 .5-.5h1a.5.5 0 0 1 0 1h-1a.5.5 0 0 1-.5-.5zm0 2a.5.5 0 0 1 .5-.5h1a.5.5 0 0 1 0 1h-1a.5.5 0 0 1-.5-.5zm0 2a.5.5 0 0 1 .5-.5h1a.5.5 0 0 1 0 1h-1a.5.5 0 0 1-.5-.5z" />
-                                                    </svg>
-                                                    총 고지건수
-                                                </div>
-                                                <div class="right">0건</div>
-                                            </div>
-                                            <div class="fontSz tab">
-                                                <div class="left">
-                                                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16"
-                                                        fill="currentColor" class="bi bi-coin me-2" viewBox="0 0 16 16">
-                                                        <path
-                                                            d="M5.5 9.511c.076.954.83 1.697 2.182 1.785V12h.6v-.709c1.4-.098 2.218-.846 2.218-1.932 0-.987-.626-1.496-1.745-1.76l-.473-.112V5.57c.6.068.982.396 1.074.85h1.052c-.076-.919-.864-1.638-2.126-1.716V4h-.6v.719c-1.195.117-2.01.836-2.01 1.853 0 .9.606 1.472 1.613 1.707l.397.098v2.034c-.615-.093-1.022-.43-1.114-.9H5.5zm2.177-2.166c-.59-.137-.91-.416-.91-.836 0-.47.345-.822.915-.925v1.76h-.005zm.692 1.193c.717.166 1.048.435 1.048.91 0 .542-.412.914-1.135.982V8.518l.087.02z" />
-                                                        <path
-                                                            d="M8 15A7 7 0 1 1 8 1a7 7 0 0 1 0 14zm0 1A8 8 0 1 0 8 0a8 8 0 0 0 0 16z" />
-                                                        <path
-                                                            d="M8 13.5a5.5 5.5 0 1 1 0-11 5.5 5.5 0 0 1 0 11zm0 .5A6 6 0 1 0 8 2a6 6 0 0 0 0 12z" />
-                                                    </svg>
-                                                    총 납부금액
-                                                </div>
-                                                <div class="right text-b">0원</div>
-                                            </div>
-                                        </div>
-                                    </div>
-
-                                    <div class="w-100 bg-secondary bg-opacity-10 border-top border-bottom border-secondary border-opacity-25"
-                                        style="height: .5em;"></div>
-
-                                    <div class="container px-4 py-2">
-                                        <div class="fontSz tab mb-3">
-                                            <div class="left d-inline-flex">국고금<div class="text-b">(0건)</div>
-                                            </div>
-                                            <div class="right text-b">0원</div>
-                                        </div>
-                                        <div class="detail">
-                                            <div class="wrap">
-                                                <div class="pg_10_answer fontSz tab">
-                                                    <div class="left pg_10_answer">국세</div>
-                                                    <div class="right pg_10_answer">1건</div>
-                                                </div>
-                                                <div class="fontSz tab">
-                                                    <div class="left">경찰청범칙금(과태료)</div>
-                                                    <div class="right">0건</div>
-                                                </div>
-                                                <div class="fontSz tab">
-                                                    <div class="left">특허수수료</div>
-                                                    <div class="right">0건</div>
-                                                </div>
-                                            </div>
-
-                                            <div class="wrap">
-                                                <div class="fontSz tab">
-                                                    <div class="left">관세</div>
-                                                    <div class="right">0건</div>
-                                                </div>
-                                                <div class="fontSz tab">
-                                                    <div class="left"></div>
-                                                    <div class="right">0건</div>
-                                                </div>
-                                                <div class="fontSz tab">
-                                                    <div class="left"></div>
-                                                    <div class="right">0건</div>
-                                                </div>
-                                            </div>
-                                        </div>
-                                        <div class="fontSz tab">
-                                            <div class="left">기금 및 기타국고</div>
-                                            <div class="right">0건</div>
-                                        </div>
-                                    </div>
-
-                                    <div class="w-100 bg-secondary bg-opacity-10 border-top border-bottom border-secondary border-opacity-25"
-                                        style="height: .5em;"></div>
-
-                                    <div class="container px-4 py-2">
-                                        <div class="fontSz tab mb-3">
-                                            <div class="left d-inline-flex">지방세·세외수입<div class="text-b">(0건)</div>
-                                            </div>
-                                            <div class="right text-b">0원</div>
-                                        </div>
-                                        <div class="detail">
-                                            <div class="wrap">
-                                                <div class="fontSz tab">
-                                                    <div class="left">지방세</div>
-                                                    <div class="right">0건</div>
-                                                </div>
-                                            </div>
-
-                                            <div class="wrap">
-                                                <div class="fontSz tab">
-                                                    <div class="left">세외수입</div>
-                                                    <div class="right">0건</div>
-                                                </div>
-                                            </div>
-                                        </div>
-                                        <div class="fontSz tab">
-                                            <div class="left">환경개선부담금</div>
-                                            <div class="right">0건</div>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        <!------------------------------ page 4 ------------------------------>
-                        <div class="page" id="p4">
-                            <div class="page_wrap">
-                                <h1 class="pg_title" style="color: #fff;">Page4</h1>
-                                <div class="top w-100 d-flex justify-content-between align-items-center px-4 py-3">
+                                <div class="top w-100 d-flex justify-content-between align-items-center px-4 py-3 pg_2_shadow_inner">
                                     <div class="h-100 flex-fill d-flex justify-content-start align-items-center">
                                         <svg xmlns="http://www.w3.org/2000/svg" width="23" height="23"
                                             fill="currentColor" class="bi bi-arrow-left fontSz" viewBox="0 0 16 16">
@@ -418,7 +251,19 @@
                                     <div class="tab_bar fontSz">
                                         <div class="w-100">일반공과금</div>
                                         <div class="tab_wrap">
-                                            <div class="tab">전기요금</div>
+                                            <div class="tab cursor_pos_2 pg_2_answer">
+                                                <div class="pg_2_answer">전기요금</div>
+                                                <!-- 커서 가이드 -->
+                                                <div class="cursor_wrap cursor_wrap_2 pg_2_answer">
+                                                    <span class="cursor" x-placement="bottom pg_2_answer">
+                                                        <button class="react-joyride__beacon pg_2_answer" type="button">
+                                                            <span class="cursor_outer pg_2_answer"></span>
+                                                            <span class="cursor_inner pg_2_answer"><span>
+                                                        </button>
+                                                    </span>
+                                                </div>
+                                                <!-- 커서 가이드 -->
+                                            </div>
                                             <div class="tab">통신요금</div>
                                             <div class="tab">일반<br>지로요금</div>
                                         </div>
@@ -426,10 +271,10 @@
                                 </div>
                             </div>
                         </div>
-                        <!------------------------------ page 5 ------------------------------>
-                        <div class="page" id="p5">
+                        <!------------------------------ page 3 ------------------------------>
+                        <div class="page" id="p3">
                             <div class="page_wrap">
-                                <h1 class="pg_title" style="color: #fff;">Page5</h1>
+                                <h1 class="pg_title" style="color: #fff;">Page3</h1>
                                 <div class="top w-100 d-flex justify-content-between align-items-center px-4 py-3">
                                     <div class="h-100 flex-fill d-flex justify-content-start align-items-center">
                                         <svg xmlns="http://www.w3.org/2000/svg" width="23" height="23"
@@ -507,8 +352,9 @@
                                     </div>
                                     <div class="d-flex form mt-2 px-4 py-4">
                                         <div class="text-sm">고객번호</div>
-                                        <input class="form-control fontSz" placeholder="숫자10자리 입력" type="number"
-                                            maxlength="10">
+                                        <input class="form-control fontSz ID_num10 pg_3_answer 3_input"
+                                            placeholder="숫자10자리 입력" maxlength="10">
+                                        <!-- <input class="tab w-90 d-flex justify-content-center ID_num11 toss_btn_chng pg_5_answer 5_input" maxlength="11"> -->
                                         <div class="mt-2">
                                             <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16"
                                                 fill="currentColor" class="bi bi-check-square-fill text-lightgray"
@@ -520,16 +366,17 @@
                                         </div>
                                     </div>
                                     <!-- 숫자10자리 입력시 버튼 활성화 -->
-                                    <button type="button" class="btn giro btn-gray w-100 fontSz">
+                                    <button type="button"
+                                        class="btn giro btn-gray w-100 fontSz input_nxt_btn nxt_btn_able">
                                         납부
                                     </button>
                                 </div>
                             </div>
                         </div>
-                        <!------------------------------ page 6 ------------------------------>
-                        <div class="page" id="p6">
+                        <!------------------------------ page 4 ------------------------------>
+                        <div class="page" id="p4">
                             <div class="page_wrap">
-                                <h1 class="pg_title" style="color: #fff;">Page6</h1>
+                                <h1 class="pg_title" style="color: #fff;">Page4</h1>
                                 <div class="top w-100 d-flex justify-content-between align-items-center px-4 py-3">
                                     <div class="h-100 flex-fill d-flex justify-content-start align-items-center">
                                         <svg xmlns="http://www.w3.org/2000/svg" width="23" height="23"
@@ -567,9 +414,10 @@
 
                                 <div class="container datail px-4 py-2">
                                     <div class="fontSz tab">
-                                        <div class="left">
+                                        <div class="left pg_4_answer">
                                             <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16"
-                                                fill="currentColor" class="bi bi-check-square-fill text-lightgray"
+                                                fill="currentColor"
+                                                class="bi bi-check-square-fill text-lightgray pg_4_answer"
                                                 viewBox="0 0 16 16">
                                                 <path
                                                     d="M2 0a2 2 0 0 0-2 2v12a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V2a2 2 0 0 0-2-2H2zm10.03 4.97a.75.75 0 0 1 .011 1.05l-3.992 4.99a.75.75 0 0 1-1.08.02L4.324 8.384a.75.75 0 1 1 1.06-1.06l2.094 2.093 3.473-4.425a.75.75 0 0 1 1.08-.022z" />
@@ -606,10 +454,10 @@
                                 </div>
                             </div>
                         </div>
-                        <!------------------------------ page 7 ------------------------------>
-                        <div class="page" id="p7">
+                        <!------------------------------ page 5 ------------------------------>
+                        <div class="page" id="p5">
                             <div class="page_wrap">
-                                <h1 class="pg_title" style="color: #fff;">Page7</h1>
+                                <h1 class="pg_title" style="color: #fff;">Page5</h1>
                                 <div class="top w-100 d-flex justify-content-between align-items-center px-4 py-3">
                                     <div class="h-100 flex-fill d-flex justify-content-start align-items-center">
                                         <svg xmlns="http://www.w3.org/2000/svg" width="23" height="23"
@@ -683,17 +531,18 @@
                                         <div class="left">선택납부(1건)</div>
                                         <div class="right text-b fw-bold">170,213원</div>
                                     </div>
-                                    <button type="button" class="btn giro btn-b w-100 rounded-0 fontSz">
+                                    <button type="button" class="btn giro btn-b w-100 rounded-0 fontSz pg_5_answer">
                                         다음
                                     </button>
                                 </div>
                             </div>
                         </div>
-                        <!------------------------------ page 8 ------------------------------>
-                        <div class="page" id="p8">
+                        <!------------------------------ page 6 ------------------------------>
+                        <div class="page" id="p6">
                             <div class="page_wrap">
-                                <h1 class="pg_title" style="color: #fff;">Page8</h1>
-                                <div class="top w-100 d-flex justify-content-between align-items-center px-4 py-3">
+                                <h1 class="pg_title" style="color: #fff;">Page6</h1>
+                                <div
+                                    class="top w-100 d-flex justify-content-between align-items-center px-4 py-3 pg_6_shadow_inner">
                                     <div class="h-100 flex-fill d-flex justify-content-start align-items-center">
                                         <svg xmlns="http://www.w3.org/2000/svg" width="23" height="23"
                                             fill="currentColor" class="bi bi-arrow-left fontSz" viewBox="0 0 16 16">
@@ -709,7 +558,7 @@
                                     </svg>
                                 </div>
 
-                                <div class="w-100 bg-lightgray top px-4">
+                                <div class="w-100 bg-lightgray top px-4 pg_6_shadow_inner">
                                     <div class="">정보입력</div>
                                     <div class="">
                                         <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16"
@@ -813,9 +662,9 @@
                                             </svg>
                                         </div>
                                         <div class="d-flex form mt-2">
-                                            <div class="form-control fontSz text-form">은행선택</div>
+                                            <div class="form-control fontSz text-form pg_6_answer">은행선택</div>
                                             <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16"
-                                                fill="currentColor" class="bi bi-chevron-down text-b ms-2"
+                                                fill="currentColor" class="bi bi-chevron-down text-b ms-2 pg_6_answer"
                                                 viewBox="0 0 16 16">
                                                 <path fill-rule="evenodd"
                                                     d="M1.646 4.646a.5.5 0 0 1 .708 0L8 10.293l5.646-5.647a.5.5 0 0 1 .708.708l-6 6a.5.5 0 0 1-.708 0l-6-6a.5.5 0 0 1 0-.708z" />
@@ -842,10 +691,10 @@
                                 </div>
                             </div>
                         </div>
-                        <!------------------------------ page 9 ------------------------------>
-                        <div class="page" id="p9">
+                        <!------------------------------ page 7 ------------------------------>
+                        <div class="page" id="p7">
                             <div class="page_wrap">
-                                <h1 class="pg_title" style="color: #fff;">Page9</h1>
+                                <h1 class="pg_title" style="color: #fff;">Page7</h1>
                                 <div class="top w-100 d-flex justify-content-between align-items-center px-4 py-3">
                                     <div class="h-100 flex-fill d-flex justify-content-start align-items-center">
                                         <svg xmlns="http://www.w3.org/2000/svg" width="23" height="23"
@@ -986,15 +835,16 @@
 
 
                                 <div class="under_bar h-40 bg-white px-3 addShadow">
-                                    <img class="w-100" src="./assets/image/14.png">
+                                    <img class="w-100 pg_7_answer" src="./assets/image/14.png">
                                 </div>
                             </div>
                         </div>
-                        <!------------------------------ page 10 ------------------------------>
-                        <div class="page" id="p10">
+                        <!------------------------------ page 8 ------------------------------>
+                        <div class="page" id="p8">
                             <div class="page_wrap">
-                                <h1 class="pg_title" style="color: #fff;">Page10</h1>
-                                <div class="top w-100 d-flex justify-content-between align-items-center px-4 py-3">
+                                <h1 class="pg_title" style="color: #fff;">Page8</h1>
+                                <div
+                                    class="top w-100 d-flex justify-content-between align-items-center px-4 py-3 pg_8_shadow_inner">
                                     <div class="h-100 flex-fill d-flex justify-content-start align-items-center">
                                         <svg xmlns="http://www.w3.org/2000/svg" width="23" height="23"
                                             fill="currentColor" class="bi bi-arrow-left fontSz" viewBox="0 0 16 16">
@@ -1010,7 +860,7 @@
                                     </svg>
                                 </div>
 
-                                <div class="w-100 bg-lightgray top px-4">
+                                <div class="w-100 bg-lightgray top px-4 pg_8_shadow_inner">
                                     <div class="">정보입력</div>
                                     <div class="">
                                         <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16"
@@ -1130,7 +980,8 @@
                                         </div>
                                         <div class="d-flex form mt-2">
                                             <div class="text-sm text-black-50">계좌번호</div>
-                                            <input class="form-control fontSz" placeholder="계좌번호" type="number">
+                                            <input class="form-control fontSz ID_num14 pg_8_answer 8_input"
+                                                placeholder="계좌번호" type="password" maxlength="14">
                                         </div>
                                         <div class="d-flex form mt-2">
                                             <input class="form-control fontSz" placeholder="계좌비밀번호" type="password"
@@ -1150,11 +1001,12 @@
                                 </div>
                             </div>
                         </div>
-                        <!------------------------------ page 11 ------------------------------>
-                        <div class="page" id="p11">
+                        <!------------------------------ page 9 ------------------------------>
+                        <div class="page" id="p9">
                             <div class="page_wrap">
-                                <h1 class="pg_title" style="color: #fff;">Page11</h1>
-                                <div class="top w-100 d-flex justify-content-between align-items-center px-4 py-3">
+                                <h1 class="pg_title" style="color: #fff;">Page9</h1>
+                                <div
+                                    class="top w-100 d-flex justify-content-between align-items-center px-4 py-3 pg_9_shadow_inner">
                                     <div class="h-100 flex-fill d-flex justify-content-start align-items-center">
                                         <svg xmlns="http://www.w3.org/2000/svg" width="23" height="23"
                                             fill="currentColor" class="bi bi-arrow-left fontSz" viewBox="0 0 16 16">
@@ -1170,7 +1022,7 @@
                                     </svg>
                                 </div>
 
-                                <div class="w-100 bg-lightgray top px-4">
+                                <div class="w-100 bg-lightgray top px-4 pg_9_shadow_inner">
                                     <div class="">정보입력</div>
                                     <div class="">
                                         <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16"
@@ -1296,8 +1148,8 @@
                                         </div>
                                         <div class="d-flex form mt-2">
                                             <div class="text-sm text-black-50">계좌비밀번호</div>
-                                            <input class="form-control fontSz" placeholder="계좌비밀번호" type="password"
-                                                maxlength="4">
+                                            <input class="form-control fontSz ID_num4 pg_9_answer 9_input"
+                                                placeholder="계좌비밀번호" type="password" maxlength="4">
                                         </div>
                                     </div>
                                 </div>
@@ -1313,10 +1165,10 @@
                                 </div>
                             </div>
                         </div>
-                        <!------------------------------ page 12 ------------------------------>
-                        <div class="page" id="p12">
+                        <!------------------------------ page 10 ------------------------------>
+                        <div class="page" id="p10">
                             <div class="page_wrap">
-                                <h1 class="pg_title" style="color: #fff;">Page12</h1>
+                                <h1 class="pg_title" style="color: #fff;">Page10</h1>
                                 <div class="top w-100 d-flex justify-content-between align-items-center px-4 py-3">
                                     <div class="h-100 flex-fill d-flex justify-content-start align-items-center">
                                         <svg xmlns="http://www.w3.org/2000/svg" width="23" height="23"
@@ -1362,7 +1214,7 @@
                                 <div class="scroller w-100">
                                     <div class="container datail px-4 py-4">
                                         <h2 class=" fw-bold">납부내역</h2>
-                                        
+
                                         <div class="fontSz tab">
                                             <div class="left">
                                                 청구기관명
@@ -1383,14 +1235,14 @@
                                             </div>
                                             <div class="right">전기요금(조회납부)</div>
                                         </div>
-                                        
+
                                         <div class="fontSz tab">
                                             <div class="left">
                                                 납부자명
                                             </div>
                                             <div class="right">서울디지털재단</div>
-                                        </div>                                       
-                                        
+                                        </div>
+
                                         <div class="fontSz tab">
                                             <div class="left">
                                                 납부세액
@@ -1432,10 +1284,19 @@
                                         <div class="fontSz">계좌이체 납부 시 안내사항</div>
                                         <ul class="fontSz m-0 text-sm">
                                             <li>국세는 <div class="text-b">납부 후 취소가 불가능</div>합니다.</li>
-                                            <li><div class="text-b">금액을 수정하여 납부하는 경우 잔여분에 대한 조회납부는 당일에 한해 재납부 가능</div>하며, 익일 납부시 국세청 홈택스사이트에서 납부하시기 바랍니다.(고지자료 업데이트 1~2일 소요)</li>
-                                            <li>국세납부의 최종기준은 은행 출금여부 입니다. 납부시도 후 결과를 확인하지 못한 경우 메뉴를 이용하여 출금여부를 확인하시기 바랍니다.</li>
-                                            <li><div class="text-b">이중납부, 과오납의 경우 해당 세무서에서 환급</div>받으시기 바랍니다.</li>
-                                            <li><div class="text-b">자주쓰는 납부계좌</div>를 선택하여 납부하는 경우 총 100만원 이하의 지방세입금, 국고금 등은 본인확인 없이 납부가 가능합니다.</li>
+                                            <li>
+                                                <div class="text-b">금액을 수정하여 납부하는 경우 잔여분에 대한 조회납부는 당일에 한해 재납부 가능</div>
+                                                하며, 익일 납부시 국세청 홈택스사이트에서 납부하시기 바랍니다.(고지자료 업데이트 1~2일 소요)
+                                            </li>
+                                            <li>국세납부의 최종기준은 은행 출금여부 입니다. 납부시도 후 결과를 확인하지 못한 경우 메뉴를 이용하여 출금여부를 확인하시기
+                                                바랍니다.</li>
+                                            <li>
+                                                <div class="text-b">이중납부, 과오납의 경우 해당 세무서에서 환급</div>받으시기 바랍니다.
+                                            </li>
+                                            <li>
+                                                <div class="text-b">자주쓰는 납부계좌</div>를 선택하여 납부하는 경우 총 100만원 이하의 지방세입금, 국고금
+                                                등은 본인확인 없이 납부가 가능합니다.
+                                            </li>
                                         </ul>
                                     </div>
                                 </div>
@@ -1446,16 +1307,16 @@
                                     <button type="button" class="btn left w-100 rounded-0 fontSz">
                                         이전
                                     </button>
-                                    <button type="button" class="btn giro btn-b w-100 rounded-0 input_nxt_btn fontSz">
+                                    <button type="button" class="btn giro btn-b w-100 rounded-0 fontSz pg_10_answer">
                                         다음
                                     </button>
                                 </div>
                             </div>
                         </div>
-                        <!------------------------------ page 13 ------------------------------>
-                        <div class="page" id="p13">
+                        <!------------------------------ page 11 ------------------------------>
+                        <div class="page" id="p11">
                             <div class="page_wrap">
-                                <h1 class="pg_title" style="color: #fff;">Page13</h1>
+                                <h1 class="pg_title" style="color: #fff;">Page11</h1>
                                 <div class="top w-100 d-flex justify-content-between align-items-center px-4 py-3">
                                     <div class="h-100 flex-fill d-flex justify-content-start align-items-center">
                                         <svg xmlns="http://www.w3.org/2000/svg" width="23" height="23"
@@ -1501,8 +1362,9 @@
                                 <div class="scroller w-100">
                                     <div class="container datail px-4 py-4">
                                         <div class="flex-column flex-center-center">
-                                            <svg xmlns="http://www.w3.org/2000/svg" width="100" height="100" fill="currentColor"
-                                                class="bi bi-check2-circle svg text-b" viewBox="0 0 16 16">
+                                            <svg xmlns="http://www.w3.org/2000/svg" width="100" height="100"
+                                                fill="currentColor" class="bi bi-check2-circle svg text-b"
+                                                viewBox="0 0 16 16">
                                                 <path
                                                     d="M2.5 8a5.5 5.5 0 0 1 8.25-4.764.5.5 0 0 0 .5-.866A6.5 6.5 0 1 0 14.5 8a.5.5 0 0 0-1 0 5.5 5.5 0 1 1-11 0z" />
                                                 <path
@@ -1517,7 +1379,9 @@
                                             </div>
 
                                             <div class="w-100 bg-lightgray detail">
-                                                <div class="text-sm">납부하신 요금에 대한 최종 수납여부는 계좌 출금여부에 따라 결정되오니 반드시 출금여부를 확인하시기 바랍니다. 납부하신 요금은 해당 기관 요청에 따라 취소가 허용되지 않습니다. 잘못 납부하셨거나 이중출금 등이 발생된 경우 해당 기관을 통해 환급 받으시기 바랍니다.</div>
+                                                <div class="text-sm">납부하신 요금에 대한 최종 수납여부는 계좌 출금여부에 따라 결정되오니 반드시 출금여부를
+                                                    확인하시기 바랍니다. 납부하신 요금은 해당 기관 요청에 따라 취소가 허용되지 않습니다. 잘못 납부하셨거나 이중출금 등이
+                                                    발생된 경우 해당 기관을 통해 환급 받으시기 바랍니다.</div>
                                             </div>
                                         </div>
                                     </div>
@@ -1529,16 +1393,16 @@
                                     <button type="button" class="btn left w-100 rounded-0 fontSz">
                                         납부내역확인
                                     </button>
-                                    <button type="button" class="btn giro btn-b w-100 rounded-0 input_nxt_btn fontSz">
+                                    <button type="button" class="btn giro btn-b w-100 rounded-0 pg_11_answer fontSz">
                                         확인
                                     </button>
                                 </div>
                             </div>
                         </div>
-                        <!------------------------------ page 14 ------------------------------>
-                        <div class="page" id="p14">
+                        <!------------------------------ page 12 ------------------------------>
+                        <div class="page" id="p12">
                             <div class="page_wrap">
-                                <h1 class="pg_title" style="color: #fff;">Page14</h1>
+                                <h1 class="pg_title" style="color: #fff;">Page12</h1>
                                 <h1 class="title_h1"><img src="../assets/done.png" width="100%"></h1>
                             </div>
                         </div>
