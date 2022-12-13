@@ -1,0 +1,390 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta name="viewport"
+        content="width=device-width,height=device-height,initial-scale=1.0,minimum-scale=1.0,maximum-scale=1.0">
+    <title>SDF</title>
+    <link href="../common/styles/reset.css" rel="stylesheet" />
+    <link href="./css/main.css" rel="stylesheet" />
+    <link href="../common/styles/layout.css" rel="stylesheet" />
+    <link href="../common/styles/animate.css" rel="stylesheet" />
+    <!-- CSS only -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" crossorigin="anonymous">
+    <!-- JavaScript Bundle with Popper -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-OERcA2EqjJCMA+/3y+gxIOqMEjwtxJY7qPCqsdltbNJuaOe923+mo//f6V8Qbsw3"
+        crossorigin="anonymous"></script>
+    <script src="https://code.jquery.com/jquery-3.6.1.min.js"></script>
+    <script src="https://unpkg.com/@popperjs/core@2"></script>
+</head>
+
+<body>
+    <div class="bg_phone">
+        <!--form-theme-background-->
+        <div id="wrap">
+            <div class="view">
+                <div class="contain">
+                    <main class="main" id="main" role="main">
+                        <!-- Modal -->
+                        <div class="modal fade" id="staticBackdrop">
+                            <div class="modal-dialog modal-sm">
+                                <div class="modal-content">
+                                    <div class="modal-header border-0">
+                                        <h5 class="modal-title">
+                                            잠깐!
+                                        </h5>
+                                        <button type="button" class="btn-close" data-bs-dismiss="modal"
+                                            aria-label="Close"></button>
+                                    </div>
+                                    <div class="modal-body">
+                                        모달 내용
+                                    </div>
+                                    <div class="modal-footer border-0 ">
+                                        <button type="button" class="btn btn-secondary btn-lg"
+                                            data-bs-dismiss="modal">확인</button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <!------------------------------ page 0 (시작 화면) ------------------------------>
+                        <div class="page" id="p0">
+                            <div class="page_wrap">
+                                    <img src="./assets/image/0.png" class="pt-5" width="100%">
+                                    <div class="w-100 flex-center-center"><h3 class="fontSz">💎💎💎</h3></div>
+                            </div>
+                        </div>
+                        <!------------------------------ page 1 ------------------------------>
+                        <div class="page" id="p1">
+                            <div class="page_wrap">
+                                <h1 class="pg_title" style="color: #fff;">Page1</h1>
+                                <div class="top_box">
+                                    <h4 class="p-4 pb-0">ㅇㅇㅇ님 ></h4>
+                                    <div class="box">
+                                        <div class="p-2">당신을 위한 혜택이 있어요!</div>
+                                        <div class="p-2 d-flex justify-content-between">
+                                            <div><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-coin" viewBox="0 0 16 16">
+                                                <path d="M5.5 9.511c.076.954.83 1.697 2.182 1.785V12h.6v-.709c1.4-.098 2.218-.846 2.218-1.932 0-.987-.626-1.496-1.745-1.76l-.473-.112V5.57c.6.068.982.396 1.074.85h1.052c-.076-.919-.864-1.638-2.126-1.716V4h-.6v.719c-1.195.117-2.01.836-2.01 1.853 0 .9.606 1.472 1.613 1.707l.397.098v2.034c-.615-.093-1.022-.43-1.114-.9H5.5zm2.177-2.166c-.59-.137-.91-.416-.91-.836 0-.47.345-.822.915-.925v1.76h-.005zm.692 1.193c.717.166 1.048.435 1.048.91 0 .542-.412.914-1.135.982V8.518l.087.02z"/>
+                                                <path d="M8 15A7 7 0 1 1 8 1a7 7 0 0 1 0 14zm0 1A8 8 0 1 0 8 0a8 8 0 0 0 0 16z"/>
+                                                <path d="M8 13.5a5.5 5.5 0 1 1 0-11 5.5 5.5 0 0 1 0 11zm0 .5A6 6 0 1 0 8 2a6 6 0 0 0 0 12z"/>
+                                              </svg>&nbsp;GO마일리지
+                                            </div>
+                                            <div>0M&nbsp;|&nbsp;
+                                                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-ticket-perforated-fill" viewBox="0 0 16 16">
+                                                <path d="M0 4.5A1.5 1.5 0 0 1 1.5 3h13A1.5 1.5 0 0 1 16 4.5V6a.5.5 0 0 1-.5.5 1.5 1.5 0 0 0 0 3 .5.5 0 0 1 .5.5v1.5a1.5 1.5 0 0 1-1.5 1.5h-13A1.5 1.5 0 0 1 0 11.5V10a.5.5 0 0 1 .5-.5 1.5 1.5 0 1 0 0-3A.5.5 0 0 1 0 6V4.5Zm4-1v1h1v-1H4Zm1 3v-1H4v1h1Zm7 0v-1h-1v1h1Zm-1-2h1v-1h-1v1Zm-6 3H4v1h1v-1Zm7 1v-1h-1v1h1Zm-7 1H4v1h1v-1Zm7 1v-1h-1v1h1Zm-8 1v1h1v-1H4Zm7 1h1v-1h-1v1Z"/>
+                                                </svg>&nbsp;쿠폰&nbsp;0
+                                            </div>
+                                        </div>
+                                        <div class="d-flex flex-center-center"><button type="button" class="btn d-flex flex-center-center">GO마일리지 무료적립하기</button></div>
+                                    </div>
+                                </div>
+                                <div class="p-3 d-flex justify-content-between">
+                                    <div>어떤 여정을 시작해 볼까요?</div>
+                                    <div>리워드 신청</div>
+                                </div>
+                                <div class="d-flex">
+                                    <div class="m-2">
+                                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-search" viewBox="0 0 16 16" style="color: #51BED4;">
+                                            <path d="M11.742 10.344a6.5 6.5 0 1 0-1.397 1.398h-.001c.03.04.062.078.098.115l3.85 3.85a1 1 0 0 0 1.415-1.414l-3.85-3.85a1.007 1.007 0 0 0-.115-.1zM12 6.5a5.5 5.5 0 1 1-11 0 5.5 5.5 0 0 1 11 0z"/>
+                                        </svg>
+                                    </div>
+                                    <input type="text" class="line w-100 m-2" placeholder="여정 검색"></input>
+                                </div>
+                                <div class="mt-4 f-flex flex-column">
+                                    <div class="d-flex justify-content-around">
+                                        <div class="ride">
+                                            <div class="icon"></div>
+                                            <div class="p-2">고속ㆍ시외</div>
+                                        </div>
+                                        <div class="ride">
+                                            <div class="icon"></div>
+                                            <div class="p-2">온다택시</div>
+                                        </div>
+                                        <div class="ride">
+                                            <div class="icon"></div>
+                                            <div class="p-2">따릉이</div>
+                                        </div>
+                                        <div class="ride">
+                                            <div class="icon"></div>
+                                            <div class="p-2">씽씽</div>
+                                        </div>
+                                    </div>
+                                    <div class="mt-4 d-flex justify-content-around">
+                                        <div class="ride">
+                                            <div class="icon"></div>
+                                            <div class="p-2">공항버스</div>
+                                        </div>
+                                        <div class="ride">
+                                            <div class="icon"></div>
+                                            <div class="p-2">시내버스</div>
+                                        </div>
+                                        <div class="ride">
+                                            <div class="icon"></div>
+                                            <div class="p-2">지하철</div>
+                                        </div>
+                                        <div class="ride">
+                                            <div class=""></div>
+                                            <div class="p-2">&nbsp;</div>
+                                        </div>
+                                    </div>
+                                    <div class="w-100 banner d-flex flex-center-center">광고 배너</div>
+                                </div>
+                            </div>
+                        </div>
+                        <!------------------------------ page 2 ------------------------------>
+                        <div class="page" id="p2">
+                            <div class="page_wrap">
+                                <h1 class="pg_title" style="color: #fff;">Page2</h1>
+                                <div class="top_bar d-flex justify-content-between">
+                                    <div class="w-10">
+                                        <svg xmlns="http://www.w3.org/2000/svg" width="25" height="25" fill="currentColor" class="bi bi-chevron-left" viewBox="0 0 16 16" style="color: #57BCD2;">
+                                            <path fill-rule="evenodd" d="M11.354 1.646a.5.5 0 0 1 0 .708L5.707 8l5.647 5.646a.5.5 0 0 1-.708.708l-6-6a.5.5 0 0 1 0-.708l6-6a.5.5 0 0 1 .708 0z"/>
+                                        </svg>
+                                    </div>
+                                    <h5>고속ㆍ시외 통합예매</h5>
+                                    <div class="w-10">&nbsp;</div>
+                                </div>
+                                <div class="scroller">
+                                    <div class="d-flex flex-center-center flex-column">
+                                        <div class="icon d-flex flex-center-center">버스</div>
+                                        <div class="search_bar d-flex justify-content-between mt-3">
+                                            <div class="ps-2 d-flex align-items-center">터미널 검색</div>
+                                            <div class="pe-3">
+                                                <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor" class="bi bi-search" viewBox="0 0 16 16" style="color: #51BED4;">
+                                                    <path d="M11.742 10.344a6.5 6.5 0 1 0-1.397 1.398h-.001c.03.04.062.078.098.115l3.85 3.85a1 1 0 0 0 1.415-1.414l-3.85-3.85a1.007 1.007 0 0 0-.115-.1zM12 6.5a5.5 5.5 0 1 1-11 0 5.5 5.5 0 0 1 11 0z"/>
+                                                </svg>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="d-flex justify-content-between ">
+                                        <div>&nbsp;</div>
+                                        <div class="fs-sm my-3 pe-3">즐겨찾는 경로 보기 &nbsp; 
+                                            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-chevron-right" viewBox="0 0 16 16">
+                                                <path fill-rule="evenodd" d="M4.646 1.646a.5.5 0 0 1 .708 0l6 6a.5.5 0 0 1 0 .708l-6 6a.5.5 0 0 1-.708-.708L10.293 8 4.646 2.354a.5.5 0 0 1 0-.708z"/>
+                                            </svg>
+                                        </div>
+                                    </div>
+                                    <div class="middle_box">
+                                        <div class="d-flex justify-content-between">
+                                            <div class="fontM fs-sm ">예매확인 및 변경</div>
+                                            <div class="fs-sm">이용내역보기
+                                                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-chevron-right" viewBox="0 0 16 16">
+                                                    <path fill-rule="evenodd" d="M4.646 1.646a.5.5 0 0 1 .708 0l6 6a.5.5 0 0 1 0 .708l-6 6a.5.5 0 0 1-.708-.708L10.293 8 4.646 2.354a.5.5 0 0 1 0-.708z"/>
+                                                </svg>
+                                            </div>
+                                        </div>
+                                        <div class="d-flex flex-center-center">
+                                            <div class="ticket my-2 d-flex flex-center-center">
+                                                예매 승차권이 없습니다.
+                                            </div>
+                                        </div>
+                                        <div class="text-black-50"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-calendar" viewBox="0 0 16 16">
+                                            <path d="M3.5 0a.5.5 0 0 1 .5.5V1h8V.5a.5.5 0 0 1 1 0V1h1a2 2 0 0 1 2 2v11a2 2 0 0 1-2 2H2a2 2 0 0 1-2-2V3a2 2 0 0 1 2-2h1V.5a.5.5 0 0 1 .5-.5zM1 4v10a1 1 0 0 0 1 1h12a1 1 0 0 0 1-1V4H1z"/>
+                                            </svg> &nbsp; 출발 전 알림을 받아보세요! &nbsp; <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-chevron-right" viewBox="0 0 16 16">
+                                            <path fill-rule="evenodd" d="M4.646 1.646a.5.5 0 0 1 .708 0l6 6a.5.5 0 0 1 0 .708l-6 6a.5.5 0 0 1-.708-.708L10.293 8 4.646 2.354a.5.5 0 0 1 0-.708z"/>
+                                            </svg>
+                                        </div>
+                                    </div>
+                                    <div class="under_box ">
+                                        <svg xmlns="http://www.w3.org/2000/svg" width="40" height="40" fill="currentColor" class="bi bi-phone" viewBox="0 0 16 16" style="color: #51BED4;">
+                                            <path d="M11 1a1 1 0 0 1 1 1v12a1 1 0 0 1-1 1H5a1 1 0 0 1-1-1V2a1 1 0 0 1 1-1h6zM5 0a2 2 0 0 0-2 2v12a2 2 0 0 0 2 2h6a2 2 0 0 0 2-2V2a2 2 0 0 0-2-2H5z"/>
+                                            <path d="M8 14a1 1 0 1 0 0-2 1 1 0 0 0 0 2z"/>
+                                        </svg>
+                                        <div class="d-flex flex-column ps-2">
+                                            <div class="">
+                                                간편예매
+                                            </div>
+                                            <div class="fs-sm">즐겨찾는 경로 중에서 가장 빠른 버스를 즉시 예매합니다!</div>
+                                        </div>
+                                    </div>
+                                    <div class="under_box">
+                                        <svg xmlns="http://www.w3.org/2000/svg" width="40" height="40" fill="currentColor" class="bi bi-ticket-perforated" viewBox="0 0 16 16" style="color: #51BED4;">
+                                            <path d="M4 4.85v.9h1v-.9H4Zm7 0v.9h1v-.9h-1Zm-7 1.8v.9h1v-.9H4Zm7 0v.9h1v-.9h-1Zm-7 1.8v.9h1v-.9H4Zm7 0v.9h1v-.9h-1Zm-7 1.8v.9h1v-.9H4Zm7 0v.9h1v-.9h-1Z"/>
+                                            <path d="M1.5 3A1.5 1.5 0 0 0 0 4.5V6a.5.5 0 0 0 .5.5 1.5 1.5 0 1 1 0 3 .5.5 0 0 0-.5.5v1.5A1.5 1.5 0 0 0 1.5 13h13a1.5 1.5 0 0 0 1.5-1.5V10a.5.5 0 0 0-.5-.5 1.5 1.5 0 0 1 0-3A.5.5 0 0 0 16 6V4.5A1.5 1.5 0 0 0 14.5 3h-13ZM1 4.5a.5.5 0 0 1 .5-.5h13a.5.5 0 0 1 .5.5v1.05a2.5 2.5 0 0 0 0 4.9v1.05a.5.5 0 0 1-.5.5h-13a.5.5 0 0 1-.5-.5v-1.05a2.5 2.5 0 0 0 0-4.9V4.5Z"/>
+                                        </svg>
+                                        <div class="d-flex flex-column ps-2">
+                                            <div class="">
+                                                고속버스 부가서비스
+                                            </div>
+                                            <div class="fs-sm">도착시간 안내/프리패스 등의 부가서비스를 확인해 보세요.</div>
+                                        </div>
+                                        
+                                    </div>
+                                    <div class="w-100 banner d-flex flex-center-center">광고 배너</div>
+                                </div>
+
+                            </div>
+                        </div>
+                        <!------------------------------ page 3 ------------------------------>
+                        <div class="page" id="p3">
+                            <div class="page_wrap">
+                                <h1 class="pg_title" style="color: #fff;">Page3</h1>
+                                
+                            </div>
+                        </div>
+                        <!------------------------------ page 4 ------------------------------>
+                        <div class="page" id="p4">
+                            <div class="page_wrap">
+                                <h1 class="pg_title" style="color: #fff;">Page4</h1>
+                                
+                            </div>
+                        </div>
+                        <!------------------------------ page 5 ------------------------------>
+                        <div class="page" id="p5">
+                            <div class="page_wrap">
+                                <h1 class="pg_title" style="color: #fff;">Page5</h1>
+                                
+                            </div>
+                        </div>
+                        <!------------------------------ page 6 ------------------------------>
+                        <div class="page" id="p6">
+                            <div class="page_wrap">
+                                <h1 class="pg_title" style="color: #fff;">Page6</h1>
+                                
+                            </div>
+                        </div>
+                        <!------------------------------ page 7 ------------------------------>
+                        <div class="page" id="p7">
+                            <div class="page_wrap">
+                                <h1 class="pg_title" style="color: #fff;">Page7</h1>
+                                
+                            </div>
+                        </div>
+                        <!------------------------------ page 8 ------------------------------>
+                        <div class="page" id="p8">
+                            <div class="page_wrap">
+                                <h1 class="pg_title" style="color: #fff;">Page8</h1>
+                                
+                            </div>
+                        </div>
+                        <!------------------------------ page 9 ------------------------------>
+                        <div class="page" id="p9">
+                            <div class="page_wrap">
+                                <h1 class="pg_title" style="color: #fff;">Page9</h1>
+
+                            </div>
+                        </div>
+                        <!------------------------------ page 10 ------------------------------>
+                        <div class="page" id="p10">
+                            <div class="page_wrap">
+                                <h1 class="pg_title" style="color: #fff;">Page10</h1>
+                                
+                            </div>
+                        </div>
+                        <!------------------------------ page 11 ------------------------------>
+                        <div class="page" id="p11">
+                            <div class="page_wrap">
+                                <!-- <h1 class="pg_title" style="color: #fff;">Page6</h1> -->
+                                <h1 class="title_h1"><img src="../assets/done.png" width="100%"></h1>
+                            </div>
+                        </div>
+                    </main>
+
+                    <div class="ctrlbar" id="ctrlbar">
+                    <div class="start_btn_wrap">
+                        <button type="button" class="btn start_btn btn-lg" id="start-btn">시작하기</button>
+                        </div>
+                        <div class="nav_btn_wrap">
+                            <div class="baricon_wrap prev" id="prev_btn">
+                                <div class="baricon">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+                                        class="bi bi-caret-left-fill svg" viewBox="0 0 16 16">
+                                        <path
+                                            d="m3.86 8.753 5.482 4.796c.646.566 1.658.106 1.658-.753V3.204a1 1 0 0 0-1.659-.753l-5.48 4.796a1 1 0 0 0 0 1.506z" />
+                                    </svg>
+                                </div>
+                                <div class="bartext">이전</div>
+                            </div>
+                            <div class="baricon_wrap pause">
+
+                                <div class="stop" id="pause_btn">
+                                    <div class="baricon">
+                                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16"
+                                            fill="currentColor" class="bi bi-volume-mute-fill svg" viewBox="0 0 16 16">
+                                            <path
+                                                d="M6.717 3.55A.5.5 0 0 1 7 4v8a.5.5 0 0 1-.812.39L3.825 10.5H1.5A.5.5 0 0 1 1 10V6a.5.5 0 0 1 .5-.5h2.325l2.363-1.89a.5.5 0 0 1 .529-.06zm7.137 2.096a.5.5 0 0 1 0 .708L12.207 8l1.647 1.646a.5.5 0 0 1-.708.708L11.5 8.707l-1.646 1.647a.5.5 0 0 1-.708-.708L10.793 8 9.146 6.354a.5.5 0 1 1 .708-.708L11.5 7.293l1.646-1.647a.5.5 0 0 1 .708 0z" />
+                                        </svg>
+                                    </div>
+                                    <div class="bartext text-center">멈춤</div>
+                                </div>
+
+                                <div class="play" id="play_btn">
+                                    <div class="baricon">
+                                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16"
+                                            fill="currentColor" class="bi bi-volume-up-fill svg" viewBox="0 0 16 16">
+                                            <path
+                                                d="M11.536 14.01A8.473 8.473 0 0 0 14.026 8a8.473 8.473 0 0 0-2.49-6.01l-.708.707A7.476 7.476 0 0 1 13.025 8c0 2.071-.84 3.946-2.197 5.303l.708.707z" />
+                                            <path
+                                                d="M10.121 12.596A6.48 6.48 0 0 0 12.025 8a6.48 6.48 0 0 0-1.904-4.596l-.707.707A5.483 5.483 0 0 1 11.025 8a5.483 5.483 0 0 1-1.61 3.89l.706.706z" />
+                                            <path
+                                                d="M8.707 11.182A4.486 4.486 0 0 0 10.025 8a4.486 4.486 0 0 0-1.318-3.182L8 5.525A3.489 3.489 0 0 1 9.025 8 3.49 3.49 0 0 1 8 10.475l.707.707zM6.717 3.55A.5.5 0 0 1 7 4v8a.5.5 0 0 1-.812.39L3.825 10.5H1.5A.5.5 0 0 1 1 10V6a.5.5 0 0 1 .5-.5h2.325l2.363-1.89a.5.5 0 0 1 .529-.06z" />
+                                        </svg>
+                                    </div>
+                                    <div class="bartext text-center">재생</div>
+                                </div>
+
+                            </div>
+                            <div class="baricon_wrap" id="hint_btn">
+                                <div class="baricon">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+                                        class="bi bi-lightbulb-fill svg hint" viewBox="0 0 16 16">
+                                        <path
+                                            d="M2 6a6 6 0 1 1 10.174 4.31c-.203.196-.359.4-.453.619l-.762 1.769A.5.5 0 0 1 10.5 13h-5a.5.5 0 0 1-.46-.302l-.761-1.77a1.964 1.964 0 0 0-.453-.618A5.984 5.984 0 0 1 2 6zm3 8.5a.5.5 0 0 1 .5-.5h5a.5.5 0 0 1 0 1l-.224.447a1 1 0 0 1-.894.553H6.618a1 1 0 0 1-.894-.553L5.5 15a.5.5 0 0 1-.5-.5z" />
+                                    </svg>
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+                                        class="bi bi-question svg front" viewBox="0 0 16 16">
+                                        <path
+                                            d="M5.255 5.786a.237.237 0 0 0 .241.247h.825c.138 0 .248-.113.266-.25.09-.656.54-1.134 1.342-1.134.686 0 1.314.343 1.314 1.168 0 .635-.374.927-.965 1.371-.673.489-1.206 1.06-1.168 1.987l.003.217a.25.25 0 0 0 .25.246h.811a.25.25 0 0 0 .25-.25v-.105c0-.718.273-.927 1.01-1.486.609-.463 1.244-.977 1.244-2.056 0-1.511-1.276-2.241-2.673-2.241-1.267 0-2.655.59-2.75 2.286zm1.557 5.763c0 .533.425.927 1.01.927.609 0 1.028-.394 1.028-.927 0-.552-.42-.94-1.029-.94-.584 0-1.009.388-1.009.94z" />
+                                    </svg>
+                                </div>
+                                <div class="bartext">힌트</div>
+                            </div>
+                            <div class="baricon_wrap" id="size_btn">
+                                <div id="tSlider" class="baricon" data-bs-toggle="popover">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+                                        class="bi bi-type svg" viewBox="0 0 16 16">
+                                        <path
+                                            d="m2.244 13.081.943-2.803H6.66l.944 2.803H8.86L5.54 3.75H4.322L1 13.081h1.244zm2.7-7.923L6.34 9.314H3.51l1.4-4.156h.034zm9.146 7.027h.035v.896h1.128V8.125c0-1.51-1.114-2.345-2.646-2.345-1.736 0-2.59.916-2.666 2.174h1.108c.068-.718.595-1.19 1.517-1.19.971 0 1.518.52 1.518 1.464v.731H12.19c-1.647.007-2.522.8-2.522 2.058 0 1.319.957 2.18 2.345 2.18 1.06 0 1.716-.43 2.078-1.011zm-1.763.035c-.752 0-1.456-.397-1.456-1.244 0-.65.424-1.115 1.408-1.115h1.805v.834c0 .896-.752 1.525-1.757 1.525z" />
+                                    </svg>
+                                </div>
+                                <div class="bartext">크기</div>
+                            </div>
+                            <div class="baricon_wrap next" id="next_btn">
+                                <div class="baricon">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+                                        class="bi bi-caret-right-fill svg" viewBox="0 0 16 16">
+                                        <path
+                                            d="m12.14 8.753-5.482 4.796c-.646.566-1.658.106-1.658-.753V3.204a1 1 0 0 1 1.659-.753l5.48 4.796a1 1 0 0 1 0 1.506z" />
+                                    </svg>
+                                </div>
+                                <div class="bartext">다음</div>
+                            </div>
+                        </div>
+                        <!-- popover : slider --------------- -->
+                        <div hidden>
+                            <div data-name="popover-content" class="d-flex justify-content-center align-items-center">
+
+                                <!-- /////////////// -->
+                                <div class="txt_ex1 fw-bold">가</div>
+                                <!-- <input type="range" name="slider" id="slider" value="0" min="0" max="2"  /> -->
+                                <input type="range" min="0" max="2" value="0" class="slider" id="tSliderRange">
+                                <!-- <p>Value: <span id="value"></span></p> -->
+                                <div class="txt_ex2 fs-3 fw-bold">가</div>
+                                <!-- /////////////// -->
+
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+
+            </div>
+        </div>
+    </div>
+    </div>
+    <script src="pg_info.js"> </script>
+    <script src="../common/js/pg_handler.js"> </script>
+</body>
+
+</html>
