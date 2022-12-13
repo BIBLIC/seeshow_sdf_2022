@@ -47,7 +47,7 @@ a[x-apple-data-detectors] {
 .icon_img.white {
   width: clamp(24px, 20px + 2.3vw, 2.3em);
   height: clamp(24px, 20px + 2.3vw, 2.3em);
-  filter: invert(99%) sepia(1%) saturate(7498%) hue-rotate(184deg) brightness(102%) contrast(103%);
+  filter: invert(99%) sepia(1%) saturate(7498%) hue-rotate(184deg) brightness(150%) contrast(103%);
 }
 
 .icon_img.white60 {

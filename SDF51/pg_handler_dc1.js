@@ -1,4 +1,6 @@
 var page_num = 0; // 수정 XXX -> 맨 처음 페이지 초기화하기 위함
+var user_input_txt = '';
+
 
 const prevBtn = document.getElementById("prev");
 const nextBtn = document.getElementById("next");
@@ -37,9 +39,9 @@ window.addEventListener("resize", () => {
 //         document.body.style.height = (document.documentElement.clientHeight + 5) + 'px';
 //         window.scrollTo(0, 1);
 //     }, false);
-        
+
 // } else {// 모바일 외
-    
+
 // }
 
 
@@ -123,9 +125,9 @@ $(document).on("click", "#next_btn", function () {
             $("#p" + page_num).toggleClass("pactive");
             $(".pactive").fadeIn(0);
         });
-//         $('.shadow_ext').removeClass("addShadow");
-// $('.shadow_inner').removeClass("addInnerShadow");
-// $('.border_darker').removeClass("mk_border_darker");
+        //         $('.shadow_ext').removeClass("addShadow");
+        // $('.shadow_inner').removeClass("addInnerShadow");
+        // $('.border_darker').removeClass("mk_border_darker");
     }
     console.log(page_num);
     audioArray[page_num - 1].load();
@@ -171,9 +173,9 @@ $(document).on("click", "#prev_btn", function () {
             $("#p" + page_num).toggleClass("pactive");
             $(".pactive").fadeIn(0);
         });
-//         $('.shadow_ext').removeClass("addShadow");
-// $('.shadow_inner').removeClass("addInnerShadow");
-// $('.border_darker').removeClass("mk_border_darker");
+        //         $('.shadow_ext').removeClass("addShadow");
+        // $('.shadow_inner').removeClass("addInnerShadow");
+        // $('.border_darker').removeClass("mk_border_darker");
     }
     console.log(page_num);
     if (page_num != 0) {
@@ -284,54 +286,114 @@ $('#hint_btn').click(function () {
     $(".pg_" + real_pg + "_shadow_inner").toggleClass("addInnerShadow");
     $('.border_darker').toggleClass("mk_border_darker");
 })
+
+
 //*******************************************************************************
 //**************************+    클릭 제어   +*********************************** 
 
-//다음으로 가기 함수 
-function next(real_pg) {
-    page_num += 1;
-    $(".active").removeClass("active");//active 클래스에서 'active'클래스 제거하고 -> 없어도 되는 코드
-    $("#p" + page_num).addClass("active");//클릭한 곳에 'active' 클래스 추가
-    $(".pactive").fadeOut(0).promise().done(function () {//pactive -> active 추가된 p?
-        //promise() -> 자바스크립트 비동기 처리에 사용되는 객체 -> fadeout 완료 후 실행되는 함수
-        //.toggleClass('추가클래스') //해당 jquery로 가져온 요소를 클릭마다 클래스를 추가하고 삭제.
-        $(".pactive").toggleClass("pactive");
-        $("#p" + page_num).toggleClass("pactive");
-        $(".pactive").fadeIn(0);
-    });
-    audioArray[page_num - 1].load();
-    audioArray[page_num - 1].play();
-    if (page_num > 1) {
-        audioArray[page_num - 2].pause();
-    }
-    $(".submit_btn").removeClass("pg_" + real_pg + "_answer");
-    $('.shadow_ext').removeClass("addShadow");
-}
-
-
-
-//특정 영역 외 클릭시 이벤트 처리 (class 명으로 가져오기)
-document.querySelector("main").addEventListener("click", function (e) {//메인 영역에서만 이벤트 발생
-
-    var myPgNum = $(".active").attr('id');// active 되어있는 페이지 id 값
-    var real_pg = myPgNum.slice(1); // id값 앞에 붙은 p 떼어내기
-    
-    if (e.target.className.includes("nextBtn1")) {
-        next(real_pg);
-        modal1.style.display = "none";
+    //다음으로 가기 함수 
+    function next() {
+        page_num += 1;
+        $(".active").removeClass("active");//active 클래스에서 'active'클래스 제거하고 -> 없어도 되는 코드
+        $("#p" + page_num).addClass("active");//클릭한 곳에 'active' 클래스 추가
+        $(".pactive").fadeOut(0).promise().done(function () {//pactive -> active 추가된 p?
+            //promise() -> 자바스크립트 비동기 처리에 사용되는 객체 -> fadeout 완료 후 실행되는 함수
+            //.toggleClass('추가클래스') //해당 jquery로 가져온 요소를 클릭마다 클래스를 추가하고 삭제.
+            $(".pactive").toggleClass("pactive");
+            $("#p" + page_num).toggleClass("pactive");
+            $(".pactive").fadeIn(0);
+        });
+        audioArray[page_num - 1].load();
+        audioArray[page_num - 1].play();
+        if (page_num > 1) {
+            audioArray[page_num - 2].pause();
+        }
     }
 
-    
-
+    //( 1 )++++++++++++++++++++++++++++
     $(document).on("click", ".pg_1_answer", function () {
-        cursor_wrap_1.style.display = "none";
+        //cursor_wrap_1.style.display = "none";
         modal1.style.display = "";
+        //console.log('정답 누르고 p',real_pg);
     });
-    
+    $(document).on("click", ".okBtn1", function () {
+        modal1.style.display = "none";
+        //console.log('전 p',real_pg);
+        next();
+        //console.log('후 p',real_pg);
+    });
 
-    
+
+    //( 2 )++++++++++++++++++++++++++++
+    $(document).on("click", ".pg_2_answer", function () {
+        //cursor_wrap_2.style.display = "none";
+        modal2_1.style.display = "";
+    });
+    $(document).on("click", ".okBtn2", function () {
+        modal2_1.style.display = "none";
+        //console.log('전 p',real_pg);
+        next();
+        //console.log('후 p',real_pg);
+    });
 
 
-});
+    //( 3 )++++++++++++++++++++++++++++
+    $(document).on("click", ".pg_3_answer", function () {
+        //cursor_wrap_3.style.display = "none";
+        modal3_1.style.display = "";
+    });
+    $(document).on("click", ".nxtBtn3", function () {
+        modal3_1.style.display = "none";
+        modal3_2.style.display = "";
+    });
+    $(document).on("click", ".okBtn3", function () {
+        modal3_2.style.display = "none";
+        next();
+    });
 
+
+    //( 4 )++++++++++++++++++++++++++++
+    $(document).on("click", ".pg_4_answer", function () {
+        //cursor_wrap_4.style.display = "none";
+        my_wrap.style.display = "";
+    });
+    $(document).on("click", ".my_wrap", function () {
+        //cursor_wrap_4.style.display = "none";
+        my_wrap.style.display = "none";
+        modal3_1.style.display = "";
+    });
+    $(document).on("click", ".nxtBtn4", function () {
+        modal4_1.style.display = "none";
+        modal4_2.style.display = "";
+    });
+    $(document).on("click", ".okBtn4", function () {
+        modal4_2.style.display = "none";
+        next();
+    });
+
+
+    //( 5 )++++++++++++++++++++++++++++
+    $(document).on("click", ".pg_5_answer", function () {
+        //cursor_wrap_5.style.display = "none";
+        next();
+    });
+
+    //( 6 )++++++++++++++++++++++++++++
+    $(document).on("click", ".pg_6_answer", function () {
+        //cursor_wrap_6.style.display = "none";
+        my_wrap2.style.display = "";
+    });
+    $(document).on("click", ".my_wrap2", function () {
+        //cursor_wrap_6.style.display = "none";
+        my_wrap2.style.display = "none";
+        modal3_1.style.display = "";
+    });
+    $(document).on("click", ".nxtBtn6", function () {
+        modal6_1.style.display = "none";
+        modal6_2.style.display = "";
+    });
+    $(document).on("click", ".okBtn6", function () {
+        modal6_2.style.display = "none";
+        next();
+    });
 

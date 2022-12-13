@@ -7,25 +7,86 @@ for (j = 1; j <= total_page; j++) {
     audioArray.push(audio);
 }
 
+
+// -----------------------------------------------------------------------------------------------------------------------
+//정답 처리할 영역 클래스 명
+//correctAnswer 로 지정한 class 외 영역 클릭 시 모달창 출력
+//-> 후에 for 문 써서 pg_n_answer 로 통일하기
+const pageClickArea = [
+    {
+        page: 0,
+        correctAnswer: "pg_0_answer"
+    },
+    {
+        page: 1,
+        correctAnswer: "pg_1_answer"
+    },
+    {
+        page: 2,
+        correctAnswer: "pg_2_answer"
+    },
+    {
+        page: 3,
+        correctAnswer: "pg_3_answer"
+    },
+    {
+        page: 4,
+        correctAnswer: "pg_4_answer"
+    },
+    {
+        page: 5,
+        correctAnswer: "pg_5_answer"
+    },
+    {
+        page: 6,
+        correctAnswer: "pg_6_answer"
+    },
+    {
+        page: 7,
+        correctAnswer: "pg_7_answer"
+    },
+    {
+        page: 8,
+        correctAnswer: "pg_8_answer"
+    },
+    {
+        page: 9,
+        correctAnswer: "pg_9_answer"
+    },
+    {
+        page: 10,
+        correctAnswer: "pg_10_answer"
+    },
+    {
+        page: 11,
+        correctAnswer: "pg_11_answer"
+    },
+    {
+        page: 12,
+        correctAnswer: "pg_12_answer"
+    },
+];
+
 // ----------------------------------------------------------------------------------------------------------------------- 
 const total_wrap = document.querySelector('.total_wrap');
 const reactions = document.querySelector('.reactions');
 const my_wrap = document.querySelector('.my_wrap');
+const my_wrap2 = document.querySelector('.my_wrap2');
 const share = document.querySelector('.share');
 
-const factcheck_modal = document.querySelector('.factcheck_modal_1');
-const factcheck_modal_2 = document.querySelector('.factcheck_modal_2');
-const factcheck_modal_3 = document.querySelector('.factcheck_modal_3');
-const factcheck_modal_4 = document.querySelector('.factcheck_modal_4');
-const factcheck_modal_5 = document.querySelector('.factcheck_modal_5');
+// const factcheck_modal = document.querySelector('.factcheck_modal_1');
+// const factcheck_modal_2 = document.querySelector('.factcheck_modal_2');
+// const factcheck_modal_3 = document.querySelector('.factcheck_modal_3');
+// const factcheck_modal_4 = document.querySelector('.factcheck_modal_4');
+// const factcheck_modal_5 = document.querySelector('.factcheck_modal_5');
 
 const blog_main = document.querySelector('.blog_main');
 
 const modal1 = document.querySelector('.modal1');
 const modal2 = document.querySelector('.modal2');
 
-factcheck_modal.style.display = "none";
-factcheck_modal_2.style.display = "none";
+// factcheck_modal.style.display = "none";
+// factcheck_modal_2.style.display = "none";
 const modal2_1 = document.querySelector('.modal2_1');
 const modal2_2 = document.querySelector('.modal2_2');
 const modal3_1 = document.querySelector('.modal3_1');
@@ -41,13 +102,14 @@ modal3_2.style.display = "none";
 modal4_1.style.display = "none";
 modal4_2.style.display = "none";
 modal5_1.style.display = "none";
-
+my_wrap.style.display = "none";
+my_wrap2.style.display = "none";
 
 modal1.style.display = "none";
-factcheck_modal_2.style.display = "none";
-factcheck_modal_3.style.display = "none";
-factcheck_modal_4.style.display = "none";
-factcheck_modal_5.style.display = "none";
+// factcheck_modal_2.style.display = "none";
+// factcheck_modal_3.style.display = "none";
+// factcheck_modal_4.style.display = "none";
+// factcheck_modal_5.style.display = "none";
 
 const cursor_pos_1 = document.querySelector('.cursor_pos_1');
 const cursor_wrap_1 = document.querySelector('.cursor_wrap_1');
@@ -73,12 +135,6 @@ cursor_wrap_1.style.zIndex = "20";
 // cursor_wrap_4.style.visibility = "hidden";
 // cursor_wrap_5.style.visibility = "hidden";
 
-
-//뒤로가기
-backBtn.addEventListener("click", function () {
-    var link = 'BlogList.html';
-    location.href = link;
-})
 
 //한번에 쭉 내려가게 하기 (좀 더 부드러움)
 function scrollToMiddle() {
