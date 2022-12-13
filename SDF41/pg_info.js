@@ -94,7 +94,7 @@ const modalCont = [
     },
     {
         page: 1,
-        instruction: "이름 입력란에 '김토스'를 입력하세요."
+        instruction: "이름 입력란에 '김서울'을 입력하세요."
     },
     {
         page: 2,
