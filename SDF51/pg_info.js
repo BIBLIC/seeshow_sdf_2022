@@ -113,106 +113,111 @@ modal1.style.display = "none";
 
 const cursor_pos_1 = document.querySelector('.cursor_pos_1');
 const cursor_wrap_1 = document.querySelector('.cursor_wrap_1');
-// const cursor_pos_2 = document.querySelector('.cursor_pos_2');
-// const cursor_wrap_2 = document.querySelector('.cursor_wrap_2');
-// const cursor_pos_3 = document.querySelector('.cursor_pos_3');
-// const cursor_wrap_3 = document.querySelector('.cursor_wrap_3');
-// const cursor_pos_4 = document.querySelector('.cursor_pos_4');
-// const cursor_wrap_4 = document.querySelector('.cursor_wrap_4');
-// const cursor_pos_4_1 = document.querySelector('.cursor_pos_4_1');
-// const cursor_wrap_4_1 = document.querySelector('.cursor_wrap_4_1');
-// const cursor_pos_5 = document.querySelector('.cursor_pos_5');
-// const cursor_wrap_5 = document.querySelector('.cursor_wrap_5');
+const cursor_pos_2 = document.querySelector('.cursor_pos_2');
+const cursor_wrap_2 = document.querySelector('.cursor_wrap_2');
+const cursor_pos_3 = document.querySelector('.cursor_pos_3');
+const cursor_wrap_3 = document.querySelector('.cursor_wrap_3');
+const cursor_pos_4 = document.querySelector('.cursor_pos_4');
+const cursor_wrap_4 = document.querySelector('.cursor_wrap_4');
+const cursor_pos_4_1 = document.querySelector('.cursor_pos_4_1');
+const cursor_wrap_4_1 = document.querySelector('.cursor_wrap_4_1');
+const cursor_pos_5 = document.querySelector('.cursor_pos_5');
+const cursor_wrap_5 = document.querySelector('.cursor_wrap_5');
+const cursor_pos_6 = document.querySelector('.cursor_pos_6');
+const cursor_wrap_6 = document.querySelector('.cursor_wrap_6');
 
 cursor_wrap_1.style.zIndex = "20";
-// cursor_wrap_2.style.zIndex = "20";
-// cursor_wrap_3.style.zIndex = "20";
-// cursor_wrap_4.style.zIndex = "20";
-// cursor_wrap_5.style.zIndex = "50";
+cursor_wrap_2.style.zIndex = "20";
+cursor_wrap_3.style.zIndex = "20";
+cursor_wrap_4.style.zIndex = "20";
+cursor_wrap_5.style.zIndex = "20";
+cursor_wrap_6.style.zIndex = "20";
 
 // cursor_wrap_2.style.visibility = "hidden";
 // cursor_wrap_3.style.visibility = "hidden";
 // cursor_wrap_4.style.visibility = "hidden";
 // cursor_wrap_5.style.visibility = "hidden";
 
-
-//한번에 쭉 내려가게 하기 (좀 더 부드러움)
-function scrollToMiddle() {
-    blog_main.scrollTop = blog_main.scrollHeight *0.6;
-}
-function scrollToBottom() {
-    blog_main.scrollTop = blog_main.scrollHeight;
-}
-
 const { createPopper } = Popper;
 createPopper(cursor_pos_1, cursor_wrap_1, {
+    placement: 'bottom',
+    modifiers: [
+        {
+            name: 'offset',
+            options: {
+                offset: [30,0],
+            },
+        },
+    ],
+});
+createPopper(cursor_pos_2, cursor_wrap_2, {
     placement: 'right',
     modifiers: [
         {
             name: 'offset',
             options: {
-                offset: [-50,-100],
+                offset: [0,0],
             },
         },
     ],
 });
-// createPopper(cursor_pos_2, cursor_wrap_2, {
-//     placement: 'right',
-//     modifiers: [
-//         {
-//             name: 'offset',
-//             options: {
-//                 offset: [0,-70],
-//             },
-//         },
-//     ],
-// });
-// createPopper(cursor_pos_3, cursor_wrap_3, {
-//     placement: 'top',
-//     modifiers: [
-//         {
-//             name: 'offset',
-//             options: {
-//                 offset: [0,-50],
-//             },
-//         },
-//     ],
-// });
-// createPopper(cursor_pos_4, cursor_wrap_4, {
-//     placement: 'right',
-//     modifiers: [
-//         {
-//             name: 'offset',
-//             options: {
-//                 offset: [-25,-60],
-//             },
-//         },
-//     ],
-// });
+createPopper(cursor_pos_3, cursor_wrap_3, {
+    placement: 'top',
+    modifiers: [
+        {
+            name: 'offset',
+            options: {
+                offset: [0,-50],
+            },
+        },
+    ],
+});
+createPopper(cursor_pos_4, cursor_wrap_4, {
+    placement: 'right',
+    modifiers: [
+        {
+            name: 'offset',
+            options: {
+                offset: [0,60],
+            },
+        },
+    ],
+});
 
-// createPopper(cursor_pos_4_1, cursor_wrap_4_1, {
-//     placement: 'top',
-//     modifiers: [
-//         {
-//             name: 'offset',
-//             options: {
-//                 offset: [145,70],
-//             },
-//         },
-//     ],
-// });
+createPopper(cursor_pos_4_1, cursor_wrap_4_1, {
+    placement: 'top',
+    modifiers: [
+        {
+            name: 'offset',
+            options: {
+                offset: [145,70],
+            },
+        },
+    ],
+});
 
-// createPopper(cursor_pos_5, cursor_wrap_5, {
-//     placement: 'top',
-//     modifiers: [
-//         {
-//             name: 'offset',
-//             options: {
-//                 offset: [30,0],
-//             },
-//         },
-//     ],
-// });
+createPopper(cursor_pos_5, cursor_wrap_5, {
+    placement: 'right',
+    modifiers: [
+        {
+            name: 'offset',
+            options: {
+                offset: [0,60],
+            },
+        },
+    ],
+});
+createPopper(cursor_pos_6, cursor_wrap_6, {
+    placement: 'right',
+    modifiers: [
+        {
+            name: 'offset',
+            options: {
+                offset: [0,60],
+            },
+        },
+    ],
+});
 
 // //페이지 로드시 동작 - 팩트체크1 유도
 // setTimeout(function () {

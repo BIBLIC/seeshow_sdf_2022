@@ -1,3 +1,15 @@
+.character {
+  position: absolute;
+  bottom : 0;
+  width: clamp(100px, 80px + 1.5vw, 1.5em);
+    height: clamp(100px, 80px + 1.5vw, 1.5em);
+    margin-bottom: 0.5em;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+}
+
 #total_wrap {
   height: 87vh;
 }
@@ -263,7 +275,7 @@ a[x-apple-data-detectors] {
 
   45% {
     opacity: 0.7;
-    transform: scale(2.5);
+    transform: scale(1.5);
   }
 
   100% {
@@ -407,7 +419,7 @@ ul {
   padding: 1em;
 }
 .blog {
-  height: 71vh;
+  height: 70vh;
   padding: 1em;
 }
 
@@ -854,7 +866,7 @@ ul {
   flex-direction: column;
   justify-content: space-around;
   align-items: center;
-  z-index: 1;
+  z-index: 35;
   position: absolute;
   top: 50%;
   left: 50%;

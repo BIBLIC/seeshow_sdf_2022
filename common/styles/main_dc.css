@@ -2169,8 +2169,8 @@ input:focus::placeholder {
   padding-bottom: 1em;
   padding-left: .5em;
   padding-right: .5em;
-  font-size: clamp(12px, 12px + 1.5vw, 1.5em);
-  line-height: 1.7em;
+  /* font-size: clamp(12px, 12px + 1.5vw, 1.5em); */
+  /* line-height: 1.7em; */
   word-break: keep-all;
   word-wrap: break-word;
 }
@@ -2634,7 +2634,7 @@ align-items: center;
   flex-direction: column;
   justify-content: space-between;
   align-items: center;
-  z-index: 1;
+  z-index: 40;
   position: absolute;
   transform: translate(-50%, -50%);
   width: 70%;
