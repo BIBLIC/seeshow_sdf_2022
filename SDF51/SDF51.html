@@ -1,0 +1,1546 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta name="viewport"
+        content="width=device-width,height=device-height,initial-scale=1.0,minimum-scale=1.0,maximum-scale=1.0">
+    <title>SDF</title>
+    <link href="../common/styles/reset.css" rel="stylesheet" />
+    <link href="./css/main.css" rel="stylesheet" />
+    <link href="../common/styles/layout.css" rel="stylesheet" />
+    <link href="../common/styles/layout_dc.css" rel="stylesheet" />
+    <link href="../common/styles/main_dc.css" rel="stylesheet" />
+    <!-- <link href="../common/styles/animate.css" rel="stylesheet" /> -->
+    <!-- CSS only -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" crossorigin="anonymous">
+    <!-- JavaScript Bundle with Popper -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-OERcA2EqjJCMA+/3y+gxIOqMEjwtxJY7qPCqsdltbNJuaOe923+mo//f6V8Qbsw3"
+        crossorigin="anonymous"></script>
+    <script src="https://code.jquery.com/jquery-3.6.1.min.js"></script>
+    <script src="https://unpkg.com/@popperjs/core@2"></script>
+</head>
+
+
+<body>
+    <div class="bg_phone">
+        <!--form-theme-background-->
+        <div id="wrap">
+            <div class="view">
+                <div class="contain">
+                    <main class="main" role="main">
+                        <!-- Modal : alert -->
+                        <div class="modal fade" id="staticBackdrop">
+                            <div class="modal-dialog modal-sm">
+                                <div class="modal-content justify-content-center align-items-center">
+                                    <div class="modal-header border-0 w-100">
+                                        <!-- <h5 class="modal-title">
+                                            잠깐!
+                                        </h5> -->
+                                        <button class="btn-close" data-bs-dismiss="modal"
+                                            aria-label="Close"></button>
+                                    </div>
+                                    <div class="modal-body fs-4 text-center ps-4 pe-4 pt-4 pb-4">
+                                        모달 내용
+                                    </div>
+                                    <div class="modal-footer border-0">
+                                        <button class="btn btn-secondary btn-lg"
+                                            data-bs-dismiss="modal">확인</button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- Modal : text adj -->
+                        <div class="modal fade" id="textModal" data-backdrop="false">
+                            <div class="modal-dialog modal-sm">
+                                <div class="modal-content">
+                                    <div class="modal-header border-0">
+                                        <h5 class="modal-title">
+                                            텍스트 사이즈 조정
+                                        </h5>
+                                        <button class="btn-close" data-bs-dismiss="modal"
+                                            aria-label="Close"></button>
+                                    </div>
+                                    <div class="modal-body">
+                                        모달 내용물
+                                    </div>
+                                    <div class="modal-footer border-0 ">
+                                        <button class="btn btn-secondary btn-lg"
+                                            data-bs-dismiss="modal">확인</button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <!------------------------------ page 0 (시작 화면) ------------------------------>
+                        <div class="page" id="p0">
+                            <div class="page_wrap">
+                                <img src="./assets/image/0.png" class="pt-5" width="100%">
+                                <div class="w-100 flex-center-center"><h3 class="fontSz">💎💎💎</h3></div>
+                        </div>
+                        </div>
+                        <!------------------------------ page 1 ------------------------------>
+                        <div class="page" id="p1">
+                            <h1 class="pg_title" style="color: #fff;">Page1</h1>
+                            <div class="page_wrap">
+                                <div id="total_wrap">
+                                    <div class="hd_blog top w-100 d-flex justify-content-between align-items-center px-4 py-3 fontSz">
+                                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-chevron-left" viewBox="0 0 16 16">
+                                            <path fill-rule="evenodd" d="M11.354 1.646a.5.5 0 0 1 0 .708L5.707 8l5.647 5.646a.5.5 0 0 1-.708.708l-6-6a.5.5 0 0 1 0-.708l6-6a.5.5 0 0 1 .708 0z"/>
+                                          </svg>
+                                        <div class="flex-fill h-100 d-flex justify-content-center align-items-center">
+                                            <div class="hd_center">
+                                                <h1 class="title_h1">블로그</h1>
+                                            </div>
+                                        </div>
+                                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-list" viewBox="0 0 16 16">
+                                            <path fill-rule="evenodd" d="M2.5 12a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5zm0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5zm0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5z"/>
+                                          </svg>
+                                    </div>
+                                    <div id="main" class="blog blog_main blog1 animate__animated">
+                                        <div class="blog_item item1 blog-scene">
+                                            <div class="guide_wrap " id="guide_wrap_1" onclick="entry_1()">
+                                                <!-- 커서 가이드 -->
+                                                <div class="cursor_wrap cursor_wrap_1">
+                                                    <span class="cursor" x-placement="bottom">
+                                                        <button class="digital-e__beacon">
+                                                            <span class="cursor_outer"></span>
+                                                            <span class="cursor_inner"><span>
+                                                        </button>
+                                                    </span>
+                                                </div>
+                                                <!-- 커서 가이드 -->
+                                            </div>
+                
+                                            <div class="info_wrap">
+                                                <div class="blog-info">
+                                                    <div class="blog-cont">
+                                                        <div class="info">
+                                                            <div class="category">생활 정보 공유</div>
+                                                        </div>
+                                                        <div class="title animate__animated cursor_pos_2" onclick="entry_2()">
+                                                            <h2>
+                                                                선풍기, 밤새 틀어두면 사망할 수 있다!?
+                                                            </h2>
+                                                        </div>
+                                                        <div class="guide_wrap " id="guide_wrap_2" onclick="entry_2()">
+                                                            <!-- 커서 가이드 -->
+                                                            <!-- <div class="cursor_wrap cursor_wrap_2">
+                                                                <span class="cursor" x-placement="bottom">
+                                                                    <button class="digital-e__beacon">
+                                                                        <span class="cursor_outer"></span>
+                                                                        <span class="cursor_inner"><span>
+                                                                    </button>
+                                                                </span>
+                                                            </div> -->
+                                                            <!-- 커서 가이드 -->
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="writer-info animate__animated pg_1_answer">
+                                                    <div class="writer-profile pg_1_answer">
+                                                        <div class="virtual pg_1_answer">
+                                                            <!--프로필 사진 추가-->
+                                                            <img src="./assets/image/.png" width="100%">
+                                                        </div>
+                                                        <div class="writer pg_1_answer">
+                                                            <div class="name cursor_pos_1 animate__animated pg_1_answer">아티클</div>
+                                                            <!-- <div class="sub">구독자 31명</div> -->
+                                                            <div class="info">
+                                                                <div class="date">20XX.08.10</div>
+                                                                <div class="views">153명의 이웃</div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="blog-main animate__animated" onclick="entry_3()">
+                                                <div class="blog-cont">
+                                                    <p class="blog_text">
+                                                        <img src="./assets/image/.png" alt="" class="blog_img">
+                                                        블로그 이웃분들 안녕하세요! <br>더운 여름 잘 보내고 계신가요?<br>
+                                                        오늘은 생활 상식 하나 가지고 왔어요<br><br>
+                
+                                                        생활 상식이라고는 하지만 꼭! 알아야 할 사실인데요<br>
+                                                        <img src="./assets/image/.png" alt="" class="blog_img">
+                                                        바로 선풍기에 대한 무서운 진실입니다<br><br>
+                
+                                                        더운 여름 선풍기는 필수 아이템인데요<br><br>
+                
+                                                        열대야에 선풍기 없으면 못 자시는 분들도 많으실 테지만,
+                
+                                                        잘 때는 꼭 선풍기를 끄고 주무셔야 합니다!<br><br>
+                
+                                                        그 이유를 아래에서 설명해 드릴게요<br><br>
+                                                        <img src="./assets/image/.png" alt="" class="blog_img" style="width: 30%;">
+                                                    </p>
+                                                    <p class="blog_text animate__animated cursor_pos_3">
+                                                        1. 선풍기를 틀고 자면 질식사할 수 있다<br>
+                                                        <img src="./assets/image/.png" alt="" class="blog_img">
+                
+                                                        선풍기를 틀고 자면 선풍기의 바람 때문에 산소가 부족해져 수면 중에 질식의 위험이 있어요. ㅜㅜ<br><br>
+                
+                                                        2. 선풍기를 틀고 자면 저체온증으로 사망할 수 있다.<br>
+                                                        <img src="./assets/image/.png" alt="" class="blog_img">
+                                                        선풍기를 틀고 자면 몸의 온도가 점점 내려가기 때문에 저체온증의 위험이 있어요.<br><br>
+                                                    </p>
+                                                    <p class="blog_text">
+                                                        지금까지 아티클이었습니다~<br><br>
+                                                        다들 여름철 선풍기 사용 주의하시고 시원한 여름 되세요!
+                                                    </p>
+                                                    <div class="guide_wrap " id="guide_wrap_3" onclick="entry_3()">
+                                                        <!-- 커서 가이드 -->
+                                                        <!-- <div class="cursor_wrap cursor_wrap_3">
+                                                            <span class="cursor" x-placement="bottom">
+                                                                <button class="digital-e__beacon">
+                                                                    <span class="cursor_outer"></span>
+                                                                    <span class="cursor_inner"><span>
+                                                                </button>
+                                                            </span>
+                                                        </div> -->
+                                                        <!-- 커서 가이드 -->
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                
+                                    <div class="blogbar">
+                                        <div class="reactions">
+                                            <div class="like like_topside shake_anim_here animate__animated"
+                                                onclick="location.href='BlogReactScene_1.html'">
+                                                <div class="heart"><img src="./assets/image/.png" class="icon_img bar">63</div>
+                                                <div class="comment animate__animated cursor_pos_5"><img src="./assets/image/.png"
+                                                        class="icon_img bar">댓글
+                
+                                                    <div class="guide_wrap " id="guide_wrap_5"
+                                                        onclick="location.href='BlogReactScene_1.html'">
+                                                        <!-- 커서 가이드 -->
+                                                        <!-- <div class="cursor_wrap cursor_wrap_5">
+                                                            <span class="cursor" x-placement="bottom">
+                                                                <button class="digital-e__beacon">
+                                                                    <span class="cursor_outer"></span>
+                                                                    <span class="cursor_inner"><span>
+                                                                </button>
+                                                            </span>
+                                                        </div> -->
+                                                        <!-- 커서 가이드 -->
+                                                    </div>
+                
+                                                </div>
+                                            </div>
+                                            <div class="share share_anim animate__animated cursor_pos_4" onclick="paste()">
+                                                <img src="./assets/image/.png" class="icon_img bar">공유
+                
+                                                <div class="guide_wrap " id="guide_wrap_4" onclick="paste()">
+                                                    <!-- 커서 가이드 -->
+                                                    <!-- <div class="cursor_wrap cursor_wrap_4">
+                                                        <span class="cursor" x-placement="bottom">
+                                                            <button class="digital-e__beacon">
+                                                                <span class="cursor_outer"></span>
+                                                                <span class="cursor_inner"><span>
+                                                            </button>
+                                                        </span>
+                                                    </div> -->
+                                                    <!-- 커서 가이드 -->
+                                                </div>
+                
+                                            </div>
+                
+                                        </div>
+                                    </div>
+                                </div>
+                                
+
+                            </div>
+                        </div>
+                        <!------------------------------ page 2 ------------------------------>
+                        <div class="page" id="p2">
+                            <h1 class="pg_title" style="color: #fff;">Page2</h1>
+                            <div class="page_wrap">
+                                <div id="total_wrap">
+                                    <div class="hd_blog top w-100 d-flex justify-content-between align-items-center px-4 py-3 fontSz">
+                                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-chevron-left" viewBox="0 0 16 16">
+                                            <path fill-rule="evenodd" d="M11.354 1.646a.5.5 0 0 1 0 .708L5.707 8l5.647 5.646a.5.5 0 0 1-.708.708l-6-6a.5.5 0 0 1 0-.708l6-6a.5.5 0 0 1 .708 0z"/>
+                                          </svg>
+                                        <div class="flex-fill h-100 d-flex justify-content-center align-items-center">
+                                            <div class="hd_center">
+                                                <h1 class="title_h1">블로그</h1>
+                                            </div>
+                                        </div>
+                                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-list" viewBox="0 0 16 16">
+                                            <path fill-rule="evenodd" d="M2.5 12a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5zm0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5zm0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5z"/>
+                                          </svg>
+                                    </div>
+                                    <div id="main" class="blog blog_main blog1 animate__animated">
+                                        <div class="blog_item item1 blog-scene">
+                                            <div class="guide_wrap " id="guide_wrap_1" onclick="entry_1()">
+                                                <!-- 커서 가이드 -->
+                                                <!-- <div class="cursor_wrap cursor_wrap_1">
+                                                    <span class="cursor" x-placement="bottom">
+                                                        <button class="digital-e__beacon">
+                                                            <span class="cursor_outer"></span>
+                                                            <span class="cursor_inner"><span>
+                                                        </button>
+                                                    </span>
+                                                </div> -->
+                                                <!-- 커서 가이드 -->
+                                            </div>
+                
+                                            <div class="info_wrap">
+                                                <div class="blog-info">
+                                                    <div class="blog-cont">
+                                                        <div class="info">
+                                                            <div class="category">생활 정보 공유</div>
+                                                        </div>
+                                                        <div class="title animate__animated cursor_pos_2" onclick="entry_2()">
+                                                            <h2>
+                                                                선풍기, 밤새 틀어두면 사망할 수 있다!?
+                                                            </h2>
+                                                        </div>
+                                                        <div class="guide_wrap " id="guide_wrap_2" onclick="entry_2()">
+                                                            <!-- 커서 가이드 -->
+                                                            <!-- <div class="cursor_wrap cursor_wrap_2">
+                                                                <span class="cursor" x-placement="bottom">
+                                                                    <button class="digital-e__beacon">
+                                                                        <span class="cursor_outer"></span>
+                                                                        <span class="cursor_inner"><span>
+                                                                    </button>
+                                                                </span>
+                                                            </div> -->
+                                                            <!-- 커서 가이드 -->
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="writer-info animate__animated" onclick="entry_1()">
+                                                    <div class="writer-profile">
+                                                        <div class="virtual">
+                                                            <!--프로필 사진 추가-->
+                                                            <img src="./assets/image/.png" width="100%">
+                                                        </div>
+                                                        <div class="writer ">
+                                                            <div class="name cursor_pos_1 animate__animated">아티클</div>
+                                                            <!-- <div class="sub">구독자 31명</div> -->
+                                                            <div class="info">
+                                                                <div class="date">20XX.08.10</div>
+                                                                <div class="views">153명의 이웃</div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="blog-main animate__animated" onclick="entry_3()">
+                                                <div class="blog-cont">
+                                                    <p class="blog_text">
+                                                        <img src="./assets/image/.png" alt="" class="blog_img">
+                                                        블로그 이웃분들 안녕하세요! <br>더운 여름 잘 보내고 계신가요?<br>
+                                                        오늘은 생활 상식 하나 가지고 왔어요<br><br>
+                
+                                                        생활 상식이라고는 하지만 꼭! 알아야 할 사실인데요<br>
+                                                        <img src="./assets/image/.png" alt="" class="blog_img">
+                                                        바로 선풍기에 대한 무서운 진실입니다<br><br>
+                
+                                                        더운 여름 선풍기는 필수 아이템인데요<br><br>
+                
+                                                        열대야에 선풍기 없으면 못 자시는 분들도 많으실 테지만,
+                
+                                                        잘 때는 꼭 선풍기를 끄고 주무셔야 합니다!<br><br>
+                
+                                                        그 이유를 아래에서 설명해 드릴게요<br><br>
+                                                        <img src="./assets/image/.png" alt="" class="blog_img" style="width: 30%;">
+                                                    </p>
+                                                    <p class="blog_text animate__animated cursor_pos_3">
+                                                        1. 선풍기를 틀고 자면 질식사할 수 있다<br>
+                                                        <img src="./assets/image/.png" alt="" class="blog_img">
+                
+                                                        선풍기를 틀고 자면 선풍기의 바람 때문에 산소가 부족해져 수면 중에 질식의 위험이 있어요. ㅜㅜ<br><br>
+                
+                                                        2. 선풍기를 틀고 자면 저체온증으로 사망할 수 있다.<br>
+                                                        <img src="./assets/image/.png" alt="" class="blog_img">
+                                                        선풍기를 틀고 자면 몸의 온도가 점점 내려가기 때문에 저체온증의 위험이 있어요.<br><br>
+                                                    </p>
+                                                    <p class="blog_text">
+                                                        지금까지 아티클이었습니다~<br><br>
+                                                        다들 여름철 선풍기 사용 주의하시고 시원한 여름 되세요!
+                                                    </p>
+                                                    <div class="guide_wrap " id="guide_wrap_3" onclick="entry_3()">
+                                                        <!-- 커서 가이드 -->
+                                                        <!-- <div class="cursor_wrap cursor_wrap_3">
+                                                            <span class="cursor" x-placement="bottom">
+                                                                <button class="digital-e__beacon">
+                                                                    <span class="cursor_outer"></span>
+                                                                    <span class="cursor_inner"><span>
+                                                                </button>
+                                                            </span>
+                                                        </div> -->
+                                                        <!-- 커서 가이드 -->
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                
+                                    <div class="blogbar">
+                                        <div class="reactions">
+                                            <div class="like like_topside shake_anim_here animate__animated"
+                                                onclick="location.href='BlogReactScene_1.html'">
+                                                <div class="heart"><img src="./assets/image/.png" class="icon_img bar">63</div>
+                                                <div class="comment animate__animated cursor_pos_5"><img src="./assets/image/.png"
+                                                        class="icon_img bar">댓글
+                
+                                                    <div class="guide_wrap " id="guide_wrap_5"
+                                                        onclick="location.href='BlogReactScene_1.html'">
+                                                        <!-- 커서 가이드 -->
+                                                        <!-- <div class="cursor_wrap cursor_wrap_5">
+                                                            <span class="cursor" x-placement="bottom">
+                                                                <button class="digital-e__beacon">
+                                                                    <span class="cursor_outer"></span>
+                                                                    <span class="cursor_inner"><span>
+                                                                </button>
+                                                            </span>
+                                                        </div> -->
+                                                        <!-- 커서 가이드 -->
+                                                    </div>
+                
+                                                </div>
+                                            </div>
+                                            <div class="share share_anim animate__animated cursor_pos_4" onclick="paste()">
+                                                <img src="./assets/image/.png" class="icon_img bar">공유
+                
+                                                <div class="guide_wrap " id="guide_wrap_4" onclick="paste()">
+                                                    <!-- 커서 가이드 -->
+                                                    <!-- <div class="cursor_wrap cursor_wrap_4">
+                                                        <span class="cursor" x-placement="bottom">
+                                                            <button class="digital-e__beacon">
+                                                                <span class="cursor_outer"></span>
+                                                                <span class="cursor_inner"><span>
+                                                            </button>
+                                                        </span>
+                                                    </div> -->
+                                                    <!-- 커서 가이드 -->
+                                                </div>
+                
+                                            </div>
+                
+                                        </div>
+                                    </div>
+                                </div>
+                                
+
+                            </div>
+                        </div>
+                        <!------------------------------ page 3 ------------------------------>
+                        <div class="page" id="p3">
+                            <h1 class="pg_title" style="color: #fff;">Page3</h1>
+                            <div class="page_wrap">
+                                <div id="total_wrap">
+                                    <div class="hd_blog top w-100 d-flex justify-content-between align-items-center px-4 py-3 fontSz">
+                                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-chevron-left" viewBox="0 0 16 16">
+                                            <path fill-rule="evenodd" d="M11.354 1.646a.5.5 0 0 1 0 .708L5.707 8l5.647 5.646a.5.5 0 0 1-.708.708l-6-6a.5.5 0 0 1 0-.708l6-6a.5.5 0 0 1 .708 0z"/>
+                                          </svg>
+                                        <div class="flex-fill h-100 d-flex justify-content-center align-items-center">
+                                            <div class="hd_center">
+                                                <h1 class="title_h1">블로그</h1>
+                                            </div>
+                                        </div>
+                                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-list" viewBox="0 0 16 16">
+                                            <path fill-rule="evenodd" d="M2.5 12a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5zm0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5zm0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5z"/>
+                                          </svg>
+                                    </div>
+                                    <div id="main" class="blog blog_main blog1 animate__animated">
+                                        <div class="blog_item item1 blog-scene">
+                                            <div class="guide_wrap " id="guide_wrap_1" onclick="entry_1()">
+                                                <!-- 커서 가이드 -->
+                                                <!-- <div class="cursor_wrap cursor_wrap_1">
+                                                    <span class="cursor" x-placement="bottom">
+                                                        <button class="digital-e__beacon">
+                                                            <span class="cursor_outer"></span>
+                                                            <span class="cursor_inner"><span>
+                                                        </button>
+                                                    </span>
+                                                </div> -->
+                                                <!-- 커서 가이드 -->
+                                            </div>
+                
+                                            <div class="info_wrap">
+                                                <div class="blog-info">
+                                                    <div class="blog-cont">
+                                                        <div class="info">
+                                                            <div class="category">생활 정보 공유</div>
+                                                        </div>
+                                                        <div class="title animate__animated cursor_pos_2" onclick="entry_2()">
+                                                            <h2>
+                                                                선풍기, 밤새 틀어두면 사망할 수 있다!?
+                                                            </h2>
+                                                        </div>
+                                                        <div class="guide_wrap " id="guide_wrap_2" onclick="entry_2()">
+                                                            <!-- 커서 가이드 -->
+                                                            <!-- <div class="cursor_wrap cursor_wrap_2">
+                                                                <span class="cursor" x-placement="bottom">
+                                                                    <button class="digital-e__beacon">
+                                                                        <span class="cursor_outer"></span>
+                                                                        <span class="cursor_inner"><span>
+                                                                    </button>
+                                                                </span>
+                                                            </div> -->
+                                                            <!-- 커서 가이드 -->
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="writer-info animate__animated" onclick="entry_1()">
+                                                    <div class="writer-profile">
+                                                        <div class="virtual">
+                                                            <!--프로필 사진 추가-->
+                                                            <img src="./assets/image/.png" width="100%">
+                                                        </div>
+                                                        <div class="writer ">
+                                                            <div class="name cursor_pos_1 animate__animated">아티클</div>
+                                                            <!-- <div class="sub">구독자 31명</div> -->
+                                                            <div class="info">
+                                                                <div class="date">20XX.08.10</div>
+                                                                <div class="views">153명의 이웃</div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="blog-main animate__animated" onclick="entry_3()">
+                                                <div class="blog-cont">
+                                                    <p class="blog_text">
+                                                        <img src="./assets/image/.png" alt="" class="blog_img">
+                                                        블로그 이웃분들 안녕하세요! <br>더운 여름 잘 보내고 계신가요?<br>
+                                                        오늘은 생활 상식 하나 가지고 왔어요<br><br>
+                
+                                                        생활 상식이라고는 하지만 꼭! 알아야 할 사실인데요<br>
+                                                        <img src="./assets/image/.png" alt="" class="blog_img">
+                                                        바로 선풍기에 대한 무서운 진실입니다<br><br>
+                
+                                                        더운 여름 선풍기는 필수 아이템인데요<br><br>
+                
+                                                        열대야에 선풍기 없으면 못 자시는 분들도 많으실 테지만,
+                
+                                                        잘 때는 꼭 선풍기를 끄고 주무셔야 합니다!<br><br>
+                
+                                                        그 이유를 아래에서 설명해 드릴게요<br><br>
+                                                        <img src="./assets/image/.png" alt="" class="blog_img" style="width: 30%;">
+                                                    </p>
+                                                    <p class="blog_text animate__animated cursor_pos_3">
+                                                        1. 선풍기를 틀고 자면 질식사할 수 있다<br>
+                                                        <img src="./assets/image/.png" alt="" class="blog_img">
+                
+                                                        선풍기를 틀고 자면 선풍기의 바람 때문에 산소가 부족해져 수면 중에 질식의 위험이 있어요. ㅜㅜ<br><br>
+                
+                                                        2. 선풍기를 틀고 자면 저체온증으로 사망할 수 있다.<br>
+                                                        <img src="./assets/image/.png" alt="" class="blog_img">
+                                                        선풍기를 틀고 자면 몸의 온도가 점점 내려가기 때문에 저체온증의 위험이 있어요.<br><br>
+                                                    </p>
+                                                    <p class="blog_text">
+                                                        지금까지 아티클이었습니다~<br><br>
+                                                        다들 여름철 선풍기 사용 주의하시고 시원한 여름 되세요!
+                                                    </p>
+                                                    <div class="guide_wrap " id="guide_wrap_3" onclick="entry_3()">
+                                                        <!-- 커서 가이드 -->
+                                                        <!-- <div class="cursor_wrap cursor_wrap_3">
+                                                            <span class="cursor" x-placement="bottom">
+                                                                <button class="digital-e__beacon">
+                                                                    <span class="cursor_outer"></span>
+                                                                    <span class="cursor_inner"><span>
+                                                                </button>
+                                                            </span>
+                                                        </div> -->
+                                                        <!-- 커서 가이드 -->
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                
+                                    <div class="blogbar">
+                                        <div class="reactions">
+                                            <div class="like like_topside shake_anim_here animate__animated"
+                                                onclick="location.href='BlogReactScene_1.html'">
+                                                <div class="heart"><img src="./assets/image/.png" class="icon_img bar">63</div>
+                                                <div class="comment animate__animated cursor_pos_5"><img src="./assets/image/.png"
+                                                        class="icon_img bar">댓글
+                
+                                                    <div class="guide_wrap " id="guide_wrap_5"
+                                                        onclick="location.href='BlogReactScene_1.html'">
+                                                        <!-- 커서 가이드 -->
+                                                        <!-- <div class="cursor_wrap cursor_wrap_5">
+                                                            <span class="cursor" x-placement="bottom">
+                                                                <button class="digital-e__beacon">
+                                                                    <span class="cursor_outer"></span>
+                                                                    <span class="cursor_inner"><span>
+                                                                </button>
+                                                            </span>
+                                                        </div> -->
+                                                        <!-- 커서 가이드 -->
+                                                    </div>
+                
+                                                </div>
+                                            </div>
+                                            <div class="share share_anim animate__animated cursor_pos_4" onclick="paste()">
+                                                <img src="./assets/image/.png" class="icon_img bar">공유
+                
+                                                <div class="guide_wrap " id="guide_wrap_4" onclick="paste()">
+                                                    <!-- 커서 가이드 -->
+                                                    <!-- <div class="cursor_wrap cursor_wrap_4">
+                                                        <span class="cursor" x-placement="bottom">
+                                                            <button class="digital-e__beacon">
+                                                                <span class="cursor_outer"></span>
+                                                                <span class="cursor_inner"><span>
+                                                            </button>
+                                                        </span>
+                                                    </div> -->
+                                                    <!-- 커서 가이드 -->
+                                                </div>
+                
+                                            </div>
+                
+                                        </div>
+                                    </div>
+                                </div>
+                                
+
+                            </div>
+                        </div>
+                        <!------------------------------ page 4 ------------------------------>
+                        <div class="page" id="p4">
+                            <h1 class="pg_title" style="color: #fff;">Page4</h1>
+                            <div class="page_wrap">
+                                <div id="total_wrap">
+                                    <div class="hd_blog top w-100 d-flex justify-content-between align-items-center px-4 py-3 fontSz">
+                                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-chevron-left" viewBox="0 0 16 16">
+                                            <path fill-rule="evenodd" d="M11.354 1.646a.5.5 0 0 1 0 .708L5.707 8l5.647 5.646a.5.5 0 0 1-.708.708l-6-6a.5.5 0 0 1 0-.708l6-6a.5.5 0 0 1 .708 0z"/>
+                                          </svg>
+                                        <div class="flex-fill h-100 d-flex justify-content-center align-items-center">
+                                            <div class="hd_center">
+                                                <h1 class="title_h1">블로그</h1>
+                                            </div>
+                                        </div>
+                                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-list" viewBox="0 0 16 16">
+                                            <path fill-rule="evenodd" d="M2.5 12a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5zm0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5zm0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5z"/>
+                                          </svg>
+                                    </div>
+                                    <div id="main" class="blog blog_main blog1 animate__animated">
+                                        <div class="blog_item item1 blog-scene">
+                                            <div class="guide_wrap " id="guide_wrap_1" onclick="entry_1()">
+                                                <!-- 커서 가이드 -->
+                                                <!-- <div class="cursor_wrap cursor_wrap_1">
+                                                    <span class="cursor" x-placement="bottom">
+                                                        <button class="digital-e__beacon">
+                                                            <span class="cursor_outer"></span>
+                                                            <span class="cursor_inner"><span>
+                                                        </button>
+                                                    </span>
+                                                </div> -->
+                                                <!-- 커서 가이드 -->
+                                            </div>
+                
+                                            <div class="info_wrap">
+                                                <div class="blog-info">
+                                                    <div class="blog-cont">
+                                                        <div class="info">
+                                                            <div class="category">생활 정보 공유</div>
+                                                        </div>
+                                                        <div class="title animate__animated cursor_pos_2" onclick="entry_2()">
+                                                            <h2>
+                                                                선풍기, 밤새 틀어두면 사망할 수 있다!?
+                                                            </h2>
+                                                        </div>
+                                                        <div class="guide_wrap " id="guide_wrap_2" onclick="entry_2()">
+                                                            <!-- 커서 가이드 -->
+                                                            <!-- <div class="cursor_wrap cursor_wrap_2">
+                                                                <span class="cursor" x-placement="bottom">
+                                                                    <button class="digital-e__beacon">
+                                                                        <span class="cursor_outer"></span>
+                                                                        <span class="cursor_inner"><span>
+                                                                    </button>
+                                                                </span>
+                                                            </div> -->
+                                                            <!-- 커서 가이드 -->
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="writer-info animate__animated" onclick="entry_1()">
+                                                    <div class="writer-profile">
+                                                        <div class="virtual">
+                                                            <!--프로필 사진 추가-->
+                                                            <img src="./assets/image/.png" width="100%">
+                                                        </div>
+                                                        <div class="writer ">
+                                                            <div class="name cursor_pos_1 animate__animated">아티클</div>
+                                                            <!-- <div class="sub">구독자 31명</div> -->
+                                                            <div class="info">
+                                                                <div class="date">20XX.08.10</div>
+                                                                <div class="views">153명의 이웃</div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="blog-main animate__animated" onclick="entry_3()">
+                                                <div class="blog-cont">
+                                                    <p class="blog_text">
+                                                        <img src="./assets/image/.png" alt="" class="blog_img">
+                                                        블로그 이웃분들 안녕하세요! <br>더운 여름 잘 보내고 계신가요?<br>
+                                                        오늘은 생활 상식 하나 가지고 왔어요<br><br>
+                
+                                                        생활 상식이라고는 하지만 꼭! 알아야 할 사실인데요<br>
+                                                        <img src="./assets/image/.png" alt="" class="blog_img">
+                                                        바로 선풍기에 대한 무서운 진실입니다<br><br>
+                
+                                                        더운 여름 선풍기는 필수 아이템인데요<br><br>
+                
+                                                        열대야에 선풍기 없으면 못 자시는 분들도 많으실 테지만,
+                
+                                                        잘 때는 꼭 선풍기를 끄고 주무셔야 합니다!<br><br>
+                
+                                                        그 이유를 아래에서 설명해 드릴게요<br><br>
+                                                        <img src="./assets/image/.png" alt="" class="blog_img" style="width: 30%;">
+                                                    </p>
+                                                    <p class="blog_text animate__animated cursor_pos_3">
+                                                        1. 선풍기를 틀고 자면 질식사할 수 있다<br>
+                                                        <img src="./assets/image/.png" alt="" class="blog_img">
+                
+                                                        선풍기를 틀고 자면 선풍기의 바람 때문에 산소가 부족해져 수면 중에 질식의 위험이 있어요. ㅜㅜ<br><br>
+                
+                                                        2. 선풍기를 틀고 자면 저체온증으로 사망할 수 있다.<br>
+                                                        <img src="./assets/image/.png" alt="" class="blog_img">
+                                                        선풍기를 틀고 자면 몸의 온도가 점점 내려가기 때문에 저체온증의 위험이 있어요.<br><br>
+                                                    </p>
+                                                    <p class="blog_text">
+                                                        지금까지 아티클이었습니다~<br><br>
+                                                        다들 여름철 선풍기 사용 주의하시고 시원한 여름 되세요!
+                                                    </p>
+                                                    <div class="guide_wrap " id="guide_wrap_3" onclick="entry_3()">
+                                                        <!-- 커서 가이드 -->
+                                                        <!-- <div class="cursor_wrap cursor_wrap_3">
+                                                            <span class="cursor" x-placement="bottom">
+                                                                <button class="digital-e__beacon">
+                                                                    <span class="cursor_outer"></span>
+                                                                    <span class="cursor_inner"><span>
+                                                                </button>
+                                                            </span>
+                                                        </div> -->
+                                                        <!-- 커서 가이드 -->
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                
+                                    <div class="blogbar">
+                                        <div class="reactions">
+                                            <div class="like like_topside shake_anim_here animate__animated"
+                                                onclick="location.href='BlogReactScene_1.html'">
+                                                <div class="heart"><img src="./assets/image/.png" class="icon_img bar">63</div>
+                                                <div class="comment animate__animated cursor_pos_5"><img src="./assets/image/.png"
+                                                        class="icon_img bar">댓글
+                
+                                                    <div class="guide_wrap " id="guide_wrap_5"
+                                                        onclick="location.href='BlogReactScene_1.html'">
+                                                        <!-- 커서 가이드 -->
+                                                        <!-- <div class="cursor_wrap cursor_wrap_5">
+                                                            <span class="cursor" x-placement="bottom">
+                                                                <button class="digital-e__beacon">
+                                                                    <span class="cursor_outer"></span>
+                                                                    <span class="cursor_inner"><span>
+                                                                </button>
+                                                            </span>
+                                                        </div> -->
+                                                        <!-- 커서 가이드 -->
+                                                    </div>
+                
+                                                </div>
+                                            </div>
+                                            <div class="share share_anim animate__animated cursor_pos_4" onclick="paste()">
+                                                <img src="./assets/image/.png" class="icon_img bar">공유
+                
+                                                <div class="guide_wrap " id="guide_wrap_4" onclick="paste()">
+                                                    <!-- 커서 가이드 -->
+                                                    <!-- <div class="cursor_wrap cursor_wrap_4">
+                                                        <span class="cursor" x-placement="bottom">
+                                                            <button class="digital-e__beacon">
+                                                                <span class="cursor_outer"></span>
+                                                                <span class="cursor_inner"><span>
+                                                            </button>
+                                                        </span>
+                                                    </div> -->
+                                                    <!-- 커서 가이드 -->
+                                                </div>
+                
+                                            </div>
+                
+                                        </div>
+                                    </div>
+                                </div>
+                                
+
+                            </div>
+                        </div>
+                        <!------------------------------ page 5 ------------------------------>
+                        <div class="page" id="p5">
+                            <h1 class="pg_title" style="color: #fff;">Page5</h1>
+                            <div class="page_wrap">
+                                <div id="total_wrap">
+                                    <div class="hd_blog top w-100 d-flex justify-content-between align-items-center px-4 py-3 fontSz">
+                                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-chevron-left" viewBox="0 0 16 16">
+                                            <path fill-rule="evenodd" d="M11.354 1.646a.5.5 0 0 1 0 .708L5.707 8l5.647 5.646a.5.5 0 0 1-.708.708l-6-6a.5.5 0 0 1 0-.708l6-6a.5.5 0 0 1 .708 0z"/>
+                                          </svg>
+                                        <div class="flex-fill h-100 d-flex justify-content-center align-items-center">
+                                            <div class="hd_center">
+                                                <h1 class="title_h1">블로그</h1>
+                                            </div>
+                                        </div>
+                                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-list" viewBox="0 0 16 16">
+                                            <path fill-rule="evenodd" d="M2.5 12a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5zm0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5zm0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5z"/>
+                                          </svg>
+                                    </div>
+                                    <div id="main" class="blog blog_main blog1 animate__animated">
+                                        <div class="blog_item item1 blog-scene">
+                                            <div class="guide_wrap " id="guide_wrap_1" onclick="entry_1()">
+                                                <!-- 커서 가이드 -->
+                                                <!-- <div class="cursor_wrap cursor_wrap_1">
+                                                    <span class="cursor" x-placement="bottom">
+                                                        <button class="digital-e__beacon">
+                                                            <span class="cursor_outer"></span>
+                                                            <span class="cursor_inner"><span>
+                                                        </button>
+                                                    </span>
+                                                </div> -->
+                                                <!-- 커서 가이드 -->
+                                            </div>
+                
+                                            <div class="info_wrap">
+                                                <div class="blog-info">
+                                                    <div class="blog-cont">
+                                                        <div class="info">
+                                                            <div class="category">생활 정보 공유</div>
+                                                        </div>
+                                                        <div class="title animate__animated cursor_pos_2" onclick="entry_2()">
+                                                            <h2>
+                                                                선풍기, 밤새 틀어두면 사망할 수 있다!?
+                                                            </h2>
+                                                        </div>
+                                                        <div class="guide_wrap " id="guide_wrap_2" onclick="entry_2()">
+                                                            <!-- 커서 가이드 -->
+                                                            <!-- <div class="cursor_wrap cursor_wrap_2">
+                                                                <span class="cursor" x-placement="bottom">
+                                                                    <button class="digital-e__beacon">
+                                                                        <span class="cursor_outer"></span>
+                                                                        <span class="cursor_inner"><span>
+                                                                    </button>
+                                                                </span>
+                                                            </div> -->
+                                                            <!-- 커서 가이드 -->
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="writer-info animate__animated" onclick="entry_1()">
+                                                    <div class="writer-profile">
+                                                        <div class="virtual">
+                                                            <!--프로필 사진 추가-->
+                                                            <img src="./assets/image/.png" width="100%">
+                                                        </div>
+                                                        <div class="writer ">
+                                                            <div class="name cursor_pos_1 animate__animated">아티클</div>
+                                                            <!-- <div class="sub">구독자 31명</div> -->
+                                                            <div class="info">
+                                                                <div class="date">20XX.08.10</div>
+                                                                <div class="views">153명의 이웃</div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="blog-main animate__animated" onclick="entry_3()">
+                                                <div class="blog-cont">
+                                                    <p class="blog_text">
+                                                        <img src="./assets/image/.png" alt="" class="blog_img">
+                                                        블로그 이웃분들 안녕하세요! <br>더운 여름 잘 보내고 계신가요?<br>
+                                                        오늘은 생활 상식 하나 가지고 왔어요<br><br>
+                
+                                                        생활 상식이라고는 하지만 꼭! 알아야 할 사실인데요<br>
+                                                        <img src="./assets/image/.png" alt="" class="blog_img">
+                                                        바로 선풍기에 대한 무서운 진실입니다<br><br>
+                
+                                                        더운 여름 선풍기는 필수 아이템인데요<br><br>
+                
+                                                        열대야에 선풍기 없으면 못 자시는 분들도 많으실 테지만,
+                
+                                                        잘 때는 꼭 선풍기를 끄고 주무셔야 합니다!<br><br>
+                
+                                                        그 이유를 아래에서 설명해 드릴게요<br><br>
+                                                        <img src="./assets/image/.png" alt="" class="blog_img" style="width: 30%;">
+                                                    </p>
+                                                    <p class="blog_text animate__animated cursor_pos_3">
+                                                        1. 선풍기를 틀고 자면 질식사할 수 있다<br>
+                                                        <img src="./assets/image/.png" alt="" class="blog_img">
+                
+                                                        선풍기를 틀고 자면 선풍기의 바람 때문에 산소가 부족해져 수면 중에 질식의 위험이 있어요. ㅜㅜ<br><br>
+                
+                                                        2. 선풍기를 틀고 자면 저체온증으로 사망할 수 있다.<br>
+                                                        <img src="./assets/image/.png" alt="" class="blog_img">
+                                                        선풍기를 틀고 자면 몸의 온도가 점점 내려가기 때문에 저체온증의 위험이 있어요.<br><br>
+                                                    </p>
+                                                    <p class="blog_text">
+                                                        지금까지 아티클이었습니다~<br><br>
+                                                        다들 여름철 선풍기 사용 주의하시고 시원한 여름 되세요!
+                                                    </p>
+                                                    <div class="guide_wrap " id="guide_wrap_3" onclick="entry_3()">
+                                                        <!-- 커서 가이드 -->
+                                                        <!-- <div class="cursor_wrap cursor_wrap_3">
+                                                            <span class="cursor" x-placement="bottom">
+                                                                <button class="digital-e__beacon">
+                                                                    <span class="cursor_outer"></span>
+                                                                    <span class="cursor_inner"><span>
+                                                                </button>
+                                                            </span>
+                                                        </div> -->
+                                                        <!-- 커서 가이드 -->
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                
+                                    <div class="blogbar">
+                                        <div class="reactions">
+                                            <div class="like like_topside shake_anim_here animate__animated"
+                                                onclick="location.href='BlogReactScene_1.html'">
+                                                <div class="heart"><img src="./assets/image/.png" class="icon_img bar">63</div>
+                                                <div class="comment animate__animated cursor_pos_5"><img src="./assets/image/.png"
+                                                        class="icon_img bar">댓글
+                
+                                                    <div class="guide_wrap " id="guide_wrap_5"
+                                                        onclick="location.href='BlogReactScene_1.html'">
+                                                        <!-- 커서 가이드 -->
+                                                        <!-- <div class="cursor_wrap cursor_wrap_5">
+                                                            <span class="cursor" x-placement="bottom">
+                                                                <button class="digital-e__beacon">
+                                                                    <span class="cursor_outer"></span>
+                                                                    <span class="cursor_inner"><span>
+                                                                </button>
+                                                            </span>
+                                                        </div> -->
+                                                        <!-- 커서 가이드 -->
+                                                    </div>
+                
+                                                </div>
+                                            </div>
+                                            <div class="share share_anim animate__animated cursor_pos_4" onclick="paste()">
+                                                <img src="./assets/image/.png" class="icon_img bar">공유
+                
+                                                <div class="guide_wrap " id="guide_wrap_4" onclick="paste()">
+                                                    <!-- 커서 가이드 -->
+                                                    <!-- <div class="cursor_wrap cursor_wrap_4">
+                                                        <span class="cursor" x-placement="bottom">
+                                                            <button class="digital-e__beacon">
+                                                                <span class="cursor_outer"></span>
+                                                                <span class="cursor_inner"><span>
+                                                            </button>
+                                                        </span>
+                                                    </div> -->
+                                                    <!-- 커서 가이드 -->
+                                                </div>
+                
+                                            </div>
+                
+                                        </div>
+                                    </div>
+                                </div>
+                                
+
+                            </div>
+                        </div>
+                        <!------------------------------ page 6 ------------------------------>
+                        <div class="page" id="p6">
+                            <h1 class="pg_title" style="color: #fff;">Page6</h1>
+                            <div class="page_wrap">
+                                <div id="total_wrap">
+                                    <div class="hd_blog top w-100 d-flex justify-content-between align-items-center px-4 py-3 fontSz">
+                                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-chevron-left" viewBox="0 0 16 16">
+                                            <path fill-rule="evenodd" d="M11.354 1.646a.5.5 0 0 1 0 .708L5.707 8l5.647 5.646a.5.5 0 0 1-.708.708l-6-6a.5.5 0 0 1 0-.708l6-6a.5.5 0 0 1 .708 0z"/>
+                                          </svg>
+                                        <div class="flex-fill h-100 d-flex justify-content-center align-items-center">
+                                            <div class="hd_center">
+                                                <h1 class="title_h1">블로그</h1>
+                                            </div>
+                                        </div>
+                                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-list" viewBox="0 0 16 16">
+                                            <path fill-rule="evenodd" d="M2.5 12a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5zm0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5zm0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5z"/>
+                                          </svg>
+                                    </div>
+                                    <div id="main" class="blog blog_main blog1 animate__animated">
+                                        <div class="blog_item item1 blog-scene">
+                                            <div class="guide_wrap " id="guide_wrap_1" onclick="entry_1()">
+                                                <!-- 커서 가이드 -->
+                                                <!-- <div class="cursor_wrap cursor_wrap_1">
+                                                    <span class="cursor" x-placement="bottom">
+                                                        <button class="digital-e__beacon">
+                                                            <span class="cursor_outer"></span>
+                                                            <span class="cursor_inner"><span>
+                                                        </button>
+                                                    </span>
+                                                </div> -->
+                                                <!-- 커서 가이드 -->
+                                            </div>
+                
+                                            <div class="info_wrap">
+                                                <div class="blog-info">
+                                                    <div class="blog-cont">
+                                                        <div class="info">
+                                                            <div class="category">생활 정보 공유</div>
+                                                        </div>
+                                                        <div class="title animate__animated cursor_pos_2" onclick="entry_2()">
+                                                            <h2>
+                                                                선풍기, 밤새 틀어두면 사망할 수 있다!?
+                                                            </h2>
+                                                        </div>
+                                                        <div class="guide_wrap " id="guide_wrap_2" onclick="entry_2()">
+                                                            <!-- 커서 가이드 -->
+                                                            <!-- <div class="cursor_wrap cursor_wrap_2">
+                                                                <span class="cursor" x-placement="bottom">
+                                                                    <button class="digital-e__beacon">
+                                                                        <span class="cursor_outer"></span>
+                                                                        <span class="cursor_inner"><span>
+                                                                    </button>
+                                                                </span>
+                                                            </div> -->
+                                                            <!-- 커서 가이드 -->
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="writer-info animate__animated" onclick="entry_1()">
+                                                    <div class="writer-profile">
+                                                        <div class="virtual">
+                                                            <!--프로필 사진 추가-->
+                                                            <img src="./assets/image/.png" width="100%">
+                                                        </div>
+                                                        <div class="writer ">
+                                                            <div class="name cursor_pos_1 animate__animated">아티클</div>
+                                                            <!-- <div class="sub">구독자 31명</div> -->
+                                                            <div class="info">
+                                                                <div class="date">20XX.08.10</div>
+                                                                <div class="views">153명의 이웃</div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="blog-main animate__animated" onclick="entry_3()">
+                                                <div class="blog-cont">
+                                                    <p class="blog_text">
+                                                        <img src="./assets/image/.png" alt="" class="blog_img">
+                                                        블로그 이웃분들 안녕하세요! <br>더운 여름 잘 보내고 계신가요?<br>
+                                                        오늘은 생활 상식 하나 가지고 왔어요<br><br>
+                
+                                                        생활 상식이라고는 하지만 꼭! 알아야 할 사실인데요<br>
+                                                        <img src="./assets/image/.png" alt="" class="blog_img">
+                                                        바로 선풍기에 대한 무서운 진실입니다<br><br>
+                
+                                                        더운 여름 선풍기는 필수 아이템인데요<br><br>
+                
+                                                        열대야에 선풍기 없으면 못 자시는 분들도 많으실 테지만,
+                
+                                                        잘 때는 꼭 선풍기를 끄고 주무셔야 합니다!<br><br>
+                
+                                                        그 이유를 아래에서 설명해 드릴게요<br><br>
+                                                        <img src="./assets/image/.png" alt="" class="blog_img" style="width: 30%;">
+                                                    </p>
+                                                    <p class="blog_text animate__animated cursor_pos_3">
+                                                        1. 선풍기를 틀고 자면 질식사할 수 있다<br>
+                                                        <img src="./assets/image/.png" alt="" class="blog_img">
+                
+                                                        선풍기를 틀고 자면 선풍기의 바람 때문에 산소가 부족해져 수면 중에 질식의 위험이 있어요. ㅜㅜ<br><br>
+                
+                                                        2. 선풍기를 틀고 자면 저체온증으로 사망할 수 있다.<br>
+                                                        <img src="./assets/image/.png" alt="" class="blog_img">
+                                                        선풍기를 틀고 자면 몸의 온도가 점점 내려가기 때문에 저체온증의 위험이 있어요.<br><br>
+                                                    </p>
+                                                    <p class="blog_text">
+                                                        지금까지 아티클이었습니다~<br><br>
+                                                        다들 여름철 선풍기 사용 주의하시고 시원한 여름 되세요!
+                                                    </p>
+                                                    <div class="guide_wrap " id="guide_wrap_3" onclick="entry_3()">
+                                                        <!-- 커서 가이드 -->
+                                                        <!-- <div class="cursor_wrap cursor_wrap_3">
+                                                            <span class="cursor" x-placement="bottom">
+                                                                <button class="digital-e__beacon">
+                                                                    <span class="cursor_outer"></span>
+                                                                    <span class="cursor_inner"><span>
+                                                                </button>
+                                                            </span>
+                                                        </div> -->
+                                                        <!-- 커서 가이드 -->
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                
+                                    <div class="blogbar">
+                                        <div class="reactions">
+                                            <div class="like like_topside shake_anim_here animate__animated"
+                                                onclick="location.href='BlogReactScene_1.html'">
+                                                <div class="heart"><img src="./assets/image/.png" class="icon_img bar">63</div>
+                                                <div class="comment animate__animated cursor_pos_5"><img src="./assets/image/.png"
+                                                        class="icon_img bar">댓글
+                
+                                                    <div class="guide_wrap " id="guide_wrap_5"
+                                                        onclick="location.href='BlogReactScene_1.html'">
+                                                        <!-- 커서 가이드 -->
+                                                        <!-- <div class="cursor_wrap cursor_wrap_5">
+                                                            <span class="cursor" x-placement="bottom">
+                                                                <button class="digital-e__beacon">
+                                                                    <span class="cursor_outer"></span>
+                                                                    <span class="cursor_inner"><span>
+                                                                </button>
+                                                            </span>
+                                                        </div> -->
+                                                        <!-- 커서 가이드 -->
+                                                    </div>
+                
+                                                </div>
+                                            </div>
+                                            <div class="share share_anim animate__animated cursor_pos_4" onclick="paste()">
+                                                <img src="./assets/image/.png" class="icon_img bar">공유
+                
+                                                <div class="guide_wrap " id="guide_wrap_4" onclick="paste()">
+                                                    <!-- 커서 가이드 -->
+                                                    <!-- <div class="cursor_wrap cursor_wrap_4">
+                                                        <span class="cursor" x-placement="bottom">
+                                                            <button class="digital-e__beacon">
+                                                                <span class="cursor_outer"></span>
+                                                                <span class="cursor_inner"><span>
+                                                            </button>
+                                                        </span>
+                                                    </div> -->
+                                                    <!-- 커서 가이드 -->
+                                                </div>
+                
+                                            </div>
+                
+                                        </div>
+                                    </div>
+                                </div>
+                                
+
+                            </div>
+                        </div>
+                        <!------------------------------ page 7 ------------------------------>
+                        <div class="page" id="p7">
+                            <h1 class="pg_title" style="color: #fff;">Page7</h1>
+                            <div class="page_wrap">
+                                <div class="" id="main">
+                                    <div class="hd_blog top w-100 d-flex justify-content-between align-items-center px-4 py-3 fontSz">
+                                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-chevron-left" viewBox="0 0 16 16">
+                                            <path fill-rule="evenodd" d="M11.354 1.646a.5.5 0 0 1 0 .708L5.707 8l5.647 5.646a.5.5 0 0 1-.708.708l-6-6a.5.5 0 0 1 0-.708l6-6a.5.5 0 0 1 .708 0z"/>
+                                          </svg>
+                                        <div class="flex-fill h-100 d-flex justify-content-center align-items-center">
+                                            <div class="hd_center">
+                                                <h1 class="title_h1">블로그</h1>
+                                            </div>
+                                        </div>
+                                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-list" viewBox="0 0 16 16">
+                                            <path fill-rule="evenodd" d="M2.5 12a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5zm0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5zm0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5z"/>
+                                          </svg>
+                                    </div>
+                                    <div class="blog blog_main blog1-1" role="main">
+                                        <div class="info_wrap">
+                                            <div class="blog-info">
+                                                <div class="comment-info">
+                                                    <div>댓글</div>
+                                                    <div class="comment">2</div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <!-- 댓글 1 -->
+                                        <div class="blog_item blog_item1 comment">
+                                            <!-- <div class="info_wrap"> -->
+                                            <div class="writer-profile">
+                                                <div class="virtual">
+                                                    <!--프로필 사진 추가-->
+                                                    <img src="./assets/image/.png" width="100%">
+                                                </div>
+                                                <div class="writer-info">
+                                                    <div class="name">투캔두잇</div>
+                                                    <div class="info">
+                                                        <div class="date">20XX.08.11</div>
+                                                        <div class="time">13:45</div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <!-- </div> -->
+                                            <div class="comment-cont">
+                                                <div>
+                                                    그래서 여름철 밤에는 우리 아이들 선풍기 못 쓰게 해요~
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="blog_item blog_item2 comment animate__animated" onclick="paste()">
+                                            <!-- <div class="info_wrap"> -->
+                                            <div class="writer-profile">
+                                                <div class="virtual">
+                                                    <!--프로필 사진 추가-->
+                                                    <img src="./assets/image/.png" width="100%">
+                                                </div>
+                                                <div class="writer-info">
+                                                    <div class="name">친환경</div>
+                                                    <div class="info">
+                                                        <div class="date">20XX.08.15</div>
+                                                        <div class="time">12:42</div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <!-- </div> -->
+                                            <div class="comment-cont">
+                                                <div>
+                                                    왜 틀고 자면 안되는지 지금 알았네요. 이웃들한테도 꼭 공유할게요.</div>
+                                                <div class="cursor_here">
+                
+                                                </div>
+                
+                                            </div>
+                                            <div class="guide_wrap" , id="guide_wrap1">
+                                            </div>
+                
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+
+                    </main>
+
+                    <div class="ctrlbar-bg"></div>
+                    <div class="ctrlbar" id="ctrlbar">
+                        <div class="start_btn_wrap">
+                            <button class="btn start_btn btn-lg" id="start-btn">시작하기</button>
+                        </div>
+                        <div class="nav_btn_wrap">
+                            <div class="baricon_wrap prev" id="prev_btn">
+                                <div class="baricon">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+                                        class="bi bi-caret-left-fill svg" viewBox="0 0 16 16">
+                                        <path
+                                            d="m3.86 8.753 5.482 4.796c.646.566 1.658.106 1.658-.753V3.204a1 1 0 0 0-1.659-.753l-5.48 4.796a1 1 0 0 0 0 1.506z" />
+                                    </svg>
+                                </div>
+                                <div class="bartext">이전</div>
+                            </div>
+                            <div class="baricon_wrap pause">
+
+                                <div class="stop" id="pause_btn">
+                                    <div class="baricon">
+                                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16"
+                                            fill="currentColor" class="bi bi-volume-mute-fill svg" viewBox="0 0 16 16">
+                                            <path
+                                                d="M6.717 3.55A.5.5 0 0 1 7 4v8a.5.5 0 0 1-.812.39L3.825 10.5H1.5A.5.5 0 0 1 1 10V6a.5.5 0 0 1 .5-.5h2.325l2.363-1.89a.5.5 0 0 1 .529-.06zm7.137 2.096a.5.5 0 0 1 0 .708L12.207 8l1.647 1.646a.5.5 0 0 1-.708.708L11.5 8.707l-1.646 1.647a.5.5 0 0 1-.708-.708L10.793 8 9.146 6.354a.5.5 0 1 1 .708-.708L11.5 7.293l1.646-1.647a.5.5 0 0 1 .708 0z" />
+                                        </svg>
+                                    </div>
+                                    <div class="bartext text-center">멈춤</div>
+                                </div>
+
+                                <div class="play" id="play_btn">
+                                    <div class="baricon">
+                                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16"
+                                            fill="currentColor" class="bi bi-volume-up-fill svg" viewBox="0 0 16 16">
+                                            <path
+                                                d="M11.536 14.01A8.473 8.473 0 0 0 14.026 8a8.473 8.473 0 0 0-2.49-6.01l-.708.707A7.476 7.476 0 0 1 13.025 8c0 2.071-.84 3.946-2.197 5.303l.708.707z" />
+                                            <path
+                                                d="M10.121 12.596A6.48 6.48 0 0 0 12.025 8a6.48 6.48 0 0 0-1.904-4.596l-.707.707A5.483 5.483 0 0 1 11.025 8a5.483 5.483 0 0 1-1.61 3.89l.706.706z" />
+                                            <path
+                                                d="M8.707 11.182A4.486 4.486 0 0 0 10.025 8a4.486 4.486 0 0 0-1.318-3.182L8 5.525A3.489 3.489 0 0 1 9.025 8 3.49 3.49 0 0 1 8 10.475l.707.707zM6.717 3.55A.5.5 0 0 1 7 4v8a.5.5 0 0 1-.812.39L3.825 10.5H1.5A.5.5 0 0 1 1 10V6a.5.5 0 0 1 .5-.5h2.325l2.363-1.89a.5.5 0 0 1 .529-.06z" />
+                                        </svg>
+                                    </div>
+                                    <div class="bartext text-center">재생</div>
+                                </div>
+
+                            </div>
+                            <div class="baricon_wrap" id="hint_btn">
+                                <div class="baricon">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+                                        class="bi bi-lightbulb-fill svg hint" viewBox="0 0 16 16">
+                                        <path
+                                            d="M2 6a6 6 0 1 1 10.174 4.31c-.203.196-.359.4-.453.619l-.762 1.769A.5.5 0 0 1 10.5 13h-5a.5.5 0 0 1-.46-.302l-.761-1.77a1.964 1.964 0 0 0-.453-.618A5.984 5.984 0 0 1 2 6zm3 8.5a.5.5 0 0 1 .5-.5h5a.5.5 0 0 1 0 1l-.224.447a1 1 0 0 1-.894.553H6.618a1 1 0 0 1-.894-.553L5.5 15a.5.5 0 0 1-.5-.5z" />
+                                    </svg>
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+                                        class="bi bi-question svg front" viewBox="0 0 16 16">
+                                        <path
+                                            d="M5.255 5.786a.237.237 0 0 0 .241.247h.825c.138 0 .248-.113.266-.25.09-.656.54-1.134 1.342-1.134.686 0 1.314.343 1.314 1.168 0 .635-.374.927-.965 1.371-.673.489-1.206 1.06-1.168 1.987l.003.217a.25.25 0 0 0 .25.246h.811a.25.25 0 0 0 .25-.25v-.105c0-.718.273-.927 1.01-1.486.609-.463 1.244-.977 1.244-2.056 0-1.511-1.276-2.241-2.673-2.241-1.267 0-2.655.59-2.75 2.286zm1.557 5.763c0 .533.425.927 1.01.927.609 0 1.028-.394 1.028-.927 0-.552-.42-.94-1.029-.94-.584 0-1.009.388-1.009.94z" />
+                                    </svg>
+                                </div>
+                                <div class="bartext">힌트</div>
+                            </div>
+                            <div class="baricon_wrap" id="size_btn">
+                                <div id="tSlider" class="baricon" data-bs-toggle="popover">
+                                    <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"
+                                        width="44" zoomAndPan="magnify" viewBox="0 0 375 374.999991" height="44"
+                                        preserveAspectRatio="xMidYMid meet" version="1.0">
+                                        <defs>
+                                            <g />
+                                        </defs>
+                                        <g fill="#000000" fill-opacity="1">
+                                            <g transform="translate(-55.71148, 314.999979)">
+                                                <g>
+                                                    <path
+                                                        d="M 97.234375 -205.578125 C 89.242188 -205.578125 85.25 -211.9375 85.25 -224.65625 C 85.25 -237.09375 89.539062 -243.3125 98.125 -243.3125 L 257.96875 -243.3125 C 269.507812 -243.3125 275.28125 -236.648438 275.28125 -223.328125 L 275.28125 -112.78125 C 275.28125 -83.46875 263.882812 -68.8125 241.09375 -68.8125 L 227.328125 -68.8125 L 227.328125 -205.578125 Z M 97.234375 -205.578125 " />
+                                                </g>
+                                            </g>
+                                        </g>
+                                        <g fill="#000000" fill-opacity="1">
+                                            <g transform="translate(187.499992, 317.537478)">
+                                                <g>
+                                                    <path
+                                                        d="M 51.25 -108.34375 C 47.03125 -108.34375 44.921875 -111.695312 44.921875 -118.40625 C 44.921875 -124.957031 47.1875 -128.234375 51.71875 -128.234375 L 135.953125 -128.234375 C 142.035156 -128.234375 145.078125 -124.722656 145.078125 -117.703125 L 145.078125 -59.4375 C 145.078125 -43.988281 139.070312 -36.265625 127.0625 -36.265625 L 119.8125 -36.265625 L 119.8125 -108.34375 Z M 51.25 -108.34375 " />
+                                                </g>
+                                            </g>
+                                        </g>
+                                    </svg>
+                                </div>
+                                <div class="bartext">크기</div>
+                            </div>
+                            <div class="baricon_wrap next" id="next_btn">
+                                <div class="baricon">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+                                        class="bi bi-caret-right-fill svg" viewBox="0 0 16 16">
+                                        <path
+                                            d="m12.14 8.753-5.482 4.796c-.646.566-1.658.106-1.658-.753V3.204a1 1 0 0 1 1.659-.753l5.48 4.796a1 1 0 0 1 0 1.506z" />
+                                    </svg>
+                                </div>
+                                <div class="bartext">다음</div>
+                            </div>
+                        </div>
+                        <!-- popover : slider --------------- -->
+                        <div hidden>
+                            <div data-name="popover-content" class="d-flex justify-content-center align-items-center">
+
+                                <!-- /////////////// -->
+                                <div class="txt_ex1 fw-bold">가</div>
+                                <!-- <input type="range" name="slider" id="slider" value="0" min="0" max="2"  /> -->
+                                <input type="range" min="0" max="2" value="0" class="slider" id="tSliderRange">
+                                <!-- <p>Value: <span id="value"></span></p> -->
+                                <div class="txt_ex2 fs-3 fw-bold">가</div>
+                                <!-- /////////////// -->
+
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+
+
+                <div class="modal_wrap">
+                    <div class="FactCheck1_wrap">
+
+                        <!--  모달창 입니다 : 팩트체크 인트로 -->
+                        <div class="factcheck_modal factcheck_modal_1 animate__animated popup" id="factcheck_modal">
+                            <div class="title animate__animated">잠깐!</div>
+                            <!-- 팩트체크 각 글자마다 FC1,...,FC4-->
+                            <div class="content">
+                                <div class="FC animate__animated" id="FC1">팩</div>
+                                <div class="FC animate__animated" id="FC2">트</div>
+                                <div class="FC animate__animated" id="FC3">체</div>
+                                <div class="FC animate__animated" id="FC4">크</div>
+                            </div>
+                            <div class="cmd">
+                                <button class="btn btn-next nextBtn1" raised="true" id="nextBtn1"
+                                    onclick="entry_1()">다음</button>
+                            </div>
+                        </div>
+                        <!-- 여기까지 모달창 -->
+
+                        <!--  모달창 입니다  -->
+                        <div class="modal1 animate__animated popup" id="modal1">
+                            <div class="title animate__animated">잠깐!</div>
+                            <div class="content">
+                                <p class="fc_msg text1">
+                                    게시글 작성자가 신뢰할 만한 사람인가요? 정보의 생산자가 전달한 정보의 전문 지식을 가지고 있는 사람인지 확인해 보세요.
+                                </p>
+                            </div>
+                            <div class="cmd">
+                                <button class="btn btn-next btn_nxt_pg" raised="true" id="okBtn1"
+                                    >다음</button>
+                            </div>
+                        </div>
+                        <!-- 여기까지 모달창 -->
+
+                    </div>
+                    <div class="FactCheck2_wrap">
+
+                        <!--  모달창 입니다 : 팩트체크 인트로 -->
+                        <div class="factcheck_modal factcheck_modal_2 animate__animated popup" id="factcheck_modal">
+                            <div class="title animate__animated">잠깐!</div>
+                            <!-- 팩트체크 각 글자마다 FC1,...,FC4-->
+                            <div class="content">
+                                <div class="FC animate__animated" id="FC1_2">팩</div>
+                                <div class="FC animate__animated" id="FC2_2">트</div>
+                                <div class="FC animate__animated" id="FC3_2">체</div>
+                                <div class="FC animate__animated" id="FC4_2">크</div>
+                            </div>
+                            <div class="cmd">
+                                <button class="btn btn-next" raised="true" id="nextBtn1"
+                                    onclick="entry_2()">다음</button>
+                            </div>
+                        </div>
+                        <!-- 여기까지 모달창 -->
+
+                        <!--  모달창 입니다  -->
+                        <div class="modal2_1 animate__animated popup" id="modal1">
+                            <div class="title animate__animated">잠깐!</div>
+                            <div class="content">
+                                <p class="fc_msg text1">
+                                    관심을 끌기 위한 자극적인 제목의 게시글일 수 있습니다.
+                                </p>
+                            </div>
+                            <div class="cmd">
+                                <button class="btn btn-next" raised="true" id="okBtn1"
+                                    onclick="ok_2()">다음</button>
+                            </div>
+                        </div>
+                        <!-- 여기까지 모달창 -->
+                    </div>
+                    <div class="FactCheck3_wrap">
+                        <!--  모달창 입니다 : 팩트체크 인트로 -->
+                        <div class="factcheck_modal factcheck_modal_3 animate__animated popup" id="factcheck_modal">
+                            <div class="title animate__animated">잠깐!</div>
+                            <!-- 팩트체크 각 글자마다 FC1,...,FC4-->
+                            <div class="content">
+                                <div class="FC animate__animated" id="FC1_3">팩</div>
+                                <div class="FC animate__animated" id="FC2_3">트</div>
+                                <div class="FC animate__animated" id="FC3_3">체</div>
+                                <div class="FC animate__animated" id="FC4_3">크</div>
+                            </div>
+                            <div class="cmd">
+                                <button class="btn btn-next" raised="true" id="nextBtn1"
+                                    onclick="entry_3()">다음</button>
+                            </div>
+                        </div>
+                        <!-- 여기까지 모달창 -->
+                        <!--  모달창 입니다  -->
+                        <div class="modal3_1 animate__animated popup" id="modal1">
+                            <div class="title animate__animated">잠깐!</div>
+                            <div class="content">
+                                <p class="fc_msg text1">
+                                    정확하지 않은 정보를 다른 사람에게 공유하는 것은 속설의 확산을 가속합니다.
+                                </p>
+                            </div>
+                            <div class="cmd">
+                                <button class="btn btn-next" raised="true" id="okBtn1"
+                                    onclick="next_3()">다음</button>
+                            </div>
+                        </div>
+                        <!-- 여기까지 모달창 -->
+                        <!--  모달창 입니다  -->
+                        <div class="modal3_2 animate__animated popup" id="modal1">
+                            <div class="title animate__animated">잠깐!</div>
+                            <div class="content">
+                                <p class="fc_msg text1">
+                                    전문 기관에서 작성되지 않은 글을 읽을 때는 전달하는 정보가 과학적으로 검증 과정을 거친 사실인지 확인하고, 원인과 결과의 연관관계를 확인해 보아야
+                                    합니다.
+                                </p>
+                            </div>
+                            <div class="cmd">
+                                <button class="btn btn-next" raised="true" id="okBtn1"
+                                    onclick="ok_3()">확인</button>
+                            </div>
+                        </div>
+                        <!-- 여기까지 모달창 -->
+                    </div>
+                    <div class="FactCheck4_wrap">
+
+                        <!--  모달창 입니다 : 팩트체크 인트로 -->
+                        <div class="factcheck_modal factcheck_modal_4 animate__animated popup" id="factcheck_modal">
+                            <div class="title animate__animated">잠깐!</div>
+                            <!-- 팩트체크 각 글자마다 FC1,...,FC4-->
+                            <div class="content">
+                                <div class="FC animate__animated" id="FC1_4">팩</div>
+                                <div class="FC animate__animated" id="FC2_4">트</div>
+                                <div class="FC animate__animated" id="FC3_4">체</div>
+                                <div class="FC animate__animated" id="FC4_4">크</div>
+                            </div>
+                            <div class="cmd">
+                                <button class="btn btn-next" raised="true" id="nextBtn1"
+                                    onclick="entry_4()">다음</button>
+                            </div>
+                        </div>
+                        <!-- 여기까지 모달창 -->
+                        <!--  모달창 입니다  -->
+                        <div class="modal4_1 animate__animated popup" id="modal1">
+                            <div class="title animate__animated">잠깐!</div>
+                            <div class="content">
+                                <p class="fc_msg text1">
+                                    해당 게시글은 과학적으로 검증되지 않은 미신을 실제 사실인 것처럼 작성한 것입니다.
+                                </p>
+                            </div>
+                            <div class="cmd">
+                                <button class="btn btn-next" raised="true" id="okBtn1"
+                                    onclick="next_4()">다음</button>
+                            </div>
+                        </div>
+                        <!-- 여기까지 모달창 -->
+                        <!--  모달창 입니다  -->
+                        <div class="modal4_2 animate__animated popup" id="modal1">
+                            <div class="title animate__animated">잠깐!</div>
+                            <div class="content">
+                                <p class="fc_msg text1">
+                                    다른 사람들에게 정보를 전달하기 전에는 주의를 기울여 확인하는 습관을 들여야 합니다.
+                                </p>
+                            </div>
+                            <div class="cmd">
+                                <button class="btn btn-next" raised="true" id="okBtn1"
+                                    onclick="ok_4()">확인</button>
+                            </div>
+                        </div>
+                        <!-- 여기까지 모달창 -->
+
+
+                    </div>
+                    <div class="FactCheck5_wrap">
+
+                        <!--  모달창 입니다 : 팩트체크 인트로 -->
+                        <div class="factcheck_modal factcheck_modal_5 animate__animated popup" id="factcheck_modal">
+                            <div class="title animate__animated">잠깐!</div>
+                            <!-- 팩트체크 각 글자마다 FC1,...,FC4-->
+                            <div class="content">
+                                <div class="FC animate__animated" id="FC1_5">팩</div>
+                                <div class="FC animate__animated" id="FC2_5">트</div>
+                                <div class="FC animate__animated" id="FC3_5">체</div>
+                                <div class="FC animate__animated" id="FC4_5">크</div>
+                            </div>
+                            <div class="cmd">
+                                <button class="btn btn-next" raised="true" id="nextBtn1"
+                                    onclick="entry_5()">다음</button>
+                            </div>
+                        </div>
+                        <!-- 여기까지 모달창 -->
+                        <!--  모달창 입니다  -->
+                        <div class="modal5_1 animate__animated popup" id="modal1">
+                            <div class="title animate__animated">잠깐!</div>
+                            <div class="content">
+                                <p class="fc_msg text1">
+                                </p>
+                            </div>
+                            <div class="cmd">
+                                <button class="btn btn-next" raised="true" id="okBtn1"
+                                    onclick="ok_5()">다음</button>
+                            </div>
+                        </div>
+                        <!-- 여기까지 모달창 -->
+                    </div>
+                </div>
+
+
+                
+            </div>
+        </div>
+    </div>
+    <script src="pg_info.js"> </script>
+    <script src="pg_handler_dc1.js"> </script>
+    <!-- <script type="text/javascript" src="bootstrap-slider.js"></script> -->
+</body>
+
+</html>

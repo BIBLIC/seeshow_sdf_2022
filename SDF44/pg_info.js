@@ -99,15 +99,15 @@ const inputAnswer = [
 const modalCont = [
     {
         page: 0,
-        instruction: "'시작하기' 버튼을 눌러주세요.."
+        instruction: "'시작하기' 버튼을 눌러주세요."
     },
     {
         page: 1,
-        instruction: "'조회/납부' 영역을 눌러주세요.."
+        instruction: "'조회/납부' 영역을 눌러주세요."
     },
     {
         page: 2,
-        instruction: "'전기요금' 버튼을 눌러주세요.."
+        instruction: "'전기요금' 버튼을 눌러주세요."
     },
     {
         page: 3,
