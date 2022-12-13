@@ -137,7 +137,7 @@ svg {
 }
 
 .addShadow-lighter {
-  box-shadow : rgba(0,0,0,0.1) 0 0 0 9999px;
+  box-shadow : inset rgba(255, 238, 0, 0.3) 0 0 0 9999px;
   z-index : 30;
 }
 
