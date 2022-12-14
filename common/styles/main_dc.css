@@ -221,6 +221,7 @@ h1 {
   text-overflow: ellipsis;
   -webkit-line-clamp: 1;
   -webkit-box-orient: vertical;
+  font-weight: bolder;
 }
 
 /*---------------------------------- 220913 추가 시작 ----------------------------*/
@@ -1155,7 +1156,6 @@ input:focus::placeholder {
 }
 
 .chat .chat_item .bubble {
-  font-size: clamp(12px, 12px + 1.5vw, 1.5em);
   line-height: 1.6;
   padding: 1rem 1.4rem;
   display: inline-block;

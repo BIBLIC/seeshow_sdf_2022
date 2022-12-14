@@ -1,4 +1,4 @@
-var total_page = 12;//페이지 수 -> 시나리오마다 total_page 수 바꾸기 
+var total_page = 7;//페이지 수 -> 시나리오마다 total_page 수 바꾸기 
 
 //오디오 배열 선언, 페이지 수 대로 배열에 mp3 넣기
 const audioArray = [];
@@ -45,26 +45,7 @@ const pageClickArea = [
         page: 7,
         correctAnswer: "pg_7_answer"
     },
-    {
-        page: 8,
-        correctAnswer: "pg_8_answer"
-    },
-    {
-        page: 9,
-        correctAnswer: "pg_9_answer"
-    },
-    {
-        page: 10,
-        correctAnswer: "pg_10_answer"
-    },
-    {
-        page: 11,
-        correctAnswer: "pg_11_answer"
-    },
-    {
-        page: 12,
-        correctAnswer: "pg_12_answer"
-    },
+
 ];
 
 // ----------------------------------------------------------------------------------------------------------------------- 
@@ -74,19 +55,12 @@ const my_wrap = document.querySelector('.my_wrap');
 const my_wrap2 = document.querySelector('.my_wrap2');
 const share = document.querySelector('.share');
 
-// const factcheck_modal = document.querySelector('.factcheck_modal_1');
-// const factcheck_modal_2 = document.querySelector('.factcheck_modal_2');
-// const factcheck_modal_3 = document.querySelector('.factcheck_modal_3');
-// const factcheck_modal_4 = document.querySelector('.factcheck_modal_4');
-// const factcheck_modal_5 = document.querySelector('.factcheck_modal_5');
-
 const blog_main = document.querySelector('.blog_main');
 
 const modal1 = document.querySelector('.modal1');
 const modal2 = document.querySelector('.modal2');
 
-// factcheck_modal.style.display = "none";
-// factcheck_modal_2.style.display = "none";
+
 const modal2_1 = document.querySelector('.modal2_1');
 const modal2_2 = document.querySelector('.modal2_2');
 const modal3_1 = document.querySelector('.modal3_1');
@@ -108,12 +82,8 @@ my_wrap.style.display = "none";
 my_wrap2.style.display = "none";
 modal6_1.style.display = "none";
 modal6_2.style.display = "none";
-
 modal1.style.display = "none";
-// factcheck_modal_2.style.display = "none";
-// factcheck_modal_3.style.display = "none";
-// factcheck_modal_4.style.display = "none";
-// factcheck_modal_5.style.display = "none";
+
 
 const cursor_pos_1 = document.querySelector('.cursor_pos_1');
 const cursor_wrap_1 = document.querySelector('.cursor_wrap_1');
@@ -130,17 +100,13 @@ const cursor_wrap_5 = document.querySelector('.cursor_wrap_5');
 const cursor_pos_6 = document.querySelector('.cursor_pos_6');
 const cursor_wrap_6 = document.querySelector('.cursor_wrap_6');
 
-cursor_wrap_1.style.zIndex = "20";
-cursor_wrap_2.style.zIndex = "20";
-cursor_wrap_3.style.zIndex = "20";
-cursor_wrap_4.style.zIndex = "20";
-cursor_wrap_5.style.zIndex = "20";
-cursor_wrap_6.style.zIndex = "20";
+cursor_wrap_1.style.zIndex = "40";
+cursor_wrap_2.style.zIndex = "40";
+cursor_wrap_3.style.zIndex = "40";
+cursor_wrap_4.style.zIndex = "40";
+cursor_wrap_5.style.zIndex = "40";
+cursor_wrap_6.style.zIndex = "40";
 
-// cursor_wrap_2.style.visibility = "hidden";
-// cursor_wrap_3.style.visibility = "hidden";
-// cursor_wrap_4.style.visibility = "hidden";
-// cursor_wrap_5.style.visibility = "hidden";
 
 const { createPopper } = Popper;
 createPopper(cursor_pos_1, cursor_wrap_1, {
