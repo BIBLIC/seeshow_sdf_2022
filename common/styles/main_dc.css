@@ -715,11 +715,11 @@ h1 {
 }
 
 .cafe .cafe_item .comment-cont {
-  line-height: 1.7em;
+  /* line-height: 1.7em; */
 }
 
 .blog .blog_item .comment-cont {
-  line-height: 1.7em;
+  /* line-height: 1.7em; */
 }
 
 /* ---------------------------------------------------------------------- */
@@ -1872,12 +1872,12 @@ input:focus::placeholder {
   padding-left: 1em;
 }
 
-.cafe .cafe_item.comment .writer-profile .virtual,
-.cafe .cafe_item.reply .writer-profile .virtual {
-  width: 16%;
-  border-radius: 100%;
-  background: #F6F6F6;
-  border: solid 1px #e0e0e0;
+.cafe .cafe_item .writer-profile .virtual  {
+  width: 55px;
+    height: 55px;
+    border-radius: 100%;
+    background: #F6F6F6;
+    border: solid 1px #e0e0e0;
 }
 
 .cafe .cafe_item .writer-profile .virtual>img {
@@ -1886,7 +1886,7 @@ input:focus::placeholder {
 
 
 .cafe .cafe_item .writer-profile .writer-info .name {
-  font-size: clamp(10px, 10px + 1.2vw, 1.2em);
+  /* font-size: clamp(10px, 10px + 1.2vw, 1.2em); */
   font-weight: bold;
   color: #424242;
   display: flex;
@@ -1902,7 +1902,7 @@ input:focus::placeholder {
   justify-content: flex-start;
   align-items: center;
   color: #bdbdbd;
-  font-size: clamp(9px, 9px + 1vw, 1em);
+  /* font-size: clamp(9px, 9px + 1vw, 1em); */
 }
 
 .cafe .cafe_item .writer-profile .writer-info .info .date {
@@ -1913,7 +1913,7 @@ input:focus::placeholder {
   width: 100%;
   padding-top: 1em;
   padding-left: .5em;
-  font-size: clamp(12px, 12px + 1.5vw, 1.5em);
+  /* font-size: clamp(12px, 12px + 1.5vw, 1.5em); */
 }
 
 .cafe .cafe_item:not(:last-child) {

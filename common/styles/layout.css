@@ -136,9 +136,10 @@ svg {
   z-index : 30;
 }
 
-.addShadow-lighter {
-  box-shadow : inset rgba(255, 238, 0, 0.3) 0 0 0 9999px;
+.addShadow-highlighter-yellow {
+  box-shadow : inset rgba(255, 225, 0, 0.3) 0 0 0 9999px;
   z-index : 30;
+  border-radius: 0.8rem;
 }
 
 .addInnerShadow {

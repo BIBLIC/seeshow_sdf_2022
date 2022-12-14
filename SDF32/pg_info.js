@@ -7,9 +7,7 @@ for (j = 1; j <= total_page; j++) {
     audioArray.push(audio);
 }
 
-// -----------------------------------------------------------------------------------------------------------------------
 //정답 처리할 영역 클래스 명
-//correctAnswer 로 지정한 class 외 영역 클릭 시 모달창 출력
 //-> 후에 for 문 써서 pg_n_answer 로 통일하기
 const pageClickArea = [
     {
@@ -94,8 +92,6 @@ const pageClickArea = [
     },
 ];
 
-// -=----------------------------------------------------------------------------------------------------------------------
-//페이지 수만큼 0부터 {}, 공간이 있어야 함
 const inputAnswer = [
     {},
     {},
@@ -110,7 +106,10 @@ const inputAnswer = [
     {},
     {},
     {},
-    {},
+    {
+        page: 13,
+        inputableAnswer: "123456"
+    },
     {},
     {},
     {},
@@ -119,95 +118,93 @@ const inputAnswer = [
     {},
 ];
 
-
-// -----------------------------------------------------------------------------------------------------------------------
 const modalCont = [
     {
         page: 0,
-        instruction: ""
+        instruction: "'시작하기' 버튼을 클릭하세요."
     },
     {
         page: 1,
-        instruction: ""
+        instruction: "'확인' 버튼을 클릭하세요"
     },
     {
         page: 2,
-        instruction: ""
+        instruction: "기기의 위치정보 액세스를 허용하기 위해 '허용' 버튼을 클릭하세요."
     },
     {
         page: 3,
-        instruction: ""
+        instruction: "기기의 사진, 미디어, 파일 액세스를 허용하기 위해 '허용' 버튼을 클릭하세요."
     },
     {
         page: 4,
-        instruction: ""
+        instruction: "전화 걸기 및 관리를 허용하기 위해 '허용' 버튼을 클릭하세요."
     },
     {
         page: 5,
-        instruction: ""
+        instruction: "'카카오 계정으로 시작하기' 버튼을 클릭하세요."
     },
     {
         page: 6,
-        instruction: ""
+        instruction: "'허용하기' 버튼을 클릭하세요."
     },
     {
         page: 7,
-        instruction: ""
+        instruction: "전화 걸기 및 관리를 허용하기 위해 '허용' 버튼을 클릭하세요."
     },
     {
         page: 8,
-        instruction: ""
+        instruction: "기기의 사진, 미디어, 파일 액세스를 허용하기 위해 '허용' 버튼을 클릭하세요."
     },
     {
         page: 9,
-        instruction: ""
+        instruction: "기기의 위치정보 액세스를 허용하기 위해 '허용' 버튼을 클릭하세요."
     },
     {
         page: 10,
-        instruction: ""
+        instruction: "약관 내용 확인 후 '전체 동의하기'영역을 클릭하세요."
     },
     {
         page: 11,
-        instruction: ""
+        instruction: "'동의하고 계속하기' 버튼을 클릭하세요."
     },
     {
         page: 12,
-        instruction: ""
+        instruction: "휴대폰 번호 11자리를 '-'없이 입력하고 '보내기' 버튼을 클릭하세요."
     },
     {
         page: 13,
-        instruction: ""
+        instruction: "인증번호 '123456'을 입력하고 '변경하기' 버튼을 클릭하세요."
     },
     {
         page: 14,
-        instruction: ""
+        instruction: "완료"
     },
     {
         page: 15,
-        instruction: ""
+        instruction: "완료"
     },
     {
         page: 16,
-        instruction: ""
+        instruction: "완료"
     },
     {
         page: 17,
-        instruction: ""
+        instruction: "완료"
     },
     {
         page: 18,
-        instruction: ""
+        instruction: "완료"
     },
     {
         page: 19,
-        instruction: ""
+        instruction: "완료"
     },
 ];
 
 
 
-// //*******************************************************************************
-// //**************************+    커서   +*********************************** 
+//*******************************************************************************
+//**************************+    커서   +*********************************** 
 
 // const cursor_pos_1 = document.querySelector('.cursor_pos_1');
 // const cursor_pos_2 = document.querySelector('.cursor_pos_2');
@@ -239,7 +236,7 @@ const modalCont = [
 //         {
 //             name: 'offset',
 //             options: {
-//                 offset: [0,0],
+//                 offset: [10,180],
 //             },
 //         },
 //     ],
@@ -250,7 +247,7 @@ const modalCont = [
 //         {
 //             name: 'offset',
 //             options: {
-//                 offset: [30,30],
+//                 offset: [-50,0],
 //             },
 //         },
 //     ],
@@ -301,3 +298,30 @@ const modalCont = [
 // //         },
 // //     ],
 // // });
+
+
+
+// var myPgNum = $(".active").attr('id');// active 되어있는 페이지 id 값
+// var real_pg = myPgNum.slice(1); // id값 앞에 붙은 p 떼어내기
+
+
+$('.pg_2_answer').click(function () {
+    if ($(".active").hasClass("autoNxt") === true) {
+        alert('w');
+
+    }
+});
+
+$(document).on("click", "#next_btn", function () {
+    if ($(".active").hasClass("autoNxt") === true) {
+        alert('w');
+
+    }
+});
+
+$(document).on("click", "#prev_btn", function () {
+    if ($(".active").hasClass("autoNxt") === true) {
+        alert('w');
+
+    }
+});
