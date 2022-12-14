@@ -1,0 +1,775 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta name="viewport"
+        content="width=device-width,height=device-height,initial-scale=1.0,minimum-scale=1.0,maximum-scale=1.0">
+    <title>SDF</title>
+    <link href="../common/styles/reset.css" rel="stylesheet" />
+    <link href="./css/main.css" rel="stylesheet" />
+    <link href="../common/styles/layout.css" rel="stylesheet" />
+    <link href="../common/styles/layout_dc.css" rel="stylesheet" />
+    <link href="../common/styles/main_dc.css" rel="stylesheet" />
+    <!-- <link href="../common/styles/animate.css" rel="stylesheet" /> -->
+    <!-- CSS only -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" crossorigin="anonymous">
+    <!-- JavaScript Bundle with Popper -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-OERcA2EqjJCMA+/3y+gxIOqMEjwtxJY7qPCqsdltbNJuaOe923+mo//f6V8Qbsw3"
+        crossorigin="anonymous"></script>
+    <script src="https://code.jquery.com/jquery-3.6.1.min.js"></script>
+    <script src="https://unpkg.com/@popperjs/core@2"></script>
+</head>
+
+
+<body>
+    <div class="bg_phone">
+        <!--form-theme-background-->
+        <div id="wrap">
+            <div class="view">
+                <div class="contain">
+                    <main class="main" role="main">
+                        <!-- Modal : alert -->
+                        <div class="modal fade" id="staticBackdrop">
+                            <div class="modal-dialog modal-sm">
+                                <div class="modal-content justify-content-center align-items-center">
+                                    <div class="modal-header border-0 w-100">
+                                        <!-- <h5 class="modal-title">
+                                            잠깐!
+                                        </h5> -->
+                                        <button class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                                    </div>
+                                    <div class="modal-body fs-4 text-center ps-4 pe-4 pt-4 pb-4">
+                                        모달 내용
+                                    </div>
+                                    <div class="modal-footer border-0">
+                                        <button class="btn btn-secondary btn-lg" data-bs-dismiss="modal">확인</button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- Modal : text adj -->
+                        <div class="modal fade" id="textModal" data-backdrop="false">
+                            <div class="modal-dialog modal-sm">
+                                <div class="modal-content">
+                                    <div class="modal-header border-0">
+                                        <h5 class="modal-title">
+                                            텍스트 사이즈 조정
+                                        </h5>
+                                        <button class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                                    </div>
+                                    <div class="modal-body">
+                                        모달 내용물
+                                    </div>
+                                    <div class="modal-footer border-0 ">
+                                        <button class="btn btn-secondary btn-lg" data-bs-dismiss="modal">확인</button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <!------------------------------ page 0 (시작 화면) ------------------------------>
+                        <div class="page" id="p0">
+                            <div class="page_wrap">
+                                <img src="./assets/image/0.png" class="pt-5" width="100%">
+                                <div class="w-100 flex-center-center">
+                                    <h3 class="fontSz">💎💎💎</h3>
+                                </div>
+                            </div>
+                        </div>
+                        <!------------------------------ page 1 ------------------------------>
+                        <div class="page" id="p1">
+                            <h1 class="pg_title" style="color: #fff;">Page1</h1>
+                            <div class="page_wrap">
+                                <div id="total_wrap">
+                                    <div
+                                        class="hd_newslist top w-100 d-flex justify-content-between align-items-center px-4 py-3">
+                                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16"
+                                            fill="currentColor" class="bi bi-chevron-left" viewBox="0 0 16 16">
+                                            <path fill-rule="evenodd"
+                                                d="M11.354 1.646a.5.5 0 0 1 0 .708L5.707 8l5.647 5.646a.5.5 0 0 1-.708.708l-6-6a.5.5 0 0 1 0-.708l6-6a.5.5 0 0 1 .708 0z" />
+                                        </svg>
+                                        <div class="flex-fill h-100 d-flex justify-content-center align-items-center">
+                                            <div class="hd_center">
+                                                <h1 class="title_h1">팩트뉴스</h1>
+                                            </div>
+                                        </div>
+                                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-three-dots" viewBox="0 0 16 16">
+                                            <path d="M3 9.5a1.5 1.5 0 1 1 0-3 1.5 1.5 0 0 1 0 3zm5 0a1.5 1.5 0 1 1 0-3 1.5 1.5 0 0 1 0 3zm5 0a1.5 1.5 0 1 1 0-3 1.5 1.5 0 0 1 0 3z"/>
+                                          </svg>
+                                    </div>
+                                    <div id="main" class="news news_main news1">
+                                        <div class="news_item item1 news-scene">
+
+                                            <div class="info_wrap">
+                                                <div class="news-info">
+                                                    <div class="news-cont">
+                                                        <div class="info">
+                                                            <div class="category fontSz">경제</div>
+                                                        </div>
+                                                        <div class="cursor_pos_1">
+                                                            <h2 class="title" style="font-size: 2.0em !important">[단독]팩트첵바이오, 기업 인수 합병으로 신규사업 및 해외 진출 강화</h2>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="writer-info">
+                                                    <div class="info date_info">
+                                                        <div class="date fontSz">20XX.09.27</div>
+                                                        <div class="views fontSz">15:26</div>
+                
+                                                    </div>
+                                                    <div class="guide_wrap " id="guide_wrap_1">
+                                                        <!-- 커서 가이드 -->
+                                                        <div class="cursor_wrap cursor_wrap_1">
+                                                            <span class="cursor" x-placement="bottom">
+                                                                <button class="digital-e__beacon" type="button">
+                                                                    <span class="cursor_outer"></span>
+                                                                    <span class="cursor_inner"><span>
+                                                                </button>
+                                                            </span>
+                                                        </div>
+                                                        <!-- 커서 가이드 -->
+                                                    </div>
+                
+                                                    <div class="writer-profile ">
+                                                        <div class="virtual">
+                                                            <!--프로필 사진 추가-->
+                                                            <img src="./assets/image/.png" class="icon_img profile">
+                                                        </div>
+                                                        <div class="name news-writer news-writer-pos fontSz">나○○ 기자</div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="news-main ">
+                                                <div class="news-cont fontSz">
+                                                    <img src="./assets/image/.png" alt="" class="news_img">
+                
+                                                    <div  class="cursor_pos_2" style="font-size: 1.4em !important">
+                                                        ‘상장사 팩트첵바이오 신규사업 진출, 해외 법인 설립’<br><br>
+                                                        팩트첵바이오가 ODM 전문 업체 (주)영세로를 인수 MOU를 체결하고 신규 사업에 진출을 본격화한다고 27일 밝혔다.<br>
+                                                       
+                                                    </div>
+                
+                                                    <div class="cursor_pos_3" >
+                                                        <br>
+                                                        (이미지 출처)팩트첵바이오 보도자료
+                                                        <img src="./assets/image/.png" alt="" class="news_img">
+                                                    </div>
+                                                    <div style="font-size: 1.4em !important">“이번 인수와 함께 해외 법인을 설립하여 ODM 생산 수주를 위한 글로벌 발판으로 삼을 것"이라며 신규 사업 진출에 대한 포부를
+                                                        밝혔다.<br><br>
+                                                        이어, ‘해외 법인을 통해 팩트첵바이오가 개발 중인 VI-56의 효과적인 글로벌 시장 진출과 성장을 이끌겠다'라는 청사진을
+                                                        내놨다.<br><br><br><br></div>
+                                                    </div>
+                                                    <div class="writer-info_wrap">
+                                                        <div class="info">
+                                                            <div class="name">
+                                                                <img src="./assets/image/.png" class="icon_img video-comment profile">
+                                                                <div style="flex: 1;" class="fontSz">&nbsp; 팩트뉴스 나○○ 기자</div>
+                                                                <!-- <img src="img/icon/camera.svg" class="icon_img ccc"><br> -->
+                                                            </div>
+                                                            <div class="another-news more_news fontSz">
+                                                                다른 기사 보기
+                                                                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="icon_img bi bi-chevron-right" viewBox="0 0 16 16">
+                                                                    <path fill-rule="evenodd" d="M4.646 1.646a.5.5 0 0 1 .708 0l6 6a.5.5 0 0 1 0 .708l-6 6a.5.5 0 0 1-.708-.708L10.293 8 4.646 2.354a.5.5 0 0 1 0-.708z"/>
+                                                                  </svg>
+                                                            </div>
+                                                        </div>
+                                                        <div class="email fontSz">NaSS@gazzanews.com<br><br></div>
+                                                    </div>
+                                                    <div class="fontSz">
+                                                        저작권자 ⓒ팩트뉴스 무단 전재 및 재배포 금지
+                                                    </div>
+                                                </div>
+                                            </div>
+                                           
+                
+                                            <div class="reactions news_react_pos">
+                
+                                                <div class="react_wrap fontSz">
+                                                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="icon_img emoji bi bi-emoji-angry" viewBox="0 0 16 16">
+                                                        <path d="M8 15A7 7 0 1 1 8 1a7 7 0 0 1 0 14zm0 1A8 8 0 1 0 8 0a8 8 0 0 0 0 16z"/>
+                                                        <path d="M4.285 12.433a.5.5 0 0 0 .683-.183A3.498 3.498 0 0 1 8 10.5c1.295 0 2.426.703 3.032 1.75a.5.5 0 0 0 .866-.5A4.498 4.498 0 0 0 8 9.5a4.5 4.5 0 0 0-3.898 2.25.5.5 0 0 0 .183.683zm6.991-8.38a.5.5 0 1 1 .448.894l-1.009.504c.176.27.285.64.285 1.049 0 .828-.448 1.5-1 1.5s-1-.672-1-1.5c0-.247.04-.48.11-.686a.502.502 0 0 1 .166-.761l2-1zm-6.552 0a.5.5 0 0 0-.448.894l1.009.504A1.94 1.94 0 0 0 5 6.5C5 7.328 5.448 8 6 8s1-.672 1-1.5c0-.247-.04-.48-.11-.686a.502.502 0 0 0-.166-.761l-2-1z"/>
+                                                      </svg>
+                                                    화나요
+                                                    <div>14</div>
+                                                </div>
+                                                <div class="react_wrap fontSz">
+                                                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="icon_img emoji bi bi-emoji-laughing" viewBox="0 0 16 16">
+                                                        <path d="M8 15A7 7 0 1 1 8 1a7 7 0 0 1 0 14zm0 1A8 8 0 1 0 8 0a8 8 0 0 0 0 16z"/>
+                                                        <path d="M12.331 9.5a1 1 0 0 1 0 1A4.998 4.998 0 0 1 8 13a4.998 4.998 0 0 1-4.33-2.5A1 1 0 0 1 4.535 9h6.93a1 1 0 0 1 .866.5zM7 6.5c0 .828-.448 0-1 0s-1 .828-1 0S5.448 5 6 5s1 .672 1 1.5zm4 0c0 .828-.448 0-1 0s-1 .828-1 0S9.448 5 10 5s1 .672 1 1.5z"/>
+                                                      </svg>
+                                                    웃겨요
+                                                    <div>20</div>
+                                                </div>
+                                                <div class="react_wrap fontSz">
+                                                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="icon_img emoji bi bi-emoji-neutral" viewBox="0 0 16 16">
+                                                        <path d="M8 15A7 7 0 1 1 8 1a7 7 0 0 1 0 14zm0 1A8 8 0 1 0 8 0a8 8 0 0 0 0 16z"/>
+                                                        <path d="M4 10.5a.5.5 0 0 0 .5.5h7a.5.5 0 0 0 0-1h-7a.5.5 0 0 0-.5.5zm3-4C7 5.672 6.552 5 6 5s-1 .672-1 1.5S5.448 8 6 8s1-.672 1-1.5zm4 0c0-.828-.448-1.5-1-1.5s-1 .672-1 1.5S9.448 8 10 8s1-.672 1-1.5z"/>
+                                                      </svg>
+                                                    별로예요
+                                                    <div>36</div>
+                                                </div>
+                                                <div class="react_wrap fontSz">
+                                                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="icon_img emoji bi bi-emoji-wink" viewBox="0 0 16 16">
+                                                        <path d="M8 15A7 7 0 1 1 8 1a7 7 0 0 1 0 14zm0 1A8 8 0 1 0 8 0a8 8 0 0 0 0 16z"/>
+                                                        <path d="M4.285 9.567a.5.5 0 0 1 .683.183A3.498 3.498 0 0 0 8 11.5a3.498 3.498 0 0 0 3.032-1.75.5.5 0 1 1 .866.5A4.498 4.498 0 0 1 8 12.5a4.498 4.498 0 0 1-3.898-2.25.5.5 0 0 1 .183-.683zM7 6.5C7 7.328 6.552 8 6 8s-1-.672-1-1.5S5.448 5 6 5s1 .672 1 1.5zm1.757-.437a.5.5 0 0 1 .68.194.934.934 0 0 0 .813.493c.339 0 .645-.19.813-.493a.5.5 0 1 1 .874.486A1.934 1.934 0 0 1 10.25 7.75c-.73 0-1.356-.412-1.687-1.007a.5.5 0 0 1 .194-.68z"/>
+                                                      </svg>
+                                                    공감돼요
+                                                    <div>15</div>
+                                                </div>
+                                                <div class="react_wrap fontSz">
+                                                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="icon_img emoji bi bi-emoji-heart-eyes" viewBox="0 0 16 16">
+                                                        <path d="M8 15A7 7 0 1 1 8 1a7 7 0 0 1 0 14zm0 1A8 8 0 1 0 8 0a8 8 0 0 0 0 16z"/>
+                                                        <path d="M11.315 10.014a.5.5 0 0 1 .548.736A4.498 4.498 0 0 1 7.965 13a4.498 4.498 0 0 1-3.898-2.25.5.5 0 0 1 .548-.736h.005l.017.005.067.015.252.055c.215.046.515.108.857.169.693.124 1.522.242 2.152.242.63 0 1.46-.118 2.152-.242a26.58 26.58 0 0 0 1.109-.224l.067-.015.017-.004.005-.002zM4.756 4.566c.763-1.424 4.02-.12.952 3.434-4.496-1.596-2.35-4.298-.952-3.434zm6.488 0c1.398-.864 3.544 1.838-.952 3.434-3.067-3.554.19-4.858.952-3.434z"/>
+                                                      </svg>
+                                                    좋아요
+                                                    <div>12</div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                    <div class="cafebar">
+                                        <div class="reactions">
+                                            <div class="like like_topside">
+                                                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="icon_img bar bi bi-chat-right-text" viewBox="0 0 16 16">
+                                                    <path d="M2 1a1 1 0 0 0-1 1v8a1 1 0 0 0 1 1h9.586a2 2 0 0 1 1.414.586l2 2V2a1 1 0 0 0-1-1H2zm12-1a2 2 0 0 1 2 2v12.793a.5.5 0 0 1-.854.353l-2.853-2.853a1 1 0 0 0-.707-.293H2a2 2 0 0 1-2-2V2a2 2 0 0 1 2-2h12z"/>
+                                                    <path d="M3 3.5a.5.5 0 0 1 .5-.5h9a.5.5 0 0 1 0 1h-9a.5.5 0 0 1-.5-.5zM3 6a.5.5 0 0 1 .5-.5h9a.5.5 0 0 1 0 1h-9A.5.5 0 0 1 3 6zm0 2.5a.5.5 0 0 1 .5-.5h5a.5.5 0 0 1 0 1h-5a.5.5 0 0 1-.5-.5z"/>
+                                                  </svg>
+                                                  &nbsp댓글
+                                            </div>
+                                            <div class="comment">
+                                                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="icon_img bar bi bi-share-fill" viewBox="0 0 16 16">
+                                                    <path d="M11 2.5a2.5 2.5 0 1 1 .603 1.628l-6.718 3.12a2.499 2.499 0 0 1 0 1.504l6.718 3.12a2.5 2.5 0 1 1-.488.876l-6.718-3.12a2.5 2.5 0 1 1 0-3.256l6.718-3.12A2.5 2.5 0 0 1 11 2.5z"/>
+                                                  </svg>
+                                                  &nbsp공유
+                                    
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                    
+                                </div>
+
+
+                            </div>
+                        </div>
+
+                        <!------------------------------ page 6 ------------------------------>
+                        <div class="page" id="p6">
+                            <h1 class="pg_title" style="color: #fff;">Page6</h1>
+                            <div class="page_wrap">
+                                <div
+                                        class="hd_cafe top w-100 d-flex justify-content-between align-items-center px-4 py-3">
+                                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16"
+                                            fill="currentColor" class="bi bi-chevron-left" viewBox="0 0 16 16">
+                                            <path fill-rule="evenodd"
+                                                d="M11.354 1.646a.5.5 0 0 1 0 .708L5.707 8l5.647 5.646a.5.5 0 0 1-.708.708l-6-6a.5.5 0 0 1 0-.708l6-6a.5.5 0 0 1 .708 0z" />
+                                        </svg>
+                                        <div class="flex-fill h-100 d-flex justify-content-center align-items-center">
+                                            <div class="hd_center">
+                                                <h1 class="title_h1">아름다운 카페</h1>
+                                            </div>
+                                        </div>
+                                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-three-dots" viewBox="0 0 16 16">
+                                            <path d="M3 9.5a1.5 1.5 0 1 1 0-3 1.5 1.5 0 0 1 0 3zm5 0a1.5 1.5 0 1 1 0-3 1.5 1.5 0 0 1 0 3zm5 0a1.5 1.5 0 1 1 0-3 1.5 1.5 0 0 1 0 3z"/>
+                                          </svg>
+                                    </div>
+                                <div class="" id="main">
+                                    
+                                    <div class="cafe cafe_main cafe1-1" role="main">
+                                        <div class="info_wrap">
+                                            <div class="cafe-info">
+                                                <div class="comment-info">
+                                                    <div>댓글</div>
+                                                    <div class="comment">3</div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        
+                                       
+                                        <div class="cafe_item cafe_item1 comment">
+                                            <!-- <div class="info_wrap"> -->
+                                            <div class="writer-profile">
+                                                <div class="profile_wrap">
+                                                    <div class="virtual">
+                                                        <!--프로필 사진 추가-->
+                                                        <img src="./assets/image/.png" width="100%">
+                                                    </div>
+                                                    <div class="writer-info">
+                                                        <div class="name">궁금이&nbsp&nbsp
+                                                            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-1-circle-fill" viewBox="0 0 16 16">
+                                                                <path d="M16 8A8 8 0 1 1 0 8a8 8 0 0 1 16 0ZM9.283 4.002H7.971L6.072 5.385v1.271l1.834-1.318h.065V12h1.312V4.002Z"/>
+                                                              </svg>
+                                                        </div>
+                                                        <div class="info">
+                                                            <div class="date">20XX.08.17</div>
+                                                            <div class="time">13:22</div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="icon_img ccc bi bi-three-dots" viewBox="0 0 16 16">
+                                                    <path d="M3 9.5a1.5 1.5 0 1 1 0-3 1.5 1.5 0 0 1 0 3zm5 0a1.5 1.5 0 1 1 0-3 1.5 1.5 0 0 1 0 3zm5 0a1.5 1.5 0 1 1 0-3 1.5 1.5 0 0 1 0 3z"/>
+                                                </svg>
+                                            </div>
+                                            <!-- </div> -->
+                                            <div class="comment-cont fontSz">
+                                                <div style="font-size: 1.4em !important">
+                                                    복용량/방법 좀 알수있을까요?
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="cafe_item cafe_item2 reply" onclick="paste()">
+                                            <div class="reply_item">
+                                                <div class="icon_reply">
+                                                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="icon_reply bi bi-arrow-return-right" viewBox="0 0 16 16">
+                                                        <path fill-rule="evenodd" d="M1.5 1.5A.5.5 0 0 0 1 2v4.8a2.5 2.5 0 0 0 2.5 2.5h9.793l-3.347 3.346a.5.5 0 0 0 .708.708l4.2-4.2a.5.5 0 0 0 0-.708l-4-4a.5.5 0 0 0-.708.708L13.293 8.3H3.5A1.5 1.5 0 0 1 2 6.8V2a.5.5 0 0 0-.5-.5z"/>
+                                                      </svg>
+                                                </div>
+                                                <div class="writer-profile">
+                                                    <div class="profile_wrap">
+                                                        <div class="virtual">
+                                                            <!--프로필 사진 추가-->
+                                                            <img src="./assets/image/.png" width="100%">
+                                                        </div>
+                                                        <div class="writer-info fontSz">
+                                                            <div class="name">건강전도자K&nbsp&nbsp
+                                                                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-2-circle-fill" viewBox="0 0 16 16">
+                                                                    <path d="M16 8A8 8 0 1 1 0 8a8 8 0 0 1 16 0ZM6.646 6.24c0-.691.493-1.306 1.336-1.306.756 0 1.313.492 1.313 1.236 0 .697-.469 1.23-.902 1.705l-2.971 3.293V12h5.344v-1.107H7.268v-.077l1.974-2.22.096-.107c.688-.763 1.287-1.428 1.287-2.43 0-1.266-1.031-2.215-2.613-2.215-1.758 0-2.637 1.19-2.637 2.402v.065h1.271v-.07Z"/>
+                                                                  </svg>
+                                                            </div>
+                                                            <div class="info">
+                                                                <div class="date">20XX.08.18</div>
+                                                                <div class="time">11:44</div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="icon_img ccc bi bi-three-dots" viewBox="0 0 16 16">
+                                                        <path d="M3 9.5a1.5 1.5 0 1 1 0-3 1.5 1.5 0 0 1 0 3zm5 0a1.5 1.5 0 1 1 0-3 1.5 1.5 0 0 1 0 3zm5 0a1.5 1.5 0 1 1 0-3 1.5 1.5 0 0 1 0 3z"/>
+                                                    </svg>
+                                                </div>
+                                            </div>
+                                            <div class="comment-cont fontSz addShadow-highlighter-yellow cursor_pos_6">
+                                                <div style="font-size: 1.4em !important">
+                                                    사람용 비타민BX도 고글 서치에서 검색해 보세요. 2002년 기사에 보니 이미 강력한 항암효과가 입증되어 제약회사에서 개발 독점 판매권을 사들였네요.
+                                                    비타민BX도 곧 이렇게 될 수도 있겠어요.
+                                                </div>
+                                                <div class="cursor_here ">
+                                                    <!-- 커서 가이드 -->
+                                                <div class="cursor_wrap cursor_wrap_6 pg_6_answer">
+                                                    <span class="cursor pg_6_answer" x-placement="bottom">
+                                                        <button class="digital-e__beacon pg_6_answer">
+                                                            <span class="cursor_outer pg_6_answer"></span>
+                                                            <span class="cursor_inner pg_6_answer"><span>
+                                                        </button>
+                                                    </span>
+                                                </div>
+                                                <!-- 커서 가이드 -->
+                                                </div>
+                
+                                            </div>
+                                            
+                                        </div>
+                                        <div class="cafe_item cafe_item2 reply" onclick="paste()">
+                                            <div class="reply_item">
+                                                <div class="icon_reply">
+                                                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="icon_reply bi bi-arrow-return-right" viewBox="0 0 16 16">
+                                                        <path fill-rule="evenodd" d="M1.5 1.5A.5.5 0 0 0 1 2v4.8a2.5 2.5 0 0 0 2.5 2.5h9.793l-3.347 3.346a.5.5 0 0 0 .708.708l4.2-4.2a.5.5 0 0 0 0-.708l-4-4a.5.5 0 0 0-.708.708L13.293 8.3H3.5A1.5 1.5 0 0 1 2 6.8V2a.5.5 0 0 0-.5-.5z"/>
+                                                      </svg>
+                                                </div>
+                                                <div class="writer-profile">
+                                                    <div class="profile_wrap">
+                                                        <div class="virtual">
+                                                            <!--프로필 사진 추가-->
+                                                            <img src="./assets/image/.png" width="100%">
+                                                        </div>
+                                                        <div class="writer-info fontSz">
+                                                            <div class="name">궁금이&nbsp&nbsp
+                                                                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-1-circle-fill" viewBox="0 0 16 16">
+                                                                    <path d="M16 8A8 8 0 1 1 0 8a8 8 0 0 1 16 0ZM9.283 4.002H7.971L6.072 5.385v1.271l1.834-1.318h.065V12h1.312V4.002Z"/>
+                                                                  </svg>
+                                                            </div>
+                                                            <div class="info fontSz">
+                                                                <div class="date">20XX.08.17</div>
+                                                                <div class="time">19:12</div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="icon_img ccc bi bi-three-dots" viewBox="0 0 16 16">
+                                                        <path d="M3 9.5a1.5 1.5 0 1 1 0-3 1.5 1.5 0 0 1 0 3zm5 0a1.5 1.5 0 1 1 0-3 1.5 1.5 0 0 1 0 3zm5 0a1.5 1.5 0 1 1 0-3 1.5 1.5 0 0 1 0 3z"/>
+                                                    </svg>
+                                                </div>
+                                            </div>
+                                            <div class="comment-cont">
+                                                <div style="font-size: 1.4em !important">
+                                                    <img src="./img/ava/emo8.png" width="22%">
+                                                </div>
+                                                <div class="cursor_here">
+                
+                                                </div>
+                
+                                            </div>
+                                            
+                                        </div>
+
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <!------------------------------ page 7 ------------------------------>
+                        <div class="page" id="p7">
+                            <div class="page_wrap">
+                                <!-- <h1 class="pg_title" style="color: #fff;">Page7</h1> -->
+                                <h1 class="title_h1"><img src="../assets/done.png" width="100%"></h1>
+                            </div>
+                        </div>
+
+                        <div class="modal_wrap">
+                            <div class="FactCheck1_wrap">
+
+
+
+                                <!--  모달창 입니다  -->
+                                <div class="modal1  popup" id="modal1">
+                                    <div class="title ">잠깐!</div>
+                                    <div class="content">
+                                        <p class="fc_msg text1">
+                                            게시글 작성자가 신뢰할 만한 사람인가요? 정보의 생산자가 전달한 정보의 전문 지식을 가지고 있는 사람인지 확인해 보세요.
+                                        </p>
+                                    </div>
+                                    <div class="cmd">
+                                        <div class="btn btn-next btn_nxt_pg okBtn1" raised="true" id="okBtn1">다음</div>
+                                    </div>
+                                </div>
+                                <!-- 여기까지 모달창 -->
+
+                            </div>
+                            <div class="FactCheck2_wrap">
+
+
+
+                                <!--  모달창 입니다  -->
+                                <div class="modal2_1  popup" id="modal1">
+                                    <div class="title ">잠깐!</div>
+                                    <div class="content">
+                                        <p class="fc_msg text1">
+                                            관심을 끌기 위한 자극적인 제목의 게시글일 수 있습니다.
+                                        </p>
+                                    </div>
+                                    <div class="cmd">
+                                        <div class="btn btn-next okBtn2" raised="true" id="okBtn1">다음</div>
+                                    </div>
+                                </div>
+                                <!-- 여기까지 모달창 -->
+                            </div>
+                            <div class="FactCheck3_wrap">
+
+                                <!--  모달창 입니다  -->
+                                <div class="modal3_1  popup" id="modal1">
+                                    <div class="title ">잠깐!</div>
+                                    <div class="content">
+                                        <p class="fc_msg text1">
+                                            정확하지 않은 정보를 다른 사람에게 공유하는 것은 속설의 확산을 가속합니다.
+                                        </p>
+                                    </div>
+                                    <div class="cmd">
+                                        <div class="btn btn-next nxtBtn3" raised="true" id="okBtn1" onclick="next_3()">
+                                            다음</div>
+                                    </div>
+                                </div>
+                                <!-- 여기까지 모달창 -->
+                                <!--  모달창 입니다  -->
+                                <div class="modal3_2  popup" id="modal1">
+                                    <div class="title ">잠깐!</div>
+                                    <div class="content">
+                                        <p class="fc_msg text1">
+                                            전문 기관에서 작성되지 않은 글을 읽을 때는 전달하는 정보가 과학적으로 검증 과정을 거친 사실인지 확인하고, 원인과 결과의 연관관계를
+                                            확인해 보아야
+                                            합니다.
+                                        </p>
+                                    </div>
+                                    <div class="cmd">
+                                        <div class="btn btn-next okBtn3" raised="true" id="okBtn1" onclick="ok_3()">확인
+                                        </div>
+                                    </div>
+                                </div>
+                                <!-- 여기까지 모달창 -->
+                            </div>
+                            <div class="FactCheck4_wrap">
+
+
+                                <!--  모달창 입니다  -->
+                                <div class="modal4_1  popup" id="modal1">
+                                    <div class="title ">잠깐!</div>
+                                    <div class="content">
+                                        <p class="fc_msg text1">
+                                            게시물 내용과 연관 없는 사진이 사용되었습니다.
+                                        </p>
+                                    </div>
+                                    <div class="cmd">
+                                        <div class="btn btn-next nxtBtn4" raised="true" id="okBtn1" onclick="next_4()">
+                                            다음</div>
+                                    </div>
+                                </div>
+                                <!-- 여기까지 모달창 -->
+                                <!--  모달창 입니다  -->
+                                <div class="modal4_2  popup" id="modal1">
+                                    <div class="title ">잠깐!</div>
+                                    <div class="content">
+                                        <p class="fc_msg text1">
+                                            첨부된 자료와 해당 게시글에서 전달하고자 하는 정보 사이에 연관성이 있는지 확인하는 습관이 필요합니다.
+                                        </p>
+                                    </div>
+                                    <div class="cmd">
+                                        <div class="btn btn-next okBtn4" raised="true" id="okBtn1" onclick="ok_4()">확인
+                                        </div>
+                                    </div>
+                                </div>
+                                <!-- 여기까지 모달창 -->
+
+
+                            </div>
+                            <div class="FactCheck5_wrap">
+
+
+                                <!--  모달창 입니다  -->
+                                <div class="modal5_1  popup" id="modal1">
+                                    <div class="title ">잠깐!</div>
+                                    <div class="content">
+                                        <p class="fc_msg text1">
+                                        </p>
+                                    </div>
+                                    <div class="cmd">
+                                        <div class="btn btn-next okBtn5" raised="true" id="okBtn1" onclick="ok_5()">다음
+                                        </div>
+                                    </div>
+                                </div>
+                                <!-- 여기까지 모달창 -->
+                            </div>
+
+                            <div class="FactCheck6_wrap">
+
+
+                                <!--  모달창 입니다  -->
+                                <div class="modal6_1 popup" id="modal1">
+                                    <div class="title">잠깐!</div>
+                                    <div class="content">
+                                        <p class="fc_msg text1">
+                                            정확하지 않은 정보를 다른 사람에게 공유하는 것은 속설의 확산을 가속합니다.
+                                        </p>
+                                    </div>
+                                    <div class="cmd">
+                                        <div class="btn btn-next nxtBtn6" raised="true" id="okBtn1" onclick="next_6()">
+                                            다음</div>
+                                    </div>
+                                </div>
+                                <!-- 여기까지 모달창 -->
+                                <!--  모달창 입니다  -->
+                                <div class="modal6_2 popup" id="modal1">
+                                    <div class="title">잠깐!</div>
+                                    <div class="content">
+                                        <p class="fc_msg text1">
+                                            다른 사람들에게 정보를 전달하기 전에는 주의를 기울여 확인하는 습관을 들여야 합니다.
+                                        </p>
+                                    </div>
+                                    <div class="cmd">
+                                        <div class="btn btn-next okBtn6" raised="true" id="okBtn1" onclick="ok_6()">확인
+                                        </div>
+                                    </div>
+                                </div>
+                                <!-- 여기까지 모달창 -->
+
+
+                            </div>
+
+                            
+                            <!--  모달창 입니다 : 복사하기 -->
+                            <div class="my_wrap2">
+
+                                <div class=" paste_modal" id="paste_modal" onclick="entry()">
+                                    <div class="text_wrap ">
+                                        <div class="paste_title paste_title1">
+                                            <div class="title copy" id="cafe_title">
+                                                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="icon_img bar bi bi-link-45deg" viewBox="0 0 16 16">
+                                                    <path d="M4.715 6.542 3.343 7.914a3 3 0 1 0 4.243 4.243l1.828-1.829A3 3 0 0 0 8.586 5.5L8 6.086a1.002 1.002 0 0 0-.154.199 2 2 0 0 1 .861 3.337L6.88 11.45a2 2 0 1 1-2.83-2.83l.793-.792a4.018 4.018 0 0 1-.128-1.287z"/>
+                                                    <path d="M6.586 4.672A3 3 0 0 0 7.414 9.5l.775-.776a2 2 0 0 1-.896-3.346L9.12 3.55a2 2 0 1 1 2.83 2.83l-.793.792c.112.42.155.855.128 1.287l1.372-1.372a3 3 0 1 0-4.243-4.243L6.586 4.672z"/>
+                                                  </svg>
+                                                링크복사
+                                            </div>
+                                        </div>
+                                        <div class="paste_title paste_title2 cursor_pos_2">
+                                            <div class="title send" id="cafe_title">
+                                                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="icon_img bar bi bi-box-arrow-up-right" viewBox="0 0 16 16">
+                                                    <path fill-rule="evenodd" d="M8.636 3.5a.5.5 0 0 0-.5-.5H1.5A1.5 1.5 0 0 0 0 4.5v10A1.5 1.5 0 0 0 1.5 16h10a1.5 1.5 0 0 0 1.5-1.5V7.864a.5.5 0 0 0-1 0V14.5a.5.5 0 0 1-.5.5h-10a.5.5 0 0 1-.5-.5v-10a.5.5 0 0 1 .5-.5h6.636a.5.5 0 0 0 .5-.5z"/>
+                                                    <path fill-rule="evenodd" d="M16 .5a.5.5 0 0 0-.5-.5h-5a.5.5 0 0 0 0 1h3.793L6.146 9.146a.5.5 0 1 0 .708.708L15 1.707V5.5a.5.5 0 0 0 1 0v-5z"/>
+                                                  </svg>
+                                                전달하기
+                                            </div>
+                                        </div>
+
+                                        <div class="paste_title paste_title3">
+                                            <div class="title share" id="cafe_title">
+                                                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="icon_img bar bi bi-share" viewBox="0 0 16 16">
+                                                    <path d="M13.5 1a1.5 1.5 0 1 0 0 3 1.5 1.5 0 0 0 0-3zM11 2.5a2.5 2.5 0 1 1 .603 1.628l-6.718 3.12a2.499 2.499 0 0 1 0 1.504l6.718 3.12a2.5 2.5 0 1 1-.488.876l-6.718-3.12a2.5 2.5 0 1 1 0-3.256l6.718-3.12A2.5 2.5 0 0 1 11 2.5zm-8.5 4a1.5 1.5 0 1 0 0 3 1.5 1.5 0 0 0 0-3zm11 5.5a1.5 1.5 0 1 0 0 3 1.5 1.5 0 0 0 0-3z"/>
+                                                </svg>
+                                                 공유하기
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="guide_wrap" , id="guide_wrap2">
+
+                                        <!-- 커서 가이드 -->
+                                        <div class="cursor_wrap">
+                                            <span class="cursor2" x-placement="bottom">
+                                                <button class="digital-e__beacon" type="button">
+                                                    <span class="cursor_outer"></span>
+                                                    <span class="cursor_inner"><span>
+                                                </button>
+                                            </span>
+                                        </div>
+                                        <!-- 커서 가이드 -->
+                                    </div>
+                                </div>
+
+
+
+                            </div>
+
+                            <!-- 여기까지 모달창 -->
+                        </div>
+
+                    </main>
+
+                    <div class="ctrlbar-bg"></div>
+                    <div class="ctrlbar" id="ctrlbar">
+                        <div class="start_btn_wrap">
+                            <button class="btn start_btn btn-lg" id="start-btn">시작하기</button>
+                        </div>
+                        <div class="nav_btn_wrap">
+                            <div class="baricon_wrap prev" id="prev_btn">
+                                <div class="baricon">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+                                        class="bi bi-caret-left-fill svg" viewBox="0 0 16 16">
+                                        <path
+                                            d="m3.86 8.753 5.482 4.796c.646.566 1.658.106 1.658-.753V3.204a1 1 0 0 0-1.659-.753l-5.48 4.796a1 1 0 0 0 0 1.506z" />
+                                    </svg>
+                                </div>
+                                <div class="bartext">이전</div>
+                            </div>
+                            <div class="baricon_wrap pause">
+
+                                <div class="stop" id="pause_btn">
+                                    <div class="baricon">
+                                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16"
+                                            fill="currentColor" class="bi bi-volume-mute-fill svg" viewBox="0 0 16 16">
+                                            <path
+                                                d="M6.717 3.55A.5.5 0 0 1 7 4v8a.5.5 0 0 1-.812.39L3.825 10.5H1.5A.5.5 0 0 1 1 10V6a.5.5 0 0 1 .5-.5h2.325l2.363-1.89a.5.5 0 0 1 .529-.06zm7.137 2.096a.5.5 0 0 1 0 .708L12.207 8l1.647 1.646a.5.5 0 0 1-.708.708L11.5 8.707l-1.646 1.647a.5.5 0 0 1-.708-.708L10.793 8 9.146 6.354a.5.5 0 1 1 .708-.708L11.5 7.293l1.646-1.647a.5.5 0 0 1 .708 0z" />
+                                        </svg>
+                                    </div>
+                                    <div class="bartext text-center">멈춤</div>
+                                </div>
+
+                                <div class="play" id="play_btn">
+                                    <div class="baricon">
+                                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16"
+                                            fill="currentColor" class="bi bi-volume-up-fill svg" viewBox="0 0 16 16">
+                                            <path
+                                                d="M11.536 14.01A8.473 8.473 0 0 0 14.026 8a8.473 8.473 0 0 0-2.49-6.01l-.708.707A7.476 7.476 0 0 1 13.025 8c0 2.071-.84 3.946-2.197 5.303l.708.707z" />
+                                            <path
+                                                d="M10.121 12.596A6.48 6.48 0 0 0 12.025 8a6.48 6.48 0 0 0-1.904-4.596l-.707.707A5.483 5.483 0 0 1 11.025 8a5.483 5.483 0 0 1-1.61 3.89l.706.706z" />
+                                            <path
+                                                d="M8.707 11.182A4.486 4.486 0 0 0 10.025 8a4.486 4.486 0 0 0-1.318-3.182L8 5.525A3.489 3.489 0 0 1 9.025 8 3.49 3.49 0 0 1 8 10.475l.707.707zM6.717 3.55A.5.5 0 0 1 7 4v8a.5.5 0 0 1-.812.39L3.825 10.5H1.5A.5.5 0 0 1 1 10V6a.5.5 0 0 1 .5-.5h2.325l2.363-1.89a.5.5 0 0 1 .529-.06z" />
+                                        </svg>
+                                    </div>
+                                    <div class="bartext text-center">재생</div>
+                                </div>
+
+                            </div>
+                            <div class="baricon_wrap" id="character">
+                                <!-- <div class="baricon">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+                                    class="bi bi-lightbulb-fill svg hint" viewBox="0 0 16 16">
+                                    <path
+                                        d="M2 6a6 6 0 1 1 10.174 4.31c-.203.196-.359.4-.453.619l-.762 1.769A.5.5 0 0 1 10.5 13h-5a.5.5 0 0 1-.46-.302l-.761-1.77a1.964 1.964 0 0 0-.453-.618A5.984 5.984 0 0 1 2 6zm3 8.5a.5.5 0 0 1 .5-.5h5a.5.5 0 0 1 0 1l-.224.447a1 1 0 0 1-.894.553H6.618a1 1 0 0 1-.894-.553L5.5 15a.5.5 0 0 1-.5-.5z" />
+                                </svg>
+                                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+                                    class="bi bi-question svg front" viewBox="0 0 16 16">
+                                    <path
+                                        d="M5.255 5.786a.237.237 0 0 0 .241.247h.825c.138 0 .248-.113.266-.25.09-.656.54-1.134 1.342-1.134.686 0 1.314.343 1.314 1.168 0 .635-.374.927-.965 1.371-.673.489-1.206 1.06-1.168 1.987l.003.217a.25.25 0 0 0 .25.246h.811a.25.25 0 0 0 .25-.25v-.105c0-.718.273-.927 1.01-1.486.609-.463 1.244-.977 1.244-2.056 0-1.511-1.276-2.241-2.673-2.241-1.267 0-2.655.59-2.75 2.286zm1.557 5.763c0 .533.425.927 1.01.927.609 0 1.028-.394 1.028-.927 0-.552-.42-.94-1.029-.94-.584 0-1.009.388-1.009.94z" />
+                                </svg>
+                               
+                            </div>
+                            <div class="bartext"></div> -->
+                                <img src="../common/images/character1.png" class="character" width="100%">
+                            </div>
+                            <div class="baricon_wrap" id="size_btn">
+                                <div id="tSlider" class="baricon" data-bs-toggle="popover">
+                                    <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"
+                                        width="44" zoomAndPan="magnify" viewBox="0 0 375 374.999991" height="44"
+                                        preserveAspectRatio="xMidYMid meet" version="1.0">
+                                        <defs>
+                                            <g />
+                                        </defs>
+                                        <g fill="#000000" fill-opacity="1">
+                                            <g transform="translate(-55.71148, 314.999979)">
+                                                <g>
+                                                    <path
+                                                        d="M 97.234375 -205.578125 C 89.242188 -205.578125 85.25 -211.9375 85.25 -224.65625 C 85.25 -237.09375 89.539062 -243.3125 98.125 -243.3125 L 257.96875 -243.3125 C 269.507812 -243.3125 275.28125 -236.648438 275.28125 -223.328125 L 275.28125 -112.78125 C 275.28125 -83.46875 263.882812 -68.8125 241.09375 -68.8125 L 227.328125 -68.8125 L 227.328125 -205.578125 Z M 97.234375 -205.578125 " />
+                                                </g>
+                                            </g>
+                                        </g>
+                                        <g fill="#000000" fill-opacity="1">
+                                            <g transform="translate(187.499992, 317.537478)">
+                                                <g>
+                                                    <path
+                                                        d="M 51.25 -108.34375 C 47.03125 -108.34375 44.921875 -111.695312 44.921875 -118.40625 C 44.921875 -124.957031 47.1875 -128.234375 51.71875 -128.234375 L 135.953125 -128.234375 C 142.035156 -128.234375 145.078125 -124.722656 145.078125 -117.703125 L 145.078125 -59.4375 C 145.078125 -43.988281 139.070312 -36.265625 127.0625 -36.265625 L 119.8125 -36.265625 L 119.8125 -108.34375 Z M 51.25 -108.34375 " />
+                                                </g>
+                                            </g>
+                                        </g>
+                                    </svg>
+                                </div>
+                                <div class="bartext">크기</div>
+                            </div>
+                            <div class="baricon_wrap next" id="next_btn">
+                                <div class="baricon">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+                                        class="bi bi-caret-right-fill svg" viewBox="0 0 16 16">
+                                        <path
+                                            d="m12.14 8.753-5.482 4.796c-.646.566-1.658.106-1.658-.753V3.204a1 1 0 0 1 1.659-.753l5.48 4.796a1 1 0 0 1 0 1.506z" />
+                                    </svg>
+                                </div>
+                                <div class="bartext">다음</div>
+                            </div>
+                        </div>
+                        <!-- popover : slider --------------- -->
+                        <div hidden>
+                            <div data-name="popover-content" class="d-flex justify-content-center align-items-center">
+
+                                <!-- /////////////// -->
+                                <div class="txt_ex1 fw-bold">가</div>
+                                <!-- <input type="range" name="slider" id="slider" value="0" min="0" max="2"  /> -->
+                                <input type="range" min="0" max="2" value="0" class="slider" id="tSliderRange">
+                                <!-- <p>Value: <span id="value"></span></p> -->
+                                <div class="txt_ex2 fs-3 fw-bold">가</div>
+                                <!-- /////////////// -->
+
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+
+
+
+
+
+
+            </div>
+        </div>
+    </div>
+    <script src="pg_info.js"> </script>
+    <script src="pg_handler_dc2.js"> </script>
+    <!-- <script type="text/javascript" src="bootstrap-slider.js"></script> -->
+</body>
+
+</html>

@@ -2956,16 +2956,15 @@ align-items: center;
   margin-bottom: 8px;
 }
 
-.news .news_item .reactions {
+.news .reactions {
   width: 90%;
   display: flex;
   justify-content: space-around;
-  align-items: center;
-  font-size: clamp(10px, 10px + 1.3vw, 1.3em);
   font-weight: bold;
   padding-top: 1em;
   margin-top: 1em;
   margin-bottom: .5em;
+  align-items: center;
 }
 
 .news .news_item .reactions .react_wrap {
@@ -2998,8 +2997,6 @@ align-items: center;
   padding-bottom: 1em;
   padding-left: .5em;
   padding-right: .5em;
-  font-size: clamp(12px, 12px + 1.5vw, 1.5em);
-  line-height: 2em;
   border-bottom: 1px solid #e0e0e0;
   word-break: keep-all;
   word-wrap: break-word;
