@@ -411,6 +411,7 @@ $(document).on("click", ".pg_5_answer", function () {
     next();
 });
 
+
 //( 6 )++++++++++++++++++++++++++++
 $(document).on("click", ".pg_6_answer", function () {
     cursor_wrap_6.style.display = "none";
@@ -419,7 +420,7 @@ $(document).on("click", ".pg_6_answer", function () {
 $(document).on("click", ".my_wrap2", function () {
     //cursor_wrap_6.style.display = "none";
     my_wrap2.style.display = "none";
-    modal3_1.style.display = "";
+    modal6_1.style.display = "";
 });
 $(document).on("click", ".nxtBtn6", function () {
     modal6_1.style.display = "none";
