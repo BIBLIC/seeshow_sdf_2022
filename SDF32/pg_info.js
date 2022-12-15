@@ -305,23 +305,38 @@ const modalCont = [
 // var real_pg = myPgNum.slice(1); // id값 앞에 붙은 p 떼어내기
 
 
-$('.pg_2_answer').click(function () {
-    if ($(".active").hasClass("autoNxt") === true) {
-        alert('w');
-
+$(document).on("click", '.pg_2_answer', function () {
+    if (page_num === 3) {
+        $( document ).ready(function() {
+            setTimeout(function () {
+                if (page_num === 3) {
+                    next();
+                }
+            }, 800);
+          });  
     }
 });
 
 $(document).on("click", "#next_btn", function () {
-    if ($(".active").hasClass("autoNxt") === true) {
-        alert('w');
-
+    if (page_num === 2) {
+        $( document ).ready(function() {
+            setTimeout(function () {
+                if (page_num === 3) {
+                    next();
+                }
+            }, 800);
+          });  
     }
 });
 
 $(document).on("click", "#prev_btn", function () {
-    if ($(".active").hasClass("autoNxt") === true) {
-        alert('w');
-
+    if (page_num === 4) {
+        $( document ).ready(function() {
+            setTimeout(function () {
+                if (page_num === 3) {
+                    next();
+                }
+            }, 800);
+          });  
     }
 });

@@ -1,3 +1,11 @@
+body{
+    -ms-overflow-style: none;
+    }
+    
+   ::-webkit-scrollbar {
+     display: none;
+   }
+
 .bar {
     padding: 1em;
 }
@@ -57,7 +65,7 @@
     background-color: #FEE500;
 }
 
-#p2 .scroller {
+#p2 .scroll {
     height: 39vh;
 }
 
@@ -92,6 +100,11 @@
     align-items: center;
     margin-top: 10em;
 
+}
+
+#p4 .scroller,
+#p5 .scroller{
+    height: 50vh !important;
 }
 
 #p4 .bar {
@@ -198,9 +211,6 @@
 
 #p7 .container .tab {
     width: 100%;
-    padding: 1em;
-    padding-top: 0em;
-    padding-bottom: 0em;
     min-height: 30vh;
     border-radius: 10px;
     border: 1px solid #e0e0e0;;
@@ -300,28 +310,26 @@
 #p12 .boxx {
     border: 2px solid #e0e0e0;
     border-radius: 20px;
-    margin-top: 0.5em;
-    min-height: 5vh;
-    margin-right: 1em;
+    height: 5vh;
+    min-width: fit-content;
     display: flex;
     align-items: center;
+    background-color: rgb(255, 255, 255);
+}
+
+#p12 .boxx svg {
+    width: 1em;
+    height: 1em;
 }
 
 #p12 .boxx_black {
-    border: 2px solid #e0e0e0;
     background-color: black;
     color: #ffffff;
-    border-radius: 20px;
-    margin-top: 0.5em;
-    min-height: 5vh;
-    margin-right: 1em;
-    display: flex;
-    align-items: center;
 }
 
 #p12 .icon_card {
     width: 90%;
-    min-height: 35vh;
+    min-height: 30vh;
     border: 2px solid #e0e0e0;
     margin-left: 1.5em;
     margin-right: 2em;
@@ -334,6 +342,25 @@
     border-radius: 10px;
 }
 
+#p12 input {
+    background: #f5f5f5;
+    border-radius: 1rem;
+    border-color: #444444;
+    border-width: 0.5rem;
+    width: 100%;
+    height: 5em !important;
+    border: 2px solid #e0e0e0;
+    text-align: center;
+} 
+
+.inset-border{
+    border-style:inset;
+    border: 2px solid #ffffff;
+}
+
+#p12 .scroller {
+    height: 87vh;
+}
 #p13 .border_b {
     border-bottom: 1px solid #e0e0e0;
 }

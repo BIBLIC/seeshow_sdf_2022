@@ -281,7 +281,7 @@ $('#hint_btn').click(function () {
     var real_pg = myPgNum.slice(1);
     $(".cursor_wrap_" + real_pg).toggleClass('show');
     $(".pg_" + real_pg + "_answer:first").toggleClass("addShadow");
-    $('.shadow_ext').toggleClass("addShadow");
+    $(".pg_" + real_pg + '_shadow_ext').toggleClass("addShadow");
     $(".pg_" + real_pg + "_shadow_inner").toggleClass("addInnerShadow");
     $('.border_darker').toggleClass("mk_border_darker");
 })
