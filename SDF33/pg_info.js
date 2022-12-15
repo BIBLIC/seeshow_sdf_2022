@@ -84,47 +84,47 @@ const inputAnswer = [
 const modalCont = [
     {
         page: 0,
-        instruction: ""
+        instruction: "'시작하기' 버튼을 눌러주세요."
     },
     {
         page: 1,
-        instruction: ""
+        instruction: "'다음' 버튼을 눌러주세요."
     },
     {
         page: 2,
-        instruction: ""
+        instruction: "'허용'을 눌러주세요"
     },
     {
         page: 3,
-        instruction: ""
+        instruction: "'바로 시작하기' 버튼을 눌러주세요."
     },
     {
         page: 4,
-        instruction: ""
+        instruction: "좌측 상단의 메뉴를 눌러주세요."
     },
     {
         page: 5,
-        instruction: ""
+        instruction: "'로그인해주세요'를 눌러주세요."
     },
     {
         page: 6,
-        instruction: ""
+        instruction: "'간편 로그인'을 눌러주세요."
     },
     {
         page: 7,
-        instruction: ""
+        instruction: "생년월일 6자리 입력 후 '간편 로그인' 버튼을 눌러주세요."
     },
     {
         page: 8,
-        instruction: ""
+        instruction: "'나의 데이터/통화' 영역을 눌러주세요."
     },
     {
         page: 9,
-        instruction: ""
+        instruction: "'실시간 잔여량' 영역을 눌러주세요."
     },
     {
         page: 10,
-        instruction: ""
+        instruction: "조회된 실시간 잔여량 확인 후 네비게이션 바의 '다음' 버튼을 눌러주세요."
     },
     {
         page: 11,

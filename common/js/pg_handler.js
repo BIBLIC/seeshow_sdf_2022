@@ -531,6 +531,20 @@ document.querySelector("main").addEventListener("click", function (e) {//메인 
             });
         }
 
+        //----6자리 입력... 있을 경우 -------------------
+        // ID_num6 pg_n_answer n_input
+        else if (e.target.className.includes("ID_num6")) {
+
+
+            //키보드 떼고 6자리 이상이면 다음 버튼 활성화되게 
+            $('.' + real_pg + '_input').keyup(function(){
+                if (this.value.length == 6 ) {
+                    $(".input_nxt_btn").addClass("pg_" + real_pg + "_answer");
+                    $(".input_nxt_btn").removeClass("btn-g");
+                    $(".input_nxt_btn").addClass("btn-r");
+                }
+            });
+        }
 
         //----비번 4자리 입력... 있을 경우 (-없이 4자리 입력)-------------------
         // ID_num4 pg_n_answer n_input
