@@ -375,30 +375,6 @@ header {
   background: #e0e0e0;
 }
 
-h1 {
-  font-size: clamp(24px, 20px + 2.3vw, 2.3em);
-  font-weight: bold;
-  display: inline;
-}
-
-
-h2 {
-  font-size: clamp(24px, 13px + 2vw, 2em);
-  font-weight: bold;
-  display: inline;
-}
-
-h3 {
-  font-size: clamp(18px, 18px + 1.3vw, 1.3em);
-  font-weight: bold;
-  display: inline;
-  letter-spacing: 4px;
-}
-
-p {
-  font-size: clamp(18px, 20px + 1.5vw, 1.5em);
-}
-
 body {
   min-height: 640px;
 }
