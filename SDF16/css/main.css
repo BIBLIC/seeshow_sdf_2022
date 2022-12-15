@@ -572,6 +572,10 @@
     height: 58vh;
 }
 
+#p7 .scroller {
+    height: 68vh;
+}
+
 #p7 .search_box {
     display: flex;
     flex-direction: column;
@@ -601,6 +605,10 @@
     color: #fff;
     width: 100%;
     min-height: 5vh;
+}
+
+#p8 .scroller {
+    height: 72vh;
 }
 
 #p8 .search_box {
@@ -658,6 +666,10 @@
     color: #fff;
 }
 
+#p9 .scroller {
+    height: 76vh;
+}
+
 #p9 .top_bar {
     background-color: #fff;
     border-bottom: 2px solid #e0e0e0;
@@ -693,6 +705,10 @@
     color: #fff;
     width: 100%;
     min-height: 5vh;
+}
+
+#p10 .scroller {
+    height: 76vh;
 }
 
 #p10 .top_bar {

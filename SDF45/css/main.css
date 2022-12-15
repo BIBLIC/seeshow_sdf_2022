@@ -24,8 +24,8 @@ svg {
 
 #p1 .dot {
     display: flex;
-    width: 10em;
-    height: 10em;
+    width: 18em;
+    height: 9.5em;
     background: #595D70;
     color: #fff;
     border-radius: 100%;
