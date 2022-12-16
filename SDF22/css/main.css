@@ -332,6 +332,14 @@
     color: #81CCC7;
 }
 
+#p5 .tab svg,
+#p6 .tab svg,
+#p7 .tab svg,
+#p8 .tab svg {
+    width: 1em;
+    height: 1em;
+}
+
 #p5 .tab.title,
 #p6 .tab.title,
 #p7 .tab.title,
@@ -417,7 +425,7 @@
 #p7 .modal_bottom_wrap,
 #p8 .modal_bottom_wrap {
     width: 100%;
-    height: 5vh;
+    height: 5.5vh;
     display: flex;
     justify-content: space-between;
     align-items: center;    
