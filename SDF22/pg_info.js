@@ -76,43 +76,43 @@ const inputAnswer = [
 const modalCont = [
     {
         page: 0,
-        instruction: ""
+        instruction: "'시작하기' 버튼을 눌러주세요."
     },
     {
         page: 1,
-        instruction: ""
+        instruction: "'신청ㆍ제출' 탭을 눌러주세요."
     },
     {
         page: 2,
-        instruction: ""
+        instruction: "스크롤을 내려 '세무서류신청-공통분야'를 눌러주세요."
     },
     {
         page: 3,
-        instruction: ""
+        instruction: "'전자고지 신청/해지'를 눌러주세요."
     },
     {
         page: 4,
-        instruction: ""
+        instruction: "하단의 '다음' 버튼을 눌러주세요."
     },
     {
         page: 5,
-        instruction: ""
+        instruction: "스크롤을 내려 '위 내용을 확인함' 체크박스를 눌러주세요."
     },
     {
         page: 6,
-        instruction: ""
+        instruction: "하단의 '전자송달 신청하기'를 눌러주세요."
     },
     {
         page: 7,
-        instruction: ""
+        instruction: "'확인'을 눌러주세요."
     },
     {
         page: 8,
-        instruction: ""
+        instruction: "'확인'을 눌러주세요."
     },
     {
         page: 9,
-        instruction: ""
+        instruction: "완료"
     },
 ];
 
@@ -121,48 +121,48 @@ const modalCont = [
 // //*******************************************************************************
 // //**************************+    커서   +*********************************** 
 
-// const cursor_pos_1 = document.querySelector('.cursor_pos_1');
-// const cursor_pos_2 = document.querySelector('.cursor_pos_2');
+const cursor_pos_1 = document.querySelector('.cursor_pos_1');
+const cursor_pos_2 = document.querySelector('.cursor_pos_2');
 // // const cursor_pos_3 = document.querySelector('.cursor_pos_3');
 // // const cursor_pos_4 = document.querySelector('.cursor_pos_4');
 // // const cursor_pos_5 = document.querySelector('.cursor_pos_5');
 // // const cursor_pos_6 = document.querySelector('.cursor_pos_6');
 
-// const cursor_wrap_1 = document.querySelector('.cursor_wrap_1');
-// const cursor_wrap_2 = document.querySelector('.cursor_wrap_2');
+const cursor_wrap_1 = document.querySelector('.cursor_wrap_1');
+const cursor_wrap_2 = document.querySelector('.cursor_wrap_2');
 // // const cursor_wrap_3 = document.querySelector('.cursor_wrap_3');
 // // const cursor_wrap_4 = document.querySelector('.cursor_wrap_4');
 // // const cursor_wrap_5 = document.querySelector('.cursor_wrap_5');
 // // const cursor_wrap_6 = document.querySelector('.cursor_wrap_6');
 
 
-// cursor_wrap_1.style.zIndex = "100";
-// cursor_wrap_2.style.zIndex = "100";
+cursor_wrap_1.style.zIndex = "100";
+cursor_wrap_2.style.zIndex = "100";
 // // cursor_wrap_3.style.zIndex = "100";
 // // cursor_wrap_4.style.zIndex = "100";
 // // cursor_wrap_5.style.zIndex = "100";
 // // cursor_wrap_6.style.zIndex = "100";
 
 
-// const { createPopper } = Popper;
-// createPopper(cursor_pos_1, cursor_wrap_1, {
-//     placement: 'right',
-//     modifiers: [
-//         {
-//             name: 'offset',
-//             options: {
-//                 offset: [0,0],
-//             },
-//         },
-//     ],
-// });
+const { createPopper } = Popper;
+createPopper(cursor_pos_1, cursor_wrap_1, {
+    placement: 'right',
+    modifiers: [
+        {
+            name: 'offset',
+            options: {
+                offset: [0,0],
+            },
+        },
+    ],
+});
 // createPopper(cursor_pos_2, cursor_wrap_2, {
 //     placement: 'right',
 //     modifiers: [
 //         {
 //             name: 'offset',
 //             options: {
-//                 offset: [30,30],
+//                 offset: [0,0],
 //             },
 //         },
 //     ],
@@ -213,3 +213,14 @@ const modalCont = [
 // //         },
 // //     ],
 // // });
+
+//*******************************************************************************
+//**************************+    힌트 버튼   +*********************************** 
+
+$('#hint_btn').click(function () {
+    var myPgNum = $(".active").attr('id');
+    var real_pg = myPgNum.slice(1);
+    if ((real_pg == 2)){
+        $(".menu").removeClass("box-shadow");
+    } 
+})

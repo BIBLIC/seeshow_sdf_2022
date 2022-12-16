@@ -275,16 +275,17 @@ $(".pg_" + page_num + "_answer").css('box-shadow', '#00000');
 $('.shadow_ext').css('box-shadow', '#00000');
 $('.shadow_inner').css('box-shadow', 'inset #00000');
 
-//시작하기 버튼 클릭 후 컨트롤 바 내부 변경
 $('#hint_btn').click(function () {
     var myPgNum = $(".active").attr('id');
     var real_pg = myPgNum.slice(1);
     $(".cursor_wrap_" + real_pg).toggleClass('show');
+    $(".pg_" + real_pg + "_answer:first").toggleClass("box-shadow-unset");
     $(".pg_" + real_pg + "_answer:first").toggleClass("addShadow");
     $(".pg_" + real_pg + '_shadow_ext').toggleClass("addShadow");
     $(".pg_" + real_pg + "_shadow_inner").toggleClass("addInnerShadow");
     $('.border_darker').toggleClass("mk_border_darker");
     $('.txt_darker').toggleClass("mk_txt_darker");
+    $(".pg_" + real_pg + '_txt_darker').toggleClass("mk_txt_darker");
 })
 //*******************************************************************************
 //**************************+    클릭 제어   +*********************************** 
