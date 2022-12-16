@@ -39,6 +39,18 @@
     height: 2em;
 }
 
+
+.btn-grayb {
+    background: #56647E!important;
+    color: #fff!important;
+}
+
+.btn-outline-grayb {
+    background: #fff;
+    border:1px solid #56647E!important;
+    color:#56647E!important;
+}
+
 .btn-outline-b {
     background: #fff;
     border-color:#0D4DAE!important;
@@ -72,6 +84,11 @@
     color: #F4A224;
 }
 
+.text-grayb {
+    color: #56647E;
+}
+
+
 .tax.btn-b, .bg-b {
     background: #0D4DAE!important;
     color: #fff;
@@ -85,9 +102,7 @@
     font-size: x-small;
   }
 
-  .w-49{
-    width: 49%;
-  }
+
 /* ---------------------------------------- */
 .under_bar {
     height: 7vh;
@@ -192,16 +207,11 @@
     padding-top: .5em; padding-bottom: .5em;
     padding-left: .7em; padding-right: .7em;
     border-radius: 5px;
+    box-shadow: 0px 0px 5px 3px rgba(182, 182, 182, 0.15);
     display: flex;
     align-items: center;
     justify-content: space-between;
 }
-
-#p2 .box-shadow ,
-#p3 .box-shadow {
-    box-shadow: 0px 0px 5px 3px rgba(182, 182, 182, 0.15);
-}
-
 #p2 .menu:not(:last-child),
 #p3 .menu:not(:last-child){
     margin-bottom: .7em;
@@ -242,7 +252,8 @@
     height: 1.5em;
 }
 
-#p2 .scroller ,
+#p2 .scroller,
+#p4 .scroller,
 #p5 .scroller,
 #p6 .scroller,
 #p7 .scroller,
@@ -291,12 +302,13 @@
     height: 1.8em;
 }
 
-#p4 .tab {
+.tab {
     width: 100%;
-    min-height: 6vh;
+    min-height: 5vh;
     display: flex;
     justify-content: flex-start;
     align-items: center;
+    padding: 1em;
 }
 
 #p4 .tab .w-35 {
@@ -308,6 +320,21 @@
 }
 
 /* ------------------------------- */
+.btn_wrap {
+    width: 100%;
+    /* height: 5vh; */
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.btn_wrap .btn {
+    min-height: 6vh;
+    border-radius: 3px!important;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
 
 #p4 .under_bar,
 #p5 .under_bar,
@@ -318,7 +345,7 @@
     padding: 1em;
 }
 
-#p4 .btn,
+/* #p4 .btn,
 #p5 .btn,
 #p6 .btn,
 #p7 .under_bar .btn,
@@ -329,7 +356,7 @@
     display: flex;
     justify-content: center;
     align-items: center;
-}
+} */
 
 /* ------------------------------ */
 .text-mint {
