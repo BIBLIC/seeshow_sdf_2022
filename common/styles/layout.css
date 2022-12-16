@@ -638,6 +638,12 @@ body {
   align-items: center;
 }
 
+.flex-between-center{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
 .flex-start-start {
   display: flex;
   justify-content: flex-start;
