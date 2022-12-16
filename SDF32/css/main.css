@@ -359,7 +359,17 @@ body{
 }
 
 #p12 .scroller {
-    height: 87vh;
+    height: 72.5vh;
+}
+
+#p12 .pg_12_add {
+    z-index: 50 !important;
+}
+
+#p12 .pg_12_add {
+    /* height: 71vh; */
+    scroll-behavior: smooth;
+    overflow-y: scroll;
 }
 
 #p13 .container .tab {

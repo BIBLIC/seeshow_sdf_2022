@@ -1,4 +1,4 @@
-var total_page = 19;//페이지 수 -> 시나리오마다 total_page 수 바꾸기 
+var total_page = 18;//페이지 수 -> 시나리오마다 total_page 수 바꾸기 
 
 //오디오 배열 선언, 페이지 수 대로 배열에 mp3 넣기
 const audioArray = [];
@@ -86,10 +86,6 @@ const pageClickArea = [
         page: 18,
         correctAnswer: "pg_18_answer"
     },
-    {
-        page: 19,
-        correctAnswer: "pg_19_answer"
-    },
 ];
 
 const inputAnswer = [
@@ -121,82 +117,78 @@ const inputAnswer = [
 const modalCont = [
     {
         page: 0,
-        instruction: "'시작하기' 버튼을 클릭하세요."
+        instruction: "'시작하기' 버튼을 눌러주세요."
     },
     {
         page: 1,
-        instruction: "'확인' 버튼을 클릭하세요"
+        instruction: "우측 하단의 메뉴 영역을 눌러주세요"
     },
     {
         page: 2,
-        instruction: "기기의 위치정보 액세스를 허용하기 위해 '허용' 버튼을 클릭하세요."
+        instruction: "'선물하기' 버튼을 눌러주세요."
     },
     {
         page: 3,
-        instruction: "기기의 사진, 미디어, 파일 액세스를 허용하기 위해 '허용' 버튼을 클릭하세요."
+        instruction: "페이지가 자동으로 전환되도록 기다려주세요."
     },
     {
         page: 4,
-        instruction: "전화 걸기 및 관리를 허용하기 위해 '허용' 버튼을 클릭하세요."
+        instruction: "'전체동의'를 눌러주세요."
     },
     {
         page: 5,
-        instruction: "'카카오 계정으로 시작하기' 버튼을 클릭하세요."
+        instruction: "'다음' 버튼을 눌러주세요."
     },
     {
         page: 6,
-        instruction: "'허용하기' 버튼을 클릭하세요."
+        instruction: "'메인으로 이동하기' 버튼을 눌러주세요."
     },
     {
         page: 7,
-        instruction: "전화 걸기 및 관리를 허용하기 위해 '허용' 버튼을 클릭하세요."
+        instruction: "'생일' 버튼을 눌러주세요."
     },
     {
         page: 8,
-        instruction: "기기의 사진, 미디어, 파일 액세스를 허용하기 위해 '허용' 버튼을 클릭하세요."
+        instruction: "하겐다즈 프리미엉 수제 케이크를 찾아 눌러주세요."
     },
     {
         page: 9,
-        instruction: "기기의 위치정보 액세스를 허용하기 위해 '허용' 버튼을 클릭하세요."
+        instruction: "'선물하기' 버튼을 눌러주세요."
     },
     {
         page: 10,
-        instruction: "약관 내용 확인 후 '전체 동의하기'영역을 클릭하세요."
+        instruction: "친구 목록 중 '김한국'을 영역을 눌러주세요."
     },
     {
         page: 11,
-        instruction: "'동의하고 계속하기' 버튼을 클릭하세요."
+        instruction: "'확인' 버튼을 눌러주세요."
     },
     {
         page: 12,
-        instruction: "휴대폰 번호 11자리를 '-'없이 입력하고 '보내기' 버튼을 클릭하세요."
+        instruction: "'선물과 함께 보낼 메시지를 적어보세요' 부분에 텍스트를 입력하고 스크롤을 내려 '카드 입력'을 눌러주세요."
     },
     {
         page: 13,
-        instruction: "인증번호 '123456'을 입력하고 '변경하기' 버튼을 클릭하세요."
+        instruction: "'약관 전체동의'를 눌러주세요."
     },
     {
         page: 14,
-        instruction: "완료"
+        instruction: "'확인' 버튼을 눌러주세요."
     },
     {
         page: 15,
-        instruction: "완료"
+        instruction: "'직접 입력하기' 버튼을 눌러주세요."
     },
     {
         page: 16,
-        instruction: "완료"
+        instruction: "카드 비밀번호 4자리를 입력하고 '완료' 버튼을 눌러주세요."
     },
     {
         page: 17,
-        instruction: "완료"
+        instruction: "카드 등록 내용을 확인하고 '29,900원 결제하기' 버튼을 눌러주세요."
     },
     {
         page: 18,
-        instruction: "완료"
-    },
-    {
-        page: 19,
         instruction: "완료"
     },
 ];
@@ -206,52 +198,52 @@ const modalCont = [
 //*******************************************************************************
 //**************************+    커서   +*********************************** 
 
-// const cursor_pos_1 = document.querySelector('.cursor_pos_1');
-// const cursor_pos_2 = document.querySelector('.cursor_pos_2');
+const cursor_pos_1 = document.querySelector('.cursor_pos_1');
+const cursor_pos_2 = document.querySelector('.cursor_pos_2');
 // // const cursor_pos_3 = document.querySelector('.cursor_pos_3');
 // // const cursor_pos_4 = document.querySelector('.cursor_pos_4');
 // // const cursor_pos_5 = document.querySelector('.cursor_pos_5');
 // // const cursor_pos_6 = document.querySelector('.cursor_pos_6');
 
-// const cursor_wrap_1 = document.querySelector('.cursor_wrap_1');
-// const cursor_wrap_2 = document.querySelector('.cursor_wrap_2');
+const cursor_wrap_1 = document.querySelector('.cursor_wrap_1');
+const cursor_wrap_2 = document.querySelector('.cursor_wrap_2');
 // // const cursor_wrap_3 = document.querySelector('.cursor_wrap_3');
 // // const cursor_wrap_4 = document.querySelector('.cursor_wrap_4');
 // // const cursor_wrap_5 = document.querySelector('.cursor_wrap_5');
 // // const cursor_wrap_6 = document.querySelector('.cursor_wrap_6');
 
 
-// cursor_wrap_1.style.zIndex = "100";
-// cursor_wrap_2.style.zIndex = "100";
+cursor_wrap_1.style.zIndex = "100";
+cursor_wrap_2.style.zIndex = "100";
 // // cursor_wrap_3.style.zIndex = "100";
 // // cursor_wrap_4.style.zIndex = "100";
 // // cursor_wrap_5.style.zIndex = "100";
 // // cursor_wrap_6.style.zIndex = "100";
 
 
-// const { createPopper } = Popper;
-// createPopper(cursor_pos_1, cursor_wrap_1, {
-//     placement: 'right',
-//     modifiers: [
-//         {
-//             name: 'offset',
-//             options: {
-//                 offset: [10,180],
-//             },
-//         },
-//     ],
-// });
-// createPopper(cursor_pos_2, cursor_wrap_2, {
-//     placement: 'right',
-//     modifiers: [
-//         {
-//             name: 'offset',
-//             options: {
-//                 offset: [-50,0],
-//             },
-//         },
-//     ],
-// });
+const { createPopper } = Popper;
+createPopper(cursor_pos_1, cursor_wrap_1, {
+    placement: 'right',
+    modifiers: [
+        {
+            name: 'offset',
+            options: {
+                offset: [-50,-10],
+            },
+        },
+    ],
+});
+createPopper(cursor_pos_2, cursor_wrap_2, {
+    placement: 'right',
+    modifiers: [
+        {
+            name: 'offset',
+            options: {
+                offset: [0,30],
+            },
+        },
+    ],
+});
 // // createPopper(cursor_pos_3, cursor_wrap_3, {
 // //     placement: 'right',
 // //     modifiers: [

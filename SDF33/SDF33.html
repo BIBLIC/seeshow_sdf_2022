@@ -160,13 +160,26 @@
                                 <!-- scroller end -->
 
 
-                                <div class="under_bar border-top rounded-0">
+                                <div class="under_bar border-top rounded-0 ">
                                     <button type="button" class="btn text-r left w-100 rounded-0 fontSz">
                                         종료
                                     </button>
-                                    <button type="button" class="btn btn-r w-100 rounded-0 fontSz pg_1_answer">
-                                        다음
-                                    </button>
+                                    <div class="cursor_pos_1 btn btn-r w-100 rounded-0 fontSz pg_1_answer">
+                                        <button type="button" class=" pg_1_answer">
+                                            다음
+                                        </button>
+                                        <!-- 커서 가이드 -->
+                                        <div class="cursor_wrap cursor_wrap_1 ">
+                                            <span class="cursor" x-placement="bottom pg_1_answer">
+                                                <button class="react-joyride__beacon" type="button pg_1_answer">
+                                                    <span class="cursor_outer pg_1_answer"></span>
+                                                    <span class="cursor_inner pg_1_answer"><span>
+                                                </button>
+                                            </span>
+                                        </div>
+                                        <!-- 커서 가이드 -->
+                                    </div>
+
                                 </div>
                             </div>
                         </div>
@@ -191,7 +204,20 @@
                                         </div>
                                         <div class="modal_bottom_wrap fontSz">
                                             <div class="btn_wrap">
-                                                <div class="tab px-3 pg_2_answer">허용</div>
+                                                <div class="cursor_pos_2">
+                                                    <div class="tab px-3 pg_2_answer">허용</div>
+                                                    <!-- 커서 가이드 -->
+                                                    <div class="cursor_wrap cursor_wrap_2 pg_2_answer">
+                                                        <span class="cursor" x-placement="bottom pg_2_answer">
+                                                            <button class="react-joyride__beacon"
+                                                                type="button pg_2_answer">
+                                                                <span class="cursor_outer pg_2_answer"></span>
+                                                                <span class="cursor_inner pg_2_answer"><span>
+                                                            </button>
+                                                        </span>
+                                                    </div>
+                                                    <!-- 커서 가이드 -->
+                                                </div>
                                                 <div class="tab px-3 mb-2">허용 안함</div>
                                             </div>
                                         </div>
@@ -210,7 +236,8 @@
                                 <div class="w-100 h-100 bg-image"
                                     style="background-image: url('./assets/image/2.png');">
                                     <div class="under_bar">
-                                        <div class="w-50 btn btn-light text-r rounded-pill fontSz pg_3_answer">바로 시작하기</div>
+                                        <div class="w-50 btn btn-light text-r rounded-pill fontSz pg_3_answer">바로 시작하기
+                                        </div>
                                     </div>
                                 </div>
                             </div>
@@ -219,19 +246,26 @@
                         <div class="page" id="p4">
                             <div class="page_wrap">
                                 <h1 class="pg_title" style="color: #fff;">Page4</h1>
-                                <div class="top w-100 d-flex justify-content-between align-items-center px-4 py-3 fontSz">
+                                <div
+                                    class="top w-100 d-flex justify-content-between align-items-center px-4 py-3 fontSz">
                                     <div class="pg_4_answer">
-                                        <svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" fill="currentColor" class="bi bi-list " viewBox="0 0 16 16">
-                                        <path fill-rule="evenodd" d="M2.5 12a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5zm0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5zm0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5z"></path>
+                                        <svg xmlns="http://www.w3.org/2000/svg" width="30" height="30"
+                                            fill="currentColor" class="bi bi-list " viewBox="0 0 16 16">
+                                            <path fill-rule="evenodd"
+                                                d="M2.5 12a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5zm0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5zm0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5z">
+                                            </path>
                                         </svg>
                                     </div>
                                     <div class="image flex-center-center">
                                         <!-- Tworld 로고 추가  -->
                                         <img class="icon h-100" src="./assets/image/" alt="">
                                     </div>
-                                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-search" viewBox="0 0 16 16">
-                                        <path d="M11.742 10.344a6.5 6.5 0 1 0-1.397 1.398h-.001c.03.04.062.078.098.115l3.85 3.85a1 1 0 0 0 1.415-1.414l-3.85-3.85a1.007 1.007 0 0 0-.115-.1zM12 6.5a5.5 5.5 0 1 1-11 0 5.5 5.5 0 0 1 11 0z"></path>
-                                      </svg>
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+                                        class="bi bi-search" viewBox="0 0 16 16">
+                                        <path
+                                            d="M11.742 10.344a6.5 6.5 0 1 0-1.397 1.398h-.001c.03.04.062.078.098.115l3.85 3.85a1 1 0 0 0 1.415-1.414l-3.85-3.85a1.007 1.007 0 0 0-.115-.1zM12 6.5a5.5 5.5 0 1 1-11 0 5.5 5.5 0 0 1 11 0z">
+                                        </path>
+                                    </svg>
                                 </div>
                                 <div class="tab_bar fontSz">
                                     <div class="tab">MY</div>
@@ -784,7 +818,8 @@
                                         <div class="fw-bold">010-●●●●-●●●●</div>
                                     </div>
                                     <div class="form">
-                                        <input class="form-control ID_num6 pg_7_answer 7_input" placeholder="생년월일/외국인 등록번호 6자리" type="password" maxlength="6">
+                                        <input class="form-control ID_num6 pg_7_answer 7_input"
+                                            placeholder="생년월일/외국인 등록번호 6자리" type="password" maxlength="6">
                                     </div>
                                     <div class="w-100 d-flex text-sm text-gray">하나의 휴대폰에서 두 개의 번호를 이용한다면! <div
                                             class="text-primary ms-2">TIP</div>
@@ -877,7 +912,8 @@
                                         <div class="fontSz tab">
                                             <div class="left text-b pg_8_answer">
                                                 <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16"
-                                                    fill="currentColor" class="bi bi-database pg_8_answer" viewBox="0 0 16 16">
+                                                    fill="currentColor" class="bi bi-database pg_8_answer"
+                                                    viewBox="0 0 16 16">
                                                     <path
                                                         d="M4.318 2.687C5.234 2.271 6.536 2 8 2s2.766.27 3.682.687C12.644 3.125 13 3.627 13 4c0 .374-.356.875-1.318 1.313C10.766 5.729 9.464 6 8 6s-2.766-.27-3.682-.687C3.356 4.875 3 4.373 3 4c0-.374.356-.875 1.318-1.313ZM13 5.698V7c0 .374-.356.875-1.318 1.313C10.766 8.729 9.464 9 8 9s-2.766-.27-3.682-.687C3.356 7.875 3 7.373 3 7V5.698c.271.202.58.378.904.525C4.978 6.711 6.427 7 8 7s3.022-.289 4.096-.777A4.92 4.92 0 0 0 13 5.698ZM14 4c0-1.007-.875-1.755-1.904-2.223C11.022 1.289 9.573 1 8 1s-3.022.289-4.096.777C2.875 2.245 2 2.993 2 4v9c0 1.007.875 1.755 1.904 2.223C4.978 15.71 6.427 16 8 16s3.022-.289 4.096-.777C13.125 14.755 14 14.007 14 13V4Zm-1 4.698V10c0 .374-.356.875-1.318 1.313C10.766 11.729 9.464 12 8 12s-2.766-.27-3.682-.687C3.356 10.875 3 10.373 3 10V8.698c.271.202.58.378.904.525C4.978 9.71 6.427 10 8 10s3.022-.289 4.096-.777A4.92 4.92 0 0 0 13 8.698Zm0 3V13c0 .374-.356.875-1.318 1.313C10.766 14.729 9.464 15 8 15s-2.766-.27-3.682-.687C3.356 13.875 3 13.373 3 13v-1.302c.271.202.58.378.904.525C4.978 12.71 6.427 13 8 13s3.022-.289 4.096-.777c.324-.147.633-.323.904-.525Z" />
                                                 </svg>
@@ -1204,8 +1240,8 @@
                                     <div class="container datail px-4 pt-2">
                                         <div class="fontSz tab">
                                             <div class="left text-b">
-                                                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-database"
-                                                    viewBox="0 0 16 16">
+                                                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16"
+                                                    fill="currentColor" class="bi bi-database" viewBox="0 0 16 16">
                                                     <path
                                                         d="M4.318 2.687C5.234 2.271 6.536 2 8 2s2.766.27 3.682.687C12.644 3.125 13 3.627 13 4c0 .374-.356.875-1.318 1.313C10.766 5.729 9.464 6 8 6s-2.766-.27-3.682-.687C3.356 4.875 3 4.373 3 4c0-.374.356-.875 1.318-1.313ZM13 5.698V7c0 .374-.356.875-1.318 1.313C10.766 8.729 9.464 9 8 9s-2.766-.27-3.682-.687C3.356 7.875 3 7.373 3 7V5.698c.271.202.58.378.904.525C4.978 6.711 6.427 7 8 7s3.022-.289 4.096-.777A4.92 4.92 0 0 0 13 5.698ZM14 4c0-1.007-.875-1.755-1.904-2.223C11.022 1.289 9.573 1 8 1s-3.022.289-4.096.777C2.875 2.245 2 2.993 2 4v9c0 1.007.875 1.755 1.904 2.223C4.978 15.71 6.427 16 8 16s3.022-.289 4.096-.777C13.125 14.755 14 14.007 14 13V4Zm-1 4.698V10c0 .374-.356.875-1.318 1.313C10.766 11.729 9.464 12 8 12s-2.766-.27-3.682-.687C3.356 10.875 3 10.373 3 10V8.698c.271.202.58.378.904.525C4.978 9.71 6.427 10 8 10s3.022-.289 4.096-.777A4.92 4.92 0 0 0 13 8.698Zm0 3V13c0 .374-.356.875-1.318 1.313C10.766 14.729 9.464 15 8 15s-2.766-.27-3.682-.687C3.356 13.875 3 13.373 3 13v-1.302c.271.202.58.378.904.525C4.978 12.71 6.427 13 8 13s3.022-.289 4.096-.777c.324-.147.633-.323.904-.525Z" />
                                                 </svg>
@@ -1213,8 +1249,9 @@
                                                 <div class="text-r">&nbsp;1.5GB/무제한</div>
                                             </div>
                                             <div class="right">
-                                                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
-                                                    class="bi bi-plus-lg text-gray" viewBox="0 0 16 16">
+                                                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16"
+                                                    fill="currentColor" class="bi bi-plus-lg text-gray"
+                                                    viewBox="0 0 16 16">
                                                     <path fill-rule="evenodd"
                                                         d="M8 2a.5.5 0 0 1 .5.5v5h5a.5.5 0 0 1 0 1h-5v5a.5.5 0 0 1-1 0v-5h-5a.5.5 0 0 1 0-1h5v-5A.5.5 0 0 1 8 2Z" />
                                                 </svg>
@@ -1232,8 +1269,9 @@
                                     <div class="container datail px-4 py-2">
                                         <div class="fontSz tab">
                                             <div class="left text-b">
-                                                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
-                                                    class="bi bi-receipt-cutoff" viewBox="0 0 16 16">
+                                                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16"
+                                                    fill="currentColor" class="bi bi-receipt-cutoff"
+                                                    viewBox="0 0 16 16">
                                                     <path
                                                         d="M3 4.5a.5.5 0 0 1 .5-.5h6a.5.5 0 1 1 0 1h-6a.5.5 0 0 1-.5-.5zm0 2a.5.5 0 0 1 .5-.5h6a.5.5 0 1 1 0 1h-6a.5.5 0 0 1-.5-.5zm0 2a.5.5 0 0 1 .5-.5h6a.5.5 0 1 1 0 1h-6a.5.5 0 0 1-.5-.5zm0 2a.5.5 0 0 1 .5-.5h6a.5.5 0 0 1 0 1h-6a.5.5 0 0 1-.5-.5zm0 2a.5.5 0 0 1 .5-.5h6a.5.5 0 0 1 0 1h-6a.5.5 0 0 1-.5-.5zM11.5 4a.5.5 0 0 0 0 1h1a.5.5 0 0 0 0-1h-1zm0 2a.5.5 0 0 0 0 1h1a.5.5 0 0 0 0-1h-1zm0 2a.5.5 0 0 0 0 1h1a.5.5 0 0 0 0-1h-1zm0 2a.5.5 0 0 0 0 1h1a.5.5 0 0 0 0-1h-1zm0 2a.5.5 0 0 0 0 1h1a.5.5 0 0 0 0-1h-1z" />
                                                     <path
@@ -1243,18 +1281,19 @@
                                                 <div class="text-r">&nbsp;이번달 29,900원</div>
                                             </div>
                                             <div class="right">
-                                                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
-                                                    class="bi bi-plus-lg text-gray" viewBox="0 0 16 16">
+                                                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16"
+                                                    fill="currentColor" class="bi bi-plus-lg text-gray"
+                                                    viewBox="0 0 16 16">
                                                     <path fill-rule="evenodd"
                                                         d="M8 2a.5.5 0 0 1 .5.5v5h5a.5.5 0 0 1 0 1h-5v5a.5.5 0 0 1-1 0v-5h-5a.5.5 0 0 1 0-1h5v-5A.5.5 0 0 1 8 2Z" />
                                                 </svg>
                                             </div>
                                         </div>
-                                    
+
                                         <div class="fontSz tab">
                                             <div class="left text-b">
-                                                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
-                                                    class="bi bi-person-circle" viewBox="0 0 16 16">
+                                                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16"
+                                                    fill="currentColor" class="bi bi-person-circle" viewBox="0 0 16 16">
                                                     <path d="M11 6a3 3 0 1 1-6 0 3 3 0 0 1 6 0z" />
                                                     <path fill-rule="evenodd"
                                                         d="M0 8a8 8 0 1 1 16 0A8 8 0 0 1 0 8zm8-7a7 7 0 0 0-5.468 11.37C3.242 11.226 4.805 10 8 10s4.757 1.225 5.468 2.37A7 7 0 0 0 8 1z" />
@@ -1263,8 +1302,9 @@
                                                 <div class="text-r">&nbsp;스마트 시니어 요금제</div>
                                             </div>
                                             <div class="right">
-                                                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
-                                                    class="bi bi-plus-lg text-gray" viewBox="0 0 16 16">
+                                                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16"
+                                                    fill="currentColor" class="bi bi-plus-lg text-gray"
+                                                    viewBox="0 0 16 16">
                                                     <path fill-rule="evenodd"
                                                         d="M8 2a.5.5 0 0 1 .5.5v5h5a.5.5 0 0 1 0 1h-5v5a.5.5 0 0 1-1 0v-5h-5a.5.5 0 0 1 0-1h5v-5A.5.5 0 0 1 8 2Z" />
                                                 </svg>
@@ -1465,20 +1505,22 @@
                                 <div
                                     class="top w-100 d-flex justify-content-between align-items-center px-4 py-3 fontSz">
                                     <svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" fill="currentColor"
-                                    class="bi bi-list" viewBox="0 0 16 16">
-                                    <path fill-rule="evenodd"
-                                        d="M2.5 12a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5zm0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5zm0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5z" />
+                                        class="bi bi-list" viewBox="0 0 16 16">
+                                        <path fill-rule="evenodd"
+                                            d="M2.5 12a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5zm0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5zm0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5z" />
                                     </svg>
                                     <div class="flex-fill h-100 flex-center-center text-lg">
                                         실시간 잔여량
                                     </div>
-                                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-search" viewBox="0 0 16 16">
-                                        <path d="M11.742 10.344a6.5 6.5 0 1 0-1.397 1.398h-.001c.03.04.062.078.098.115l3.85 3.85a1 1 0 0 0 1.415-1.414l-3.85-3.85a1.007 1.007 0 0 0-.115-.1zM12 6.5a5.5 5.5 0 1 1-11 0 5.5 5.5 0 0 1 11 0z"/>
-                                      </svg>
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+                                        class="bi bi-search" viewBox="0 0 16 16">
+                                        <path
+                                            d="M11.742 10.344a6.5 6.5 0 1 0-1.397 1.398h-.001c.03.04.062.078.098.115l3.85 3.85a1 1 0 0 0 1.415-1.414l-3.85-3.85a1.007 1.007 0 0 0-.115-.1zM12 6.5a5.5 5.5 0 1 1-11 0 5.5 5.5 0 0 1 11 0z" />
+                                    </svg>
                                 </div>
                                 <!-- scroll -->
                                 <div class="scroller w-100">
-                                    
+
                                     <div class="container px-4">
                                         <div class="fontSz tab">
                                             <div class="left text-b">
@@ -1487,13 +1529,16 @@
                                                 &nbsp;스마트 시니어 요금제
                                             </div>
                                             <div class="right">
-                                                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-chevron-right text-gray" viewBox="0 0 16 16">
-                                                    <path fill-rule="evenodd" d="M4.646 1.646a.5.5 0 0 1 .708 0l6 6a.5.5 0 0 1 0 .708l-6 6a.5.5 0 0 1-.708-.708L10.293 8 4.646 2.354a.5.5 0 0 1 0-.708z"/>
-                                                  </svg>
+                                                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16"
+                                                    fill="currentColor" class="bi bi-chevron-right text-gray"
+                                                    viewBox="0 0 16 16">
+                                                    <path fill-rule="evenodd"
+                                                        d="M4.646 1.646a.5.5 0 0 1 .708 0l6 6a.5.5 0 0 1 0 .708l-6 6a.5.5 0 0 1-.708-.708L10.293 8 4.646 2.354a.5.5 0 0 1 0-.708z" />
+                                                </svg>
                                             </div>
                                         </div>
                                     </div>
-                                    
+
                                     <!-- 데이터 ----------------------------------------------------------------------------------------------------- -->
                                     <div class="w-100 bg-secondary bg-opacity-10" style="height: .5em;"></div>
 
@@ -1506,7 +1551,7 @@
                                                 <div class="text-r fw-bold">총 데이터 잔여량 1.5GB</div>
                                             </div>
                                         </div>
-                                    
+
                                         <div class="fontSz tab data">
                                             <div class="left text-b">
                                                 <div class="image">
@@ -1520,7 +1565,8 @@
                                                         <div class="fw-bold">1.5 GB</div>
                                                         남음
                                                     </div>
-                                                    <div class="text-gray">&nbsp;|&nbsp;<div class="fw-bold">0.2 GB</div> 사용</div>
+                                                    <div class="text-gray">&nbsp;|&nbsp;<div class="fw-bold">0.2 GB
+                                                        </div> 사용</div>
                                                 </div>
                                             </div>
                                         </div>
@@ -1532,9 +1578,12 @@
                                             <div class="right">
                                                 <div class="text-primary d-flex align-items-center">
                                                     데이터 공유
-                                                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-chevron-right text-gray ms-2" viewBox="0 0 16 16">
-                                                        <path fill-rule="evenodd" d="M4.646 1.646a.5.5 0 0 1 .708 0l6 6a.5.5 0 0 1 0 .708l-6 6a.5.5 0 0 1-.708-.708L10.293 8 4.646 2.354a.5.5 0 0 1 0-.708z"/>
-                                                      </svg>
+                                                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16"
+                                                        fill="currentColor" class="bi bi-chevron-right text-gray ms-2"
+                                                        viewBox="0 0 16 16">
+                                                        <path fill-rule="evenodd"
+                                                            d="M4.646 1.646a.5.5 0 0 1 .708 0l6 6a.5.5 0 0 1 0 .708l-6 6a.5.5 0 0 1-.708-.708L10.293 8 4.646 2.354a.5.5 0 0 1 0-.708z" />
+                                                    </svg>
                                                 </div>
                                             </div>
                                         </div>
@@ -1561,7 +1610,7 @@
 
                                     <!-- 통화 ----------------------------------------------------------------------------------------------------- -->
                                     <div class="w-100 bg-secondary bg-opacity-10" style="height: .5em;"></div>
-                                    
+
                                     <div class="container px-4 py-3">
 
                                         <div class="fontSz tab mb-3">
@@ -1584,7 +1633,8 @@
                                                         <div class="fw-bold">100 분</div>
                                                         남음
                                                     </div>
-                                                    <div class="text-gray">&nbsp;|&nbsp;<div class="fw-bold">0 분</div> 사용</div>
+                                                    <div class="text-gray">&nbsp;|&nbsp;<div class="fw-bold">0 분</div>
+                                                        사용</div>
                                                 </div>
                                             </div>
                                         </div>
@@ -1602,7 +1652,8 @@
                                                     <div class="">
                                                         <div class="fw-bold">무제한</div>
                                                     </div>
-                                                    <div class="text-gray">&nbsp;|&nbsp;<div class="fw-bold">13 분</div> 사용</div>
+                                                    <div class="text-gray">&nbsp;|&nbsp;<div class="fw-bold">13 분</div>
+                                                        사용</div>
                                                 </div>
                                             </div>
                                         </div>
@@ -1611,7 +1662,7 @@
 
                                     <!-- 문자 ----------------------------------------------------------------------------------------------------- -->
                                     <div class="w-100 bg-secondary bg-opacity-10" style="height: .5em;"></div>
-                                    
+
                                     <div class="container px-4 py-3">
 
                                         <div class="fontSz tab mb-3">
@@ -1630,7 +1681,7 @@
                                             <div class="right">
                                                 <div class="text-gray">SMS/MMS 기본제공</div>
                                                 <div class="d-flex align-items-center">
-                                                        <div class="fw-bold">기본제공</div>
+                                                    <div class="fw-bold">기본제공</div>
                                                 </div>
                                             </div>
                                         </div>
@@ -1666,102 +1717,102 @@
                         </div>
                     </main>
                 </div>
-            <div class="ctrlbar-bg"></div>
-            <div class="ctrlbar" id="ctrlbar">
-                <div class="start_btn_wrap">
-                    <button type="button" class="btn start_btn btn-lg" id="start-btn">시작하기</button>
-                </div>
-                <div class="nav_btn_wrap">
-                    <div class="baricon_wrap prev" id="prev_btn">
-                        <div class="baricon">
-                            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
-                                class="bi bi-caret-left-fill svg" viewBox="0 0 16 16">
-                                <path
-                                    d="m3.86 8.753 5.482 4.796c.646.566 1.658.106 1.658-.753V3.204a1 1 0 0 0-1.659-.753l-5.48 4.796a1 1 0 0 0 0 1.506z" />
-                            </svg>
-                        </div>
-                        <div class="bartext">이전</div>
+                <div class="ctrlbar-bg"></div>
+                <div class="ctrlbar" id="ctrlbar">
+                    <div class="start_btn_wrap">
+                        <button type="button" class="btn start_btn btn-lg" id="start-btn">시작하기</button>
                     </div>
-                    <div class="baricon_wrap pause">
-
-                        <div class="stop" id="pause_btn">
+                    <div class="nav_btn_wrap">
+                        <div class="baricon_wrap prev" id="prev_btn">
                             <div class="baricon">
                                 <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
-                                    class="bi bi-volume-mute-fill svg" viewBox="0 0 16 16">
+                                    class="bi bi-caret-left-fill svg" viewBox="0 0 16 16">
                                     <path
-                                        d="M6.717 3.55A.5.5 0 0 1 7 4v8a.5.5 0 0 1-.812.39L3.825 10.5H1.5A.5.5 0 0 1 1 10V6a.5.5 0 0 1 .5-.5h2.325l2.363-1.89a.5.5 0 0 1 .529-.06zm7.137 2.096a.5.5 0 0 1 0 .708L12.207 8l1.647 1.646a.5.5 0 0 1-.708.708L11.5 8.707l-1.646 1.647a.5.5 0 0 1-.708-.708L10.793 8 9.146 6.354a.5.5 0 1 1 .708-.708L11.5 7.293l1.646-1.647a.5.5 0 0 1 .708 0z" />
+                                        d="m3.86 8.753 5.482 4.796c.646.566 1.658.106 1.658-.753V3.204a1 1 0 0 0-1.659-.753l-5.48 4.796a1 1 0 0 0 0 1.506z" />
                                 </svg>
                             </div>
-                            <div class="bartext text-center">멈춤</div>
+                            <div class="bartext">이전</div>
                         </div>
+                        <div class="baricon_wrap pause">
 
-                        <div class="play" id="play_btn">
+                            <div class="stop" id="pause_btn">
+                                <div class="baricon">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+                                        class="bi bi-volume-mute-fill svg" viewBox="0 0 16 16">
+                                        <path
+                                            d="M6.717 3.55A.5.5 0 0 1 7 4v8a.5.5 0 0 1-.812.39L3.825 10.5H1.5A.5.5 0 0 1 1 10V6a.5.5 0 0 1 .5-.5h2.325l2.363-1.89a.5.5 0 0 1 .529-.06zm7.137 2.096a.5.5 0 0 1 0 .708L12.207 8l1.647 1.646a.5.5 0 0 1-.708.708L11.5 8.707l-1.646 1.647a.5.5 0 0 1-.708-.708L10.793 8 9.146 6.354a.5.5 0 1 1 .708-.708L11.5 7.293l1.646-1.647a.5.5 0 0 1 .708 0z" />
+                                    </svg>
+                                </div>
+                                <div class="bartext text-center">멈춤</div>
+                            </div>
+
+                            <div class="play" id="play_btn">
+                                <div class="baricon">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+                                        class="bi bi-volume-up-fill svg" viewBox="0 0 16 16">
+                                        <path
+                                            d="M11.536 14.01A8.473 8.473 0 0 0 14.026 8a8.473 8.473 0 0 0-2.49-6.01l-.708.707A7.476 7.476 0 0 1 13.025 8c0 2.071-.84 3.946-2.197 5.303l.708.707z" />
+                                        <path
+                                            d="M10.121 12.596A6.48 6.48 0 0 0 12.025 8a6.48 6.48 0 0 0-1.904-4.596l-.707.707A5.483 5.483 0 0 1 11.025 8a5.483 5.483 0 0 1-1.61 3.89l.706.706z" />
+                                        <path
+                                            d="M8.707 11.182A4.486 4.486 0 0 0 10.025 8a4.486 4.486 0 0 0-1.318-3.182L8 5.525A3.489 3.489 0 0 1 9.025 8 3.49 3.49 0 0 1 8 10.475l.707.707zM6.717 3.55A.5.5 0 0 1 7 4v8a.5.5 0 0 1-.812.39L3.825 10.5H1.5A.5.5 0 0 1 1 10V6a.5.5 0 0 1 .5-.5h2.325l2.363-1.89a.5.5 0 0 1 .529-.06z" />
+                                    </svg>
+                                </div>
+                                <div class="bartext text-center">재생</div>
+                            </div>
+
+                        </div>
+                        <div class="baricon_wrap" id="hint_btn">
                             <div class="baricon">
                                 <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
-                                    class="bi bi-volume-up-fill svg" viewBox="0 0 16 16">
+                                    class="bi bi-lightbulb-fill svg hint" viewBox="0 0 16 16">
                                     <path
-                                        d="M11.536 14.01A8.473 8.473 0 0 0 14.026 8a8.473 8.473 0 0 0-2.49-6.01l-.708.707A7.476 7.476 0 0 1 13.025 8c0 2.071-.84 3.946-2.197 5.303l.708.707z" />
+                                        d="M2 6a6 6 0 1 1 10.174 4.31c-.203.196-.359.4-.453.619l-.762 1.769A.5.5 0 0 1 10.5 13h-5a.5.5 0 0 1-.46-.302l-.761-1.77a1.964 1.964 0 0 0-.453-.618A5.984 5.984 0 0 1 2 6zm3 8.5a.5.5 0 0 1 .5-.5h5a.5.5 0 0 1 0 1l-.224.447a1 1 0 0 1-.894.553H6.618a1 1 0 0 1-.894-.553L5.5 15a.5.5 0 0 1-.5-.5z" />
+                                </svg>
+                                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+                                    class="bi bi-question svg front" viewBox="0 0 16 16">
                                     <path
-                                        d="M10.121 12.596A6.48 6.48 0 0 0 12.025 8a6.48 6.48 0 0 0-1.904-4.596l-.707.707A5.483 5.483 0 0 1 11.025 8a5.483 5.483 0 0 1-1.61 3.89l.706.706z" />
-                                    <path
-                                        d="M8.707 11.182A4.486 4.486 0 0 0 10.025 8a4.486 4.486 0 0 0-1.318-3.182L8 5.525A3.489 3.489 0 0 1 9.025 8 3.49 3.49 0 0 1 8 10.475l.707.707zM6.717 3.55A.5.5 0 0 1 7 4v8a.5.5 0 0 1-.812.39L3.825 10.5H1.5A.5.5 0 0 1 1 10V6a.5.5 0 0 1 .5-.5h2.325l2.363-1.89a.5.5 0 0 1 .529-.06z" />
+                                        d="M5.255 5.786a.237.237 0 0 0 .241.247h.825c.138 0 .248-.113.266-.25.09-.656.54-1.134 1.342-1.134.686 0 1.314.343 1.314 1.168 0 .635-.374.927-.965 1.371-.673.489-1.206 1.06-1.168 1.987l.003.217a.25.25 0 0 0 .25.246h.811a.25.25 0 0 0 .25-.25v-.105c0-.718.273-.927 1.01-1.486.609-.463 1.244-.977 1.244-2.056 0-1.511-1.276-2.241-2.673-2.241-1.267 0-2.655.59-2.75 2.286zm1.557 5.763c0 .533.425.927 1.01.927.609 0 1.028-.394 1.028-.927 0-.552-.42-.94-1.029-.94-.584 0-1.009.388-1.009.94z" />
                                 </svg>
                             </div>
-                            <div class="bartext text-center">재생</div>
+                            <div class="bartext">힌트</div>
                         </div>
+                        <div class="baricon_wrap" id="size_btn">
+                            <div id="tSlider" class="baricon" data-bs-toggle="popover">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+                                    class="bi bi-type svg" viewBox="0 0 16 16">
+                                    <path
+                                        d="m2.244 13.081.943-2.803H6.66l.944 2.803H8.86L5.54 3.75H4.322L1 13.081h1.244zm2.7-7.923L6.34 9.314H3.51l1.4-4.156h.034zm9.146 7.027h.035v.896h1.128V8.125c0-1.51-1.114-2.345-2.646-2.345-1.736 0-2.59.916-2.666 2.174h1.108c.068-.718.595-1.19 1.517-1.19.971 0 1.518.52 1.518 1.464v.731H12.19c-1.647.007-2.522.8-2.522 2.058 0 1.319.957 2.18 2.345 2.18 1.06 0 1.716-.43 2.078-1.011zm-1.763.035c-.752 0-1.456-.397-1.456-1.244 0-.65.424-1.115 1.408-1.115h1.805v.834c0 .896-.752 1.525-1.757 1.525z" />
+                                </svg>
+                            </div>
+                            <div class="bartext">크기</div>
+                        </div>
+                        <div class="baricon_wrap next" id="next_btn">
+                            <div class="baricon">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+                                    class="bi bi-caret-right-fill svg" viewBox="0 0 16 16">
+                                    <path
+                                        d="m12.14 8.753-5.482 4.796c-.646.566-1.658.106-1.658-.753V3.204a1 1 0 0 1 1.659-.753l5.48 4.796a1 1 0 0 1 0 1.506z" />
+                                </svg>
+                            </div>
+                            <div class="bartext">다음</div>
+                        </div>
+                    </div>
+                    <!-- popover : slider --------------- -->
+                    <div hidden>
+                        <div data-name="popover-content" class="d-flex justify-content-center align-items-center">
 
-                    </div>
-                    <div class="baricon_wrap" id="hint_btn">
-                        <div class="baricon">
-                            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
-                                class="bi bi-lightbulb-fill svg hint" viewBox="0 0 16 16">
-                                <path
-                                    d="M2 6a6 6 0 1 1 10.174 4.31c-.203.196-.359.4-.453.619l-.762 1.769A.5.5 0 0 1 10.5 13h-5a.5.5 0 0 1-.46-.302l-.761-1.77a1.964 1.964 0 0 0-.453-.618A5.984 5.984 0 0 1 2 6zm3 8.5a.5.5 0 0 1 .5-.5h5a.5.5 0 0 1 0 1l-.224.447a1 1 0 0 1-.894.553H6.618a1 1 0 0 1-.894-.553L5.5 15a.5.5 0 0 1-.5-.5z" />
-                            </svg>
-                            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
-                                class="bi bi-question svg front" viewBox="0 0 16 16">
-                                <path
-                                    d="M5.255 5.786a.237.237 0 0 0 .241.247h.825c.138 0 .248-.113.266-.25.09-.656.54-1.134 1.342-1.134.686 0 1.314.343 1.314 1.168 0 .635-.374.927-.965 1.371-.673.489-1.206 1.06-1.168 1.987l.003.217a.25.25 0 0 0 .25.246h.811a.25.25 0 0 0 .25-.25v-.105c0-.718.273-.927 1.01-1.486.609-.463 1.244-.977 1.244-2.056 0-1.511-1.276-2.241-2.673-2.241-1.267 0-2.655.59-2.75 2.286zm1.557 5.763c0 .533.425.927 1.01.927.609 0 1.028-.394 1.028-.927 0-.552-.42-.94-1.029-.94-.584 0-1.009.388-1.009.94z" />
-                            </svg>
+                            <!-- /////////////// -->
+                            <div class="txt_ex1 fw-bold fw-bold">가</div>
+                            <!-- <input type="range" name="slider" id="slider" value="0" min="0" max="2"  /> -->
+                            <input type="range" min="0" max="2" value="0" class="slider" id="tSliderRange">
+                            <!-- <p>Value: <span id="value"></span></p> -->
+                            <div class="txt_ex2 fw-bold fs-3 fw-bold">가</div>
+                            <!-- /////////////// -->
+
                         </div>
-                        <div class="bartext">힌트</div>
-                    </div>
-                    <div class="baricon_wrap" id="size_btn">
-                        <div id="tSlider" class="baricon" data-bs-toggle="popover">
-                            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
-                                class="bi bi-type svg" viewBox="0 0 16 16">
-                                <path
-                                    d="m2.244 13.081.943-2.803H6.66l.944 2.803H8.86L5.54 3.75H4.322L1 13.081h1.244zm2.7-7.923L6.34 9.314H3.51l1.4-4.156h.034zm9.146 7.027h.035v.896h1.128V8.125c0-1.51-1.114-2.345-2.646-2.345-1.736 0-2.59.916-2.666 2.174h1.108c.068-.718.595-1.19 1.517-1.19.971 0 1.518.52 1.518 1.464v.731H12.19c-1.647.007-2.522.8-2.522 2.058 0 1.319.957 2.18 2.345 2.18 1.06 0 1.716-.43 2.078-1.011zm-1.763.035c-.752 0-1.456-.397-1.456-1.244 0-.65.424-1.115 1.408-1.115h1.805v.834c0 .896-.752 1.525-1.757 1.525z" />
-                            </svg>
-                        </div>
-                        <div class="bartext">크기</div>
-                    </div>
-                    <div class="baricon_wrap next" id="next_btn">
-                        <div class="baricon">
-                            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
-                                class="bi bi-caret-right-fill svg" viewBox="0 0 16 16">
-                                <path
-                                    d="m12.14 8.753-5.482 4.796c-.646.566-1.658.106-1.658-.753V3.204a1 1 0 0 1 1.659-.753l5.48 4.796a1 1 0 0 1 0 1.506z" />
-                            </svg>
-                        </div>
-                        <div class="bartext">다음</div>
                     </div>
                 </div>
-                <!-- popover : slider --------------- -->
-                <div hidden>
-                    <div data-name="popover-content" class="d-flex justify-content-center align-items-center">
-
-                        <!-- /////////////// -->
-                        <div class="txt_ex1 fw-bold fw-bold">가</div>
-                        <!-- <input type="range" name="slider" id="slider" value="0" min="0" max="2"  /> -->
-                        <input type="range" min="0" max="2" value="0" class="slider" id="tSliderRange">
-                        <!-- <p>Value: <span id="value"></span></p> -->
-                        <div class="txt_ex2 fw-bold fs-3 fw-bold">가</div>
-                        <!-- /////////////// -->
-
-                    </div>
-                </div>
-            </div>
 
             </div>
 

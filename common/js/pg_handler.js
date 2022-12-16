@@ -284,6 +284,7 @@ $('#hint_btn').click(function () {
     $(".pg_" + real_pg + '_shadow_ext').toggleClass("addShadow");
     $(".pg_" + real_pg + "_shadow_inner").toggleClass("addInnerShadow");
     $('.border_darker').toggleClass("mk_border_darker");
+    $('.txt_darker').toggleClass("mk_txt_darker");
 })
 //*******************************************************************************
 //**************************+    클릭 제어   +*********************************** 

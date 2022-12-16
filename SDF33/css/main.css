@@ -4,6 +4,12 @@
     border-radius: 0!important;
   }
 
+.btn-r button {
+    color: #fff!important;
+    background: #F86253!important;
+    border-radius: 0!important;
+  }
+
 .btn-outline-r {
     background: #fff;
     border-color: #F86253!important;

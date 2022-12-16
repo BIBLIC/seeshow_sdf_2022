@@ -35,8 +35,8 @@
                                         <h5 class="modal-title">
                                             잠깐!
                                         </h5>
-                                        <button type="button" class="btn-close" data-bs-dismiss="modal"
-                                            aria-label="Close"></button>
+                                        <!-- <button type="button" class="btn-close" data-bs-dismiss="modal"
+                                            aria-label="Close"></button> -->
                                     </div>
                                     <div class="modal-body">
                                         모달 내용
@@ -171,14 +171,26 @@
                                         <path
                                             d="M8 1a2.5 2.5 0 0 1 2.5 2.5V4h-5v-.5A2.5 2.5 0 0 1 8 1zm3.5 3v-.5a3.5 3.5 0 1 0-7 0V4H1v10a2 2 0 0 0 2 2h10a2 2 0 0 0 2-2V4h-3.5zM2 5h12v9a1 1 0 0 1-1 1H3a1 1 0 0 1-1-1V5z" />
                                     </svg>
-                                    <div class="pg_1_answer">
-                                        <div class="pg_1_answer" width="25" height="25" styl="z-index:25;">
+                                    <div class="cursor_pos_1">
+                                        <div class="pg_1_answer">
+                                            <div class="pg_1_answer" width="25" height="25" styl="z-index:25;">
+                                            </div>
+                                            <svg xmlns="http://www.w3.org/2000/svg" width="25" height="25"
+                                                fill="currentColor" class="bi bi-three-dots" viewBox="0 0 16 16">
+                                                <path
+                                                    d="M3 9.5a1.5 1.5 0 1 1 0-3 1.5 1.5 0 0 1 0 3zm5 0a1.5 1.5 0 1 1 0-3 1.5 1.5 0 0 1 0 3zm5 0a1.5 1.5 0 1 1 0-3 1.5 1.5 0 0 1 0 3z" />
+                                            </svg>
                                         </div>
-                                        <svg xmlns="http://www.w3.org/2000/svg" width="25" height="25"
-                                            fill="currentColor" class="bi bi-three-dots" viewBox="0 0 16 16">
-                                            <path
-                                                d="M3 9.5a1.5 1.5 0 1 1 0-3 1.5 1.5 0 0 1 0 3zm5 0a1.5 1.5 0 1 1 0-3 1.5 1.5 0 0 1 0 3zm5 0a1.5 1.5 0 1 1 0-3 1.5 1.5 0 0 1 0 3z" />
-                                        </svg>
+                                        <!-- 커서 가이드 -->
+                                        <div class="cursor_wrap cursor_wrap_1 ">
+                                            <span class="cursor" x-placement="bottom pg_1_answer">
+                                                <button class="react-joyride__beacon" type="button pg_1_answer">
+                                                    <span class="cursor_outer pg_1_answer"></span>
+                                                    <span class="cursor_inner pg_1_answer"><span>
+                                                </button>
+                                            </span>
+                                        </div>
+                                        <!-- 커서 가이드 -->
                                     </div>
                                 </div>
                             </div>
@@ -291,11 +303,23 @@
                                     </div>
                                 </div>
                                 <div class="scroll p-3 d-flex flex-column">
-                                    <div class="d-flex justify-content-around">
+                                    <div class="d-flex justify-content-around cursor_pos_2">
                                         <div class="icon_wrap fontSz">
                                             <div class="icon pg_2_answer"></div>
                                             <div class="pg_2_answer">선물하기</div>
                                         </div>
+                                        <!-- 커서 가이드 -->
+                                            <div class="cursor_wrap cursor_wrap_2 pg_2_answer">
+                                                <span class="cursor" x-placement="bottom pg_2_answer">
+                                                    <button class="react-joyride__beacon"
+                                                        type="button pg_2_answer">
+                                                        <span class="cursor_outer pg_2_answer"></span>
+                                                        <span class="cursor_inner pg_2_answer"><span>
+                                                    </button>
+                                                </span>
+                                            </div>
+                                            <!-- 커서 가이드 -->
+                                  
                                         <div class="icon_wrap fontSz">
                                             <div class="icon"></div>
                                             <div>쇼핑하기</div>
@@ -994,6 +1018,23 @@
                                     placeholder="이름(초성), 전화번호 검색"></input>
                                 <div class="p-4">
                                     <div class="fs-sm text-black-50 fontSz">내 프로필</div>
+                                    <div class="mt-2 d-flex justify-content-between align-items-center ">
+                                        <div class="d-flex align-items-center ">
+                                            <div class="icon d-flex flex-center-center ">사진</div>
+                                            <div class="ps-4  fontSz">김서울</div>
+                                        </div>
+                                        <div class="pe-3 ">
+                                            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16"
+                                                fill="currentColor" class=" bi bi-circle"
+                                                viewBox="0 0 16 16">
+                                                <path
+                                                    d="M8 15A7 7 0 1 1 8 1a7 7 0 0 1 0 14zm0 1A8 8 0 1 0 8 0a8 8 0 0 0 0 16z" />
+                                            </svg>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="p-4">
+                                    <div class="fs-sm text-black-50 fontSz">친구</div>
                                     <div class="mt-2 d-flex justify-content-between align-items-center pg_10_answer">
                                         <div class="d-flex align-items-center pg_10_answer">
                                             <div class="icon d-flex flex-center-center pg_10_answer">사진</div>
@@ -1007,6 +1048,22 @@
                                                     d="M8 15A7 7 0 1 1 8 1a7 7 0 0 1 0 14zm0 1A8 8 0 1 0 8 0a8 8 0 0 0 0 16z" />
                                             </svg>
                                         </div>
+                                        
+                                    </div>
+                                    <div class="mt-2 d-flex justify-content-between align-items-center ">
+                                        <div class="d-flex align-items-center ">
+                                            <div class="icon d-flex flex-center-center ">사진</div>
+                                            <div class="ps-4  fontSz">이친구</div>
+                                        </div>
+                                        <div class="pe-3 ">
+                                            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16"
+                                                fill="currentColor" class=" bi bi-circle"
+                                                viewBox="0 0 16 16">
+                                                <path
+                                                    d="M8 15A7 7 0 1 1 8 1a7 7 0 0 1 0 14zm0 1A8 8 0 1 0 8 0a8 8 0 0 0 0 16z" />
+                                            </svg>
+                                        </div>
+                                        
                                     </div>
                                 </div>
                             </div>
@@ -1029,18 +1086,51 @@
                                 <input type="text" class="container fontSz" placeholder="이름(초성), 전화번호 검색"></input>
                                 <div class="p-4">
                                     <div class="fs-sm text-black-50 fontSz">내 프로필</div>
-                                    <div class="mt-2 d-flex justify-content-between align-items-center">
-                                        <div class="d-flex align-items-center">
-                                            <div class="icon d-flex flex-center-center">사진</div>
-                                            <div class="ps-4 fontSz">김한국</div>
+                                    <div class="mt-2 d-flex justify-content-between align-items-center ">
+                                        <div class="d-flex align-items-center ">
+                                            <div class="icon d-flex flex-center-center ">사진</div>
+                                            <div class="ps-4  fontSz">김서울</div>
                                         </div>
-                                        <div class="pe-3">
+                                        <div class="pe-3 ">
+                                            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16"
+                                                fill="currentColor" class=" bi bi-circle"
+                                                viewBox="0 0 16 16">
+                                                <path
+                                                    d="M8 15A7 7 0 1 1 8 1a7 7 0 0 1 0 14zm0 1A8 8 0 1 0 8 0a8 8 0 0 0 0 16z" />
+                                            </svg>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="p-4">
+                                    <div class="fs-sm text-black-50 fontSz">친구</div>
+                                    <div class="mt-2 d-flex justify-content-between align-items-center ">
+                                        <div class="d-flex align-items-center ">
+                                            <div class="icon d-flex flex-center-center ">사진</div>
+                                            <div class="ps-4  fontSz">김한국</div>
+                                        </div>
+                                        <div class="pe-3 ">
                                             <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16"
                                                 fill="currentColor" class="bi bi-circle-fill" viewBox="0 0 16 16"
                                                 style="color: #FEE700;">
                                                 <circle cx="8" cy="8" r="8" />
                                             </svg>
                                         </div>
+                                        
+                                    </div>
+                                    <div class="mt-2 d-flex justify-content-between align-items-center ">
+                                        <div class="d-flex align-items-center ">
+                                            <div class="icon d-flex flex-center-center ">사진</div>
+                                            <div class="ps-4  fontSz">이친구</div>
+                                        </div>
+                                        <div class="pe-3 ">
+                                            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16"
+                                                fill="currentColor" class=" bi bi-circle"
+                                                viewBox="0 0 16 16">
+                                                <path
+                                                    d="M8 15A7 7 0 1 1 8 1a7 7 0 0 1 0 14zm0 1A8 8 0 1 0 8 0a8 8 0 0 0 0 16z" />
+                                            </svg>
+                                        </div>
+                                        
                                     </div>
                                 </div>
 
@@ -1049,9 +1139,8 @@
                         <!------------------------------ page 12 ------------------------------>
                         <div class="page" id="p12">
                             <div class="page_wrap">
-                                <div class="scroller">
-                                    <h1 class="pg_title fontSz" style="color: #fff;">Page12</h1>
-                                    <div class="bar w-100 d-flex justify-content-between align-items-center">
+                                <h1 class="pg_title fontSz" style="color: #fff;">Page12</h1>
+                                    <div class="bar w-100 d-flex justify-content-between align-items-center pg_12_shadow_inner">
                                         <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor"
                                             class="bi bi-chevron-left" viewBox="0 0 16 16">
                                             <path fill-rule="evenodd"
@@ -1063,98 +1152,106 @@
                                                 d="M2.146 2.854a.5.5 0 1 1 .708-.708L8 7.293l5.146-5.147a.5.5 0 0 1 .708.708L8.707 8l5.147 5.146a.5.5 0 0 1-.708.708L8 8.707l-5.146 5.147a.5.5 0 0 1-.708-.708L7.293 8 2.146 2.854Z" />
                                         </svg>
                                     </div>
-                                    <div class="d-flex flex-column flex-center-center">
-                                        <div class="icon">프로필</div>
-                                        <h3 class="mt-3 fw-bold">나에게 주는 선물</h3>
-                                    </div>
-                                    <div class="top_col d-flex justify-content-between align-items-center px-2 py-3 mt-3 wScroller">
-                                        <div class="boxx px-3 py-1 fontSz">
-                                            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-camera me-2" viewBox="0 0 16 16">
-                                                <path d="M15 12a1 1 0 0 1-1 1H2a1 1 0 0 1-1-1V6a1 1 0 0 1 1-1h1.172a3 3 0 0 0 2.12-.879l.83-.828A1 1 0 0 1 6.827 3h2.344a1 1 0 0 1 .707.293l.828.828A3 3 0 0 0 12.828 5H14a1 1 0 0 1 1 1v6zM2 4a2 2 0 0 0-2 2v6a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V6a2 2 0 0 0-2-2h-1.172a2 2 0 0 1-1.414-.586l-.828-.828A2 2 0 0 0 9.172 2H6.828a2 2 0 0 0-1.414.586l-.828.828A2 2 0 0 1 3.172 4H2z"/>
-                                                <path d="M8 11a2.5 2.5 0 1 1 0-5 2.5 2.5 0 0 1 0 5zm0 1a3.5 3.5 0 1 0 0-7 3.5 3.5 0 0 0 0 7zM3 6.5a.5.5 0 1 1-1 0 .5.5 0 0 1 1 0z"/>
-                                              </svg>
-                                            나만의 카드
+                                <div class="scroller">
+                                    
+                                    <div class="pg_12_shadow_inner">
+                                        <div class="d-flex flex-column flex-center-center">
+                                            <!-- icon 넣고 나서 'icon' 클래스명과 함께 있는 'border_darker' 지우기 -->
+                                            <div class="icon border_darker">프로필</div>
+                                            <h3 class="mt-3 fw-bold">나에게 주는 선물</h3>
                                         </div>
-                                        <div class="boxx boxx_black px-3 mx-1 py-1 fontSz">전체</div>
-                                        <div class="boxx px-3 mx-1 py-1 fontSz">축하</div>
-                                        <div class="boxx px-3 mx-1 py-1 fontSz">건강</div>
-                                        <div class="boxx px-3 mx-1 py-1 fontSz">재미</div>
-                                    </div>
-                                    <div class="d-flex justify-content-between align-items-center p-3">
-                                        <div class="icon">1</div>
-                                        <div class="icon">2</div>
-                                        <div class="icon">3</div>
-                                        <div class="icon">4</div>
-                                        <div class="icon">5</div>
-                                        <svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" fill="currentColor"
-                                            class="bi bi-grid" viewBox="0 0 16 16">
-                                            <path
-                                                d="M1 2.5A1.5 1.5 0 0 1 2.5 1h3A1.5 1.5 0 0 1 7 2.5v3A1.5 1.5 0 0 1 5.5 7h-3A1.5 1.5 0 0 1 1 5.5v-3zM2.5 2a.5.5 0 0 0-.5.5v3a.5.5 0 0 0 .5.5h3a.5.5 0 0 0 .5-.5v-3a.5.5 0 0 0-.5-.5h-3zm6.5.5A1.5 1.5 0 0 1 10.5 1h3A1.5 1.5 0 0 1 15 2.5v3A1.5 1.5 0 0 1 13.5 7h-3A1.5 1.5 0 0 1 9 5.5v-3zm1.5-.5a.5.5 0 0 0-.5.5v3a.5.5 0 0 0 .5.5h3a.5.5 0 0 0 .5-.5v-3a.5.5 0 0 0-.5-.5h-3zM1 10.5A1.5 1.5 0 0 1 2.5 9h3A1.5 1.5 0 0 1 7 10.5v3A1.5 1.5 0 0 1 5.5 15h-3A1.5 1.5 0 0 1 1 13.5v-3zm1.5-.5a.5.5 0 0 0-.5.5v3a.5.5 0 0 0 .5.5h3a.5.5 0 0 0 .5-.5v-3a.5.5 0 0 0-.5-.5h-3zm6.5.5A1.5 1.5 0 0 1 10.5 9h3a1.5 1.5 0 0 1 1.5 1.5v3a1.5 1.5 0 0 1-1.5 1.5h-3A1.5 1.5 0 0 1 9 13.5v-3zm1.5-.5a.5.5 0 0 0-.5.5v3a.5.5 0 0 0 .5.5h3a.5.5 0 0 0 .5-.5v-3a.5.5 0 0 0-.5-.5h-3z" />
-                                        </svg>
-                                    </div>
-                                    <div class="d-flex flex-center-center">
-                                        <div class="icon_card d-flex flex-center-center">편지 카드</div>
-                                    </div>
-                                    <div class="d-flex justify-content-between p-4 pt-2 pb-2">
-                                        <div class="icon_btn d-flex flex-center-center pe-2 fontSz">
-                                            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16"
-                                                fill="currentColor" class="bi bi-pencil-fill" viewBox="0 0 16 16">
-                                                <path
-                                                    d="M12.854.146a.5.5 0 0 0-.707 0L10.5 1.793 14.207 5.5l1.647-1.646a.5.5 0 0 0 0-.708l-3-3zm.646 6.061L9.793 2.5 3.293 9H3.5a.5.5 0 0 1 .5.5v.5h.5a.5.5 0 0 1 .5.5v.5h.5a.5.5 0 0 1 .5.5v.5h.5a.5.5 0 0 1 .5.5v.207l6.5-6.5zm-7.468 7.468A.5.5 0 0 1 6 13.5V13h-.5a.5.5 0 0 1-.5-.5V12h-.5a.5.5 0 0 1-.5-.5V11h-.5a.5.5 0 0 1-.5-.5V10h-.5a.499.499 0 0 1-.175-.032l-.179.178a.5.5 0 0 0-.11.168l-2 5a.5.5 0 0 0 .65.65l5-2a.5.5 0 0 0 .168-.11l.178-.178z" />
-                                            </svg>&nbsp;텍스트 추가
+                                        <div class="top_col d-flex justify-content-between align-items-center px-2 py-3 mt-3 wScroller pg_12_shadow_inner">
+                                            <div class="boxx px-3 py-1 fontSz pg_12_shadow_inner border_darker">
+                                                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-camera me-2" viewBox="0 0 16 16">
+                                                    <path d="M15 12a1 1 0 0 1-1 1H2a1 1 0 0 1-1-1V6a1 1 0 0 1 1-1h1.172a3 3 0 0 0 2.12-.879l.83-.828A1 1 0 0 1 6.827 3h2.344a1 1 0 0 1 .707.293l.828.828A3 3 0 0 0 12.828 5H14a1 1 0 0 1 1 1v6zM2 4a2 2 0 0 0-2 2v6a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V6a2 2 0 0 0-2-2h-1.172a2 2 0 0 1-1.414-.586l-.828-.828A2 2 0 0 0 9.172 2H6.828a2 2 0 0 0-1.414.586l-.828.828A2 2 0 0 1 3.172 4H2z"/>
+                                                    <path d="M8 11a2.5 2.5 0 1 1 0-5 2.5 2.5 0 0 1 0 5zm0 1a3.5 3.5 0 1 0 0-7 3.5 3.5 0 0 0 0 7zM3 6.5a.5.5 0 1 1-1 0 .5.5 0 0 1 1 0z"/>
+                                                  </svg>
+                                                나만의 카드
+                                            </div>
+                                            <div class="boxx boxx_black px-3 mx-1 py-1 fontSz pg_12_shadow_inner border_darker txt_darker">전체</div>
+                                            <div class="boxx px-3 mx-1 py-1 fontSz pg_12_shadow_inner border_darker">축하</div>
+                                            <div class="boxx px-3 mx-1 py-1 fontSz pg_12_shadow_inner border_darker">건강</div>
+                                            <div class="boxx px-3 mx-1 py-1 fontSz pg_12_shadow_inner border_darker">재미</div>
                                         </div>
-                                        <div class="icon_btn d-flex flex-center-center fontSz">
-                                            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16"
-                                                fill="currentColor" class="bi bi-mic-fill" viewBox="0 0 16 16">
-                                                <path d="M5 3a3 3 0 0 1 6 0v5a3 3 0 0 1-6 0V3z" />
+                                        <div class="d-flex justify-content-between align-items-center p-3">
+                                            <!-- icon 넣고 나서 'icon' 클래스명과 함께 있는 'border_darker' 5개 지우기 -->
+                                            <div class="icon border_darker">1</div>
+                                            <div class="icon border_darker">2</div>
+                                            <div class="icon border_darker">3</div>
+                                            <div class="icon border_darker">4</div>
+                                            <div class="icon border_darker">5</div>
+                                            <svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" fill="currentColor"
+                                                class="bi bi-grid" viewBox="0 0 16 16">
                                                 <path
-                                                    d="M3.5 6.5A.5.5 0 0 1 4 7v1a4 4 0 0 0 8 0V7a.5.5 0 0 1 1 0v1a5 5 0 0 1-4.5 4.975V15h3a.5.5 0 0 1 0 1h-7a.5.5 0 0 1 0-1h3v-2.025A5 5 0 0 1 3 8V7a.5.5 0 0 1 .5-.5z" />
-                                            </svg>&nbsp;음성 추가
-                                        </div>
-                                    </div>
-                                    <div class="d-flex flex-center-center">
-                                        <input type="text" class="fontSz m-4 p-2 inset-border" placeholder="선물과 함께 보낼 메시지를 적어보세요">
-                                    </div>
-                                    <div class="border_b p-2 d-flex justify-content-between ps-3 pe-3 ">
-                                        <div class="fw-bold">쇼핑포인트</div>
-                                        <div>0 P</div>
-                                    </div>
-                                    <div class="p-2 d-flex justify-content-between ps-3 pe-3">
-                                        <div class="fw-bold">최종 결제 금액</div>
-                                        <div>29,900원</div>
-                                    </div>
-                                    <div class="w-100 bg-secondary bg-opacity-10 border-top border-bottom border-seconda    ry border-opacity-25"
-                                        style="height: .5em;"></div>
-                                    <div class="p-2 d-flex justify-content-between ps-3 pe-3">
-                                        <div class="fw-bold">결제 수단</div>
-                                        <div class="fs-sm text-black-50">입력 한번으로 안전하게 결제하세요</div>
-                                    </div>
-                                    <div class="mt-4 mb-4 d-flex flex-center-center">
-                                        <div class="border_y d-flex ">
-                                            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16"
-                                                fill="currentColor" class="bi bi-chat-fill" viewBox="0 0 16 16">
-                                                <path
-                                                    d="M8 15c4.418 0 8-3.134 8-7s-3.582-7-8-7-8 3.134-8 7c0 1.76.743 3.37 1.97 4.6-.097 1.016-.417 2.13-.771 2.966-.079.186.074.394.273.362 2.256-.37 3.597-.938 4.18-1.234A9.06 9.06 0 0 0 8 15z" />
+                                                    d="M1 2.5A1.5 1.5 0 0 1 2.5 1h3A1.5 1.5 0 0 1 7 2.5v3A1.5 1.5 0 0 1 5.5 7h-3A1.5 1.5 0 0 1 1 5.5v-3zM2.5 2a.5.5 0 0 0-.5.5v3a.5.5 0 0 0 .5.5h3a.5.5 0 0 0 .5-.5v-3a.5.5 0 0 0-.5-.5h-3zm6.5.5A1.5 1.5 0 0 1 10.5 1h3A1.5 1.5 0 0 1 15 2.5v3A1.5 1.5 0 0 1 13.5 7h-3A1.5 1.5 0 0 1 9 5.5v-3zm1.5-.5a.5.5 0 0 0-.5.5v3a.5.5 0 0 0 .5.5h3a.5.5 0 0 0 .5-.5v-3a.5.5 0 0 0-.5-.5h-3zM1 10.5A1.5 1.5 0 0 1 2.5 9h3A1.5 1.5 0 0 1 7 10.5v3A1.5 1.5 0 0 1 5.5 15h-3A1.5 1.5 0 0 1 1 13.5v-3zm1.5-.5a.5.5 0 0 0-.5.5v3a.5.5 0 0 0 .5.5h3a.5.5 0 0 0 .5-.5v-3a.5.5 0 0 0-.5-.5h-3zm6.5.5A1.5 1.5 0 0 1 10.5 9h3a1.5 1.5 0 0 1 1.5 1.5v3a1.5 1.5 0 0 1-1.5 1.5h-3A1.5 1.5 0 0 1 9 13.5v-3zm1.5-.5a.5.5 0 0 0-.5.5v3a.5.5 0 0 0 .5.5h3a.5.5 0 0 0 .5-.5v-3a.5.5 0 0 0-.5-.5h-3z" />
                                             </svg>
-                                            <div class="d-flex fw-bold">pay</div>
                                         </div>
-                                        <div class="d-flex">로 결제 시 <b>스탬프 증정</b></div>
-                                        <div class="d-flex text-black-50">(일부 상품 제외)</div>
+                                        <div class="d-flex flex-center-center">
+                                            <div class="icon_card d-flex flex-center-center border_darker">편지 카드</div>
+                                        </div>
+                                        <div class="d-flex justify-content-between p-4 pt-2 pb-2">
+                                            <div class="icon_btn d-flex flex-center-center pe-2 fontSz border_darker">
+                                                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16"
+                                                    fill="currentColor" class="bi bi-pencil-fill" viewBox="0 0 16 16">
+                                                    <path
+                                                        d="M12.854.146a.5.5 0 0 0-.707 0L10.5 1.793 14.207 5.5l1.647-1.646a.5.5 0 0 0 0-.708l-3-3zm.646 6.061L9.793 2.5 3.293 9H3.5a.5.5 0 0 1 .5.5v.5h.5a.5.5 0 0 1 .5.5v.5h.5a.5.5 0 0 1 .5.5v.5h.5a.5.5 0 0 1 .5.5v.207l6.5-6.5zm-7.468 7.468A.5.5 0 0 1 6 13.5V13h-.5a.5.5 0 0 1-.5-.5V12h-.5a.5.5 0 0 1-.5-.5V11h-.5a.5.5 0 0 1-.5-.5V10h-.5a.499.499 0 0 1-.175-.032l-.179.178a.5.5 0 0 0-.11.168l-2 5a.5.5 0 0 0 .65.65l5-2a.5.5 0 0 0 .168-.11l.178-.178z" />
+                                                </svg>&nbsp;텍스트 추가
+                                            </div>
+                                            <div class="icon_btn d-flex flex-center-center fontSz border_darker">
+                                                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16"
+                                                    fill="currentColor" class="bi bi-mic-fill" viewBox="0 0 16 16">
+                                                    <path d="M5 3a3 3 0 0 1 6 0v5a3 3 0 0 1-6 0V3z" />
+                                                    <path
+                                                        d="M3.5 6.5A.5.5 0 0 1 4 7v1a4 4 0 0 0 8 0V7a.5.5 0 0 1 1 0v1a5 5 0 0 1-4.5 4.975V15h3a.5.5 0 0 1 0 1h-7a.5.5 0 0 1 0-1h3v-2.025A5 5 0 0 1 3 8V7a.5.5 0 0 1 .5-.5z" />
+                                                </svg>&nbsp;음성 추가
+                                            </div>
+                                        </div>
                                     </div>
-                                    <div class="border_b"></div>
-                                    <div class="p-2 d-flex justify-content-between ps-3 pe-3">
-                                        <div class="fw-bold">빠른결제</div>
-                                        <svg xmlns="http://www.w3.org/2000/svg" width="30" height="30"
-                                            fill="currentColor" class="bi bi-toggle-on" viewBox="0 0 16 16"
-                                            style="color: #FEE700;">
-                                            <path
-                                                d="M5 3a5 5 0 0 0 0 10h6a5 5 0 0 0 0-10H5zm6 9a4 4 0 1 1 0-8 4 4 0 0 1 0 8z" />
-                                        </svg>
+                                    <div class="d-flex flex-center-center pg_12_add">
+                                        <input type="text" class="fontSz m-4 p-2 inset-border answer_any_txt pg_12_answer 12_input " placeholder="선물과 함께 보낼 메시지를 적어보세요">
                                     </div>
-                                    <div class="top_col d-flex justify-content-between align-items-center">
-                                        <div>
+                                    <div class="pg_12_shadow_inner">
+                                        <div class="border_b p-2 d-flex justify-content-between ps-3 pe-3 ">
+                                            <div class="fw-bold">쇼핑포인트</div>
+                                            <div>0 P</div>
+                                        </div>
+                                        <div class="p-2 d-flex justify-content-between ps-3 pe-3">
+                                            <div class="fw-bold">최종 결제 금액</div>
+                                            <div>29,900원</div>
+                                        </div>
+                                        <div class="w-100 bg-secondary bg-opacity-10 border-top border-bottom border-seconda    ry border-opacity-25"
+                                            style="height: .5em;"></div>
+                                        <div class="p-2 d-flex justify-content-between ps-3 pe-3">
+                                            <div class="fw-bold">결제 수단</div>
+                                            <div class="fs-sm text-black-50">입력 한번으로 안전하게 결제하세요</div>
+                                        </div>
+                                        <div class="mt-4 mb-4 d-flex flex-center-center">
+                                            <div class="border_y d-flex ">
+                                                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16"
+                                                    fill="currentColor" class="bi bi-chat-fill" viewBox="0 0 16 16">
+                                                    <path
+                                                        d="M8 15c4.418 0 8-3.134 8-7s-3.582-7-8-7-8 3.134-8 7c0 1.76.743 3.37 1.97 4.6-.097 1.016-.417 2.13-.771 2.966-.079.186.074.394.273.362 2.256-.37 3.597-.938 4.18-1.234A9.06 9.06 0 0 0 8 15z" />
+                                                </svg>
+                                                <div class="d-flex fw-bold txt_darker">pay</div>
+                                            </div>
+                                            <div class="d-flex">로 결제 시 <b>스탬프 증정</b></div>
+                                            <div class="d-flex text-black-50">(일부 상품 제외)</div>
+                                        </div>
+                                        <div class="border_b"></div>
+                                        <div class="p-2 d-flex justify-content-between ps-3 pe-3">
+                                            <div class="fw-bold">빠른결제</div>
+                                            <svg xmlns="http://www.w3.org/2000/svg" width="30" height="30"
+                                                fill="currentColor" class="bi bi-toggle-on txt_darker" viewBox="0 0 16 16"
+                                                style="color: #FEE700;">
+                                                <path
+                                                    d="M5 3a5 5 0 0 0 0 10h6a5 5 0 0 0 0-10H5zm6 9a4 4 0 1 1 0-8 4 4 0 0 1 0 8z" />
+                                            </svg>
+                                        </div>
+                                    </div>
+                                    <div class="top_col d-flex justify-content-between align-items-center  input_nxt_btn">
+                                        <div class="">
                                             <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20"
-                                                fill="currentColor" class="bi bi-credit-card-fill" viewBox="0 0 16 16">
+                                                fill="currentColor" class="bi bi-credit-card-fill " viewBox="0 0 16 16">
                                                 <path
                                                     d="M0 4a2 2 0 0 1 2-2h12a2 2 0 0 1 2 2v1H0V4zm0 3v5a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V7H0zm3 2h1a1 1 0 0 1 1 1v1a1 1 0 0 1-1 1H3a1 1 0 0 1-1-1v-1a1 1 0 0 1 1-1z" />
                                             </svg>&nbsp;카드 입력
@@ -1166,49 +1263,51 @@
                                                 d="M16 8A8 8 0 1 1 0 8a8 8 0 0 1 16 0zM8.5 4.5a.5.5 0 0 0-1 0v3h-3a.5.5 0 0 0 0 1h3v3a.5.5 0 0 0 1 0v-3h3a.5.5 0 0 0 0-1h-3v-3z" />
                                         </svg>
                                     </div>
-                                    <div class="top_col d-flex justify-content-between align-items-center">
-                                        <div>
-                                            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16"
-                                                fill="currentColor" class="bi bi-coin" viewBox="0 0 16 16">
+                                    <div class="pg_12_shadow_inner">
+                                        <div class="top_col d-flex justify-content-between align-items-center pg_12_shadow_inner">
+                                            <div>
+                                                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16"
+                                                    fill="currentColor" class="bi bi-coin" viewBox="0 0 16 16">
+                                                    <path
+                                                        d="M5.5 9.511c.076.954.83 1.697 2.182 1.785V12h.6v-.709c1.4-.098 2.218-.846 2.218-1.932 0-.987-.626-1.496-1.745-1.76l-.473-.112V5.57c.6.068.982.396 1.074.85h1.052c-.076-.919-.864-1.638-2.126-1.716V4h-.6v.719c-1.195.117-2.01.836-2.01 1.853 0 .9.606 1.472 1.613 1.707l.397.098v2.034c-.615-.093-1.022-.43-1.114-.9H5.5zm2.177-2.166c-.59-.137-.91-.416-.91-.836 0-.47.345-.822.915-.925v1.76h-.005zm.692 1.193c.717.166 1.048.435 1.048.91 0 .542-.412.914-1.135.982V8.518l.087.02z" />
+                                                    <path
+                                                        d="M8 15A7 7 0 1 1 8 1a7 7 0 0 1 0 14zm0 1A8 8 0 1 0 8 0a8 8 0 0 0 0 16z" />
+                                                    <path
+                                                        d="M8 13.5a5.5 5.5 0 1 1 0-11 5.5 5.5 0 0 1 0 11zm0 .5A6 6 0 1 0 8 2a6 6 0 0 0 0 12z" />
+                                                </svg>&nbsp;계좌 입력
+                                            </div>
+                                            <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20"
+                                                fill="currentColor" class="bi bi-plus-circle-fill txt_darker" viewBox="0 0 16 16"
+                                                style="color: #D8DADB;">
                                                 <path
-                                                    d="M5.5 9.511c.076.954.83 1.697 2.182 1.785V12h.6v-.709c1.4-.098 2.218-.846 2.218-1.932 0-.987-.626-1.496-1.745-1.76l-.473-.112V5.57c.6.068.982.396 1.074.85h1.052c-.076-.919-.864-1.638-2.126-1.716V4h-.6v.719c-1.195.117-2.01.836-2.01 1.853 0 .9.606 1.472 1.613 1.707l.397.098v2.034c-.615-.093-1.022-.43-1.114-.9H5.5zm2.177-2.166c-.59-.137-.91-.416-.91-.836 0-.47.345-.822.915-.925v1.76h-.005zm.692 1.193c.717.166 1.048.435 1.048.91 0 .542-.412.914-1.135.982V8.518l.087.02z" />
-                                                <path
-                                                    d="M8 15A7 7 0 1 1 8 1a7 7 0 0 1 0 14zm0 1A8 8 0 1 0 8 0a8 8 0 0 0 0 16z" />
-                                                <path
-                                                    d="M8 13.5a5.5 5.5 0 1 1 0-11 5.5 5.5 0 0 1 0 11zm0 .5A6 6 0 1 0 8 2a6 6 0 0 0 0 12z" />
-                                            </svg>&nbsp;계좌 입력
+                                                    d="M16 8A8 8 0 1 1 0 8a8 8 0 0 1 16 0zM8.5 4.5a.5.5 0 0 0-1 0v3h-3a.5.5 0 0 0 0 1h3v3a.5.5 0 0 0 1 0v-3h3a.5.5 0 0 0 0-1h-3v-3z" />
+                                            </svg>
                                         </div>
-                                        <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20"
-                                            fill="currentColor" class="bi bi-plus-circle-fill" viewBox="0 0 16 16"
-                                            style="color: #D8DADB;">
-                                            <path
-                                                d="M16 8A8 8 0 1 1 0 8a8 8 0 0 1 16 0zM8.5 4.5a.5.5 0 0 0-1 0v3h-3a.5.5 0 0 0 0 1h3v3a.5.5 0 0 0 1 0v-3h3a.5.5 0 0 0 0-1h-3v-3z" />
-                                        </svg>
-                                    </div>
-                                    <div class="border_b d-flex p-3">
-                                        <div class="fontSkb fs-sm">결제 혜택</div>
-                                        <div class="text-black-50 fs-sm ps-3">NH카드 2,3,4,5,6,7,8개월 무이자 할부</div>
-                                    </div>
-                                    <div class="p-3 d-flex justify-content-between">
-                                        <div class="fw-bold">기타결제</div>
-                                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16"
-                                            fill="currentColor" class="bi bi-chevron-down" viewBox="0 0 16 16"
-                                            style="color: #D8DADB;">
-                                            <path fill-rule="evenodd"
-                                                d="M1.646 4.646a.5.5 0 0 1 .708 0L8 10.293l5.646-5.647a.5.5 0 0 1 .708.708l-6 6a.5.5 0 0 1-.708 0l-6-6a.5.5 0 0 1 0-.708z" />
-                                        </svg>
-                                    </div>
-                                    <div class="w-100 bg-secondary bg-opacity-10 border-top border-bottom border-secondary border-opacity-25"
-                                        style="height: .5em;"></div>
-                                    <div class="fs-sm text-black-50 p-3">주문내용 및 결제조건을 확인했으며, 결제진행에 동의합니다.</div>
-                                    <div class="w-100 bg-secondary bg-opacity-10 border-top border-bottom border-secondary border-opacity-25"
-                                        style="height: 3em;">
-                                    </div>
-                                    <div class="under_bar">
-                                        <button type="button" class="btn btn-y w-100 fs-4 fw-bold" 
-                                            style="border-color: #F8E857;">
-                                            29,900원 결제하기
-                                        </button>
+                                        <div class="border_b d-flex p-3">
+                                            <div class="fontSkb fs-sm txt_darker">결제 혜택</div>
+                                            <div class="text-black-50 fs-sm ps-3">NH카드 2,3,4,5,6,7,8개월 무이자 할부</div>
+                                        </div>
+                                        <div class="p-3 d-flex justify-content-between">
+                                            <div class="fw-bold">기타결제</div>
+                                            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16"
+                                                fill="currentColor" class="bi bi-chevron-down txt_darker" viewBox="0 0 16 16"
+                                                style="color: #D8DADB;">
+                                                <path fill-rule="evenodd"
+                                                    d="M1.646 4.646a.5.5 0 0 1 .708 0L8 10.293l5.646-5.647a.5.5 0 0 1 .708.708l-6 6a.5.5 0 0 1-.708 0l-6-6a.5.5 0 0 1 0-.708z" />
+                                            </svg>
+                                        </div>
+                                        <div class="w-100 bg-secondary bg-opacity-10 border-top border-bottom border-secondary border-opacity-25"
+                                            style="height: .5em;"></div>
+                                        <div class="fs-sm text-black-50 p-3">주문내용 및 결제조건을 확인했으며, 결제진행에 동의합니다.</div>
+                                        <div class="w-100 bg-secondary bg-opacity-10 border-top border-bottom border-secondary border-opacity-25"
+                                            style="height: 3em;">
+                                        </div>
+                                        <div class="under_bar ">
+                                            <button type="button" class="btn btn-y w-100 fs-4 fw-bold pg_12_shadow_inner border_darker" 
+                                                style="border-color: #F8E857;">
+                                                29,900원 결제하기
+                                            </button>
+                                        </div>
                                     </div>
                                 </div>
                             </div>
@@ -1243,17 +1342,17 @@
                                 </div>
                                 <div
                                     class="container w-100 mt-3 d-flex flex-column justify-content-center align-items-center">
-                                    <div class="w-80 tab d-flex justify-content-start align-items-center mb-3 fontSz"
+                                    <div class="w-80 tab d-flex justify-content-start align-items-center mb-3 fontSz pg_13_answer"
                                         style="background-color:#fff;">
-                                        <div class="check">
+                                        <div class="check pg_13_answer">
                                             <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20"
                                                 fill="currentColor" style="color: #F5F5F5;"
-                                                class="bi bi-check-circle-fill" viewBox="0 0 16 16">
+                                                class="bi bi-check-circle-fill pg_13_answer" viewBox="0 0 16 16">
                                                 <path
                                                     d="M16 8A8 8 0 1 1 0 8a8 8 0 0 1 16 0zm-3.97-3.03a.75.75 0 0 0-1.08.022L7.477 9.417 5.384 7.323a.75.75 0 0 0-1.06 1.06L6.97 11.03a.75.75 0 0 0 1.079-.02l3.992-4.99a.75.75 0 0 0-.01-1.05z" />
                                             </svg>
                                         </div>
-                                        <div class="fw-bold">
+                                        <div class="fw-bold pg_13_answer">
                                             약관 전체동의
                                         </div>
                                     </div>
@@ -1376,7 +1475,7 @@
                                     </div>
                                 </div>
                                 <div class="under_bar">
-                                    <button type="button" class="btn btn-y w-100 rounded-0 fs-4 fw-bold pg_7_answer">
+                                    <button type="button" class="btn btn-y w-100 rounded-0 fs-4 fw-bold pg_14_answer">
                                         확인
                                     </button>
                                 </div>
@@ -1401,9 +1500,9 @@
                                 </div>
                                 <div class="under_bar">
                                     <div class="d-flex flex-center-center flex-column p-4 pt-2 pb-2">
-                                        <div class="icon_btn d-flex flex-center-center pe-2">
+                                        <div class="icon_btn d-flex flex-center-center pe-2 pg_15_answer">
                                             <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16"
-                                                fill="currentColor" class="bi bi-pencil-fill" viewBox="0 0 16 16">
+                                                fill="currentColor" class="bi bi-pencil-fill pg_15_answer" viewBox="0 0 16 16">
                                                 <path
                                                     d="M12.854.146a.5.5 0 0 0-.707 0L10.5 1.793 14.207 5.5l1.647-1.646a.5.5 0 0 0 0-.708l-3-3zm.646 6.061L9.793 2.5 3.293 9H3.5a.5.5 0 0 1 .5.5v.5h.5a.5.5 0 0 1 .5.5v.5h.5a.5.5 0 0 1 .5.5v.5h.5a.5.5 0 0 1 .5.5v.207l6.5-6.5zm-7.468 7.468A.5.5 0 0 1 6 13.5V13h-.5a.5.5 0 0 1-.5-.5V12h-.5a.5.5 0 0 1-.5-.5V11h-.5a.5.5 0 0 1-.5-.5V10h-.5a.499.499 0 0 1-.175-.032l-.179.178a.5.5 0 0 0-.11.168l-2 5a.5.5 0 0 0 .65.65l5-2a.5.5 0 0 0 .168-.11l.178-.178z" />
                                             </svg>&nbsp;직접 입력하기
@@ -1445,7 +1544,7 @@
                                         style="background-color:#fff;">
                                         <div class="w-100 border_b">
                                             <div class="fs-sm text-black-50 ">카드 비밀번호</div>
-                                            <input type="text" class="tab w-30"></input>
+                                            <input type="password" maxlength="4" class="tab w-30 ID_num4 pg_16_answer 16_input"></input>
                                         </div>
                                         <div class="fs-sm text-black-50 mt-2">CVC</div>
                                         <div class="tab border_b">
@@ -1462,10 +1561,10 @@
                                     </div>
                                 </div>
                                 <div class="d-flex flex-center-center">
-                                    <div class="boxx ps-3 pe-3 fw-bold d-flex flex-center-center">카드 스캔하기</div>
+                                    <div class="boxx ps-3 pe-3 fw-bold d-flex flex-center-center pg_16_shadow_inner">카드 스캔하기</div>
                                 </div>
                                 <div class="under_bar">
-                                    <button type="button" class="btn btn-y m-2 fs-4 fw-bold w-100">
+                                    <button type="button" class="btn btn-y m-2 fs-4 fw-bold w-100 input_nxt_btn">
                                         완료
                                     </button>
                                 </div>
@@ -1573,7 +1672,7 @@
                                                 </svg>
                                             </div>
                                         </button>
-                                        <button type="button" class="btn btn-y w-100 fw-bold fs-4">
+                                        <button type="button" class="btn btn-y w-100 fw-bold fs-4 pg_17_answer">
                                             29,900원 결제하기
                                         </button>
                                     </div>
