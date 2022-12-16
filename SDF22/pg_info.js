@@ -1,4 +1,4 @@
-var total_page = 11;//페이지 수 -> 시나리오마다 total_page 수 바꾸기 
+var total_page = 9;//페이지 수 -> 시나리오마다 total_page 수 바꾸기 
 
 //오디오 배열 선언, 페이지 수 대로 배열에 mp3 넣기
 const audioArray = [];
@@ -52,26 +52,10 @@ const pageClickArea = [
         page: 9,
         correctAnswer: "pg_9_answer"
     },
-    {
-        page: 10,
-        correctAnswer: "pg_10_answer"
-    },
-    {
-        page: 11,
-        correctAnswer: "pg_11_answer"
-    },
 ];
 
 // -=----------------------------------------------------------------------------------------------------------------------
 //페이지 수만큼 0부터 {}, 공간이 있어야 함
-// 넘버링 주의
-
-// {
-//     page: 3,
-//     inputableAnswer: "서울디지털재단"
-// },
-// 위 형식 맞춰서 ""안에 답 넣으면 됨
-// 답에는 공백이 없어야 함
 const inputAnswer = [
     {},
     {},
@@ -92,148 +76,140 @@ const inputAnswer = [
 const modalCont = [
     {
         page: 0,
-        instruction: "'시작하기' 버튼을 클릭하세요."
+        instruction: ""
     },
     {
         page: 1,
-        instruction: "'로그인' 버튼을 클릭하세요."
+        instruction: ""
     },
     {
         page: 2,
-        instruction: "화면의 키패드를 이용해 비밀번호 6자리를 입력하세요"
+        instruction: ""
     },
     {
         page: 3,
-        instruction: "팝업창의 '예' 버튼을 클릭하세요"
+        instruction: ""
     },
     {
         page: 4,
-        instruction: "개인정보동의 체크박스를 클릭하세요"
+        instruction: ""
     },
     {
         page: 5,
-        instruction: "주민번호 13자리를 입력하고 입력하고 엔터를 누르거나 '다음'버튼을 클릭하세요"
+        instruction: ""
     },
     {
         page: 6,
-        instruction: "비밀번호 6자리를 입력하고 '입력완료' 버튼을 클릭하세요."
+        instruction: ""
     },
     {
         page: 7,
-        instruction: "'확인' 버튼을 클릭하세요."
+        instruction: ""
     },
     {
         page: 8,
-        instruction: "'공과금 통합조회' 탭을 클릭하세요."
+        instruction: ""
     },
     {
         page: 9,
-        instruction: "주민번호 13자리를 입력하고 엔터를 누르거나 '다음'버튼을 클릭하세요"
-    },
-    {
-        page: 10,
-        instruction: "'국세' 탭을 클릭하세요."
-    },
-    {
-        page: 11,
-        instruction: "마지막 페이지"
+        instruction: ""
     },
 ];
 
 
 
-//*******************************************************************************
-//**************************+    커서   +*********************************** 
+// //*******************************************************************************
+// //**************************+    커서   +*********************************** 
 
-const cursor_pos_1 = document.querySelector('.cursor_pos_1');
-const cursor_pos_2 = document.querySelector('.cursor_pos_2');
-// const cursor_pos_3 = document.querySelector('.cursor_pos_3');
-// const cursor_pos_4 = document.querySelector('.cursor_pos_4');
-// const cursor_pos_5 = document.querySelector('.cursor_pos_5');
-// const cursor_pos_6 = document.querySelector('.cursor_pos_6');
+// const cursor_pos_1 = document.querySelector('.cursor_pos_1');
+// const cursor_pos_2 = document.querySelector('.cursor_pos_2');
+// // const cursor_pos_3 = document.querySelector('.cursor_pos_3');
+// // const cursor_pos_4 = document.querySelector('.cursor_pos_4');
+// // const cursor_pos_5 = document.querySelector('.cursor_pos_5');
+// // const cursor_pos_6 = document.querySelector('.cursor_pos_6');
 
-const cursor_wrap_1 = document.querySelector('.cursor_wrap_1');
-const cursor_wrap_2 = document.querySelector('.cursor_wrap_2');
-// const cursor_wrap_3 = document.querySelector('.cursor_wrap_3');
-// const cursor_wrap_4 = document.querySelector('.cursor_wrap_4');
-// const cursor_wrap_5 = document.querySelector('.cursor_wrap_5');
-// const cursor_wrap_6 = document.querySelector('.cursor_wrap_6');
-
-
-cursor_wrap_1.style.zIndex = "100";
-cursor_wrap_2.style.zIndex = "100";
-// cursor_wrap_3.style.zIndex = "100";
-// cursor_wrap_4.style.zIndex = "100";
-// cursor_wrap_5.style.zIndex = "100";
-// cursor_wrap_6.style.zIndex = "100";
+// const cursor_wrap_1 = document.querySelector('.cursor_wrap_1');
+// const cursor_wrap_2 = document.querySelector('.cursor_wrap_2');
+// // const cursor_wrap_3 = document.querySelector('.cursor_wrap_3');
+// // const cursor_wrap_4 = document.querySelector('.cursor_wrap_4');
+// // const cursor_wrap_5 = document.querySelector('.cursor_wrap_5');
+// // const cursor_wrap_6 = document.querySelector('.cursor_wrap_6');
 
 
-const { createPopper } = Popper;
-createPopper(cursor_pos_1, cursor_wrap_1, {
-    placement: 'right',
-    modifiers: [
-        {
-            name: 'offset',
-            options: {
-                offset: [0,0],
-            },
-        },
-    ],
-});
-createPopper(cursor_pos_2, cursor_wrap_2, {
-    placement: 'right',
-    modifiers: [
-        {
-            name: 'offset',
-            options: {
-                offset: [0,70],
-            },
-        },
-    ],
-});
-// createPopper(cursor_pos_3, cursor_wrap_3, {
+// cursor_wrap_1.style.zIndex = "100";
+// cursor_wrap_2.style.zIndex = "100";
+// // cursor_wrap_3.style.zIndex = "100";
+// // cursor_wrap_4.style.zIndex = "100";
+// // cursor_wrap_5.style.zIndex = "100";
+// // cursor_wrap_6.style.zIndex = "100";
+
+
+// const { createPopper } = Popper;
+// createPopper(cursor_pos_1, cursor_wrap_1, {
 //     placement: 'right',
 //     modifiers: [
 //         {
 //             name: 'offset',
 //             options: {
-//                 offset: [70,80],
+//                 offset: [0,0],
 //             },
 //         },
 //     ],
 // });
-// //cursor_wrap_4.style.left="60%";
-
-// createPopper(cursor_pos_4, cursor_wrap_4, {
-//     placement: 'bottom',
-//     modifiers: [
-//         {
-//             name: 'offset',
-//             options: {
-//                 offset: [250,10],
-//             },
-//         },
-//     ],
-// });
-// createPopper(cursor_pos_5, cursor_wrap_5, {
+// createPopper(cursor_pos_2, cursor_wrap_2, {
 //     placement: 'right',
 //     modifiers: [
 //         {
 //             name: 'offset',
 //             options: {
-//                 offset: [25,200],
+//                 offset: [30,30],
 //             },
 //         },
 //     ],
 // });
-// createPopper(cursor_pos_6, cursor_wrap_6, {
-//     placement: 'bottom',
-//     modifiers: [
-//         {
-//             name: 'offset',
-//             options: {
-//                 offset: [250,10],
-//             },
-//         },
-//     ],
-// });
+// // createPopper(cursor_pos_3, cursor_wrap_3, {
+// //     placement: 'right',
+// //     modifiers: [
+// //         {
+// //             name: 'offset',
+// //             options: {
+// //                 offset: [70,80],
+// //             },
+// //         },
+// //     ],
+// // });
+// // //cursor_wrap_4.style.left="60%";
+
+// // createPopper(cursor_pos_4, cursor_wrap_4, {
+// //     placement: 'bottom',
+// //     modifiers: [
+// //         {
+// //             name: 'offset',
+// //             options: {
+// //                 offset: [250,10],
+// //             },
+// //         },
+// //     ],
+// // });
+// // createPopper(cursor_pos_5, cursor_wrap_5, {
+// //     placement: 'right',
+// //     modifiers: [
+// //         {
+// //             name: 'offset',
+// //             options: {
+// //                 offset: [25,200],
+// //             },
+// //         },
+// //     ],
+// // });
+// // createPopper(cursor_pos_6, cursor_wrap_6, {
+// //     placement: 'bottom',
+// //     modifiers: [
+// //         {
+// //             name: 'offset',
+// //             options: {
+// //                 offset: [250,10],
+// //             },
+// //         },
+// //     ],
+// // });
