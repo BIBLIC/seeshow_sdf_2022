@@ -118,6 +118,10 @@
   /* ------------------------------- */
 
 
+#p2 .scroller {
+    height: 87vh;
+}
+
 #p2 .page_wrap {
     background-color: #FAFAFA;
 }
@@ -171,6 +175,12 @@
     min-height: 20vh;
 }
 
+#p6 .scroller,
+#p5 .scroller,
+#p4 .scroller {
+    height: 73vh;
+}
+
 .input_box {
     display: flex;
     align-items: center;
@@ -209,10 +219,6 @@
     min-height: 7vh;
 }
 
-.scroller {
-    height: 73vh;
-}
-
 #p12 .pop_up {
     width: 20em;
     min-height: 30vh;
@@ -238,12 +244,17 @@
     border-radius: 5px;
 }
 
+#p13 .scroller
+#p14 .scroller {
+    height: 80vh;
+}
+
 #p15 .pop_up {
     position: absolute;
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
-    width: 20em;
+    min-width: 20em;
     min-height: 32vh;
     background-color: #fff;
     border-radius: 5px;
