@@ -149,7 +149,7 @@ const modalCont = [
     },
     {
         page: 8,
-        instruction: "하겐다즈 프리미엉 수제 케이크를 찾아 눌러주세요."
+        instruction: "수제 케이크를 찾아 눌러주세요."
     },
     {
         page: 9,
