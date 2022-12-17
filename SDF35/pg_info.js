@@ -122,7 +122,7 @@ const modalCont = [
     },
     {
         page: 4,
-        instruction: "'모두 동의' 영역을 클릭하세요."
+        instruction: "'필수 항목'만 선택해 주세요. '선택 항목'은 동의하지 않아도 서비스 이용이 가능합니다."
     },
     {
         page: 5,

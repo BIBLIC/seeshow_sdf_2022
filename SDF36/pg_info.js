@@ -140,7 +140,7 @@ const modalCont = [
     },
     {
         page: 6,
-        instruction: "자전거 사진을 눌러주세요."
+        instruction: "자전거 사진을 눌러서 선택해 주세요."
     },
     {
         page: 7,
@@ -148,7 +148,7 @@ const modalCont = [
     },
     {
         page: 8,
-        instruction: "'스포츠/레저'를 클릭해주세요."
+        instruction: "분류에서 '스포츠/레저'를 선택해 주세요."
     },
     {
         page: 9,
