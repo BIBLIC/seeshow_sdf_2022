@@ -130,83 +130,83 @@ const inputAnswer = [
 const modalCont = [
     {
         page: 0,
-        instruction: ""
+        instruction: "'시작하기' 버튼을 눌러주세요."
     },
     {
         page: 1,
-        instruction: ""
+        instruction: "페이지가 자동으로 전환되도록 기다려주세요."
     },
     {
         page: 2,
-        instruction: ""
+        instruction: "'확인' 버튼을 눌러주세요."
     },
     {
         page: 3,
-        instruction: ""
+        instruction: "'본인인증으로 로그인' 버튼을 눌러주세요."
     },
     {
         page: 4,
-        instruction: ""
+        instruction: "sk 통신사를 눌러주세요."
     },
     {
         page: 5,
-        instruction: ""
+        instruction: "'전체동의' 체크박스를 눌러주세요."
     },
     {
         page: 6,
-        instruction: ""
+        instruction: "'시작하기' 버튼을 눌러주세요."
     },
     {
         page: 7,
-        instruction: ""
+        instruction: "'문자로 인증하기' 버튼을 눌러주세요."
     },
     {
         page: 8,
-        instruction: ""
+        instruction: "이름 입력란에 '김서울'을 입력해주세요."
     },
     {
         page: 9,
-        instruction: ""
+        instruction: "주민번호 앞 6자리를 입력해주세요."
     },
     {
         page: 10,
-        instruction: ""
+        instruction: "주민번호 뒷자리의 제일 첫번째 숫자를 입력해주세요."
     },
     {
         page: 11,
-        instruction: ""
+        instruction: "'-'을 제외한 휴대폰번호 11자리 입력 후 '확인' 버튼을 눌러주세요."
     },
     {
         page: 12,
-        instruction: ""
+        instruction: "인증번호 입력란에 '123456'을 입력하고 '확인'버튼을 눌러주세요."
     },
     {
         page: 13,
-        instruction: ""
+        instruction: "'네, 이동할게요' 부분을 눌러주세요."
     },
     {
         page: 14,
-        instruction: ""
+        instruction: "'전체동의' 체크박스를 눌러주세요."
     },
     {
         page: 15,
-        instruction: ""
+        instruction: "'다음' 버튼을 눌러주세요."
     },
     {
         page: 16,
-        instruction: ""
+        instruction: "마케팅 정보 수신 동의 여부를 눌러주세요."
     },
     {
         page: 17,
-        instruction: ""
+        instruction: "'티머니GO 시작하기' 버튼을 눌러주세요."
     },
     {
         page: 18,
-        instruction: ""
+        instruction: "티머니GO 가입이 완료되었습니다. 좌측 상단의 이름을 확인하고 네비게이션바의 '다음' 버튼을 눌러주세요. "
     },
     {
         page: 19,
-        instruction: ""
+        instruction: "완료"
     },
 ];
 
