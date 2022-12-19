@@ -122,18 +122,14 @@
     font-size: smaller;
 }
 
-
+.scroller {
+    width: 100%;
+    height: 66vh;
+}
 
 
 /* ----------------------------------------------------------------------------- */
-#p1 .icon,
-#p2 .icon,
-#p3 .icon,
-#p4 .icon,
-#p5 .icon,
-#p6 .icon,
-#p7 .icon,
-#p8 .icon {
+ .icon {
     height: 100%;
     border: 0;
 }
@@ -249,16 +245,6 @@
 #p3 .menu .right .bi-chevron-up {
     width: 1.5em;
     height: 1.5em;
-}
-
-#p2 .scroller,
-#p4 .scroller,
-#p5 .scroller,
-#p6 .scroller,
-#p7 .scroller,
-#p8 .scroller {
-    width: 100%;
-    height: 66vh;
 }
 
 /* ------------------------------------------ */
