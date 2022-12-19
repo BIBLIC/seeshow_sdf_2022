@@ -16,6 +16,7 @@ $('.nav_btn_wrap').css('display', 'none');
 
 var audio_stat = 1;
 var pwArr = [];
+var selcArr = [];
 
 //popovers 초기화 작업
 const popoverTriggerList = document.querySelectorAll('[data-bs-toggle="popover"]')
@@ -287,6 +288,7 @@ $('#hint_btn').click(function () {
     $('.txt_darker').toggleClass("mk_txt_darker");
     $(".pg_" + real_pg + '_txt_darker').toggleClass("mk_txt_darker");
     $(".pg_" + real_pg + '_border_darker').toggleClass("mk_txt_darker");
+    $(".pg_" + real_pg + '_border_b').toggleClass("mk_border_b_darker");
     $(".pg_" + real_pg + '_css_chng').toggleClass("css_toggle");
 })
 //*******************************************************************************
@@ -706,6 +708,25 @@ document.querySelector("main").addEventListener("click", function (e) {//메인 
                 $(".cal_next_btn").addClass("pg_" + real_pg + "_answer");
                 
             });
+        }
+
+
+        //----선택 2개 해야 하는 경우 -------------------
+        //selc_2_input pg_n_answer input_(셀렉트 넘버)
+        else if (e.target.className.includes("selc_2")) {
+            for (j = 0; j <= 2; j++) {
+                if (e.target.className.includes("input_" + j)) {
+                    selcArr.push(j);
+                    const set = new Set(selcArr);
+                    selcArr = [...set];
+                    console.log(selcArr);
+                    console.log(selcArr.length)
+                    $(".input_" + j).addClass("pg_" + real_pg + "_selected_css");
+                    if (selcArr.length==2) {
+                        $(".selc_next_btn").addClass("pg_" + real_pg + "_answer");
+                    }
+                } 
+            }
         }
         
         //암것도 없으면 모달 띄우기

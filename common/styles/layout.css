@@ -190,6 +190,9 @@ svg {
   filter: brightness(70%);
 }
 
+.mk_border_b_darker {
+  border-bottom: 2px solid #B2B2B2 !important;;
+}
 
 .text-lb {
   color: #0088d2 !important;
