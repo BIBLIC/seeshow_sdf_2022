@@ -74,9 +74,9 @@
                                     <h3 class="fw-bold">앱 접근 권한 안내</h3>
                                     <div class="pt-1 pb-4">티머니GO 원활한 사용을 위하여 서비스 사용 시<br>아래 권한을 허용해주세요.</div>
                                     <div class="item d-flex align-items-center">
-                                        <div class="icon">
+                                        <div class="icon ">
                                             <svg xmlns="http://www.w3.org/2000/svg" width="25" height="25"
-                                                fill="currentColor" class="bi bi-arrow-clockwise fontM"
+                                                fill="currentColor" class="bi bi-arrow-clockwise fontM "
                                                 viewBox="0 0 16 16">
                                                 <path fill-rule="evenodd"
                                                     d="M8 3a5 5 0 1 0 4.546 2.914.5.5 0 0 1 .908-.417A6 6 0 1 1 8 2v1z" />
@@ -90,7 +90,7 @@
                                         </div>
                                     </div>
                                     <div class="item d-flex align-items-center">
-                                        <div class="icon">
+                                        <div class="icon ">
                                             <svg xmlns="http://www.w3.org/2000/svg" width="25" height="25"
                                                 fill="currentColor" class="bi bi-camera fontM" viewBox="0 0 16 16">
                                                 <path
@@ -105,7 +105,7 @@
                                         </div>
                                     </div>
                                     <div class="item d-flex align-items-center">
-                                        <div class="icon">
+                                        <div class="icon ">
                                             <svg xmlns="http://www.w3.org/2000/svg" width="25" height="25"
                                                 fill="currentColor" class="bi bi-sd-card fontM" viewBox="0 0 16 16">
                                                 <path
@@ -120,7 +120,7 @@
                                         </div>
                                     </div>
                                     <div class="item d-flex align-items-center">
-                                        <div class="icon">
+                                        <div class="icon ">
                                             <svg xmlns="http://www.w3.org/2000/svg" width="25" height="25"
                                                 fill="currentColor" class="bi bi-bluetooth fontM" viewBox="0 0 16 16">
                                                 <path fill-rule="evenodd"
@@ -133,7 +133,7 @@
                                         </div>
                                     </div>
                                     <div class="item d-flex align-items-center">
-                                        <div class="icon">
+                                        <div class="icon ">
                                             <svg xmlns="http://www.w3.org/2000/svg" width="25" height="25"
                                                 fill="currentColor" class="bi bi-geo-alt fontM" viewBox="0 0 16 16">
                                                 <path
@@ -148,7 +148,7 @@
                                         </div>
                                     </div>
                                     <div class="item d-flex align-items-center">
-                                        <div class="icon">
+                                        <div class="icon ">
                                             <svg xmlns="http://www.w3.org/2000/svg" width="25" height="25"
                                                 fill="currentColor" class="bi bi-telephone fontM" viewBox="0 0 16 16">
                                                 <path
@@ -161,7 +161,7 @@
                                         </div>
                                     </div>
                                     <div class="item d-flex align-items-center">
-                                        <div class="icon">
+                                        <div class="icon ">
                                             <svg xmlns="http://www.w3.org/2000/svg" width="25" height="25"
                                                 fill="currentColor" class="bi bi-bell fontM" viewBox="0 0 16 16">
                                                 <path
@@ -173,8 +173,20 @@
                                             <div class="text-sm text-black-50">티머니GO에서 제공하는 공지 및 혜택 알림 </div>
                                         </div>
                                     </div>
-                                    <div class="p-1 pt-3">
-                                        <button type="button" class="btn_T d-flex flex-center-center">확인</button>
+                                    <div class="p-1 pt-3 ">
+                                        <div class="cursor_pos_2">
+                                            <button type="button" class="btn_T d-flex flex-center-center pg_2_answer">확인</button>
+                                            <!-- 커서 가이드 -->
+                                            <div class="cursor_wrap cursor_wrap_2 pg_2_answer">
+                                                <span class="cursor" x-placement="bottom pg_2_answer">
+                                                    <button class="react-joyride__beacon pg_2_answer" type="button">
+                                                        <span class="cursor_outer pg_2_answer"></span>
+                                                        <span class="cursor_inner pg_2_answer"><span>
+                                                    </button>
+                                                </span>
+                                            </div>
+                                            <!-- 커서 가이드 -->
+                                        </div>
                                     </div>
                                 </div>
                             </div>
@@ -197,8 +209,21 @@
                                         <div class="icon"></div>
                                     </div>
                                     <div class="w-100 d-flex flex-column flex-center-center p-1 pt-3 fontSz">
-                                        <button type="button" class="btn_T d-flex flex-center-center">본인인증으로
-                                            로그인</button>
+                                        <div class="cursor_pos_3 btn_T d-flex flex-center-center">
+                                            <button type="button" class="btn_T pg_3_answer">본인인증으로
+                                                로그인
+                                            </button>
+                                            <!-- 커서 가이드 -->
+                                            <div class="cursor_wrap cursor_wrap_3 pg_3_answer">
+                                                <span class="cursor" x-placement="bottom pg_3_answer">
+                                                    <button class="react-joyride__beacon pg_3_answer" type="button">
+                                                        <span class="cursor_outer pg_3_answer"></span>
+                                                        <span class="cursor_inner pg_3_answer"><span>
+                                                    </button>
+                                                </span>
+                                            </div>
+                                        </div>
+                                        <!-- 커서 가이드 -->
                                         <div class="fontM border_M mt-2">비회원으로 둘러보기</div>
                                     </div>
                                 </div>
@@ -208,26 +233,26 @@
                         <div class="page" id="p4">
                             <div class="page_wrap">
                                 <h1 class="pg_title" style="color: #fff;">Page4</h1>
-                                <div class="top_bar">
+                                <div class="top_bar pg_4_shadow_inner">
                                     <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor"
                                         class="bi bi-x-lg fontM" viewBox="0 0 16 16">
                                         <path
                                             d="M2.146 2.854a.5.5 0 1 1 .708-.708L8 7.293l5.146-5.147a.5.5 0 0 1 .708.708L8.707 8l5.147 5.146a.5.5 0 0 1-.708.708L8 8.707l-5.146 5.147a.5.5 0 0 1-.708-.708L7.293 8 2.146 2.854Z" />
                                     </svg>
                                 </div>
-                                <div class="pass d-flex">
-                                    <div class="pass_box">P</div>
-                                    <div class="pass_box">A</div>
-                                    <div class="pass_box">S</div>
-                                    <div class="pass_box">S</div>
+                                <div class="pass d-flex pg_4_shadow_inner">
+                                    <div class="pass_box pg_4_shadow_inner">P</div>
+                                    <div class="pass_box pg_4_shadow_inner">A</div>
+                                    <div class="pass_box pg_4_shadow_inner">S</div>
+                                    <div class="pass_box pg_4_shadow_inner">S</div>
                                 </div>
-                                <div class="border_b"></div>
+                                <div class="border_b pg_4_shadow_inner"></div>
                                 <div class="scroller">
                                     <div class="container fontSz">
                                         <div class="py-2">이용 중이신 통신사를 선택하세요.</div>
                                         <div class="d-flex flex-column flex-center-center">
                                             <div class="d-flex">
-                                                <div class="icon">sk</div>
+                                                <div class="icon pg_4_answer">sk</div>
                                                 <div class="icon">kt</div>
                                             </div>
                                             <div class="d-flex">
@@ -292,36 +317,36 @@
                         <div class="page" id="p5">
                             <div class="page_wrap">
                                 <h1 class="pg_title" style="color: #fff;">Page5</h1>
-                                <div class="top_bar">
+                                <div class="top_bar pg_5_shadow_inner">
                                     <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor"
                                         class="bi bi-x-lg fontM" viewBox="0 0 16 16">
                                         <path
                                             d="M2.146 2.854a.5.5 0 1 1 .708-.708L8 7.293l5.146-5.147a.5.5 0 0 1 .708.708L8.707 8l5.147 5.146a.5.5 0 0 1-.708.708L8 8.707l-5.146 5.147a.5.5 0 0 1-.708-.708L7.293 8 2.146 2.854Z" />
                                     </svg>
                                 </div>
-                                <div class="pass d-flex">
-                                    <div class="pass_box">P</div>
-                                    <div class="pass_box">A</div>
-                                    <div class="pass_box">S</div>
-                                    <div class="pass_box">S</div>
+                                <div class="pass d-flex pg_5_shadow_inner">
+                                    <div class="pass_box pg_5_shadow_inner">P</div>
+                                    <div class="pass_box pg_5_shadow_inner">A</div>
+                                    <div class="pass_box pg_5_shadow_inner">S</div>
+                                    <div class="pass_box pg_5_shadow_inner">S</div>
                                 </div>
-                                <div class="border_b"></div>
+                                <div class="border_b pg_5_shadow_inner"></div>
                                 <div class="scroller">
                                     <div class="container fontSz">
                                         <div class="py-2">이용 중이신 통신사를 선택하세요.</div>
                                         <div class="d-flex flex-column flex-center-center">
                                             <div class="d-flex">
-                                                <div class="icon sel_icon">sk</div>
-                                                <div class="icon">kt</div>
+                                                <div class="icon sel_icon pg_5_border_darker">sk</div>
+                                                <div class="icon pg_5_border_darker">kt</div>
                                             </div>
                                             <div class="d-flex">
-                                                <div class="icon">LG</div>
-                                                <div class="icon">알뜰폰</div>
+                                                <div class="icon pg_5_border_darker">LG</div>
+                                                <div class="icon pg_5_border_darker">알뜰폰</div>
                                             </div>
                                         </div>
-                                        <div class="my-2">
+                                        <div class="my-2 pg_5_answer">
                                             <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20"
-                                                fill="currentColor" class="bi bi-square" viewBox="0 0 16 16">
+                                                fill="currentColor" class="bi bi-square pg_5_answer" viewBox="0 0 16 16">
                                                 <path
                                                     d="M14 1a1 1 0 0 1 1 1v12a1 1 0 0 1-1 1H2a1 1 0 0 1-1-1V2a1 1 0 0 1 1-1h12zM2 0a2 2 0 0 0-2 2v12a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V2a2 2 0 0 0-2-2H2z" />
                                             </svg>
@@ -330,7 +355,7 @@
                                         <div class="w-100 d-flex justify-content-around">
                                             <div class="w-50 d-flex">
                                                 <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16"
-                                                    fill="currentColor" class="bi bi-square-fill" viewBox="0 0 16 16"
+                                                    fill="currentColor" class="bi bi-square-fill pg_5_txt_darker" viewBox="0 0 16 16"
                                                     style="color: #D3D3D3;">
                                                     <path
                                                         d="M0 2a2 2 0 0 1 2-2h12a2 2 0 0 1 2 2v12a2 2 0 0 1-2 2H2a2 2 0 0 1-2-2V2z" />
@@ -339,7 +364,7 @@
                                             </div>
                                             <div class="w-50 d-flex">
                                                 <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16"
-                                                    fill="currentColor" class="bi bi-square-fill" viewBox="0 0 16 16"
+                                                    fill="currentColor" class="bi bi-square-fill pg_5_txt_darker" viewBox="0 0 16 16"
                                                     style="color: #D3D3D3;">
                                                     <path
                                                         d="M0 2a2 2 0 0 1 2-2h12a2 2 0 0 1 2 2v12a2 2 0 0 1-2 2H2a2 2 0 0 1-2-2V2z" />
@@ -349,8 +374,8 @@
                                         </div>
                                         <div class="w-100 d-flex justify-content-around my-2">
                                             <div class="w-50 d-flex">
-                                                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16"
-                                                    fill="currentColor" class="bi bi-square-fill" viewBox="0 0 16 16"
+                                                <svg xmlns="http://www.w3.org/2000/svg " width="16" height="16"
+                                                    fill="currentColor" class="bi bi-square-fill pg_5_txt_darker" viewBox="0 0 16 16"
                                                     style="color: #D3D3D3;">
                                                     <path
                                                         d="M0 2a2 2 0 0 1 2-2h12a2 2 0 0 1 2 2v12a2 2 0 0 1-2 2H2a2 2 0 0 1-2-2V2z" />
@@ -359,7 +384,7 @@
                                             </div>
                                             <div class="w-50 d-flex">
                                                 <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16"
-                                                    fill="currentColor" class="bi bi-square-fill" viewBox="0 0 16 16"
+                                                    fill="currentColor" class="bi bi-square-fill pg_5_txt_darker" viewBox="0 0 16 16"
                                                     style="color: #D3D3D3;">
                                                     <path
                                                         d="M0 2a2 2 0 0 1 2-2h12a2 2 0 0 1 2 2v12a2 2 0 0 1-2 2H2a2 2 0 0 1-2-2V2z" />
@@ -367,91 +392,7 @@
                                                 <div class="border_b text-black-50">통신사이용약관</div>
                                             </div>
                                         </div>
-                                        <button type="button" class="btn_g">시작하기</button>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        <!------------------------------ page 5 ------------------------------>
-                        <div class="page" id="p5">
-                            <div class="page_wrap">
-                                <h1 class="pg_title" style="color: #fff;">Page5</h1>
-                                <div class="top_bar">
-                                    <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor"
-                                        class="bi bi-x-lg fontM" viewBox="0 0 16 16">
-                                        <path
-                                            d="M2.146 2.854a.5.5 0 1 1 .708-.708L8 7.293l5.146-5.147a.5.5 0 0 1 .708.708L8.707 8l5.147 5.146a.5.5 0 0 1-.708.708L8 8.707l-5.146 5.147a.5.5 0 0 1-.708-.708L7.293 8 2.146 2.854Z" />
-                                    </svg>
-                                </div>
-                                <div class="pass d-flex">
-                                    <div class="pass_box">P</div>
-                                    <div class="pass_box">A</div>
-                                    <div class="pass_box">S</div>
-                                    <div class="pass_box">S</div>
-                                </div>
-                                <div class="border_b"></div>
-                                <div class="scroller">
-                                    <div class="container fontSz">
-                                        <div class="py-2">이용 중이신 통신사를 선택하세요.</div>
-                                        <div class="d-flex flex-column flex-center-center">
-                                            <div class="d-flex">
-                                                <div class="icon sel_icon">sk</div>
-                                                <div class="icon">kt</div>
-                                            </div>
-                                            <div class="d-flex">
-                                                <div class="icon">LG</div>
-                                                <div class="icon">알뜰폰</div>
-                                            </div>
-                                        </div>
-                                        <div class="my-2">
-                                            <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20"
-                                                fill="currentColor" class="bi bi-square" viewBox="0 0 16 16">
-                                                <path
-                                                    d="M14 1a1 1 0 0 1 1 1v12a1 1 0 0 1-1 1H2a1 1 0 0 1-1-1V2a1 1 0 0 1 1-1h12zM2 0a2 2 0 0 0-2 2v12a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V2a2 2 0 0 0-2-2H2z" />
-                                            </svg>
-                                            본인확인을 하기 위한 필수사항에 전체동의합니다.
-                                        </div>
-                                        <div class="w-100 d-flex justify-content-around">
-                                            <div class="w-50 d-flex">
-                                                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16"
-                                                    fill="currentColor" class="bi bi-square-fill" viewBox="0 0 16 16"
-                                                    style="color: #D3D3D3;">
-                                                    <path
-                                                        d="M0 2a2 2 0 0 1 2-2h12a2 2 0 0 1 2 2v12a2 2 0 0 1-2 2H2a2 2 0 0 1-2-2V2z" />
-                                                </svg>
-                                                <div class="border_b text-black-50">개인정보이용</div>
-                                            </div>
-                                            <div class="w-50 d-flex">
-                                                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16"
-                                                    fill="currentColor" class="bi bi-square-fill" viewBox="0 0 16 16"
-                                                    style="color: #D3D3D3;">
-                                                    <path
-                                                        d="M0 2a2 2 0 0 1 2-2h12a2 2 0 0 1 2 2v12a2 2 0 0 1-2 2H2a2 2 0 0 1-2-2V2z" />
-                                                </svg>
-                                                <div class="border_b text-black-50">고유식별정보처리</div>
-                                            </div>
-                                        </div>
-                                        <div class="w-100 d-flex justify-content-around my-2">
-                                            <div class="w-50 d-flex">
-                                                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16"
-                                                    fill="currentColor" class="bi bi-square-fill" viewBox="0 0 16 16"
-                                                    style="color: #D3D3D3;">
-                                                    <path
-                                                        d="M0 2a2 2 0 0 1 2-2h12a2 2 0 0 1 2 2v12a2 2 0 0 1-2 2H2a2 2 0 0 1-2-2V2z" />
-                                                </svg>
-                                                <div class="border_b text-black-50">서비스이용약관</div>
-                                            </div>
-                                            <div class="w-50 d-flex">
-                                                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16"
-                                                    fill="currentColor" class="bi bi-square-fill" viewBox="0 0 16 16"
-                                                    style="color: #D3D3D3;">
-                                                    <path
-                                                        d="M0 2a2 2 0 0 1 2-2h12a2 2 0 0 1 2 2v12a2 2 0 0 1-2 2H2a2 2 0 0 1-2-2V2z" />
-                                                </svg>
-                                                <div class="border_b text-black-50">통신사이용약관</div>
-                                            </div>
-                                        </div>
-                                        <button type="button" class="btn_g">시작하기</button>
+                                        <button type="button" class="btn_g pg_5_shadow_inner pg_5_css_chng">시작하기</button>
                                     </div>
                                 </div>
                             </div>
@@ -460,20 +401,20 @@
                         <div class="page" id="p6">
                             <div class="page_wrap">
                                 <h1 class="pg_title" style="color: #fff;">Page6</h1>
-                                <div class="top_bar">
+                                <div class="top_bar pg_6_shadow_inner">
                                     <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor"
                                         class="bi bi-x-lg fontM" viewBox="0 0 16 16">
                                         <path
                                             d="M2.146 2.854a.5.5 0 1 1 .708-.708L8 7.293l5.146-5.147a.5.5 0 0 1 .708.708L8.707 8l5.147 5.146a.5.5 0 0 1-.708.708L8 8.707l-5.146 5.147a.5.5 0 0 1-.708-.708L7.293 8 2.146 2.854Z" />
                                     </svg>
                                 </div>
-                                <div class="pass d-flex">
-                                    <div class="pass_box">P</div>
-                                    <div class="pass_box">A</div>
-                                    <div class="pass_box">S</div>
-                                    <div class="pass_box">S</div>
+                                <div class="pass d-flex pg_6_shadow_inner">
+                                    <div class="pass_box pg_6_shadow_inner">P</div>
+                                    <div class="pass_box pg_6_shadow_inner">A</div>
+                                    <div class="pass_box pg_6_shadow_inner">S</div>
+                                    <div class="pass_box pg_6_shadow_inner">S</div>
                                 </div>
-                                <div class="border_b"></div>
+                                <div class="border_b pg_6_shadow_inner"></div>
                                 <div class="scroller">
                                     <div class="container fontSz">
                                         <div class="py-2">이용 중이신 통신사를 선택하세요.</div>
@@ -537,7 +478,7 @@
                                                 <div class="border_b text-black-50">통신사이용약관</div>
                                             </div>
                                         </div>
-                                        <button type="button" class="btn_P">시작하기</button>
+                                        <button type="button" class="btn_P pg_6_answer">시작하기</button>
                                     </div>
                                 </div>
 
@@ -547,7 +488,7 @@
                         <div class="page" id="p7">
                             <div class="page_wrap">
                                 <h1 class="pg_title" style="color: #fff;">Page7</h1>
-                                <div class="top_bar">
+                                <div class="top_bar ">
                                     <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor"
                                         class="bi bi-x-lg fontM" viewBox="0 0 16 16">
                                         <path
@@ -555,10 +496,10 @@
                                     </svg>
                                 </div>
                                 <div class="pass d-flex">
-                                    <div class="pass_box">P</div>
-                                    <div class="pass_box">A</div>
-                                    <div class="pass_box">S</div>
-                                    <div class="pass_box">S</div>
+                                    <div class="pass_box pg_7_shadow_inner">P</div>
+                                    <div class="pass_box pg_7_shadow_inner">A</div>
+                                    <div class="pass_box pg_7_shadow_inner">S</div>
+                                    <div class="pass_box pg_7_shadow_inner">S</div>
                                 </div>
                                 <div class="border_b"></div>
                                 <div class="container fontSz">
@@ -577,7 +518,7 @@
                                     <div class="text-sm py-2">*아래 문자로 인증하기를 클릭하세요.</div>
                                 </div>
                                 <div class="background">
-                                    <button type="button" class="btn_border fontP text-lg">문자로 인증하기</button>
+                                    <button type="button" class="btn_border fontP text-lg pg_7_answer">문자로 인증하기</button>
                                 </div>
                             </div>
                         </div>
@@ -585,32 +526,37 @@
                         <div class="page" id="p8">
                             <div class="page_wrap">
                                 <h1 class="pg_title" style="color: #fff;">Page8</h1>
-                                <div class="top_bar">
+                                <div class="top_bar pg_8_shadow_inner">
                                     <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor"
                                         class="bi bi-x-lg fontM" viewBox="0 0 16 16">
                                         <path
                                             d="M2.146 2.854a.5.5 0 1 1 .708-.708L8 7.293l5.146-5.147a.5.5 0 0 1 .708.708L8.707 8l5.147 5.146a.5.5 0 0 1-.708.708L8 8.707l-5.146 5.147a.5.5 0 0 1-.708-.708L7.293 8 2.146 2.854Z" />
                                     </svg>
                                 </div>
-                                <div class="pass d-flex">
-                                    <div class="pass_box">P</div>
-                                    <div class="pass_box">A</div>
-                                    <div class="pass_box">S</div>
-                                    <div class="pass_box">S</div>
+                                <div class="pass d-flex pg_8_shadow_inner">
+                                    <div class="pass_box pg_8_shadow_inner">P</div>
+                                    <div class="pass_box pg_8_shadow_inner">A</div>
+                                    <div class="pass_box pg_8_shadow_inner">S</div>
+                                    <div class="pass_box pg_8_shadow_inner">S</div>
                                 </div>
                                 <div class="scroller">
+                                    <!-- <div class="flex-center-center h-15 rounded border border-5 border-danger p-3 m-3">
+                                        <h4 class="text-danger fw-bold m-0">이름 입력란에 '김서울'을 입력해주세요.
+                                        </h4>
+                                    </div> -->
                                     <div class="banner">배너</div>
                                     <div class="container fontSz">
                                         <div class="py-2">
                                             <div>이름</div>
-                                            <input type="text" class="input_box" placeholder="이름을 입력해주세요."></input>
+                                            <input type="text" class="input_box answer_auto_txt pg_8_answer 8_input" placeholder="이름을 입력해주세요."></input>
                                         </div>
+                                        
                                         <div class="py-2">
                                             <div>주민등록번호(생년월일)</div>
                                             <div class="d-flex">
-                                                <input type="text" class="input_box"></input>
+                                                <input type="text" class="input_box pg_8_border_darker"></input>
                                                 <div class="d-flex align-items-center text-lg fw-bold px-1">-</div>
-                                                <input type="text" class="short_box"></input>
+                                                <input type="text" class="short_box pg_8_border_darker"></input>
                                                 <div class="d-flex">
                                                     <svg xmlns="http://www.w3.org/2000/svg" width="60" height="60"
                                                         fill="currentColor" class="bi bi-three-dots"
@@ -629,10 +575,10 @@
                                         </div>
                                         <div class="py-2">
                                             <div>휴대폰번호</div>
-                                            <input type="text" class="input_box"></input>
+                                            <input type="text" class="input_box pg_8_border_darker"></input>
                                         </div>
-                                        <div class="d-flex flex-column py-2">
-                                            <button type="button" class="btn_P" disabled>확인</button>
+                                        <div class="d-flex flex-column py-2 ">
+                                            <button type="button" class="btn_P pg_8_shadow_inner pg_8_txt_darker" disabled>확인</button>
                                             <button type="button" class="btn_gg mt-2">취소</button>
                                         </div>
                                     </div>
@@ -643,18 +589,18 @@
                         <div class="page" id="p9">
                             <div class="page_wrap">
                                 <h1 class="pg_title" style="color: #fff;">Page9</h1>
-                                <div class="top_bar">
+                                <div class="top_bar pg_9_shadow_inner">
                                     <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor"
                                         class="bi bi-x-lg fontM" viewBox="0 0 16 16">
                                         <path
                                             d="M2.146 2.854a.5.5 0 1 1 .708-.708L8 7.293l5.146-5.147a.5.5 0 0 1 .708.708L8.707 8l5.147 5.146a.5.5 0 0 1-.708.708L8 8.707l-5.146 5.147a.5.5 0 0 1-.708-.708L7.293 8 2.146 2.854Z" />
                                     </svg>
                                 </div>
-                                <div class="pass d-flex">
-                                    <div class="pass_box">P</div>
-                                    <div class="pass_box">A</div>
-                                    <div class="pass_box">S</div>
-                                    <div class="pass_box">S</div>
+                                <div class="pass d-flex pg_9_shadow_inner">
+                                    <div class="pass_box pg_9_shadow_inner">P</div>
+                                    <div class="pass_box pg_9_shadow_inner">A</div>
+                                    <div class="pass_box pg_9_shadow_inner">S</div>
+                                    <div class="pass_box pg_9_shadow_inner">S</div>
                                 </div>
                                 <div class="scroller">
                                     <div class="banner">배너</div>
@@ -666,7 +612,7 @@
                                         <div class="py-2">
                                             <div>주민등록번호(생년월일)</div>
                                             <div class="d-flex">
-                                                <input type="number" class="input_box" placeholder="앞자리"></input>
+                                                <input type="password" maxlength="6" class="input_box ID6_auto_txt pg_9_answer 9_input" placeholder="앞자리"></input>
                                                 <div class="d-flex align-items-center text-lg fw-bold px-1">-</div>
                                                 <input type="number" class="short_box" placeholder="뒤"></input>
                                                 <div class="d-flex">
@@ -701,18 +647,18 @@
                         <div class="page" id="p10">
                             <div class="page_wrap">
                                 <h1 class="pg_title" style="color: #fff;">Page10</h1>
-                                <div class="top_bar">
+                                <div class="top_bar pg_10_shadow_inner">
                                     <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor"
                                         class="bi bi-x-lg fontM" viewBox="0 0 16 16">
                                         <path
                                             d="M2.146 2.854a.5.5 0 1 1 .708-.708L8 7.293l5.146-5.147a.5.5 0 0 1 .708.708L8.707 8l5.147 5.146a.5.5 0 0 1-.708.708L8 8.707l-5.146 5.147a.5.5 0 0 1-.708-.708L7.293 8 2.146 2.854Z" />
                                     </svg>
                                 </div>
-                                <div class="pass d-flex">
-                                    <div class="pass_box">P</div>
-                                    <div class="pass_box">A</div>
-                                    <div class="pass_box">S</div>
-                                    <div class="pass_box">S</div>
+                                <div class="pass d-flex pg_10_shadow_inner">
+                                    <div class="pass_box pg_10_shadow_inner">P</div>
+                                    <div class="pass_box pg_10_shadow_inner">A</div>
+                                    <div class="pass_box pg_10_shadow_inner">S</div>
+                                    <div class="pass_box pg_10_shadow_inner">S</div>
                                 </div>
                                 <div class="scroller">
                                     <div class="banner">배너</div>
@@ -724,9 +670,9 @@
                                         <div class="py-2">
                                             <div>주민등록번호(생년월일)</div>
                                             <div class="d-flex">
-                                                <div class="input_box">801216</div>
+                                                <div  class="input_box" >⦁ ⦁ ⦁ ⦁ ⦁ ⦁</div>
                                                 <div class="d-flex align-items-center text-lg fw-bold px-1">-</div>
-                                                <div class="short_box">1</div>
+                                                <input type="number" class="short_box ID1_auto_txt pg_10_answer 10_input" placeholder="뒤"></input>
                                                 <div class="d-flex">
                                                     <svg xmlns="http://www.w3.org/2000/svg" width="60" height="60"
                                                         fill="currentColor" class="bi bi-three-dots"
@@ -745,10 +691,10 @@
                                         </div>
                                         <div class="py-2">
                                             <div>휴대폰번호</div>
-                                            <input type="number" class="input_box" placeholder="-없이 숫자만 입력"></input>
+                                            <input type="number" class="input_box"></input>
                                         </div>
                                         <div class="d-flex flex-column py-2">
-                                            <button type="button" class="btn_P">확인</button>
+                                            <button type="button" class="btn_P" disabled>확인</button>
                                             <button type="button" class="btn_gg mt-2">취소</button>
                                         </div>
                                     </div>
@@ -759,18 +705,76 @@
                         <div class="page" id="p11">
                             <div class="page_wrap">
                                 <h1 class="pg_title" style="color: #fff;">Page11</h1>
-                                <div class="top_bar">
+                                <div class="top_bar pg_11_shadow_inner">
                                     <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor"
                                         class="bi bi-x-lg fontM" viewBox="0 0 16 16">
                                         <path
                                             d="M2.146 2.854a.5.5 0 1 1 .708-.708L8 7.293l5.146-5.147a.5.5 0 0 1 .708.708L8.707 8l5.147 5.146a.5.5 0 0 1-.708.708L8 8.707l-5.146 5.147a.5.5 0 0 1-.708-.708L7.293 8 2.146 2.854Z" />
                                     </svg>
                                 </div>
-                                <div class="pass d-flex">
-                                    <div class="pass_box">P</div>
-                                    <div class="pass_box">A</div>
-                                    <div class="pass_box">S</div>
-                                    <div class="pass_box">S</div>
+                                <div class="pass d-flex pg_11_shadow_inner">
+                                    <div class="pass_box pg_11_shadow_inner">P</div>
+                                    <div class="pass_box pg_11_shadow_inner">A</div>
+                                    <div class="pass_box pg_11_shadow_inner">S</div>
+                                    <div class="pass_box pg_11_shadow_inner">S</div>
+                                </div>
+                                <div class="scroller">
+                                    <div class="banner">배너</div>
+                                    <div class="container fontSz">
+                                        <div class="py-2">
+                                            <div>이름</div>
+                                            <div class="input_box">김서울</div>
+                                        </div>
+                                        <div class="py-2">
+                                            <div>주민등록번호(생년월일)</div>
+                                            <div class="d-flex">
+                                                <div class="input_box pg_11_border_darker">⦁ ⦁ ⦁ ⦁ ⦁ ⦁</div>
+                                                <div class="d-flex align-items-center text-lg fw-bold px-1">-</div>
+                                                <div class="short_box pg_11_border_darker">⦁</div>
+                                                <div class="d-flex">
+                                                    <svg xmlns="http://www.w3.org/2000/svg" width="60" height="60"
+                                                        fill="currentColor" class="bi bi-three-dots"
+                                                        viewBox="0 0 16 16">
+                                                        <path
+                                                            d="M3 9.5a1.5 1.5 0 1 1 0-3 1.5 1.5 0 0 1 0 3zm5 0a1.5 1.5 0 1 1 0-3 1.5 1.5 0 0 1 0 3zm5 0a1.5 1.5 0 1 1 0-3 1.5 1.5 0 0 1 0 3z" />
+                                                    </svg>
+                                                    <svg xmlns="http://www.w3.org/2000/svg" width="60" height="60"
+                                                        fill="currentColor" class="bi bi-three-dots"
+                                                        viewBox="0 0 16 16">
+                                                        <path
+                                                            d="M3 9.5a1.5 1.5 0 1 1 0-3 1.5 1.5 0 0 1 0 3zm5 0a1.5 1.5 0 1 1 0-3 1.5 1.5 0 0 1 0 3zm5 0a1.5 1.5 0 1 1 0-3 1.5 1.5 0 0 1 0 3z" />
+                                                    </svg>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="py-2">
+                                            <div>휴대폰번호</div>
+                                            <input type="number" class="input_box ID_num11 pg_11_answer 11_input" placeholder="-없이 숫자만 입력"></input>
+                                        </div>
+                                        <div class="d-flex flex-column py-2">
+                                            <button type="button" class="btn_P input_nxt_btn">확인</button>
+                                            <button type="button" class="btn_gg mt-2">취소</button>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <!------------------------------ page 12 ------------------------------>
+                        <div class="page" id="p12">
+                            <div class="page_wrap">
+                                <h1 class="pg_title" style="color: #fff;">Page12</h1>
+                                <div class="top_bar pg_12_shadow_inner">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor"
+                                        class="bi bi-x-lg fontM" viewBox="0 0 16 16">
+                                        <path
+                                            d="M2.146 2.854a.5.5 0 1 1 .708-.708L8 7.293l5.146-5.147a.5.5 0 0 1 .708.708L8.707 8l5.147 5.146a.5.5 0 0 1-.708.708L8 8.707l-5.146 5.147a.5.5 0 0 1-.708-.708L7.293 8 2.146 2.854Z" />
+                                    </svg>
+                                </div>
+                                <div class="pass d-flex pg_12_shadow_inner">
+                                    <div class="pass_box pg_12_shadow_inner">P</div>
+                                    <div class="pass_box pg_12_shadow_inner">A</div>
+                                    <div class="pass_box pg_12_shadow_inner">S</div>
+                                    <div class="pass_box pg_12_shadow_inner">S</div>
                                 </div>
                                 <div class="scroller">
                                     <div class="banner">배너</div>
@@ -805,24 +809,24 @@
                                             <div>휴대폰번호</div>
                                             <div class="input_box">01012345678</div>
                                             <div class="d-flex">
-                                                <input type="number" class="input_box w-70"
+                                                <input type="number" maxlength="6" class="input_box w-70 answer_txt pg_12_answer 12_input"
                                                     placeholder="숫자 6자리 입력"></input>
                                                 <button type="button" class="btn_g w-30">재전송</button>
                                             </div>
                                             <div class="text-black-50 text-sm mt-2">ㆍ3분 이내로 인증번호(6자리)를 입력해 주세요.</div>
                                         </div>
                                         <div class="d-flex flex-column py-2">
-                                            <button type="button" class="btn_P">확인</button>
+                                            <button type="button" class="btn_P input_nxt_btn_txt">확인</button>
                                             <button type="button" class="btn_gg mt-2">취소</button>
                                         </div>
                                     </div>
                                 </div>
                             </div>
                         </div>
-                        <!------------------------------ page 12 ------------------------------>
-                        <div class="page" id="p12">
+                        <!------------------------------ page 13 ------------------------------>
+                        <div class="page" id="p13">
                             <div class="page_wrap">
-                                <h1 class="pg_title" style="color: #fff;">Page12</h1>
+                                <h1 class="pg_title" style="color: #fff;">Page13</h1>
                                 <div class="top_bar">
                                     <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor"
                                         class="bi bi-x-lg fontM" viewBox="0 0 16 16">
@@ -839,17 +843,17 @@
                                         </div>
                                         <div class="d-flex justify-content-end align-items-center mt-2">
                                             <div class=" px-4">아니요</div>
-                                            <div class=" fontM">네, 이동할게요</div>
+                                            <div class=" fontM pg_13_answer">네, 이동할게요</div>
                                         </div>
                                     </div>
                                 </div>
                             </div>
                         </div>
-                        <!------------------------------ page 13 ------------------------------>
-                        <div class="page" id="p13">
+                        <!------------------------------ page 14 ------------------------------>
+                        <div class="page" id="p14">
                             <div class="page_wrap">
-                                <h1 class="pg_title" style="color: #fff;">Page13</h1>
-                                <div class="top_bar d-flex justify-content-between">
+                                <h1 class="pg_title" style="color: #fff;">Page14</h1>
+                                <div class="top_bar d-flex justify-content-between pg_14_shadow_inner">
                                     <svg xmlns="http://www.w3.org/2000/svg" width="25" height="25" fill="currentColor"
                                         class="bi bi-chevron-left fontM" viewBox="0 0 16 16">
                                         <path fill-rule="evenodd"
@@ -860,9 +864,9 @@
                                     <div class="container fontSz">
                                         <div class="fs-3 fw-bold py-4">약관 동의</div>
                                         <div class="mb-4">약관동의를 진행해 주세요</div>
-                                        <div class="agree text-lg fw-bold mt-4">
+                                        <div class="agree text-lg fw-bold mt-4 pg_14_answer">
                                             <svg xmlns="http://www.w3.org/2000/svg" width="25" height="25"
-                                                fill="currentColor" class="bi bi-check-circle gray" viewBox="0 0 16 16">
+                                                fill="currentColor" class="bi bi-check-circle gray pg_14_answer" viewBox="0 0 16 16">
                                                 <path
                                                     d="M8 15A7 7 0 1 1 8 1a7 7 0 0 1 0 14zm0 1A8 8 0 1 0 8 0a8 8 0 0 0 0 16z" />
                                                 <path
@@ -950,16 +954,16 @@
                                                 </svg>
                                             </div>
                                         </div>
-                                        <button type="button" class="btn_db round mt-2" disabled>다음</button>
+                                        <button type="button" class="btn_db round mt-2 pg_14_shadow_inner pg_14_txt_darker" disabled>다음</button>
                                     </div>
                                 </div>
                             </div>
                         </div>
-                        <!------------------------------ page 14 ------------------------------>
-                        <div class="page" id="p14">
+                        <!------------------------------ page 15 ------------------------------>
+                        <div class="page" id="p15">
                             <div class="page_wrap">
-                                <h1 class="pg_title" style="color: #fff;">Page14</h1>
-                                <div class="top_bar d-flex justify-content-between">
+                                <h1 class="pg_title" style="color: #fff;">Page15</h1>
+                                <div class="top_bar d-flex justify-content-between pg_15_shadow_inner">
                                     <svg xmlns="http://www.w3.org/2000/svg" width="25" height="25" fill="currentColor"
                                         class="bi bi-chevron-left fontM" viewBox="0 0 16 16">
                                         <path fill-rule="evenodd"
@@ -1063,15 +1067,15 @@
                                                 </svg>
                                             </div>
                                         </div>
-                                        <button type="button" class="btn_b round mt-2" disabled>다음</button>
+                                        <button type="button" class="btn_b round mt-2 pg_15_answer" >다음</button>
                                     </div>
                                 </div>
                             </div>
                         </div>
-                        <!------------------------------ page 15 ------------------------------>
-                        <div class="page" id="p15">
+                        <!------------------------------ page 16 ------------------------------>
+                        <div class="page" id="p16">
                             <div class="page_wrap">
-                                <h1 class="pg_title" style="color: #fff;">Page15</h1>
+                                <h1 class="pg_title" style="color: #fff;">Page16</h1>
                                 <div class="top_bar d-flex justify-content-between">
                                     <svg xmlns="http://www.w3.org/2000/svg" width="25" height="25" fill="currentColor"
                                         class="bi bi-chevron-left fontM" viewBox="0 0 16 16">
@@ -1185,17 +1189,17 @@
                                         고객님만을 위한 시크릿 이벤트를 진행할때 안내해드리고 싶어요!<br>
                                         마케팅 정보 수신에 동의하고 정보를 받으시겠어요?
                                     </div>
-                                    <div class="d-flex justify-content-end align-items-center mt-2">
-                                        <div class=" px-4">아니요</div>
-                                        <div class=" fontM">네, 이동할게요</div>
+                                    <div class="d-flex justify-content-end align-items-center mt-2 pg_16_answer">
+                                        <div class=" px-4 pg_16_answer">아니요</div>
+                                        <div class=" fontM pg_16_answer">네, 동의할게요</div>
                                     </div>
                                 </div>
                             </div>
                         </div>
-                        <!------------------------------ page 16 ------------------------------>
-                        <div class="page" id="p16">
+                        <!------------------------------ page 17 ------------------------------>
+                        <div class="page" id="p17">
                             <div class="page_wrap">
-                                <h1 class="pg_title" style="color: #fff;">Page16</h1>
+                                <h1 class="pg_title" style="color: #fff;">Page17</h1>
                                 <div class="container fontSz">
                                     <div class="w-100 fs-2 fw-bold">회원 가입 완료</div>
                                     <div class="w-100 mt-2 text-black-50">
@@ -1205,16 +1209,16 @@
                                         <div class="icon"></div>
                                     </div>
                                     <div class="p-1 pt-3">
-                                        <button type="button" class="btn_T d-flex flex-center-center">티머니GO
+                                        <button type="button" class="btn_T d-flex flex-center-center pg_17_answer">티머니GO
                                             시작하기</button>
                                     </div>
                                 </div>
                             </div>
                         </div>
-                        <!------------------------------ page 17 ------------------------------>
-                        <div class="page" id="p17">
+                        <!------------------------------ page 18 ------------------------------>
+                        <div class="page" id="p18">
                             <div class="page_wrap">
-                                <h1 class="pg_title" style="color: #fff;">Page17</h1>
+                                <h1 class="pg_title" style="color: #fff;">Page18</h1>
                                 <div class="top_boxx">
                                     <h4 class="p-4 pb-0">김서울님 ></h4>
                                     <div class="boxx fontSz">
@@ -1340,8 +1344,8 @@
                                 </div>
                             </div>
                         </div>
-                        <!------------------------------ page 18 ------------------------------>
-                        <div class="page" id="p18">
+                        <!------------------------------ page 19 ------------------------------>
+                        <div class="page" id="p19">
                             <div class="page_wrap">
                                 <!-- <h1 class="pg_title" style="color: #fff;">Page6</h1> -->
                                 <h1 class="title_h1"><img src="../common/images/done.png" width="100%"></h1>

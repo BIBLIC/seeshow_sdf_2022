@@ -286,6 +286,8 @@ $('#hint_btn').click(function () {
     $('.border_darker').toggleClass("mk_border_darker");
     $('.txt_darker').toggleClass("mk_txt_darker");
     $(".pg_" + real_pg + '_txt_darker').toggleClass("mk_txt_darker");
+    $(".pg_" + real_pg + '_border_darker').toggleClass("mk_txt_darker");
+    $(".pg_" + real_pg + '_css_chng').toggleClass("css_toggle");
 })
 //*******************************************************************************
 //**************************+    클릭 제어   +*********************************** 
@@ -373,7 +375,17 @@ document.querySelector("main").addEventListener("click", function (e) {//메인 
             });
         }
 
-
+        //----자동으로 페이지 넘겨야할 때 : 1자리 입력 --토스 등등-----------------
+        //ID1_auto_txt pg_n_answer n_input
+        else if (e.target.className.includes("ID1_auto_txt")) {
+            //키보드 떼고 값 일치하면 다음 버튼 활성화되게 
+            $('.' + real_pg + '_input').keyup(function(){
+                if (this.value.length ==1) {
+                    next(real_pg);
+                    
+                }
+            });
+        }
 
         //----자동으로 페이지 넘겨야할 때 : 6자리 입력 --토스 등등-----------------
         //ID6_auto_txt pg_n_answer n_input
@@ -398,9 +410,10 @@ document.querySelector("main").addEventListener("click", function (e) {//메인 
                 }
             });
         }
+      
 
         //----자동으로 페이지 넘겨야할 때 : 텍스트 입력 --토스 등등-----------------
-        //anwer_auto_txt pg_n_answer n_input
+        //answer_auto_txt pg_n_answer n_input
         else if (e.target.className.includes("answer_auto_txt")) {
             //키보드 떼고 값 일치하면 다음 버튼 활성화되게 
             $('.' + real_pg + '_input').keyup(function(){

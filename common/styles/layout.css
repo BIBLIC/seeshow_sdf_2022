@@ -187,7 +187,7 @@ svg {
 }
 
 .mk_txt_darker {
-  opacity: 0.4;
+  filter: brightness(70%);
 }
 
 
