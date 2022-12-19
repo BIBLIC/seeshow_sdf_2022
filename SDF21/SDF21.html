@@ -2165,27 +2165,391 @@
                         <div class="page" id="p10">
                             <div class="page_wrap">
                                 <h1 class="pg_title" style="color: #fff;">Page10</h1>
-                                10
+                                <!-- top -->
+                                <div class="pg_top fontSz px-4 py-3">
+                                    <svg></svg>
+                                    <div class="flex-fill h-100 d-flex justify-content-center align-items-center">
+                                        <div class="w-100 flex-center-center text-lg fw-bold">
+                                            일괄 내려받기 항목 선택
+                                        </div>
+                                    </div>
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-x-lg text-lightgray" viewBox="0 0 16 16">
+                                        <path d="M2.146 2.854a.5.5 0 1 1 .708-.708L8 7.293l5.146-5.147a.5.5 0 0 1 .708.708L8.707 8l5.147 5.146a.5.5 0 0 1-.708.708L8 8.707l-5.146 5.147a.5.5 0 0 1-.708-.708L7.293 8 2.146 2.854Z"/>
+                                      </svg>
+                                </div>
+                                <!-- scroll -->
+                                <div class="scroller fontSz">
+                                    <!-- container -->
+                                    <div class="container px-4 py-2">
+                                        <div class="tab title border-bottom border-dark">
+                                            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-record-circle-fill me-2 text-lightb" viewBox="0 0 16 16">
+                                                <path d="M16 8A8 8 0 1 1 0 8a8 8 0 0 1 16 0zm-8 3a3 3 0 1 0 0-6 3 3 0 0 0 0 6z"/>
+                                            </svg>
+                                            <div class="fw-bold">선택한 항목보기</div>
+                                        </div>
+
+                                        <div class="tab notice pt-4 d-flex align-items-start">
+                                            <div class="left">
+                                                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16"
+                                                    fill="currentColor" class="bi bi-chat-left-dots-fill text-or me-2"
+                                                    viewBox="0 0 16 16">
+                                                    <path
+                                                        d="M0 2a2 2 0 0 1 2-2h12a2 2 0 0 1 2 2v8a2 2 0 0 1-2 2H4.414a1 1 0 0 0-.707.293L.854 15.146A.5.5 0 0 1 0 14.793V2zm5 4a1 1 0 1 0-2 0 1 1 0 0 0 2 0zm4 0a1 1 0 1 0-2 0 1 1 0 0 0 2 0zm3 1a1 1 0 1 0 0-2 1 1 0 0 0 0 2z" />
+                                                </svg>
+                                            </div>
+                                            <div class="right d-flex flex-column">
+                                                <div class="text-b fw-bold">안내</div>
+                                                <div class="text-sm text-gray">
+                                                    내려받은 파일은 스마트폰의 <div class="text-danger">'내장 메모리 > Download'</div><div class="text-b"> 폴더에 저장</div>됩니다. 
+                                                    <div class="text-danger">「내파일」</div><div class="text-b">앱이나 </div><div class="text-danger">「파일관리자」</div><div class="text-b"> 앱으로 확인</div> 하시기 바랍니다. 단, 기기별로 저장 위치가 다를 수 있습니다.<br>
+                                                    내려받은 파일은 스마트폰에 <div class="text-danger">'PDF 뷰어'</div><div class="text-b">가 설치되어 있어야 읽을 수 있습니다.</div>
+                                                </div>
+                                            </div>
+                                        </div>
+
+                                        <div class="tab py-4">
+                                            <div class="w-100 btn btn-outline-grayb">
+                                                전체선택/해제
+                                            </div>
+                                        </div>
+
+                                        <!-- check list -->
+                                        <div class="tab detail border-bottom">
+                                            <div class="left">
+                                                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-check-square-fill text-b" viewBox="0 0 16 16">
+                                                    <path d="M2 0a2 2 0 0 0-2 2v12a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V2a2 2 0 0 0-2-2H2zm10.03 4.97a.75.75 0 0 1 .011 1.05l-3.992 4.99a.75.75 0 0 1-1.08.02L4.324 8.384a.75.75 0 1 1 1.06-1.06l2.094 2.093 3.473-4.425a.75.75 0 0 1 1.08-.022z"/>
+                                                  </svg>
+                                                <div class="">건강보험</div>
+                                            </div>
+                                            <div class="right">
+                                                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-check-square-fill text-b" viewBox="0 0 16 16">
+                                                    <path d="M2 0a2 2 0 0 0-2 2v12a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V2a2 2 0 0 0-2-2H2zm10.03 4.97a.75.75 0 0 1 .011 1.05l-3.992 4.99a.75.75 0 0 1-1.08.02L4.324 8.384a.75.75 0 1 1 1.06-1.06l2.094 2.093 3.473-4.425a.75.75 0 0 1 1.08-.022z"/>
+                                                  </svg>
+                                                <div class="">국민연금</div>
+                                            </div>
+                                        </div>
+
+                                        <div class="tab detail border-bottom">
+                                            <div class="left">
+                                                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-check-square-fill text-b" viewBox="0 0 16 16">
+                                                    <path d="M2 0a2 2 0 0 0-2 2v12a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V2a2 2 0 0 0-2-2H2zm10.03 4.97a.75.75 0 0 1 .011 1.05l-3.992 4.99a.75.75 0 0 1-1.08.02L4.324 8.384a.75.75 0 1 1 1.06-1.06l2.094 2.093 3.473-4.425a.75.75 0 0 1 1.08-.022z"/>
+                                                  </svg>
+                                                <div class="">보험료</div>
+                                            </div>
+                                            <div class="right">
+                                                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-check-square-fill text-b" viewBox="0 0 16 16">
+                                                    <path d="M2 0a2 2 0 0 0-2 2v12a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V2a2 2 0 0 0-2-2H2zm10.03 4.97a.75.75 0 0 1 .011 1.05l-3.992 4.99a.75.75 0 0 1-1.08.02L4.324 8.384a.75.75 0 1 1 1.06-1.06l2.094 2.093 3.473-4.425a.75.75 0 0 1 1.08-.022z"/>
+                                                  </svg>
+                                                <div class="">의료비</div>
+                                            </div>
+                                        </div>
+
+                                        <div class="tab detail border-bottom">
+                                            <div class="left">
+                                                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-check-square-fill text-white" viewBox="0 0 16 16">
+                                                    <path d="M2 0a2 2 0 0 0-2 2v12a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V2a2 2 0 0 0-2-2H2zm10.03 4.97a.75.75 0 0 1 .011 1.05l-3.992 4.99a.75.75 0 0 1-1.08.02L4.324 8.384a.75.75 0 1 1 1.06-1.06l2.094 2.093 3.473-4.425a.75.75 0 0 1 1.08-.022z"/>
+                                                  </svg>
+                                                <div class="">내용추가내용추 가내용추가내용추가</div>
+                                            </div>
+                                            <div class="right">
+                                                <svg></svg>
+                                                <div class="">내용추가</div>
+                                            </div>
+                                        </div>
+
+                                        <div class="tab detail border-bottom">
+                                            <div class="left">
+                                                <svg></svg>
+                                                <div class="">내용추가</div>
+                                            </div>
+                                            <div class="right">
+                                                <svg></svg>
+                                                <div class="">내용추가</div>
+                                            </div>
+                                        </div>
+
+                                        <div class="tab detail border-bottom">
+                                            <div class="left">
+                                                <svg></svg>
+                                                <div class="">내용추가</div>
+                                            </div>
+                                            <div class="right">
+                                                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-check-square-fill text-b" viewBox="0 0 16 16">
+                                                    <path d="M2 0a2 2 0 0 0-2 2v12a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V2a2 2 0 0 0-2-2H2zm10.03 4.97a.75.75 0 0 1 .011 1.05l-3.992 4.99a.75.75 0 0 1-1.08.02L4.324 8.384a.75.75 0 1 1 1.06-1.06l2.094 2.093 3.473-4.425a.75.75 0 0 1 1.08-.022z"/>
+                                                  </svg>
+                                                <div class="">신용카드</div>
+                                            </div>
+                                        </div>
+
+                                        <div class="tab detail">
+                                            <div class="left">
+                                                <svg></svg>
+                                                <div class="">내용추가</div>
+                                            </div>
+                                            <div class="right">
+                                                <svg></svg>
+                                                <div class="">내용추가</div>
+                                            </div>
+                                        </div>
+                                        
+                                    </div>
+
+                                    <!-- detail -->
+                                    <div class="bg-lightgray p-0">
+                                        <div class="tab px-4">
+                                            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-square text-lightgray" viewBox="0 0 16 16">
+                                                <path d="M14 1a1 1 0 0 1 1 1v12a1 1 0 0 1-1 1H2a1 1 0 0 1-1-1V2a1 1 0 0 1 1-1h12zM2 0a2 2 0 0 0-2 2v12a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V2a2 2 0 0 0-2-2H2z"/>
+                                              </svg>
+                                            <div class="">문서열기 암호설정</div>
+                                        </div>
+                                        <div class="tab hidden px-4">
+                                            <div class="w-30 text-b">공개여부</div>
+                                            <div class="">
+                                                <div class="pb-3">
+                                                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-circle text-lightgray" viewBox="0 0 16 16">
+                                                        <path d="M8 15A7 7 0 1 1 8 1a7 7 0 0 1 0 14zm0 1A8 8 0 1 0 8 0a8 8 0 0 0 0 16z"/>
+                                                      </svg>
+                                                      개인정보 공개
+                                                </div>
+                                                <div class="">
+                                                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-record-circle-fill text-b" viewBox="0 0 16 16">
+                                                        <path d="M16 8A8 8 0 1 1 0 8a8 8 0 0 1 16 0zm-8 3a3 3 0 1 0 0-6 3 3 0 0 0 0 6z"/>
+                                                      </svg>
+                                                    개인정보 비공개
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                    <div class="btn_wrap px-4 py-3">
+                                        <div class="btn btn-outline-dark">취소</div>
+                                        <div class="btn btn-b">내려받기</div>
+                                        <div class="btn btn-b">점자내려받기</div>
+                                    </div>
+
+                                    <div class="tab notice px-4 py-3 d-flex align-items-start">
+                                        <div class="left">
+                                            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16"
+                                                fill="currentColor" class="bi bi-chat-left-dots-fill text-or me-2"
+                                                viewBox="0 0 16 16">
+                                                <path
+                                                    d="M0 2a2 2 0 0 1 2-2h12a2 2 0 0 1 2 2v8a2 2 0 0 1-2 2H4.414a1 1 0 0 0-.707.293L.854 15.146A.5.5 0 0 1 0 14.793V2zm5 4a1 1 0 1 0-2 0 1 1 0 0 0 2 0zm4 0a1 1 0 1 0-2 0 1 1 0 0 0 2 0zm3 1a1 1 0 1 0 0-2 1 1 0 0 0 0 2z" />
+                                            </svg>
+                                        </div>
+                                        <div class="right d-flex flex-column">
+                                            <div class="text-b fw-bold">안내</div>
+                                            <div class="text-sm text-gray">
+                                                내려받은 파일은 스마트폰의 <div class="text-danger">'내장 메모리 > Download'</div><div class="text-b"> 폴더에 저장</div>됩니다. 
+                                                <div class="text-danger">「내파일」</div><div class="text-b">앱이나 </div><div class="text-danger">「파일관리자」</div><div class="text-b"> 앱으로 확인</div> 하시기 바랍니다. 단, 기기별로 저장 위치가 다를 수 있습니다.<br>
+                                                내려받은 파일은 스마트폰에 <div class="text-danger">'PDF 뷰어'</div><div class="text-b">가 설치되어 있어야 읽을 수 있습니다.</div>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                </div>
                             </div>
                         </div>
                         <!------------------------------ page 11 ------------------------------>
                         <div class="page" id="p11">
                             <div class="page_wrap">
                                 <h1 class="pg_title" style="color: #fff;">Page11</h1>
-                                11
+                                <!-- top -->
+                                <div class="pg_top fontSz px-4 py-3">
+                                    <svg></svg>
+                                    <div class="flex-fill h-100 d-flex justify-content-center align-items-center">
+                                        <div class="w-100 flex-center-center text-lg fw-bold">
+                                            일괄 내려받기 항목 선택
+                                        </div>
+                                    </div>
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-x-lg text-lightgray" viewBox="0 0 16 16">
+                                        <path d="M2.146 2.854a.5.5 0 1 1 .708-.708L8 7.293l5.146-5.147a.5.5 0 0 1 .708.708L8.707 8l5.147 5.146a.5.5 0 0 1-.708.708L8 8.707l-5.146 5.147a.5.5 0 0 1-.708-.708L7.293 8 2.146 2.854Z"/>
+                                      </svg>
+                                </div>
+                                <!-- scroll -->
+                                <div class="scroller fontSz">
+                                    <!-- container -->
+                                    <div class="container px-4 py-2">
+                                        <div class="tab title border-bottom border-dark">
+                                            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-record-circle-fill me-2 text-lightb" viewBox="0 0 16 16">
+                                                <path d="M16 8A8 8 0 1 1 0 8a8 8 0 0 1 16 0zm-8 3a3 3 0 1 0 0-6 3 3 0 0 0 0 6z"/>
+                                            </svg>
+                                            <div class="fw-bold">선택한 항목보기</div>
+                                        </div>
+
+                                        <div class="tab notice pt-4 d-flex align-items-start">
+                                            <div class="left">
+                                                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16"
+                                                    fill="currentColor" class="bi bi-chat-left-dots-fill text-or me-2"
+                                                    viewBox="0 0 16 16">
+                                                    <path
+                                                        d="M0 2a2 2 0 0 1 2-2h12a2 2 0 0 1 2 2v8a2 2 0 0 1-2 2H4.414a1 1 0 0 0-.707.293L.854 15.146A.5.5 0 0 1 0 14.793V2zm5 4a1 1 0 1 0-2 0 1 1 0 0 0 2 0zm4 0a1 1 0 1 0-2 0 1 1 0 0 0 2 0zm3 1a1 1 0 1 0 0-2 1 1 0 0 0 0 2z" />
+                                                </svg>
+                                            </div>
+                                            <div class="right d-flex flex-column">
+                                                <div class="text-b fw-bold">안내</div>
+                                                <div class="text-sm text-gray">
+                                                    내려받은 파일은 스마트폰의 <div class="text-danger">'내장 메모리 > Download'</div><div class="text-b"> 폴더에 저장</div>됩니다. 
+                                                    <div class="text-danger">「내파일」</div><div class="text-b">앱이나 </div><div class="text-danger">「파일관리자」</div><div class="text-b"> 앱으로 확인</div> 하시기 바랍니다. 단, 기기별로 저장 위치가 다를 수 있습니다.<br>
+                                                    내려받은 파일은 스마트폰에 <div class="text-danger">'PDF 뷰어'</div><div class="text-b">가 설치되어 있어야 읽을 수 있습니다.</div>
+                                                </div>
+                                            </div>
+                                        </div>
+
+                                        <div class="tab py-4">
+                                            <div class="w-100 btn btn-outline-grayb">
+                                                전체선택/해제
+                                            </div>
+                                        </div>
+
+                                        <!-- check list -->
+                                        <div class="tab detail border-bottom">
+                                            <div class="left">
+                                                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-check-square-fill text-b" viewBox="0 0 16 16">
+                                                    <path d="M2 0a2 2 0 0 0-2 2v12a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V2a2 2 0 0 0-2-2H2zm10.03 4.97a.75.75 0 0 1 .011 1.05l-3.992 4.99a.75.75 0 0 1-1.08.02L4.324 8.384a.75.75 0 1 1 1.06-1.06l2.094 2.093 3.473-4.425a.75.75 0 0 1 1.08-.022z"/>
+                                                  </svg>
+                                                <div class="">건강보험</div>
+                                            </div>
+                                            <div class="right">
+                                                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-check-square-fill text-b" viewBox="0 0 16 16">
+                                                    <path d="M2 0a2 2 0 0 0-2 2v12a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V2a2 2 0 0 0-2-2H2zm10.03 4.97a.75.75 0 0 1 .011 1.05l-3.992 4.99a.75.75 0 0 1-1.08.02L4.324 8.384a.75.75 0 1 1 1.06-1.06l2.094 2.093 3.473-4.425a.75.75 0 0 1 1.08-.022z"/>
+                                                  </svg>
+                                                <div class="">국민연금</div>
+                                            </div>
+                                        </div>
+
+                                        <div class="tab detail border-bottom">
+                                            <div class="left">
+                                                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-check-square-fill text-b" viewBox="0 0 16 16">
+                                                    <path d="M2 0a2 2 0 0 0-2 2v12a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V2a2 2 0 0 0-2-2H2zm10.03 4.97a.75.75 0 0 1 .011 1.05l-3.992 4.99a.75.75 0 0 1-1.08.02L4.324 8.384a.75.75 0 1 1 1.06-1.06l2.094 2.093 3.473-4.425a.75.75 0 0 1 1.08-.022z"/>
+                                                  </svg>
+                                                <div class="">보험료</div>
+                                            </div>
+                                            <div class="right">
+                                                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-check-square-fill text-b" viewBox="0 0 16 16">
+                                                    <path d="M2 0a2 2 0 0 0-2 2v12a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V2a2 2 0 0 0-2-2H2zm10.03 4.97a.75.75 0 0 1 .011 1.05l-3.992 4.99a.75.75 0 0 1-1.08.02L4.324 8.384a.75.75 0 1 1 1.06-1.06l2.094 2.093 3.473-4.425a.75.75 0 0 1 1.08-.022z"/>
+                                                  </svg>
+                                                <div class="">의료비</div>
+                                            </div>
+                                        </div>
+
+                                        <div class="tab detail border-bottom">
+                                            <div class="left">
+                                                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-check-square-fill text-white" viewBox="0 0 16 16">
+                                                    <path d="M2 0a2 2 0 0 0-2 2v12a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V2a2 2 0 0 0-2-2H2zm10.03 4.97a.75.75 0 0 1 .011 1.05l-3.992 4.99a.75.75 0 0 1-1.08.02L4.324 8.384a.75.75 0 1 1 1.06-1.06l2.094 2.093 3.473-4.425a.75.75 0 0 1 1.08-.022z"/>
+                                                  </svg>
+                                                <div class="">내용추가내용추 가내용추가내용추가</div>
+                                            </div>
+                                            <div class="right">
+                                                <svg></svg>
+                                                <div class="">내용추가</div>
+                                            </div>
+                                        </div>
+
+                                        <div class="tab detail border-bottom">
+                                            <div class="left">
+                                                <svg></svg>
+                                                <div class="">내용추가</div>
+                                            </div>
+                                            <div class="right">
+                                                <svg></svg>
+                                                <div class="">내용추가</div>
+                                            </div>
+                                        </div>
+
+                                        <div class="tab detail border-bottom">
+                                            <div class="left">
+                                                <svg></svg>
+                                                <div class="">내용추가</div>
+                                            </div>
+                                            <div class="right">
+                                                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-check-square-fill text-b" viewBox="0 0 16 16">
+                                                    <path d="M2 0a2 2 0 0 0-2 2v12a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V2a2 2 0 0 0-2-2H2zm10.03 4.97a.75.75 0 0 1 .011 1.05l-3.992 4.99a.75.75 0 0 1-1.08.02L4.324 8.384a.75.75 0 1 1 1.06-1.06l2.094 2.093 3.473-4.425a.75.75 0 0 1 1.08-.022z"/>
+                                                  </svg>
+                                                <div class="">신용카드</div>
+                                            </div>
+                                        </div>
+
+                                        <div class="tab detail">
+                                            <div class="left">
+                                                <svg></svg>
+                                                <div class="">내용추가</div>
+                                            </div>
+                                            <div class="right">
+                                                <svg></svg>
+                                                <div class="">내용추가</div>
+                                            </div>
+                                        </div>
+                                        
+                                    </div>
+
+                                    <!-- detail -->
+                                    <div class="bg-lightgray p-0">
+                                        <div class="tab px-4">
+                                            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-square text-lightgray" viewBox="0 0 16 16">
+                                                <path d="M14 1a1 1 0 0 1 1 1v12a1 1 0 0 1-1 1H2a1 1 0 0 1-1-1V2a1 1 0 0 1 1-1h12zM2 0a2 2 0 0 0-2 2v12a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V2a2 2 0 0 0-2-2H2z"/>
+                                              </svg>
+                                            <div class="">문서열기 암호설정</div>
+                                        </div>
+                                        <div class="tab hidden px-4">
+                                            <div class="w-30 text-b">공개여부</div>
+                                            <div class="">
+                                                <div class="pb-3">
+                                                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-circle text-lightgray" viewBox="0 0 16 16">
+                                                        <path d="M8 15A7 7 0 1 1 8 1a7 7 0 0 1 0 14zm0 1A8 8 0 1 0 8 0a8 8 0 0 0 0 16z"/>
+                                                      </svg>
+                                                      개인정보 공개
+                                                </div>
+                                                <div class="">
+                                                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-record-circle-fill text-b" viewBox="0 0 16 16">
+                                                        <path d="M16 8A8 8 0 1 1 0 8a8 8 0 0 1 16 0zm-8 3a3 3 0 1 0 0-6 3 3 0 0 0 0 6z"/>
+                                                      </svg>
+                                                    개인정보 비공개
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                    <div class="btn_wrap px-4 py-3">
+                                        <div class="btn btn-outline-dark">취소</div>
+                                        <div class="btn btn-b">내려받기</div>
+                                        <div class="btn btn-b">점자내려받기</div>
+                                    </div>
+
+
+                                    <div class="tab notice px-4 py-3 d-flex align-items-start">
+                                        <div class="left">
+                                            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16"
+                                                fill="currentColor" class="bi bi-chat-left-dots-fill text-or me-2"
+                                                viewBox="0 0 16 16">
+                                                <path
+                                                    d="M0 2a2 2 0 0 1 2-2h12a2 2 0 0 1 2 2v8a2 2 0 0 1-2 2H4.414a1 1 0 0 0-.707.293L.854 15.146A.5.5 0 0 1 0 14.793V2zm5 4a1 1 0 1 0-2 0 1 1 0 0 0 2 0zm4 0a1 1 0 1 0-2 0 1 1 0 0 0 2 0zm3 1a1 1 0 1 0 0-2 1 1 0 0 0 0 2z" />
+                                            </svg>
+                                        </div>
+                                        <div class="right d-flex flex-column">
+                                            <div class="text-b fw-bold">안내</div>
+                                            <div class="text-sm text-gray">
+                                                내려받은 파일은 스마트폰의 <div class="text-danger">'내장 메모리 > Download'</div><div class="text-b"> 폴더에 저장</div>됩니다. 
+                                                <div class="text-danger">「내파일」</div><div class="text-b">앱이나 </div><div class="text-danger">「파일관리자」</div><div class="text-b"> 앱으로 확인</div> 하시기 바랍니다. 단, 기기별로 저장 위치가 다를 수 있습니다.<br>
+                                                내려받은 파일은 스마트폰에 <div class="text-danger">'PDF 뷰어'</div><div class="text-b">가 설치되어 있어야 읽을 수 있습니다.</div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="absolute-bottom">
+                                    <div class="floating rounded-pill px-4 py-2">
+                                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-file-earmark-arrow-down-fill me-2" viewBox="0 0 16 16">
+                                            <path d="M9.293 0H4a2 2 0 0 0-2 2v12a2 2 0 0 0 2 2h8a2 2 0 0 0 2-2V4.707A1 1 0 0 0 13.707 4L10 .293A1 1 0 0 0 9.293 0zM9.5 3.5v-2l3 3h-2a1 1 0 0 1-1-1zm-1 4v3.793l1.146-1.147a.5.5 0 0 1 .708.708l-2 2a.5.5 0 0 1-.708 0l-2-2a.5.5 0 0 1 .708-.708L7.5 11.293V7.5a.5.5 0 0 1 1 0z"/>
+                                          </svg>
+                                          다운로드 시작
+                                    </div>
+                                </div>
                             </div>
                         </div>
                         <!------------------------------ page 12 ------------------------------>
                         <div class="page" id="p12">
                             <div class="page_wrap">
                                 <h1 class="pg_title" style="color: #fff;">Page12</h1>
-                                12
-                            </div>
-                        </div>
-                        <!------------------------------ page 13 ------------------------------>
-                        <div class="page" id="p13">
-                            <div class="page_wrap">
-                                <h1 class="pg_title" style="color: #fff;">Page13</h1>
                                 <img src="../common/images/done.png" width="100%">
                             </div>
                         </div>
