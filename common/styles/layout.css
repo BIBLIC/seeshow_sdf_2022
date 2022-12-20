@@ -688,6 +688,12 @@ body {
   align-items: flex-start;
 }
 
+.flex-start-start {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+}
+
 .bg-image {
   background-size: cover;
   background-position: center;
