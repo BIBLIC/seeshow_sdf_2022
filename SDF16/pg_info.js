@@ -99,67 +99,67 @@ const inputAnswer = [
 const modalCont = [
     {
         page: 0,
-        instruction: ""
+        instruction: "'시작하기' 버튼을 눌러주세요."
     },
     {
         page: 1,
-        instruction: ""
+        instruction: "'고속ㆍ시외'를 눌러주세요."
     },
     {
         page: 2,
-        instruction: ""
+        instruction: "'터미널 검색' 부분을 눌러주세요."
     },
     {
         page: 3,
-        instruction: ""
+        instruction: "'경부서울'을 선택해 눌러주세요."
     },
     {
         page: 4,
-        instruction: ""
+        instruction: "'속초고속'을 선택해 눌러주세요."
     },
     {
         page: 5,
-        instruction: ""
+        instruction: "일정을 확인하고 '편도 조회' 버튼을 눌러주세요."
     },
     {
         page: 6,
-        instruction: ""
+        instruction: "15시 40분 일정을 선택해주세요."
     },
     {
         page: 7,
-        instruction: ""
+        instruction: "1번 좌석을 눌러주세요."
     },
     {
         page: 8,
-        instruction: ""
+        instruction: "'선택완료' 버튼을 눌러주세요."
     },
     {
         page: 9,
-        instruction: ""
+        instruction: "내용 확인 후 결제 진행할 여정의 체크박스를 선택하고 '결제하기' 버튼을 눌러주세요."
     },
     {
         page: 10,
-        instruction: ""
+        instruction: "결제수단 중 '신용/체크 일반결제'를 선택해주세요. "
     },
     {
         page: 11,
-        instruction: ""
+        instruction: "필수 동의사항을 모두 체크하고 '결제하기' 버튼을 눌러주세요."
     },
     {
         page: 12,
-        instruction: ""
+        instruction: "카메라를 이용해 신용카드 정보를 스캔해주세요."
     },
     {
         page: 13,
-        instruction: ""
+        instruction: "불러온 신용카드 정보를 확인하고 '결제하기' 버튼을 눌러주세요."
     },
     {
         page: 14,
-        instruction: ""
+        instruction: "예매 정보 확인 후 '종료하기' 버튼을 눌러주세요."
     },
     {
         page: 15,
-        instruction: ""
+        instruction: "완료"
     },
 ];
 
@@ -168,52 +168,52 @@ const modalCont = [
 // //*******************************************************************************
 // //**************************+    커서   +*********************************** 
 
-// const cursor_pos_1 = document.querySelector('.cursor_pos_1');
-// const cursor_pos_2 = document.querySelector('.cursor_pos_2');
+const cursor_pos_1 = document.querySelector('.cursor_pos_1');
+const cursor_pos_2 = document.querySelector('.cursor_pos_2');
 // // const cursor_pos_3 = document.querySelector('.cursor_pos_3');
 // // const cursor_pos_4 = document.querySelector('.cursor_pos_4');
 // // const cursor_pos_5 = document.querySelector('.cursor_pos_5');
 // // const cursor_pos_6 = document.querySelector('.cursor_pos_6');
 
-// const cursor_wrap_1 = document.querySelector('.cursor_wrap_1');
-// const cursor_wrap_2 = document.querySelector('.cursor_wrap_2');
+const cursor_wrap_1 = document.querySelector('.cursor_wrap_1');
+const cursor_wrap_2 = document.querySelector('.cursor_wrap_2');
 // // const cursor_wrap_3 = document.querySelector('.cursor_wrap_3');
 // // const cursor_wrap_4 = document.querySelector('.cursor_wrap_4');
 // // const cursor_wrap_5 = document.querySelector('.cursor_wrap_5');
 // // const cursor_wrap_6 = document.querySelector('.cursor_wrap_6');
 
 
-// cursor_wrap_1.style.zIndex = "100";
-// cursor_wrap_2.style.zIndex = "100";
+cursor_wrap_1.style.zIndex = "100";
+cursor_wrap_2.style.zIndex = "100";
 // // cursor_wrap_3.style.zIndex = "100";
 // // cursor_wrap_4.style.zIndex = "100";
 // // cursor_wrap_5.style.zIndex = "100";
 // // cursor_wrap_6.style.zIndex = "100";
 
 
-// const { createPopper } = Popper;
-// createPopper(cursor_pos_1, cursor_wrap_1, {
-//     placement: 'right',
-//     modifiers: [
-//         {
-//             name: 'offset',
-//             options: {
-//                 offset: [0,0],
-//             },
-//         },
-//     ],
-// });
-// createPopper(cursor_pos_2, cursor_wrap_2, {
-//     placement: 'right',
-//     modifiers: [
-//         {
-//             name: 'offset',
-//             options: {
-//                 offset: [30,30],
-//             },
-//         },
-//     ],
-// });
+const { createPopper } = Popper;
+createPopper(cursor_pos_1, cursor_wrap_1, {
+    placement: 'right',
+    modifiers: [
+        {
+            name: 'offset',
+            options: {
+                offset: [0,0],
+            },
+        },
+    ],
+});
+createPopper(cursor_pos_2, cursor_wrap_2, {
+    placement: 'right',
+    modifiers: [
+        {
+            name: 'offset',
+            options: {
+                offset: [0,100],
+            },
+        },
+    ],
+});
 // // createPopper(cursor_pos_3, cursor_wrap_3, {
 // //     placement: 'right',
 // //     modifiers: [

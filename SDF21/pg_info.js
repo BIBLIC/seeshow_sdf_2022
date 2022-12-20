@@ -91,55 +91,55 @@ const inputAnswer = [
 const modalCont = [
     {
         page: 0,
-        instruction: ""
+        instruction: "'시작하기' 버튼을 눌러주세요."
     },
     {
         page: 1,
-        instruction: ""
+        instruction: "'조회ㆍ발급' 탭을 눌러주세요."
     },
     {
         page: 2,
-        instruction: ""
+        instruction: "'연말정산서비스'를 눌러주세요."
     },
     {
         page: 3,
-        instruction: ""
+        instruction: "'근로자 소득ㆍ세액공제 자료조회'를 눌러주세요."
     },
     {
         page: 4,
-        instruction: ""
+        instruction: "건강보험료 영역에서 '조회' 버튼을 눌러주세요."
     },
     {
         page: 5,
-        instruction: ""
+        instruction: "국민연금 영역에서 '조회' 버튼을 눌러주세요."
     },
     {
         page: 6,
-        instruction: ""
+        instruction: "보험료 영역에서 '조회' 버튼을 눌러주세요."
     },
     {
         page: 7,
-        instruction: ""
+        instruction: "의료비 영역에서 '조회' 버튼을 눌러주세요."
     },
     {
         page: 8,
-        instruction: ""
+        instruction: "스크롤을 내려 신용카드 영역에서 '조회' 버튼을 눌러주세요."
     },
     {
         page: 9,
-        instruction: ""
+        instruction: "'일괄/점자 내려받기' 버튼을 눌러주세요."
     },
     {
         page: 10,
-        instruction: ""
+        instruction: "선택한 항목을 확인하고 스크롤을 내려 '내려받기' 버튼을 눌러주세요."
     },
     {
         page: 11,
-        instruction: ""
+        instruction: "파일 내려받기가 완료될 때 까지 기다려주세요."
     },
     {
         page: 12,
-        instruction: ""
+        instruction: "완료"
     },
 ];
 
@@ -148,52 +148,52 @@ const modalCont = [
 // //*******************************************************************************
 // //**************************+    커서   +*********************************** 
 
-// const cursor_pos_1 = document.querySelector('.cursor_pos_1');
-// const cursor_pos_2 = document.querySelector('.cursor_pos_2');
-// // const cursor_pos_3 = document.querySelector('.cursor_pos_3');
-// // const cursor_pos_4 = document.querySelector('.cursor_pos_4');
-// // const cursor_pos_5 = document.querySelector('.cursor_pos_5');
-// // const cursor_pos_6 = document.querySelector('.cursor_pos_6');
+const cursor_pos_1 = document.querySelector('.cursor_pos_1');
+const cursor_pos_2 = document.querySelector('.cursor_pos_2');
+// const cursor_pos_3 = document.querySelector('.cursor_pos_3');
+// const cursor_pos_4 = document.querySelector('.cursor_pos_4');
+// const cursor_pos_5 = document.querySelector('.cursor_pos_5');
+// const cursor_pos_6 = document.querySelector('.cursor_pos_6');
 
-// const cursor_wrap_1 = document.querySelector('.cursor_wrap_1');
-// const cursor_wrap_2 = document.querySelector('.cursor_wrap_2');
-// // const cursor_wrap_3 = document.querySelector('.cursor_wrap_3');
-// // const cursor_wrap_4 = document.querySelector('.cursor_wrap_4');
-// // const cursor_wrap_5 = document.querySelector('.cursor_wrap_5');
-// // const cursor_wrap_6 = document.querySelector('.cursor_wrap_6');
+const cursor_wrap_1 = document.querySelector('.cursor_wrap_1');
+const cursor_wrap_2 = document.querySelector('.cursor_wrap_2');
+// const cursor_wrap_3 = document.querySelector('.cursor_wrap_3');
+// const cursor_wrap_4 = document.querySelector('.cursor_wrap_4');
+// const cursor_wrap_5 = document.querySelector('.cursor_wrap_5');
+// const cursor_wrap_6 = document.querySelector('.cursor_wrap_6');
 
 
-// cursor_wrap_1.style.zIndex = "100";
-// cursor_wrap_2.style.zIndex = "100";
+cursor_wrap_1.style.zIndex = "100";
+cursor_wrap_2.style.zIndex = "100";
 // // cursor_wrap_3.style.zIndex = "100";
 // // cursor_wrap_4.style.zIndex = "100";
 // // cursor_wrap_5.style.zIndex = "100";
 // // cursor_wrap_6.style.zIndex = "100";
 
 
-// const { createPopper } = Popper;
-// createPopper(cursor_pos_1, cursor_wrap_1, {
-//     placement: 'right',
-//     modifiers: [
-//         {
-//             name: 'offset',
-//             options: {
-//                 offset: [0,0],
-//             },
-//         },
-//     ],
-// });
-// createPopper(cursor_pos_2, cursor_wrap_2, {
-//     placement: 'right',
-//     modifiers: [
-//         {
-//             name: 'offset',
-//             options: {
-//                 offset: [30,30],
-//             },
-//         },
-//     ],
-// });
+const { createPopper } = Popper;
+createPopper(cursor_pos_1, cursor_wrap_1, {
+    placement: 'right',
+    modifiers: [
+        {
+            name: 'offset',
+            options: {
+                offset: [0,0],
+            },
+        },
+    ],
+});
+createPopper(cursor_pos_2, cursor_wrap_2, {
+    placement: 'right',
+    modifiers: [
+        {
+            name: 'offset',
+            options: {
+                offset: [0,0],
+            },
+        },
+    ],
+});
 // // createPopper(cursor_pos_3, cursor_wrap_3, {
 // //     placement: 'right',
 // //     modifiers: [
@@ -240,3 +240,47 @@ const modalCont = [
 // //         },
 // //     ],
 // // });
+
+$('#hint_btn').click(function () {
+    var myPgNum = $(".active").attr('id');
+    var real_pg = myPgNum.slice(1);
+    if ((real_pg == 2)){
+        $(".menu").removeClass("box-shadow");
+    } 
+})
+
+$(document).on("click", '.pg_10_answer', function () {
+    if (page_num === 11) {
+        $( document ).ready(function() {
+            setTimeout(function () {
+                if (page_num === 11) {
+                    next();
+                }
+            }, 1200);
+          });  
+    }
+});
+
+$(document).on("click", "#next_btn", function () {
+    if (page_num === 10) {
+        $( document ).ready(function() {
+            setTimeout(function () {
+                if (page_num === 11) {
+                    next();
+                }
+            }, 1200);
+          });  
+    }
+});
+
+$(document).on("click", "#prev_btn", function () {
+    if (page_num === 12) {
+        $( document ).ready(function() {
+            setTimeout(function () {
+                if (page_num === 11) {
+                    next();
+                }
+            }, 1200);
+          });  
+    }
+});

@@ -101,7 +101,19 @@
 
                                 <div class="pg_top bg-b fontSz px-4">
                                     <div class="tab selected">홈</div>
-                                    <div class="tab">조회<br>발급</div>
+                                    <div class="tab cursor_pos_1">
+                                        <div class=" pg_1_answer">조회<br>발급</div>
+                                        <!-- 커서 가이드 -->
+                                        <div class="cursor_wrap cursor_wrap_1 ">
+                                            <span class="cursor" x-placement="bottom pg_1_answer">
+                                                <button class="react-joyride__beacon" type="button pg_1_answer">
+                                                    <span class="cursor_outer pg_1_answer"></span>
+                                                    <span class="cursor_inner pg_1_answer"><span>
+                                                </button>
+                                            </span>
+                                        </div>
+                                        <!-- 커서 가이드 -->
+                                    </div>
                                     <div class="tab">민원<br>증명</div>
                                     <div class="tab">신청<br>제출</div>
                                     <div class="tab">신고<br>납부</div>
@@ -248,7 +260,7 @@
                         <div class="page" id="p2">
                             <div class="page_wrap">
                                 <h1 class="pg_title" style="color: #fff;">Page2</h1>
-                                <div class="pg_top fontSz px-4 py-3">
+                                <div class="pg_top fontSz px-4 py-3 pg_2_shadow_inner">
                                     <div class="flex-center-center flex-column text-b">
                                         <svg xmlns="http://www.w3.org/2000/svg" width="23" height="23"
                                             fill="currentColor" class="bi bi-power" viewBox="0 0 16 16">
@@ -270,13 +282,13 @@
                                     </svg>
                                 </div>
 
-                                <div class="pg_top bg-b fontSz px-4">
-                                    <div class="tab">홈</div>
-                                    <div class="tab selected">조회<br>발급</div>
-                                    <div class="tab">민원<br>증명</div>
-                                    <div class="tab">신청<br>제출</div>
-                                    <div class="tab">신고<br>납부</div>
-                                    <div class="tab">상담<br>제보</div>
+                                <div class="pg_top bg-b fontSz px-4 pg_2_shadow_inner">
+                                    <div class="tab pg_2_txt_darker">홈</div>
+                                    <div class="tab selected pg_2_txt_darker">조회<br>발급</div>
+                                    <div class="tab pg_2_txt_darker">민원<br>증명</div>
+                                    <div class="tab pg_2_txt_darker">신청<br>제출</div>
+                                    <div class="tab pg_2_txt_darker">신고<br>납부</div>
+                                    <div class="tab pg_2_txt_darker">상담<br>제보</div>
                                 </div>
 
                                 <!-- scroll -->
@@ -289,7 +301,7 @@
                                                     <path
                                                         d="M6.5 1A1.5 1.5 0 0 0 5 2.5V3H1.5A1.5 1.5 0 0 0 0 4.5v8A1.5 1.5 0 0 0 1.5 14h13a1.5 1.5 0 0 0 1.5-1.5v-8A1.5 1.5 0 0 0 14.5 3H11v-.5A1.5 1.5 0 0 0 9.5 1h-3zm0 1h3a.5.5 0 0 1 .5.5V3H6v-.5a.5.5 0 0 1 .5-.5zm1.886 6.914L15 7.151V12.5a.5.5 0 0 1-.5.5h-13a.5.5 0 0 1-.5-.5V7.15l6.614 1.764a1.5 1.5 0 0 0 .772 0zM1.5 4h13a.5.5 0 0 1 .5.5v1.616L8.129 7.948a.5.5 0 0 1-.258 0L1 6.116V4.5a.5.5 0 0 1 .5-.5z" />
                                                 </svg>
-                                                0
+                                                전자(세금)계산서 발급
                                             </div>
                                             <div class="right">
                                                 <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16"
@@ -304,11 +316,11 @@
                                         <div class="menu">
                                             <div class="left">
                                                 <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16"
-                                                    fill="currentColor" class="bi bi-briefcase" viewBox="0 0 16 16">
+                                                    fill="currentColor" class="bi bi-search" viewBox="0 0 16 16">
                                                     <path
-                                                        d="M6.5 1A1.5 1.5 0 0 0 5 2.5V3H1.5A1.5 1.5 0 0 0 0 4.5v8A1.5 1.5 0 0 0 1.5 14h13a1.5 1.5 0 0 0 1.5-1.5v-8A1.5 1.5 0 0 0 14.5 3H11v-.5A1.5 1.5 0 0 0 9.5 1h-3zm0 1h3a.5.5 0 0 1 .5.5V3H6v-.5a.5.5 0 0 1 .5-.5zm1.886 6.914L15 7.151V12.5a.5.5 0 0 1-.5.5h-13a.5.5 0 0 1-.5-.5V7.15l6.614 1.764a1.5 1.5 0 0 0 .772 0zM1.5 4h13a.5.5 0 0 1 .5.5v1.616L8.129 7.948a.5.5 0 0 1-.258 0L1 6.116V4.5a.5.5 0 0 1 .5-.5z" />
+                                                        d="M11.742 10.344a6.5 6.5 0 1 0-1.397 1.398h-.001c.03.04.062.078.098.115l3.85 3.85a1 1 0 0 0 1.415-1.414l-3.85-3.85a1.007 1.007 0 0 0-.115-.1zM12 6.5a5.5 5.5 0 1 1-11 0 5.5 5.5 0 0 1 11 0z" />
                                                 </svg>
-                                                0
+                                                전자(세금)계산서 조회
                                             </div>
                                             <div class="right">
                                                 <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16"
@@ -320,52 +332,47 @@
                                                 </svg>
                                             </div>
                                         </div>
-                                        <div class="menu">
-                                            <div class="left">
+                                        <div class="menu box-shadow pg_2_answer cursor_pos_2">
+                                            <div class="left pg_2_answer">
                                                 <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16"
-                                                    fill="currentColor" class="bi bi-briefcase" viewBox="0 0 16 16">
+                                                    fill="currentColor" class="bi bi-display pg_2_answer"
+                                                    viewBox="0 0 16 16">
                                                     <path
-                                                        d="M6.5 1A1.5 1.5 0 0 0 5 2.5V3H1.5A1.5 1.5 0 0 0 0 4.5v8A1.5 1.5 0 0 0 1.5 14h13a1.5 1.5 0 0 0 1.5-1.5v-8A1.5 1.5 0 0 0 14.5 3H11v-.5A1.5 1.5 0 0 0 9.5 1h-3zm0 1h3a.5.5 0 0 1 .5.5V3H6v-.5a.5.5 0 0 1 .5-.5zm1.886 6.914L15 7.151V12.5a.5.5 0 0 1-.5.5h-13a.5.5 0 0 1-.5-.5V7.15l6.614 1.764a1.5 1.5 0 0 0 .772 0zM1.5 4h13a.5.5 0 0 1 .5.5v1.616L8.129 7.948a.5.5 0 0 1-.258 0L1 6.116V4.5a.5.5 0 0 1 .5-.5z" />
+                                                        d="M0 4s0-2 2-2h12s2 0 2 2v6s0 2-2 2h-4c0 .667.083 1.167.25 1.5H11a.5.5 0 0 1 0 1H5a.5.5 0 0 1 0-1h.75c.167-.333.25-.833.25-1.5H2s-2 0-2-2V4zm1.398-.855a.758.758 0 0 0-.254.302A1.46 1.46 0 0 0 1 4.01V10c0 .325.078.502.145.602.07.105.17.188.302.254a1.464 1.464 0 0 0 .538.143L2.01 11H14c.325 0 .502-.078.602-.145a.758.758 0 0 0 .254-.302 1.464 1.464 0 0 0 .143-.538L15 9.99V4c0-.325-.078-.502-.145-.602a.757.757 0 0 0-.302-.254A1.46 1.46 0 0 0 13.99 3H2c-.325 0-.502.078-.602.145z" />
                                                 </svg>
                                                 연말정산서비스
                                             </div>
-                                            <div class="right">
+                                            <div class="right pg_2_answer">
                                                 <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16"
-                                                    fill="currentColor" class="bi bi-chevron-down text-lightgray"
+                                                    fill="currentColor"
+                                                    class="pg_2_answer bi bi-chevron-down text-lightgray"
                                                     viewBox="0 0 16 16">
                                                     <path fill-rule="evenodd"
                                                         d="M1.646 4.646a.5.5 0 0 1 .708 0L8 10.293l5.646-5.647a.5.5 0 0 1 .708.708l-6 6a.5.5 0 0 1-.708 0l-6-6a.5.5 0 0 1 0-.708z">
                                                     </path>
                                                 </svg>
                                             </div>
+                                            <!-- 커서 가이드 -->
+                                            <div class="cursor_wrap cursor_wrap_2 pg_2_answer">
+                                                <span class="cursor" x-placement="bottom pg_2_answer">
+                                                    <button class="react-joyride__beacon" type="button pg_2_answer">
+                                                        <span class="cursor_outer pg_2_answer"></span>
+                                                        <span class="cursor_inner pg_2_answer"><span>
+                                                    </button>
+                                                </span>
+                                            </div>
+                                            <!-- 커서 가이드 -->
                                         </div>
                                         <div class="menu">
                                             <div class="left">
                                                 <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16"
-                                                    fill="currentColor" class="bi bi-briefcase" viewBox="0 0 16 16">
+                                                    fill="currentColor" class="bi bi-clipboard2" viewBox="0 0 16 16">
                                                     <path
-                                                        d="M6.5 1A1.5 1.5 0 0 0 5 2.5V3H1.5A1.5 1.5 0 0 0 0 4.5v8A1.5 1.5 0 0 0 1.5 14h13a1.5 1.5 0 0 0 1.5-1.5v-8A1.5 1.5 0 0 0 14.5 3H11v-.5A1.5 1.5 0 0 0 9.5 1h-3zm0 1h3a.5.5 0 0 1 .5.5V3H6v-.5a.5.5 0 0 1 .5-.5zm1.886 6.914L15 7.151V12.5a.5.5 0 0 1-.5.5h-13a.5.5 0 0 1-.5-.5V7.15l6.614 1.764a1.5 1.5 0 0 0 .772 0zM1.5 4h13a.5.5 0 0 1 .5.5v1.616L8.129 7.948a.5.5 0 0 1-.258 0L1 6.116V4.5a.5.5 0 0 1 .5-.5z" />
-                                                </svg>
-                                                0
-                                            </div>
-                                            <div class="right">
-                                                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16"
-                                                    fill="currentColor" class="bi bi-chevron-down text-lightgray"
-                                                    viewBox="0 0 16 16">
-                                                    <path fill-rule="evenodd"
-                                                        d="M1.646 4.646a.5.5 0 0 1 .708 0L8 10.293l5.646-5.647a.5.5 0 0 1 .708.708l-6 6a.5.5 0 0 1-.708 0l-6-6a.5.5 0 0 1 0-.708z">
-                                                    </path>
-                                                </svg>
-                                            </div>
-                                        </div>
-                                        <div class="menu">
-                                            <div class="left">
-                                                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16"
-                                                    fill="currentColor" class="bi bi-briefcase" viewBox="0 0 16 16">
+                                                        d="M3.5 2a.5.5 0 0 0-.5.5v12a.5.5 0 0 0 .5.5h9a.5.5 0 0 0 .5-.5v-12a.5.5 0 0 0-.5-.5H12a.5.5 0 0 1 0-1h.5A1.5 1.5 0 0 1 14 2.5v12a1.5 1.5 0 0 1-1.5 1.5h-9A1.5 1.5 0 0 1 2 14.5v-12A1.5 1.5 0 0 1 3.5 1H4a.5.5 0 0 1 0 1h-.5Z" />
                                                     <path
-                                                        d="M6.5 1A1.5 1.5 0 0 0 5 2.5V3H1.5A1.5 1.5 0 0 0 0 4.5v8A1.5 1.5 0 0 0 1.5 14h13a1.5 1.5 0 0 0 1.5-1.5v-8A1.5 1.5 0 0 0 14.5 3H11v-.5A1.5 1.5 0 0 0 9.5 1h-3zm0 1h3a.5.5 0 0 1 .5.5V3H6v-.5a.5.5 0 0 1 .5-.5zm1.886 6.914L15 7.151V12.5a.5.5 0 0 1-.5.5h-13a.5.5 0 0 1-.5-.5V7.15l6.614 1.764a1.5 1.5 0 0 0 .772 0zM1.5 4h13a.5.5 0 0 1 .5.5v1.616L8.129 7.948a.5.5 0 0 1-.258 0L1 6.116V4.5a.5.5 0 0 1 .5-.5z" />
+                                                        d="M10 .5a.5.5 0 0 0-.5-.5h-3a.5.5 0 0 0-.5.5.5.5 0 0 1-.5.5.5.5 0 0 0-.5.5V2a.5.5 0 0 0 .5.5h5A.5.5 0 0 0 11 2v-.5a.5.5 0 0 0-.5-.5.5.5 0 0 1-.5-.5Z" />
                                                 </svg>
-                                                0
+                                                현금영수증 조회
                                             </div>
                                             <div class="right">
                                                 <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16"
@@ -380,30 +387,14 @@
                                         <div class="menu">
                                             <div class="left">
                                                 <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16"
-                                                    fill="currentColor" class="bi bi-briefcase" viewBox="0 0 16 16">
+                                                    fill="currentColor" class="bi bi-file-earmark-text"
+                                                    viewBox="0 0 16 16">
                                                     <path
-                                                        d="M6.5 1A1.5 1.5 0 0 0 5 2.5V3H1.5A1.5 1.5 0 0 0 0 4.5v8A1.5 1.5 0 0 0 1.5 14h13a1.5 1.5 0 0 0 1.5-1.5v-8A1.5 1.5 0 0 0 14.5 3H11v-.5A1.5 1.5 0 0 0 9.5 1h-3zm0 1h3a.5.5 0 0 1 .5.5V3H6v-.5a.5.5 0 0 1 .5-.5zm1.886 6.914L15 7.151V12.5a.5.5 0 0 1-.5.5h-13a.5.5 0 0 1-.5-.5V7.15l6.614 1.764a1.5 1.5 0 0 0 .772 0zM1.5 4h13a.5.5 0 0 1 .5.5v1.616L8.129 7.948a.5.5 0 0 1-.258 0L1 6.116V4.5a.5.5 0 0 1 .5-.5z" />
-                                                </svg>
-                                                0
-                                            </div>
-                                            <div class="right">
-                                                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16"
-                                                    fill="currentColor" class="bi bi-chevron-down text-lightgray"
-                                                    viewBox="0 0 16 16">
-                                                    <path fill-rule="evenodd"
-                                                        d="M1.646 4.646a.5.5 0 0 1 .708 0L8 10.293l5.646-5.647a.5.5 0 0 1 .708.708l-6 6a.5.5 0 0 1-.708 0l-6-6a.5.5 0 0 1 0-.708z">
-                                                    </path>
-                                                </svg>
-                                            </div>
-                                        </div>
-                                        <div class="menu">
-                                            <div class="left">
-                                                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16"
-                                                    fill="currentColor" class="bi bi-briefcase" viewBox="0 0 16 16">
+                                                        d="M5.5 7a.5.5 0 0 0 0 1h5a.5.5 0 0 0 0-1h-5zM5 9.5a.5.5 0 0 1 .5-.5h5a.5.5 0 0 1 0 1h-5a.5.5 0 0 1-.5-.5zm0 2a.5.5 0 0 1 .5-.5h2a.5.5 0 0 1 0 1h-2a.5.5 0 0 1-.5-.5z" />
                                                     <path
-                                                        d="M6.5 1A1.5 1.5 0 0 0 5 2.5V3H1.5A1.5 1.5 0 0 0 0 4.5v8A1.5 1.5 0 0 0 1.5 14h13a1.5 1.5 0 0 0 1.5-1.5v-8A1.5 1.5 0 0 0 14.5 3H11v-.5A1.5 1.5 0 0 0 9.5 1h-3zm0 1h3a.5.5 0 0 1 .5.5V3H6v-.5a.5.5 0 0 1 .5-.5zm1.886 6.914L15 7.151V12.5a.5.5 0 0 1-.5.5h-13a.5.5 0 0 1-.5-.5V7.15l6.614 1.764a1.5 1.5 0 0 0 .772 0zM1.5 4h13a.5.5 0 0 1 .5.5v1.616L8.129 7.948a.5.5 0 0 1-.258 0L1 6.116V4.5a.5.5 0 0 1 .5-.5z" />
+                                                        d="M9.5 0H4a2 2 0 0 0-2 2v12a2 2 0 0 0 2 2h8a2 2 0 0 0 2-2V4.5L9.5 0zm0 1v2A1.5 1.5 0 0 0 11 4.5h2V14a1 1 0 0 1-1 1H4a1 1 0 0 1-1-1V2a1 1 0 0 1 1-1h5.5z" />
                                                 </svg>
-                                                0
+                                                현금영수증 수정 및 발급수단
                                             </div>
                                             <div class="right">
                                                 <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16"
@@ -418,11 +409,11 @@
                                         <div class="menu">
                                             <div class="left">
                                                 <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16"
-                                                    fill="currentColor" class="bi bi-briefcase" viewBox="0 0 16 16">
+                                                    fill="currentColor" class="bi bi-database" viewBox="0 0 16 16">
                                                     <path
-                                                        d="M6.5 1A1.5 1.5 0 0 0 5 2.5V3H1.5A1.5 1.5 0 0 0 0 4.5v8A1.5 1.5 0 0 0 1.5 14h13a1.5 1.5 0 0 0 1.5-1.5v-8A1.5 1.5 0 0 0 14.5 3H11v-.5A1.5 1.5 0 0 0 9.5 1h-3zm0 1h3a.5.5 0 0 1 .5.5V3H6v-.5a.5.5 0 0 1 .5-.5zm1.886 6.914L15 7.151V12.5a.5.5 0 0 1-.5.5h-13a.5.5 0 0 1-.5-.5V7.15l6.614 1.764a1.5 1.5 0 0 0 .772 0zM1.5 4h13a.5.5 0 0 1 .5.5v1.616L8.129 7.948a.5.5 0 0 1-.258 0L1 6.116V4.5a.5.5 0 0 1 .5-.5z" />
+                                                        d="M4.318 2.687C5.234 2.271 6.536 2 8 2s2.766.27 3.682.687C12.644 3.125 13 3.627 13 4c0 .374-.356.875-1.318 1.313C10.766 5.729 9.464 6 8 6s-2.766-.27-3.682-.687C3.356 4.875 3 4.373 3 4c0-.374.356-.875 1.318-1.313ZM13 5.698V7c0 .374-.356.875-1.318 1.313C10.766 8.729 9.464 9 8 9s-2.766-.27-3.682-.687C3.356 7.875 3 7.373 3 7V5.698c.271.202.58.378.904.525C4.978 6.711 6.427 7 8 7s3.022-.289 4.096-.777A4.92 4.92 0 0 0 13 5.698ZM14 4c0-1.007-.875-1.755-1.904-2.223C11.022 1.289 9.573 1 8 1s-3.022.289-4.096.777C2.875 2.245 2 2.993 2 4v9c0 1.007.875 1.755 1.904 2.223C4.978 15.71 6.427 16 8 16s3.022-.289 4.096-.777C13.125 14.755 14 14.007 14 13V4Zm-1 4.698V10c0 .374-.356.875-1.318 1.313C10.766 11.729 9.464 12 8 12s-2.766-.27-3.682-.687C3.356 10.875 3 10.373 3 10V8.698c.271.202.58.378.904.525C4.978 9.71 6.427 10 8 10s3.022-.289 4.096-.777A4.92 4.92 0 0 0 13 8.698Zm0 3V13c0 .374-.356.875-1.318 1.313C10.766 14.729 9.464 15 8 15s-2.766-.27-3.682-.687C3.356 13.875 3 13.373 3 13v-1.302c.271.202.58.378.904.525C4.978 12.71 6.427 13 8 13s3.022-.289 4.096-.777c.324-.147.633-.323.904-.525Z" />
                                                 </svg>
-                                                0
+                                                현금영수증 발급
                                             </div>
                                             <div class="right">
                                                 <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16"
@@ -437,11 +428,54 @@
                                         <div class="menu">
                                             <div class="left">
                                                 <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16"
-                                                    fill="currentColor" class="bi bi-grid" viewBox="0 0 16 16">
+                                                    fill="currentColor" class="bi bi-check2-square" viewBox="0 0 16 16">
+                                                    <path
+                                                        d="M3 14.5A1.5 1.5 0 0 1 1.5 13V3A1.5 1.5 0 0 1 3 1.5h8a.5.5 0 0 1 0 1H3a.5.5 0 0 0-.5.5v10a.5.5 0 0 0 .5.5h10a.5.5 0 0 0 .5-.5V8a.5.5 0 0 1 1 0v5a1.5 1.5 0 0 1-1.5 1.5H3z" />
+                                                    <path
+                                                        d="m8.354 10.354 7-7a.5.5 0 0 0-.708-.708L8 9.293 5.354 6.646a.5.5 0 1 0-.708.708l3 3a.5.5 0 0 0 .708 0z" />
+                                                </svg>
+                                                사업용 신용카드
+                                            </div>
+                                            <div class="right">
+                                                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16"
+                                                    fill="currentColor" class="bi bi-chevron-down text-lightgray"
+                                                    viewBox="0 0 16 16">
+                                                    <path fill-rule="evenodd"
+                                                        d="M1.646 4.646a.5.5 0 0 1 .708 0L8 10.293l5.646-5.647a.5.5 0 0 1 .708.708l-6 6a.5.5 0 0 1-.708 0l-6-6a.5.5 0 0 1 0-.708z">
+                                                    </path>
+                                                </svg>
+                                            </div>
+                                        </div>
+                                        <div class="menu">
+                                            <div class="left">
+                                                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16"
+                                                    fill="currentColor" class="bi bi-file-text" viewBox="0 0 16 16">
+                                                    <path
+                                                        d="M5 4a.5.5 0 0 0 0 1h6a.5.5 0 0 0 0-1H5zm-.5 2.5A.5.5 0 0 1 5 6h6a.5.5 0 0 1 0 1H5a.5.5 0 0 1-.5-.5zM5 8a.5.5 0 0 0 0 1h6a.5.5 0 0 0 0-1H5zm0 2a.5.5 0 0 0 0 1h3a.5.5 0 0 0 0-1H5z" />
+                                                    <path
+                                                        d="M2 2a2 2 0 0 1 2-2h8a2 2 0 0 1 2 2v12a2 2 0 0 1-2 2H4a2 2 0 0 1-2-2V2zm10-1H4a1 1 0 0 0-1 1v12a1 1 0 0 0 1 1h8a1 1 0 0 0 1-1V2a1 1 0 0 0-1-1z" />
+                                                </svg>
+                                                화물운전 복지카드
+                                            </div>
+                                            <div class="right">
+                                                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16"
+                                                    fill="currentColor" class="bi bi-chevron-down text-lightgray"
+                                                    viewBox="0 0 16 16">
+                                                    <path fill-rule="evenodd"
+                                                        d="M1.646 4.646a.5.5 0 0 1 .708 0L8 10.293l5.646-5.647a.5.5 0 0 1 .708.708l-6 6a.5.5 0 0 1-.708 0l-6-6a.5.5 0 0 1 0-.708z">
+                                                    </path>
+                                                </svg>
+                                            </div>
+                                        </div>
+                                        <div class="menu">
+                                            <div class="left">
+                                                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16"
+                                                    fill="currentColor" class="bi bi-grid pg_2_answer"
+                                                    viewBox="0 0 16 16">
                                                     <path
                                                         d="M1 2.5A1.5 1.5 0 0 1 2.5 1h3A1.5 1.5 0 0 1 7 2.5v3A1.5 1.5 0 0 1 5.5 7h-3A1.5 1.5 0 0 1 1 5.5v-3zM2.5 2a.5.5 0 0 0-.5.5v3a.5.5 0 0 0 .5.5h3a.5.5 0 0 0 .5-.5v-3a.5.5 0 0 0-.5-.5h-3zm6.5.5A1.5 1.5 0 0 1 10.5 1h3A1.5 1.5 0 0 1 15 2.5v3A1.5 1.5 0 0 1 13.5 7h-3A1.5 1.5 0 0 1 9 5.5v-3zm1.5-.5a.5.5 0 0 0-.5.5v3a.5.5 0 0 0 .5.5h3a.5.5 0 0 0 .5-.5v-3a.5.5 0 0 0-.5-.5h-3zM1 10.5A1.5 1.5 0 0 1 2.5 9h3A1.5 1.5 0 0 1 7 10.5v3A1.5 1.5 0 0 1 5.5 15h-3A1.5 1.5 0 0 1 1 13.5v-3zm1.5-.5a.5.5 0 0 0-.5.5v3a.5.5 0 0 0 .5.5h3a.5.5 0 0 0 .5-.5v-3a.5.5 0 0 0-.5-.5h-3zm6.5.5A1.5 1.5 0 0 1 10.5 9h3a1.5 1.5 0 0 1 1.5 1.5v3a1.5 1.5 0 0 1-1.5 1.5h-3A1.5 1.5 0 0 1 9 13.5v-3zm1.5-.5a.5.5 0 0 0-.5.5v3a.5.5 0 0 0 .5.5h3a.5.5 0 0 0 .5-.5v-3a.5.5 0 0 0-.5-.5h-3z" />
                                                 </svg>
-                                                0
+                                                전자고지 열람/송달장소 안내
                                             </div>
                                             <div class="right">
                                                 <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16"
@@ -453,29 +487,11 @@
                                                 </svg>
                                             </div>
                                         </div>
-                                        <div class="menu">
-                                            <div class="left">
-                                                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16"
-                                                    fill="currentColor" class="bi bi-briefcase" viewBox="0 0 16 16">
-                                                    <path
-                                                        d="M6.5 1A1.5 1.5 0 0 0 5 2.5V3H1.5A1.5 1.5 0 0 0 0 4.5v8A1.5 1.5 0 0 0 1.5 14h13a1.5 1.5 0 0 0 1.5-1.5v-8A1.5 1.5 0 0 0 14.5 3H11v-.5A1.5 1.5 0 0 0 9.5 1h-3zm0 1h3a.5.5 0 0 1 .5.5V3H6v-.5a.5.5 0 0 1 .5-.5zm1.886 6.914L15 7.151V12.5a.5.5 0 0 1-.5.5h-13a.5.5 0 0 1-.5-.5V7.15l6.614 1.764a1.5 1.5 0 0 0 .772 0zM1.5 4h13a.5.5 0 0 1 .5.5v1.616L8.129 7.948a.5.5 0 0 1-.258 0L1 6.116V4.5a.5.5 0 0 1 .5-.5z" />
-                                                </svg>
-                                                0
-                                            </div>
-                                            <div class="right">
-                                                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16"
-                                                    fill="currentColor" class="bi bi-chevron-down text-lightgray"
-                                                    viewBox="0 0 16 16">
-                                                    <path fill-rule="evenodd"
-                                                        d="M1.646 4.646a.5.5 0 0 1 .708 0L8 10.293l5.646-5.647a.5.5 0 0 1 .708.708l-6 6a.5.5 0 0 1-.708 0l-6-6a.5.5 0 0 1 0-.708z">
-                                                    </path>
-                                                </svg>
-                                            </div>
-                                        </div>
+
                                     </div>
                                 </div>
                                 <!-- scroll -->
-                                <div class="under_bar py-2">
+                                <div class="under_bar py-2 pg_2_shadow_inner">
                                     <div class=" baricon_wrap prev">
                                         <div class="baricon">
                                             <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16"
@@ -569,9 +585,11 @@
                                         <div class="menu">
                                             <div class="menu_title px-2 py-3 border-bottom fontSz">
                                                 <div class="left text-b">
-                                                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-display" viewBox="0 0 16 16">
-                                                        <path d="M0 4s0-2 2-2h12s2 0 2 2v6s0 2-2 2h-4c0 .667.083 1.167.25 1.5H11a.5.5 0 0 1 0 1H5a.5.5 0 0 1 0-1h.75c.167-.333.25-.833.25-1.5H2s-2 0-2-2V4zm1.398-.855a.758.758 0 0 0-.254.302A1.46 1.46 0 0 0 1 4.01V10c0 .325.078.502.145.602.07.105.17.188.302.254a1.464 1.464 0 0 0 .538.143L2.01 11H14c.325 0 .502-.078.602-.145a.758.758 0 0 0 .254-.302 1.464 1.464 0 0 0 .143-.538L15 9.99V4c0-.325-.078-.502-.145-.602a.757.757 0 0 0-.302-.254A1.46 1.46 0 0 0 13.99 3H2c-.325 0-.502.078-.602.145z"/>
-                                                      </svg>
+                                                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16"
+                                                        fill="currentColor" class="bi bi-display" viewBox="0 0 16 16">
+                                                        <path
+                                                            d="M0 4s0-2 2-2h12s2 0 2 2v6s0 2-2 2h-4c0 .667.083 1.167.25 1.5H11a.5.5 0 0 1 0 1H5a.5.5 0 0 1 0-1h.75c.167-.333.25-.833.25-1.5H2s-2 0-2-2V4zm1.398-.855a.758.758 0 0 0-.254.302A1.46 1.46 0 0 0 1 4.01V10c0 .325.078.502.145.602.07.105.17.188.302.254a1.464 1.464 0 0 0 .538.143L2.01 11H14c.325 0 .502-.078.602-.145a.758.758 0 0 0 .254-.302 1.464 1.464 0 0 0 .143-.538L15 9.99V4c0-.325-.078-.502-.145-.602a.757.757 0 0 0-.302-.254A1.46 1.46 0 0 0 13.99 3H2c-.325 0-.502.078-.602.145z" />
+                                                    </svg>
                                                     연말정산서비스
                                                 </div>
                                                 <div class="right">
@@ -585,7 +603,7 @@
                                             </div>
                                             <div class="w-100 detail">
                                                 <ul class="fontSz pt-3 m-0 text-gray">
-                                                    <li>근로자 소득·세액공제 자료조회</li>
+                                                    <li class="pg_3_answer">근로자 소득·세액공제 자료조회</li>
                                                     <li>제공동의 현황조회</li>
                                                     <li>제공동의 신청/취소</li>
                                                     <li>미성년자녀 자료 조회 신청</li>
@@ -602,7 +620,7 @@
                                     </div>
                                 </div>
 
-                                <div class="under_bar py-2">
+                                <div class="under_bar py-2 pg_3_shadow_inner">
                                     <div class=" baricon_wrap prev">
                                         <div class="baricon">
                                             <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16"
@@ -661,7 +679,7 @@
                             <div class="page_wrap">
                                 <h1 class="pg_title" style="color: #fff;">Page4</h1>
                                 <!-- top -->
-                                <div class="pg_top fontSz px-4 py-3">
+                                <div class="pg_top fontSz px-4 py-3 pg_4_shadow_inner">
                                     <div class="flex-center-center flex-column text-b">
                                         <svg xmlns="http://www.w3.org/2000/svg" width="23" height="23"
                                             fill="currentColor" class="bi bi-power" viewBox="0 0 16 16">
@@ -709,15 +727,21 @@
                                             <div class="right btn_wrap">
                                                 <div class="w-60 flex-between-center btn btn-outline-grayb px-2">
                                                     2022년
-                                                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-chevron-down" viewBox="0 0 16 16">
-                                                        <path fill-rule="evenodd" d="M1.646 4.646a.5.5 0 0 1 .708 0L8 10.293l5.646-5.647a.5.5 0 0 1 .708.708l-6 6a.5.5 0 0 1-.708 0l-6-6a.5.5 0 0 1 0-.708z"/>
-                                                      </svg>
+                                                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16"
+                                                        fill="currentColor" class="bi bi-chevron-down"
+                                                        viewBox="0 0 16 16">
+                                                        <path fill-rule="evenodd"
+                                                            d="M1.646 4.646a.5.5 0 0 1 .708 0L8 10.293l5.646-5.647a.5.5 0 0 1 .708.708l-6 6a.5.5 0 0 1-.708 0l-6-6a.5.5 0 0 1 0-.708z" />
+                                                    </svg>
                                                 </div>
                                                 <div class="w-40 btn btn-outline-grayb ms-2">
                                                     월선택
-                                                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-chevron-down" viewBox="0 0 16 16">
-                                                        <path fill-rule="evenodd" d="M1.646 4.646a.5.5 0 0 1 .708 0L8 10.293l5.646-5.647a.5.5 0 0 1 .708.708l-6 6a.5.5 0 0 1-.708 0l-6-6a.5.5 0 0 1 0-.708z"/>
-                                                      </svg>
+                                                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16"
+                                                        fill="currentColor" class="bi bi-chevron-down"
+                                                        viewBox="0 0 16 16">
+                                                        <path fill-rule="evenodd"
+                                                            d="M1.646 4.646a.5.5 0 0 1 .708 0L8 10.293l5.646-5.647a.5.5 0 0 1 .708.708l-6 6a.5.5 0 0 1-.708 0l-6-6a.5.5 0 0 1 0-.708z" />
+                                                    </svg>
                                                 </div>
                                             </div>
                                         </div>
@@ -729,13 +753,13 @@
 
                                     <!-- detail -->
                                     <div class="bottom">
-                                        <div class="tab">
-                                            <div class="left">
-                                                <div class="w-100">
-                                                    <div class="title">건강보험료</div>
-                                                    <div class="eng">National Health Insurance</div>
+                                        <div class="tab ">
+                                            <div class="left pg_4_answer">
+                                                <div class="w-100 pg_4_answer">
+                                                    <div class="title pg_4_answer">건강보험료</div>
+                                                    <div class="eng pg_4_answer">National Health Insurance</div>
                                                 </div>
-                                                <div class="btn btn-grayb">조회</div>
+                                                <div class="btn btn-grayb pg_4_answer">조회</div>
                                             </div>
                                             <div class="right">
                                                 <div class="w-100">
@@ -766,15 +790,15 @@
                                         <div class="tab">
                                             <div class="left">
                                                 <div class="w-100">
-                                                    <div class="title">내용추가</div>
-                                                    <div class="eng">내용추가</div>
+                                                    <div class="title">실손의료보험금 수령</div>
+                                                    <div class="eng">Medical insurance indemnity</div>
                                                 </div>
                                                 <div class="btn btn-grayb">조회</div>
                                             </div>
                                             <div class="right">
                                                 <div class="w-100">
-                                                    <div class="title">내용추가</div>
-                                                    <div class="eng">내용추가</div>
+                                                    <div class="title">교육비</div>
+                                                    <div class="eng">Education Expenses</div>
                                                 </div>
                                                 <div class="btn btn-grayb">조회</div>
                                             </div>
@@ -783,15 +807,15 @@
                                         <div class="tab">
                                             <div class="left">
                                                 <div class="w-100">
-                                                    <div class="title">내용추가</div>
-                                                    <div class="eng">내용추가</div>
+                                                    <div class="title">직업훈련비</div>
+                                                    <div class="eng">Occupation Expenses For Training</div>
                                                 </div>
                                                 <div class="btn btn-grayb">조회</div>
                                             </div>
                                             <div class="right">
                                                 <div class="w-100">
-                                                    <div class="title">내용추가</div>
-                                                    <div class="eng">내용추가</div>
+                                                    <div class="title">교복구입비</div>
+                                                    <div class="eng">School Uniform Purchase Expenses</div>
                                                 </div>
                                                 <div class="btn btn-grayb">조회</div>
                                             </div>
@@ -800,8 +824,8 @@
                                         <div class="tab">
                                             <div class="left">
                                                 <div class="w-100">
-                                                    <div class="title">내용추가</div>
-                                                    <div class="eng">내용추가</div>
+                                                    <div class="title">학자금대출 상환액</div>
+                                                    <div class="eng">Repayment of Student Loans</div>
                                                 </div>
                                                 <div class="btn btn-grayb">조회</div>
                                             </div>
@@ -817,15 +841,15 @@
                                         <div class="tab">
                                             <div class="left">
                                                 <div class="w-100">
-                                                    <div class="title">내용추가</div>
-                                                    <div class="eng">내용추가</div>
+                                                    <div class="title">직불카드 등</div>
+                                                    <div class="eng">Debit Card</div>
                                                 </div>
                                                 <div class="btn btn-grayb">조회</div>
                                             </div>
                                             <div class="right">
                                                 <div class="w-100">
-                                                    <div class="title">내용추가</div>
-                                                    <div class="eng">내용추가</div>
+                                                    <div class="title">직불카드 등(제로페이 사용분)</div>
+                                                    <div class="eng">Debit Card</div>
                                                 </div>
                                                 <div class="btn btn-grayb">조회</div>
                                             </div>
@@ -835,7 +859,7 @@
                                 </div>
 
                                 <!-- under bar -->
-                                <div class="under_bar py-2">
+                                <div class="under_bar py-2 pg_4_shadow_inner">
                                     <div class=" baricon_wrap prev">
                                         <div class="baricon">
                                             <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16"
@@ -894,7 +918,7 @@
                             <div class="page_wrap">
                                 <h1 class="pg_title" style="color: #fff;">Page5</h1>
                                 <!-- top -->
-                                <div class="pg_top fontSz px-4 py-3">
+                                <div class="pg_top fontSz px-4 py-3 pg_5_shadow_inner">
                                     <div class="flex-center-center flex-column text-b">
                                         <svg xmlns="http://www.w3.org/2000/svg" width="23" height="23"
                                             fill="currentColor" class="bi bi-power" viewBox="0 0 16 16">
@@ -942,15 +966,21 @@
                                             <div class="right btn_wrap">
                                                 <div class="w-60 flex-between-center btn btn-outline-grayb px-2">
                                                     2022년
-                                                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-chevron-down" viewBox="0 0 16 16">
-                                                        <path fill-rule="evenodd" d="M1.646 4.646a.5.5 0 0 1 .708 0L8 10.293l5.646-5.647a.5.5 0 0 1 .708.708l-6 6a.5.5 0 0 1-.708 0l-6-6a.5.5 0 0 1 0-.708z"/>
-                                                      </svg>
+                                                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16"
+                                                        fill="currentColor" class="bi bi-chevron-down"
+                                                        viewBox="0 0 16 16">
+                                                        <path fill-rule="evenodd"
+                                                            d="M1.646 4.646a.5.5 0 0 1 .708 0L8 10.293l5.646-5.647a.5.5 0 0 1 .708.708l-6 6a.5.5 0 0 1-.708 0l-6-6a.5.5 0 0 1 0-.708z" />
+                                                    </svg>
                                                 </div>
                                                 <div class="w-40 btn btn-outline-grayb ms-2">
                                                     월선택
-                                                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-chevron-down" viewBox="0 0 16 16">
-                                                        <path fill-rule="evenodd" d="M1.646 4.646a.5.5 0 0 1 .708 0L8 10.293l5.646-5.647a.5.5 0 0 1 .708.708l-6 6a.5.5 0 0 1-.708 0l-6-6a.5.5 0 0 1 0-.708z"/>
-                                                      </svg>
+                                                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16"
+                                                        fill="currentColor" class="bi bi-chevron-down"
+                                                        viewBox="0 0 16 16">
+                                                        <path fill-rule="evenodd"
+                                                            d="M1.646 4.646a.5.5 0 0 1 .708 0L8 10.293l5.646-5.647a.5.5 0 0 1 .708.708l-6 6a.5.5 0 0 1-.708 0l-6-6a.5.5 0 0 1 0-.708z" />
+                                                    </svg>
                                                 </div>
                                             </div>
                                         </div>
@@ -972,17 +1002,19 @@
                                                 </div>
                                                 <div class="btn btn-grayb">
                                                     상세
-                                                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-list ms-1" viewBox="0 0 16 16">
-                                                        <path fill-rule="evenodd" d="M2.5 12a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5zm0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5zm0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5z"/>
-                                                      </svg>
+                                                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16"
+                                                        fill="currentColor" class="bi bi-list ms-1" viewBox="0 0 16 16">
+                                                        <path fill-rule="evenodd"
+                                                            d="M2.5 12a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5zm0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5zm0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5z" />
+                                                    </svg>
                                                 </div>
                                             </div>
-                                            <div class="right">
-                                                <div class="w-100">
-                                                    <div class="title">국민연금</div>
-                                                    <div class="eng">National Pension</div>
+                                            <div class="right pg_5_answer">
+                                                <div class="w-100 pg_5_answer">
+                                                    <div class="title pg_5_answer">국민연금</div>
+                                                    <div class="eng pg_5_answer">National Pension</div>
                                                 </div>
-                                                <div class="btn btn-grayb">
+                                                <div class="btn btn-grayb pg_5_answer">
                                                     조회
                                                 </div>
                                             </div>
@@ -1008,15 +1040,15 @@
                                         <div class="tab">
                                             <div class="left">
                                                 <div class="w-100">
-                                                    <div class="title">내용추가</div>
-                                                    <div class="eng">내용추가</div>
+                                                    <div class="title">실손의료보험금 수령</div>
+                                                    <div class="eng">Medical insurance indemnity</div>
                                                 </div>
                                                 <div class="btn btn-grayb">조회</div>
                                             </div>
                                             <div class="right">
                                                 <div class="w-100">
-                                                    <div class="title">내용추가</div>
-                                                    <div class="eng">내용추가</div>
+                                                    <div class="title">교육비</div>
+                                                    <div class="eng">Education Expenses</div>
                                                 </div>
                                                 <div class="btn btn-grayb">조회</div>
                                             </div>
@@ -1025,15 +1057,15 @@
                                         <div class="tab">
                                             <div class="left">
                                                 <div class="w-100">
-                                                    <div class="title">내용추가</div>
-                                                    <div class="eng">내용추가</div>
+                                                    <div class="title">직업훈련비</div>
+                                                    <div class="eng">Occupation Expenses For Training</div>
                                                 </div>
                                                 <div class="btn btn-grayb">조회</div>
                                             </div>
                                             <div class="right">
                                                 <div class="w-100">
-                                                    <div class="title">내용추가</div>
-                                                    <div class="eng">내용추가</div>
+                                                    <div class="title">교복구입비</div>
+                                                    <div class="eng">School Uniform Purchase Expenses</div>
                                                 </div>
                                                 <div class="btn btn-grayb">조회</div>
                                             </div>
@@ -1042,8 +1074,8 @@
                                         <div class="tab">
                                             <div class="left">
                                                 <div class="w-100">
-                                                    <div class="title">내용추가</div>
-                                                    <div class="eng">내용추가</div>
+                                                    <div class="title">학자금대출 상환액</div>
+                                                    <div class="eng">Repayment of Student Loans</div>
                                                 </div>
                                                 <div class="btn btn-grayb">조회</div>
                                             </div>
@@ -1059,15 +1091,15 @@
                                         <div class="tab">
                                             <div class="left">
                                                 <div class="w-100">
-                                                    <div class="title">내용추가</div>
-                                                    <div class="eng">내용추가</div>
+                                                    <div class="title">직불카드 등</div>
+                                                    <div class="eng">Debit Card</div>
                                                 </div>
                                                 <div class="btn btn-grayb">조회</div>
                                             </div>
                                             <div class="right">
                                                 <div class="w-100">
-                                                    <div class="title">내용추가</div>
-                                                    <div class="eng">내용추가</div>
+                                                    <div class="title">직불카드 등(제로페이 사용분)</div>
+                                                    <div class="eng">Debit Card</div>
                                                 </div>
                                                 <div class="btn btn-grayb">조회</div>
                                             </div>
@@ -1077,7 +1109,7 @@
                                 </div>
 
                                 <!-- under bar -->
-                                <div class="under_bar py-2">
+                                <div class="under_bar py-2 pg_5_shadow_inner">
                                     <div class=" baricon_wrap prev">
                                         <div class="baricon">
                                             <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16"
@@ -1136,7 +1168,7 @@
                             <div class="page_wrap">
                                 <h1 class="pg_title" style="color: #fff;">Page6</h1>
                                 <!-- top -->
-                                <div class="pg_top fontSz px-4 py-3">
+                                <div class="pg_top fontSz px-4 py-3 pg_6_shadow_inner">
                                     <div class="flex-center-center flex-column text-b">
                                         <svg xmlns="http://www.w3.org/2000/svg" width="23" height="23"
                                             fill="currentColor" class="bi bi-power" viewBox="0 0 16 16">
@@ -1184,15 +1216,21 @@
                                             <div class="right btn_wrap">
                                                 <div class="w-60 flex-between-center btn btn-outline-grayb px-2">
                                                     2022년
-                                                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-chevron-down" viewBox="0 0 16 16">
-                                                        <path fill-rule="evenodd" d="M1.646 4.646a.5.5 0 0 1 .708 0L8 10.293l5.646-5.647a.5.5 0 0 1 .708.708l-6 6a.5.5 0 0 1-.708 0l-6-6a.5.5 0 0 1 0-.708z"/>
-                                                      </svg>
+                                                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16"
+                                                        fill="currentColor" class="bi bi-chevron-down"
+                                                        viewBox="0 0 16 16">
+                                                        <path fill-rule="evenodd"
+                                                            d="M1.646 4.646a.5.5 0 0 1 .708 0L8 10.293l5.646-5.647a.5.5 0 0 1 .708.708l-6 6a.5.5 0 0 1-.708 0l-6-6a.5.5 0 0 1 0-.708z" />
+                                                    </svg>
                                                 </div>
                                                 <div class="w-40 btn btn-outline-grayb ms-2">
                                                     월선택
-                                                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-chevron-down" viewBox="0 0 16 16">
-                                                        <path fill-rule="evenodd" d="M1.646 4.646a.5.5 0 0 1 .708 0L8 10.293l5.646-5.647a.5.5 0 0 1 .708.708l-6 6a.5.5 0 0 1-.708 0l-6-6a.5.5 0 0 1 0-.708z"/>
-                                                      </svg>
+                                                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16"
+                                                        fill="currentColor" class="bi bi-chevron-down"
+                                                        viewBox="0 0 16 16">
+                                                        <path fill-rule="evenodd"
+                                                            d="M1.646 4.646a.5.5 0 0 1 .708 0L8 10.293l5.646-5.647a.5.5 0 0 1 .708.708l-6 6a.5.5 0 0 1-.708 0l-6-6a.5.5 0 0 1 0-.708z" />
+                                                    </svg>
                                                 </div>
                                             </div>
                                         </div>
@@ -1214,9 +1252,11 @@
                                                 </div>
                                                 <div class="btn btn-grayb">
                                                     상세
-                                                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-list ms-1" viewBox="0 0 16 16">
-                                                        <path fill-rule="evenodd" d="M2.5 12a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5zm0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5zm0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5z"/>
-                                                      </svg>
+                                                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16"
+                                                        fill="currentColor" class="bi bi-list ms-1" viewBox="0 0 16 16">
+                                                        <path fill-rule="evenodd"
+                                                            d="M2.5 12a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5zm0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5zm0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5z" />
+                                                    </svg>
                                                 </div>
                                             </div>
                                             <div class="right check">
@@ -1224,24 +1264,26 @@
                                                     <div class="title">국민연금</div>
                                                     <div class="wrapper">
                                                         <div class="form-control">0</div>원
-                                                    </div>                                                
+                                                    </div>
                                                 </div>
                                                 <div class="btn btn-grayb">
                                                     상세
-                                                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-list ms-1" viewBox="0 0 16 16">
-                                                        <path fill-rule="evenodd" d="M2.5 12a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5zm0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5zm0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5z"/>
-                                                      </svg>
+                                                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16"
+                                                        fill="currentColor" class="bi bi-list ms-1" viewBox="0 0 16 16">
+                                                        <path fill-rule="evenodd"
+                                                            d="M2.5 12a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5zm0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5zm0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5z" />
+                                                    </svg>
                                                 </div>
                                             </div>
                                         </div>
 
                                         <div class="tab">
-                                            <div class="left">
-                                                <div class="w-100">
-                                                    <div class="title">보험료</div>
-                                                    <div class="eng">Insurance</div>
+                                            <div class="left pg_6_answer">
+                                                <div class="w-100 pg_6_answer">
+                                                    <div class="title pg_6_answer">보험료</div>
+                                                    <div class="eng pg_6_answer">Insurance</div>
                                                 </div>
-                                                <div class="btn btn-grayb">조회</div>
+                                                <div class="btn btn-grayb pg_6_answer">조회</div>
                                             </div>
                                             <div class="right">
                                                 <div class="w-100">
@@ -1255,15 +1297,15 @@
                                         <div class="tab">
                                             <div class="left">
                                                 <div class="w-100">
-                                                    <div class="title">내용추가</div>
-                                                    <div class="eng">내용추가</div>
+                                                    <div class="title">실손의료보험금 수령</div>
+                                                    <div class="eng">Medical insurance indemnity</div>
                                                 </div>
                                                 <div class="btn btn-grayb">조회</div>
                                             </div>
                                             <div class="right">
                                                 <div class="w-100">
-                                                    <div class="title">내용추가</div>
-                                                    <div class="eng">내용추가</div>
+                                                    <div class="title">교육비</div>
+                                                    <div class="eng">Education Expenses</div>
                                                 </div>
                                                 <div class="btn btn-grayb">조회</div>
                                             </div>
@@ -1272,15 +1314,15 @@
                                         <div class="tab">
                                             <div class="left">
                                                 <div class="w-100">
-                                                    <div class="title">내용추가</div>
-                                                    <div class="eng">내용추가</div>
+                                                    <div class="title">직업훈련비</div>
+                                                    <div class="eng">Occupation Expenses For Training</div>
                                                 </div>
                                                 <div class="btn btn-grayb">조회</div>
                                             </div>
                                             <div class="right">
                                                 <div class="w-100">
-                                                    <div class="title">내용추가</div>
-                                                    <div class="eng">내용추가</div>
+                                                    <div class="title">교복구입비</div>
+                                                    <div class="eng">School Uniform Purchase Expenses</div>
                                                 </div>
                                                 <div class="btn btn-grayb">조회</div>
                                             </div>
@@ -1289,8 +1331,8 @@
                                         <div class="tab">
                                             <div class="left">
                                                 <div class="w-100">
-                                                    <div class="title">내용추가</div>
-                                                    <div class="eng">내용추가</div>
+                                                    <div class="title">학자금대출 상환액</div>
+                                                    <div class="eng">Repayment of Student Loans</div>
                                                 </div>
                                                 <div class="btn btn-grayb">조회</div>
                                             </div>
@@ -1306,15 +1348,15 @@
                                         <div class="tab">
                                             <div class="left">
                                                 <div class="w-100">
-                                                    <div class="title">내용추가</div>
-                                                    <div class="eng">내용추가</div>
+                                                    <div class="title">직불카드 등</div>
+                                                    <div class="eng">Debit Card</div>
                                                 </div>
                                                 <div class="btn btn-grayb">조회</div>
                                             </div>
                                             <div class="right">
                                                 <div class="w-100">
-                                                    <div class="title">내용추가</div>
-                                                    <div class="eng">내용추가</div>
+                                                    <div class="title">직불카드 등(제로페이 사용분)</div>
+                                                    <div class="eng">Debit Card</div>
                                                 </div>
                                                 <div class="btn btn-grayb">조회</div>
                                             </div>
@@ -1324,7 +1366,7 @@
                                 </div>
 
                                 <!-- under bar -->
-                                <div class="under_bar py-2">
+                                <div class="under_bar py-2 pg_6_shadow_inner">
                                     <div class=" baricon_wrap prev">
                                         <div class="baricon">
                                             <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16"
@@ -1383,7 +1425,7 @@
                             <div class="page_wrap">
                                 <h1 class="pg_title" style="color: #fff;">Page7</h1>
                                 <!-- top -->
-                                <div class="pg_top fontSz px-4 py-3">
+                                <div class="pg_top fontSz px-4 py-3 pg_7_shadow_inner">
                                     <div class="flex-center-center flex-column text-b">
                                         <svg xmlns="http://www.w3.org/2000/svg" width="23" height="23"
                                             fill="currentColor" class="bi bi-power" viewBox="0 0 16 16">
@@ -1431,15 +1473,21 @@
                                             <div class="right btn_wrap">
                                                 <div class="w-60 flex-between-center btn btn-outline-grayb px-2">
                                                     2022년
-                                                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-chevron-down" viewBox="0 0 16 16">
-                                                        <path fill-rule="evenodd" d="M1.646 4.646a.5.5 0 0 1 .708 0L8 10.293l5.646-5.647a.5.5 0 0 1 .708.708l-6 6a.5.5 0 0 1-.708 0l-6-6a.5.5 0 0 1 0-.708z"/>
-                                                      </svg>
+                                                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16"
+                                                        fill="currentColor" class="bi bi-chevron-down"
+                                                        viewBox="0 0 16 16">
+                                                        <path fill-rule="evenodd"
+                                                            d="M1.646 4.646a.5.5 0 0 1 .708 0L8 10.293l5.646-5.647a.5.5 0 0 1 .708.708l-6 6a.5.5 0 0 1-.708 0l-6-6a.5.5 0 0 1 0-.708z" />
+                                                    </svg>
                                                 </div>
                                                 <div class="w-40 btn btn-outline-grayb ms-2">
                                                     월선택
-                                                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-chevron-down" viewBox="0 0 16 16">
-                                                        <path fill-rule="evenodd" d="M1.646 4.646a.5.5 0 0 1 .708 0L8 10.293l5.646-5.647a.5.5 0 0 1 .708.708l-6 6a.5.5 0 0 1-.708 0l-6-6a.5.5 0 0 1 0-.708z"/>
-                                                      </svg>
+                                                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16"
+                                                        fill="currentColor" class="bi bi-chevron-down"
+                                                        viewBox="0 0 16 16">
+                                                        <path fill-rule="evenodd"
+                                                            d="M1.646 4.646a.5.5 0 0 1 .708 0L8 10.293l5.646-5.647a.5.5 0 0 1 .708.708l-6 6a.5.5 0 0 1-.708 0l-6-6a.5.5 0 0 1 0-.708z" />
+                                                    </svg>
                                                 </div>
                                             </div>
                                         </div>
@@ -1461,9 +1509,11 @@
                                                 </div>
                                                 <div class="btn btn-grayb">
                                                     상세
-                                                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-list ms-1" viewBox="0 0 16 16">
-                                                        <path fill-rule="evenodd" d="M2.5 12a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5zm0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5zm0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5z"/>
-                                                      </svg>
+                                                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16"
+                                                        fill="currentColor" class="bi bi-list ms-1" viewBox="0 0 16 16">
+                                                        <path fill-rule="evenodd"
+                                                            d="M2.5 12a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5zm0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5zm0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5z" />
+                                                    </svg>
                                                 </div>
                                             </div>
                                             <div class="right check">
@@ -1471,13 +1521,15 @@
                                                     <div class="title">국민연금</div>
                                                     <div class="wrapper">
                                                         <div class="form-control">0</div>원
-                                                    </div>                                                
+                                                    </div>
                                                 </div>
                                                 <div class="btn btn-grayb">
                                                     상세
-                                                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-list ms-1" viewBox="0 0 16 16">
-                                                        <path fill-rule="evenodd" d="M2.5 12a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5zm0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5zm0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5z"/>
-                                                      </svg>
+                                                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16"
+                                                        fill="currentColor" class="bi bi-list ms-1" viewBox="0 0 16 16">
+                                                        <path fill-rule="evenodd"
+                                                            d="M2.5 12a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5zm0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5zm0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5z" />
+                                                    </svg>
                                                 </div>
                                             </div>
                                         </div>
@@ -1488,19 +1540,38 @@
                                                     <div class="title">보험료</div>
                                                     <div class="wrapper">
                                                         <div class="form-control">0</div>원
-                                                    </div>                                                
+                                                    </div>
                                                 </div>
                                                 <div class="btn btn-grayb">
                                                     상세
-                                                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-list ms-1" viewBox="0 0 16 16">
-                                                        <path fill-rule="evenodd" d="M2.5 12a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5zm0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5zm0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5z"/>
-                                                      </svg>
+                                                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16"
+                                                        fill="currentColor" class="bi bi-list ms-1" viewBox="0 0 16 16">
+                                                        <path fill-rule="evenodd"
+                                                            d="M2.5 12a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5zm0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5zm0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5z" />
+                                                    </svg>
                                                 </div>
+                                            </div>
+                                            <div class="right pg_7_answer">
+                                                <div class="w-100 pg_7_answer">
+                                                    <div class="title pg_7_answer">의료비</div>
+                                                    <div class="eng pg_7_answer">Medical Expenses</div>
+                                                </div>
+                                                <div class="btn btn-grayb pg_7_answer">조회</div>
+                                            </div>
+                                        </div>
+
+                                        <div class="tab">
+                                            <div class="left">
+                                                <div class="w-100">
+                                                    <div class="title">실손의료보험금 수령</div>
+                                                    <div class="eng">Medical insurance indemnity</div>
+                                                </div>
+                                                <div class="btn btn-grayb">조회</div>
                                             </div>
                                             <div class="right">
                                                 <div class="w-100">
-                                                    <div class="title">의료비</div>
-                                                    <div class="eng">Medical Expenses</div>
+                                                    <div class="title">교육비</div>
+                                                    <div class="eng">Education Expenses</div>
                                                 </div>
                                                 <div class="btn btn-grayb">조회</div>
                                             </div>
@@ -1509,15 +1580,15 @@
                                         <div class="tab">
                                             <div class="left">
                                                 <div class="w-100">
-                                                    <div class="title">내용추가</div>
-                                                    <div class="eng">내용추가</div>
+                                                    <div class="title">직업훈련비</div>
+                                                    <div class="eng">Occupation Expenses For Training</div>
                                                 </div>
                                                 <div class="btn btn-grayb">조회</div>
                                             </div>
                                             <div class="right">
                                                 <div class="w-100">
-                                                    <div class="title">내용추가</div>
-                                                    <div class="eng">내용추가</div>
+                                                    <div class="title">교복구입비</div>
+                                                    <div class="eng">School Uniform Purchase Expenses</div>
                                                 </div>
                                                 <div class="btn btn-grayb">조회</div>
                                             </div>
@@ -1526,25 +1597,8 @@
                                         <div class="tab">
                                             <div class="left">
                                                 <div class="w-100">
-                                                    <div class="title">내용추가</div>
-                                                    <div class="eng">내용추가</div>
-                                                </div>
-                                                <div class="btn btn-grayb">조회</div>
-                                            </div>
-                                            <div class="right">
-                                                <div class="w-100">
-                                                    <div class="title">내용추가</div>
-                                                    <div class="eng">내용추가</div>
-                                                </div>
-                                                <div class="btn btn-grayb">조회</div>
-                                            </div>
-                                        </div>
-
-                                        <div class="tab">
-                                            <div class="left">
-                                                <div class="w-100">
-                                                    <div class="title">내용추가</div>
-                                                    <div class="eng">내용추가</div>
+                                                    <div class="title">학자금대출 상환액</div>
+                                                    <div class="eng">Repayment of Student Loans</div>
                                                 </div>
                                                 <div class="btn btn-grayb">조회</div>
                                             </div>
@@ -1560,15 +1614,15 @@
                                         <div class="tab">
                                             <div class="left">
                                                 <div class="w-100">
-                                                    <div class="title">내용추가</div>
-                                                    <div class="eng">내용추가</div>
+                                                    <div class="title">직불카드 등</div>
+                                                    <div class="eng">Debit Card</div>
                                                 </div>
                                                 <div class="btn btn-grayb">조회</div>
                                             </div>
                                             <div class="right">
                                                 <div class="w-100">
-                                                    <div class="title">내용추가</div>
-                                                    <div class="eng">내용추가</div>
+                                                    <div class="title">직불카드 등(제로페이 사용분)</div>
+                                                    <div class="eng">Debit Card</div>
                                                 </div>
                                                 <div class="btn btn-grayb">조회</div>
                                             </div>
@@ -1578,7 +1632,7 @@
                                 </div>
 
                                 <!-- under bar -->
-                                <div class="under_bar py-2">
+                                <div class="under_bar py-2 pg_7_shadow_inner">
                                     <div class=" baricon_wrap prev">
                                         <div class="baricon">
                                             <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16"
@@ -1636,8 +1690,8 @@
                         <div class="page" id="p8">
                             <div class="page_wrap">
                                 <h1 class="pg_title" style="color: #fff;">Page8</h1>
-                                 <!-- top -->
-                                 <div class="pg_top fontSz px-4 py-3">
+                                <!-- top -->
+                                <div class="pg_top fontSz px-4 py-3 pg_8_shadow_inner">
                                     <div class="flex-center-center flex-column text-b">
                                         <svg xmlns="http://www.w3.org/2000/svg" width="23" height="23"
                                             fill="currentColor" class="bi bi-power" viewBox="0 0 16 16">
@@ -1685,15 +1739,21 @@
                                             <div class="right btn_wrap">
                                                 <div class="w-60 flex-between-center btn btn-outline-grayb px-2">
                                                     2022년
-                                                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-chevron-down" viewBox="0 0 16 16">
-                                                        <path fill-rule="evenodd" d="M1.646 4.646a.5.5 0 0 1 .708 0L8 10.293l5.646-5.647a.5.5 0 0 1 .708.708l-6 6a.5.5 0 0 1-.708 0l-6-6a.5.5 0 0 1 0-.708z"/>
-                                                      </svg>
+                                                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16"
+                                                        fill="currentColor" class="bi bi-chevron-down"
+                                                        viewBox="0 0 16 16">
+                                                        <path fill-rule="evenodd"
+                                                            d="M1.646 4.646a.5.5 0 0 1 .708 0L8 10.293l5.646-5.647a.5.5 0 0 1 .708.708l-6 6a.5.5 0 0 1-.708 0l-6-6a.5.5 0 0 1 0-.708z" />
+                                                    </svg>
                                                 </div>
                                                 <div class="w-40 btn btn-outline-grayb ms-2">
                                                     월선택
-                                                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-chevron-down" viewBox="0 0 16 16">
-                                                        <path fill-rule="evenodd" d="M1.646 4.646a.5.5 0 0 1 .708 0L8 10.293l5.646-5.647a.5.5 0 0 1 .708.708l-6 6a.5.5 0 0 1-.708 0l-6-6a.5.5 0 0 1 0-.708z"/>
-                                                      </svg>
+                                                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16"
+                                                        fill="currentColor" class="bi bi-chevron-down"
+                                                        viewBox="0 0 16 16">
+                                                        <path fill-rule="evenodd"
+                                                            d="M1.646 4.646a.5.5 0 0 1 .708 0L8 10.293l5.646-5.647a.5.5 0 0 1 .708.708l-6 6a.5.5 0 0 1-.708 0l-6-6a.5.5 0 0 1 0-.708z" />
+                                                    </svg>
                                                 </div>
                                             </div>
                                         </div>
@@ -1715,9 +1775,11 @@
                                                 </div>
                                                 <div class="btn btn-grayb">
                                                     상세
-                                                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-list ms-1" viewBox="0 0 16 16">
-                                                        <path fill-rule="evenodd" d="M2.5 12a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5zm0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5zm0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5z"/>
-                                                      </svg>
+                                                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16"
+                                                        fill="currentColor" class="bi bi-list ms-1" viewBox="0 0 16 16">
+                                                        <path fill-rule="evenodd"
+                                                            d="M2.5 12a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5zm0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5zm0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5z" />
+                                                    </svg>
                                                 </div>
                                             </div>
                                             <div class="right check">
@@ -1725,13 +1787,15 @@
                                                     <div class="title">국민연금</div>
                                                     <div class="wrapper">
                                                         <div class="form-control">0</div>원
-                                                    </div>                                                
+                                                    </div>
                                                 </div>
                                                 <div class="btn btn-grayb">
                                                     상세
-                                                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-list ms-1" viewBox="0 0 16 16">
-                                                        <path fill-rule="evenodd" d="M2.5 12a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5zm0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5zm0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5z"/>
-                                                      </svg>
+                                                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16"
+                                                        fill="currentColor" class="bi bi-list ms-1" viewBox="0 0 16 16">
+                                                        <path fill-rule="evenodd"
+                                                            d="M2.5 12a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5zm0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5zm0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5z" />
+                                                    </svg>
                                                 </div>
                                             </div>
                                         </div>
@@ -1742,13 +1806,15 @@
                                                     <div class="title">보험료</div>
                                                     <div class="wrapper">
                                                         <div class="form-control">0</div>원
-                                                    </div>                                                
+                                                    </div>
                                                 </div>
                                                 <div class="btn btn-grayb">
                                                     상세
-                                                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-list ms-1" viewBox="0 0 16 16">
-                                                        <path fill-rule="evenodd" d="M2.5 12a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5zm0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5zm0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5z"/>
-                                                      </svg>
+                                                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16"
+                                                        fill="currentColor" class="bi bi-list ms-1" viewBox="0 0 16 16">
+                                                        <path fill-rule="evenodd"
+                                                            d="M2.5 12a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5zm0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5zm0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5z" />
+                                                    </svg>
                                                 </div>
                                             </div>
                                             <div class="right check">
@@ -1756,13 +1822,15 @@
                                                     <div class="title">의료비</div>
                                                     <div class="wrapper">
                                                         <div class="form-control">0</div>원
-                                                    </div>                                                
+                                                    </div>
                                                 </div>
                                                 <div class="btn btn-grayb">
                                                     상세
-                                                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-list ms-1" viewBox="0 0 16 16">
-                                                        <path fill-rule="evenodd" d="M2.5 12a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5zm0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5zm0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5z"/>
-                                                      </svg>
+                                                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16"
+                                                        fill="currentColor" class="bi bi-list ms-1" viewBox="0 0 16 16">
+                                                        <path fill-rule="evenodd"
+                                                            d="M2.5 12a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5zm0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5zm0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5z" />
+                                                    </svg>
                                                 </div>
                                             </div>
                                         </div>
@@ -1770,32 +1838,15 @@
                                         <div class="tab">
                                             <div class="left">
                                                 <div class="w-100">
-                                                    <div class="title">내용추가</div>
-                                                    <div class="eng">내용추가</div>
+                                                    <div class="title">실손의료보험금 수령</div>
+                                                    <div class="eng">Medical insurance indemnity</div>
                                                 </div>
                                                 <div class="btn btn-grayb">조회</div>
                                             </div>
                                             <div class="right">
                                                 <div class="w-100">
-                                                    <div class="title">내용추가</div>
-                                                    <div class="eng">내용추가</div>
-                                                </div>
-                                                <div class="btn btn-grayb">조회</div>
-                                            </div>
-                                        </div>
-
-                                        <div class="tab">
-                                            <div class="left">
-                                                <div class="w-100">
-                                                    <div class="title">내용추가</div>
-                                                    <div class="eng">내용추가</div>
-                                                </div>
-                                                <div class="btn btn-grayb">조회</div>
-                                            </div>
-                                            <div class="right">
-                                                <div class="w-100">
-                                                    <div class="title">내용추가</div>
-                                                    <div class="eng">내용추가</div>
+                                                    <div class="title">교육비</div>
+                                                    <div class="eng">Education Expenses</div>
                                                 </div>
                                                 <div class="btn btn-grayb">조회</div>
                                             </div>
@@ -1804,15 +1855,15 @@
                                         <div class="tab">
                                             <div class="left">
                                                 <div class="w-100">
-                                                    <div class="title">내용추가</div>
-                                                    <div class="eng">내용추가</div>
+                                                    <div class="title">직업훈련비</div>
+                                                    <div class="eng">Occupation Expenses For Training</div>
                                                 </div>
                                                 <div class="btn btn-grayb">조회</div>
                                             </div>
                                             <div class="right">
                                                 <div class="w-100">
-                                                    <div class="title">신용카드</div>
-                                                    <div class="eng">Credit Card</div>
+                                                    <div class="title">교복구입비</div>
+                                                    <div class="eng">School Uniform Purchase Expenses</div>
                                                 </div>
                                                 <div class="btn btn-grayb">조회</div>
                                             </div>
@@ -1821,15 +1872,32 @@
                                         <div class="tab">
                                             <div class="left">
                                                 <div class="w-100">
-                                                    <div class="title">내용추가</div>
-                                                    <div class="eng">내용추가</div>
+                                                    <div class="title">학자금대출 상환액</div>
+                                                    <div class="eng">Repayment of Student Loans</div>
+                                                </div>
+                                                <div class="btn btn-grayb">조회</div>
+                                            </div>
+                                            <div class="right pg_8_answer">
+                                                <div class="w-100 pg_8_answer">
+                                                    <div class="title pg_8_answer">신용카드</div>
+                                                    <div class="eng pg_8_answer">Credit Card</div>
+                                                </div>
+                                                <div class="btn btn-grayb pg_8_answer">조회</div>
+                                            </div>
+                                        </div>
+
+                                        <div class="tab">
+                                            <div class="left">
+                                                <div class="w-100">
+                                                    <div class="title">직불카드 등</div>
+                                                    <div class="eng">Debit Card</div>
                                                 </div>
                                                 <div class="btn btn-grayb">조회</div>
                                             </div>
                                             <div class="right">
                                                 <div class="w-100">
-                                                    <div class="title">내용추가</div>
-                                                    <div class="eng">내용추가</div>
+                                                    <div class="title">직불카드 등(제로페이 사용분)</div>
+                                                    <div class="eng">Debit Card</div>
                                                 </div>
                                                 <div class="btn btn-grayb">조회</div>
                                             </div>
@@ -1839,7 +1907,7 @@
                                 </div>
 
                                 <!-- under bar -->
-                                <div class="under_bar py-2">
+                                <div class="under_bar py-2 pg_8_shadow_inner">
                                     <div class=" baricon_wrap prev">
                                         <div class="baricon">
                                             <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16"
@@ -1946,20 +2014,26 @@
                                             <div class="right btn_wrap">
                                                 <div class="w-60 flex-between-center btn btn-outline-grayb px-2">
                                                     2022년
-                                                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-chevron-down" viewBox="0 0 16 16">
-                                                        <path fill-rule="evenodd" d="M1.646 4.646a.5.5 0 0 1 .708 0L8 10.293l5.646-5.647a.5.5 0 0 1 .708.708l-6 6a.5.5 0 0 1-.708 0l-6-6a.5.5 0 0 1 0-.708z"/>
-                                                      </svg>
+                                                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16"
+                                                        fill="currentColor" class="bi bi-chevron-down"
+                                                        viewBox="0 0 16 16">
+                                                        <path fill-rule="evenodd"
+                                                            d="M1.646 4.646a.5.5 0 0 1 .708 0L8 10.293l5.646-5.647a.5.5 0 0 1 .708.708l-6 6a.5.5 0 0 1-.708 0l-6-6a.5.5 0 0 1 0-.708z" />
+                                                    </svg>
                                                 </div>
                                                 <div class="w-40 btn btn-outline-grayb ms-2">
                                                     월선택
-                                                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-chevron-down" viewBox="0 0 16 16">
-                                                        <path fill-rule="evenodd" d="M1.646 4.646a.5.5 0 0 1 .708 0L8 10.293l5.646-5.647a.5.5 0 0 1 .708.708l-6 6a.5.5 0 0 1-.708 0l-6-6a.5.5 0 0 1 0-.708z"/>
-                                                      </svg>
+                                                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16"
+                                                        fill="currentColor" class="bi bi-chevron-down"
+                                                        viewBox="0 0 16 16">
+                                                        <path fill-rule="evenodd"
+                                                            d="M1.646 4.646a.5.5 0 0 1 .708 0L8 10.293l5.646-5.647a.5.5 0 0 1 .708.708l-6 6a.5.5 0 0 1-.708 0l-6-6a.5.5 0 0 1 0-.708z" />
+                                                    </svg>
                                                 </div>
                                             </div>
                                         </div>
                                         <div class="tab justify-content-between px-0">
-                                            <div class="w-49 btn btn-grayb">일괄/점자 내려받기</div>
+                                            <div class="w-49 btn btn-grayb pg_9_answer">일괄/점자 내려받기</div>
                                             <div class="w-49 btn btn-outline-grayb">영수증 발급기관 조회</div>
                                         </div>
                                     </div>
@@ -1976,9 +2050,11 @@
                                                 </div>
                                                 <div class="btn btn-grayb">
                                                     상세
-                                                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-list ms-1" viewBox="0 0 16 16">
-                                                        <path fill-rule="evenodd" d="M2.5 12a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5zm0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5zm0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5z"/>
-                                                      </svg>
+                                                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16"
+                                                        fill="currentColor" class="bi bi-list ms-1" viewBox="0 0 16 16">
+                                                        <path fill-rule="evenodd"
+                                                            d="M2.5 12a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5zm0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5zm0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5z" />
+                                                    </svg>
                                                 </div>
                                             </div>
                                             <div class="right check">
@@ -1986,13 +2062,15 @@
                                                     <div class="title">국민연금</div>
                                                     <div class="wrapper">
                                                         <div class="form-control">0</div>원
-                                                    </div>                                                
+                                                    </div>
                                                 </div>
                                                 <div class="btn btn-grayb">
                                                     상세
-                                                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-list ms-1" viewBox="0 0 16 16">
-                                                        <path fill-rule="evenodd" d="M2.5 12a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5zm0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5zm0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5z"/>
-                                                      </svg>
+                                                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16"
+                                                        fill="currentColor" class="bi bi-list ms-1" viewBox="0 0 16 16">
+                                                        <path fill-rule="evenodd"
+                                                            d="M2.5 12a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5zm0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5zm0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5z" />
+                                                    </svg>
                                                 </div>
                                             </div>
                                         </div>
@@ -2003,13 +2081,15 @@
                                                     <div class="title">보험료</div>
                                                     <div class="wrapper">
                                                         <div class="form-control">0</div>원
-                                                    </div>                                                
+                                                    </div>
                                                 </div>
                                                 <div class="btn btn-grayb">
                                                     상세
-                                                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-list ms-1" viewBox="0 0 16 16">
-                                                        <path fill-rule="evenodd" d="M2.5 12a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5zm0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5zm0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5z"/>
-                                                      </svg>
+                                                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16"
+                                                        fill="currentColor" class="bi bi-list ms-1" viewBox="0 0 16 16">
+                                                        <path fill-rule="evenodd"
+                                                            d="M2.5 12a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5zm0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5zm0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5z" />
+                                                    </svg>
                                                 </div>
                                             </div>
                                             <div class="right check">
@@ -2017,13 +2097,15 @@
                                                     <div class="title">의료비</div>
                                                     <div class="wrapper">
                                                         <div class="form-control">0</div>원
-                                                    </div>                                                
+                                                    </div>
                                                 </div>
                                                 <div class="btn btn-grayb">
                                                     상세
-                                                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-list ms-1" viewBox="0 0 16 16">
-                                                        <path fill-rule="evenodd" d="M2.5 12a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5zm0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5zm0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5z"/>
-                                                      </svg>
+                                                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16"
+                                                        fill="currentColor" class="bi bi-list ms-1" viewBox="0 0 16 16">
+                                                        <path fill-rule="evenodd"
+                                                            d="M2.5 12a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5zm0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5zm0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5z" />
+                                                    </svg>
                                                 </div>
                                             </div>
                                         </div>
@@ -2031,15 +2113,15 @@
                                         <div class="tab">
                                             <div class="left">
                                                 <div class="w-100">
-                                                    <div class="title">내용추가</div>
-                                                    <div class="eng">내용추가</div>
+                                                    <div class="title">실손의료보험금 수령</div>
+                                                    <div class="eng">Medical insurance indemnity</div>
                                                 </div>
                                                 <div class="btn btn-grayb">조회</div>
                                             </div>
                                             <div class="right">
                                                 <div class="w-100">
-                                                    <div class="title">내용추가</div>
-                                                    <div class="eng">내용추가</div>
+                                                    <div class="title">교육비</div>
+                                                    <div class="eng">Education Expenses</div>
                                                 </div>
                                                 <div class="btn btn-grayb">조회</div>
                                             </div>
@@ -2048,15 +2130,15 @@
                                         <div class="tab">
                                             <div class="left">
                                                 <div class="w-100">
-                                                    <div class="title">내용추가</div>
-                                                    <div class="eng">내용추가</div>
+                                                    <div class="title">직업훈련비</div>
+                                                    <div class="eng">Occupation Expenses For Training</div>
                                                 </div>
                                                 <div class="btn btn-grayb">조회</div>
                                             </div>
                                             <div class="right">
                                                 <div class="w-100">
-                                                    <div class="title">내용추가</div>
-                                                    <div class="eng">내용추가</div>
+                                                    <div class="title">교복구입비</div>
+                                                    <div class="eng">School Uniform Purchase Expenses</div>
                                                 </div>
                                                 <div class="btn btn-grayb">조회</div>
                                             </div>
@@ -2065,8 +2147,8 @@
                                         <div class="tab">
                                             <div class="left">
                                                 <div class="w-100">
-                                                    <div class="title">내용추가</div>
-                                                    <div class="eng">내용추가</div>
+                                                    <div class="title">학자금대출 상환액</div>
+                                                    <div class="eng">Repayment of Student Loans</div>
                                                 </div>
                                                 <div class="btn btn-grayb">조회</div>
                                             </div>
@@ -2075,13 +2157,15 @@
                                                     <div class="title">신용카드</div>
                                                     <div class="wrapper">
                                                         <div class="form-control">0</div>원
-                                                    </div>                                                
+                                                    </div>
                                                 </div>
                                                 <div class="btn btn-grayb">
                                                     상세
-                                                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-list ms-1" viewBox="0 0 16 16">
-                                                        <path fill-rule="evenodd" d="M2.5 12a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5zm0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5zm0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5z"/>
-                                                      </svg>
+                                                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16"
+                                                        fill="currentColor" class="bi bi-list ms-1" viewBox="0 0 16 16">
+                                                        <path fill-rule="evenodd"
+                                                            d="M2.5 12a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5zm0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5zm0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5z" />
+                                                    </svg>
                                                 </div>
                                             </div>
                                         </div>
@@ -2089,15 +2173,15 @@
                                         <div class="tab">
                                             <div class="left">
                                                 <div class="w-100">
-                                                    <div class="title">내용추가</div>
-                                                    <div class="eng">내용추가</div>
+                                                    <div class="title">직불카드 등</div>
+                                                    <div class="eng">Debit Card</div>
                                                 </div>
                                                 <div class="btn btn-grayb">조회</div>
                                             </div>
                                             <div class="right">
                                                 <div class="w-100">
-                                                    <div class="title">내용추가</div>
-                                                    <div class="eng">내용추가</div>
+                                                    <div class="title">직불카드 등(제로페이 사용분)</div>
+                                                    <div class="eng">Debit Card</div>
                                                 </div>
                                                 <div class="btn btn-grayb">조회</div>
                                             </div>
@@ -2166,24 +2250,29 @@
                             <div class="page_wrap">
                                 <h1 class="pg_title" style="color: #fff;">Page10</h1>
                                 <!-- top -->
-                                <div class="pg_top fontSz px-4 py-3">
+                                <div class="pg_top fontSz px-4 py-3 pg_10_shadow_inner">
                                     <svg></svg>
                                     <div class="flex-fill h-100 d-flex justify-content-center align-items-center">
                                         <div class="w-100 flex-center-center text-lg fw-bold">
                                             일괄 내려받기 항목 선택
                                         </div>
                                     </div>
-                                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-x-lg text-lightgray" viewBox="0 0 16 16">
-                                        <path d="M2.146 2.854a.5.5 0 1 1 .708-.708L8 7.293l5.146-5.147a.5.5 0 0 1 .708.708L8.707 8l5.147 5.146a.5.5 0 0 1-.708.708L8 8.707l-5.146 5.147a.5.5 0 0 1-.708-.708L7.293 8 2.146 2.854Z"/>
-                                      </svg>
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+                                        class="bi bi-x-lg text-lightgray" viewBox="0 0 16 16">
+                                        <path
+                                            d="M2.146 2.854a.5.5 0 1 1 .708-.708L8 7.293l5.146-5.147a.5.5 0 0 1 .708.708L8.707 8l5.147 5.146a.5.5 0 0 1-.708.708L8 8.707l-5.146 5.147a.5.5 0 0 1-.708-.708L7.293 8 2.146 2.854Z" />
+                                    </svg>
                                 </div>
                                 <!-- scroll -->
                                 <div class="scroller fontSz">
                                     <!-- container -->
                                     <div class="container px-4 py-2">
                                         <div class="tab title border-bottom border-dark">
-                                            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-record-circle-fill me-2 text-lightb" viewBox="0 0 16 16">
-                                                <path d="M16 8A8 8 0 1 1 0 8a8 8 0 0 1 16 0zm-8 3a3 3 0 1 0 0-6 3 3 0 0 0 0 6z"/>
+                                            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16"
+                                                fill="currentColor" class="bi bi-record-circle-fill me-2 text-lightb"
+                                                viewBox="0 0 16 16">
+                                                <path
+                                                    d="M16 8A8 8 0 1 1 0 8a8 8 0 0 1 16 0zm-8 3a3 3 0 1 0 0-6 3 3 0 0 0 0 6z" />
                                             </svg>
                                             <div class="fw-bold">선택한 항목보기</div>
                                         </div>
@@ -2200,9 +2289,15 @@
                                             <div class="right d-flex flex-column">
                                                 <div class="text-b fw-bold">안내</div>
                                                 <div class="text-sm text-gray">
-                                                    내려받은 파일은 스마트폰의 <div class="text-danger">'내장 메모리 > Download'</div><div class="text-b"> 폴더에 저장</div>됩니다. 
-                                                    <div class="text-danger">「내파일」</div><div class="text-b">앱이나 </div><div class="text-danger">「파일관리자」</div><div class="text-b"> 앱으로 확인</div> 하시기 바랍니다. 단, 기기별로 저장 위치가 다를 수 있습니다.<br>
-                                                    내려받은 파일은 스마트폰에 <div class="text-danger">'PDF 뷰어'</div><div class="text-b">가 설치되어 있어야 읽을 수 있습니다.</div>
+                                                    내려받은 파일은 스마트폰의 <div class="text-danger">'내장 메모리 > Download'</div>
+                                                    <div class="text-b"> 폴더에 저장</div>됩니다.
+                                                    <div class="text-danger">「내파일」</div>
+                                                    <div class="text-b">앱이나 </div>
+                                                    <div class="text-danger">「파일관리자」</div>
+                                                    <div class="text-b"> 앱으로 확인</div> 하시기 바랍니다. 단, 기기별로 저장 위치가 다를 수
+                                                    있습니다.<br>
+                                                    내려받은 파일은 스마트폰에 <div class="text-danger">'PDF 뷰어'</div>
+                                                    <div class="text-b">가 설치되어 있어야 읽을 수 있습니다.</div>
                                                 </div>
                                             </div>
                                         </div>
@@ -2216,67 +2311,85 @@
                                         <!-- check list -->
                                         <div class="tab detail border-bottom">
                                             <div class="left">
-                                                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-check-square-fill text-b" viewBox="0 0 16 16">
-                                                    <path d="M2 0a2 2 0 0 0-2 2v12a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V2a2 2 0 0 0-2-2H2zm10.03 4.97a.75.75 0 0 1 .011 1.05l-3.992 4.99a.75.75 0 0 1-1.08.02L4.324 8.384a.75.75 0 1 1 1.06-1.06l2.094 2.093 3.473-4.425a.75.75 0 0 1 1.08-.022z"/>
-                                                  </svg>
+                                                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16"
+                                                    fill="currentColor" class="bi bi-check-square-fill text-b"
+                                                    viewBox="0 0 16 16">
+                                                    <path
+                                                        d="M2 0a2 2 0 0 0-2 2v12a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V2a2 2 0 0 0-2-2H2zm10.03 4.97a.75.75 0 0 1 .011 1.05l-3.992 4.99a.75.75 0 0 1-1.08.02L4.324 8.384a.75.75 0 1 1 1.06-1.06l2.094 2.093 3.473-4.425a.75.75 0 0 1 1.08-.022z" />
+                                                </svg>
                                                 <div class="">건강보험</div>
                                             </div>
                                             <div class="right">
-                                                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-check-square-fill text-b" viewBox="0 0 16 16">
-                                                    <path d="M2 0a2 2 0 0 0-2 2v12a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V2a2 2 0 0 0-2-2H2zm10.03 4.97a.75.75 0 0 1 .011 1.05l-3.992 4.99a.75.75 0 0 1-1.08.02L4.324 8.384a.75.75 0 1 1 1.06-1.06l2.094 2.093 3.473-4.425a.75.75 0 0 1 1.08-.022z"/>
-                                                  </svg>
+                                                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16"
+                                                    fill="currentColor" class="bi bi-check-square-fill text-b"
+                                                    viewBox="0 0 16 16">
+                                                    <path
+                                                        d="M2 0a2 2 0 0 0-2 2v12a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V2a2 2 0 0 0-2-2H2zm10.03 4.97a.75.75 0 0 1 .011 1.05l-3.992 4.99a.75.75 0 0 1-1.08.02L4.324 8.384a.75.75 0 1 1 1.06-1.06l2.094 2.093 3.473-4.425a.75.75 0 0 1 1.08-.022z" />
+                                                </svg>
                                                 <div class="">국민연금</div>
                                             </div>
                                         </div>
 
                                         <div class="tab detail border-bottom">
                                             <div class="left">
-                                                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-check-square-fill text-b" viewBox="0 0 16 16">
-                                                    <path d="M2 0a2 2 0 0 0-2 2v12a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V2a2 2 0 0 0-2-2H2zm10.03 4.97a.75.75 0 0 1 .011 1.05l-3.992 4.99a.75.75 0 0 1-1.08.02L4.324 8.384a.75.75 0 1 1 1.06-1.06l2.094 2.093 3.473-4.425a.75.75 0 0 1 1.08-.022z"/>
-                                                  </svg>
+                                                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16"
+                                                    fill="currentColor" class="bi bi-check-square-fill text-b"
+                                                    viewBox="0 0 16 16">
+                                                    <path
+                                                        d="M2 0a2 2 0 0 0-2 2v12a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V2a2 2 0 0 0-2-2H2zm10.03 4.97a.75.75 0 0 1 .011 1.05l-3.992 4.99a.75.75 0 0 1-1.08.02L4.324 8.384a.75.75 0 1 1 1.06-1.06l2.094 2.093 3.473-4.425a.75.75 0 0 1 1.08-.022z" />
+                                                </svg>
                                                 <div class="">보험료</div>
                                             </div>
                                             <div class="right">
-                                                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-check-square-fill text-b" viewBox="0 0 16 16">
-                                                    <path d="M2 0a2 2 0 0 0-2 2v12a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V2a2 2 0 0 0-2-2H2zm10.03 4.97a.75.75 0 0 1 .011 1.05l-3.992 4.99a.75.75 0 0 1-1.08.02L4.324 8.384a.75.75 0 1 1 1.06-1.06l2.094 2.093 3.473-4.425a.75.75 0 0 1 1.08-.022z"/>
-                                                  </svg>
+                                                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16"
+                                                    fill="currentColor" class="bi bi-check-square-fill text-b"
+                                                    viewBox="0 0 16 16">
+                                                    <path
+                                                        d="M2 0a2 2 0 0 0-2 2v12a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V2a2 2 0 0 0-2-2H2zm10.03 4.97a.75.75 0 0 1 .011 1.05l-3.992 4.99a.75.75 0 0 1-1.08.02L4.324 8.384a.75.75 0 1 1 1.06-1.06l2.094 2.093 3.473-4.425a.75.75 0 0 1 1.08-.022z" />
+                                                </svg>
                                                 <div class="">의료비</div>
                                             </div>
                                         </div>
 
                                         <div class="tab detail border-bottom">
                                             <div class="left">
-                                                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-check-square-fill text-white" viewBox="0 0 16 16">
-                                                    <path d="M2 0a2 2 0 0 0-2 2v12a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V2a2 2 0 0 0-2-2H2zm10.03 4.97a.75.75 0 0 1 .011 1.05l-3.992 4.99a.75.75 0 0 1-1.08.02L4.324 8.384a.75.75 0 1 1 1.06-1.06l2.094 2.093 3.473-4.425a.75.75 0 0 1 1.08-.022z"/>
-                                                  </svg>
-                                                <div class="">내용추가내용추 가내용추가내용추가</div>
+                                                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16"
+                                                    fill="currentColor" class="bi bi-check-square-fill text-white"
+                                                    viewBox="0 0 16 16">
+                                                    <path
+                                                        d="M2 0a2 2 0 0 0-2 2v12a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V2a2 2 0 0 0-2-2H2zm10.03 4.97a.75.75 0 0 1 .011 1.05l-3.992 4.99a.75.75 0 0 1-1.08.02L4.324 8.384a.75.75 0 1 1 1.06-1.06l2.094 2.093 3.473-4.425a.75.75 0 0 1 1.08-.022z" />
+                                                </svg>
+                                                <div class="">실손의료보험금 수령</div>
                                             </div>
                                             <div class="right">
                                                 <svg></svg>
-                                                <div class="">내용추가</div>
+                                                <div class="">교육비</div>
                                             </div>
                                         </div>
 
                                         <div class="tab detail border-bottom">
                                             <div class="left">
                                                 <svg></svg>
-                                                <div class="">내용추가</div>
+                                                <div class="">직업훈련비</div>
                                             </div>
                                             <div class="right">
                                                 <svg></svg>
-                                                <div class="">내용추가</div>
+                                                <div class="">교복구입비</div>
                                             </div>
                                         </div>
 
                                         <div class="tab detail border-bottom">
                                             <div class="left">
                                                 <svg></svg>
-                                                <div class="">내용추가</div>
+                                                <div class="">학자금대출 상환액</div>
                                             </div>
                                             <div class="right">
-                                                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-check-square-fill text-b" viewBox="0 0 16 16">
-                                                    <path d="M2 0a2 2 0 0 0-2 2v12a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V2a2 2 0 0 0-2-2H2zm10.03 4.97a.75.75 0 0 1 .011 1.05l-3.992 4.99a.75.75 0 0 1-1.08.02L4.324 8.384a.75.75 0 1 1 1.06-1.06l2.094 2.093 3.473-4.425a.75.75 0 0 1 1.08-.022z"/>
-                                                  </svg>
+                                                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16"
+                                                    fill="currentColor" class="bi bi-check-square-fill text-b"
+                                                    viewBox="0 0 16 16">
+                                                    <path
+                                                        d="M2 0a2 2 0 0 0-2 2v12a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V2a2 2 0 0 0-2-2H2zm10.03 4.97a.75.75 0 0 1 .011 1.05l-3.992 4.99a.75.75 0 0 1-1.08.02L4.324 8.384a.75.75 0 1 1 1.06-1.06l2.094 2.093 3.473-4.425a.75.75 0 0 1 1.08-.022z" />
+                                                </svg>
                                                 <div class="">신용카드</div>
                                             </div>
                                         </div>
@@ -2284,37 +2397,46 @@
                                         <div class="tab detail">
                                             <div class="left">
                                                 <svg></svg>
-                                                <div class="">내용추가</div>
+                                                <div class="">직불카드 등</div>
                                             </div>
                                             <div class="right">
                                                 <svg></svg>
-                                                <div class="">내용추가</div>
+                                                <div class="">직불카드 등(제로페이 사용분)</div>
                                             </div>
                                         </div>
-                                        
+
                                     </div>
 
                                     <!-- detail -->
                                     <div class="bg-lightgray p-0">
                                         <div class="tab px-4">
-                                            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-square text-lightgray" viewBox="0 0 16 16">
-                                                <path d="M14 1a1 1 0 0 1 1 1v12a1 1 0 0 1-1 1H2a1 1 0 0 1-1-1V2a1 1 0 0 1 1-1h12zM2 0a2 2 0 0 0-2 2v12a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V2a2 2 0 0 0-2-2H2z"/>
-                                              </svg>
+                                            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16"
+                                                fill="currentColor" class="bi bi-square text-lightgray"
+                                                viewBox="0 0 16 16">
+                                                <path
+                                                    d="M14 1a1 1 0 0 1 1 1v12a1 1 0 0 1-1 1H2a1 1 0 0 1-1-1V2a1 1 0 0 1 1-1h12zM2 0a2 2 0 0 0-2 2v12a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V2a2 2 0 0 0-2-2H2z" />
+                                            </svg>
                                             <div class="">문서열기 암호설정</div>
                                         </div>
                                         <div class="tab hidden px-4">
                                             <div class="w-30 text-b">공개여부</div>
                                             <div class="">
                                                 <div class="pb-3">
-                                                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-circle text-lightgray" viewBox="0 0 16 16">
-                                                        <path d="M8 15A7 7 0 1 1 8 1a7 7 0 0 1 0 14zm0 1A8 8 0 1 0 8 0a8 8 0 0 0 0 16z"/>
-                                                      </svg>
-                                                      개인정보 공개
+                                                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16"
+                                                        fill="currentColor" class="bi bi-circle text-lightgray"
+                                                        viewBox="0 0 16 16">
+                                                        <path
+                                                            d="M8 15A7 7 0 1 1 8 1a7 7 0 0 1 0 14zm0 1A8 8 0 1 0 8 0a8 8 0 0 0 0 16z" />
+                                                    </svg>
+                                                    개인정보 공개
                                                 </div>
                                                 <div class="">
-                                                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-record-circle-fill text-b" viewBox="0 0 16 16">
-                                                        <path d="M16 8A8 8 0 1 1 0 8a8 8 0 0 1 16 0zm-8 3a3 3 0 1 0 0-6 3 3 0 0 0 0 6z"/>
-                                                      </svg>
+                                                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16"
+                                                        fill="currentColor" class="bi bi-record-circle-fill text-b"
+                                                        viewBox="0 0 16 16">
+                                                        <path
+                                                            d="M16 8A8 8 0 1 1 0 8a8 8 0 0 1 16 0zm-8 3a3 3 0 1 0 0-6 3 3 0 0 0 0 6z" />
+                                                    </svg>
                                                     개인정보 비공개
                                                 </div>
                                             </div>
@@ -2323,7 +2445,7 @@
 
                                     <div class="btn_wrap px-4 py-3">
                                         <div class="btn btn-outline-dark">취소</div>
-                                        <div class="btn btn-b">내려받기</div>
+                                        <div class="btn btn-b pg_10_answer">내려받기</div>
                                         <div class="btn btn-b">점자내려받기</div>
                                     </div>
 
@@ -2339,9 +2461,15 @@
                                         <div class="right d-flex flex-column">
                                             <div class="text-b fw-bold">안내</div>
                                             <div class="text-sm text-gray">
-                                                내려받은 파일은 스마트폰의 <div class="text-danger">'내장 메모리 > Download'</div><div class="text-b"> 폴더에 저장</div>됩니다. 
-                                                <div class="text-danger">「내파일」</div><div class="text-b">앱이나 </div><div class="text-danger">「파일관리자」</div><div class="text-b"> 앱으로 확인</div> 하시기 바랍니다. 단, 기기별로 저장 위치가 다를 수 있습니다.<br>
-                                                내려받은 파일은 스마트폰에 <div class="text-danger">'PDF 뷰어'</div><div class="text-b">가 설치되어 있어야 읽을 수 있습니다.</div>
+                                                내려받은 파일은 스마트폰의 <div class="text-danger">'내장 메모리 > Download'</div>
+                                                <div class="text-b"> 폴더에 저장</div>됩니다.
+                                                <div class="text-danger">「내파일」</div>
+                                                <div class="text-b">앱이나 </div>
+                                                <div class="text-danger">「파일관리자」</div>
+                                                <div class="text-b"> 앱으로 확인</div> 하시기 바랍니다. 단, 기기별로 저장 위치가 다를 수
+                                                있습니다.<br>
+                                                내려받은 파일은 스마트폰에 <div class="text-danger">'PDF 뷰어'</div>
+                                                <div class="text-b">가 설치되어 있어야 읽을 수 있습니다.</div>
                                             </div>
                                         </div>
                                     </div>
@@ -2361,17 +2489,22 @@
                                             일괄 내려받기 항목 선택
                                         </div>
                                     </div>
-                                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-x-lg text-lightgray" viewBox="0 0 16 16">
-                                        <path d="M2.146 2.854a.5.5 0 1 1 .708-.708L8 7.293l5.146-5.147a.5.5 0 0 1 .708.708L8.707 8l5.147 5.146a.5.5 0 0 1-.708.708L8 8.707l-5.146 5.147a.5.5 0 0 1-.708-.708L7.293 8 2.146 2.854Z"/>
-                                      </svg>
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+                                        class="bi bi-x-lg text-lightgray" viewBox="0 0 16 16">
+                                        <path
+                                            d="M2.146 2.854a.5.5 0 1 1 .708-.708L8 7.293l5.146-5.147a.5.5 0 0 1 .708.708L8.707 8l5.147 5.146a.5.5 0 0 1-.708.708L8 8.707l-5.146 5.147a.5.5 0 0 1-.708-.708L7.293 8 2.146 2.854Z" />
+                                    </svg>
                                 </div>
                                 <!-- scroll -->
                                 <div class="scroller fontSz">
                                     <!-- container -->
                                     <div class="container px-4 py-2">
                                         <div class="tab title border-bottom border-dark">
-                                            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-record-circle-fill me-2 text-lightb" viewBox="0 0 16 16">
-                                                <path d="M16 8A8 8 0 1 1 0 8a8 8 0 0 1 16 0zm-8 3a3 3 0 1 0 0-6 3 3 0 0 0 0 6z"/>
+                                            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16"
+                                                fill="currentColor" class="bi bi-record-circle-fill me-2 text-lightb"
+                                                viewBox="0 0 16 16">
+                                                <path
+                                                    d="M16 8A8 8 0 1 1 0 8a8 8 0 0 1 16 0zm-8 3a3 3 0 1 0 0-6 3 3 0 0 0 0 6z" />
                                             </svg>
                                             <div class="fw-bold">선택한 항목보기</div>
                                         </div>
@@ -2388,9 +2521,15 @@
                                             <div class="right d-flex flex-column">
                                                 <div class="text-b fw-bold">안내</div>
                                                 <div class="text-sm text-gray">
-                                                    내려받은 파일은 스마트폰의 <div class="text-danger">'내장 메모리 > Download'</div><div class="text-b"> 폴더에 저장</div>됩니다. 
-                                                    <div class="text-danger">「내파일」</div><div class="text-b">앱이나 </div><div class="text-danger">「파일관리자」</div><div class="text-b"> 앱으로 확인</div> 하시기 바랍니다. 단, 기기별로 저장 위치가 다를 수 있습니다.<br>
-                                                    내려받은 파일은 스마트폰에 <div class="text-danger">'PDF 뷰어'</div><div class="text-b">가 설치되어 있어야 읽을 수 있습니다.</div>
+                                                    내려받은 파일은 스마트폰의 <div class="text-danger">'내장 메모리 > Download'</div>
+                                                    <div class="text-b"> 폴더에 저장</div>됩니다.
+                                                    <div class="text-danger">「내파일」</div>
+                                                    <div class="text-b">앱이나 </div>
+                                                    <div class="text-danger">「파일관리자」</div>
+                                                    <div class="text-b"> 앱으로 확인</div> 하시기 바랍니다. 단, 기기별로 저장 위치가 다를 수
+                                                    있습니다.<br>
+                                                    내려받은 파일은 스마트폰에 <div class="text-danger">'PDF 뷰어'</div>
+                                                    <div class="text-b">가 설치되어 있어야 읽을 수 있습니다.</div>
                                                 </div>
                                             </div>
                                         </div>
@@ -2404,39 +2543,54 @@
                                         <!-- check list -->
                                         <div class="tab detail border-bottom">
                                             <div class="left">
-                                                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-check-square-fill text-b" viewBox="0 0 16 16">
-                                                    <path d="M2 0a2 2 0 0 0-2 2v12a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V2a2 2 0 0 0-2-2H2zm10.03 4.97a.75.75 0 0 1 .011 1.05l-3.992 4.99a.75.75 0 0 1-1.08.02L4.324 8.384a.75.75 0 1 1 1.06-1.06l2.094 2.093 3.473-4.425a.75.75 0 0 1 1.08-.022z"/>
-                                                  </svg>
+                                                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16"
+                                                    fill="currentColor" class="bi bi-check-square-fill text-b"
+                                                    viewBox="0 0 16 16">
+                                                    <path
+                                                        d="M2 0a2 2 0 0 0-2 2v12a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V2a2 2 0 0 0-2-2H2zm10.03 4.97a.75.75 0 0 1 .011 1.05l-3.992 4.99a.75.75 0 0 1-1.08.02L4.324 8.384a.75.75 0 1 1 1.06-1.06l2.094 2.093 3.473-4.425a.75.75 0 0 1 1.08-.022z" />
+                                                </svg>
                                                 <div class="">건강보험</div>
                                             </div>
                                             <div class="right">
-                                                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-check-square-fill text-b" viewBox="0 0 16 16">
-                                                    <path d="M2 0a2 2 0 0 0-2 2v12a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V2a2 2 0 0 0-2-2H2zm10.03 4.97a.75.75 0 0 1 .011 1.05l-3.992 4.99a.75.75 0 0 1-1.08.02L4.324 8.384a.75.75 0 1 1 1.06-1.06l2.094 2.093 3.473-4.425a.75.75 0 0 1 1.08-.022z"/>
-                                                  </svg>
+                                                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16"
+                                                    fill="currentColor" class="bi bi-check-square-fill text-b"
+                                                    viewBox="0 0 16 16">
+                                                    <path
+                                                        d="M2 0a2 2 0 0 0-2 2v12a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V2a2 2 0 0 0-2-2H2zm10.03 4.97a.75.75 0 0 1 .011 1.05l-3.992 4.99a.75.75 0 0 1-1.08.02L4.324 8.384a.75.75 0 1 1 1.06-1.06l2.094 2.093 3.473-4.425a.75.75 0 0 1 1.08-.022z" />
+                                                </svg>
                                                 <div class="">국민연금</div>
                                             </div>
                                         </div>
 
                                         <div class="tab detail border-bottom">
                                             <div class="left">
-                                                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-check-square-fill text-b" viewBox="0 0 16 16">
-                                                    <path d="M2 0a2 2 0 0 0-2 2v12a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V2a2 2 0 0 0-2-2H2zm10.03 4.97a.75.75 0 0 1 .011 1.05l-3.992 4.99a.75.75 0 0 1-1.08.02L4.324 8.384a.75.75 0 1 1 1.06-1.06l2.094 2.093 3.473-4.425a.75.75 0 0 1 1.08-.022z"/>
-                                                  </svg>
+                                                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16"
+                                                    fill="currentColor" class="bi bi-check-square-fill text-b"
+                                                    viewBox="0 0 16 16">
+                                                    <path
+                                                        d="M2 0a2 2 0 0 0-2 2v12a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V2a2 2 0 0 0-2-2H2zm10.03 4.97a.75.75 0 0 1 .011 1.05l-3.992 4.99a.75.75 0 0 1-1.08.02L4.324 8.384a.75.75 0 1 1 1.06-1.06l2.094 2.093 3.473-4.425a.75.75 0 0 1 1.08-.022z" />
+                                                </svg>
                                                 <div class="">보험료</div>
                                             </div>
                                             <div class="right">
-                                                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-check-square-fill text-b" viewBox="0 0 16 16">
-                                                    <path d="M2 0a2 2 0 0 0-2 2v12a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V2a2 2 0 0 0-2-2H2zm10.03 4.97a.75.75 0 0 1 .011 1.05l-3.992 4.99a.75.75 0 0 1-1.08.02L4.324 8.384a.75.75 0 1 1 1.06-1.06l2.094 2.093 3.473-4.425a.75.75 0 0 1 1.08-.022z"/>
-                                                  </svg>
+                                                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16"
+                                                    fill="currentColor" class="bi bi-check-square-fill text-b"
+                                                    viewBox="0 0 16 16">
+                                                    <path
+                                                        d="M2 0a2 2 0 0 0-2 2v12a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V2a2 2 0 0 0-2-2H2zm10.03 4.97a.75.75 0 0 1 .011 1.05l-3.992 4.99a.75.75 0 0 1-1.08.02L4.324 8.384a.75.75 0 1 1 1.06-1.06l2.094 2.093 3.473-4.425a.75.75 0 0 1 1.08-.022z" />
+                                                </svg>
                                                 <div class="">의료비</div>
                                             </div>
                                         </div>
 
                                         <div class="tab detail border-bottom">
                                             <div class="left">
-                                                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-check-square-fill text-white" viewBox="0 0 16 16">
-                                                    <path d="M2 0a2 2 0 0 0-2 2v12a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V2a2 2 0 0 0-2-2H2zm10.03 4.97a.75.75 0 0 1 .011 1.05l-3.992 4.99a.75.75 0 0 1-1.08.02L4.324 8.384a.75.75 0 1 1 1.06-1.06l2.094 2.093 3.473-4.425a.75.75 0 0 1 1.08-.022z"/>
-                                                  </svg>
+                                                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16"
+                                                    fill="currentColor" class="bi bi-check-square-fill text-white"
+                                                    viewBox="0 0 16 16">
+                                                    <path
+                                                        d="M2 0a2 2 0 0 0-2 2v12a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V2a2 2 0 0 0-2-2H2zm10.03 4.97a.75.75 0 0 1 .011 1.05l-3.992 4.99a.75.75 0 0 1-1.08.02L4.324 8.384a.75.75 0 1 1 1.06-1.06l2.094 2.093 3.473-4.425a.75.75 0 0 1 1.08-.022z" />
+                                                </svg>
                                                 <div class="">내용추가내용추 가내용추가내용추가</div>
                                             </div>
                                             <div class="right">
@@ -2462,9 +2616,12 @@
                                                 <div class="">내용추가</div>
                                             </div>
                                             <div class="right">
-                                                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-check-square-fill text-b" viewBox="0 0 16 16">
-                                                    <path d="M2 0a2 2 0 0 0-2 2v12a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V2a2 2 0 0 0-2-2H2zm10.03 4.97a.75.75 0 0 1 .011 1.05l-3.992 4.99a.75.75 0 0 1-1.08.02L4.324 8.384a.75.75 0 1 1 1.06-1.06l2.094 2.093 3.473-4.425a.75.75 0 0 1 1.08-.022z"/>
-                                                  </svg>
+                                                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16"
+                                                    fill="currentColor" class="bi bi-check-square-fill text-b"
+                                                    viewBox="0 0 16 16">
+                                                    <path
+                                                        d="M2 0a2 2 0 0 0-2 2v12a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V2a2 2 0 0 0-2-2H2zm10.03 4.97a.75.75 0 0 1 .011 1.05l-3.992 4.99a.75.75 0 0 1-1.08.02L4.324 8.384a.75.75 0 1 1 1.06-1.06l2.094 2.093 3.473-4.425a.75.75 0 0 1 1.08-.022z" />
+                                                </svg>
                                                 <div class="">신용카드</div>
                                             </div>
                                         </div>
@@ -2479,30 +2636,39 @@
                                                 <div class="">내용추가</div>
                                             </div>
                                         </div>
-                                        
+
                                     </div>
 
                                     <!-- detail -->
                                     <div class="bg-lightgray p-0">
                                         <div class="tab px-4">
-                                            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-square text-lightgray" viewBox="0 0 16 16">
-                                                <path d="M14 1a1 1 0 0 1 1 1v12a1 1 0 0 1-1 1H2a1 1 0 0 1-1-1V2a1 1 0 0 1 1-1h12zM2 0a2 2 0 0 0-2 2v12a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V2a2 2 0 0 0-2-2H2z"/>
-                                              </svg>
+                                            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16"
+                                                fill="currentColor" class="bi bi-square text-lightgray"
+                                                viewBox="0 0 16 16">
+                                                <path
+                                                    d="M14 1a1 1 0 0 1 1 1v12a1 1 0 0 1-1 1H2a1 1 0 0 1-1-1V2a1 1 0 0 1 1-1h12zM2 0a2 2 0 0 0-2 2v12a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V2a2 2 0 0 0-2-2H2z" />
+                                            </svg>
                                             <div class="">문서열기 암호설정</div>
                                         </div>
                                         <div class="tab hidden px-4">
                                             <div class="w-30 text-b">공개여부</div>
                                             <div class="">
                                                 <div class="pb-3">
-                                                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-circle text-lightgray" viewBox="0 0 16 16">
-                                                        <path d="M8 15A7 7 0 1 1 8 1a7 7 0 0 1 0 14zm0 1A8 8 0 1 0 8 0a8 8 0 0 0 0 16z"/>
-                                                      </svg>
-                                                      개인정보 공개
+                                                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16"
+                                                        fill="currentColor" class="bi bi-circle text-lightgray"
+                                                        viewBox="0 0 16 16">
+                                                        <path
+                                                            d="M8 15A7 7 0 1 1 8 1a7 7 0 0 1 0 14zm0 1A8 8 0 1 0 8 0a8 8 0 0 0 0 16z" />
+                                                    </svg>
+                                                    개인정보 공개
                                                 </div>
                                                 <div class="">
-                                                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-record-circle-fill text-b" viewBox="0 0 16 16">
-                                                        <path d="M16 8A8 8 0 1 1 0 8a8 8 0 0 1 16 0zm-8 3a3 3 0 1 0 0-6 3 3 0 0 0 0 6z"/>
-                                                      </svg>
+                                                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16"
+                                                        fill="currentColor" class="bi bi-record-circle-fill text-b"
+                                                        viewBox="0 0 16 16">
+                                                        <path
+                                                            d="M16 8A8 8 0 1 1 0 8a8 8 0 0 1 16 0zm-8 3a3 3 0 1 0 0-6 3 3 0 0 0 0 6z" />
+                                                    </svg>
                                                     개인정보 비공개
                                                 </div>
                                             </div>
@@ -2528,9 +2694,15 @@
                                         <div class="right d-flex flex-column">
                                             <div class="text-b fw-bold">안내</div>
                                             <div class="text-sm text-gray">
-                                                내려받은 파일은 스마트폰의 <div class="text-danger">'내장 메모리 > Download'</div><div class="text-b"> 폴더에 저장</div>됩니다. 
-                                                <div class="text-danger">「내파일」</div><div class="text-b">앱이나 </div><div class="text-danger">「파일관리자」</div><div class="text-b"> 앱으로 확인</div> 하시기 바랍니다. 단, 기기별로 저장 위치가 다를 수 있습니다.<br>
-                                                내려받은 파일은 스마트폰에 <div class="text-danger">'PDF 뷰어'</div><div class="text-b">가 설치되어 있어야 읽을 수 있습니다.</div>
+                                                내려받은 파일은 스마트폰의 <div class="text-danger">'내장 메모리 > Download'</div>
+                                                <div class="text-b"> 폴더에 저장</div>됩니다.
+                                                <div class="text-danger">「내파일」</div>
+                                                <div class="text-b">앱이나 </div>
+                                                <div class="text-danger">「파일관리자」</div>
+                                                <div class="text-b"> 앱으로 확인</div> 하시기 바랍니다. 단, 기기별로 저장 위치가 다를 수
+                                                있습니다.<br>
+                                                내려받은 파일은 스마트폰에 <div class="text-danger">'PDF 뷰어'</div>
+                                                <div class="text-b">가 설치되어 있어야 읽을 수 있습니다.</div>
                                             </div>
                                         </div>
                                     </div>
@@ -2538,10 +2710,13 @@
 
                                 <div class="absolute-bottom">
                                     <div class="floating rounded-pill px-4 py-2">
-                                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-file-earmark-arrow-down-fill me-2" viewBox="0 0 16 16">
-                                            <path d="M9.293 0H4a2 2 0 0 0-2 2v12a2 2 0 0 0 2 2h8a2 2 0 0 0 2-2V4.707A1 1 0 0 0 13.707 4L10 .293A1 1 0 0 0 9.293 0zM9.5 3.5v-2l3 3h-2a1 1 0 0 1-1-1zm-1 4v3.793l1.146-1.147a.5.5 0 0 1 .708.708l-2 2a.5.5 0 0 1-.708 0l-2-2a.5.5 0 0 1 .708-.708L7.5 11.293V7.5a.5.5 0 0 1 1 0z"/>
-                                          </svg>
-                                          다운로드 시작
+                                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16"
+                                            fill="currentColor" class="bi bi-file-earmark-arrow-down-fill me-2"
+                                            viewBox="0 0 16 16">
+                                            <path
+                                                d="M9.293 0H4a2 2 0 0 0-2 2v12a2 2 0 0 0 2 2h8a2 2 0 0 0 2-2V4.707A1 1 0 0 0 13.707 4L10 .293A1 1 0 0 0 9.293 0zM9.5 3.5v-2l3 3h-2a1 1 0 0 1-1-1zm-1 4v3.793l1.146-1.147a.5.5 0 0 1 .708.708l-2 2a.5.5 0 0 1-.708 0l-2-2a.5.5 0 0 1 .708-.708L7.5 11.293V7.5a.5.5 0 0 1 1 0z" />
+                                        </svg>
+                                        다운로드 시작
                                     </div>
                                 </div>
                             </div>

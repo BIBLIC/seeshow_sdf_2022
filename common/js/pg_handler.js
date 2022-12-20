@@ -710,6 +710,14 @@ document.querySelector("main").addEventListener("click", function (e) {//메인 
             });
         }
 
+        //----1개 선택하면 버튼 활성화 되는 경우 -------------------
+        //active_selc_input pg_n_answer 
+        else if (e.target.className.includes("active_selc_input")) {
+            $(".selected").addClass("pg_" + real_pg + "_selected")
+            $(".disabled_btn").addClass("pg_" + real_pg + "_answer");
+            $(".disabled_btn").removeClass("pg_" + real_pg +"_css_remove");
+           
+        }
 
         //----선택 2개 해야 하는 경우 -------------------
         //selc_2_input pg_n_answer input_(셀렉트 넘버)
