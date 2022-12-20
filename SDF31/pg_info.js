@@ -1,4 +1,4 @@
-var total_page = 9;//페이지 수 -> 시나리오마다 total_page 수 바꾸기 
+var total_page = 16;//페이지 수 -> 시나리오마다 total_page 수 바꾸기 
 
 //오디오 배열 선언, 페이지 수 대로 배열에 mp3 넣기
 const audioArray = [];
@@ -52,6 +52,34 @@ const pageClickArea = [
         page: 9,
         correctAnswer: "pg_9_answer"
     },
+    {
+        page: 10,
+        correctAnswer: "pg_10_answer"
+    },
+    {
+        page: 11,
+        correctAnswer: "pg_11_answer"
+    },
+    {
+        page: 12,
+        correctAnswer: "pg_12_answer"
+    },
+    {
+        page: 13,
+        correctAnswer: "pg_13_answer"
+    },
+    {
+        page: 14,
+        correctAnswer: "pg_14_answer"
+    },
+    {
+        page: 15,
+        correctAnswer: "pg_15_answer"
+    },
+    {
+        page: 16,
+        correctAnswer: "pg_16_answer"
+    },
 ];
 
 // -=----------------------------------------------------------------------------------------------------------------------
@@ -69,6 +97,13 @@ const inputAnswer = [
     {},
     {},
     {},
+    {},
+    {},
+    {},
+    {},
+    {},
+    {},
+    {}
 ];
 
 
@@ -76,44 +111,72 @@ const inputAnswer = [
 const modalCont = [
     {
         page: 0,
-        instruction: "'시작하기' 버튼을 눌러주세요."
+        instruction: ""
     },
     {
         page: 1,
-        instruction: "'신청ㆍ제출' 탭을 눌러주세요."
+        instruction: ""
     },
     {
         page: 2,
-        instruction: "스크롤을 내려 '세무서류신청-공통분야'를 눌러주세요."
+        instruction: ""
     },
     {
         page: 3,
-        instruction: "'전자고지 신청/해지'를 눌러주세요."
+        instruction: ""
     },
     {
         page: 4,
-        instruction: "하단의 '다음' 버튼을 눌러주세요."
+        instruction: ""
     },
     {
         page: 5,
-        instruction: "스크롤을 내려 '위 내용을 확인함' 체크박스를 눌러주세요."
+        instruction: ""
     },
     {
         page: 6,
-        instruction: "하단의 '전자송달 신청하기'를 눌러주세요."
+        instruction: ""
     },
     {
         page: 7,
-        instruction: "'확인'을 눌러주세요."
+        instruction: ""
     },
     {
         page: 8,
-        instruction: "'확인'을 눌러주세요."
+        instruction: ""
     },
     {
         page: 9,
-        instruction: "완료"
+        instruction: ""
     },
+    {
+        page: 10,
+        instruction: ""
+    },
+    {
+        page: 11,
+        instruction: ""
+    },
+    {
+        page: 12,
+        instruction: ""
+    },
+    {
+        page: 13,
+        instruction: ""
+    },
+    {
+        page: 14,
+        instruction: ""
+    },
+    {
+        page: 15,
+        instruction: ""
+    },
+    {
+        page: 16,
+        instruction: ""
+    }
 ];
 
 
@@ -121,48 +184,48 @@ const modalCont = [
 // //*******************************************************************************
 // //**************************+    커서   +*********************************** 
 
-const cursor_pos_1 = document.querySelector('.cursor_pos_1');
-const cursor_pos_2 = document.querySelector('.cursor_pos_2');
+// const cursor_pos_1 = document.querySelector('.cursor_pos_1');
+// const cursor_pos_2 = document.querySelector('.cursor_pos_2');
 // // const cursor_pos_3 = document.querySelector('.cursor_pos_3');
 // // const cursor_pos_4 = document.querySelector('.cursor_pos_4');
 // // const cursor_pos_5 = document.querySelector('.cursor_pos_5');
 // // const cursor_pos_6 = document.querySelector('.cursor_pos_6');
 
-const cursor_wrap_1 = document.querySelector('.cursor_wrap_1');
-const cursor_wrap_2 = document.querySelector('.cursor_wrap_2');
+// const cursor_wrap_1 = document.querySelector('.cursor_wrap_1');
+// const cursor_wrap_2 = document.querySelector('.cursor_wrap_2');
 // // const cursor_wrap_3 = document.querySelector('.cursor_wrap_3');
 // // const cursor_wrap_4 = document.querySelector('.cursor_wrap_4');
 // // const cursor_wrap_5 = document.querySelector('.cursor_wrap_5');
 // // const cursor_wrap_6 = document.querySelector('.cursor_wrap_6');
 
 
-cursor_wrap_1.style.zIndex = "100";
-cursor_wrap_2.style.zIndex = "100";
+// cursor_wrap_1.style.zIndex = "100";
+// cursor_wrap_2.style.zIndex = "100";
 // // cursor_wrap_3.style.zIndex = "100";
 // // cursor_wrap_4.style.zIndex = "100";
 // // cursor_wrap_5.style.zIndex = "100";
 // // cursor_wrap_6.style.zIndex = "100";
 
 
-const { createPopper } = Popper;
-createPopper(cursor_pos_1, cursor_wrap_1, {
-    placement: 'right',
-    modifiers: [
-        {
-            name: 'offset',
-            options: {
-                offset: [0,0],
-            },
-        },
-    ],
-});
-// createPopper(cursor_pos_2, cursor_wrap_2, {
+// const { createPopper } = Popper;
+// createPopper(cursor_pos_1, cursor_wrap_1, {
 //     placement: 'right',
 //     modifiers: [
 //         {
 //             name: 'offset',
 //             options: {
 //                 offset: [0,0],
+//             },
+//         },
+//     ],
+// });
+// createPopper(cursor_pos_2, cursor_wrap_2, {
+//     placement: 'right',
+//     modifiers: [
+//         {
+//             name: 'offset',
+//             options: {
+//                 offset: [30,30],
 //             },
 //         },
 //     ],
@@ -213,14 +276,3 @@ createPopper(cursor_pos_1, cursor_wrap_1, {
 // //         },
 // //     ],
 // // });
-
-//*******************************************************************************
-//**************************+    힌트 버튼   +*********************************** 
-
-$('#hint_btn').click(function () {
-    var myPgNum = $(".active").attr('id');
-    var real_pg = myPgNum.slice(1);
-    if ((real_pg == 2)){
-        $(".menu").removeClass("box-shadow");
-    } 
-})
