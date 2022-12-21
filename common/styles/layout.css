@@ -35,6 +35,18 @@ svg {
   /* Chrome, Safari, Opera*/
 }
 
+.xScroller {
+  scroll-behavior: smooth;
+  overflow-x: scroll;
+  -ms-overflow-style: none;
+  /* IE and Edge */
+}
+
+.xScroller::-webkit-scrollbar {
+  display: none;
+  /* Chrome, Safari, Opera*/
+}
+
 .btn {
   min-height: 6vh;
 }
