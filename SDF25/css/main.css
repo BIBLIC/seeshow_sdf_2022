@@ -1,0 +1,256 @@
+.page_wrap {
+    height: 87vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+svg {
+    width: 1.3em;
+    height: 1.3em;
+}
+
+/* ----------------------------------------- */
+.pg_top {
+    width: 100%;
+    height: 10vh;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.pg_top .center {
+    flex: 1;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.pg_top .left,
+.pg_top .right {
+    width: 20%;
+    display: flex;
+    align-items: center;
+}
+
+.pg_top .tab {
+    width: 15%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    line-height: normal;
+    padding-top: .5em;
+    padding-bottom: .5em;
+}
+
+.pg_top .tab.selected {
+    color:#F4A224;
+    border-bottom: 5px solid #F4A224;
+}
+
+.pg_top svg,
+.pg_top .right svg {
+    width: 1.5em;
+    height: 1.5em;
+}
+
+.pg_top .left svg {
+    width: 2em;
+    height: 2em;
+}
+
+.search {
+    width: 100%;
+    margin-top: 1em;
+    height: 10vh;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: .7em;
+    padding-left: 1em;
+    padding-right: 1em;
+    border-radius: 13px;
+    border: 2px solid #4A80E2;
+    color:#b3b3b3;
+
+}
+
+.wrapper {
+    width: 100%;
+    min-height: 10vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: flex-start;
+    padding: 1.5em;
+    margin-bottom: 1em;
+    border: 2px solid #e0e0e0;
+    border-radius: 15px;
+}
+
+.tab {
+    width: 100%;
+    min-height: 7vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 15px;
+}
+
+.icon {
+    height: 100%!important;
+    border: 0!important;
+}
+
+/* ------------------------------------------ */
+
+.btn-grayb {
+    background: #56647E!important;
+    color: #fff!important;
+}
+
+.btn-outline-grayb {
+    background: #fff!important;
+    border:1px solid #56647E!important;
+    color:#56647E!important;
+}
+
+.btn-outline-b {
+    background: #fff!important;
+    border-color:#4A80E2!important;
+    color:#4A80E2!important;
+}
+
+.btn-outline-b {
+    background: #4A80E2!important;
+    color:#fff!important;
+}
+
+.border-b {
+    border:1.5px solid #4A80E2!important;
+}
+
+.border-navy {
+    border:1.5px solid #385396!important;
+}
+
+
+.bg-lightgray {
+    width: 100%;
+    background: #F3F4F9;
+    padding: 2em;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: flex-start;
+}
+
+.bg-b {
+    background: #4A80E2!important;
+    color: #fff;
+}
+
+.text-lightgray {
+    color:#b3b3b3;
+}
+
+.text-gray {
+    color: #737780;
+}
+
+.text-grayb {
+    color: #56647E;
+}
+
+.text-b{
+    color:#4A80E2!important;
+}
+
+.text-lightb {
+    color: #B0C6EB;
+}
+
+.text-navy {
+    color: #385396 !important;
+}
+
+.text-xs {
+    font-size: x-small;
+}
+
+.font-bold {
+    font-weight: bold;
+}
+
+
+/* ---------------------------------------- */
+.under_bar {
+    height: 7vh;
+    background: #fff;
+    border-radius: 0!important;
+    border-top: var(--bs-border-width) var(--bs-border-style) #989CA5;
+}
+
+.under_bar .baricon_wrap {
+    width: 20%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.under_bar .baricon_wrap .bartext {
+    font-size: smaller;
+}
+
+.scroller {
+    width: 100%;
+    height: 77vh;
+    padding-left: 1.5em;
+    padding-right: 1.5em;
+}
+
+
+/* p1 ------------------------------------- */
+#p1 .banner {
+    min-height: 15vh;
+    border-radius: 15px;
+    margin-top: 1em;
+    margin-bottom: 1em;
+    background: #e0e0e0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.wrapper .detail .tab {
+    height: 13vh;
+    /* padding: 1.5em; */
+    margin-top: 1em;
+    padding: .5em;
+    word-break: break-all;
+    word-wrap:break-word;
+}
+
+#p1 img {
+    width: 3em;
+    height: 3em;
+    margin-bottom: .5em;
+}
+
+#p1 .tab.dot_wrap svg {
+    width: 2em;
+    height: 2em;
+}
+
+#p1 .share {
+    width: .7em;
+    height: .7em;
+}
+
+/* ------------------------------------------ */
+#p2 .scroller {
+    padding-top: 1.5em;
+    padding-bottom: 1.5em;
+}
