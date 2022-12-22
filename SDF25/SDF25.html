@@ -154,7 +154,7 @@
                                     </div>
                                     
                                     <div class="wrapper py-0 fontSz">
-                                        <div class="tab py-4 justify-content-start border-bottom">
+                                        <div class="tab rounded-0 py-4 justify-content-start border-bottom">
                                             <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-chat-left-dots text-navy me-2" viewBox="0 0 16 16">
                                                 <path d="M14 1a1 1 0 0 1 1 1v8a1 1 0 0 1-1 1H4.414A2 2 0 0 0 3 11.586l-2 2V2a1 1 0 0 1 1-1h12zM2 0a2 2 0 0 0-2 2v12.793a.5.5 0 0 0 .854.353l2.853-2.853A1 1 0 0 1 4.414 12H14a2 2 0 0 0 2-2V2a2 2 0 0 0-2-2H2z"/>
                                                 <path d="M5 6a1 1 0 1 1-2 0 1 1 0 0 1 2 0zm4 0a1 1 0 1 1-2 0 1 1 0 0 1 2 0zm4 0a1 1 0 1 1-2 0 1 1 0 0 1 2 0z"/>
@@ -207,7 +207,7 @@
                                                   </svg>
                                             </div>
                                         </div>
-                                        <div class="tab dot_wrap border-bottom">
+                                        <div class="tab rounded-0 dot_wrap border-bottom">
                                             <div class="d-flex align-items-center">
                                                 <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-dot dot text-b" viewBox="0 0 16 16">
                                                     <path d="M8 9.5a1.5 1.5 0 1 0 0-3 1.5 1.5 0 0 0 0 3z"></path>
@@ -217,7 +217,7 @@
                                                 </svg>
                                             </div>
                                         </div>
-                                        <div class="tab text-b fw-bold border-bottom">
+                                        <div class="tab rounded-0 text-b fw-bold border-bottom">
                                             중소벤처24 기업생애주기서비스
                                             <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-box-arrow-up-right share ms-2" viewBox="0 0 16 16">
                                                 <path fill-rule="evenodd" d="M8.636 3.5a.5.5 0 0 0-.5-.5H1.5A1.5 1.5 0 0 0 0 4.5v10A1.5 1.5 0 0 0 1.5 16h10a1.5 1.5 0 0 0 1.5-1.5V7.864a.5.5 0 0 0-1 0V14.5a.5.5 0 0 1-.5.5h-10a.5.5 0 0 1-.5-.5v-10a.5.5 0 0 1 .5-.5h6.636a.5.5 0 0 0 .5-.5z"/>
@@ -271,135 +271,564 @@
                                 </div>
 
                                 <div class="scroller">
+                                    <div class="text-lg fw-bold mb-4">
+                                        국민비서 서비스 제공을 위한 개인정보 수집·이용·제공 동의서
+                                    </div>
+
+                                    <!-- 동의/비동의 버튼 세트가 총 6개임 -->
+                                    <!-- wrapper은 5개 -->
+                                    <div class="wrapper fontSz">
+                                        <div class="tab txt fw-bold">국민비서 이용약관<div class="text-r">(필수)</div></div>
+                                        <div class="tab bg-lightgray">약관 세부 내용</div>
+                                        <div class="text-center">※ 위와 같이 개인정보를 수집·이용하는데 동의하십니까?</div>
+                                        <div class="tab">
+                                            <div class="mx-2">
+                                                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-circle text-lightgray" viewBox="0 0 16 16">
+                                                    <path d="M8 15A7 7 0 1 1 8 1a7 7 0 0 1 0 14zm0 1A8 8 0 1 0 8 0a8 8 0 0 0 0 16z"/>
+                                                  </svg>
+                                                동의함
+                                            </div>
+                                            <div class="mx-2">
+                                                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-circle text-lightgray" viewBox="0 0 16 16">
+                                                    <path d="M8 15A7 7 0 1 1 8 1a7 7 0 0 1 0 14zm0 1A8 8 0 1 0 8 0a8 8 0 0 0 0 16z"/>
+                                                  </svg>
+                                                동의하지 않음
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                    <div class="wrapper fontSz">
+                                        <div class="tab txt fw-bold">개인정보 수집·이용 동의<div class="text-r">(필수)</div></div>
+                                        <div class="tab bg-lightgray">약관 세부 내용</div>
+                                        <div class="text-center">※ 위와 같이 개인정보를 수집·이용하는데 동의하십니까?</div>
+                                        <div class="tab">
+                                            <div class="mx-2">
+                                                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-circle text-lightgray" viewBox="0 0 16 16">
+                                                    <path d="M8 15A7 7 0 1 1 8 1a7 7 0 0 1 0 14zm0 1A8 8 0 1 0 8 0a8 8 0 0 0 0 16z"/>
+                                                  </svg>
+                                                동의함
+                                            </div>
+                                            <div class="mx-2">
+                                                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-circle text-lightgray" viewBox="0 0 16 16">
+                                                    <path d="M8 15A7 7 0 1 1 8 1a7 7 0 0 1 0 14zm0 1A8 8 0 1 0 8 0a8 8 0 0 0 0 16z"/>
+                                                  </svg>
+                                                동의하지 않음
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                    <div class="wrapper pb-3 fontSz">
+                                        <div class="tab txt fw-bold">주민등록번호 처리에 관한 안내</div>
+                                        <div class="tab bg-lightgray">약관 세부 내용</div>
+                                    </div>
+
+                                    <div class="wrapper fontSz">
+                                        <div class="tab txt fw-bold">개인정보 제3자 제공 동의<div class="text-r">(필수)</div></div>
+                                        <div class="tab bg-lightgray">약관 세부 내용</div>
+                                        <div class="text-center">※ 위와 같이 개인정보를 제3자에게 제공하는데 동의하십니까?</div>
+                                        <div class="tab">
+                                            <div class="mx-2">
+                                                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-circle text-lightgray" viewBox="0 0 16 16">
+                                                    <path d="M8 15A7 7 0 1 1 8 1a7 7 0 0 1 0 14zm0 1A8 8 0 1 0 8 0a8 8 0 0 0 0 16z"/>
+                                                  </svg>
+                                                동의함
+                                            </div>
+                                            <div class="mx-2">
+                                                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-circle text-lightgray" viewBox="0 0 16 16">
+                                                    <path d="M8 15A7 7 0 1 1 8 1a7 7 0 0 1 0 14zm0 1A8 8 0 1 0 8 0a8 8 0 0 0 0 16z"/>
+                                                  </svg>
+                                                동의하지 않음
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                    <div class="wrapper border-dashed-bottom fontSz">
+                                        <div class="tab txt fw-bold">고유식별정보 수집·이용·제공 동의<div class="text-navy">(선택)</div></div>
+                                        <div class="tab bg-lightgray">약관 세부 내용</div>
+                                        <div class="text-center">※ 위와 같이 고유식별정보를 수집·이용하는데 동의하십니까?</div>
+                                        <div class="tab">
+                                            <div class="mx-2">
+                                                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-circle text-lightgray" viewBox="0 0 16 16">
+                                                    <path d="M8 15A7 7 0 1 1 8 1a7 7 0 0 1 0 14zm0 1A8 8 0 1 0 8 0a8 8 0 0 0 0 16z"/>
+                                                  </svg>
+                                                동의함
+                                            </div>
+                                            <div class="mx-2">
+                                                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-circle text-lightgray" viewBox="0 0 16 16">
+                                                    <path d="M8 15A7 7 0 1 1 8 1a7 7 0 0 1 0 14zm0 1A8 8 0 1 0 8 0a8 8 0 0 0 0 16z"/>
+                                                  </svg>
+                                                동의하지 않음
+                                            </div>
+                                        </div>
+                                        <!-- ----------------------------- -->
+                                        <div class="tab bg-lightgray">약관 세부 내용</div>
+                                        <div class="text-center">※ 위와 같이 고유식별정보를 제3자에게 제공하는데 동의하십니까?</div>
+                                        <div class="tab">
+                                            <div class="mx-2">
+                                                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-circle text-lightgray" viewBox="0 0 16 16">
+                                                    <path d="M8 15A7 7 0 1 1 8 1a7 7 0 0 1 0 14zm0 1A8 8 0 1 0 8 0a8 8 0 0 0 0 16z"/>
+                                                  </svg>
+                                                동의함
+                                            </div>
+                                            <div class="mx-2">
+                                                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-circle text-lightgray" viewBox="0 0 16 16">
+                                                    <path d="M8 15A7 7 0 1 1 8 1a7 7 0 0 1 0 14zm0 1A8 8 0 1 0 8 0a8 8 0 0 0 0 16z"/>
+                                                  </svg>
+                                                동의하지 않음
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                    <div class="wrapper border-0 fontSz">
+                                        <div class="pt-3 text-center">국민비서 개인정보 수집 및 이용에 대한 동의를 거부하실 권리가 있으며, 거부 시 국민비서 알림 서비스 신청 및 이용이 제한될 수 있습니다.</div>
+                                        <div class="tab">
+                                            <div class="mx-3">
+                                                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-circle text-lightgray" viewBox="0 0 16 16">
+                                                    <path d="M8 15A7 7 0 1 1 8 1a7 7 0 0 1 0 14zm0 1A8 8 0 1 0 8 0a8 8 0 0 0 0 16z"/>
+                                                  </svg>
+                                                전체 동의
+                                            </div>
+                                            <div class="mx-3">
+                                                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-circle text-lightgray" viewBox="0 0 16 16">
+                                                    <path d="M8 15A7 7 0 1 1 8 1a7 7 0 0 1 0 14zm0 1A8 8 0 1 0 8 0a8 8 0 0 0 0 16z"/>
+                                                  </svg>
+                                                동의하지 않음
+                                            </div>
+                                        </div>
+                                        <!-- ----------------------------- -->
+                                        <div class="tab">
+                                            <button type="button" class="btn btn-gray rounded-0 w-40">
+                                                확인
+                                            </button>
+                                        </div>
+                                    </div>
+                                    
                                 </div>
                             </div>
                         </div>
-                        <!------------------------------ page 3 ------------------------------>
+                        <!------------------------------ page 3 ------------------------------>   
                         <div class="page" id="p3">
                             <div class="page_wrap">
                                 <h1 class="pg_title" style="color: #fff;">Page3</h1>
-                                <div class="pg_top fontSz px-4 py-3">
-                                    <div class="flex-center-center flex-column text-b">
-                                        <svg xmlns="http://www.w3.org/2000/svg" width="23" height="23"
-                                            fill="currentColor" class="bi bi-power" viewBox="0 0 16 16">
-                                            <path d="M7.5 1v7h1V1h-1z" />
-                                            <path
-                                                d="M3 8.812a4.999 4.999 0 0 1 2.578-4.375l-.485-.874A6 6 0 1 0 11 3.616l-.501.865A5 5 0 1 1 3 8.812z" />
-                                        </svg>
-                                        <div class="text-xs">로그아웃</div>
-                                    </div>
-                                    <div class="flex-fill h-100 d-flex justify-content-center align-items-center">
-                                        <div class="image w-100 flex-center-center">
+                                <div class="pg_top px-4 py-3 border-bottom border-2">
+                                    <div class="center">
+                                        <div class="image w-100 flex-start-center">
                                             <img class="icon" src="./assets/image/test.png" alt="">
                                         </div>
+                                    </div>                        
+                                </div>
+
+                                <div class="scroller">
+                                    <div class="wrapper bg-lightgray p-3 mb-4">
+                                            김서울님의 등록된 휴대전화번호 <div class="text-b">010-****-****</div>으로 알림이 제공됩니다.
                                     </div>
-                                    <svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" fill="currentColor"
-                                        class="bi bi-list text-b right" viewBox="0 0 16 16">
-                                        <path fill-rule="evenodd"
-                                            d="M2.5 12a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5zm0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5zm0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5z" />
-                                    </svg>
-                                </div>
 
-                                <div class="pg_top bg-b fontSz px-4">
-                                    <div class="tab">홈</div>
-                                    <div class="tab selected">조회<br>발급</div>
-                                    <div class="tab">민원<br>증명</div>
-                                    <div class="tab">신청<br>제출</div>
-                                    <div class="tab">신고<br>납부</div>
-                                    <div class="tab">상담<br>제보</div>
-                                </div>
+                                    <!-- toggle 알림설정 -->
+                                    <div class="mb-3 fontSZ">
+                                        <div class="text-lg fw-bold">알림 설정</div>
+                                    </div>
+                                    <div class="wrapper fontSz">
+                                        <div class="tab">
+                                            국민비서 알림
+                                            <div class="toggle">
+                                                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-toggle-on text-lightgray" viewBox="0 0 16 16">
+                                                    <path d="M5 3a5 5 0 0 0 0 10h6a5 5 0 0 0 0-10H5zm6 9a4 4 0 1 1 0-8 4 4 0 0 1 0 8z"/>
+                                                  </svg>
+                                            </div>                                        
+                                        </div>
+                                    </div>
+                                    <div class="wrapper fontSz">
+                                        <div class="tab">
+                                            신규서비스 알림
+                                            <div class="toggle">
+                                                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-toggle-on text-lightgray" viewBox="0 0 16 16">
+                                                    <path d="M5 3a5 5 0 0 0 0 10h6a5 5 0 0 0 0-10H5zm6 9a4 4 0 1 1 0-8 4 4 0 0 1 0 8z"/>
+                                                  </svg>
+                                            </div>                                        
+                                        </div>
+                                    </div>
 
-                                <div class="w-100">
-                                    <div class="bg-lightgray">
-                                        <div class="menu">
-                                            <div class="menu_title px-2 py-3 border-bottom fontSz">
-                                                <div class="left text-b">
-                                                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16"
-                                                        fill="currentColor" class="bi bi-display" viewBox="0 0 16 16">
-                                                        <path
-                                                            d="M0 4s0-2 2-2h12s2 0 2 2v6s0 2-2 2h-4c0 .667.083 1.167.25 1.5H11a.5.5 0 0 1 0 1H5a.5.5 0 0 1 0-1h.75c.167-.333.25-.833.25-1.5H2s-2 0-2-2V4zm1.398-.855a.758.758 0 0 0-.254.302A1.46 1.46 0 0 0 1 4.01V10c0 .325.078.502.145.602.07.105.17.188.302.254a1.464 1.464 0 0 0 .538.143L2.01 11H14c.325 0 .502-.078.602-.145a.758.758 0 0 0 .254-.302 1.464 1.464 0 0 0 .143-.538L15 9.99V4c0-.325-.078-.502-.145-.602a.757.757 0 0 0-.302-.254A1.46 1.46 0 0 0 13.99 3H2c-.325 0-.502.078-.602.145z" />
-                                                    </svg>
-                                                    연말정산서비스
-                                                </div>
-                                                <div class="right">
-                                                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16"
-                                                        fill="currentColor" class="bi bi-chevron-up text-lightgray"
-                                                        viewBox="0 0 16 16">
-                                                        <path fill-rule="evenodd"
-                                                            d="M7.646 4.646a.5.5 0 0 1 .708 0l6 6a.5.5 0 0 1-.708.708L8 5.707l-5.646 5.647a.5.5 0 0 1-.708-.708l6-6z" />
-                                                    </svg>
-                                                </div>
+                                    <!-- 수신받을 앱 선택 -->
+                                    <div class="mb-3 fontSZ">
+                                        <div class="text-lg fw-bold">수신받을 앱 선택</div>
+                                    </div>
+                                    <div class="wrapper checklist">
+                                        <div class="tab bg-b">
+                                            <div class="left">
+                                                <div class="w-100 text-center">수신받을 앱</div>
                                             </div>
-                                            <div class="w-100 detail">
-                                                <ul class="fontSz pt-3 m-0 text-gray">
-                                                    <li class="pg_3_answer">근로자 소득·세액공제 자료조회</li>
-                                                    <li>제공동의 현황조회</li>
-                                                    <li>제공동의 신청/취소</li>
-                                                    <li>미성년자녀 자료 조회 신청</li>
-                                                    <li>제공동의 신청 후 진행상황조회</li>
-                                                    <li>간소화자료 일괄제공 확인(똥의) 및 조회</li>
-                                                    <li>공제신고서 작성</li>
-                                                    <li>예상세액 계산하기</li>
-                                                    <li>맞벌이 근로자 절세안내보기</li>
-                                                    <li>3개년 신고내역</li>
-                                                </ul>
+                                            <div class="right">
+                                                <div class="check">
+                                                    주알림<br>(필수*)
+                                                </div>
+                                                <div class="check">
+                                                    부알림<br>(선택)
+                                                </div>      
+                                            </div>                                         
+                                        </div>
+
+                                        <div class="tab fontSz">
+                                            <div class="left">
+                                                <!-- 이미지 추가 -->
+                                                <img class="icon" src="./assets/image/.png" alt="">
+                                                국민은행 (KB스타뱅킹)스타뱅킹)스타뱅킹)
+                                            </div>
+                                            <div class="right">
+                                                <div class="check">
+                                                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-circle text-lightgray" viewBox="0 0 16 16">
+                                                        <path d="M8 15A7 7 0 1 1 8 1a7 7 0 0 1 0 14zm0 1A8 8 0 1 0 8 0a8 8 0 0 0 0 16z"/>
+                                                      </svg>
+                                                </div>
+                                                <div class="check">
+                                                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-circle text-lightgray" viewBox="0 0 16 16">
+                                                        <path d="M8 15A7 7 0 1 1 8 1a7 7 0 0 1 0 14zm0 1A8 8 0 1 0 8 0a8 8 0 0 0 0 16z"/>
+                                                      </svg>
+                                                </div>      
+                                            </div>                                         
+                                        </div>
+
+                                        <div class="tab fontSz">
+                                            <div class="left">
+                                                <!-- 이미지 추가 -->
+                                                <img class="icon" src="./assets/image/.png" alt="">
+                                                내용추가
+                                            </div>
+                                            <div class="right">
+                                                <div class="check">
+                                                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-circle text-lightgray" viewBox="0 0 16 16">
+                                                        <path d="M8 15A7 7 0 1 1 8 1a7 7 0 0 1 0 14zm0 1A8 8 0 1 0 8 0a8 8 0 0 0 0 16z"/>
+                                                      </svg>
+                                                </div>
+                                                <div class="check">
+                                                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-circle text-lightgray" viewBox="0 0 16 16">
+                                                        <path d="M8 15A7 7 0 1 1 8 1a7 7 0 0 1 0 14zm0 1A8 8 0 1 0 8 0a8 8 0 0 0 0 16z"/>
+                                                      </svg>
+                                                </div>      
+                                            </div>                                         
+                                        </div>
+
+                                        <div class="tab fontSz">
+                                            <div class="left">
+                                                <!-- 이미지 추가 -->
+                                                <img class="icon" src="./assets/image/.png" alt="">
+                                                내용추가
+                                            </div>
+                                            <div class="right">
+                                                <div class="check">
+                                                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-circle text-lightgray" viewBox="0 0 16 16">
+                                                        <path d="M8 15A7 7 0 1 1 8 1a7 7 0 0 1 0 14zm0 1A8 8 0 1 0 8 0a8 8 0 0 0 0 16z"/>
+                                                      </svg>
+                                                </div>
+                                                <div class="check">
+                                                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-circle text-lightgray" viewBox="0 0 16 16">
+                                                        <path d="M8 15A7 7 0 1 1 8 1a7 7 0 0 1 0 14zm0 1A8 8 0 1 0 8 0a8 8 0 0 0 0 16z"/>
+                                                      </svg>
+                                                </div>      
+                                            </div>                                         
+                                        </div>
+                                        <div class="tab fontSz">
+                                            <div class="left">
+                                                <!-- 이미지 추가 -->
+                                                <img class="icon" src="./assets/image/.png" alt="">
+                                                내용추가
+                                            </div>
+                                            <div class="right">
+                                                <div class="check">
+                                                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-circle text-lightgray" viewBox="0 0 16 16">
+                                                        <path d="M8 15A7 7 0 1 1 8 1a7 7 0 0 1 0 14zm0 1A8 8 0 1 0 8 0a8 8 0 0 0 0 16z"/>
+                                                      </svg>
+                                                </div>
+                                                <div class="check">
+                                                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-circle text-lightgray" viewBox="0 0 16 16">
+                                                        <path d="M8 15A7 7 0 1 1 8 1a7 7 0 0 1 0 14zm0 1A8 8 0 1 0 8 0a8 8 0 0 0 0 16z"/>
+                                                      </svg>
+                                                </div>      
+                                            </div>                                         
+                                        </div>
+                                        <div class="tab fontSz">
+                                            <div class="left">
+                                                <!-- 이미지 추가 -->
+                                                <img class="icon" src="./assets/image/.png" alt="">
+                                                내용추가
+                                            </div>
+                                            <div class="right">
+                                                <div class="check">
+                                                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-circle text-lightgray" viewBox="0 0 16 16">
+                                                        <path d="M8 15A7 7 0 1 1 8 1a7 7 0 0 1 0 14zm0 1A8 8 0 1 0 8 0a8 8 0 0 0 0 16z"/>
+                                                      </svg>
+                                                </div>
+                                                <div class="check">
+                                                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-circle text-lightgray" viewBox="0 0 16 16">
+                                                        <path d="M8 15A7 7 0 1 1 8 1a7 7 0 0 1 0 14zm0 1A8 8 0 1 0 8 0a8 8 0 0 0 0 16z"/>
+                                                      </svg>
+                                                </div>      
+                                            </div>                                         
+                                        </div>
+                                        <div class="tab fontSz">
+                                            <div class="left">
+                                                <!-- 이미지 추가 -->
+                                                <img class="icon" src="./assets/image/.png" alt="">
+                                                내용추가
+                                            </div>
+                                            <div class="right">
+                                                <div class="check">
+                                                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-circle text-lightgray" viewBox="0 0 16 16">
+                                                        <path d="M8 15A7 7 0 1 1 8 1a7 7 0 0 1 0 14zm0 1A8 8 0 1 0 8 0a8 8 0 0 0 0 16z"/>
+                                                      </svg>
+                                                </div>
+                                                <div class="check">
+                                                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-circle text-lightgray" viewBox="0 0 16 16">
+                                                        <path d="M8 15A7 7 0 1 1 8 1a7 7 0 0 1 0 14zm0 1A8 8 0 1 0 8 0a8 8 0 0 0 0 16z"/>
+                                                      </svg>
+                                                </div>      
+                                            </div>                                         
+                                        </div>
+                                        <div class="tab fontSz">
+                                            <div class="left">
+                                                <!-- 이미지 추가 -->
+                                                <img class="icon" src="./assets/image/.png" alt="">
+                                                내용추가
+                                            </div>
+                                            <div class="right">
+                                                <div class="check">
+                                                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-circle text-lightgray" viewBox="0 0 16 16">
+                                                        <path d="M8 15A7 7 0 1 1 8 1a7 7 0 0 1 0 14zm0 1A8 8 0 1 0 8 0a8 8 0 0 0 0 16z"/>
+                                                      </svg>
+                                                </div>
+                                                <div class="check">
+                                                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-circle text-lightgray" viewBox="0 0 16 16">
+                                                        <path d="M8 15A7 7 0 1 1 8 1a7 7 0 0 1 0 14zm0 1A8 8 0 1 0 8 0a8 8 0 0 0 0 16z"/>
+                                                      </svg>
+                                                </div>      
+                                            </div>                                         
+                                        </div>
+                                        <div class="tab fontSz">
+                                            <div class="left">
+                                                <!-- 이미지 추가 -->
+                                                <img class="icon" src="./assets/image/.png" alt="">
+                                                내용추가
+                                            </div>
+                                            <div class="right">
+                                                <div class="check">
+                                                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-circle text-lightgray" viewBox="0 0 16 16">
+                                                        <path d="M8 15A7 7 0 1 1 8 1a7 7 0 0 1 0 14zm0 1A8 8 0 1 0 8 0a8 8 0 0 0 0 16z"/>
+                                                      </svg>
+                                                </div>
+                                                <div class="check">
+                                                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-circle text-lightgray" viewBox="0 0 16 16">
+                                                        <path d="M8 15A7 7 0 1 1 8 1a7 7 0 0 1 0 14zm0 1A8 8 0 1 0 8 0a8 8 0 0 0 0 16z"/>
+                                                      </svg>
+                                                </div>      
+                                            </div>                                         
+                                        </div>
+                                        <div class="tab fontSz">
+                                            <div class="left">
+                                                <!-- 이미지 추가 -->
+                                                <img class="icon" src="./assets/image/.png" alt="">
+                                                내용추가
+                                            </div>
+                                            <div class="right">
+                                                <div class="check">
+                                                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-circle text-lightgray" viewBox="0 0 16 16">
+                                                        <path d="M8 15A7 7 0 1 1 8 1a7 7 0 0 1 0 14zm0 1A8 8 0 1 0 8 0a8 8 0 0 0 0 16z"/>
+                                                      </svg>
+                                                </div>
+                                                <div class="check">
+                                                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-circle text-lightgray" viewBox="0 0 16 16">
+                                                        <path d="M8 15A7 7 0 1 1 8 1a7 7 0 0 1 0 14zm0 1A8 8 0 1 0 8 0a8 8 0 0 0 0 16z"/>
+                                                      </svg>
+                                                </div>      
+                                            </div>                                         
+                                        </div>
+                                        <div class="tab fontSz">
+                                            <div class="left">
+                                                <!-- 이미지 추가 -->
+                                                <img class="icon" src="./assets/image/.png" alt="">
+                                                내용추가
+                                            </div>
+                                            <div class="right">
+                                                <div class="check">
+                                                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-circle text-lightgray" viewBox="0 0 16 16">
+                                                        <path d="M8 15A7 7 0 1 1 8 1a7 7 0 0 1 0 14zm0 1A8 8 0 1 0 8 0a8 8 0 0 0 0 16z"/>
+                                                      </svg>
+                                                </div>
+                                                <div class="check">
+                                                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-circle text-lightgray" viewBox="0 0 16 16">
+                                                        <path d="M8 15A7 7 0 1 1 8 1a7 7 0 0 1 0 14zm0 1A8 8 0 1 0 8 0a8 8 0 0 0 0 16z"/>
+                                                      </svg>
+                                                </div>      
+                                            </div>                                         
+                                        </div>
+                                        <div class="tab fontSz">
+                                            <div class="left">
+                                                <!-- 이미지 추가 -->
+                                                <img class="icon" src="./assets/image/.png" alt="">
+                                                내용추가
+                                            </div>
+                                            <div class="right">
+                                                <div class="check">
+                                                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-circle text-lightgray" viewBox="0 0 16 16">
+                                                        <path d="M8 15A7 7 0 1 1 8 1a7 7 0 0 1 0 14zm0 1A8 8 0 1 0 8 0a8 8 0 0 0 0 16z"/>
+                                                      </svg>
+                                                </div>
+                                                <div class="check">
+                                                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-circle text-lightgray" viewBox="0 0 16 16">
+                                                        <path d="M8 15A7 7 0 1 1 8 1a7 7 0 0 1 0 14zm0 1A8 8 0 1 0 8 0a8 8 0 0 0 0 16z"/>
+                                                      </svg>
+                                                </div>      
+                                            </div>                                         
+                                        </div>
+                                        <div class="tab fontSz">
+                                            <div class="left">
+                                                <!-- 이미지 추가 -->
+                                                <img class="icon" src="./assets/image/.png" alt="">
+                                                내용추가
+                                            </div>
+                                            <div class="right">
+                                                <div class="check">
+                                                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-circle text-lightgray" viewBox="0 0 16 16">
+                                                        <path d="M8 15A7 7 0 1 1 8 1a7 7 0 0 1 0 14zm0 1A8 8 0 1 0 8 0a8 8 0 0 0 0 16z"/>
+                                                      </svg>
+                                                </div>
+                                                <div class="check">
+                                                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-circle text-lightgray" viewBox="0 0 16 16">
+                                                        <path d="M8 15A7 7 0 1 1 8 1a7 7 0 0 1 0 14zm0 1A8 8 0 1 0 8 0a8 8 0 0 0 0 16z"/>
+                                                      </svg>
+                                                </div>      
+                                            </div>                                         
+                                        </div>
+                                        <div class="tab fontSz">
+                                            <div class="left">
+                                                <!-- 이미지 추가 -->
+                                                <img class="icon" src="./assets/image/.png" alt="">
+                                                내용추가
+                                            </div>
+                                            <div class="right">
+                                                <div class="check">
+                                                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-circle text-lightgray" viewBox="0 0 16 16">
+                                                        <path d="M8 15A7 7 0 1 1 8 1a7 7 0 0 1 0 14zm0 1A8 8 0 1 0 8 0a8 8 0 0 0 0 16z"/>
+                                                      </svg>
+                                                </div>
+                                                <div class="check">
+                                                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-circle text-lightgray" viewBox="0 0 16 16">
+                                                        <path d="M8 15A7 7 0 1 1 8 1a7 7 0 0 1 0 14zm0 1A8 8 0 1 0 8 0a8 8 0 0 0 0 16z"/>
+                                                      </svg>
+                                                </div>      
+                                            </div>                                         
+                                        </div>
+                                        <div class="tab fontSz">
+                                            <div class="left">
+                                                <!-- 이미지 추가 -->
+                                                <img class="icon" src="./assets/image/.png" alt="">
+                                                내용추가
+                                            </div>
+                                            <div class="right">
+                                                <div class="check">
+                                                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-circle text-lightgray" viewBox="0 0 16 16">
+                                                        <path d="M8 15A7 7 0 1 1 8 1a7 7 0 0 1 0 14zm0 1A8 8 0 1 0 8 0a8 8 0 0 0 0 16z"/>
+                                                      </svg>
+                                                </div>
+                                                <div class="check">
+                                                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-circle text-lightgray" viewBox="0 0 16 16">
+                                                        <path d="M8 15A7 7 0 1 1 8 1a7 7 0 0 1 0 14zm0 1A8 8 0 1 0 8 0a8 8 0 0 0 0 16z"/>
+                                                      </svg>
+                                                </div>      
+                                            </div>                                         
+                                        </div>
+                                    </div>
+                                    <div class="wrapper bg-lightgray p-3 mb-4">
+                                        김서울님의 등록된 휴대전화번호 <div class="text-b">010-****-****</div>으로 알림이 제공됩니다.
+                                    </div>
+
+
+
+                                    <!--  -->
+                                    <div class="wrapper pb-3 fontSz">
+                                        <div class="tab txt fw-bold">주민등록번호 처리에 관한 안내</div>
+                                        <div class="tab bg-lightgray">약관 세부 내용</div>
+                                    </div>
+
+                                    <div class="wrapper fontSz">
+                                        <div class="tab txt fw-bold">개인정보 제3자 제공 동의<div class="text-r">(필수)</div></div>
+                                        <div class="tab bg-lightgray">약관 세부 내용</div>
+                                        <div class="text-center">※ 위와 같이 개인정보를 제3자에게 제공하는데 동의하십니까?</div>
+                                        <div class="tab">
+                                            <div class="mx-2">
+                                                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-circle text-lightgray" viewBox="0 0 16 16">
+                                                    <path d="M8 15A7 7 0 1 1 8 1a7 7 0 0 1 0 14zm0 1A8 8 0 1 0 8 0a8 8 0 0 0 0 16z"/>
+                                                  </svg>
+                                                동의함
+                                            </div>
+                                            <div class="mx-2">
+                                                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-circle text-lightgray" viewBox="0 0 16 16">
+                                                    <path d="M8 15A7 7 0 1 1 8 1a7 7 0 0 1 0 14zm0 1A8 8 0 1 0 8 0a8 8 0 0 0 0 16z"/>
+                                                  </svg>
+                                                동의하지 않음
                                             </div>
                                         </div>
+                                    </div>
 
+                                    <div class="wrapper fontSz">
+                                        <div class="tab txt fw-bold">고유식별정보 수집·이용·제공 동의<div class="text-navy">(선택)</div></div>
+                                        <div class="tab bg-lightgray">약관 세부 내용</div>
+                                        <div class="text-center">※ 위와 같이 고유식별정보를 수집·이용하는데 동의하십니까?</div>
+                                        <div class="tab">
+                                            <div class="mx-2">
+                                                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-circle text-lightgray" viewBox="0 0 16 16">
+                                                    <path d="M8 15A7 7 0 1 1 8 1a7 7 0 0 1 0 14zm0 1A8 8 0 1 0 8 0a8 8 0 0 0 0 16z"/>
+                                                  </svg>
+                                                동의함
+                                            </div>
+                                            <div class="mx-2">
+                                                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-circle text-lightgray" viewBox="0 0 16 16">
+                                                    <path d="M8 15A7 7 0 1 1 8 1a7 7 0 0 1 0 14zm0 1A8 8 0 1 0 8 0a8 8 0 0 0 0 16z"/>
+                                                  </svg>
+                                                동의하지 않음
+                                            </div>
+                                        </div>
+                                        <!-- ----------------------------- -->
+                                        <div class="tab bg-lightgray">약관 세부 내용</div>
+                                        <div class="text-center">※ 위와 같이 고유식별정보를 제3자에게 제공하는데 동의하십니까?</div>
+                                        <div class="tab">
+                                            <div class="mx-2">
+                                                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-circle text-lightgray" viewBox="0 0 16 16">
+                                                    <path d="M8 15A7 7 0 1 1 8 1a7 7 0 0 1 0 14zm0 1A8 8 0 1 0 8 0a8 8 0 0 0 0 16z"/>
+                                                  </svg>
+                                                동의함
+                                            </div>
+                                            <div class="mx-2">
+                                                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-circle text-lightgray" viewBox="0 0 16 16">
+                                                    <path d="M8 15A7 7 0 1 1 8 1a7 7 0 0 1 0 14zm0 1A8 8 0 1 0 8 0a8 8 0 0 0 0 16z"/>
+                                                  </svg>
+                                                동의하지 않음
+                                            </div>
+                                        </div>
                                     </div>
-                                </div>
 
-                                <div class="under_bar py-2 pg_3_shadow_inner">
-                                    <div class=" baricon_wrap prev">
-                                        <div class="baricon">
-                                            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16"
-                                                fill="currentColor" class="bi bi-bell" viewBox="0 0 16 16">
-                                                <path
-                                                    d="M8 16a2 2 0 0 0 2-2H6a2 2 0 0 0 2 2zM8 1.918l-.797.161A4.002 4.002 0 0 0 4 6c0 .628-.134 2.197-.459 3.742-.16.767-.376 1.566-.663 2.258h10.244c-.287-.692-.502-1.49-.663-2.258C12.134 8.197 12 6.628 12 6a4.002 4.002 0 0 0-3.203-3.92L8 1.917zM14.22 12c.223.447.481.801.78 1H1c.299-.199.557-.553.78-1C2.68 10.2 3 6.88 3 6c0-2.42 1.72-4.44 4.005-4.901a1 1 0 1 1 1.99 0A5.002 5.002 0 0 1 13 6c0 .88.32 4.2 1.22 6z" />
-                                            </svg>
+                                    <div class="wrapper fontSz">
+                                        <div class="pt-3 text-center">국민비서 개인정보 수집 및 이용에 대한 동의를 거부하실 권리가 있으며, 거부 시 국민비서 알림 서비스 신청 및 이용이 제한될 수 있습니다.</div>
+                                        <div class="tab">
+                                            <div class="mx-3">
+                                                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-circle text-lightgray" viewBox="0 0 16 16">
+                                                    <path d="M8 15A7 7 0 1 1 8 1a7 7 0 0 1 0 14zm0 1A8 8 0 1 0 8 0a8 8 0 0 0 0 16z"/>
+                                                  </svg>
+                                                전체 동의
+                                            </div>
+                                            <div class="mx-3">
+                                                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-circle text-lightgray" viewBox="0 0 16 16">
+                                                    <path d="M8 15A7 7 0 1 1 8 1a7 7 0 0 1 0 14zm0 1A8 8 0 1 0 8 0a8 8 0 0 0 0 16z"/>
+                                                  </svg>
+                                                동의하지 않음
+                                            </div>
                                         </div>
-                                        <div class="bartext">알림</div>
-                                    </div>
-                                    <div class=" baricon_wrap prev">
-                                        <div class="baricon">
-                                            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16"
-                                                fill="currentColor" class="bi bi-person" viewBox="0 0 16 16">
-                                                <path
-                                                    d="M8 8a3 3 0 1 0 0-6 3 3 0 0 0 0 6Zm2-3a2 2 0 1 1-4 0 2 2 0 0 1 4 0Zm4 8c0 1-1 1-1 1H3s-1 0-1-1 1-4 6-4 6 3 6 4Zm-1-.004c-.001-.246-.154-.986-.832-1.664C11.516 10.68 10.289 10 8 10c-2.29 0-3.516.68-4.168 1.332-.678.678-.83 1.418-.832 1.664h10Z" />
-                                            </svg>
+                                        <!-- ----------------------------- -->
+                                        <div class="tab">
+                                            <button type="button" class="btn btn-gray rounded-0 w-40">
+                                                확인
+                                            </button>
                                         </div>
-                                        <div class="bartext">My홈택스</div>
                                     </div>
-                                    <div class=" baricon_wrap prev">
-                                        <div class="baricon">
-                                            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16"
-                                                fill="currentColor" class="bi bi-star" viewBox="0 0 16 16">
-                                                <path
-                                                    d="M2.866 14.85c-.078.444.36.791.746.593l4.39-2.256 4.389 2.256c.386.198.824-.149.746-.592l-.83-4.73 3.522-3.356c.33-.314.16-.888-.282-.95l-4.898-.696L8.465.792a.513.513 0 0 0-.927 0L5.354 5.12l-4.898.696c-.441.062-.612.636-.283.95l3.523 3.356-.83 4.73zm4.905-2.767-3.686 1.894.694-3.957a.565.565 0 0 0-.163-.505L1.71 6.745l4.052-.576a.525.525 0 0 0 .393-.288L8 2.223l1.847 3.658a.525.525 0 0 0 .393.288l4.052.575-2.906 2.77a.565.565 0 0 0-.163.506l.694 3.957-3.686-1.894a.503.503 0 0 0-.461 0z" />
-                                            </svg>
-                                        </div>
-                                        <div class="bartext">최근/My메뉴</div>
-                                    </div>
-                                    <div class=" baricon_wrap prev">
-                                        <div class="baricon">
-                                            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16"
-                                                fill="currentColor" class="bi bi-envelope" viewBox="0 0 16 16">
-                                                <path
-                                                    d="M0 4a2 2 0 0 1 2-2h12a2 2 0 0 1 2 2v8a2 2 0 0 1-2 2H2a2 2 0 0 1-2-2V4Zm2-1a1 1 0 0 0-1 1v.217l7 4.2 7-4.2V4a1 1 0 0 0-1-1H2Zm13 2.383-4.708 2.825L15 11.105V5.383Zm-.034 6.876-5.64-3.471L8 9.583l-1.326-.795-5.64 3.47A1 1 0 0 0 2 13h12a1 1 0 0 0 .966-.741ZM1 11.105l4.708-2.897L1 5.383v5.722Z" />
-                                            </svg>
-                                        </div>
-                                        <div class="bartext">국세우편물</div>
-                                    </div>
-                                    <div class=" baricon_wrap prev">
-                                        <div class="baricon">
-                                            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16"
-                                                fill="currentColor" class="bi bi-type" viewBox="0 0 16 16">
-                                                <path
-                                                    d="m2.244 13.081.943-2.803H6.66l.944 2.803H8.86L5.54 3.75H4.322L1 13.081h1.244zm2.7-7.923L6.34 9.314H3.51l1.4-4.156h.034zm9.146 7.027h.035v.896h1.128V8.125c0-1.51-1.114-2.345-2.646-2.345-1.736 0-2.59.916-2.666 2.174h1.108c.068-.718.595-1.19 1.517-1.19.971 0 1.518.52 1.518 1.464v.731H12.19c-1.647.007-2.522.8-2.522 2.058 0 1.319.957 2.18 2.345 2.18 1.06 0 1.716-.43 2.078-1.011zm-1.763.035c-.752 0-1.456-.397-1.456-1.244 0-.65.424-1.115 1.408-1.115h1.805v.834c0 .896-.752 1.525-1.757 1.525z" />
-                                            </svg>
-                                        </div>
-                                        <div class="bartext">글자크기</div>
-                                    </div>
+                                    
                                 </div>
                             </div>
                         </div>

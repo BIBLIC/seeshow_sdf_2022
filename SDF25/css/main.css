@@ -63,7 +63,7 @@ svg {
 .search {
     width: 100%;
     margin-top: 1em;
-    height: 10vh;
+    height: 7vh;
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -105,12 +105,12 @@ svg {
 
 /* ------------------------------------------ */
 
-.btn-grayb {
-    background: #56647E!important;
+.btn-gray {
+    background: #313131!important;
     color: #fff!important;
 }
 
-.btn-outline-grayb {
+.btn-outline-gray {
     background: #fff!important;
     border:1px solid #56647E!important;
     color:#56647E!important;
@@ -173,6 +173,11 @@ svg {
 
 .text-navy {
     color: #385396 !important;
+}
+
+.text-r {
+    color: #AC5C63!important;
+    display: contents;
 }
 
 .text-xs {
@@ -250,7 +255,109 @@ svg {
 }
 
 /* ------------------------------------------ */
-#p2 .scroller {
+#p2 .scroller,
+#p3 .scroller,
+#p4 .scroller {
     padding-top: 1.5em;
     padding-bottom: 1.5em;
+}
+
+#p2 .wrapper {
+    border: 0;
+    border-radius: 0;
+    padding: 0;
+    margin: 0;
+    border-bottom: 1px solid #e0e0e0;
+}
+
+#p2 .wrapper .tab {
+    border-radius: 0;
+}
+
+#p2 .wrapper .tab.txt {
+    justify-content: flex-start;
+    text-align: left;
+}
+
+#p2 .bg-lightgray,
+#p4 .bg-lightgray {
+    padding: 1em;
+    border: 1.5px solid #E5E5E5;
+}
+
+#p2 .text-b,
+#p3 .text-b,
+#p4 .text-b {
+    display: contents;
+}
+
+.border-dashed-bottom {
+    border-bottom: 2px #000!important;
+    border-style:dashed!important;
+}
+
+
+/* ---------------------------------------- */
+#p3 .tab {
+    border-radius: 5px;
+    justify-content: space-between;
+    min-height: 5vh;
+}
+
+#p3 .wrapper {
+    min-height: 7vh;
+    border-radius: 5px;
+    padding: 1em;
+    padding-top: .5em;
+    padding-bottom: .5em;
+}
+
+#p3 .toggle svg {
+    width: 2.5em;
+    height: 2.5em;
+}
+
+
+#p3 .wrapper.checklist {
+    padding: 0;
+}
+
+#p3 .wrapper.checklist .tab {
+    padding: .7em;
+    border-bottom-left-radius: 0;
+    border-bottom-right-radius: 0;
+    word-break: break-all;
+    word-wrap:break-word;
+}
+
+#p3 .tab .left,
+#p3 .tab .right {
+    display: flex;
+    align-items: center;
+    height: 5vh;
+}
+
+#p3 .tab .left {
+    width: 80%;
+    justify-content: flex-start;
+}
+
+#p3 .tab .left img {
+    width: 2em;
+    height: 2em!important;
+    background-color: #e0e0e0; /*이미지 삽입 후 주석처리*/
+    border-radius: 5px;
+    margin-right: .5em;
+}
+
+#p3 .tab .right {
+    width: 32%;
+    justify-content: flex-end;
+}
+
+#p3 .tab .right .check {
+    width: 45%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
