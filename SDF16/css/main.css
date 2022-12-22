@@ -168,6 +168,17 @@
     flex-direction: column;
 }
 
+#p1 .banner,
+#p2 .banner {
+    border: unset;
+    background: unset;
+}
+
+#p1 .icon {
+    width: 4.5em;
+    border: unset;
+}
+
 #p1 .boxx {
     background-color: #fff;
     margin: 1em;
@@ -207,6 +218,7 @@
 #p2 .icon {
     width: 20vw;
     min-height: 7vh;
+    border: unset;
 }
 
 #p2 .page_wrap {
@@ -252,9 +264,9 @@
 
 
 #p2 .ticket {
-    width: 80%;
+    width: 94%;
     min-height: 10vh;
-    border: 1px solid black;
+    border: unset;
 }
 
 #p2 .scroller,
