@@ -9,79 +9,213 @@ svg {
     color:#227BE4;
 }
 
-.middle {
-    padding: 2em;
+.fontR {
+    color: #A42023;
 }
 
-#p1 .icon {
-    padding: 2em;
+.gray {
+    color: #DFE0E2;
 }
+
+.fontSB {
+    color: #D6E3FC;
+}
+
+.bg-image {
+    width: auto;
+    height: 100%;
+}
+
+.bar {
+    background-color: #fff;
+    min-height: 8vh;
+}
+
+/* -------------------------------- */
 
 #p1 .bar {
+    min-height: 8vh;
     border-bottom: 1px solid #ced4da;
 }
 
-
-#p1 .dot {
-    display: flex;
-    width: 18em;
-    height: 9.5em;
-    background: #595D70;
+#p1 .btn {
+    width: 6em;
+    min-height: 4em;
+    border-radius: 45px;
+    background-color: #357EE7;
     color: #fff;
-    border-radius: 100%;
-    margin: 1em;
-    justify-content: center;
-    align-items: center;
-    font-size: small;
-    
+    font-size: medium;
+    position: absolute; 
+    right: 1em; 
+    bottom: 1em;
 }
 
-#p2 .btn {
-    background-color: #4B26E9;
-    color: #fff;
-    border-radius: 25px;
+#p2 .container {
+    padding: 1em;
 }
 
 #p2 .bar {
-    padding-top: 1em;
-    padding-bottom: 1em;
     border-bottom: 1px solid #ced4da;
 }
 
-#p2 .box {
-    border: 3px;
-    border-color: black;
-    border-style: solid;
-    width: 18vw;
-    height: 8vh;
-    min-height: 8vh;
-    border-radius: 35px;
-  }
-
-#p2 .dot {
+#p5 .text_box,
+#p4 .text_box,
+#p2 .text_box {
+    background-color: #F8F8F8;
     display: flex;
-    width: 9em;
-    height: 9em;
-    border: 0.3px;
-    border-color:rgb(116, 116, 116);
-    border-style: solid;
-    color: black;
-    border-radius: 100%;
-    margin: 1em;
-    justify-content: center;
-    align-items: center;
-    font-size: small;
     flex-direction: column;
+    padding: 1.5em;
+    margin-top: 1em;
+    border-radius: 5px;
 }
 
-#p3 .box {
-    width: 80%;
-    min-height: 6vh;
-    background-color: #ffffff;
-    border-radius: 10px;
-    padding: 1em;
-    margin: 2em;
-    margin-top: 30%;
+#p2 .btn {
+    border: 2px solid #e0e0e0;
+    background-color: #fff;
     display: flex;
+    justify-content: center;
+    align-items: center;
+    
+}
+
+#p2 .scroller {
+    height: 79vh;
+}
+
+#p3 .btn_top {
+    display: flex;
+    justify-content: center;
+    align-items: center;
     flex-direction: column;
- }
+    width: 12em;
+    min-height: 8em;
+    background-color: #286FD7;
+    border-radius: 15px;
+}
+
+#p3 .btn_under {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    width: 12em;
+    min-height: 8em;
+    background-color: #1D467E;
+    border-radius: 15px;
+}
+
+#p4 .form-control {
+    border-radius: 0;
+    border: 0;
+    padding-left: 3em;;
+}
+
+#p4 .form {
+    border: 1px solid #e0e0e0;
+    border-radius: 10px;
+    margin-top: 0.5em;
+}
+
+#p4 .btn {
+    font-size: large;
+    width: 100%;
+    min-height: 8vh;
+    background-color: #C8C8C8;
+}
+
+#p5 .container,
+#p4 .container {
+    padding: 1em;
+}
+
+#p3 .scroller,
+#p4 .scroller,
+#p5 .scroller,
+#p8 .scroller {
+    height: 79vh;
+}
+
+#p7 .icon,
+#p6 .icon,
+#p4 .icon {
+    width: 2em;
+    height: 2em;
+}
+
+#p7 .stop_btn
+#p6 .stop_btn {
+    border: 1px solid #D3D3D3;
+    padding: 0.5em;
+    border-radius: 25px;
+}
+
+#p7 .middle,
+#p6 .middle {
+    height: 100%;
+    background-color: #FBFBFB;
+}
+
+#p7 .pink_box,
+#p6 .pink_box {
+    background-color: #FADADD;
+    border-radius: 20px;
+}
+
+#p7 .under_bar,
+#p6 .under_bar {
+    min-height: 4vh;
+    background-color: #fff;
+}
+
+#p7 .input_bar,
+#p6 .input_bar {
+    min-height: 2vh;
+    padding: 0.5em;
+    background-color: #F4F0F1;
+    border-radius: 25px;
+}
+
+#p7 .dot,
+#p6 .dot {
+    width: 2em;
+    height: 2em;
+    border-radius: 100%;
+    background-color: #B95C57;
+}
+
+#p7 .red_box {
+    background-color: #B75C54;
+    border-radius: 20px;
+}
+
+#p8 .gray_bar {
+    border-radius: 25px;
+    background-color: #F4F0F1;
+    padding: 0.5em;
+    
+}
+
+#p8 .box {
+    background-color: #2587DE;
+    color: #fff;
+    padding: 1em;
+    min-height: 20em;
+    border-radius: 15px;
+}
+
+#p8 .dot {
+    width: 2em;
+    height: 2em;
+    border-radius: 60%;
+    background-color: #1D79C2;
+}
+
+#p8 .container {
+    padding-left: 4em;
+    padding-right: 4em;
+}
+
+#p8 .border_b {
+    border-bottom: 1px solid;
+    
+}
