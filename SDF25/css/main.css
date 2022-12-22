@@ -118,11 +118,11 @@ svg {
 
 .btn-outline-b {
     background: #fff!important;
-    border-color:#4A80E2!important;
+    border:1px solid #4A80E2!important;
     color:#4A80E2!important;
 }
 
-.btn-outline-b {
+.btn-b {
     background: #4A80E2!important;
     color:#fff!important;
 }
@@ -360,4 +360,24 @@ svg {
     display: flex;
     justify-content: center;
     align-items: center;
+}
+
+#p3 .wrapper.checklist.service .left {
+    flex: 1;
+    color: #b3b3b3;
+}
+
+#p3 .wrapper.checklist.service .left svg {
+    margin-right: .5em;
+}
+
+#p3 .wrapper.checklist.service .right {
+    width: fit-content;
+    height: 100%;
+    padding: .5em;
+    padding-top: .1em;
+    padding-bottom: .1em;
+    justify-content: center;
+   font-size: smaller;
+   border-radius: 5px;
 }
