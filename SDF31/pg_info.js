@@ -111,71 +111,71 @@ const inputAnswer = [
 const modalCont = [
     {
         page: 0,
-        instruction: ""
+        instruction: "'시작하기' 버튼을 눌러주세요."
     },
     {
         page: 1,
-        instruction: ""
+        instruction: "하단의 'Order' 탭을 눌러주세요."
     },
     {
         page: 2,
-        instruction: ""
+        instruction: "'푸드' 탭을 눌러주세요."
     },
     {
         page: 3,
-        instruction: ""
+        instruction: "스크롤을 내려 '브레드' 탭을 눌러주세요."
     },
     {
         page: 4,
-        instruction: ""
+        instruction: "스크롤을 내려 '하트 파이' 탭을 눌러주세요."
     },
     {
         page: 5,
-        instruction: ""
+        instruction: "우측 하단의 '주문하기' 버튼을 눌러주세요."
     },
     {
         page: 6,
-        instruction: ""
+        instruction: "'매장 선택하기' 버튼을 눌러주세요."
     },
     {
         page: 7,
-        instruction: ""
+        instruction: "광화문 매장을 선택해주세요."
     },
     {
         page: 8,
-        instruction: ""
+        instruction: "'매장 내 직접 수령' 버튼을 눌러주세요."
     },
     {
         page: 9,
-        instruction: ""
+        instruction: "결제 수단과 주문 내용 확인 후 '3,200원 결제하기' 버튼을 눌러주세요."
     },
     {
         page: 10,
-        instruction: ""
+        instruction: "'전체 포장' 버튼을 눌러주세요."
     },
     {
         page: 11,
-        instruction: ""
+        instruction: "'일회용품 받지 않음' 버튼 클릭 후 '결제 및 주문하기' 버튼을 눌러주세요."
     },
     {
         page: 12,
-        instruction: ""
+        instruction: "'전체 동의'를 눌러주세요."
     },
     {
         page: 13,
-        instruction: ""
+        instruction: "결제수단을 선택해 눌러주세요."
     },
     {
         page: 14,
-        instruction: ""
+        instruction: "'다음' 버튼을 눌러주세요."
     },
     {
         page: 15,
-        instruction: ""
+        instruction: "주문이 완료되었습니다. 하단 네비게이션 바의 '다음' 버튼을 눌러주세요."
     },
     {
         page: 16,
-        instruction: ""
+        instruction: "완료"
     }
 ];
 
@@ -184,52 +184,52 @@ const modalCont = [
 // //*******************************************************************************
 // //**************************+    커서   +*********************************** 
 
-// const cursor_pos_1 = document.querySelector('.cursor_pos_1');
-// const cursor_pos_2 = document.querySelector('.cursor_pos_2');
+const cursor_pos_1 = document.querySelector('.cursor_pos_1');
+const cursor_pos_2 = document.querySelector('.cursor_pos_2');
 // // const cursor_pos_3 = document.querySelector('.cursor_pos_3');
 // // const cursor_pos_4 = document.querySelector('.cursor_pos_4');
 // // const cursor_pos_5 = document.querySelector('.cursor_pos_5');
 // // const cursor_pos_6 = document.querySelector('.cursor_pos_6');
 
-// const cursor_wrap_1 = document.querySelector('.cursor_wrap_1');
-// const cursor_wrap_2 = document.querySelector('.cursor_wrap_2');
+const cursor_wrap_1 = document.querySelector('.cursor_wrap_1');
+const cursor_wrap_2 = document.querySelector('.cursor_wrap_2');
 // // const cursor_wrap_3 = document.querySelector('.cursor_wrap_3');
 // // const cursor_wrap_4 = document.querySelector('.cursor_wrap_4');
 // // const cursor_wrap_5 = document.querySelector('.cursor_wrap_5');
 // // const cursor_wrap_6 = document.querySelector('.cursor_wrap_6');
 
 
-// cursor_wrap_1.style.zIndex = "100";
-// cursor_wrap_2.style.zIndex = "100";
+cursor_wrap_1.style.zIndex = "100";
+cursor_wrap_2.style.zIndex = "100";
 // // cursor_wrap_3.style.zIndex = "100";
 // // cursor_wrap_4.style.zIndex = "100";
 // // cursor_wrap_5.style.zIndex = "100";
 // // cursor_wrap_6.style.zIndex = "100";
 
 
-// const { createPopper } = Popper;
-// createPopper(cursor_pos_1, cursor_wrap_1, {
-//     placement: 'right',
-//     modifiers: [
-//         {
-//             name: 'offset',
-//             options: {
-//                 offset: [0,0],
-//             },
-//         },
-//     ],
-// });
-// createPopper(cursor_pos_2, cursor_wrap_2, {
-//     placement: 'right',
-//     modifiers: [
-//         {
-//             name: 'offset',
-//             options: {
-//                 offset: [30,30],
-//             },
-//         },
-//     ],
-// });
+const { createPopper } = Popper;
+createPopper(cursor_pos_1, cursor_wrap_1, {
+    placement: 'right',
+    modifiers: [
+        {
+            name: 'offset',
+            options: {
+                offset: [0,0],
+            },
+        },
+    ],
+});
+createPopper(cursor_pos_2, cursor_wrap_2, {
+    placement: 'right',
+    modifiers: [
+        {
+            name: 'offset',
+            options: {
+                offset: [0,0],
+            },
+        },
+    ],
+});
 // // createPopper(cursor_pos_3, cursor_wrap_3, {
 // //     placement: 'right',
 // //     modifiers: [

@@ -210,6 +210,10 @@ svg {
   color: #0088d2 !important;
 }
 
+.border_transparent{
+  border-color: #9b9c9d !important;
+}
+
 .show {display:block !important} /*보여주기*/
 .hide {display:none} /*숨기기*/
 

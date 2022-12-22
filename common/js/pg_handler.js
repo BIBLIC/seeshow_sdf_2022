@@ -290,6 +290,7 @@ $('#hint_btn').click(function () {
     $(".pg_" + real_pg + '_border_darker').toggleClass("mk_txt_darker");
     $(".pg_" + real_pg + '_border_b').toggleClass("mk_border_b_darker");
     $(".pg_" + real_pg + '_css_chng').toggleClass("css_toggle");
+    $(".pg_" + real_pg + '_border_trans').toggleClass("border_transparent");
 })
 //*******************************************************************************
 //**************************+    클릭 제어   +*********************************** 
