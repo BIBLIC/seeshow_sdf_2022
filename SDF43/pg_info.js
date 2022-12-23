@@ -118,7 +118,7 @@ const modalCont = [
     },
     {
         page: 2,
-        instruction: "'내 병원비 돌려받기' 버튼을 클릭하세요."
+        instruction: "'받았어요' 버튼을 클릭하세요."
     },
     {
         page: 3,
@@ -126,7 +126,7 @@ const modalCont = [
     },
     {
         page: 4,
-        instruction: "'삼성해상화재보험'을 클릭하세요."
+        instruction: "'△△해상화재보험'을 클릭하세요."
     },
     {
         page: 5,

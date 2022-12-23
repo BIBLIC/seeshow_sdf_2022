@@ -46,6 +46,12 @@
     border-radius: 0;
 }
 
+.logo{
+    height: 100%!important;
+    border: 0!important;
+    width: 8em;
+ }
+
 .border-b {
     border:1.5px solid #0D4DAE!important;
 }
@@ -170,9 +176,12 @@
     margin-right: .7em;
 }
 
-#p1 .banner {
-    min-height: 15vh;
+#p1 .banner{
+    border: unset;
+    background: unset;
+    min-height: 13vh;
 }
+
 
 #p1 .btn {
     background: #fff;

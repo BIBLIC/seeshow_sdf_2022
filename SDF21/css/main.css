@@ -136,8 +136,14 @@
  .icon {
     height: 100%!important;
     border: 0!important;
+    width: 8em;
 }
 
+ .logo{
+    height: 100%!important;
+    border: 0!important;
+    width: 8em;
+ }
 #p1 .scroller svg,
 #p1 .svg {
     width: 1em;
@@ -148,6 +154,13 @@
     width: 100%;
     height: 59vh;
 }
+
+#p1 .banner{
+    border: unset;
+    background: unset;
+    min-height: 13vh;
+}
+
 #p1 .bg-lightgray .tab_top {
     width: 100%;
     min-height: 6vh;
@@ -182,9 +195,6 @@
     margin-right: .7em;
 }
 
-#p1 .banner {
-    min-height: 15vh;
-}
 
 #p1 .btn {
     background: #fff;

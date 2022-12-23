@@ -240,6 +240,11 @@
     min-height: 10vh;
 }
 
+#p2 .ticket_img {
+    width: 19.5em;
+    height: 7em;
+}
+
 #p2 .middle_box {
     display: flex;
     flex-direction: column;
@@ -658,6 +663,8 @@
     border: 2px solid #D6D7D9;
 }
 
+
+
 #p8 .seat {
     display: flex;
     justify-content: center;
@@ -781,6 +788,13 @@
     color: #fff;
     width: 100%;
     min-height: 5vh;
+}
+
+#p9 img,
+#p10 img,
+#p11 img {
+    width: 0.7em;
+    height: 2.5em;
 }
 
 #p9 .date-tab,
