@@ -10,6 +10,12 @@ svg {
     height: 1.3em;
 }
 
+.btn {
+    display: flex!important;
+    justify-content: center;
+    align-items: center;
+}
+
 /* ----------------------------------------- */
 .pg_top {
     width: 100%;
@@ -105,7 +111,7 @@ svg {
 
 /* ------------------------------------------ */
 
-.btn-gray {
+.btn-darkgray {
     background: #313131!important;
     color: #fff!important;
 }
@@ -216,6 +222,16 @@ svg {
     padding-right: 1.5em;
 }
 
+#p5 #modal_ {
+    border-radius: 5px;
+}
+
+#modal_ .btn_wrap {
+    width: 100%;
+    justify-content: center;
+    padding-bottom: 1em;
+}
+
 
 /* p1 ------------------------------------- */
 #p1 .banner {
@@ -257,7 +273,8 @@ svg {
 /* ------------------------------------------ */
 #p2 .scroller,
 #p3 .scroller,
-#p4 .scroller {
+#p4 .scroller,
+#p5 .scroller {
     padding-top: 1.5em;
     padding-bottom: 1.5em;
 }
@@ -279,15 +296,15 @@ svg {
     text-align: left;
 }
 
-#p2 .bg-lightgray,
-#p4 .bg-lightgray {
+#p2 .bg-lightgray {
     padding: 1em;
     border: 1.5px solid #E5E5E5;
 }
 
 #p2 .text-b,
 #p3 .text-b,
-#p4 .text-b {
+#p4 .text-b,
+#p5 .text-b {
     display: contents;
 }
 
@@ -298,13 +315,17 @@ svg {
 
 
 /* ---------------------------------------- */
-#p3 .tab {
+#p3 .tab ,
+#p4 .tab ,
+#p5 .tab {
     border-radius: 5px;
     justify-content: space-between;
     min-height: 5vh;
 }
 
-#p3 .wrapper {
+#p3 .wrapper ,
+#p4 .wrapper ,
+#p5 .wrapper {
     min-height: 7vh;
     border-radius: 5px;
     padding: 1em;
@@ -312,17 +333,23 @@ svg {
     padding-bottom: .5em;
 }
 
-#p3 .toggle svg {
+#p3 .toggle svg ,
+#p4 .toggle svg ,
+#p5 .toggle svg {
     width: 2.5em;
     height: 2.5em;
 }
 
 
-#p3 .wrapper.checklist {
+#p3 .wrapper.checklist ,
+#p4 .wrapper.checklist ,
+#p5 .wrapper.checklist {
     padding: 0;
 }
 
-#p3 .wrapper.checklist .tab {
+#p3 .wrapper.checklist .tab ,
+#p4 .wrapper.checklist .tab ,
+#p5 .wrapper.checklist .tab {
     padding: .7em;
     border-bottom-left-radius: 0;
     border-bottom-right-radius: 0;
@@ -331,18 +358,26 @@ svg {
 }
 
 #p3 .tab .left,
-#p3 .tab .right {
+#p4 .tab .left,
+#p5 .tab .left,
+#p3 .tab .right ,
+#p4 .tab .right ,
+#p5 .tab .right {
     display: flex;
     align-items: center;
-    height: 5vh;
+    /* height: 5vh; */
 }
 
-#p3 .tab .left {
-    width: 80%;
+#p3 .tab .left ,
+#p4 .tab .left ,
+#p5 .tab .left {
+    flex:1;
     justify-content: flex-start;
 }
 
-#p3 .tab .left img {
+#p3 .tab .left img ,
+#p4 .tab .left img ,
+#p5 .tab .left img {
     width: 2em;
     height: 2em!important;
     background-color: #e0e0e0; /*이미지 삽입 후 주석처리*/
@@ -350,28 +385,39 @@ svg {
     margin-right: .5em;
 }
 
-#p3 .tab .right {
-    width: 32%;
+#p3 .tab .right ,
+#p4 .tab .right ,
+#p5 .tab .right {
+    width: 35%;
     justify-content: flex-end;
 }
 
-#p3 .tab .right .check {
-    width: 45%;
+#p3 .tab .right .check ,
+#p4 .tab .right .check ,
+#p5 .tab .right .check {
+    width: 50%;
     display: flex;
     justify-content: center;
     align-items: center;
 }
 
-#p3 .wrapper.checklist.service .left {
+#p3 .wrapper.checklist.service .left ,
+#p4 .wrapper.checklist.service .left ,
+#p5 .wrapper.checklist.service .left {
     flex: 1;
     color: #b3b3b3;
+    padding-right: .3em;
 }
 
-#p3 .wrapper.checklist.service .left svg {
+#p3 .wrapper.checklist.service .left svg ,
+#p4 .wrapper.checklist.service .left svg ,
+#p5 .wrapper.checklist.service .left svg {
     margin-right: .5em;
 }
 
-#p3 .wrapper.checklist.service .right {
+#p3 .wrapper.checklist.service .right ,
+#p4 .wrapper.checklist.service .right ,
+#p5 .wrapper.checklist.service .right {
     width: fit-content;
     height: 100%;
     padding: .5em;
@@ -380,4 +426,16 @@ svg {
     justify-content: center;
    font-size: smaller;
    border-radius: 5px;
+}
+
+#p3 .bg-lightgray,
+#p4 .bg-lightgray,
+#p5 .bg-lightgray {
+    justify-content: flex-start;
+}
+
+/* ---------------- */
+#p5 .scroller {
+    scroll-behavior: unset;
+    overflow-y: unset;
 }
