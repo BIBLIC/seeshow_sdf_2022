@@ -1,0 +1,1087 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta name="viewport"
+        content="width=device-width,height=device-height,initial-scale=1.0,minimum-scale=1.0,maximum-scale=1.0">
+    <title>SDF</title>
+    <link href="../common/styles/reset.css" rel="stylesheet" />
+    <link href="./css/main.css" rel="stylesheet" />
+    <link href="../common/styles/layout.css" rel="stylesheet" />
+    <link href="../common/styles/animate.css" rel="stylesheet" />
+    <!-- CSS only -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" crossorigin="anonymous">
+    <!-- JavaScript Bundle with Popper -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-OERcA2EqjJCMA+/3y+gxIOqMEjwtxJY7qPCqsdltbNJuaOe923+mo//f6V8Qbsw3"
+        crossorigin="anonymous"></script>
+    <script src="https://code.jquery.com/jquery-3.6.1.min.js"></script>
+    <script src="https://unpkg.com/@popperjs/core@2"></script>
+</head>
+
+<body>
+    <div class="bg_phone">
+        <!--form-theme-background-->
+        <div id="wrap">
+            <div class="view">
+                <div class="contain">
+                    <main class="main" id="main" role="main">
+                        <!-- Modal -->
+                        <div class="modal fade" id="staticBackdrop">
+                            <div class="modal-dialog modal-sm">
+                                <div class="modal-content">
+                                    <div class="modal-header border-0">
+                                        <h5 class="modal-title">
+                                            잠깐!
+                                        </h5>
+                                        <!-- <button type="button" class="btn-close" data-bs-dismiss="modal"
+                                            aria-label="Close"></button> -->
+                                    </div>
+                                    <div class="modal-body">
+                                        모달 내용
+                                    </div>
+                                    <div class="modal-footer border-0 ">
+                                        <button type="button" class="btn btn-secondary"
+                                            data-bs-dismiss="modal">확인</button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+
+                        <!------------------------------ page 0 (시작 화면) ------------------------------>
+                        <div class="page" id="p0">
+                            <div class="page_wrap">
+                                    <img src="./assets/image/0.png" class="pt-5" width="100%">
+                                    <div class="w-100 flex-center-center"><h3 class="fontSz">💎💎💎</h3></div>
+                            </div>
+                        </div>
+                        <!------------------------------ page 1 ------------------------------>
+                        <div class="page" id="p1">
+                            <div class="page_wrap">
+                                <h1 class="pg_title" style="color: #fff;">Page1</h1>
+                                <!-- top -->
+                                <div class="pg_top fontSz px-4 py-3">
+                                    <div class="">
+                                        <div class="image flex-center-center">
+                                            <img class="icon" src="./assets/image/test.png" alt="">
+                                        </div>
+                                    </div>
+                                    
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" fill="currentColor"
+                                        class="bi bi-list right" viewBox="0 0 16 16">
+                                        <path fill-rule="evenodd"
+                                            d="M2.5 12a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5zm0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5zm0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5z" />
+                                    </svg>
+                                </div>
+
+                                <div class="pg_top px-4 py-3 fontSz">
+                                    <div class="text-lg">○○○님 안녕하세요.</div>
+                                    <div class="text-sm fw-bold">인증내역 ></div>
+                                </div>
+
+                                <div class="container fontSz">
+                                    <div class="tab">
+                                        <div class="left">
+                                            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-qr-code-scan" viewBox="0 0 16 16">
+                                                <path d="M0 .5A.5.5 0 0 1 .5 0h3a.5.5 0 0 1 0 1H1v2.5a.5.5 0 0 1-1 0v-3Zm12 0a.5.5 0 0 1 .5-.5h3a.5.5 0 0 1 .5.5v3a.5.5 0 0 1-1 0V1h-2.5a.5.5 0 0 1-.5-.5ZM.5 12a.5.5 0 0 1 .5.5V15h2.5a.5.5 0 0 1 0 1h-3a.5.5 0 0 1-.5-.5v-3a.5.5 0 0 1 .5-.5Zm15 0a.5.5 0 0 1 .5.5v3a.5.5 0 0 1-.5.5h-3a.5.5 0 0 1 0-1H15v-2.5a.5.5 0 0 1 .5-.5ZM4 4h1v1H4V4Z"/>
+                                                <path d="M7 2H2v5h5V2ZM3 3h3v3H3V3Zm2 8H4v1h1v-1Z"/>
+                                                <path d="M7 9H2v5h5V9Zm-4 1h3v3H3v-3Zm8-6h1v1h-1V4Z"/>
+                                                <path d="M9 2h5v5H9V2Zm1 1v3h3V3h-3ZM8 8v2h1v1H8v1h2v-2h1v2h1v-1h2v-1h-3V8H8Zm2 2H9V9h1v1Zm4 2h-1v1h-2v1h3v-2Zm-4 2v-1H8v1h2Z"/>
+                                                <path d="M12 9h2V8h-2v1Z"/>
+                                              </svg>
+                                        </div>
+                                        <div class="right">
+                                            <div class="">QR인증</div>
+                                            <div class="text-lightgray">PC(본인확인)과 무인점포에서 이용하세요.</div>
+                                        </div>
+                                    </div>
+                                    <div class="tab">
+                                        <div class="left">
+                                            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-clipboard-check" viewBox="0 0 16 16">
+                                                <path fill-rule="evenodd" d="M10.854 7.146a.5.5 0 0 1 0 .708l-3 3a.5.5 0 0 1-.708 0l-1.5-1.5a.5.5 0 1 1 .708-.708L7.5 9.793l2.646-2.647a.5.5 0 0 1 .708 0z"/>
+                                                <path d="M4 1.5H3a2 2 0 0 0-2 2V14a2 2 0 0 0 2 2h10a2 2 0 0 0 2-2V3.5a2 2 0 0 0-2-2h-1v1h1a1 1 0 0 1 1 1V14a1 1 0 0 1-1 1H3a1 1 0 0 1-1-1V3.5a1 1 0 0 1 1-1h1v-1z"/>
+                                                <path d="M9.5 1a.5.5 0 0 1 .5.5v1a.5.5 0 0 1-.5.5h-3a.5.5 0 0 1-.5-.5v-1a.5.5 0 0 1 .5-.5h3zm-3-1A1.5 1.5 0 0 0 5 1.5v1A1.5 1.5 0 0 0 6.5 4h3A1.5 1.5 0 0 0 11 2.5v-1A1.5 1.5 0 0 0 9.5 0h-3z"/>
+                                              </svg>
+                                        </div>
+                                        <div class="right">
+                                            <div class="">
+                                                <div class="">인증서 관리</div></div>
+                                            <div class="text-lightgray">PASS인증서를 관리하세요.</div>
+                                        </div>
+                                    </div>
+                                    <div class="tab">
+                                        <div class="left">
+                                            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-person-square" viewBox="0 0 16 16">
+                                                <path d="M11 6a3 3 0 1 1-6 0 3 3 0 0 1 6 0z"/>
+                                                <path d="M2 0a2 2 0 0 0-2 2v12a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V2a2 2 0 0 0-2-2H2zm12 1a1 1 0 0 1 1 1v12a1 1 0 0 1-1 1v-1c0-1-1-4-6-4s-6 3-6 4v1a1 1 0 0 1-1-1V2a1 1 0 0 1 1-1h12z"/>
+                                              </svg>
+                                        </div>
+                                        <div class="right">
+                                            <div class="">모바일 신분증</div>
+                                            <div class="text-lightgray">신분증도 안전하고 간편하게 확인하세요.</div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <!------------------------------ page 2 ------------------------------>
+                        <div class="page" id="p2">
+                            <div class="page_wrap">
+                                <h1 class="pg_title" style="color: #fff;">Page2</h1>
+                                <!-- top -->
+                                <div class="pg_top fontSz px-4 py-3">
+                                    <div class="">
+                                        <div class="image flex-center-center">
+                                            <img class="icon" src="./assets/image/test.png" alt="">
+                                        </div>
+                                    </div>
+                                    
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" fill="currentColor"
+                                        class="bi bi-list right" viewBox="0 0 16 16">
+                                        <path fill-rule="evenodd"
+                                            d="M2.5 12a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5zm0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5zm0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5z" />
+                                    </svg>
+                                </div>
+
+                                <div class="pg_top px-4 py-3 fontSz">
+                                    <div class="text-lg">○○○님 안녕하세요.</div>
+                                    <div class="text-sm fw-bold">인증내역 ></div>
+                                </div>
+
+                                <div class="container fontSz">
+                                    <div class="tab">
+                                        <div class="left">
+                                            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-qr-code-scan" viewBox="0 0 16 16">
+                                                <path d="M0 .5A.5.5 0 0 1 .5 0h3a.5.5 0 0 1 0 1H1v2.5a.5.5 0 0 1-1 0v-3Zm12 0a.5.5 0 0 1 .5-.5h3a.5.5 0 0 1 .5.5v3a.5.5 0 0 1-1 0V1h-2.5a.5.5 0 0 1-.5-.5ZM.5 12a.5.5 0 0 1 .5.5V15h2.5a.5.5 0 0 1 0 1h-3a.5.5 0 0 1-.5-.5v-3a.5.5 0 0 1 .5-.5Zm15 0a.5.5 0 0 1 .5.5v3a.5.5 0 0 1-.5.5h-3a.5.5 0 0 1 0-1H15v-2.5a.5.5 0 0 1 .5-.5ZM4 4h1v1H4V4Z"/>
+                                                <path d="M7 2H2v5h5V2ZM3 3h3v3H3V3Zm2 8H4v1h1v-1Z"/>
+                                                <path d="M7 9H2v5h5V9Zm-4 1h3v3H3v-3Zm8-6h1v1h-1V4Z"/>
+                                                <path d="M9 2h5v5H9V2Zm1 1v3h3V3h-3ZM8 8v2h1v1H8v1h2v-2h1v2h1v-1h2v-1h-3V8H8Zm2 2H9V9h1v1Zm4 2h-1v1h-2v1h3v-2Zm-4 2v-1H8v1h2Z"/>
+                                                <path d="M12 9h2V8h-2v1Z"/>
+                                              </svg>
+                                        </div>
+                                        <div class="right">
+                                            <div class="">QR인증</div>
+                                            <div class="text-lightgray">PC(본인확인)과 무인점포에서 이용하세요.</div>
+                                        </div>
+                                    </div>
+                                    <div class="tab">
+                                        <div class="left">
+                                            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-clipboard-check" viewBox="0 0 16 16">
+                                                <path fill-rule="evenodd" d="M10.854 7.146a.5.5 0 0 1 0 .708l-3 3a.5.5 0 0 1-.708 0l-1.5-1.5a.5.5 0 1 1 .708-.708L7.5 9.793l2.646-2.647a.5.5 0 0 1 .708 0z"/>
+                                                <path d="M4 1.5H3a2 2 0 0 0-2 2V14a2 2 0 0 0 2 2h10a2 2 0 0 0 2-2V3.5a2 2 0 0 0-2-2h-1v1h1a1 1 0 0 1 1 1V14a1 1 0 0 1-1 1H3a1 1 0 0 1-1-1V3.5a1 1 0 0 1 1-1h1v-1z"/>
+                                                <path d="M9.5 1a.5.5 0 0 1 .5.5v1a.5.5 0 0 1-.5.5h-3a.5.5 0 0 1-.5-.5v-1a.5.5 0 0 1 .5-.5h3zm-3-1A1.5 1.5 0 0 0 5 1.5v1A1.5 1.5 0 0 0 6.5 4h3A1.5 1.5 0 0 0 11 2.5v-1A1.5 1.5 0 0 0 9.5 0h-3z"/>
+                                              </svg>
+                                        </div>
+                                        <div class="right">
+                                            <div class="">
+                                                <div class="">인증서 관리</div></div>
+                                            <div class="text-lightgray">PASS인증서를 관리하세요.</div>
+                                        </div>
+                                    </div>
+                                    <div class="tab">
+                                        <div class="left">
+                                            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-person-square" viewBox="0 0 16 16">
+                                                <path d="M11 6a3 3 0 1 1-6 0 3 3 0 0 1 6 0z"/>
+                                                <path d="M2 0a2 2 0 0 0-2 2v12a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V2a2 2 0 0 0-2-2H2zm12 1a1 1 0 0 1 1 1v12a1 1 0 0 1-1 1v-1c0-1-1-4-6-4s-6 3-6 4v1a1 1 0 0 1-1-1V2a1 1 0 0 1 1-1h12z"/>
+                                              </svg>
+                                        </div>
+                                        <div class="right">
+                                            <div class="">모바일 신분증</div>
+                                            <div class="text-lightgray">신분증도 안전하고 간편하게 확인하세요.</div>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <!--  모달창 입니다  -->
+                                <div class="" id="modal_">
+                                    <div class="top">
+                                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-x-lg" viewBox="0 0 16 16">
+                                            <path d="M2.146 2.854a.5.5 0 1 1 .708-.708L8 7.293l5.146-5.147a.5.5 0 0 1 .708.708L8.707 8l5.147 5.146a.5.5 0 0 1-.708.708L8 8.707l-5.146 5.147a.5.5 0 0 1-.708-.708L7.293 8 2.146 2.854Z"/>
+                                          </svg>
+                                    </div>
+
+                                    <div class="content top border-bottom fontSz">    
+                                        <div class="svg blue">
+                                            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-person-vcard" viewBox="0 0 16 16">
+                                                <path d="M5 8a2 2 0 1 0 0-4 2 2 0 0 0 0 4Zm4-2.5a.5.5 0 0 1 .5-.5h4a.5.5 0 0 1 0 1h-4a.5.5 0 0 1-.5-.5ZM9 8a.5.5 0 0 1 .5-.5h4a.5.5 0 0 1 0 1h-4A.5.5 0 0 1 9 8Zm1 2.5a.5.5 0 0 1 .5-.5h3a.5.5 0 0 1 0 1h-3a.5.5 0 0 1-.5-.5Z"/>
+                                                <path d="M2 2a2 2 0 0 0-2 2v8a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V4a2 2 0 0 0-2-2H2ZM1 4a1 1 0 0 1 1-1h12a1 1 0 0 1 1 1v8a1 1 0 0 1-1 1H8.96c.026-.163.04-.33.04-.5C9 10.567 7.21 9 5 9c-2.086 0-3.8 1.398-3.984 3.181A1.006 1.006 0 0 1 1 12V4Z"/>
+                                              </svg>
+                                        </div>
+                                        주민등록증
+                                    </div>
+                                    <div class="content fontSz">
+                                        <div class="svg pink">
+                                            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-car-front" viewBox="0 0 16 16">
+                                                <path d="M4 9a1 1 0 1 1-2 0 1 1 0 0 1 2 0Zm10 0a1 1 0 1 1-2 0 1 1 0 0 1 2 0ZM6 8a1 1 0 0 0 0 2h4a1 1 0 1 0 0-2H6ZM4.862 4.276 3.906 6.19a.51.51 0 0 0 .497.731c.91-.073 2.35-.17 3.597-.17 1.247 0 2.688.097 3.597.17a.51.51 0 0 0 .497-.731l-.956-1.913A.5.5 0 0 0 10.691 4H5.309a.5.5 0 0 0-.447.276Z"/>
+                                                <path d="M2.52 3.515A2.5 2.5 0 0 1 4.82 2h6.362c1 0 1.904.596 2.298 1.515l.792 1.848c.075.175.21.319.38.404.5.25.855.715.965 1.262l.335 1.679c.033.161.049.325.049.49v.413c0 .814-.39 1.543-1 1.997V13.5a.5.5 0 0 1-.5.5h-2a.5.5 0 0 1-.5-.5v-1.338c-1.292.048-2.745.088-4 .088s-2.708-.04-4-.088V13.5a.5.5 0 0 1-.5.5h-2a.5.5 0 0 1-.5-.5v-1.892c-.61-.454-1-1.183-1-1.997v-.413a2.5 2.5 0 0 1 .049-.49l.335-1.68c.11-.546.465-1.012.964-1.261a.807.807 0 0 0 .381-.404l.792-1.848ZM4.82 3a1.5 1.5 0 0 0-1.379.91l-.792 1.847a1.8 1.8 0 0 1-.853.904.807.807 0 0 0-.43.564L1.03 8.904a1.5 1.5 0 0 0-.03.294v.413c0 .796.62 1.448 1.408 1.484 1.555.07 3.786.155 5.592.155 1.806 0 4.037-.084 5.592-.155A1.479 1.479 0 0 0 15 9.611v-.413c0-.099-.01-.197-.03-.294l-.335-1.68a.807.807 0 0 0-.43-.563 1.807 1.807 0 0 1-.853-.904l-.792-1.848A1.5 1.5 0 0 0 11.18 3H4.82Z"/>
+                                              </svg>
+                                       </div>
+                                        운전면허증
+                                    </div>
+                                </div>
+                                <!-- 여기까지 모달창 -->
+                            </div>
+                        </div>
+                        <!------------------------------ page 3 ------------------------------>
+                        <div class="page" id="p3">
+                            <div class="page_wrap">
+                                <h1 class="pg_title" style="color: #fff;">Page2</h1>
+                                <!-- top -->
+                                <div class="pg_top fontSz px-4 py-3">
+                                    <div class="">
+                                        <div class="image flex-center-center">
+                                            <img class="icon" src="./assets/image/test.png" alt="">
+                                        </div>
+                                    </div>
+                        
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" fill="currentColor" class="bi bi-list right"
+                                        viewBox="0 0 16 16">
+                                        <path fill-rule="evenodd"
+                                            d="M2.5 12a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5zm0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5zm0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5z" />
+                                    </svg>
+                                </div>
+                        
+                                <div class="pg_top px-4 py-3 fontSz">
+                                    <div class="text-lg">○○○님 안녕하세요.</div>
+                                    <div class="text-sm fw-bold">인증내역 ></div>
+                                </div>
+                        
+                                <div class="container fontSz">
+                                    <div class="tab">
+                                        <div class="left">
+                                            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+                                                class="bi bi-qr-code-scan" viewBox="0 0 16 16">
+                                                <path
+                                                    d="M0 .5A.5.5 0 0 1 .5 0h3a.5.5 0 0 1 0 1H1v2.5a.5.5 0 0 1-1 0v-3Zm12 0a.5.5 0 0 1 .5-.5h3a.5.5 0 0 1 .5.5v3a.5.5 0 0 1-1 0V1h-2.5a.5.5 0 0 1-.5-.5ZM.5 12a.5.5 0 0 1 .5.5V15h2.5a.5.5 0 0 1 0 1h-3a.5.5 0 0 1-.5-.5v-3a.5.5 0 0 1 .5-.5Zm15 0a.5.5 0 0 1 .5.5v3a.5.5 0 0 1-.5.5h-3a.5.5 0 0 1 0-1H15v-2.5a.5.5 0 0 1 .5-.5ZM4 4h1v1H4V4Z" />
+                                                <path d="M7 2H2v5h5V2ZM3 3h3v3H3V3Zm2 8H4v1h1v-1Z" />
+                                                <path d="M7 9H2v5h5V9Zm-4 1h3v3H3v-3Zm8-6h1v1h-1V4Z" />
+                                                <path
+                                                    d="M9 2h5v5H9V2Zm1 1v3h3V3h-3ZM8 8v2h1v1H8v1h2v-2h1v2h1v-1h2v-1h-3V8H8Zm2 2H9V9h1v1Zm4 2h-1v1h-2v1h3v-2Zm-4 2v-1H8v1h2Z" />
+                                                <path d="M12 9h2V8h-2v1Z" />
+                                            </svg>
+                                        </div>
+                                        <div class="right">
+                                            <div class="">QR인증</div>
+                                            <div class="text-lightgray">PC(본인확인)과 무인점포에서 이용하세요.</div>
+                                        </div>
+                                    </div>
+                                    <div class="tab">
+                                        <div class="left">
+                                            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+                                                class="bi bi-clipboard-check" viewBox="0 0 16 16">
+                                                <path fill-rule="evenodd"
+                                                    d="M10.854 7.146a.5.5 0 0 1 0 .708l-3 3a.5.5 0 0 1-.708 0l-1.5-1.5a.5.5 0 1 1 .708-.708L7.5 9.793l2.646-2.647a.5.5 0 0 1 .708 0z" />
+                                                <path
+                                                    d="M4 1.5H3a2 2 0 0 0-2 2V14a2 2 0 0 0 2 2h10a2 2 0 0 0 2-2V3.5a2 2 0 0 0-2-2h-1v1h1a1 1 0 0 1 1 1V14a1 1 0 0 1-1 1H3a1 1 0 0 1-1-1V3.5a1 1 0 0 1 1-1h1v-1z" />
+                                                <path
+                                                    d="M9.5 1a.5.5 0 0 1 .5.5v1a.5.5 0 0 1-.5.5h-3a.5.5 0 0 1-.5-.5v-1a.5.5 0 0 1 .5-.5h3zm-3-1A1.5 1.5 0 0 0 5 1.5v1A1.5 1.5 0 0 0 6.5 4h3A1.5 1.5 0 0 0 11 2.5v-1A1.5 1.5 0 0 0 9.5 0h-3z" />
+                                            </svg>
+                                        </div>
+                                        <div class="right">
+                                            <div class="">
+                                                <div class="">인증서 관리</div>
+                                            </div>
+                                            <div class="text-lightgray">PASS인증서를 관리하세요.</div>
+                                        </div>
+                                    </div>
+                                    <div class="tab">
+                                        <div class="left">
+                                            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+                                                class="bi bi-person-square" viewBox="0 0 16 16">
+                                                <path d="M11 6a3 3 0 1 1-6 0 3 3 0 0 1 6 0z" />
+                                                <path
+                                                    d="M2 0a2 2 0 0 0-2 2v12a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V2a2 2 0 0 0-2-2H2zm12 1a1 1 0 0 1 1 1v12a1 1 0 0 1-1 1v-1c0-1-1-4-6-4s-6 3-6 4v1a1 1 0 0 1-1-1V2a1 1 0 0 1 1-1h12z" />
+                                            </svg>
+                                        </div>
+                                        <div class="right">
+                                            <div class="">모바일 신분증</div>
+                                            <div class="text-lightgray">신분증도 안전하고 간편하게 확인하세요.</div>
+                                        </div>
+                                    </div>
+                                </div>
+                        
+                                <!--  모달창 입니다  -->
+                                <div class="" id="modal_">
+                                    <div class="content fontSz">
+                                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-geo-alt-fill" viewBox="0 0 16 16">
+                                            <path d="M8 16s6-5.686 6-10A6 6 0 0 0 2 6c0 4.314 6 10 6 10zm0-7a3 3 0 1 1 0-6 3 3 0 0 1 0 6z"/>
+                                          </svg>
+                                        <div class="modal_cont text-center">
+                                            <div class="fw-bold">PASS</div>에서 내 기기 위치에 액세스하도록 허용하시겠습니까?
+                                        </div>
+                                    </div>
+                                    <div class="modal_bottom_wrap">
+                                        <div class="btn_wrap">
+                                            <div class="btn fontSz">앱 사용 중에만 허용</div>
+                                            <div class="btn fontSz">이번만 허용</div>
+                                            <div class="btn fontSz">허용 안함</div>
+                                        </div>
+                                    </div>
+                        
+                                </div>
+                                <!-- 여기까지 모달창 -->
+                            </div>
+                        </div>
+                        <!------------------------------ page 4 ------------------------------>
+                        <div class="page" id="p4">
+                            <div class="page_wrap fontSz">
+                                <h1 class="pg_title" style="color: #fff;">Page4</h1>
+                                <!-- top -->
+                                <div class="pg_top flex-column align-items-start px-4 pt-4">
+                                    <div class="text-lg">(PASS)주민등록증 모바일 확인 서비스</div>
+                                </div>
+                                <div class="pg_top flex-column align-items-start px-4 pt-1">
+                                    <div class="text-lightgray">서비스 사용을 위한 약관 동의가 필요합니다.</div>
+                                </div>
+
+                                <div class="w-100 d-flex justify-content-end px-4 mb-2">
+                                        <img class="" src="./assets/image/6.png" alt="">
+                                </div>
+
+                                <div class="container px-4">
+                                    <div class="tab">
+                                        <div class="left first">
+                                            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-check-circle text-lightgray" viewBox="0 0 16 16">
+                                                <path d="M8 15A7 7 0 1 1 8 1a7 7 0 0 1 0 14zm0 1A8 8 0 1 0 8 0a8 8 0 0 0 0 16z"/>
+                                                <path d="M10.97 4.97a.235.235 0 0 0-.02.022L7.477 9.417 5.384 7.323a.75.75 0 0 0-1.06 1.06L6.97 11.03a.75.75 0 0 0 1.079-.02l3.992-4.99a.75.75 0 0 0-1.071-1.05z"/>
+                                              </svg>
+                                            <div class="txt">서비스 필수 항목 모두 동의</div>
+                                        </div>
+                                        <div class="right">
+                                            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-chevron-up" viewBox="0 0 16 16">
+                                                <path fill-rule="evenodd" d="M7.646 4.646a.5.5 0 0 1 .708 0l6 6a.5.5 0 0 1-.708.708L8 5.707l-5.646 5.647a.5.5 0 0 1-.708-.708l6-6z"/>
+                                              </svg>
+                                        </div>
+                                    </div>
+
+                                    <div class="tab">
+                                        <div class="left">
+                                            <svg></svg>
+                                            <div class="txt">내용추가</div>
+                                        </div>
+                                        <div class="right">
+                                            보기
+                                        </div>
+                                    </div>
+
+                                    <div class="tab">
+                                        <div class="left">
+                                            <svg></svg>
+                                            <div class="txt">내용추가</div>
+                                        </div>
+                                        <div class="right">
+                                            보기
+                                        </div>
+                                    </div>
+
+                                    <div class="tab">
+                                        <div class="left">
+                                            <svg></svg>
+                                            <div class="txt">내용추가</div>
+                                        </div>
+                                        <div class="right">
+                                            보기
+                                        </div>
+                                    </div>
+
+                                    <div class="tab">
+                                        <div class="left">
+                                            <svg></svg>
+                                            <div class="txt">내용추가</div>
+                                        </div>
+                                        <div class="right">
+                                            보기
+                                        </div>
+                                    </div>
+
+                                    <div class="tab">
+                                        <div class="left">
+                                            <svg></svg>
+                                            <div class="txt">내용추가</div>
+                                        </div>
+                                        <div class="right">
+                                            보기
+                                        </div>
+                                    </div>
+                                    <div class="tab">
+                                        <div class="left">
+                                            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-check2 text-lightgray" viewBox="0 0 16 16">
+                                                <path d="M13.854 3.646a.5.5 0 0 1 0 .708l-7 7a.5.5 0 0 1-.708 0l-3.5-3.5a.5.5 0 1 1 .708-.708L6.5 10.293l6.646-6.647a.5.5 0 0 1 .708 0z"/>
+                                              </svg>
+                                            <div class="txt">내용추가</div>
+                                        </div>
+                                        <div class="right">
+                                            보기
+                                        </div>
+                                    </div>
+                                    <div class="tab">
+                                        <div class="left">
+                                            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-check2 text-lightgray" viewBox="0 0 16 16">
+                                                <path d="M13.854 3.646a.5.5 0 0 1 0 .708l-7 7a.5.5 0 0 1-.708 0l-3.5-3.5a.5.5 0 1 1 .708-.708L6.5 10.293l6.646-6.647a.5.5 0 0 1 .708 0z"/>
+                                              </svg>
+                                            <div class="txt">내용추가</div>
+                                        </div>
+                                        <div class="right">
+                                            보기
+                                        </div>
+                                    </div>
+                                    <div class="tab">
+                                        <div class="left">
+                                            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-check2 text-lightgray" viewBox="0 0 16 16">
+                                                <path d="M13.854 3.646a.5.5 0 0 1 0 .708l-7 7a.5.5 0 0 1-.708 0l-3.5-3.5a.5.5 0 1 1 .708-.708L6.5 10.293l6.646-6.647a.5.5 0 0 1 .708 0z"/>
+                                              </svg>
+                                            <div class="txt">내용추가</div>
+                                        </div>
+                                        <div class="right">
+                                            보기
+                                        </div>
+                                    </div>
+                                   
+                                </div>
+
+                                <div class="under_bar px-4">
+                                    <div class="btn_wrap mb-3">
+                                        <div class="btn btn-outline-dark w-49">
+                                            닫기
+                                        </div>
+                                        <div class="btn btn-lightgray w-49">
+                                            가입
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <!------------------------------ page 5 ------------------------------>
+                        <div class="page" id="p5">
+                            <div class="page_wrap fontSz">
+                                <h1 class="pg_title" style="color: #fff;">Page5</h1>
+                                <!-- top -->
+                                <div class="pg_top flex-column align-items-start px-4 pt-4">
+                                    <div class="text-lg">(PASS)주민등록증 모바일 확인 서비스</div>
+                                </div>
+                                <div class="pg_top flex-column align-items-start px-4 pt-1">
+                                    <div class="text-lightgray">서비스 사용을 위한 약관 동의가 필요합니다.</div>
+                                </div>
+
+                                <div class="w-100 d-flex justify-content-end px-4 mb-2">
+                                        <img class="" src="./assets/image/6.png" alt="">
+                                </div>
+
+                                <div class="container px-4">
+                                    <div class="tab">
+                                        <div class="left first">
+                                            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-check-circle-fill" viewBox="0 0 16 16">
+                                                <path d="M16 8A8 8 0 1 1 0 8a8 8 0 0 1 16 0zm-3.97-3.03a.75.75 0 0 0-1.08.022L7.477 9.417 5.384 7.323a.75.75 0 0 0-1.06 1.06L6.97 11.03a.75.75 0 0 0 1.079-.02l3.992-4.99a.75.75 0 0 0-.01-1.05z"/>
+                                              </svg>
+                                            <div class="txt fw-bold">서비스 필수 항목 모두 동의</div>
+                                        </div>
+                                        <div class="right">
+                                            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-chevron-up" viewBox="0 0 16 16">
+                                                <path fill-rule="evenodd" d="M7.646 4.646a.5.5 0 0 1 .708 0l6 6a.5.5 0 0 1-.708.708L8 5.707l-5.646 5.647a.5.5 0 0 1-.708-.708l6-6z"/>
+                                              </svg>
+                                        </div>
+                                    </div>
+                                    <div class="tab">
+                                        <div class="left">
+                                            <svg></svg>
+                                            <div class="txt fw-bold">내용추가</div>
+                                        </div>
+                                        <div class="right">
+                                            보기
+                                        </div>
+                                    </div>
+                                    <div class="tab">
+                                        <div class="left">
+                                            <svg></svg>
+                                            <div class="txt fw-bold">내용추가</div>
+                                        </div>
+                                        <div class="right">
+                                            보기
+                                        </div>
+                                    </div>
+                                    <div class="tab">
+                                        <div class="left">
+                                            <svg></svg>
+                                            <div class="txt fw-bold">내용추가</div>
+                                        </div>
+                                        <div class="right">
+                                            보기
+                                        </div>
+                                    </div>
+                                    <div class="tab">
+                                        <div class="left">
+                                            <svg></svg>
+                                            <div class="txt fw-bold">내용추가</div>
+                                        </div>
+                                        <div class="right">
+                                            보기
+                                        </div>
+                                    </div>
+                                    <div class="tab">
+                                        <div class="left">
+                                            <svg></svg>
+                                            <div class="txt fw-bold">내용추가</div>
+                                        </div>
+                                        <div class="right">
+                                            보기
+                                        </div>
+                                    </div>
+
+                                    <div class="tab">
+                                        <div class="left">
+                                            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-check2 text-lightgray" viewBox="0 0 16 16">
+                                                <path d="M13.854 3.646a.5.5 0 0 1 0 .708l-7 7a.5.5 0 0 1-.708 0l-3.5-3.5a.5.5 0 1 1 .708-.708L6.5 10.293l6.646-6.647a.5.5 0 0 1 .708 0z"/>
+                                              </svg>
+                                            <div class="txt">내용추가</div>
+                                        </div>
+                                        <div class="right">
+                                            보기
+                                        </div>
+                                    </div>
+                                    <div class="tab">
+                                        <div class="left">
+                                            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-check2 text-lightgray" viewBox="0 0 16 16">
+                                                <path d="M13.854 3.646a.5.5 0 0 1 0 .708l-7 7a.5.5 0 0 1-.708 0l-3.5-3.5a.5.5 0 1 1 .708-.708L6.5 10.293l6.646-6.647a.5.5 0 0 1 .708 0z"/>
+                                              </svg>
+                                            <div class="txt">내용추가</div>
+                                        </div>
+                                        <div class="right">
+                                            보기
+                                        </div>
+                                    </div>
+                                    <div class="tab">
+                                        <div class="left">
+                                            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-check2 text-lightgray" viewBox="0 0 16 16">
+                                                <path d="M13.854 3.646a.5.5 0 0 1 0 .708l-7 7a.5.5 0 0 1-.708 0l-3.5-3.5a.5.5 0 1 1 .708-.708L6.5 10.293l6.646-6.647a.5.5 0 0 1 .708 0z"/>
+                                              </svg>
+                                            <div class="txt">내용추가</div>
+                                        </div>
+                                        <div class="right">
+                                            보기
+                                        </div>
+                                    </div>
+                                   
+                                </div>
+
+                                <div class="under_bar px-4">
+                                    <div class="btn_wrap mb-3">
+                                        <div class="btn btn-outline-dark w-49">
+                                            닫기
+                                        </div>
+                                        <div class="btn btn-darkgray w-49">
+                                            가입
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <!------------------------------ page 6 ------------------------------>
+                        <div class="page" id="p6">
+                            <div class="page_wrap">
+                                <h1 class="pg_title" style="color: #fff;">Page6</h1>
+                                <!-- top -->
+                                <div class="pg_top fontSz px-4 py-3">
+                                    <div class="">
+                                        <div class="image flex-center-center">
+                                            <img class="icon" src="./assets/image/test.png" alt="">
+                                        </div>
+                                    </div>
+                        
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-x-lg" viewBox="0 0 16 16">
+                                        <path d="M2.146 2.854a.5.5 0 1 1 .708-.708L8 7.293l5.146-5.147a.5.5 0 0 1 .708.708L8.707 8l5.147 5.146a.5.5 0 0 1-.708.708L8 8.707l-5.146 5.147a.5.5 0 0 1-.708-.708L7.293 8 2.146 2.854Z"></path>
+                                      </svg>
+                                </div>
+                        
+                                <div class="container pt-5">
+                                    <div class="tab flex-column fontSz">
+                                        <div class="fw-bold text-lg">비밀번호 입력</div>
+                                        <div class="text-lightgray text-sm pt-2 pb-4">서비스 이용을 위해 비밀번호를 입력하세요</div>
+                                    </div>
+                                    <div class="pw_wrap">
+                                        <span class="dot dot0"></span>
+                                        <span class="dot dot1"></span>
+                                        <span class="dot dot2"></span>
+                                        <span class="dot dot3"></span>
+                                        <span class="dot dot4"></span>
+                                        <span class="dot dot5"></span>
+                                    </div>
+                                </div>
+                        
+                                <div class="under_bar fontSz">
+                                    <div class="tab key_wrap">
+                                        <div class="key">
+                                            7
+                                        </div>
+                                        <div class="key">
+                                            0
+                                        </div>
+                                        <div class="key">
+                                            4
+                                        </div>
+                                    </div>
+                                    <div class="tab key_wrap">
+                                        <div class="key">
+                                            9
+                                        </div>
+                                        <div class="key">
+                                            6
+                                        </div>
+                                        <div class="key">
+                                            2
+                                        </div>
+                                    </div>
+                                    <div class="tab key_wrap">
+                                        <div class="key">
+                                            5
+                                        </div>
+                                        <div class="key">
+                                            8
+                                        </div>
+                                        <div class="key">
+                                            3
+                                        </div>
+                                    </div>
+                                    <div class="tab key_wrap">
+                                        <div class="key">
+                                            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-shuffle text-lightgray" viewBox="0 0 16 16">
+                                                <path fill-rule="evenodd" d="M0 3.5A.5.5 0 0 1 .5 3H1c2.202 0 3.827 1.24 4.874 2.418.49.552.865 1.102 1.126 1.532.26-.43.636-.98 1.126-1.532C9.173 4.24 10.798 3 13 3v1c-1.798 0-3.173 1.01-4.126 2.082A9.624 9.624 0 0 0 7.556 8a9.624 9.624 0 0 0 1.317 1.918C9.828 10.99 11.204 12 13 12v1c-2.202 0-3.827-1.24-4.874-2.418A10.595 10.595 0 0 1 7 9.05c-.26.43-.636.98-1.126 1.532C4.827 11.76 3.202 13 1 13H.5a.5.5 0 0 1 0-1H1c1.798 0 3.173-1.01 4.126-2.082A9.624 9.624 0 0 0 6.444 8a9.624 9.624 0 0 0-1.317-1.918C4.172 5.01 2.796 4 1 4H.5a.5.5 0 0 1-.5-.5z"/>
+                                                <path d="M13 5.466V1.534a.25.25 0 0 1 .41-.192l2.36 1.966c.12.1.12.284 0 .384l-2.36 1.966a.25.25 0 0 1-.41-.192zm0 9v-3.932a.25.25 0 0 1 .41-.192l2.36 1.966c.12.1.12.284 0 .384l-2.36 1.966a.25.25 0 0 1-.41-.192z"/>
+                                              </svg>
+                                        </div>
+                                        <div class="key">
+                                            8
+                                        </div>
+                                        <div class="key">
+                                            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-backspace-fill text-lightgray" viewBox="0 0 16 16">
+                                                <path d="M15.683 3a2 2 0 0 0-2-2h-7.08a2 2 0 0 0-1.519.698L.241 7.35a1 1 0 0 0 0 1.302l4.843 5.65A2 2 0 0 0 6.603 15h7.08a2 2 0 0 0 2-2V3zM5.829 5.854a.5.5 0 1 1 .707-.708l2.147 2.147 2.146-2.147a.5.5 0 1 1 .707.708L9.39 8l2.146 2.146a.5.5 0 0 1-.707.708L8.683 8.707l-2.147 2.147a.5.5 0 0 1-.707-.708L7.976 8 5.829 5.854z"/>
+                                              </svg>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <!------------------------------ page 7 ------------------------------>
+                        <div class="page" id="p7">
+                            <div class="page_wrap">
+                                <h1 class="pg_title" style="color: #fff;">Page7</h1>
+                                <!-- top -->
+                                <div class="pg_top fontSz px-4 py-3">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-chevron-left" viewBox="0 0 16 16">
+                                        <path fill-rule="evenodd" d="M11.354 1.646a.5.5 0 0 1 0 .708L5.707 8l5.647 5.646a.5.5 0 0 1-.708.708l-6-6a.5.5 0 0 1 0-.708l6-6a.5.5 0 0 1 .708 0z"/>
+                                    </svg>
+                                    <div class="flex-center-center flex-fill text-lg">모바일 신분증</div>
+                                    <svg></svg>
+                                </div>
+                                <div class="w-100 px-4 fontSz">
+                                    <div class="d-flex justify-content-start align-items-end flex-fill text-lg">
+                                        <div class="border-bottom border-2 border-dark fw-bold">주민등록증</div>
+                                    </div>
+                                </div>
+
+                                <div class="container flex-fill bg-lightgray p-5">
+                                    <div class="w-100 h-100 flex-column flex-center-center bg-white rounded-top p-5 text-center">
+                                        <!-- 이미지 추가 -->
+                                        <img class="w-100 icon" src="./assets/image/추가.png" alt="">
+                                        주민등록증 모바일 확인 서비스를 등록 하시겠습니까?
+                                    </div>
+                                    <div class="tab">
+                                        <div class="btn btn-darkgray rounded-0 rounded-bottom w-100">
+                                            등록
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <!------------------------------ page 8 ------------------------------>
+                        <div class="page" id="p8">
+                            <div class="page_wrap">
+                                <h1 class="pg_title" style="color: #fff;">Page8</h1>
+                                <!-- top -->
+                                <div class="pg_top fontSz px-4 py-3">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-chevron-left"
+                                        viewBox="0 0 16 16">
+                                        <path fill-rule="evenodd"
+                                            d="M11.354 1.646a.5.5 0 0 1 0 .708L5.707 8l5.647 5.646a.5.5 0 0 1-.708.708l-6-6a.5.5 0 0 1 0-.708l6-6a.5.5 0 0 1 .708 0z" />
+                                    </svg>
+                                    <div class="flex-center-center flex-fill text-lg">모바일 신분증</div>
+                                    <svg></svg>
+                                </div>
+                            
+                                <div class="scroller fontSz">
+                                    <div class="w-100 flex-column align-items-start px-4 py-3">
+                                        <div class="text-lg">주민등록증 모바일 확인서비스<br>등록을 위해 주민등록증 정보를 입력해주세요.</div>
+                                    </div>
+                            
+                                    <div class="w-100 bg-lightgray">
+                                        <!-- 이미지 추가(배경 꼭 투명으로) -->
+                                        <div class="bg-image" style="background-image: url('./assets/image/');"></div>
+                                    </div>
+                            
+                                    <div class="container px-4 py-4 flex-fill">
+                                        <div class="tab">
+                                            이름
+                                            <div class="form">
+                                                <!-- 이후 계속 이름 출력 -->
+                                                <input class="form-control" placeholder="이름">
+                                            </div>
+                                        </div>
+                            
+                                        <div class="tab">
+                                            주민등록번호
+                                            <div class="form">
+                                                <input class="form-control" type="password" placeholder="주민등록번호" maxlength='13'>
+                                            </div>
+                                        </div>
+                            
+                                        <div class="tab">
+                                            발급일
+                                            <div class="form">
+                                                <!-- date picker 처리좀요... 제발 -->
+                                                <input type="text" class="w-75 d-flex justify-content-center form-control calendar" id="date-picker"
+                                                    placeholder="발급일을 선택하세요">
+                                                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-calendar-week"
+                                                    viewBox="0 0 16 16">
+                                                    <path
+                                                        d="M11 6.5a.5.5 0 0 1 .5-.5h1a.5.5 0 0 1 .5.5v1a.5.5 0 0 1-.5.5h-1a.5.5 0 0 1-.5-.5v-1zm-3 0a.5.5 0 0 1 .5-.5h1a.5.5 0 0 1 .5.5v1a.5.5 0 0 1-.5.5h-1a.5.5 0 0 1-.5-.5v-1zm-5 3a.5.5 0 0 1 .5-.5h1a.5.5 0 0 1 .5.5v1a.5.5 0 0 1-.5.5h-1a.5.5 0 0 1-.5-.5v-1zm3 0a.5.5 0 0 1 .5-.5h1a.5.5 0 0 1 .5.5v1a.5.5 0 0 1-.5.5h-1a.5.5 0 0 1-.5-.5v-1z" />
+                                                    <path
+                                                        d="M3.5 0a.5.5 0 0 1 .5.5V1h8V.5a.5.5 0 0 1 1 0V1h1a2 2 0 0 1 2 2v11a2 2 0 0 1-2 2H2a2 2 0 0 1-2-2V3a2 2 0 0 1 2-2h1V.5a.5.5 0 0 1 .5-.5zM1 4v10a1 1 0 0 0 1 1h12a1 1 0 0 0 1-1V4H1z" />
+                                                </svg>
+                                            </div>
+                                        </div>
+                            
+                                    </div>
+                                </div>
+                            
+                            
+                                <div class="under_bar px-4">
+                                    <div class="btn btn-lightgray w-100 mb-3">
+                                        등록
+                                    </div>
+                                </div>
+                            
+                            </div>
+                        </div>
+                        <!------------------------------ page 9 ------------------------------>
+                        <div class="page" id="p9">
+                            <div class="page_wrap">
+                                <h1 class="pg_title" style="color: #fff;">Page9</h1>
+                                <div class="page_wrap">
+                                    <h1 class="pg_title" style="color: #fff;">Page8</h1>
+                                    <!-- top -->
+                                    <div class="pg_top fontSz px-4 py-3">
+                                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-chevron-left"
+                                            viewBox="0 0 16 16">
+                                            <path fill-rule="evenodd"
+                                                d="M11.354 1.646a.5.5 0 0 1 0 .708L5.707 8l5.647 5.646a.5.5 0 0 1-.708.708l-6-6a.5.5 0 0 1 0-.708l6-6a.5.5 0 0 1 .708 0z" />
+                                        </svg>
+                                        <div class="flex-center-center flex-fill text-lg">모바일 신분증</div>
+                                        <svg></svg>
+                                    </div>
+                                
+                                    <div class="scroller fontSz">
+                                        <div class="w-100 flex-column align-items-start px-4 py-3">
+                                            <div class="text-lg">주민등록증 모바일 확인서비스<br>등록을 위해 주민등록증 정보를 입력해주세요.</div>
+                                        </div>
+                                
+                                        <div class="w-100 bg-lightgray">
+                                            <!-- 이미지 추가(배경 꼭 투명으로) -->
+                                            <div class="bg-image" style="background-image: url('./assets/image/');"></div>
+                                        </div>
+                                
+                                        <div class="container px-4 py-4 flex-fill">
+                                            <div class="tab">
+                                                이름
+                                                <div class="form">
+                                                    <!-- 이후 계속 이름 출력 -->
+                                                    <input class="form-control" placeholder="이름">
+                                                </div>
+                                            </div>
+                                
+                                            <div class="tab">
+                                                주민등록번호
+                                                <div class="form">
+                                                    <input class="form-control" type="password" placeholder="주민등록번호" maxlength='13'>
+                                                </div>
+                                            </div>
+                                
+                                            <div class="tab">
+                                                발급일
+                                                <div class="form">
+                                                    <!-- date picker 처리좀요... 제발 -->
+                                                    <input type="text" class="w-75 d-flex justify-content-center form-control calendar" id="date-picker"
+                                                        placeholder="발급일을 선택하세요">
+                                                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-calendar-week"
+                                                        viewBox="0 0 16 16">
+                                                        <path
+                                                            d="M11 6.5a.5.5 0 0 1 .5-.5h1a.5.5 0 0 1 .5.5v1a.5.5 0 0 1-.5.5h-1a.5.5 0 0 1-.5-.5v-1zm-3 0a.5.5 0 0 1 .5-.5h1a.5.5 0 0 1 .5.5v1a.5.5 0 0 1-.5.5h-1a.5.5 0 0 1-.5-.5v-1zm-5 3a.5.5 0 0 1 .5-.5h1a.5.5 0 0 1 .5.5v1a.5.5 0 0 1-.5.5h-1a.5.5 0 0 1-.5-.5v-1zm3 0a.5.5 0 0 1 .5-.5h1a.5.5 0 0 1 .5.5v1a.5.5 0 0 1-.5.5h-1a.5.5 0 0 1-.5-.5v-1z" />
+                                                        <path
+                                                            d="M3.5 0a.5.5 0 0 1 .5.5V1h8V.5a.5.5 0 0 1 1 0V1h1a2 2 0 0 1 2 2v11a2 2 0 0 1-2 2H2a2 2 0 0 1-2-2V3a2 2 0 0 1 2-2h1V.5a.5.5 0 0 1 .5-.5zM1 4v10a1 1 0 0 0 1 1h12a1 1 0 0 0 1-1V4H1z" />
+                                                    </svg>
+                                                </div>
+                                            </div>
+                                
+                                        </div>
+                                    </div>
+                                
+                                
+                                    <div class="under_bar px-4">
+                                        <div class="btn btn-lightgray w-100 mb-3">
+                                            등록
+                                        </div>
+                                    </div>
+                                
+                                </div>
+                            </div>
+                        </div>
+                        <!------------------------------ page 10 ------------------------------>
+                        <div class="page" id="p10">
+                            <div class="page_wrap">
+                                <h1 class="pg_title" style="color: #fff;">Page8</h1>
+                                <!-- top -->
+                                <div class="pg_top fontSz px-4 py-3">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-chevron-left"
+                                        viewBox="0 0 16 16">
+                                        <path fill-rule="evenodd"
+                                            d="M11.354 1.646a.5.5 0 0 1 0 .708L5.707 8l5.647 5.646a.5.5 0 0 1-.708.708l-6-6a.5.5 0 0 1 0-.708l6-6a.5.5 0 0 1 .708 0z" />
+                                    </svg>
+                                    <div class="flex-center-center flex-fill text-lg">모바일 신분증</div>
+                                    <svg></svg>
+                                </div>
+                            
+                                <div class="scroller fontSz">
+                                    <div class="w-100 flex-column align-items-start px-4 py-3">
+                                        <div class="text-lg">주민등록증 모바일 확인서비스<br>등록을 위해 주민등록증 정보를 입력해주세요.</div>
+                                    </div>
+                            
+                                    <div class="w-100 bg-lightgray">
+                                        <!-- 이미지 추가(배경 꼭 투명으로) -->
+                                        <div class="bg-image" style="background-image: url('./assets/image/');"></div>
+                                    </div>
+                            
+                                    <div class="container px-4 py-4 flex-fill">
+                                        <div class="tab">
+                                            이름
+                                            <div class="form">
+                                                <!-- 이후 계속 이름 출력 -->
+                                                <input class="form-control" placeholder="이름">
+                                            </div>
+                                        </div>
+                            
+                                        <div class="tab">
+                                            주민등록번호
+                                            <div class="form">
+                                                <input class="form-control" type="password" placeholder="●●●●●●●●●●●●●" maxlength='13'>
+                                            </div>
+                                        </div>
+                            
+                                        <div class="tab">
+                                            발급일
+                                            <div class="form">
+                                                <!-- date picker 처리좀요... 제발 -->
+                                                <!-- 날짜 선택하면 아래 버튼 활성화 - 색상변경 btn-darkgray -->
+                                                <input type="text" class="w-75 d-flex justify-content-center form-control calendar" id="date-picker"
+                                                    placeholder="발급일을 선택하세요">
+                                                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-calendar-week"
+                                                    viewBox="0 0 16 16">
+                                                    <path d="M11 6.5a.5.5 0 0 1 .5-.5h1a.5.5 0 0 1 .5.5v1a.5.5 0 0 1-.5.5h-1a.5.5 0 0 1-.5-.5v-1zm-3 0a.5.5 0 0 1 .5-.5h1a.5.5 0 0 1 .5.5v1a.5.5 0 0 1-.5.5h-1a.5.5 0 0 1-.5-.5v-1zm-5 3a.5.5 0 0 1 .5-.5h1a.5.5 0 0 1 .5.5v1a.5.5 0 0 1-.5.5h-1a.5.5 0 0 1-.5-.5v-1zm3 0a.5.5 0 0 1 .5-.5h1a.5.5 0 0 1 .5.5v1a.5.5 0 0 1-.5.5h-1a.5.5 0 0 1-.5-.5v-1z" />
+                                                    <path d="M3.5 0a.5.5 0 0 1 .5.5V1h8V.5a.5.5 0 0 1 1 0V1h1a2 2 0 0 1 2 2v11a2 2 0 0 1-2 2H2a2 2 0 0 1-2-2V3a2 2 0 0 1 2-2h1V.5a.5.5 0 0 1 .5-.5zM1 4v10a1 1 0 0 0 1 1h12a1 1 0 0 0 1-1V4H1z" />
+                                                </svg>
+                                            </div>
+                                        </div>
+                            
+                                    </div>
+                                </div>
+                            
+                            
+                                <div class="under_bar px-4">
+                                    <div class="btn btn-lightgray w-100 mb-3">
+                                        등록
+                                    </div>
+                                </div>
+                            
+                            </div>
+                        </div>
+                        <!------------------------------ page 11 ------------------------------>
+                        <div class="page" id="p11">
+                            <div class="page_wrap">
+                                <h1 class="pg_title" style="color: #fff;">Page7</h1>
+                                <!-- top -->
+                                <div class="pg_top fontSz px-4 py-3">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-chevron-left" viewBox="0 0 16 16">
+                                        <path fill-rule="evenodd" d="M11.354 1.646a.5.5 0 0 1 0 .708L5.707 8l5.647 5.646a.5.5 0 0 1-.708.708l-6-6a.5.5 0 0 1 0-.708l6-6a.5.5 0 0 1 .708 0z"/>
+                                    </svg>
+                                    <div class="flex-center-center flex-fill text-lg">모바일 신분증</div>
+                                    <svg></svg>
+                                </div>
+                                <div class="w-100 px-4 fontSz">
+                                    <div class="d-flex justify-content-start align-items-end flex-fill text-lg">
+                                        <div class="border-bottom border-2 border-dark fw-bold">주민등록증</div>
+                                    </div>
+                                </div>
+
+                                <div class="container flex-fill bg-lightgray p-5">
+                                    <div class="w-100 h-100 flex-column flex-center-center bg-white rounded-top p-5 text-center">
+                                        p11
+                                    </div>
+                                    <div class="tab">
+                                        <div class="btn btn-darkgray rounded-0 rounded-bottom w-100">
+                                            상세정보 표시
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <!------------------------------ page 12 ------------------------------>
+                        <div class="page" id="p12">
+                            <div class="page_wrap">
+                                <h1 class="pg_title" style="color: #fff;">Page7</h1>
+                                <!-- top -->
+                                <div class="pg_top fontSz px-4 py-3">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-chevron-left" viewBox="0 0 16 16">
+                                        <path fill-rule="evenodd" d="M11.354 1.646a.5.5 0 0 1 0 .708L5.707 8l5.647 5.646a.5.5 0 0 1-.708.708l-6-6a.5.5 0 0 1 0-.708l6-6a.5.5 0 0 1 .708 0z"/>
+                                    </svg>
+                                    <div class="flex-center-center flex-fill text-lg">모바일 신분증</div>
+                                    <svg></svg>
+                                </div>
+                                <div class="w-100 px-4 fontSz">
+                                    <div class="d-flex justify-content-start align-items-end flex-fill text-lg">
+                                        <div class="border-bottom border-2 border-dark fw-bold">주민등록증</div>
+                                    </div>
+                                </div>
+
+                                <div class="container flex-fill bg-lightgray p-5">
+                                    <div class="w-100 h-100 flex-column flex-center-center bg-white rounded-top p-5 text-center">
+                                        p12
+                                    </div>
+                                    <div class="tab">
+                                        <div class="btn btn-darkgray rounded-0 rounded-bottom w-100">
+                                            QR 정보 표시
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!------------------------------ page 13 ------------------------------>
+                        <div class="page" id="p13">
+                            <div class="page_wrap">
+                                <!-- <h1 class="pg_title" style="color: #fff;">Page13</h1> -->
+                                <img src="../common/images/done.png" width="100%">
+                            </div>
+                        </div>
+                        
+
+
+
+
+                    </main>
+                </div>
+
+                <div class="ctrlbar-bg"></div>
+                <div class="ctrlbar" id="ctrlbar">
+                    <div class="start_btn_wrap">
+                        <button type="button" class="btn start_btn" id="start-btn">시작하기</button>
+                    </div>
+                    <div class="nav_btn_wrap">
+                        <div class="baricon_wrap prev" id="prev_btn">
+                            <div class="baricon">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+                                    class="bi bi-caret-left-fill svg" viewBox="0 0 16 16">
+                                    <path
+                                        d="m3.86 8.753 5.482 4.796c.646.566 1.658.106 1.658-.753V3.204a1 1 0 0 0-1.659-.753l-5.48 4.796a1 1 0 0 0 0 1.506z" />
+                                </svg>
+                            </div>
+                            <div class="bartext">이전</div>
+                        </div>
+                        <div class="baricon_wrap pause">
+
+                            <div class="stop" id="pause_btn">
+                                <div class="baricon">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+                                        class="bi bi-volume-mute-fill svg" viewBox="0 0 16 16">
+                                        <path
+                                            d="M6.717 3.55A.5.5 0 0 1 7 4v8a.5.5 0 0 1-.812.39L3.825 10.5H1.5A.5.5 0 0 1 1 10V6a.5.5 0 0 1 .5-.5h2.325l2.363-1.89a.5.5 0 0 1 .529-.06zm7.137 2.096a.5.5 0 0 1 0 .708L12.207 8l1.647 1.646a.5.5 0 0 1-.708.708L11.5 8.707l-1.646 1.647a.5.5 0 0 1-.708-.708L10.793 8 9.146 6.354a.5.5 0 1 1 .708-.708L11.5 7.293l1.646-1.647a.5.5 0 0 1 .708 0z" />
+                                    </svg>
+                                </div>
+                                <div class="bartext text-center">멈춤</div>
+                            </div>
+
+                            <div class="play" id="play_btn">
+                                <div class="baricon">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+                                        class="bi bi-volume-up-fill svg" viewBox="0 0 16 16">
+                                        <path
+                                            d="M11.536 14.01A8.473 8.473 0 0 0 14.026 8a8.473 8.473 0 0 0-2.49-6.01l-.708.707A7.476 7.476 0 0 1 13.025 8c0 2.071-.84 3.946-2.197 5.303l.708.707z" />
+                                        <path
+                                            d="M10.121 12.596A6.48 6.48 0 0 0 12.025 8a6.48 6.48 0 0 0-1.904-4.596l-.707.707A5.483 5.483 0 0 1 11.025 8a5.483 5.483 0 0 1-1.61 3.89l.706.706z" />
+                                        <path
+                                            d="M8.707 11.182A4.486 4.486 0 0 0 10.025 8a4.486 4.486 0 0 0-1.318-3.182L8 5.525A3.489 3.489 0 0 1 9.025 8 3.49 3.49 0 0 1 8 10.475l.707.707zM6.717 3.55A.5.5 0 0 1 7 4v8a.5.5 0 0 1-.812.39L3.825 10.5H1.5A.5.5 0 0 1 1 10V6a.5.5 0 0 1 .5-.5h2.325l2.363-1.89a.5.5 0 0 1 .529-.06z" />
+                                    </svg>
+                                </div>
+                                <div class="bartext text-center">재생</div>
+                            </div>
+
+                        </div>
+                        <div class="baricon_wrap" id="hint_btn">
+                            <div class="baricon">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+                                    class="bi bi-lightbulb-fill svg hint" viewBox="0 0 16 16">
+                                    <path
+                                        d="M2 6a6 6 0 1 1 10.174 4.31c-.203.196-.359.4-.453.619l-.762 1.769A.5.5 0 0 1 10.5 13h-5a.5.5 0 0 1-.46-.302l-.761-1.77a1.964 1.964 0 0 0-.453-.618A5.984 5.984 0 0 1 2 6zm3 8.5a.5.5 0 0 1 .5-.5h5a.5.5 0 0 1 0 1l-.224.447a1 1 0 0 1-.894.553H6.618a1 1 0 0 1-.894-.553L5.5 15a.5.5 0 0 1-.5-.5z" />
+                                </svg>
+                                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+                                    class="bi bi-question svg front" viewBox="0 0 16 16">
+                                    <path
+                                        d="M5.255 5.786a.237.237 0 0 0 .241.247h.825c.138 0 .248-.113.266-.25.09-.656.54-1.134 1.342-1.134.686 0 1.314.343 1.314 1.168 0 .635-.374.927-.965 1.371-.673.489-1.206 1.06-1.168 1.987l.003.217a.25.25 0 0 0 .25.246h.811a.25.25 0 0 0 .25-.25v-.105c0-.718.273-.927 1.01-1.486.609-.463 1.244-.977 1.244-2.056 0-1.511-1.276-2.241-2.673-2.241-1.267 0-2.655.59-2.75 2.286zm1.557 5.763c0 .533.425.927 1.01.927.609 0 1.028-.394 1.028-.927 0-.552-.42-.94-1.029-.94-.584 0-1.009.388-1.009.94z" />
+                                </svg>
+                            </div>
+                            <div class="bartext">힌트</div>
+                        </div>
+                        <div class="baricon_wrap" id="size_btn">
+                            <div id="tSlider" class="baricon" data-bs-toggle="popover">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+                                    class="bi bi-type svg" viewBox="0 0 16 16">
+                                    <path
+                                        d="m2.244 13.081.943-2.803H6.66l.944 2.803H8.86L5.54 3.75H4.322L1 13.081h1.244zm2.7-7.923L6.34 9.314H3.51l1.4-4.156h.034zm9.146 7.027h.035v.896h1.128V8.125c0-1.51-1.114-2.345-2.646-2.345-1.736 0-2.59.916-2.666 2.174h1.108c.068-.718.595-1.19 1.517-1.19.971 0 1.518.52 1.518 1.464v.731H12.19c-1.647.007-2.522.8-2.522 2.058 0 1.319.957 2.18 2.345 2.18 1.06 0 1.716-.43 2.078-1.011zm-1.763.035c-.752 0-1.456-.397-1.456-1.244 0-.65.424-1.115 1.408-1.115h1.805v.834c0 .896-.752 1.525-1.757 1.525z" />
+                                </svg>
+                            </div>
+                            <div class="bartext">크기</div>
+                        </div>
+                        <div class="baricon_wrap next" id="next_btn">
+                            <div class="baricon">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+                                    class="bi bi-caret-right-fill svg" viewBox="0 0 16 16">
+                                    <path
+                                        d="m12.14 8.753-5.482 4.796c-.646.566-1.658.106-1.658-.753V3.204a1 1 0 0 1 1.659-.753l5.48 4.796a1 1 0 0 1 0 1.506z" />
+                                </svg>
+                            </div>
+                            <div class="bartext">다음</div>
+                        </div>
+                    </div>
+                    <!-- popover : slider --------------- -->
+                    <div hidden>
+                        <div data-name="popover-content" class="d-flex justify-content-center align-items-center">
+
+                            <!-- /////////////// -->
+                            <div class="txt_ex1 fw-bold">가</div>
+                            <!-- <input type="range" name="slider" id="slider" value="0" min="0" max="2"  /> -->
+                            <input type="range" min="0" max="2" value="0" class="slider" id="tSliderRange">
+                            <!-- <p>Value: <span id="value"></span></p> -->
+                            <div class="txt_ex2 fs-3 fw-bold">가</div>
+                            <!-- /////////////// -->
+
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+
+        </div>
+    </div>
+    <script src="pg_info.js"> </script>
+    <script src="../common/js/pg_handler.js"> </script>
+</body>
+
+</html>
