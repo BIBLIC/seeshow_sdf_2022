@@ -178,7 +178,7 @@ const modalCont = [
 
 
 const txt_user_input_fill = document.querySelector('.txt_user_input_fill');
-//시작하기 버튼 클릭 후 컨트롤 바 내부 변경
+//사용자가 입력한 내용 출력하기
     $('.pg_12_answer').click(function () {
         txt_user_input_fill.innerText = user_input_txt;
     });

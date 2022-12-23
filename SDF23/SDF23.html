@@ -77,9 +77,21 @@
                                 <!-- background-image: url() 수정 -->
                                 <div class="bg-image" style="background-image: url('./assets/image/test.png');">
                                     <div class="under_bar px-4">
-                                        <button type="button" class="btn btn-navy w-100 mb-3">
-                                            다음
-                                        </button>
+                                        <div class="cursor_pos_2 w-100">
+                                            <button type="button" class="btn btn-navy w-100 mb-3 pg_2_answer">
+                                                다음
+                                            </button>
+                                            <!-- 커서 가이드 -->
+                                            <div class="cursor_wrap cursor_wrap_2 pg_2_answer">
+                                                <span class="cursor pg_2_answer" x-placement="bottom">
+                                                    <button class="react-joyride__beacon pg_2_answer" type="button">
+                                                        <span class="cursor_outer pg_2_answer"></span>
+                                                        <span class="cursor_inner pg_2_answer"><span>
+                                                    </button>
+                                                </span>
+                                            </div>
+                                            <!-- 커서 가이드 -->
+                                        </div>
                                     </div>
                                 </div>
 
@@ -92,9 +104,21 @@
                                 <!-- background-image: url() 수정 -->
                                 <div class="bg-image" style="background-image: url('./assets/image/test.png');">
                                     <div class="under_bar px-4">
-                                        <button type="button" class="btn btn-navy w-100 mb-3">
-                                            다음
-                                        </button>
+                                        <div class="cursor_pos_3 w-100">
+                                            <button type="button" class="btn btn-navy w-100 mb-3 pg_3_answer">
+                                                다음
+                                            </button>
+                                            <!-- 커서 가이드 -->
+                                            <div class="cursor_wrap cursor_wrap_3 pg_3_answer">
+                                                <span class="cursor pg_3_answer" x-placement="bottom">
+                                                    <button class="react-joyride__beacon pg_3_answer" type="button">
+                                                        <span class="cursor_outer pg_3_answer"></span>
+                                                        <span class="cursor_inner pg_3_answer"><span>
+                                                    </button>
+                                                </span>
+                                            </div>
+                                            <!-- 커서 가이드 -->
+                                        </div>
                                     </div>
                                 </div>
                             </div>
@@ -106,7 +130,7 @@
                                 <!-- background-image: url() 수정 -->
                                 <div class="bg-image" style="background-image: url('./assets/image/test.png');">
                                     <div class="under_bar px-4">
-                                        <button type="button" class="btn btn-navy w-100 mb-3">
+                                        <button type="button" class="btn btn-navy w-100 mb-3 pg_4_answer">
                                             시작하기
                                         </button>
                                     </div>
@@ -166,7 +190,7 @@
                                     </div>
 
                                     <div class="under_bar px-4 w-100">
-                                        <button type="button" class="btn btn-navy w-100 mb-3">
+                                        <button type="button" class="btn btn-navy w-100 mb-3 pg_5_answer">
                                             확인
                                         </button>
                                     </div>
@@ -246,7 +270,7 @@
                                 </div>
                                 <div class="modal_bottom_wrap">
                                     <div class="btn_wrap">
-                                        <div class="btn fontSz">앱 사용 중에만 허용</div>
+                                        <div class="btn fontSz pg_6_answer">앱 사용 중에만 허용</div>
                                         <div class="btn fontSz">이번만 허용</div>
                                         <div class="btn fontSz">허용 안함</div>
                                     </div>
@@ -329,7 +353,7 @@
                                     </div>
                                     <div class="modal_bottom_wrap">
                                         <div class="btn_wrap">
-                                            <div class="btn fontSz">허용</div>
+                                            <div class="btn fontSz pg_7_answer">허용</div>
                                             <div class="btn fontSz">허용 안함</div>
                                         </div>
                                     </div>
@@ -345,7 +369,7 @@
                                <!-- background-image: url() 수정 -->
                                <div class="bg-image" style="background-image: url('./assets/image/test.png');">
                                     <div class="under_bar px-4">
-                                        <div class="btn btn-navy w-100 mb-3">
+                                        <div class="btn btn-navy w-100 mb-3 pg_8_answer">
                                             본인인증 시작하기
                                         </div>
                                     </div>
@@ -398,14 +422,13 @@
                                     <div class="tab">
                                         이름
                                         <div class="form">
-                                            <!-- 입력한 내용이 이후에 출력되게 해주세요 (완료 후 해당 주석 삭제) -->
-                                            <input class="form-control" placeholder="이름을 입력해 주세요">
+                                            <input class="form-control answer_auto_any_txt_save pg_9_answer 9_input" placeholder="이름을 입력해 주세요">
                                         </div>
                                     </div>
                                 </div>
                         
                                 <div class="under_bar px-4">
-                                    <div class="btn btn-navy w-100 mb-3">
+                                    <div class="btn btn-navy w-100 mb-3 input_nxt_btn">
                                         다음
                                     </div>
                                 </div>
@@ -443,20 +466,20 @@
                                     <div class="tab">
                                         주민등록번호
                                         <div class="form">
-                                            <input class="form-control" type="password" placeholder="주민등록번호" maxlength='13'> 
+                                            <input class="form-control ID_num13 pg_10_answer 10_input" type="password" placeholder="주민등록번호" maxlength='13'> 
                                         </div>
                                     </div>
                                         <div class="tab">
                                             이름
                                             <div class="form">
-                                                <!-- 8페이지에서 입력한 이름 출력 -->
-                                                <input class="form-control" placeholder="이름을 입력해 주세요">
+                                                <!-- 9페이지에서 입력한 이름 출력 -->
+                                                <div class="form-control txt_user_input_fill" placeholder="이름을 입력해 주세요"></div>
                                             </div>
                                         </div>
                                 </div>
                         
                                 <div class="under_bar px-4">
-                                    <div class="btn btn-navy w-100 mb-3">
+                                    <div class="btn btn-navy w-100 mb-3 input_nxt_btn">
                                         다음
                                     </div>
                                 </div>
@@ -467,7 +490,7 @@
                             <div class="page_wrap">
                                 <h1 class="pg_title" style="color: #fff;">Page11</h1>
                                 <!-- top -->
-                                <div class="pg_top fontSz px-4 py-3">
+                                <div class="pg_top fontSz px-4 py-3 pg_11_shadow_inner">
                                     <svg></svg>
                                     <div class="flex-fill h-100 d-flex justify-content-center align-items-center">
                                     </div>
@@ -476,12 +499,12 @@
                                       </svg>
                                 </div>
 
-                                <div class="pg_top top fontSz px-4">
+                                <div class="pg_top top fontSz px-4 pg_11_shadow_inner">
                                     <div class="top_svg">
-                                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-1-circle-fill text-primary" viewBox="0 0 16 16">
+                                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-1-circle-fill text-primary pg_11_txt_darker" viewBox="0 0 16 16">
                                             <path d="M16 8A8 8 0 1 1 0 8a8 8 0 0 1 16 0ZM9.283 4.002H7.971L6.072 5.385v1.271l1.834-1.318h.065V12h1.312V4.002Z"/>
                                         </svg>
-                                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-2-circle text-lightgray" viewBox="0 0 16 16">
+                                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-2-circle text-lightgray pg_11_txt_darker" viewBox="0 0 16 16">
                                             <path d="M1 8a7 7 0 1 0 14 0A7 7 0 0 0 1 8Zm15 0A8 8 0 1 1 0 8a8 8 0 0 1 16 0ZM6.646 6.24v.07H5.375v-.064c0-1.213.879-2.402 2.637-2.402 1.582 0 2.613.949 2.613 2.215 0 1.002-.6 1.667-1.287 2.43l-.096.107-1.974 2.22v.077h3.498V12H5.422v-.832l2.97-3.293c.434-.475.903-1.008.903-1.705 0-.744-.557-1.236-1.313-1.236-.843 0-1.336.615-1.336 1.306Z"/>
                                           </svg>
                                     </div>
@@ -494,7 +517,7 @@
                                     <div class="tab">
                                         휴대폰번호
                                         <div class="form">
-                                            <input class="form-control" type="password" placeholder="휴대폰번호" maxlength='11'>
+                                            <input class="form-control ID_num11 pg_11_answer 11_input" type="password" placeholder="휴대폰번호" maxlength='11'>
                                         </div>
                                     </div>
 
@@ -524,14 +547,14 @@
                                     <div class="tab">
                                         이름
                                         <div class="form">
-                                            <!-- 8페이지에서 입력한 이름 출력 -->
-                                            <input class="form-control" placeholder="이름을 입력해 주세요">
+                                            <!-- 9페이지에서 입력한 이름 출력 -->
+                                            <div class="form-control txt_user_input_fill2" placeholder="이름을 입력해 주세요"></div>
                                         </div>
                                     </div>
                                 </div>
                         
-                                <div class="under_bar px-4">
-                                    <div class="btn btn-navy w-100 mb-3">
+                                <div class="under_bar px-4 pg_11_shadow_inner">
+                                    <div class="btn btn-navy w-100 mb-3 input_nxt_btn">
                                         다음
                                     </div>
                                 </div>
@@ -599,8 +622,8 @@
                                 </div>
                         
                                 <div class="under_bar px-4 pt-4 pb-3 addShadow">
-                                    <div class="btn btn-outline-dark">
-                                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-circle text-lightgray" viewBox="0 0 16 16">
+                                    <div class="btn btn-outline-dark pg_12_answer">
+                                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-circle text-lightgray pg_12_answer" viewBox="0 0 16 16">
                                             <path d="M8 15A7 7 0 1 1 8 1a7 7 0 0 1 0 14zm0 1A8 8 0 1 0 8 0a8 8 0 0 0 0 16z"/>
                                           </svg>
                                         전체동의
@@ -714,7 +737,7 @@
                                         </div>
                                     </div>
 
-                                    <div class="btn btn-navy w-100">
+                                    <div class="btn btn-navy w-100 pg_13_answer">
                                         확인
                                     </div>
                                 </div>
@@ -760,7 +783,7 @@
                                         인증번호
                                         <div class="form">
                                             <!-- 입력한 내용이 이후에 출력되게 해주세요 (완료 후 해당 주석 삭제) -->
-                                            <input class="form-control" type="number" placeholder="인증번호 입력">
+                                            <input class="form-control answer_txt pg_14_answer 14_input" type="number" placeholder="인증번호 입력">
                                         </div>
                                         <div class="w-100 mt-4 text-center text-gray text-sm">인증번호 문자가 안와요 ></div>
                                     </div>
@@ -772,7 +795,7 @@
                                     <div class="flex-center-center rounded border border-5 border-danger p-2">
                                         <h4 class="text-danger fw-bold m-0">인증번호 입력란에 '123456'을 입력하세요</h4>
                                     </div>
-                                    <div class="btn btn-navy w-100 mb-3">
+                                    <div class="btn btn-navy w-100 mb-3 input_nxt_btn_txt">
                                         다음
                                     </div>
                                 </div>
@@ -826,35 +849,35 @@
                         
                                 <div class="under_bar">
                                     <div class="tab key_wrap">
-                                        <div class="key">
+                                        <div class="key input_1 pg_15_answer pw_auto_input pw6">
                                             1
                                         </div>
-                                        <div class="key">
+                                        <div class="key input_9 pg_15_answer pw_auto_input pw6">
                                             9
                                         </div>
-                                        <div class="key">
+                                        <div class="key input_3 pg_15_answer pw_auto_input pw6">
                                             3
                                         </div>
                                     </div>
                                     <div class="tab key_wrap">
-                                        <div class="key">
+                                        <div class="key input_6 pg_15_answer pw_auto_input pw6">
                                             6
                                         </div>
-                                        <div class="key">
+                                        <div class="key input_5 pg_15_answer pw_auto_input pw6">
                                             5
                                         </div>
-                                        <div class="key">
+                                        <div class="key input_0 pg_15_answer pw_auto_input pw6">
                                             0
                                         </div>
                                     </div>
                                     <div class="tab key_wrap">
-                                        <div class="key">
+                                        <div class="key input_4 pg_15_answer pw_auto_input pw6">
                                             4
                                         </div>
-                                        <div class="key">
+                                        <div class="key input_7 pg_15_answer pw_auto_input pw6">
                                             7
                                         </div>
-                                        <div class="key">
+                                        <div class="key input_2 pg_15_answer pw_auto_input pw6">
                                             2
                                         </div>
                                     </div>
@@ -868,7 +891,7 @@
                                                     d="M13.683 1a2 2 0 0 1 2 2v10a2 2 0 0 1-2 2h-7.08a2 2 0 0 1-1.519-.698L.241 8.65a1 1 0 0 1 0-1.302L5.084 1.7A2 2 0 0 1 6.603 1h7.08zm-7.08 1a1 1 0 0 0-.76.35L1 8l4.844 5.65a1 1 0 0 0 .759.35h7.08a1 1 0 0 0 1-1V3a1 1 0 0 0-1-1h-7.08z" />
                                             </svg>
                                         </div>
-                                        <div class="key">
+                                        <div class="key input_8 pg_15_answer pw_auto_input pw6">
                                             8
                                         </div>
                                         <div class="key bg-b">
@@ -932,35 +955,35 @@
                         
                                 <div class="under_bar">
                                     <div class="tab key_wrap">
-                                        <div class="key">
+                                        <div class="key input_9 pg_16_answer pw_auto_input pw6">
                                             9
                                         </div>
-                                        <div class="key">
+                                        <div class="key input_7 pg_16_answer pw_auto_input pw6">
                                             7
                                         </div>
-                                        <div class="key">
+                                        <div class="key input_0 pg_16_answer pw_auto_input pw6">
                                             0
                                         </div>
                                     </div>
                                     <div class="tab key_wrap">
-                                        <div class="key">
+                                        <div class="key input_3 pg_16_answer pw_auto_input pw6">
                                             3
                                         </div>
-                                        <div class="key">
+                                        <div class="key input_5 pg_16_answer pw_auto_input pw6">
                                             5
                                         </div>
-                                        <div class="key">
+                                        <div class="key input_2 pg_16_answer pw_auto_input pw6">
                                             2
                                         </div>
                                     </div>
                                     <div class="tab key_wrap">
-                                        <div class="key">
+                                        <div class="key input_1 pg_16_answer pw_auto_input pw6">
                                             1
                                         </div>
-                                        <div class="key">
+                                        <div class="key input_4 pg_16_answer pw_auto_input pw6">
                                             4
                                         </div>
-                                        <div class="key">
+                                        <div class="key input_6 pg_16_answer pw_auto_input pw6">
                                             6
                                         </div>
                                     </div>
@@ -974,7 +997,7 @@
                                                     d="M13.683 1a2 2 0 0 1 2 2v10a2 2 0 0 1-2 2h-7.08a2 2 0 0 1-1.519-.698L.241 8.65a1 1 0 0 1 0-1.302L5.084 1.7A2 2 0 0 1 6.603 1h7.08zm-7.08 1a1 1 0 0 0-.76.35L1 8l4.844 5.65a1 1 0 0 0 .759.35h7.08a1 1 0 0 0 1-1V3a1 1 0 0 0-1-1h-7.08z" />
                                             </svg>
                                         </div>
-                                        <div class="key">
+                                        <div class="key input_8 pg_16_answer pw_auto_input pw6">
                                             8
                                         </div>
                                         <div class="key bg-b">
@@ -1057,7 +1080,7 @@
                                         <div class="btn btn-gray w-49">
                                             다음에
                                         </div>
-                                        <div class="btn btn-navy w-49">
+                                        <div class="btn btn-navy w-49 pg_17_answer">
                                             등록하기
                                         </div>
                                     </div>
@@ -1082,7 +1105,7 @@
                                         </svg>
                                     </div>
                                     <div class="under_bar px-4">
-                                        <div class="btn btn-navy w-100 mb-3">
+                                        <div class="btn btn-navy w-100 mb-3 pg_18_answer">
                                             다음
                                         </div>
                                     </div>
@@ -1107,7 +1130,7 @@
                                         </svg>
                                     </div>
                                     <div class="under_bar px-4">
-                                        <div class="btn btn-navy w-100 mb-3">
+                                        <div class="btn btn-navy w-100 mb-3 pg_19_answer">
                                             다음
                                         </div>
                                     </div>
@@ -1121,7 +1144,7 @@
                                 <!-- background-image: url() 수정 -->
                                 <div class="bg-image" style="background-image: url('./assets/image/test.png');">
                                     <div class="under_bar px-4">
-                                        <div class="btn btn-navy w-100 mb-3">
+                                        <div class="btn btn-navy w-100 mb-3 pg_20_answer">
                                             IC 운전면허증 신청하기
                                         </div>
                                     </div>
@@ -1135,7 +1158,7 @@
                                 <!-- background-image: url() 수정 -->
                                 <div class="bg-image" style="background-image: url('./assets/image/test.png');">
                                     <div class="under_bar px-4">
-                                        <div class="btn btn-navy w-100 mb-3">
+                                        <div class="btn btn-navy w-100 mb-3 pg_21_answer">
                                             운전면허시험장에서 발급 시작하기
                                         </div>
                                     </div>

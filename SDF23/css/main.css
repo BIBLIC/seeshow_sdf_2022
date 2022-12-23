@@ -250,6 +250,11 @@
 }
 
 
+#p11 .under_bar {
+    border-top-left-radius: 0px !important;
+    border-top-right-radius: 0px !important;
+}
+
 /* ---------------------------------- */
 #p12 .under_bar,
 #p13 .under_bar {

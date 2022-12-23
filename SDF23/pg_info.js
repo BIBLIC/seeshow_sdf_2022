@@ -123,7 +123,10 @@ const inputAnswer = [
     {},
     {},
     {},
-    {},
+    {
+        page: 14,
+        inputableAnswer: "123456"
+    },
     {},
     {},
     {},
@@ -139,97 +142,97 @@ const inputAnswer = [
 
 // -----------------------------------------------------------------------------------------------------------------------
 const modalCont = [
-{
+    {
         page: 0,
-        instruction: ""
+        instruction: "'시작하기' 버튼을 눌러주세요."
     },
     {
         page: 1,
-        instruction: ""
+        instruction: "페이지가 자동으로 전환되도록 기다려주세요."
     },
     {
         page: 2,
-        instruction: ""
+        instruction: "'다음' 버튼을 눌러주세요."
     },
     {
         page: 3,
-        instruction: ""
+        instruction: "'다음' 버튼을 눌러주세요."
     },
     {
         page: 4,
-        instruction: ""
+        instruction: "'시작하기' 버튼을 눌러주세요."
     },
     {
         page: 5,
-        instruction: ""
+        instruction: "'확인' 버튼을 눌러주세요."
     },
     {
         page: 6,
-        instruction: ""
+        instruction: "'앱 사용 중에만 허용'을 눌러주세요."
     },
     {
         page: 7,
-        instruction: ""
+        instruction: "'허용'을 눌러주세요."
     },
     {
         page: 8,
-        instruction: ""
+        instruction: "'본인인증 시작하기' 버튼을 눌러주세요."
     },
     {
         page: 9,
-        instruction: ""
+        instruction: "이름을 입력하고 '다음' 버튼을 눌러주세요."
     },
     {
         page: 10,
-        instruction: ""
+        instruction: "'-'을 제외한 주민번호 13자리를 입력하고 '다음' 버튼을 눌러주세요."
     },
     {
         page: 11,
-        instruction: ""
+        instruction: "'-'을 제외한 휴대폰 번호 11자리를 입력하고 '다음' 버튼을 눌러주세요."
     },
     {
         page: 12,
-        instruction: ""
+        instruction: "'전체동의'를 눌러주세요."
     },
     {
         page: 13,
-        instruction: ""
+        instruction: "'확인' 버튼을 눌러주세요."
     },
     {
         page: 14,
-        instruction: ""
+        instruction: "인증번호 '123456'을 입력하고 '확인' 버튼을 눌러주세요."
     },
     {
         page: 15,
-        instruction: ""
+        instruction: "화면의 키패드를 이용해 비밀번호 6자리를 입력해주세요."
     },
     {
         page: 16,
-        instruction: ""
+        instruction: "다시 한번 화면의 키패드를 이용해 비밀번호 6자리를 입력해주세요."
     },
     {
         page: 17,
-        instruction: ""
+        instruction: "'등록하기' 버튼을 눌러주세요."
     },
     {
         page: 18,
-        instruction: ""
+        instruction: "'다음' 버튼을 눌러주세요."
     },
     {
         page: 19,
-        instruction: ""
+        instruction: "'다음' 버튼을 눌러주세요."
     },
     {
         page: 20,
-        instruction: ""
+        instruction: "'IC 운전면허증 신청하기' 버튼을 눌러주세요."
     },
     {
         page: 21,
-        instruction: ""
+        instruction: "'운전면허시험장에서 발급 시작하기' 버튼을 눌러주세요."
     },
     {
         page: 22,
-        instruction: ""
+        instruction: "완료"
     },
 ];
 
@@ -239,29 +242,29 @@ const modalCont = [
 // //**************************+    커서   +*********************************** 
 
 // const cursor_pos_1 = document.querySelector('.cursor_pos_1');
-// const cursor_pos_2 = document.querySelector('.cursor_pos_2');
-// // const cursor_pos_3 = document.querySelector('.cursor_pos_3');
-// // const cursor_pos_4 = document.querySelector('.cursor_pos_4');
-// // const cursor_pos_5 = document.querySelector('.cursor_pos_5');
-// // const cursor_pos_6 = document.querySelector('.cursor_pos_6');
+const cursor_pos_2 = document.querySelector('.cursor_pos_2');
+const cursor_pos_3 = document.querySelector('.cursor_pos_3');
+// const cursor_pos_4 = document.querySelector('.cursor_pos_4');
+// const cursor_pos_5 = document.querySelector('.cursor_pos_5');
+// const cursor_pos_6 = document.querySelector('.cursor_pos_6');
 
 // const cursor_wrap_1 = document.querySelector('.cursor_wrap_1');
-// const cursor_wrap_2 = document.querySelector('.cursor_wrap_2');
-// // const cursor_wrap_3 = document.querySelector('.cursor_wrap_3');
-// // const cursor_wrap_4 = document.querySelector('.cursor_wrap_4');
-// // const cursor_wrap_5 = document.querySelector('.cursor_wrap_5');
-// // const cursor_wrap_6 = document.querySelector('.cursor_wrap_6');
+const cursor_wrap_2 = document.querySelector('.cursor_wrap_2');
+const cursor_wrap_3 = document.querySelector('.cursor_wrap_3');
+// const cursor_wrap_4 = document.querySelector('.cursor_wrap_4');
+// const cursor_wrap_5 = document.querySelector('.cursor_wrap_5');
+// const cursor_wrap_6 = document.querySelector('.cursor_wrap_6');
 
 
 // cursor_wrap_1.style.zIndex = "100";
-// cursor_wrap_2.style.zIndex = "100";
-// // cursor_wrap_3.style.zIndex = "100";
-// // cursor_wrap_4.style.zIndex = "100";
-// // cursor_wrap_5.style.zIndex = "100";
-// // cursor_wrap_6.style.zIndex = "100";
+cursor_wrap_2.style.zIndex = "100";
+cursor_wrap_3.style.zIndex = "100";
+// cursor_wrap_4.style.zIndex = "100";
+// cursor_wrap_5.style.zIndex = "100";
+// cursor_wrap_6.style.zIndex = "100";
 
 
-// const { createPopper } = Popper;
+const { createPopper } = Popper;
 // createPopper(cursor_pos_1, cursor_wrap_1, {
 //     placement: 'right',
 //     modifiers: [
@@ -273,60 +276,111 @@ const modalCont = [
 //         },
 //     ],
 // });
-// createPopper(cursor_pos_2, cursor_wrap_2, {
+createPopper(cursor_pos_2, cursor_wrap_2, {
+    placement: 'right',
+    modifiers: [
+        {
+            name: 'offset',
+            options: {
+                offset: [0,100],
+            },
+        },
+    ],
+});
+createPopper(cursor_pos_3, cursor_wrap_3, {
+    placement: 'right',
+    modifiers: [
+        {
+            name: 'offset',
+            options: {
+                offset: [0,100],
+            },
+        },
+    ],
+});
+// //cursor_wrap_4.style.left="60%";
+
+// createPopper(cursor_pos_4, cursor_wrap_4, {
+//     placement: 'bottom',
+//     modifiers: [
+//         {
+//             name: 'offset',
+//             options: {
+//                 offset: [250,10],
+//             },
+//         },
+//     ],
+// });
+// createPopper(cursor_pos_5, cursor_wrap_5, {
 //     placement: 'right',
 //     modifiers: [
 //         {
 //             name: 'offset',
 //             options: {
-//                 offset: [30,30],
+//                 offset: [25,200],
 //             },
 //         },
 //     ],
 // });
-// // createPopper(cursor_pos_3, cursor_wrap_3, {
-// //     placement: 'right',
-// //     modifiers: [
-// //         {
-// //             name: 'offset',
-// //             options: {
-// //                 offset: [70,80],
-// //             },
-// //         },
-// //     ],
-// // });
-// // //cursor_wrap_4.style.left="60%";
+// createPopper(cursor_pos_6, cursor_wrap_6, {
+//     placement: 'bottom',
+//     modifiers: [
+//         {
+//             name: 'offset',
+//             options: {
+//                 offset: [250,10],
+//             },
+//         },
+//     ],
+// });
 
-// // createPopper(cursor_pos_4, cursor_wrap_4, {
-// //     placement: 'bottom',
-// //     modifiers: [
-// //         {
-// //             name: 'offset',
-// //             options: {
-// //                 offset: [250,10],
-// //             },
-// //         },
-// //     ],
-// // });
-// // createPopper(cursor_pos_5, cursor_wrap_5, {
-// //     placement: 'right',
-// //     modifiers: [
-// //         {
-// //             name: 'offset',
-// //             options: {
-// //                 offset: [25,200],
-// //             },
-// //         },
-// //     ],
-// // });
-// // createPopper(cursor_pos_6, cursor_wrap_6, {
-// //     placement: 'bottom',
-// //     modifiers: [
-// //         {
-// //             name: 'offset',
-// //             options: {
-// //                 offset: [250,10],
-// //             },
-// //         },
-// //     ],
-// // });
+$(document).on("click", '#start-btn', function () {
+    $(document).ready(function () {
+        setTimeout(function () {
+            if (page_num === 1) {
+                next();
+            }
+        }, 800);
+    });
+});
+
+$(document).on("click", "#prev_btn", function () {
+    if (page_num === 2) {
+        $(document).ready(function () {
+            setTimeout(function () {
+                if (page_num === 1) {
+                    next();
+                }
+            }, 800);
+        });
+    }
+});
+
+
+const txt_user_input_fill = document.querySelector('.txt_user_input_fill');
+const txt_user_input_fill2 = document.querySelector('.txt_user_input_fill2');
+//사용자가 입력한 내용 출력하기
+// $('.pg_9_answer').click(function () {
+//     txt_user_input_fill.innerText = user_input_txt;
+// });
+
+$(document).on("click", "#next_btn", function () {
+    if (user_input_txt != ''){
+        txt_user_input_fill.innerText = user_input_txt;
+        txt_user_input_fill2.innerText = user_input_txt;
+    }
+});
+
+
+
+$(document).on("click", '.pg_9_answer', function () {
+
+        txt_user_input_fill.innerText = user_input_txt;  
+
+});
+
+$(document).on("click", '.pg_10_answer', function () {
+   
+        txt_user_input_fill2.innerText = user_input_txt;  
+
+});

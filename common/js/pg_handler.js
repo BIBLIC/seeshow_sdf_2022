@@ -494,7 +494,7 @@ document.querySelector("main").addEventListener("click", function (e) {//메인 
             });
         }
 
-        //----주민번호 14자리... 있을 경우(-없이 14자리 입력)-------------------
+        //----계좌번호 14자리... 있을 경우(-없이 14자리 입력)-------------------
         // ID_num14 pg_n_answer n_input
         else if (e.target.className.includes("ID_num14")) {
             //키보드 떼고 14자리 이상이면 다음 버튼 활성화되게 
@@ -663,6 +663,51 @@ document.querySelector("main").addEventListener("click", function (e) {//메인 
                 }
             }
         } 
+
+
+
+        //----비번6자리 있을 경우 + dot 자동 -------------------
+        //pw_auto_input pg_n_answer pwn input_(키패드 넘버)
+        else if (e.target.className.includes("pw_auto_input")) {
+            console.log('pw');
+            //키패드 번호 누르기
+            for (j = 0; j < 10; j++) {
+                if (e.target.className.includes("input_" + j)) {
+                    //let pressedKey = j;
+                    if (pwArr.length < 5) {
+                        console.log(j + '이전 clicked');
+                        var num_cnt = pwArr.length
+                        pwArr.push(j);
+                        console.log(pwArr);
+                        console.log("길이는", pwArr.length);
+                        $(".dot" + num_cnt).css("background-color", "#375BA9");//색칠
+
+                    } else if (pwArr.length = 5) { //배열 길이 5 -> 6개까지 입력하고 일어날 이벤트
+                        console.log(j + '이후 clicked');
+                        pwArr.push(j);
+                        console.log("길이는", pwArr.length);
+                        console.log(pwArr);
+                        $(".dot5").css("background-color", "#375BA9");//색칠
+                        $('.submit_btn').click(function () {
+                            var pw_set = pwArr.join('');
+                            console.log(pw_set);
+                            $(".submit_btn").addClass("pg_" + real_pg + "_answer");
+                            pwArr = [];
+                            for ( i =0; i <6; i++) {
+                                $(".dot"+i).css("background-color", "#a9a9a9");//버튼누르면 색칠초기화
+                            }
+                        });
+                        next(real_pg);
+                        for ( i =0; i <6; i++) {
+                            $(".dot"+i).css("background-color", "#a9a9a9");//버튼누르면 색칠초기화
+
+                        }
+                        pwArr = []; //배열 초기화
+                    } 
+                }
+            }
+        } 
+
         
 
         //----주민번호 뒷자리만 입력하는 경우  + dot -------------------
