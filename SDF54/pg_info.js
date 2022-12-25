@@ -45,7 +45,7 @@ const pageClickArea = [
         page: 7,
         correctAnswer: "pg_7_answer"
     },
-    
+
 ];
 
 // ----------------------------------------------------------------------------------------------------------------------- 
@@ -59,6 +59,7 @@ const blog_main = document.querySelector('.blog_main');
 
 const modal1 = document.querySelector('.modal1');
 const modal2 = document.querySelector('.modal2');
+
 
 const modal2_1 = document.querySelector('.modal2_1');
 const modal2_2 = document.querySelector('.modal2_2');
@@ -77,9 +78,10 @@ modal3_2.style.display = "none";
 modal4_1.style.display = "none";
 modal4_2.style.display = "none";
 modal5_1.style.display = "none";
+my_wrap.style.display = "none";
+my_wrap2.style.display = "none";
 modal6_1.style.display = "none";
 modal6_2.style.display = "none";
-my_wrap2.style.display = "none";
 modal1.style.display = "none";
 
 
@@ -91,7 +93,8 @@ const cursor_pos_3 = document.querySelector('.cursor_pos_3');
 const cursor_wrap_3 = document.querySelector('.cursor_wrap_3');
 const cursor_pos_4 = document.querySelector('.cursor_pos_4');
 const cursor_wrap_4 = document.querySelector('.cursor_wrap_4');
-
+const cursor_pos_4_1 = document.querySelector('.cursor_pos_4_1');
+const cursor_wrap_4_1 = document.querySelector('.cursor_wrap_4_1');
 const cursor_pos_5 = document.querySelector('.cursor_pos_5');
 const cursor_wrap_5 = document.querySelector('.cursor_wrap_5');
 const cursor_pos_6 = document.querySelector('.cursor_pos_6');
@@ -112,7 +115,7 @@ createPopper(cursor_pos_1, cursor_wrap_1, {
         {
             name: 'offset',
             options: {
-                offset: [0,0],
+                offset: [30,0],
             },
         },
     ],
@@ -145,23 +148,23 @@ createPopper(cursor_pos_4, cursor_wrap_4, {
         {
             name: 'offset',
             options: {
-                offset: [0,-100],
+                offset: [0,60],
             },
         },
     ],
 });
 
-// createPopper(cursor_pos_4_1, cursor_wrap_4_1, {
-//     placement: 'top',
-//     modifiers: [
-//         {
-//             name: 'offset',
-//             options: {
-//                 offset: [145,70],
-//             },
-//         },
-//     ],
-// });
+createPopper(cursor_pos_4_1, cursor_wrap_4_1, {
+    placement: 'top',
+    modifiers: [
+        {
+            name: 'offset',
+            options: {
+                offset: [145,70],
+            },
+        },
+    ],
+});
 
 createPopper(cursor_pos_5, cursor_wrap_5, {
     placement: 'right',
@@ -169,7 +172,7 @@ createPopper(cursor_pos_5, cursor_wrap_5, {
         {
             name: 'offset',
             options: {
-                offset: [-20,60],
+                offset: [0,60],
             },
         },
     ],
@@ -180,7 +183,7 @@ createPopper(cursor_pos_6, cursor_wrap_6, {
         {
             name: 'offset',
             options: {
-                offset: [50,60],
+                offset: [0,60],
             },
         },
     ],

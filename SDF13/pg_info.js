@@ -58,6 +58,10 @@ const pageClickArea = [
         page: 11,
         correctAnswer: "pg_11_answer"
     },
+    {
+        page: 12,
+        correctAnswer: "pg_12_answer"
+    },
 ];
 
 const inputAnswer = [
@@ -128,6 +132,10 @@ const modalCont = [
     },
     {
         page: 11,
+        instruction: "예약이 접수되었습니다. 확인을 누르면 실습이 완료됩니다."
+    },
+    {
+        page: 12,
         instruction: "완료되었습니다."
     },
     

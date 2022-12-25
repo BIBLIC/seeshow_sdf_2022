@@ -114,7 +114,7 @@ const modalCont = [
     },
     {
         page: 2,
-        instruction: "'인사동'을 입력하고 자판의 엔터를 입력하세요."
+        instruction: "'인사동'을 입력하고 검색해 주세요."
     },
     {
         page: 3,
@@ -142,11 +142,11 @@ const modalCont = [
     },
     {
         page: 9,
-        instruction: "스크롤을 내려 '알림 키워드 설정' 메뉴를 클릭하세요."
+        instruction: "'알림 키워드 설정' 메뉴를 찾아서 눌러주세요."
     },
     {
         page: 10,
-        instruction: "키워드 입력란에 '자전거'를 입력하고 '등록'을 클릭하세요."
+        instruction: "키워드 입력란에 '자전거'를 입력하고 '등록'을 눌러하세요."
     },
     {
         page: 11,

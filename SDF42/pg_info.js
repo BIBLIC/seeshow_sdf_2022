@@ -65,15 +65,15 @@ const modalCont = [
     },
     {
         page: 1,
-        instruction: "'연결한 계좌'를 클릭하세요."
+        instruction: "계좌 조회를 위해 '연결한 계좌'를 눌러주세요"
     },
     {
         page: 2,
-        instruction: "'계좌 추가하기' 버튼을 클릭하세요."
+        instruction: "등록된 전체 계좌 목록을 확인할 수 있습니다. 계좌 등록을 위해 '계좌 추가하기'를 눌러주세요"
     },
     {
         page: 3,
-        instruction: "추가할 계좌의 은행인 'NH농협' 버튼을 클릭하세요."
+        instruction: "추가할 계좌의 은행을 선택해 주세요."
     },
     {
         page: 4,

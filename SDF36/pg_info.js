@@ -120,7 +120,7 @@ const modalCont = [
     },
     {
         page: 1,
-        instruction: "'+' 버튼을 눌러주세요."
+        instruction: "우측 하단 주황색 플러스 버튼을 눌러주세요."
     },
     {
         page: 2,

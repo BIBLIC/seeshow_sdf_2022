@@ -139,7 +139,7 @@ const modalCont = [
     },
     {
         page: 7,
-        instruction: "광화문 매장을 선택해주세요."
+        instruction: "광화문 매장을 선택해 주세요."
     },
     {
         page: 8,

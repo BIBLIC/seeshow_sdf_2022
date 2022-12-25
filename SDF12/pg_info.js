@@ -38,6 +38,14 @@ const pageClickArea = [
         page: 6,
         correctAnswer: "pg_6_answer"
     },
+    {
+        page: 7,
+        correctAnswer: "pg_7_answer"
+    },
+    {
+        page: 8,
+        correctAnswer: "pg_8_answer"
+    },
 ];
 
 const inputAnswer = [
@@ -48,6 +56,8 @@ const inputAnswer = [
         page: 3,
         inputableAnswer: "서울디지털재단"
     },
+    {},
+    {},
     {},
     {},
     {},
@@ -80,10 +90,14 @@ const modalCont = [
     },
     {
         page: 6,
-        instruction: "블루택시를 호출합니다. 예상 가격을 확인하고 호출하기 버튼을 눌러주세요."
+        instruction: "일반 택시를 호출합니다. 예상 가격을 확인하고 호출하기 버튼을 눌러주세요."
     },
     {
         page: 7,
+        instruction: "호출할 택시를 찾고있습니다. 실습에서는 화면을 눌러 다음으로 진행해주세요."
+    },
+    {
+        page: 8,
         instruction: "택시가 호출되었습니다. 택시의 번호, 현재 위치, 그리고 내 위치까지 예상 소요시간을 확인할 수 있습니다. 택시 번호를 꼭 확인하고 탑승해주세요."
     },
 ];

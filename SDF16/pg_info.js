@@ -123,7 +123,7 @@ const modalCont = [
     },
     {
         page: 6,
-        instruction: "15시 40분 일정을 선택해주세요."
+        instruction: "15시 40분 일정을 선택해 주세요."
     },
     {
         page: 7,
@@ -139,7 +139,7 @@ const modalCont = [
     },
     {
         page: 10,
-        instruction: "결제수단 중 '신용/체크 일반결제'를 선택해주세요. "
+        instruction: "결제수단 중 '신용/체크 일반결제'를 선택해 주세요. "
     },
     {
         page: 11,

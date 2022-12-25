@@ -70,6 +70,10 @@ const pageClickArea = [
         page: 14,
         correctAnswer: "pg_14_answer"
     },
+    {
+        page: 15,
+        correctAnswer: "pg_15_answer"
+    },
 ];
 
 const inputAnswer = [
@@ -90,6 +94,7 @@ const inputAnswer = [
         page: 13,
         inputableAnswer: "123456"},
     {},
+    {},
 ];
 
 const modalCont = [
@@ -99,7 +104,7 @@ const modalCont = [
     },
     {
         page: 1,
-        instruction: "'확인' 버튼을 클릭하세요"
+        instruction: "'확인' 버튼을 클릭하세요 선택 접근 권한은 허용하지 않아도 서비스 이용이 가능합니다."
     },
     {
         page: 2,
@@ -119,7 +124,7 @@ const modalCont = [
     },
     {
         page: 6,
-        instruction: "'허용하기' 버튼을 클릭하세요."
+        instruction: "'허용하기' 버튼을 클릭하세요. 권한을 허용해야만 카카오 계정으로 택시앱 이용이 가능합니다."
     },
     {
         page: 7,
@@ -148,7 +153,12 @@ const modalCont = [
     {
         page: 13,
         instruction: "인증번호 '123456'을 입력하고 '변경하기' 버튼을 클릭하세요."
-    },{
+    },
+    {
+        page: 14,
+        instruction: "가입이 완료되었습니다. 가입 완료 버튼을 눌러주세요,"
+    },
+    {
         page: 14,
         instruction: "완료"
     },

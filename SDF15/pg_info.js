@@ -138,19 +138,19 @@ const modalCont = [
     },
     {
         page: 2,
-        instruction: "'확인' 버튼을 눌러주세요."
+        instruction: "앱 접근 권한을 확인하고 '확인' 버튼을 눌러주세요. 필수 접근 허용 항목은 서비스 이용을 위해 동의가 필요합니다."
     },
     {
         page: 3,
-        instruction: "'본인인증으로 로그인' 버튼을 눌러주세요."
+        instruction: "회원가입과 로그인을 한 번에 진행하는 '본인인증으로 로그인' 버튼을 눌러 주세요"
     },
     {
         page: 4,
-        instruction: "sk 통신사를 눌러주세요."
+        instruction: "본인인증을 진행합니다. 실습에서는 SK텔레콤을 선택해 주세요."
     },
     {
         page: 5,
-        instruction: "'전체동의' 체크박스를 눌러주세요."
+        instruction: "본인 확인을 위한 필수 사항에 '전체동의'를 눌러 주세요"
     },
     {
         page: 6,
@@ -158,7 +158,7 @@ const modalCont = [
     },
     {
         page: 7,
-        instruction: "'문자로 인증하기' 버튼을 눌러주세요."
+        instruction: "실습에서는 패스 앱이 아닌 문자메시지로 본인 인증을 진행하겠습니다. '문자로 인증하기' 버튼을 눌러 주세요."
     },
     {
         page: 8,
@@ -166,7 +166,7 @@ const modalCont = [
     },
     {
         page: 9,
-        instruction: "주민번호 앞 6자리를 입력해주세요."
+        instruction: "주민등록번호 앞 숫자 여섯 자리를 입력해 주세요."
     },
     {
         page: 10,
@@ -174,7 +174,7 @@ const modalCont = [
     },
     {
         page: 11,
-        instruction: "'-'을 제외한 휴대폰번호 11자리 입력 후 '확인' 버튼을 눌러주세요."
+        instruction: "휴대폰번호 11자리를 숫자만 입력 후 '확인' 버튼을 눌러주세요."
     },
     {
         page: 12,
@@ -182,27 +182,27 @@ const modalCont = [
     },
     {
         page: 13,
-        instruction: "'네, 이동할게요' 부분을 눌러주세요."
+        instruction: "서비스 이용을 위한 필수 약관 동의를 위해 ‘네, 이동할게요’ 버튼을 눌러 주세요."
     },
     {
         page: 14,
-        instruction: "'전체동의' 체크박스를 눌러주세요."
+        instruction: "전체 동의를 눌러주세요."
     },
     {
         page: 15,
-        instruction: "'다음' 버튼을 눌러주세요."
+        instruction: "선택 항목은 동의하지 않아도 서비스 이용에 제한이 없습니다 확인하고 다음 버튼을 눌러주세요."
     },
     {
         page: 16,
-        instruction: "마케팅 정보 수신 동의 여부를 눌러주세요."
+        instruction: "마케팅 정보 수신 동의 내용을 확인하고 동의 여부를 선택해 주세요."
     },
     {
         page: 17,
-        instruction: "'티머니GO 시작하기' 버튼을 눌러주세요."
+        instruction: "티머니GO 가입이 완료되었습니다. '티머니GO 시작하기' 버튼을 눌러주세요."
     },
     {
         page: 18,
-        instruction: "티머니GO 가입이 완료되었습니다. 좌측 상단의 이름을 확인하고 네비게이션바의 '다음' 버튼을 눌러주세요. "
+        instruction: "티머니GO 메인 화면입니다. 네비게이션바의 '다음' 버튼을 누르면 실습이 완료됩니다."
     },
     {
         page: 19,

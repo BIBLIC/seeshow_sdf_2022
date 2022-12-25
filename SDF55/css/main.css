@@ -1,0 +1,27 @@
+.top svg {
+    width: 1.5em;
+    height: 1.5em;
+    color: white;
+}
+
+/* .icon_img.white{
+    background : white;
+} */
+
+
+
+.icon3 svg
+ {
+    color : white;
+    width: clamp(24px, 15px + 2.3vw, 2.3em);
+    height: clamp(24px, 15px + 2.3vw, 2.3em);
+    padding-bottom: 5px;
+}
+
+#main {
+    height: 70vh !important;
+}
+
+#p6 #main {
+    height: 87vh !important;
+}

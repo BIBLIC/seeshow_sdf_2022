@@ -95,7 +95,7 @@ const modalCont = [
     },
     {
         page: 1,
-        instruction: "'조회ㆍ발급' 탭을 눌러주세요."
+        instruction: "국세청 손택스 메인화면에서 조회/발급 탭을 눌러 주세요."
     },
     {
         page: 2,
@@ -107,35 +107,35 @@ const modalCont = [
     },
     {
         page: 4,
-        instruction: "건강보험료 영역에서 '조회' 버튼을 눌러주세요."
+        instruction: "필요한 항목을 조회 해야만 자료 내려받기가 가능합니다. 건강보험료 항목을 조회해 주세요."
     },
     {
         page: 5,
-        instruction: "국민연금 영역에서 '조회' 버튼을 눌러주세요."
+        instruction: "국민연금 항목을 조회해 주세요"
     },
     {
         page: 6,
-        instruction: "보험료 영역에서 '조회' 버튼을 눌러주세요."
+        instruction: "보험료 항목을 조회해 주세요"
     },
     {
         page: 7,
-        instruction: "의료비 영역에서 '조회' 버튼을 눌러주세요."
+        instruction: "의료비 항목을 조회해 주세요"
     },
     {
         page: 8,
-        instruction: "스크롤을 내려 신용카드 영역에서 '조회' 버튼을 눌러주세요."
+        instruction: "마지막으로 신용카드 항목을 조회해 주세요"
     },
     {
         page: 9,
-        instruction: "'일괄/점자 내려받기' 버튼을 눌러주세요."
+        instruction: "조회한 항목들을 내려받겠습니다 '일괄/점자 내려받기' 버튼을 눌러주세요."
     },
     {
         page: 10,
-        instruction: "선택한 항목을 확인하고 스크롤을 내려 '내려받기' 버튼을 눌러주세요."
+        instruction: "내려받기 버튼을 누르면 다운로드가 시작되고 실습이 완료됩니다. 내려받기 버튼을 눌러주세요."
     },
     {
         page: 11,
-        instruction: "파일 내려받기가 완료될 때 까지 기다려주세요."
+        instruction: "다운로드 시작"
     },
     {
         page: 12,

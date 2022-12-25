@@ -92,23 +92,23 @@ const modalCont = [
     },
     {
         page: 4,
-        instruction: "하단의 '다음' 버튼을 눌러주세요."
+        instruction: "손택스에 등록된 정보를 확인하고 하단의 '다음' 버튼을 눌러주세요."
     },
     {
         page: 5,
-        instruction: "스크롤을 내려 '위 내용을 확인함' 체크박스를 눌러주세요."
+        instruction: "전자송달 신청 이용 안내를 모두 확인하고 화면하단의 '위의 내용을 확인함'을 체크해 주세요."
     },
     {
         page: 6,
-        instruction: "하단의 '전자송달 신청하기'를 눌러주세요."
+        instruction: "'전자송달 신청하기'를 눌러주세요."
     },
     {
         page: 7,
-        instruction: "'확인'을 눌러주세요."
+        instruction: "주의사항을 확인하고 '확인'을 눌러주세요"
     },
     {
         page: 8,
-        instruction: "'확인'을 눌러주세요."
+        instruction: "확인을 누르면 전자송달신청과 실습이 완료됩니다."
     },
     {
         page: 9,
