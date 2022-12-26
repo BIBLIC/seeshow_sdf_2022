@@ -196,14 +196,15 @@
 .under_bar {
     
     width: 100%;
-    min-height: 9vh;
+    min-height: 12vh;
     padding-top: .5em;
-    min-height: 6vh;
+    border-top-right-radius: 0px !important;
+    border-top-left-radius: 0px !important;
     
 }
 
 #p4 .scroller {
-    height: 79vh;
+    height: 77vh;
 }
 
 #p5 .container .icon {
