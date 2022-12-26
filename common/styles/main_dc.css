@@ -1502,11 +1502,12 @@ input:focus::placeholder {
 
 .video .video_item .video-cont .reactions .comment_wrap .comment .cont {
   display: -webkit-box;
+  text-align: left;
   overflow: hidden;
   word-break: break-all;
   word-wrap: break-word;
   text-overflow: ellipsis;
-  -webkit-line-clamp: 3;
+  -webkit-line-clamp: 4;
   -webkit-box-orient: vertical;
   font-size: clamp(13px, 13px + 1.2vw, 1em);
   padding-top: .3em;

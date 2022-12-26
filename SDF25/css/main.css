@@ -243,10 +243,6 @@ svg {
     border-radius: 15px;
     margin-top: 1em;
     margin-bottom: 1em;
-    background: #e0e0e0;
-    display: flex;
-    justify-content: center;
-    align-items: center;
 }
 
 .wrapper .detail .tab {
@@ -272,6 +268,15 @@ svg {
 #p1 .share {
     width: .7em;
     height: .7em;
+}
+
+
+#p1 ul li .left {
+    width: 60%;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    word-break: break-all;
 }
 
 /* ------------------------------------------ */
@@ -303,6 +308,10 @@ svg {
 #p2 .bg-lightgray {
     padding: 1em;
     border: 1.5px solid #E5E5E5;
+    max-height: 13vh;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    word-break: break-all;
 }
 
 #p2 .text-b,
