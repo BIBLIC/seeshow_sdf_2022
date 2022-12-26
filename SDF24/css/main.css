@@ -434,13 +434,14 @@
 #p10 .bg-lightgray {
     height: 30vh;
     padding: 1.5em;
+    background: #EAEBEF;
 }
 
 #p8 .bg-image,
 #p9 .bg-image,
 #p10 .bg-image {
     width: 100%;
-    height: 24vh;
+    /* min-height: 24vh; */
     background-size: cover;
     background-position: center;
 }
