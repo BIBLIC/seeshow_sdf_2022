@@ -60,10 +60,7 @@ const inputAnswer = [
     {},
     {},
     {},
-    {
-        page: 6,
-        inputableAnswer: "36"  
-    },
+    {},
     {},
     {},
     {},
@@ -215,38 +212,38 @@ const modalCont = [
 // // });
 
 
-$(document).on("click", '.pg_4_answer', function () {
-    if (page_num === 4) {
-        $( document ).ready(function() {
-            setTimeout(function () {
-                if (page_num === 5) {
-                    next();
-                }
-            }, 800);
-          });  
-    }
-});
+// $(document).on("click", '.pg_4_answer', function () {
+//     if (page_num === 4) {
+//         $( document ).ready(function() {
+//             setTimeout(function () {
+//                 if (page_num === 5) {
+//                     next();
+//                 }
+//             }, 800);
+//           });  
+//     }
+// });
 
-$(document).on("click", "#next_btn", function () {
-    if (page_num === 4) {
-        $( document ).ready(function() {
-            setTimeout(function () {
-                if (page_num === 5) {
-                    next();
-                }
-            }, 800);
-          });  
-    }
-});
+// $(document).on("click", "#next_btn", function () {
+//     if (page_num === 4) {
+//         $( document ).ready(function() {
+//             setTimeout(function () {
+//                 if (page_num === 5) {
+//                     next();
+//                 }
+//             }, 800);
+//           });  
+//     }
+// });
 
-$(document).on("click", "#prev_btn", function () {
-    if (page_num === 6) {
-        $( document ).ready(function() {
-            setTimeout(function () {
-                if (page_num === 5) {
-                    next();
-                }
-            }, 800);
-          });  
-    }
-});
+// $(document).on("click", "#prev_btn", function () {
+//     if (page_num === 6) {
+//         $( document ).ready(function() {
+//             setTimeout(function () {
+//                 if (page_num === 5) {
+//                     next();
+//                 }
+//             }, 800);
+//           });  
+//     }
+// });
