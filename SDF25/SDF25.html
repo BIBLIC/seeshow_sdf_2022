@@ -122,9 +122,10 @@
                                         </div>
                                     </div>
 
-                                        <!-- 배너 이미지 추가 -->
-                                        <!-- 이미지 수정(배경 꼭 투명으로) -->
-                                        <div class="bg-image banner" style="background-image: url('../common/images/banner.png');"></div>
+                                    <!-- 배너 이미지 추가 -->
+                                    <!-- 이미지 수정(배경 꼭 투명으로) -->
+                                    <div class="bg-image banner"
+                                        style="background-image: url('../common/images/banner.png');"></div>
 
                                     <div class="wrapper fontSz">
                                         <div class="tab mt-0 justify-content-between align-items-end">
@@ -155,6 +156,7 @@
                                     </div>
 
                                     <div class="wrapper py-0 fontSz">
+                                        <div class="cursor_pos_1">
                                         <div class="tab rounded-0 py-4 justify-content-start border-bottom pg_1_answer">
                                             <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16"
                                                 fill="currentColor" class="bi bi-chat-left-dots text-navy me-2"
@@ -166,6 +168,18 @@
                                             </svg>
                                             국민비서구삐
                                         </div>
+                                        <!-- 커서 가이드 -->
+                                        <div class="cursor_wrap cursor_wrap_1 pg_1_answer">
+                                            <span class="cursor pg_1_answer" x-placement="bottom">
+                                                <button class="react-joyride__beacon pg_1_answer" type="button">
+                                                    <span class="cursor_outer pg_1_answer"></span>
+                                                    <span class="cursor_inner pg_1_answer"><span>
+                                                </button>
+                                            </span>
+                                        </div>
+                                        <!-- 커서 가이드 -->
+                                        
+                                    </div>
                                         <div class="tab py-4 justify-content-start">
                                             <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16"
                                                 fill="currentColor" class="bi bi-phone text-navy me-2"
@@ -318,76 +332,102 @@
                                             </div>
                                             <div class="text-center">※ 위와 같이 개인정보를 수집·이용하는데 동의하십니까?</div>
                                             <div class="tab">
-                                                <div class="mx-2 pg_2_answer input_1">
-                                                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
-                                                        class="bi bi-circle text-lightgray" viewBox="0 0 16 16">
-                                                        <path d="M8 15A7 7 0 1 1 8 1a7 7 0 0 1 0 14zm0 1A8 8 0 1 0 8 0a8 8 0 0 0 0 16z" />
-                                                    </svg>
-                                                    동의함
+                                                <div class="cursor_pos_2">
+                                                    <div class="mx-2 selc_3_input pg_2_answer input_1">
+                                                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16"
+                                                            fill="currentColor"
+                                                            class="text-lightgray bi bi-record-circle-fill selc_3_input pg_2_answer input_1"
+                                                            viewBox="0 0 16 16">
+                                                            <path
+                                                                d="M16 8A8 8 0 1 1 0 8a8 8 0 0 1 16 0zm-8 3a3 3 0 1 0 0-6 3 3 0 0 0 0 6z" />
+                                                        </svg>
+                                                        동의함
+                                                    </div>
+                                                    <!-- 커서 가이드 -->
+                                            <div class="selc_3_input cursor_wrap cursor_wrap_2 pg_2_answer">
+                                                <span class="selc_3_input cursor pg_2_answer" x-placement="bottom">
+                                                    <button class="selc_3_input react-joyride__beacon pg_2_answer" type="button">
+                                                        <span class="selc_3_input cursor_outer pg_2_answer"></span>
+                                                        <span class="selc_3_input cursor_inner pg_2_answer"><span>
+                                                    </button>
+                                                </span>
+                                            </div>
+                                            <!-- 커서 가이드 -->
                                                 </div>
                                                 <div class="mx-2">
-                                                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
-                                                        class="bi bi-circle text-lightgray" viewBox="0 0 16 16">
-                                                        <path d="M8 15A7 7 0 1 1 8 1a7 7 0 0 1 0 14zm0 1A8 8 0 1 0 8 0a8 8 0 0 0 0 16z" />
+                                                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16"
+                                                        fill="currentColor"
+                                                        class="text-lightgray bi bi-record-circle-fill"
+                                                        viewBox="0 0 16 16">
+                                                        <path
+                                                            d="M16 8A8 8 0 1 1 0 8a8 8 0 0 1 16 0zm-8 3a3 3 0 1 0 0-6 3 3 0 0 0 0 6z" />
                                                     </svg>
                                                     동의하지 않음
                                                 </div>
                                             </div>
                                         </div>
-    
+
                                         <div class="wrapper fontSz">
                                             <div class="tab txt fw-bold">개인정보 수집·이용 동의<div class="text-r">(필수)</div>
                                             </div>
-                                            <div class="tab bg-lightgray">'국민비서 서비스'는 전자정부법 제9조의2, 제11조, 전자정부법 시행형 제90조에 따라 국민비서 알림·고지 서비스</div>
+                                            <div class="tab bg-lightgray">'국민비서 서비스'는 전자정부법 제9조의2, 제11조, 전자정부법 시행형 제90조에
+                                                따라 국민비서 알림·고지 서비스</div>
                                             <div class="text-center">※ 위와 같이 개인정보를 수집·이용하는데 동의하십니까?</div>
                                             <div class="tab">
-                                                <div class="mx-2 pg_2_answer input_2">
+                                                <div class="mx-2 selc_3_input pg_2_answer input_2">
+
                                                     <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16"
-                                                        fill="currentColor" class="bi bi-circle text-lightgray"
+                                                        fill="currentColor"
+                                                        class="text-lightgray bi bi-record-circle-fill selc_3_input pg_2_answer input_2"
                                                         viewBox="0 0 16 16">
                                                         <path
-                                                            d="M8 15A7 7 0 1 1 8 1a7 7 0 0 1 0 14zm0 1A8 8 0 1 0 8 0a8 8 0 0 0 0 16z" />
+                                                            d="M16 8A8 8 0 1 1 0 8a8 8 0 0 1 16 0zm-8 3a3 3 0 1 0 0-6 3 3 0 0 0 0 6z" />
                                                     </svg>
                                                     동의함
                                                 </div>
                                                 <div class="mx-2">
                                                     <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16"
-                                                        fill="currentColor" class="bi bi-circle text-lightgray"
+                                                        fill="currentColor"
+                                                        class="text-lightgray bi bi-record-circle-fill"
                                                         viewBox="0 0 16 16">
                                                         <path
-                                                            d="M8 15A7 7 0 1 1 8 1a7 7 0 0 1 0 14zm0 1A8 8 0 1 0 8 0a8 8 0 0 0 0 16z" />
+                                                            d="M16 8A8 8 0 1 1 0 8a8 8 0 0 1 16 0zm-8 3a3 3 0 1 0 0-6 3 3 0 0 0 0 6z" />
                                                     </svg>
                                                     동의하지 않음
                                                 </div>
                                             </div>
                                         </div>
-    
+
                                         <div class="wrapper pb-3 fontSz">
                                             <div class="tab txt fw-bold">주민등록번호 처리에 관한 안내</div>
-                                            <div class="tab bg-lightgray">개인정보보호법 제 24조의2 제1항 제1호에 따라 정보 주체의 동의 없이 다음의 개인정보를 수집·이용·제공합니다. </div>
+                                            <div class="tab bg-lightgray">개인정보보호법 제 24조의2 제1항 제1호에 따라 정보 주체의 동의 없이 다음의
+                                                개인정보를 수집·이용·제공합니다. </div>
                                         </div>
-    
+
                                         <div class="wrapper fontSz">
                                             <div class="tab txt fw-bold">개인정보 제3자 제공 동의<div class="text-r">(필수)</div>
                                             </div>
-                                            <div class="tab bg-lightgray">위의 개인정보 제공에 대한 동의를 거부하실 권리가 있으며, 거부시 국민비서 알림 서비스 이용이 제한될 수 있습니다.</div>
+                                            <div class="tab bg-lightgray">위의 개인정보 제공에 대한 동의를 거부하실 권리가 있으며, 거부시 국민비서 알림
+                                                서비스 이용이 제한될 수 있습니다.</div>
                                             <div class="text-center">※ 위와 같이 개인정보를 제3자에게 제공하는데 동의하십니까?</div>
                                             <div class="tab">
-                                                <div class="mx-2 pg_2_answer input_3">
+                                                <div class="mx-2 pg_2_answer input_3 selc_3_input pg_2_answer input_3">
                                                     <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16"
-                                                        fill="currentColor" class="bi bi-circle text-lightgray"
+                                                        fill="currentColor"
+                                                        class="text-lightgray bi bi-record-circle-fill selc_3_input pg_2_answer input_3"
                                                         viewBox="0 0 16 16">
                                                         <path
-                                                            d="M8 15A7 7 0 1 1 8 1a7 7 0 0 1 0 14zm0 1A8 8 0 1 0 8 0a8 8 0 0 0 0 16z" />
+                                                            d="M16 8A8 8 0 1 1 0 8a8 8 0 0 1 16 0zm-8 3a3 3 0 1 0 0-6 3 3 0 0 0 0 6z" />
                                                     </svg>
                                                     동의함
                                                 </div>
                                                 <div class="mx-2">
                                                     <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16"
-                                                        fill="currentColor" class="bi bi-circle text-lightgray"
+                                                        fill="currentColor"
+                                                        class="text-lightgray bi bi-record-circle-fill"
                                                         viewBox="0 0 16 16">
                                                         <path
-                                                            d="M8 15A7 7 0 1 1 8 1a7 7 0 0 1 0 14zm0 1A8 8 0 1 0 8 0a8 8 0 0 0 0 16z" />
+                                                            d="M16 8A8 8 0 1 1 0 8a8 8 0 0 1 16 0zm-8 3a3 3 0 1 0 0-6 3 3 0 0 0 0 6z" />
                                                     </svg>
                                                     동의하지 않음
                                                 </div>
@@ -398,47 +438,49 @@
                                     <div class="wrapper border-dashed-bottom fontSz">
                                         <div class="tab txt fw-bold">고유식별정보 수집·이용·제공 동의<div class="text-navy">(선택)</div>
                                         </div>
-                                        <div class="tab bg-lightgray pg_2_txt_darker">※외국인 등록번호 사용자가 동의 거부시 서비스 신청 및 이용이 거부될 수 있습니다.</div>
+                                        <div class="tab bg-lightgray pg_2_txt_darker">※외국인 등록번호 사용자가 동의 거부시 서비스 신청 및 이용이
+                                            거부될 수 있습니다.</div>
                                         <div class="text-center">※ 위와 같이 고유식별정보를 수집·이용하는데 동의하십니까?</div>
                                         <div class="tab">
                                             <div class="mx-2">
                                                 <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16"
-                                                    fill="currentColor" class="bi bi-circle text-lightgray"
+                                                    fill="currentColor" class="text-lightgray bi bi-record-circle-fill"
                                                     viewBox="0 0 16 16">
                                                     <path
-                                                        d="M8 15A7 7 0 1 1 8 1a7 7 0 0 1 0 14zm0 1A8 8 0 1 0 8 0a8 8 0 0 0 0 16z" />
+                                                        d="M16 8A8 8 0 1 1 0 8a8 8 0 0 1 16 0zm-8 3a3 3 0 1 0 0-6 3 3 0 0 0 0 6z" />
                                                 </svg>
                                                 동의함
                                             </div>
                                             <div class="mx-2">
                                                 <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16"
-                                                    fill="currentColor" class="bi bi-circle text-lightgray"
+                                                    fill="currentColor" class="text-lightgray bi bi-record-circle-fill"
                                                     viewBox="0 0 16 16">
                                                     <path
-                                                        d="M8 15A7 7 0 1 1 8 1a7 7 0 0 1 0 14zm0 1A8 8 0 1 0 8 0a8 8 0 0 0 0 16z" />
+                                                        d="M16 8A8 8 0 1 1 0 8a8 8 0 0 1 16 0zm-8 3a3 3 0 1 0 0-6 3 3 0 0 0 0 6z" />
                                                 </svg>
                                                 동의하지 않음
                                             </div>
                                         </div>
                                         <!-- ----------------------------- -->
-                                        <div class="tab bg-lightgray pg_2_txt_darker">위의 고유식별정보 제공에 대한 동의를 거부하실 권리가 있으며, 거부시 국민비서 알림·고지 서비스 이용이 제한될 수 있습니다.</div>
+                                        <div class="tab bg-lightgray pg_2_txt_darker">위의 고유식별정보 제공에 대한 동의를 거부하실 권리가 있으며,
+                                            거부시 국민비서 알림·고지 서비스 이용이 제한될 수 있습니다.</div>
                                         <div class="text-center">※ 위와 같이 고유식별정보를 제3자에게 제공하는데 동의하십니까?</div>
                                         <div class="tab">
                                             <div class="mx-2">
                                                 <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16"
-                                                    fill="currentColor" class="bi bi-circle text-lightgray"
+                                                    fill="currentColor" class="text-lightgray bi bi-record-circle-fill"
                                                     viewBox="0 0 16 16">
                                                     <path
-                                                        d="M8 15A7 7 0 1 1 8 1a7 7 0 0 1 0 14zm0 1A8 8 0 1 0 8 0a8 8 0 0 0 0 16z" />
+                                                        d="M16 8A8 8 0 1 1 0 8a8 8 0 0 1 16 0zm-8 3a3 3 0 1 0 0-6 3 3 0 0 0 0 6z" />
                                                 </svg>
                                                 동의함
                                             </div>
                                             <div class="mx-2">
                                                 <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16"
-                                                    fill="currentColor" class="bi bi-circle text-lightgray"
+                                                    fill="currentColor" class="text-lightgray bi bi-record-circle-fill"
                                                     viewBox="0 0 16 16">
                                                     <path
-                                                        d="M8 15A7 7 0 1 1 8 1a7 7 0 0 1 0 14zm0 1A8 8 0 1 0 8 0a8 8 0 0 0 0 16z" />
+                                                        d="M16 8A8 8 0 1 1 0 8a8 8 0 0 1 16 0zm-8 3a3 3 0 1 0 0-6 3 3 0 0 0 0 6z" />
                                                 </svg>
                                                 동의하지 않음
                                             </div>
@@ -451,26 +493,26 @@
                                         <div class="tab">
                                             <div class="mx-3">
                                                 <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16"
-                                                    fill="currentColor" class="bi bi-circle text-lightgray"
+                                                    fill="currentColor" class="text-lightgray bi bi-record-circle-fill"
                                                     viewBox="0 0 16 16">
                                                     <path
-                                                        d="M8 15A7 7 0 1 1 8 1a7 7 0 0 1 0 14zm0 1A8 8 0 1 0 8 0a8 8 0 0 0 0 16z" />
+                                                        d="M16 8A8 8 0 1 1 0 8a8 8 0 0 1 16 0zm-8 3a3 3 0 1 0 0-6 3 3 0 0 0 0 6z" />
                                                 </svg>
                                                 전체 동의
                                             </div>
                                             <div class="mx-3">
                                                 <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16"
-                                                    fill="currentColor" class="bi bi-circle text-lightgray"
+                                                    fill="currentColor" class="text-lightgray bi bi-record-circle-fill"
                                                     viewBox="0 0 16 16">
                                                     <path
-                                                        d="M8 15A7 7 0 1 1 8 1a7 7 0 0 1 0 14zm0 1A8 8 0 1 0 8 0a8 8 0 0 0 0 16z" />
+                                                        d="M16 8A8 8 0 1 1 0 8a8 8 0 0 1 16 0zm-8 3a3 3 0 1 0 0-6 3 3 0 0 0 0 6z" />
                                                 </svg>
                                                 동의하지 않음
                                             </div>
                                         </div>
                                         <!-- ----------------------------- -->
                                         <div class="tab">
-                                            <button type="button" class="btn btn-darkgray rounded-0 w-40 ">
+                                            <button type="button" class="btn btn-darkgray rounded-0 w-40 selc_next_btn">
                                                 확인
                                             </button>
                                         </div>
@@ -557,18 +599,18 @@
                                             <div class="right">
                                                 <div class="check">
                                                     <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16"
-                                                        fill="currentColor" class="bi bi-circle text-lightgray"
+                                                        fill="currentColor" class="text-lighter-gray bi bi-record-circle-fill"
                                                         viewBox="0 0 16 16">
                                                         <path
-                                                            d="M8 15A7 7 0 1 1 8 1a7 7 0 0 1 0 14zm0 1A8 8 0 1 0 8 0a8 8 0 0 0 0 16z" />
+                                                            d="M16 8A8 8 0 1 1 0 8a8 8 0 0 1 16 0zm-8 3a3 3 0 1 0 0-6 3 3 0 0 0 0 6z" />
                                                     </svg>
                                                 </div>
                                                 <div class="check">
                                                     <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16"
-                                                        fill="currentColor" class="bi bi-circle text-lightgray"
+                                                        fill="currentColor" class="text-lighter-gray bi bi-record-circle-fill"
                                                         viewBox="0 0 16 16">
                                                         <path
-                                                            d="M8 15A7 7 0 1 1 8 1a7 7 0 0 1 0 14zm0 1A8 8 0 1 0 8 0a8 8 0 0 0 0 16z" />
+                                                            d="M16 8A8 8 0 1 1 0 8a8 8 0 0 1 16 0zm-8 3a3 3 0 1 0 0-6 3 3 0 0 0 0 6z" />
                                                     </svg>
                                                 </div>
                                             </div>
@@ -582,18 +624,18 @@
                                             <div class="right">
                                                 <div class="check">
                                                     <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16"
-                                                        fill="currentColor" class="bi bi-circle text-lightgray"
+                                                        fill="currentColor" class="text-lighter-gray bi bi-record-circle-fill"
                                                         viewBox="0 0 16 16">
                                                         <path
-                                                            d="M8 15A7 7 0 1 1 8 1a7 7 0 0 1 0 14zm0 1A8 8 0 1 0 8 0a8 8 0 0 0 0 16z" />
+                                                            d="M16 8A8 8 0 1 1 0 8a8 8 0 0 1 16 0zm-8 3a3 3 0 1 0 0-6 3 3 0 0 0 0 6z" />
                                                     </svg>
                                                 </div>
                                                 <div class="check">
                                                     <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16"
-                                                        fill="currentColor" class="bi bi-circle text-lightgray"
+                                                        fill="currentColor" class="text-lighter-gray bi bi-record-circle-fill"
                                                         viewBox="0 0 16 16">
                                                         <path
-                                                            d="M8 15A7 7 0 1 1 8 1a7 7 0 0 1 0 14zm0 1A8 8 0 1 0 8 0a8 8 0 0 0 0 16z" />
+                                                            d="M16 8A8 8 0 1 1 0 8a8 8 0 0 1 16 0zm-8 3a3 3 0 1 0 0-6 3 3 0 0 0 0 6z" />
                                                     </svg>
                                                 </div>
                                             </div>
@@ -607,10 +649,10 @@
                                             <div class="right">
                                                 <div class="check">
                                                     <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16"
-                                                        fill="currentColor" class="bi bi-circle text-lightgray"
+                                                        fill="currentColor" class="text-lighter-gray bi bi-record-circle-fill"
                                                         viewBox="0 0 16 16">
                                                         <path
-                                                            d="M8 15A7 7 0 1 1 8 1a7 7 0 0 1 0 14zm0 1A8 8 0 1 0 8 0a8 8 0 0 0 0 16z" />
+                                                            d="M16 8A8 8 0 1 1 0 8a8 8 0 0 1 16 0zm-8 3a3 3 0 1 0 0-6 3 3 0 0 0 0 6z" />
                                                     </svg>
                                                 </div>
                                                 <div class="check">
@@ -632,18 +674,18 @@
                                             <div class="right">
                                                 <div class="check">
                                                     <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16"
-                                                        fill="currentColor" class="bi bi-circle text-lightgray"
+                                                        fill="currentColor" class="text-lighter-gray bi bi-record-circle-fill"
                                                         viewBox="0 0 16 16">
                                                         <path
-                                                            d="M8 15A7 7 0 1 1 8 1a7 7 0 0 1 0 14zm0 1A8 8 0 1 0 8 0a8 8 0 0 0 0 16z" />
+                                                            d="M16 8A8 8 0 1 1 0 8a8 8 0 0 1 16 0zm-8 3a3 3 0 1 0 0-6 3 3 0 0 0 0 6z" />
                                                     </svg>
                                                 </div>
                                                 <div class="check">
                                                     <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16"
-                                                        fill="currentColor" class="bi bi-circle text-lightgray"
+                                                        fill="currentColor" class="text-lighter-gray bi bi-record-circle-fill"
                                                         viewBox="0 0 16 16">
                                                         <path
-                                                            d="M8 15A7 7 0 1 1 8 1a7 7 0 0 1 0 14zm0 1A8 8 0 1 0 8 0a8 8 0 0 0 0 16z" />
+                                                            d="M16 8A8 8 0 1 1 0 8a8 8 0 0 1 16 0zm-8 3a3 3 0 1 0 0-6 3 3 0 0 0 0 6z" />
                                                     </svg>
                                                 </div>
                                             </div>
@@ -658,42 +700,18 @@
                                             <div class="right">
                                                 <div class="check">
                                                     <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16"
-                                                        fill="currentColor" class="bi bi-circle text-lightgray"
+                                                        fill="currentColor" class="text-lighter-gray bi bi-record-circle-fill"
                                                         viewBox="0 0 16 16">
                                                         <path
-                                                            d="M8 15A7 7 0 1 1 8 1a7 7 0 0 1 0 14zm0 1A8 8 0 1 0 8 0a8 8 0 0 0 0 16z" />
+                                                            d="M16 8A8 8 0 1 1 0 8a8 8 0 0 1 16 0zm-8 3a3 3 0 1 0 0-6 3 3 0 0 0 0 6z" />
                                                     </svg>
                                                 </div>
                                                 <div class="check">
                                                     <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16"
-                                                        fill="currentColor" class="bi bi-circle text-lightgray"
+                                                        fill="currentColor" class="text-lighter-gray bi bi-record-circle-fill"
                                                         viewBox="0 0 16 16">
                                                         <path
-                                                            d="M8 15A7 7 0 1 1 8 1a7 7 0 0 1 0 14zm0 1A8 8 0 1 0 8 0a8 8 0 0 0 0 16z" />
-                                                    </svg>
-                                                </div>
-                                            </div>
-                                        </div>
-                                        <div class="tab fontSz">
-                                            <div class="left">
-                                                <img class="icon" src="./assets/image/이미지추가.png" alt="">
-                                                내용추가
-                                            </div>
-                                            <div class="right">
-                                                <div class="check">
-                                                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16"
-                                                        fill="currentColor" class="bi bi-circle text-lightgray"
-                                                        viewBox="0 0 16 16">
-                                                        <path
-                                                            d="M8 15A7 7 0 1 1 8 1a7 7 0 0 1 0 14zm0 1A8 8 0 1 0 8 0a8 8 0 0 0 0 16z" />
-                                                    </svg>
-                                                </div>
-                                                <div class="check">
-                                                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16"
-                                                        fill="currentColor" class="bi bi-circle text-lightgray"
-                                                        viewBox="0 0 16 16">
-                                                        <path
-                                                            d="M8 15A7 7 0 1 1 8 1a7 7 0 0 1 0 14zm0 1A8 8 0 1 0 8 0a8 8 0 0 0 0 16z" />
+                                                            d="M16 8A8 8 0 1 1 0 8a8 8 0 0 1 16 0zm-8 3a3 3 0 1 0 0-6 3 3 0 0 0 0 6z" />
                                                     </svg>
                                                 </div>
                                             </div>
@@ -706,25 +724,49 @@
                                             <div class="right">
                                                 <div class="check">
                                                     <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16"
-                                                        fill="currentColor" class="bi bi-circle text-lightgray"
+                                                        fill="currentColor" class="text-lighter-gray bi bi-record-circle-fill"
                                                         viewBox="0 0 16 16">
                                                         <path
-                                                            d="M8 15A7 7 0 1 1 8 1a7 7 0 0 1 0 14zm0 1A8 8 0 1 0 8 0a8 8 0 0 0 0 16z" />
+                                                            d="M16 8A8 8 0 1 1 0 8a8 8 0 0 1 16 0zm-8 3a3 3 0 1 0 0-6 3 3 0 0 0 0 6z" />
                                                     </svg>
                                                 </div>
                                                 <div class="check">
                                                     <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16"
-                                                        fill="currentColor" class="bi bi-circle text-lightgray"
+                                                        fill="currentColor" class="text-lighter-gray bi bi-record-circle-fill"
                                                         viewBox="0 0 16 16">
                                                         <path
-                                                            d="M8 15A7 7 0 1 1 8 1a7 7 0 0 1 0 14zm0 1A8 8 0 1 0 8 0a8 8 0 0 0 0 16z" />
+                                                            d="M16 8A8 8 0 1 1 0 8a8 8 0 0 1 16 0zm-8 3a3 3 0 1 0 0-6 3 3 0 0 0 0 6z" />
+                                                    </svg>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="tab fontSz">
+                                            <div class="left">
+                                                <img class="icon" src="./assets/image/이미지추가.png" alt="">
+                                                내용추가
+                                            </div>
+                                            <div class="right">
+                                                <div class="check">
+                                                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16"
+                                                        fill="currentColor" class="text-lighter-gray bi bi-record-circle-fill"
+                                                        viewBox="0 0 16 16">
+                                                        <path
+                                                            d="M16 8A8 8 0 1 1 0 8a8 8 0 0 1 16 0zm-8 3a3 3 0 1 0 0-6 3 3 0 0 0 0 6z" />
+                                                    </svg>
+                                                </div>
+                                                <div class="check">
+                                                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16"
+                                                        fill="currentColor" class="text-lighter-gray bi bi-record-circle-fill"
+                                                        viewBox="0 0 16 16">
+                                                        <path
+                                                            d="M16 8A8 8 0 1 1 0 8a8 8 0 0 1 16 0zm-8 3a3 3 0 1 0 0-6 3 3 0 0 0 0 6z" />
                                                     </svg>
                                                 </div>
                                             </div>
                                         </div> -->
-                                        
-                                        
-                                        
+
+
+
                                         <div class="tab fontSz">
                                             <div class="left">
                                                 <!-- 이미지 추가 -->
@@ -734,10 +776,10 @@
                                             <div class="right">
                                                 <div class="check">
                                                     <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16"
-                                                        fill="currentColor" class="bi bi-circle text-lightgray"
+                                                        fill="currentColor" class="text-lighter-gray bi bi-record-circle-fill"
                                                         viewBox="0 0 16 16">
                                                         <path
-                                                            d="M8 15A7 7 0 1 1 8 1a7 7 0 0 1 0 14zm0 1A8 8 0 1 0 8 0a8 8 0 0 0 0 16z" />
+                                                            d="M16 8A8 8 0 1 1 0 8a8 8 0 0 1 16 0zm-8 3a3 3 0 1 0 0-6 3 3 0 0 0 0 6z" />
                                                     </svg>
                                                 </div>
                                                 <div class="check">
@@ -759,18 +801,18 @@
                                             <div class="right">
                                                 <div class="check">
                                                     <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16"
-                                                        fill="currentColor" class="bi bi-circle text-lightgray"
+                                                        fill="currentColor" class="text-lighter-gray bi bi-record-circle-fill"
                                                         viewBox="0 0 16 16">
                                                         <path
-                                                            d="M8 15A7 7 0 1 1 8 1a7 7 0 0 1 0 14zm0 1A8 8 0 1 0 8 0a8 8 0 0 0 0 16z" />
+                                                            d="M16 8A8 8 0 1 1 0 8a8 8 0 0 1 16 0zm-8 3a3 3 0 1 0 0-6 3 3 0 0 0 0 6z" />
                                                     </svg>
                                                 </div>
                                                 <div class="check">
                                                     <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16"
-                                                        fill="currentColor" class="bi bi-circle text-lightgray"
+                                                        fill="currentColor" class="text-lighter-gray bi bi-record-circle-fill"
                                                         viewBox="0 0 16 16">
                                                         <path
-                                                            d="M8 15A7 7 0 1 1 8 1a7 7 0 0 1 0 14zm0 1A8 8 0 1 0 8 0a8 8 0 0 0 0 16z" />
+                                                            d="M16 8A8 8 0 1 1 0 8a8 8 0 0 1 16 0zm-8 3a3 3 0 1 0 0-6 3 3 0 0 0 0 6z" />
                                                     </svg>
                                                 </div>
                                             </div>
@@ -786,42 +828,18 @@
                                             <div class="right">
                                                 <div class="check">
                                                     <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16"
-                                                        fill="currentColor" class="bi bi-circle text-lightgray"
+                                                        fill="currentColor" class="text-lighter-gray bi bi-record-circle-fill"
                                                         viewBox="0 0 16 16">
                                                         <path
-                                                            d="M8 15A7 7 0 1 1 8 1a7 7 0 0 1 0 14zm0 1A8 8 0 1 0 8 0a8 8 0 0 0 0 16z" />
+                                                            d="M16 8A8 8 0 1 1 0 8a8 8 0 0 1 16 0zm-8 3a3 3 0 1 0 0-6 3 3 0 0 0 0 6z" />
                                                     </svg>
                                                 </div>
                                                 <div class="check">
                                                     <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16"
-                                                        fill="currentColor" class="bi bi-circle text-lightgray"
+                                                        fill="currentColor" class="text-lighter-gray bi bi-record-circle-fill"
                                                         viewBox="0 0 16 16">
                                                         <path
-                                                            d="M8 15A7 7 0 1 1 8 1a7 7 0 0 1 0 14zm0 1A8 8 0 1 0 8 0a8 8 0 0 0 0 16z" />
-                                                    </svg>
-                                                </div>
-                                            </div>
-                                        </div>
-                                        <div class="tab fontSz">
-                                            <div class="left">
-                                                <img class="icon" src="./assets/image/이미지추가.png" alt="">
-                                                내용추가
-                                            </div>
-                                            <div class="right">
-                                                <div class="check">
-                                                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16"
-                                                        fill="currentColor" class="bi bi-circle text-lightgray"
-                                                        viewBox="0 0 16 16">
-                                                        <path
-                                                            d="M8 15A7 7 0 1 1 8 1a7 7 0 0 1 0 14zm0 1A8 8 0 1 0 8 0a8 8 0 0 0 0 16z" />
-                                                    </svg>
-                                                </div>
-                                                <div class="check">
-                                                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16"
-                                                        fill="currentColor" class="bi bi-circle text-lightgray"
-                                                        viewBox="0 0 16 16">
-                                                        <path
-                                                            d="M8 15A7 7 0 1 1 8 1a7 7 0 0 1 0 14zm0 1A8 8 0 1 0 8 0a8 8 0 0 0 0 16z" />
+                                                            d="M16 8A8 8 0 1 1 0 8a8 8 0 0 1 16 0zm-8 3a3 3 0 1 0 0-6 3 3 0 0 0 0 6z" />
                                                     </svg>
                                                 </div>
                                             </div>
@@ -834,18 +852,18 @@
                                             <div class="right">
                                                 <div class="check">
                                                     <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16"
-                                                        fill="currentColor" class="bi bi-circle text-lightgray"
+                                                        fill="currentColor" class="text-lighter-gray bi bi-record-circle-fill"
                                                         viewBox="0 0 16 16">
                                                         <path
-                                                            d="M8 15A7 7 0 1 1 8 1a7 7 0 0 1 0 14zm0 1A8 8 0 1 0 8 0a8 8 0 0 0 0 16z" />
+                                                            d="M16 8A8 8 0 1 1 0 8a8 8 0 0 1 16 0zm-8 3a3 3 0 1 0 0-6 3 3 0 0 0 0 6z" />
                                                     </svg>
                                                 </div>
                                                 <div class="check">
                                                     <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16"
-                                                        fill="currentColor" class="bi bi-circle text-lightgray"
+                                                        fill="currentColor" class="text-lighter-gray bi bi-record-circle-fill"
                                                         viewBox="0 0 16 16">
                                                         <path
-                                                            d="M8 15A7 7 0 1 1 8 1a7 7 0 0 1 0 14zm0 1A8 8 0 1 0 8 0a8 8 0 0 0 0 16z" />
+                                                            d="M16 8A8 8 0 1 1 0 8a8 8 0 0 1 16 0zm-8 3a3 3 0 1 0 0-6 3 3 0 0 0 0 6z" />
                                                     </svg>
                                                 </div>
                                             </div>
@@ -858,10 +876,34 @@
                                             <div class="right">
                                                 <div class="check">
                                                     <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16"
-                                                        fill="currentColor" class="bi bi-circle text-lightgray"
+                                                        fill="currentColor" class="text-lighter-gray bi bi-record-circle-fill"
                                                         viewBox="0 0 16 16">
                                                         <path
-                                                            d="M8 15A7 7 0 1 1 8 1a7 7 0 0 1 0 14zm0 1A8 8 0 1 0 8 0a8 8 0 0 0 0 16z" />
+                                                            d="M16 8A8 8 0 1 1 0 8a8 8 0 0 1 16 0zm-8 3a3 3 0 1 0 0-6 3 3 0 0 0 0 6z" />
+                                                    </svg>
+                                                </div>
+                                                <div class="check">
+                                                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16"
+                                                        fill="currentColor" class="text-lighter-gray bi bi-record-circle-fill"
+                                                        viewBox="0 0 16 16">
+                                                        <path
+                                                            d="M16 8A8 8 0 1 1 0 8a8 8 0 0 1 16 0zm-8 3a3 3 0 1 0 0-6 3 3 0 0 0 0 6z" />
+                                                    </svg>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="tab fontSz">
+                                            <div class="left">
+                                                <img class="icon" src="./assets/image/이미지추가.png" alt="">
+                                                내용추가
+                                            </div>
+                                            <div class="right">
+                                                <div class="check">
+                                                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16"
+                                                        fill="currentColor" class="text-lighter-gray bi bi-record-circle-fill"
+                                                        viewBox="0 0 16 16">
+                                                        <path
+                                                            d="M16 8A8 8 0 1 1 0 8a8 8 0 0 1 16 0zm-8 3a3 3 0 1 0 0-6 3 3 0 0 0 0 6z" />
                                                     </svg>
                                                 </div>
                                                 <div class="check">
@@ -893,10 +935,10 @@
                                                 </div>
                                                 <div class="check">
                                                     <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16"
-                                                        fill="currentColor" class="bi bi-circle text-lightgray"
+                                                        fill="currentColor" class="text-lighter-gray bi bi-record-circle-fill"
                                                         viewBox="0 0 16 16">
                                                         <path
-                                                            d="M8 15A7 7 0 1 1 8 1a7 7 0 0 1 0 14zm0 1A8 8 0 1 0 8 0a8 8 0 0 0 0 16z" />
+                                                            d="M16 8A8 8 0 1 1 0 8a8 8 0 0 1 16 0zm-8 3a3 3 0 1 0 0-6 3 3 0 0 0 0 6z" />
                                                     </svg>
                                                 </div>
                                             </div>
@@ -949,11 +991,9 @@
                                         <!-- checklist -->
                                         <div class="tab fontSz">
                                             <div class="left">
-                                                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16"
-                                                    fill="currentColor" class="bi bi-square" viewBox="0 0 16 16">
-                                                    <path
-                                                        d="M14 1a1 1 0 0 1 1 1v12a1 1 0 0 1-1 1H2a1 1 0 0 1-1-1V2a1 1 0 0 1 1-1h12zM2 0a2 2 0 0 0-2 2v12a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V2a2 2 0 0 0-2-2H2z" />
-                                                </svg>
+                                                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="text-lighter-gray bi bi-square-fill" viewBox="0 0 16 16">
+  <path d="M0 2a2 2 0 0 1 2-2h12a2 2 0 0 1 2 2v12a2 2 0 0 1-2 2H2a2 2 0 0 1-2-2V2z"/>
+</svg>
                                                 정부24(민원신청,보조금24)
                                             </div>
                                             <div class="right text-sm btn-outline-b">
@@ -962,11 +1002,9 @@
                                         </div>
                                         <div class="tab fontSz">
                                             <div class="left">
-                                                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16"
-                                                    fill="currentColor" class="bi bi-square" viewBox="0 0 16 16">
-                                                    <path
-                                                        d="M14 1a1 1 0 0 1 1 1v12a1 1 0 0 1-1 1H2a1 1 0 0 1-1-1V2a1 1 0 0 1 1-1h12zM2 0a2 2 0 0 0-2 2v12a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V2a2 2 0 0 0-2-2H2z" />
-                                                </svg>
+                                                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="text-lighter-gray bi bi-square-fill" viewBox="0 0 16 16">
+  <path d="M0 2a2 2 0 0 1 2-2h12a2 2 0 0 1 2 2v12a2 2 0 0 1-2 2H2a2 2 0 0 1-2-2V2z"/>
+</svg>
                                                 1365자원봉사
                                             </div>
                                             <div class="right text-sm btn-outline-b">
@@ -975,11 +1013,9 @@
                                         </div>
                                         <div class="tab fontSz">
                                             <div class="left">
-                                                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16"
-                                                    fill="currentColor" class="bi bi-square" viewBox="0 0 16 16">
-                                                    <path
-                                                        d="M14 1a1 1 0 0 1 1 1v12a1 1 0 0 1-1 1H2a1 1 0 0 1-1-1V2a1 1 0 0 1 1-1h12zM2 0a2 2 0 0 0-2 2v12a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V2a2 2 0 0 0-2-2H2z" />
-                                                </svg>
+                                                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="text-lighter-gray bi bi-square-fill" viewBox="0 0 16 16">
+  <path d="M0 2a2 2 0 0 1 2-2h12a2 2 0 0 1 2 2v12a2 2 0 0 1-2 2H2a2 2 0 0 1-2-2V2z"/>
+</svg>
                                                 내 차 정보 변경(자동차365)
                                             </div>
                                             <div class="right text-sm btn-outline-b">
@@ -991,11 +1027,9 @@
                                         <!-- 
                                         <div class="tab fontSz">
                                             <div class="left">
-                                                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16"
-                                                    fill="currentColor" class="bi bi-square" viewBox="0 0 16 16">
-                                                    <path
-                                                        d="M14 1a1 1 0 0 1 1 1v12a1 1 0 0 1-1 1H2a1 1 0 0 1-1-1V2a1 1 0 0 1 1-1h12zM2 0a2 2 0 0 0-2 2v12a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V2a2 2 0 0 0-2-2H2z" />
-                                                </svg>
+                                                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="text-lighter-gray bi bi-square-fill" viewBox="0 0 16 16">
+  <path d="M0 2a2 2 0 0 1 2-2h12a2 2 0 0 1 2 2v12a2 2 0 0 1-2 2H2a2 2 0 0 1-2-2V2z"/>
+</svg>
                                                 내용추가
                                             </div>
                                             <div class="right text-sm btn-outline-b">
@@ -1004,11 +1038,9 @@
                                         </div>
                                         <div class="tab fontSz">
                                             <div class="left">
-                                                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16"
-                                                    fill="currentColor" class="bi bi-square" viewBox="0 0 16 16">
-                                                    <path
-                                                        d="M14 1a1 1 0 0 1 1 1v12a1 1 0 0 1-1 1H2a1 1 0 0 1-1-1V2a1 1 0 0 1 1-1h12zM2 0a2 2 0 0 0-2 2v12a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V2a2 2 0 0 0-2-2H2z" />
-                                                </svg>
+                                                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="text-lighter-gray bi bi-square-fill" viewBox="0 0 16 16">
+  <path d="M0 2a2 2 0 0 1 2-2h12a2 2 0 0 1 2 2v12a2 2 0 0 1-2 2H2a2 2 0 0 1-2-2V2z"/>
+</svg>
                                                 내용추가
                                             </div>
                                             <div class="right text-sm btn-outline-b">
@@ -1017,11 +1049,9 @@
                                         </div>
                                         <div class="tab fontSz">
                                             <div class="left">
-                                                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16"
-                                                    fill="currentColor" class="bi bi-square" viewBox="0 0 16 16">
-                                                    <path
-                                                        d="M14 1a1 1 0 0 1 1 1v12a1 1 0 0 1-1 1H2a1 1 0 0 1-1-1V2a1 1 0 0 1 1-1h12zM2 0a2 2 0 0 0-2 2v12a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V2a2 2 0 0 0-2-2H2z" />
-                                                </svg>
+                                                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="text-lighter-gray bi bi-square-fill" viewBox="0 0 16 16">
+  <path d="M0 2a2 2 0 0 1 2-2h12a2 2 0 0 1 2 2v12a2 2 0 0 1-2 2H2a2 2 0 0 1-2-2V2z"/>
+</svg>
                                                 내용추가
                                             </div>
                                             <div class="right text-sm btn-outline-b">
@@ -1030,11 +1060,9 @@
                                         </div>
                                         <div class="tab fontSz">
                                             <div class="left">
-                                                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16"
-                                                    fill="currentColor" class="bi bi-square" viewBox="0 0 16 16">
-                                                    <path
-                                                        d="M14 1a1 1 0 0 1 1 1v12a1 1 0 0 1-1 1H2a1 1 0 0 1-1-1V2a1 1 0 0 1 1-1h12zM2 0a2 2 0 0 0-2 2v12a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V2a2 2 0 0 0-2-2H2z" />
-                                                </svg>
+                                                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="text-lighter-gray bi bi-square-fill" viewBox="0 0 16 16">
+  <path d="M0 2a2 2 0 0 1 2-2h12a2 2 0 0 1 2 2v12a2 2 0 0 1-2 2H2a2 2 0 0 1-2-2V2z"/>
+</svg>
                                                 내용추가
                                             </div>
                                             <div class="right text-sm btn-outline-b">
@@ -1043,11 +1071,9 @@
                                         </div>
                                         <div class="tab fontSz">
                                             <div class="left">
-                                                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16"
-                                                    fill="currentColor" class="bi bi-square" viewBox="0 0 16 16">
-                                                    <path
-                                                        d="M14 1a1 1 0 0 1 1 1v12a1 1 0 0 1-1 1H2a1 1 0 0 1-1-1V2a1 1 0 0 1 1-1h12zM2 0a2 2 0 0 0-2 2v12a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V2a2 2 0 0 0-2-2H2z" />
-                                                </svg>
+                                                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="text-lighter-gray bi bi-square-fill" viewBox="0 0 16 16">
+  <path d="M0 2a2 2 0 0 1 2-2h12a2 2 0 0 1 2 2v12a2 2 0 0 1-2 2H2a2 2 0 0 1-2-2V2z"/>
+</svg>
                                                 내용추가
                                             </div>
                                             <div class="right text-sm btn-outline-b">
@@ -1056,11 +1082,9 @@
                                         </div>
                                         <div class="tab fontSz">
                                             <div class="left">
-                                                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16"
-                                                    fill="currentColor" class="bi bi-square" viewBox="0 0 16 16">
-                                                    <path
-                                                        d="M14 1a1 1 0 0 1 1 1v12a1 1 0 0 1-1 1H2a1 1 0 0 1-1-1V2a1 1 0 0 1 1-1h12zM2 0a2 2 0 0 0-2 2v12a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V2a2 2 0 0 0-2-2H2z" />
-                                                </svg>
+                                                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="text-lighter-gray bi bi-square-fill" viewBox="0 0 16 16">
+  <path d="M0 2a2 2 0 0 1 2-2h12a2 2 0 0 1 2 2v12a2 2 0 0 1-2 2H2a2 2 0 0 1-2-2V2z"/>
+</svg>
                                                 내용추가
                                             </div>
                                             <div class="right text-sm btn-outline-b">
@@ -1069,11 +1093,9 @@
                                         </div>
                                         <div class="tab fontSz">
                                             <div class="left">
-                                                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16"
-                                                    fill="currentColor" class="bi bi-square" viewBox="0 0 16 16">
-                                                    <path
-                                                        d="M14 1a1 1 0 0 1 1 1v12a1 1 0 0 1-1 1H2a1 1 0 0 1-1-1V2a1 1 0 0 1 1-1h12zM2 0a2 2 0 0 0-2 2v12a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V2a2 2 0 0 0-2-2H2z" />
-                                                </svg>
+                                                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="text-lighter-gray bi bi-square-fill" viewBox="0 0 16 16">
+  <path d="M0 2a2 2 0 0 1 2-2h12a2 2 0 0 1 2 2v12a2 2 0 0 1-2 2H2a2 2 0 0 1-2-2V2z"/>
+</svg>
                                                 내용추가
                                             </div>
                                             <div class="right text-sm btn-outline-b">
@@ -1088,11 +1110,9 @@
                                         </div>
                                         <div class="tab fontSz">
                                             <div class="left">
-                                                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16"
-                                                    fill="currentColor" class="bi bi-square" viewBox="0 0 16 16">
-                                                    <path
-                                                        d="M14 1a1 1 0 0 1 1 1v12a1 1 0 0 1-1 1H2a1 1 0 0 1-1-1V2a1 1 0 0 1 1-1h12zM2 0a2 2 0 0 0-2 2v12a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V2a2 2 0 0 0-2-2H2z" />
-                                                </svg>
+                                                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="text-lighter-gray bi bi-square-fill" viewBox="0 0 16 16">
+  <path d="M0 2a2 2 0 0 1 2-2h12a2 2 0 0 1 2 2v12a2 2 0 0 1-2 2H2a2 2 0 0 1-2-2V2z"/>
+</svg>
                                                 건강검진(암검진 포함)
                                             </div>
                                             <div class="right text-sm btn-outline-b">
@@ -1101,11 +1121,9 @@
                                         </div>
                                         <div class="tab fontSz">
                                             <div class="left">
-                                                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16"
-                                                    fill="currentColor" class="bi bi-square" viewBox="0 0 16 16">
-                                                    <path
-                                                        d="M14 1a1 1 0 0 1 1 1v12a1 1 0 0 1-1 1H2a1 1 0 0 1-1-1V2a1 1 0 0 1 1-1h12zM2 0a2 2 0 0 0-2 2v12a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V2a2 2 0 0 0-2-2H2z" />
-                                                </svg>
+                                                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="text-lighter-gray bi bi-square-fill" viewBox="0 0 16 16">
+  <path d="M0 2a2 2 0 0 1 2-2h12a2 2 0 0 1 2 2v12a2 2 0 0 1-2 2H2a2 2 0 0 1-2-2V2z"/>
+</svg>
                                                 전기요금
                                             </div>
                                             <div class="right text-sm btn-outline-b">
@@ -1114,11 +1132,9 @@
                                         </div>
                                         <div class="tab fontSz">
                                             <div class="left">
-                                                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16"
-                                                    fill="currentColor" class="bi bi-square" viewBox="0 0 16 16">
-                                                    <path
-                                                        d="M14 1a1 1 0 0 1 1 1v12a1 1 0 0 1-1 1H2a1 1 0 0 1-1-1V2a1 1 0 0 1 1-1h12zM2 0a2 2 0 0 0-2 2v12a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V2a2 2 0 0 0-2-2H2z" />
-                                                </svg>
+                                                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="text-lighter-gray bi bi-square-fill" viewBox="0 0 16 16">
+  <path d="M0 2a2 2 0 0 1 2-2h12a2 2 0 0 1 2 2v12a2 2 0 0 1-2 2H2a2 2 0 0 1-2-2V2z"/>
+</svg>
                                                 주택 임대자
                                             </div>
                                             <div class="right text-sm btn-outline-b">
@@ -1132,11 +1148,9 @@
                                         </div>
                                         <div class="tab fontSz">
                                             <div class="left">
-                                                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16"
-                                                    fill="currentColor" class="bi bi-square" viewBox="0 0 16 16">
-                                                    <path
-                                                        d="M14 1a1 1 0 0 1 1 1v12a1 1 0 0 1-1 1H2a1 1 0 0 1-1-1V2a1 1 0 0 1 1-1h12zM2 0a2 2 0 0 0-2 2v12a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V2a2 2 0 0 0-2-2H2z" />
-                                                </svg>
+                                                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="text-lighter-gray bi bi-square-fill" viewBox="0 0 16 16">
+  <path d="M0 2a2 2 0 0 1 2-2h12a2 2 0 0 1 2 2v12a2 2 0 0 1-2 2H2a2 2 0 0 1-2-2V2z"/>
+</svg>
                                                 국세고지서 발송 안내
                                             </div>
                                             <div class="right text-sm btn-outline-b">
@@ -1145,11 +1159,9 @@
                                         </div>
                                         <div class="tab fontSz">
                                             <div class="left">
-                                                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16"
-                                                    fill="currentColor" class="bi bi-square" viewBox="0 0 16 16">
-                                                    <path
-                                                        d="M14 1a1 1 0 0 1 1 1v12a1 1 0 0 1-1 1H2a1 1 0 0 1-1-1V2a1 1 0 0 1 1-1h12zM2 0a2 2 0 0 0-2 2v12a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V2a2 2 0 0 0-2-2H2z" />
-                                                </svg>
+                                                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="text-lighter-gray bi bi-square-fill" viewBox="0 0 16 16">
+  <path d="M0 2a2 2 0 0 1 2-2h12a2 2 0 0 1 2 2v12a2 2 0 0 1-2 2H2a2 2 0 0 1-2-2V2z"/>
+</svg>
                                                 경찰청 고지
                                             </div>
                                             <div class="right text-sm btn-outline-b">
@@ -1158,11 +1170,9 @@
                                         </div>
                                         <div class="tab fontSz">
                                             <div class="left">
-                                                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16"
-                                                    fill="currentColor" class="bi bi-square" viewBox="0 0 16 16">
-                                                    <path
-                                                        d="M14 1a1 1 0 0 1 1 1v12a1 1 0 0 1-1 1H2a1 1 0 0 1-1-1V2a1 1 0 0 1 1-1h12zM2 0a2 2 0 0 0-2 2v12a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V2a2 2 0 0 0-2-2H2z" />
-                                                </svg>
+                                                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="text-lighter-gray bi bi-square-fill" viewBox="0 0 16 16">
+  <path d="M0 2a2 2 0 0 1 2-2h12a2 2 0 0 1 2 2v12a2 2 0 0 1-2 2H2a2 2 0 0 1-2-2V2z"/>
+</svg>
                                                 휴면예금
                                             </div>
                                             <div class="right text-sm btn-outline-b">
@@ -1176,11 +1186,9 @@
                                         </div>
                                         <div class="tab fontSz">
                                             <div class="left">
-                                                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16"
-                                                    fill="currentColor" class="bi bi-square" viewBox="0 0 16 16">
-                                                    <path
-                                                        d="M14 1a1 1 0 0 1 1 1v12a1 1 0 0 1-1 1H2a1 1 0 0 1-1-1V2a1 1 0 0 1 1-1h12zM2 0a2 2 0 0 0-2 2v12a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V2a2 2 0 0 0-2-2H2z" />
-                                                </svg>
+                                                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="text-lighter-gray bi bi-square-fill" viewBox="0 0 16 16">
+  <path d="M0 2a2 2 0 0 1 2-2h12a2 2 0 0 1 2 2v12a2 2 0 0 1-2 2H2a2 2 0 0 1-2-2V2z"/>
+</svg>
                                                 주민등록증 발급 통지
                                             </div>
                                             <div class="right text-sm btn-outline-b">
@@ -1189,11 +1197,9 @@
                                         </div>
                                         <div class="tab fontSz">
                                             <div class="left">
-                                                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16"
-                                                    fill="currentColor" class="bi bi-square" viewBox="0 0 16 16">
-                                                    <path
-                                                        d="M14 1a1 1 0 0 1 1 1v12a1 1 0 0 1-1 1H2a1 1 0 0 1-1-1V2a1 1 0 0 1 1-1h12zM2 0a2 2 0 0 0-2 2v12a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V2a2 2 0 0 0-2-2H2z" />
-                                                </svg>
+                                                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="text-lighter-gray bi bi-square-fill" viewBox="0 0 16 16">
+  <path d="M0 2a2 2 0 0 1 2-2h12a2 2 0 0 1 2 2v12a2 2 0 0 1-2 2H2a2 2 0 0 1-2-2V2z"/>
+</svg>
                                                 분실주민등록증 습득
                                             </div>
                                             <div class="right text-sm btn-outline-b">
@@ -1210,11 +1216,9 @@
                                         </div>
                                         <div class="tab fontSz">
                                             <div class="left">
-                                                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16"
-                                                    fill="currentColor" class="bi bi-square" viewBox="0 0 16 16">
-                                                    <path
-                                                        d="M14 1a1 1 0 0 1 1 1v12a1 1 0 0 1-1 1H2a1 1 0 0 1-1-1V2a1 1 0 0 1 1-1h12zM2 0a2 2 0 0 0-2 2v12a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V2a2 2 0 0 0-2-2H2z" />
-                                                </svg>
+                                                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="text-lighter-gray bi bi-square-fill" viewBox="0 0 16 16">
+  <path d="M0 2a2 2 0 0 1 2-2h12a2 2 0 0 1 2 2v12a2 2 0 0 1-2 2H2a2 2 0 0 1-2-2V2z"/>
+</svg>
                                                 내용추가
                                             </div>
                                             <div class="right text-sm btn-outline-b">
@@ -1229,11 +1233,9 @@
                                         </div>
                                         <div class="tab fontSz">
                                             <div class="left">
-                                                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16"
-                                                    fill="currentColor" class="bi bi-square" viewBox="0 0 16 16">
-                                                    <path
-                                                        d="M14 1a1 1 0 0 1 1 1v12a1 1 0 0 1-1 1H2a1 1 0 0 1-1-1V2a1 1 0 0 1 1-1h12zM2 0a2 2 0 0 0-2 2v12a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V2a2 2 0 0 0-2-2H2z" />
-                                                </svg>
+                                                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="text-lighter-gray bi bi-square-fill" viewBox="0 0 16 16">
+  <path d="M0 2a2 2 0 0 1 2-2h12a2 2 0 0 1 2 2v12a2 2 0 0 1-2 2H2a2 2 0 0 1-2-2V2z"/>
+</svg>
                                                 내용추가
                                             </div>
                                             <div class="right text-sm btn-outline-b">
@@ -1248,11 +1250,9 @@
                                         </div>
                                         <div class="tab fontSz">
                                             <div class="left">
-                                                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16"
-                                                    fill="currentColor" class="bi bi-square" viewBox="0 0 16 16">
-                                                    <path
-                                                        d="M14 1a1 1 0 0 1 1 1v12a1 1 0 0 1-1 1H2a1 1 0 0 1-1-1V2a1 1 0 0 1 1-1h12zM2 0a2 2 0 0 0-2 2v12a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V2a2 2 0 0 0-2-2H2z" />
-                                                </svg>
+                                                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="text-lighter-gray bi bi-square-fill" viewBox="0 0 16 16">
+  <path d="M0 2a2 2 0 0 1 2-2h12a2 2 0 0 1 2 2v12a2 2 0 0 1-2 2H2a2 2 0 0 1-2-2V2z"/>
+</svg>
                                                 내용추가
                                             </div>
                                             <div class="right text-sm btn-outline-b">
@@ -1267,11 +1267,9 @@
                                         </div>
                                         <div class="tab fontSz">
                                             <div class="left">
-                                                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16"
-                                                    fill="currentColor" class="bi bi-square" viewBox="0 0 16 16">
-                                                    <path
-                                                        d="M14 1a1 1 0 0 1 1 1v12a1 1 0 0 1-1 1H2a1 1 0 0 1-1-1V2a1 1 0 0 1 1-1h12zM2 0a2 2 0 0 0-2 2v12a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V2a2 2 0 0 0-2-2H2z" />
-                                                </svg>
+                                                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="text-lighter-gray bi bi-square-fill" viewBox="0 0 16 16">
+  <path d="M0 2a2 2 0 0 1 2-2h12a2 2 0 0 1 2 2v12a2 2 0 0 1-2 2H2a2 2 0 0 1-2-2V2z"/>
+</svg>
                                                 내용추가
                                             </div>
                                             <div class="right text-sm btn-outline-b">
@@ -1334,7 +1332,8 @@
                                             국민비서 알림
                                             <div class="toggle">
                                                 <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16"
-                                                    fill="currentColor" class="bi bi-toggle-on text-lightgray"
+                                                    fill="currentColor"
+                                                    class="bi bi-toggle-on text-lightgray rotate-180 color-b"
                                                     viewBox="0 0 16 16">
                                                     <path
                                                         d="M5 3a5 5 0 0 0 0 10h6a5 5 0 0 0 0-10H5zm6 9a4 4 0 1 1 0-8 4 4 0 0 1 0 8z" />
@@ -1384,19 +1383,21 @@
                                             </div>
                                             <div class="right">
                                                 <div class="check">
+
                                                     <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16"
-                                                        fill="currentColor" class="bi bi-circle text-lightgray"
+                                                        fill="currentColor" class="text-lighter-gray bi bi-record-circle-fill"
                                                         viewBox="0 0 16 16">
                                                         <path
-                                                            d="M8 15A7 7 0 1 1 8 1a7 7 0 0 1 0 14zm0 1A8 8 0 1 0 8 0a8 8 0 0 0 0 16z" />
+                                                            d="M16 8A8 8 0 1 1 0 8a8 8 0 0 1 16 0zm-8 3a3 3 0 1 0 0-6 3 3 0 0 0 0 6z" />
                                                     </svg>
                                                 </div>
                                                 <div class="check">
+
                                                     <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16"
-                                                        fill="currentColor" class="bi bi-circle text-lightgray"
+                                                        fill="currentColor" class="text-lighter-gray bi bi-record-circle-fill"
                                                         viewBox="0 0 16 16">
                                                         <path
-                                                            d="M8 15A7 7 0 1 1 8 1a7 7 0 0 1 0 14zm0 1A8 8 0 1 0 8 0a8 8 0 0 0 0 16z" />
+                                                            d="M16 8A8 8 0 1 1 0 8a8 8 0 0 1 16 0zm-8 3a3 3 0 1 0 0-6 3 3 0 0 0 0 6z" />
                                                     </svg>
                                                 </div>
                                             </div>
@@ -1409,19 +1410,21 @@
                                             </div>
                                             <div class="right">
                                                 <div class="check">
+
                                                     <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16"
-                                                        fill="currentColor" class="bi bi-circle text-lightgray"
+                                                        fill="currentColor" class="text-lighter-gray bi bi-record-circle-fill"
                                                         viewBox="0 0 16 16">
                                                         <path
-                                                            d="M8 15A7 7 0 1 1 8 1a7 7 0 0 1 0 14zm0 1A8 8 0 1 0 8 0a8 8 0 0 0 0 16z" />
+                                                            d="M16 8A8 8 0 1 1 0 8a8 8 0 0 1 16 0zm-8 3a3 3 0 1 0 0-6 3 3 0 0 0 0 6z" />
                                                     </svg>
                                                 </div>
                                                 <div class="check">
+
                                                     <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16"
-                                                        fill="currentColor" class="bi bi-circle text-lightgray"
+                                                        fill="currentColor" class="text-lighter-gray bi bi-record-circle-fill"
                                                         viewBox="0 0 16 16">
                                                         <path
-                                                            d="M8 15A7 7 0 1 1 8 1a7 7 0 0 1 0 14zm0 1A8 8 0 1 0 8 0a8 8 0 0 0 0 16z" />
+                                                            d="M16 8A8 8 0 1 1 0 8a8 8 0 0 1 16 0zm-8 3a3 3 0 1 0 0-6 3 3 0 0 0 0 6z" />
                                                     </svg>
                                                 </div>
                                             </div>
@@ -1434,11 +1437,12 @@
                                             </div>
                                             <div class="right">
                                                 <div class="check">
+
                                                     <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16"
-                                                        fill="currentColor" class="bi bi-circle text-lightgray"
+                                                        fill="currentColor" class="text-lighter-gray bi bi-record-circle-fill"
                                                         viewBox="0 0 16 16">
                                                         <path
-                                                            d="M8 15A7 7 0 1 1 8 1a7 7 0 0 1 0 14zm0 1A8 8 0 1 0 8 0a8 8 0 0 0 0 16z" />
+                                                            d="M16 8A8 8 0 1 1 0 8a8 8 0 0 1 16 0zm-8 3a3 3 0 1 0 0-6 3 3 0 0 0 0 6z" />
                                                     </svg>
                                                 </div>
                                                 <div class="check">
@@ -1459,19 +1463,21 @@
                                             </div>
                                             <div class="right">
                                                 <div class="check">
+
                                                     <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16"
-                                                        fill="currentColor" class="bi bi-circle text-lightgray"
+                                                        fill="currentColor" class="text-lighter-gray bi bi-record-circle-fill"
                                                         viewBox="0 0 16 16">
                                                         <path
-                                                            d="M8 15A7 7 0 1 1 8 1a7 7 0 0 1 0 14zm0 1A8 8 0 1 0 8 0a8 8 0 0 0 0 16z" />
+                                                            d="M16 8A8 8 0 1 1 0 8a8 8 0 0 1 16 0zm-8 3a3 3 0 1 0 0-6 3 3 0 0 0 0 6z" />
                                                     </svg>
                                                 </div>
                                                 <div class="check">
+
                                                     <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16"
-                                                        fill="currentColor" class="bi bi-circle text-lightgray"
+                                                        fill="currentColor" class="text-lighter-gray bi bi-record-circle-fill"
                                                         viewBox="0 0 16 16">
                                                         <path
-                                                            d="M8 15A7 7 0 1 1 8 1a7 7 0 0 1 0 14zm0 1A8 8 0 1 0 8 0a8 8 0 0 0 0 16z" />
+                                                            d="M16 8A8 8 0 1 1 0 8a8 8 0 0 1 16 0zm-8 3a3 3 0 1 0 0-6 3 3 0 0 0 0 6z" />
                                                     </svg>
                                                 </div>
                                             </div>
@@ -1485,20 +1491,16 @@
                                             </div>
                                             <div class="right">
                                                 <div class="check">
-                                                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16"
-                                                        fill="currentColor" class="bi bi-circle text-lightgray"
-                                                        viewBox="0 0 16 16">
-                                                        <path
-                                                            d="M8 15A7 7 0 1 1 8 1a7 7 0 0 1 0 14zm0 1A8 8 0 1 0 8 0a8 8 0 0 0 0 16z" />
-                                                    </svg>
+                                                    
+                                                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-record-circle-fill" viewBox="0 0 16 16">
+  <path d="M16 8A8 8 0 1 1 0 8a8 8 0 0 1 16 0zm-8 3a3 3 0 1 0 0-6 3 3 0 0 0 0 6z"/>
+</svg>
                                                 </div>
                                                 <div class="check">
-                                                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16"
-                                                        fill="currentColor" class="bi bi-circle text-lightgray"
-                                                        viewBox="0 0 16 16">
-                                                        <path
-                                                            d="M8 15A7 7 0 1 1 8 1a7 7 0 0 1 0 14zm0 1A8 8 0 1 0 8 0a8 8 0 0 0 0 16z" />
-                                                    </svg>
+                                                    
+                                                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-record-circle-fill" viewBox="0 0 16 16">
+  <path d="M16 8A8 8 0 1 1 0 8a8 8 0 0 1 16 0zm-8 3a3 3 0 1 0 0-6 3 3 0 0 0 0 6z"/>
+</svg>
                                                 </div>
                                             </div>
                                         </div>
@@ -1509,20 +1511,16 @@
                                             </div>
                                             <div class="right">
                                                 <div class="check">
-                                                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16"
-                                                        fill="currentColor" class="bi bi-circle text-lightgray"
-                                                        viewBox="0 0 16 16">
-                                                        <path
-                                                            d="M8 15A7 7 0 1 1 8 1a7 7 0 0 1 0 14zm0 1A8 8 0 1 0 8 0a8 8 0 0 0 0 16z" />
-                                                    </svg>
+                                                    
+                                                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-record-circle-fill" viewBox="0 0 16 16">
+  <path d="M16 8A8 8 0 1 1 0 8a8 8 0 0 1 16 0zm-8 3a3 3 0 1 0 0-6 3 3 0 0 0 0 6z"/>
+</svg>
                                                 </div>
                                                 <div class="check">
-                                                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16"
-                                                        fill="currentColor" class="bi bi-circle text-lightgray"
-                                                        viewBox="0 0 16 16">
-                                                        <path
-                                                            d="M8 15A7 7 0 1 1 8 1a7 7 0 0 1 0 14zm0 1A8 8 0 1 0 8 0a8 8 0 0 0 0 16z" />
-                                                    </svg>
+                                                    
+                                                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-record-circle-fill" viewBox="0 0 16 16">
+  <path d="M16 8A8 8 0 1 1 0 8a8 8 0 0 1 16 0zm-8 3a3 3 0 1 0 0-6 3 3 0 0 0 0 6z"/>
+</svg>
                                                 </div>
                                             </div>
                                         </div>
@@ -1533,37 +1531,34 @@
                                             </div>
                                             <div class="right">
                                                 <div class="check">
-                                                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16"
-                                                        fill="currentColor" class="bi bi-circle text-lightgray"
-                                                        viewBox="0 0 16 16">
-                                                        <path
-                                                            d="M8 15A7 7 0 1 1 8 1a7 7 0 0 1 0 14zm0 1A8 8 0 1 0 8 0a8 8 0 0 0 0 16z" />
-                                                    </svg>
+                                                    
+                                                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-record-circle-fill" viewBox="0 0 16 16">
+  <path d="M16 8A8 8 0 1 1 0 8a8 8 0 0 1 16 0zm-8 3a3 3 0 1 0 0-6 3 3 0 0 0 0 6z"/>
+</svg>
                                                 </div>
                                                 <div class="check">
-                                                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16"
-                                                        fill="currentColor" class="bi bi-circle text-lightgray"
-                                                        viewBox="0 0 16 16">
-                                                        <path
-                                                            d="M8 15A7 7 0 1 1 8 1a7 7 0 0 1 0 14zm0 1A8 8 0 1 0 8 0a8 8 0 0 0 0 16z" />
-                                                    </svg>
+                                                    
+                                                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-record-circle-fill" viewBox="0 0 16 16">
+  <path d="M16 8A8 8 0 1 1 0 8a8 8 0 0 1 16 0zm-8 3a3 3 0 1 0 0-6 3 3 0 0 0 0 6z"/>
+</svg>
                                                 </div>
                                             </div>
                                         </div> -->
-                                        
-                                        <div class="tab fontSz pg_4_answer">
+
+                                        <div class="tab fontSz selc_2_input pg_4_answer input_1">
                                             <div class="left">
                                                 <!-- 이미지 추가 -->
                                                 <img class="h-100" src="./assets/image/25.png" alt="">
                                                 카카오톡(알림톡)
                                             </div>
                                             <div class="right">
-                                                <div class="check pg_4_answer input_1">
+                                                <div class="check selc_2_input pg_4_answer input_1">
+
                                                     <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16"
-                                                        fill="currentColor" class="bi bi-circle text-lightgray"
+                                                        fill="currentColor" class="text-lighter-gray bi bi-record-circle-fill selc_2_input pg_4_answer input_1 css_edit_1 "
                                                         viewBox="0 0 16 16">
                                                         <path
-                                                            d="M8 15A7 7 0 1 1 8 1a7 7 0 0 1 0 14zm0 1A8 8 0 1 0 8 0a8 8 0 0 0 0 16z" />
+                                                            d="M16 8A8 8 0 1 1 0 8a8 8 0 0 1 16 0zm-8 3a3 3 0 1 0 0-6 3 3 0 0 0 0 6z" />
                                                     </svg>
                                                 </div>
                                                 <div class="check">
@@ -1584,19 +1579,21 @@
                                             </div>
                                             <div class="right">
                                                 <div class="check">
+
                                                     <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16"
-                                                        fill="currentColor" class="bi bi-circle text-lightgray"
+                                                        fill="currentColor" class="text-lighter-gray bi bi-record-circle-fill"
                                                         viewBox="0 0 16 16">
                                                         <path
-                                                            d="M8 15A7 7 0 1 1 8 1a7 7 0 0 1 0 14zm0 1A8 8 0 1 0 8 0a8 8 0 0 0 0 16z" />
+                                                            d="M16 8A8 8 0 1 1 0 8a8 8 0 0 1 16 0zm-8 3a3 3 0 1 0 0-6 3 3 0 0 0 0 6z" />
                                                     </svg>
                                                 </div>
                                                 <div class="check">
+
                                                     <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16"
-                                                        fill="currentColor" class="bi bi-circle text-lightgray"
+                                                        fill="currentColor" class="text-lighter-gray bi bi-record-circle-fill"
                                                         viewBox="0 0 16 16">
                                                         <path
-                                                            d="M8 15A7 7 0 1 1 8 1a7 7 0 0 1 0 14zm0 1A8 8 0 1 0 8 0a8 8 0 0 0 0 16z" />
+                                                            d="M16 8A8 8 0 1 1 0 8a8 8 0 0 1 16 0zm-8 3a3 3 0 1 0 0-6 3 3 0 0 0 0 6z" />
                                                     </svg>
                                                 </div>
                                             </div>
@@ -1611,20 +1608,16 @@
                                             </div>
                                             <div class="right">
                                                 <div class="check">
-                                                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16"
-                                                        fill="currentColor" class="bi bi-circle text-lightgray"
-                                                        viewBox="0 0 16 16">
-                                                        <path
-                                                            d="M8 15A7 7 0 1 1 8 1a7 7 0 0 1 0 14zm0 1A8 8 0 1 0 8 0a8 8 0 0 0 0 16z" />
-                                                    </svg>
+                                                    
+                                                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-record-circle-fill" viewBox="0 0 16 16">
+  <path d="M16 8A8 8 0 1 1 0 8a8 8 0 0 1 16 0zm-8 3a3 3 0 1 0 0-6 3 3 0 0 0 0 6z"/>
+</svg>
                                                 </div>
                                                 <div class="check">
-                                                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16"
-                                                        fill="currentColor" class="bi bi-circle text-lightgray"
-                                                        viewBox="0 0 16 16">
-                                                        <path
-                                                            d="M8 15A7 7 0 1 1 8 1a7 7 0 0 1 0 14zm0 1A8 8 0 1 0 8 0a8 8 0 0 0 0 16z" />
-                                                    </svg>
+                                                    
+                                                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-record-circle-fill" viewBox="0 0 16 16">
+  <path d="M16 8A8 8 0 1 1 0 8a8 8 0 0 1 16 0zm-8 3a3 3 0 1 0 0-6 3 3 0 0 0 0 6z"/>
+</svg>
                                                 </div>
                                             </div>
                                         </div>
@@ -1635,20 +1628,16 @@
                                             </div>
                                             <div class="right">
                                                 <div class="check">
-                                                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16"
-                                                        fill="currentColor" class="bi bi-circle text-lightgray"
-                                                        viewBox="0 0 16 16">
-                                                        <path
-                                                            d="M8 15A7 7 0 1 1 8 1a7 7 0 0 1 0 14zm0 1A8 8 0 1 0 8 0a8 8 0 0 0 0 16z" />
-                                                    </svg>
+                                                    
+                                                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-record-circle-fill" viewBox="0 0 16 16">
+  <path d="M16 8A8 8 0 1 1 0 8a8 8 0 0 1 16 0zm-8 3a3 3 0 1 0 0-6 3 3 0 0 0 0 6z"/>
+</svg>
                                                 </div>
                                                 <div class="check">
-                                                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16"
-                                                        fill="currentColor" class="bi bi-circle text-lightgray"
-                                                        viewBox="0 0 16 16">
-                                                        <path
-                                                            d="M8 15A7 7 0 1 1 8 1a7 7 0 0 1 0 14zm0 1A8 8 0 1 0 8 0a8 8 0 0 0 0 16z" />
-                                                    </svg>
+                                                    
+                                                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-record-circle-fill" viewBox="0 0 16 16">
+  <path d="M16 8A8 8 0 1 1 0 8a8 8 0 0 1 16 0zm-8 3a3 3 0 1 0 0-6 3 3 0 0 0 0 6z"/>
+</svg>
                                                 </div>
                                             </div>
                                         </div>
@@ -1659,20 +1648,16 @@
                                             </div>
                                             <div class="right">
                                                 <div class="check">
-                                                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16"
-                                                        fill="currentColor" class="bi bi-circle text-lightgray"
-                                                        viewBox="0 0 16 16">
-                                                        <path
-                                                            d="M8 15A7 7 0 1 1 8 1a7 7 0 0 1 0 14zm0 1A8 8 0 1 0 8 0a8 8 0 0 0 0 16z" />
-                                                    </svg>
+                                                    
+                                                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-record-circle-fill" viewBox="0 0 16 16">
+  <path d="M16 8A8 8 0 1 1 0 8a8 8 0 0 1 16 0zm-8 3a3 3 0 1 0 0-6 3 3 0 0 0 0 6z"/>
+</svg>
                                                 </div>
                                                 <div class="check">
-                                                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16"
-                                                        fill="currentColor" class="bi bi-circle text-lightgray"
-                                                        viewBox="0 0 16 16">
-                                                        <path
-                                                            d="M8 15A7 7 0 1 1 8 1a7 7 0 0 1 0 14zm0 1A8 8 0 1 0 8 0a8 8 0 0 0 0 16z" />
-                                                    </svg>
+                                                    
+                                                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-record-circle-fill" viewBox="0 0 16 16">
+  <path d="M16 8A8 8 0 1 1 0 8a8 8 0 0 1 16 0zm-8 3a3 3 0 1 0 0-6 3 3 0 0 0 0 6z"/>
+</svg>
                                                 </div>
                                             </div>
                                         </div>
@@ -1683,12 +1668,10 @@
                                             </div>
                                             <div class="right">
                                                 <div class="check">
-                                                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16"
-                                                        fill="currentColor" class="bi bi-circle text-lightgray"
-                                                        viewBox="0 0 16 16">
-                                                        <path
-                                                            d="M8 15A7 7 0 1 1 8 1a7 7 0 0 1 0 14zm0 1A8 8 0 1 0 8 0a8 8 0 0 0 0 16z" />
-                                                    </svg>
+                                                    
+                                                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-record-circle-fill" viewBox="0 0 16 16">
+  <path d="M16 8A8 8 0 1 1 0 8a8 8 0 0 1 16 0zm-8 3a3 3 0 1 0 0-6 3 3 0 0 0 0 6z"/>
+</svg>
                                                 </div>
                                                 <div class="check">
                                                     <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16"
@@ -1718,11 +1701,12 @@
                                                     </svg>
                                                 </div>
                                                 <div class="check">
+
                                                     <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16"
-                                                        fill="currentColor" class="bi bi-circle text-lightgray"
+                                                        fill="currentColor" class="text-lighter-gray bi bi-record-circle-fill"
                                                         viewBox="0 0 16 16">
                                                         <path
-                                                            d="M8 15A7 7 0 1 1 8 1a7 7 0 0 1 0 14zm0 1A8 8 0 1 0 8 0a8 8 0 0 0 0 16z" />
+                                                            d="M16 8A8 8 0 1 1 0 8a8 8 0 0 1 16 0zm-8 3a3 3 0 1 0 0-6 3 3 0 0 0 0 6z" />
                                                     </svg>
                                                 </div>
                                             </div>
@@ -1773,11 +1757,9 @@
                                         <!-- checklist -->
                                         <div class="tab fontSz">
                                             <div class="left">
-                                                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16"
-                                                    fill="currentColor" class="bi bi-square" viewBox="0 0 16 16">
-                                                    <path
-                                                        d="M14 1a1 1 0 0 1 1 1v12a1 1 0 0 1-1 1H2a1 1 0 0 1-1-1V2a1 1 0 0 1 1-1h12zM2 0a2 2 0 0 0-2 2v12a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V2a2 2 0 0 0-2-2H2z" />
-                                                </svg>
+                                                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="text-lighter-gray bi bi-square-fill" viewBox="0 0 16 16">
+  <path d="M0 2a2 2 0 0 1 2-2h12a2 2 0 0 1 2 2v12a2 2 0 0 1-2 2H2a2 2 0 0 1-2-2V2z"/>
+</svg>
                                                 정부24(민원신청,보조금24)
                                             </div>
                                             <div class="right text-sm btn-outline-b">
@@ -1786,11 +1768,9 @@
                                         </div>
                                         <div class="tab fontSz">
                                             <div class="left">
-                                                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16"
-                                                    fill="currentColor" class="bi bi-square" viewBox="0 0 16 16">
-                                                    <path
-                                                        d="M14 1a1 1 0 0 1 1 1v12a1 1 0 0 1-1 1H2a1 1 0 0 1-1-1V2a1 1 0 0 1 1-1h12zM2 0a2 2 0 0 0-2 2v12a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V2a2 2 0 0 0-2-2H2z" />
-                                                </svg>
+                                                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="text-lighter-gray bi bi-square-fill" viewBox="0 0 16 16">
+  <path d="M0 2a2 2 0 0 1 2-2h12a2 2 0 0 1 2 2v12a2 2 0 0 1-2 2H2a2 2 0 0 1-2-2V2z"/>
+</svg>
                                                 1365자원봉사
                                             </div>
                                             <div class="right text-sm btn-outline-b">
@@ -1799,11 +1779,9 @@
                                         </div>
                                         <div class="tab fontSz">
                                             <div class="left">
-                                                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16"
-                                                    fill="currentColor" class="bi bi-square" viewBox="0 0 16 16">
-                                                    <path
-                                                        d="M14 1a1 1 0 0 1 1 1v12a1 1 0 0 1-1 1H2a1 1 0 0 1-1-1V2a1 1 0 0 1 1-1h12zM2 0a2 2 0 0 0-2 2v12a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V2a2 2 0 0 0-2-2H2z" />
-                                                </svg>
+                                                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="text-lighter-gray bi bi-square-fill" viewBox="0 0 16 16">
+  <path d="M0 2a2 2 0 0 1 2-2h12a2 2 0 0 1 2 2v12a2 2 0 0 1-2 2H2a2 2 0 0 1-2-2V2z"/>
+</svg>
                                                 내 차 정보 변경(자동차365)
                                             </div>
                                             <div class="right text-sm btn-outline-b">
@@ -1815,11 +1793,9 @@
                                         <!-- 
                                         <div class="tab fontSz">
                                             <div class="left">
-                                                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16"
-                                                    fill="currentColor" class="bi bi-square" viewBox="0 0 16 16">
-                                                    <path
-                                                        d="M14 1a1 1 0 0 1 1 1v12a1 1 0 0 1-1 1H2a1 1 0 0 1-1-1V2a1 1 0 0 1 1-1h12zM2 0a2 2 0 0 0-2 2v12a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V2a2 2 0 0 0-2-2H2z" />
-                                                </svg>
+                                                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="text-lighter-gray bi bi-square-fill" viewBox="0 0 16 16">
+  <path d="M0 2a2 2 0 0 1 2-2h12a2 2 0 0 1 2 2v12a2 2 0 0 1-2 2H2a2 2 0 0 1-2-2V2z"/>
+</svg>
                                                 내용추가
                                             </div>
                                             <div class="right text-sm btn-outline-b">
@@ -1828,11 +1804,9 @@
                                         </div>
                                         <div class="tab fontSz">
                                             <div class="left">
-                                                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16"
-                                                    fill="currentColor" class="bi bi-square" viewBox="0 0 16 16">
-                                                    <path
-                                                        d="M14 1a1 1 0 0 1 1 1v12a1 1 0 0 1-1 1H2a1 1 0 0 1-1-1V2a1 1 0 0 1 1-1h12zM2 0a2 2 0 0 0-2 2v12a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V2a2 2 0 0 0-2-2H2z" />
-                                                </svg>
+                                                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="text-lighter-gray bi bi-square-fill" viewBox="0 0 16 16">
+  <path d="M0 2a2 2 0 0 1 2-2h12a2 2 0 0 1 2 2v12a2 2 0 0 1-2 2H2a2 2 0 0 1-2-2V2z"/>
+</svg>
                                                 내용추가
                                             </div>
                                             <div class="right text-sm btn-outline-b">
@@ -1841,11 +1815,9 @@
                                         </div>
                                         <div class="tab fontSz">
                                             <div class="left">
-                                                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16"
-                                                    fill="currentColor" class="bi bi-square" viewBox="0 0 16 16">
-                                                    <path
-                                                        d="M14 1a1 1 0 0 1 1 1v12a1 1 0 0 1-1 1H2a1 1 0 0 1-1-1V2a1 1 0 0 1 1-1h12zM2 0a2 2 0 0 0-2 2v12a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V2a2 2 0 0 0-2-2H2z" />
-                                                </svg>
+                                                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="text-lighter-gray bi bi-square-fill" viewBox="0 0 16 16">
+  <path d="M0 2a2 2 0 0 1 2-2h12a2 2 0 0 1 2 2v12a2 2 0 0 1-2 2H2a2 2 0 0 1-2-2V2z"/>
+</svg>
                                                 내용추가
                                             </div>
                                             <div class="right text-sm btn-outline-b">
@@ -1854,11 +1826,9 @@
                                         </div>
                                         <div class="tab fontSz">
                                             <div class="left">
-                                                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16"
-                                                    fill="currentColor" class="bi bi-square" viewBox="0 0 16 16">
-                                                    <path
-                                                        d="M14 1a1 1 0 0 1 1 1v12a1 1 0 0 1-1 1H2a1 1 0 0 1-1-1V2a1 1 0 0 1 1-1h12zM2 0a2 2 0 0 0-2 2v12a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V2a2 2 0 0 0-2-2H2z" />
-                                                </svg>
+                                                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="text-lighter-gray bi bi-square-fill" viewBox="0 0 16 16">
+  <path d="M0 2a2 2 0 0 1 2-2h12a2 2 0 0 1 2 2v12a2 2 0 0 1-2 2H2a2 2 0 0 1-2-2V2z"/>
+</svg>
                                                 내용추가
                                             </div>
                                             <div class="right text-sm btn-outline-b">
@@ -1867,11 +1837,9 @@
                                         </div>
                                         <div class="tab fontSz">
                                             <div class="left">
-                                                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16"
-                                                    fill="currentColor" class="bi bi-square" viewBox="0 0 16 16">
-                                                    <path
-                                                        d="M14 1a1 1 0 0 1 1 1v12a1 1 0 0 1-1 1H2a1 1 0 0 1-1-1V2a1 1 0 0 1 1-1h12zM2 0a2 2 0 0 0-2 2v12a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V2a2 2 0 0 0-2-2H2z" />
-                                                </svg>
+                                                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="text-lighter-gray bi bi-square-fill" viewBox="0 0 16 16">
+  <path d="M0 2a2 2 0 0 1 2-2h12a2 2 0 0 1 2 2v12a2 2 0 0 1-2 2H2a2 2 0 0 1-2-2V2z"/>
+</svg>
                                                 내용추가
                                             </div>
                                             <div class="right text-sm btn-outline-b">
@@ -1880,11 +1848,9 @@
                                         </div>
                                         <div class="tab fontSz">
                                             <div class="left">
-                                                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16"
-                                                    fill="currentColor" class="bi bi-square" viewBox="0 0 16 16">
-                                                    <path
-                                                        d="M14 1a1 1 0 0 1 1 1v12a1 1 0 0 1-1 1H2a1 1 0 0 1-1-1V2a1 1 0 0 1 1-1h12zM2 0a2 2 0 0 0-2 2v12a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V2a2 2 0 0 0-2-2H2z" />
-                                                </svg>
+                                                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="text-lighter-gray bi bi-square-fill" viewBox="0 0 16 16">
+  <path d="M0 2a2 2 0 0 1 2-2h12a2 2 0 0 1 2 2v12a2 2 0 0 1-2 2H2a2 2 0 0 1-2-2V2z"/>
+</svg>
                                                 내용추가
                                             </div>
                                             <div class="right text-sm btn-outline-b">
@@ -1893,11 +1859,9 @@
                                         </div>
                                         <div class="tab fontSz">
                                             <div class="left">
-                                                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16"
-                                                    fill="currentColor" class="bi bi-square" viewBox="0 0 16 16">
-                                                    <path
-                                                        d="M14 1a1 1 0 0 1 1 1v12a1 1 0 0 1-1 1H2a1 1 0 0 1-1-1V2a1 1 0 0 1 1-1h12zM2 0a2 2 0 0 0-2 2v12a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V2a2 2 0 0 0-2-2H2z" />
-                                                </svg>
+                                                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="text-lighter-gray bi bi-square-fill" viewBox="0 0 16 16">
+  <path d="M0 2a2 2 0 0 1 2-2h12a2 2 0 0 1 2 2v12a2 2 0 0 1-2 2H2a2 2 0 0 1-2-2V2z"/>
+</svg>
                                                 내용추가
                                             </div>
                                             <div class="right text-sm btn-outline-b">
@@ -1910,13 +1874,12 @@
                                         <div class="tab bg-b">
                                             <div class="w-100 text-center">건강/주택</div>
                                         </div>
-                                        <div class="tab fontSz pg_4_answer">
-                                            <div class="left pg_4_answer input_2">
-                                                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16"
-                                                    fill="currentColor" class="bi bi-square" viewBox="0 0 16 16">
-                                                    <path
-                                                        d="M14 1a1 1 0 0 1 1 1v12a1 1 0 0 1-1 1H2a1 1 0 0 1-1-1V2a1 1 0 0 1 1-1h12zM2 0a2 2 0 0 0-2 2v12a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V2a2 2 0 0 0-2-2H2z" />
-                                                </svg>
+                                        <div class="tab fontSz selc_2_input pg_4_answer input_2">
+                                            <div class="left selc_2_input pg_4_answer input_2">
+                                                
+                                                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="selc_2_input pg_4_answer input_2 css_edit_2 text-lighter-gray bi bi-square-fill" viewBox="0 0 16 16">
+                                                    <path d="M0 2a2 2 0 0 1 2-2h12a2 2 0 0 1 2 2v12a2 2 0 0 1-2 2H2a2 2 0 0 1-2-2V2z"/>
+                                                  </svg>
                                                 건강검진(암검진 포함)
                                             </div>
                                             <div class="right text-sm btn-outline-b">
@@ -1925,11 +1888,9 @@
                                         </div>
                                         <div class="tab fontSz">
                                             <div class="left">
-                                                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16"
-                                                    fill="currentColor" class="bi bi-square" viewBox="0 0 16 16">
-                                                    <path
-                                                        d="M14 1a1 1 0 0 1 1 1v12a1 1 0 0 1-1 1H2a1 1 0 0 1-1-1V2a1 1 0 0 1 1-1h12zM2 0a2 2 0 0 0-2 2v12a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V2a2 2 0 0 0-2-2H2z" />
-                                                </svg>
+                                                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="text-lighter-gray bi bi-square-fill" viewBox="0 0 16 16">
+  <path d="M0 2a2 2 0 0 1 2-2h12a2 2 0 0 1 2 2v12a2 2 0 0 1-2 2H2a2 2 0 0 1-2-2V2z"/>
+</svg>
                                                 전기요금
                                             </div>
                                             <div class="right text-sm btn-outline-b">
@@ -1938,11 +1899,9 @@
                                         </div>
                                         <div class="tab fontSz">
                                             <div class="left">
-                                                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16"
-                                                    fill="currentColor" class="bi bi-square" viewBox="0 0 16 16">
-                                                    <path
-                                                        d="M14 1a1 1 0 0 1 1 1v12a1 1 0 0 1-1 1H2a1 1 0 0 1-1-1V2a1 1 0 0 1 1-1h12zM2 0a2 2 0 0 0-2 2v12a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V2a2 2 0 0 0-2-2H2z" />
-                                                </svg>
+                                                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="text-lighter-gray bi bi-square-fill" viewBox="0 0 16 16">
+  <path d="M0 2a2 2 0 0 1 2-2h12a2 2 0 0 1 2 2v12a2 2 0 0 1-2 2H2a2 2 0 0 1-2-2V2z"/>
+</svg>
                                                 주택 임대자
                                             </div>
                                             <div class="right text-sm btn-outline-b">
@@ -1956,11 +1915,9 @@
                                         </div>
                                         <div class="tab fontSz">
                                             <div class="left">
-                                                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16"
-                                                    fill="currentColor" class="bi bi-square" viewBox="0 0 16 16">
-                                                    <path
-                                                        d="M14 1a1 1 0 0 1 1 1v12a1 1 0 0 1-1 1H2a1 1 0 0 1-1-1V2a1 1 0 0 1 1-1h12zM2 0a2 2 0 0 0-2 2v12a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V2a2 2 0 0 0-2-2H2z" />
-                                                </svg>
+                                                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="text-lighter-gray bi bi-square-fill" viewBox="0 0 16 16">
+  <path d="M0 2a2 2 0 0 1 2-2h12a2 2 0 0 1 2 2v12a2 2 0 0 1-2 2H2a2 2 0 0 1-2-2V2z"/>
+</svg>
                                                 국세고지서 발송 안내
                                             </div>
                                             <div class="right text-sm btn-outline-b">
@@ -1969,11 +1926,9 @@
                                         </div>
                                         <div class="tab fontSz">
                                             <div class="left">
-                                                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16"
-                                                    fill="currentColor" class="bi bi-square" viewBox="0 0 16 16">
-                                                    <path
-                                                        d="M14 1a1 1 0 0 1 1 1v12a1 1 0 0 1-1 1H2a1 1 0 0 1-1-1V2a1 1 0 0 1 1-1h12zM2 0a2 2 0 0 0-2 2v12a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V2a2 2 0 0 0-2-2H2z" />
-                                                </svg>
+                                                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="text-lighter-gray bi bi-square-fill" viewBox="0 0 16 16">
+  <path d="M0 2a2 2 0 0 1 2-2h12a2 2 0 0 1 2 2v12a2 2 0 0 1-2 2H2a2 2 0 0 1-2-2V2z"/>
+</svg>
                                                 경찰청 고지
                                             </div>
                                             <div class="right text-sm btn-outline-b">
@@ -1982,11 +1937,9 @@
                                         </div>
                                         <div class="tab fontSz">
                                             <div class="left">
-                                                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16"
-                                                    fill="currentColor" class="bi bi-square" viewBox="0 0 16 16">
-                                                    <path
-                                                        d="M14 1a1 1 0 0 1 1 1v12a1 1 0 0 1-1 1H2a1 1 0 0 1-1-1V2a1 1 0 0 1 1-1h12zM2 0a2 2 0 0 0-2 2v12a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V2a2 2 0 0 0-2-2H2z" />
-                                                </svg>
+                                                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="text-lighter-gray bi bi-square-fill" viewBox="0 0 16 16">
+  <path d="M0 2a2 2 0 0 1 2-2h12a2 2 0 0 1 2 2v12a2 2 0 0 1-2 2H2a2 2 0 0 1-2-2V2z"/>
+</svg>
                                                 휴면예금
                                             </div>
                                             <div class="right text-sm btn-outline-b">
@@ -2000,11 +1953,9 @@
                                         </div>
                                         <div class="tab fontSz">
                                             <div class="left">
-                                                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16"
-                                                    fill="currentColor" class="bi bi-square" viewBox="0 0 16 16">
-                                                    <path
-                                                        d="M14 1a1 1 0 0 1 1 1v12a1 1 0 0 1-1 1H2a1 1 0 0 1-1-1V2a1 1 0 0 1 1-1h12zM2 0a2 2 0 0 0-2 2v12a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V2a2 2 0 0 0-2-2H2z" />
-                                                </svg>
+                                                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="text-lighter-gray bi bi-square-fill" viewBox="0 0 16 16">
+  <path d="M0 2a2 2 0 0 1 2-2h12a2 2 0 0 1 2 2v12a2 2 0 0 1-2 2H2a2 2 0 0 1-2-2V2z"/>
+</svg>
                                                 주민등록증 발급 통지
                                             </div>
                                             <div class="right text-sm btn-outline-b">
@@ -2013,11 +1964,9 @@
                                         </div>
                                         <div class="tab fontSz">
                                             <div class="left">
-                                                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16"
-                                                    fill="currentColor" class="bi bi-square" viewBox="0 0 16 16">
-                                                    <path
-                                                        d="M14 1a1 1 0 0 1 1 1v12a1 1 0 0 1-1 1H2a1 1 0 0 1-1-1V2a1 1 0 0 1 1-1h12zM2 0a2 2 0 0 0-2 2v12a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V2a2 2 0 0 0-2-2H2z" />
-                                                </svg>
+                                                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="text-lighter-gray bi bi-square-fill" viewBox="0 0 16 16">
+  <path d="M0 2a2 2 0 0 1 2-2h12a2 2 0 0 1 2 2v12a2 2 0 0 1-2 2H2a2 2 0 0 1-2-2V2z"/>
+</svg>
                                                 분실주민등록증 습득
                                             </div>
                                             <div class="right text-sm btn-outline-b">
@@ -2034,11 +1983,9 @@
                                         </div>
                                         <div class="tab fontSz">
                                             <div class="left">
-                                                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16"
-                                                    fill="currentColor" class="bi bi-square" viewBox="0 0 16 16">
-                                                    <path
-                                                        d="M14 1a1 1 0 0 1 1 1v12a1 1 0 0 1-1 1H2a1 1 0 0 1-1-1V2a1 1 0 0 1 1-1h12zM2 0a2 2 0 0 0-2 2v12a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V2a2 2 0 0 0-2-2H2z" />
-                                                </svg>
+                                                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="text-lighter-gray bi bi-square-fill" viewBox="0 0 16 16">
+  <path d="M0 2a2 2 0 0 1 2-2h12a2 2 0 0 1 2 2v12a2 2 0 0 1-2 2H2a2 2 0 0 1-2-2V2z"/>
+</svg>
                                                 내용추가
                                             </div>
                                             <div class="right text-sm btn-outline-b">
@@ -2053,11 +2000,9 @@
                                         </div>
                                         <div class="tab fontSz">
                                             <div class="left">
-                                                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16"
-                                                    fill="currentColor" class="bi bi-square" viewBox="0 0 16 16">
-                                                    <path
-                                                        d="M14 1a1 1 0 0 1 1 1v12a1 1 0 0 1-1 1H2a1 1 0 0 1-1-1V2a1 1 0 0 1 1-1h12zM2 0a2 2 0 0 0-2 2v12a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V2a2 2 0 0 0-2-2H2z" />
-                                                </svg>
+                                                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="text-lighter-gray bi bi-square-fill" viewBox="0 0 16 16">
+  <path d="M0 2a2 2 0 0 1 2-2h12a2 2 0 0 1 2 2v12a2 2 0 0 1-2 2H2a2 2 0 0 1-2-2V2z"/>
+</svg>
                                                 내용추가
                                             </div>
                                             <div class="right text-sm btn-outline-b">
@@ -2072,11 +2017,9 @@
                                         </div>
                                         <div class="tab fontSz">
                                             <div class="left">
-                                                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16"
-                                                    fill="currentColor" class="bi bi-square" viewBox="0 0 16 16">
-                                                    <path
-                                                        d="M14 1a1 1 0 0 1 1 1v12a1 1 0 0 1-1 1H2a1 1 0 0 1-1-1V2a1 1 0 0 1 1-1h12zM2 0a2 2 0 0 0-2 2v12a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V2a2 2 0 0 0-2-2H2z" />
-                                                </svg>
+                                                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="text-lighter-gray bi bi-square-fill" viewBox="0 0 16 16">
+  <path d="M0 2a2 2 0 0 1 2-2h12a2 2 0 0 1 2 2v12a2 2 0 0 1-2 2H2a2 2 0 0 1-2-2V2z"/>
+</svg>
                                                 내용추가
                                             </div>
                                             <div class="right text-sm btn-outline-b">
@@ -2091,11 +2034,9 @@
                                         </div>
                                         <div class="tab fontSz">
                                             <div class="left">
-                                                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16"
-                                                    fill="currentColor" class="bi bi-square" viewBox="0 0 16 16">
-                                                    <path
-                                                        d="M14 1a1 1 0 0 1 1 1v12a1 1 0 0 1-1 1H2a1 1 0 0 1-1-1V2a1 1 0 0 1 1-1h12zM2 0a2 2 0 0 0-2 2v12a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V2a2 2 0 0 0-2-2H2z" />
-                                                </svg>
+                                                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="text-lighter-gray bi bi-square-fill" viewBox="0 0 16 16">
+  <path d="M0 2a2 2 0 0 1 2-2h12a2 2 0 0 1 2 2v12a2 2 0 0 1-2 2H2a2 2 0 0 1-2-2V2z"/>
+</svg>
                                                 내용추가
                                             </div>
                                             <div class="right text-sm btn-outline-b">
@@ -2123,7 +2064,7 @@
                                     </div>
                                     <!-- ----- -->
                                     <div class="tab justify-content-center">
-                                        <button type="button" class="btn btn-darkgray rounded-0 w-40">
+                                        <button type="button" class="btn btn-darkgray rounded-0 w-40 selc_next_btn">
                                             신청
                                         </button>
                                     </div>
@@ -2209,18 +2150,18 @@
                                             <div class="right">
                                                 <div class="check">
                                                     <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16"
-                                                        fill="currentColor" class="bi bi-circle text-lightgray"
+                                                        fill="currentColor" class="text-lighter-gray bi bi-record-circle-fill"
                                                         viewBox="0 0 16 16">
                                                         <path
-                                                            d="M8 15A7 7 0 1 1 8 1a7 7 0 0 1 0 14zm0 1A8 8 0 1 0 8 0a8 8 0 0 0 0 16z" />
+                                                            d="M16 8A8 8 0 1 1 0 8a8 8 0 0 1 16 0zm-8 3a3 3 0 1 0 0-6 3 3 0 0 0 0 6z" />
                                                     </svg>
                                                 </div>
                                                 <div class="check">
                                                     <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16"
-                                                        fill="currentColor" class="bi bi-circle text-lightgray"
+                                                        fill="currentColor" class="text-lighter-gray bi bi-record-circle-fill"
                                                         viewBox="0 0 16 16">
                                                         <path
-                                                            d="M8 15A7 7 0 1 1 8 1a7 7 0 0 1 0 14zm0 1A8 8 0 1 0 8 0a8 8 0 0 0 0 16z" />
+                                                            d="M16 8A8 8 0 1 1 0 8a8 8 0 0 1 16 0zm-8 3a3 3 0 1 0 0-6 3 3 0 0 0 0 6z" />
                                                     </svg>
                                                 </div>
                                             </div>
@@ -2234,18 +2175,18 @@
                                             <div class="right">
                                                 <div class="check">
                                                     <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16"
-                                                        fill="currentColor" class="bi bi-circle text-lightgray"
+                                                        fill="currentColor" class="text-lighter-gray bi bi-record-circle-fill"
                                                         viewBox="0 0 16 16">
                                                         <path
-                                                            d="M8 15A7 7 0 1 1 8 1a7 7 0 0 1 0 14zm0 1A8 8 0 1 0 8 0a8 8 0 0 0 0 16z" />
+                                                            d="M16 8A8 8 0 1 1 0 8a8 8 0 0 1 16 0zm-8 3a3 3 0 1 0 0-6 3 3 0 0 0 0 6z" />
                                                     </svg>
                                                 </div>
                                                 <div class="check">
                                                     <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16"
-                                                        fill="currentColor" class="bi bi-circle text-lightgray"
+                                                        fill="currentColor" class="text-lighter-gray bi bi-record-circle-fill"
                                                         viewBox="0 0 16 16">
                                                         <path
-                                                            d="M8 15A7 7 0 1 1 8 1a7 7 0 0 1 0 14zm0 1A8 8 0 1 0 8 0a8 8 0 0 0 0 16z" />
+                                                            d="M16 8A8 8 0 1 1 0 8a8 8 0 0 1 16 0zm-8 3a3 3 0 1 0 0-6 3 3 0 0 0 0 6z" />
                                                     </svg>
                                                 </div>
                                             </div>
@@ -2259,10 +2200,10 @@
                                             <div class="right">
                                                 <div class="check">
                                                     <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16"
-                                                        fill="currentColor" class="bi bi-circle text-lightgray"
+                                                        fill="currentColor" class="text-lighter-gray bi bi-record-circle-fill"
                                                         viewBox="0 0 16 16">
                                                         <path
-                                                            d="M8 15A7 7 0 1 1 8 1a7 7 0 0 1 0 14zm0 1A8 8 0 1 0 8 0a8 8 0 0 0 0 16z" />
+                                                            d="M16 8A8 8 0 1 1 0 8a8 8 0 0 1 16 0zm-8 3a3 3 0 1 0 0-6 3 3 0 0 0 0 6z" />
                                                     </svg>
                                                 </div>
                                                 <div class="check">
@@ -2284,18 +2225,18 @@
                                             <div class="right">
                                                 <div class="check">
                                                     <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16"
-                                                        fill="currentColor" class="bi bi-circle text-lightgray"
+                                                        fill="currentColor" class="text-lighter-gray bi bi-record-circle-fill"
                                                         viewBox="0 0 16 16">
                                                         <path
-                                                            d="M8 15A7 7 0 1 1 8 1a7 7 0 0 1 0 14zm0 1A8 8 0 1 0 8 0a8 8 0 0 0 0 16z" />
+                                                            d="M16 8A8 8 0 1 1 0 8a8 8 0 0 1 16 0zm-8 3a3 3 0 1 0 0-6 3 3 0 0 0 0 6z" />
                                                     </svg>
                                                 </div>
                                                 <div class="check">
                                                     <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16"
-                                                        fill="currentColor" class="bi bi-circle text-lightgray"
+                                                        fill="currentColor" class="text-lighter-gray bi bi-record-circle-fill"
                                                         viewBox="0 0 16 16">
                                                         <path
-                                                            d="M8 15A7 7 0 1 1 8 1a7 7 0 0 1 0 14zm0 1A8 8 0 1 0 8 0a8 8 0 0 0 0 16z" />
+                                                            d="M16 8A8 8 0 1 1 0 8a8 8 0 0 1 16 0zm-8 3a3 3 0 1 0 0-6 3 3 0 0 0 0 6z" />
                                                     </svg>
                                                 </div>
                                             </div>
@@ -2310,42 +2251,18 @@
                                             <div class="right">
                                                 <div class="check">
                                                     <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16"
-                                                        fill="currentColor" class="bi bi-circle text-lightgray"
+                                                        fill="currentColor" class="text-lighter-gray bi bi-record-circle-fill"
                                                         viewBox="0 0 16 16">
                                                         <path
-                                                            d="M8 15A7 7 0 1 1 8 1a7 7 0 0 1 0 14zm0 1A8 8 0 1 0 8 0a8 8 0 0 0 0 16z" />
+                                                            d="M16 8A8 8 0 1 1 0 8a8 8 0 0 1 16 0zm-8 3a3 3 0 1 0 0-6 3 3 0 0 0 0 6z" />
                                                     </svg>
                                                 </div>
                                                 <div class="check">
                                                     <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16"
-                                                        fill="currentColor" class="bi bi-circle text-lightgray"
+                                                        fill="currentColor" class="text-lighter-gray bi bi-record-circle-fill"
                                                         viewBox="0 0 16 16">
                                                         <path
-                                                            d="M8 15A7 7 0 1 1 8 1a7 7 0 0 1 0 14zm0 1A8 8 0 1 0 8 0a8 8 0 0 0 0 16z" />
-                                                    </svg>
-                                                </div>
-                                            </div>
-                                        </div>
-                                        <div class="tab fontSz">
-                                            <div class="left">
-                                                <img class="icon" src="./assets/image/이미지추가.png" alt="">
-                                                내용추가
-                                            </div>
-                                            <div class="right">
-                                                <div class="check">
-                                                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16"
-                                                        fill="currentColor" class="bi bi-circle text-lightgray"
-                                                        viewBox="0 0 16 16">
-                                                        <path
-                                                            d="M8 15A7 7 0 1 1 8 1a7 7 0 0 1 0 14zm0 1A8 8 0 1 0 8 0a8 8 0 0 0 0 16z" />
-                                                    </svg>
-                                                </div>
-                                                <div class="check">
-                                                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16"
-                                                        fill="currentColor" class="bi bi-circle text-lightgray"
-                                                        viewBox="0 0 16 16">
-                                                        <path
-                                                            d="M8 15A7 7 0 1 1 8 1a7 7 0 0 1 0 14zm0 1A8 8 0 1 0 8 0a8 8 0 0 0 0 16z" />
+                                                            d="M16 8A8 8 0 1 1 0 8a8 8 0 0 1 16 0zm-8 3a3 3 0 1 0 0-6 3 3 0 0 0 0 6z" />
                                                     </svg>
                                                 </div>
                                             </div>
@@ -2358,25 +2275,49 @@
                                             <div class="right">
                                                 <div class="check">
                                                     <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16"
-                                                        fill="currentColor" class="bi bi-circle text-lightgray"
+                                                        fill="currentColor" class="text-lighter-gray bi bi-record-circle-fill"
                                                         viewBox="0 0 16 16">
                                                         <path
-                                                            d="M8 15A7 7 0 1 1 8 1a7 7 0 0 1 0 14zm0 1A8 8 0 1 0 8 0a8 8 0 0 0 0 16z" />
+                                                            d="M16 8A8 8 0 1 1 0 8a8 8 0 0 1 16 0zm-8 3a3 3 0 1 0 0-6 3 3 0 0 0 0 6z" />
                                                     </svg>
                                                 </div>
                                                 <div class="check">
                                                     <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16"
-                                                        fill="currentColor" class="bi bi-circle text-lightgray"
+                                                        fill="currentColor" class="text-lighter-gray bi bi-record-circle-fill"
                                                         viewBox="0 0 16 16">
                                                         <path
-                                                            d="M8 15A7 7 0 1 1 8 1a7 7 0 0 1 0 14zm0 1A8 8 0 1 0 8 0a8 8 0 0 0 0 16z" />
+                                                            d="M16 8A8 8 0 1 1 0 8a8 8 0 0 1 16 0zm-8 3a3 3 0 1 0 0-6 3 3 0 0 0 0 6z" />
+                                                    </svg>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="tab fontSz">
+                                            <div class="left">
+                                                <img class="icon" src="./assets/image/이미지추가.png" alt="">
+                                                내용추가
+                                            </div>
+                                            <div class="right">
+                                                <div class="check">
+                                                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16"
+                                                        fill="currentColor" class="text-lighter-gray bi bi-record-circle-fill"
+                                                        viewBox="0 0 16 16">
+                                                        <path
+                                                            d="M16 8A8 8 0 1 1 0 8a8 8 0 0 1 16 0zm-8 3a3 3 0 1 0 0-6 3 3 0 0 0 0 6z" />
+                                                    </svg>
+                                                </div>
+                                                <div class="check">
+                                                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16"
+                                                        fill="currentColor" class="text-lighter-gray bi bi-record-circle-fill"
+                                                        viewBox="0 0 16 16">
+                                                        <path
+                                                            d="M16 8A8 8 0 1 1 0 8a8 8 0 0 1 16 0zm-8 3a3 3 0 1 0 0-6 3 3 0 0 0 0 6z" />
                                                     </svg>
                                                 </div>
                                             </div>
                                         </div> -->
-                                        
-                                        
-                                        
+
+
+
                                         <div class="tab fontSz">
                                             <div class="left">
                                                 <!-- 이미지 추가 -->
@@ -2386,10 +2327,10 @@
                                             <div class="right">
                                                 <div class="check">
                                                     <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16"
-                                                        fill="currentColor" class="bi bi-circle text-lightgray"
+                                                        fill="currentColor" class="text-lighter-gray bi bi-record-circle-fill"
                                                         viewBox="0 0 16 16">
                                                         <path
-                                                            d="M8 15A7 7 0 1 1 8 1a7 7 0 0 1 0 14zm0 1A8 8 0 1 0 8 0a8 8 0 0 0 0 16z" />
+                                                            d="M16 8A8 8 0 1 1 0 8a8 8 0 0 1 16 0zm-8 3a3 3 0 1 0 0-6 3 3 0 0 0 0 6z" />
                                                     </svg>
                                                 </div>
                                                 <div class="check">
@@ -2411,18 +2352,18 @@
                                             <div class="right">
                                                 <div class="check">
                                                     <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16"
-                                                        fill="currentColor" class="bi bi-circle text-lightgray"
+                                                        fill="currentColor" class="text-lighter-gray bi bi-record-circle-fill"
                                                         viewBox="0 0 16 16">
                                                         <path
-                                                            d="M8 15A7 7 0 1 1 8 1a7 7 0 0 1 0 14zm0 1A8 8 0 1 0 8 0a8 8 0 0 0 0 16z" />
+                                                            d="M16 8A8 8 0 1 1 0 8a8 8 0 0 1 16 0zm-8 3a3 3 0 1 0 0-6 3 3 0 0 0 0 6z" />
                                                     </svg>
                                                 </div>
                                                 <div class="check">
                                                     <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16"
-                                                        fill="currentColor" class="bi bi-circle text-lightgray"
+                                                        fill="currentColor" class="text-lighter-gray bi bi-record-circle-fill"
                                                         viewBox="0 0 16 16">
                                                         <path
-                                                            d="M8 15A7 7 0 1 1 8 1a7 7 0 0 1 0 14zm0 1A8 8 0 1 0 8 0a8 8 0 0 0 0 16z" />
+                                                            d="M16 8A8 8 0 1 1 0 8a8 8 0 0 1 16 0zm-8 3a3 3 0 1 0 0-6 3 3 0 0 0 0 6z" />
                                                     </svg>
                                                 </div>
                                             </div>
@@ -2438,42 +2379,18 @@
                                             <div class="right">
                                                 <div class="check">
                                                     <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16"
-                                                        fill="currentColor" class="bi bi-circle text-lightgray"
+                                                        fill="currentColor" class="text-lighter-gray bi bi-record-circle-fill"
                                                         viewBox="0 0 16 16">
                                                         <path
-                                                            d="M8 15A7 7 0 1 1 8 1a7 7 0 0 1 0 14zm0 1A8 8 0 1 0 8 0a8 8 0 0 0 0 16z" />
+                                                            d="M16 8A8 8 0 1 1 0 8a8 8 0 0 1 16 0zm-8 3a3 3 0 1 0 0-6 3 3 0 0 0 0 6z" />
                                                     </svg>
                                                 </div>
                                                 <div class="check">
                                                     <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16"
-                                                        fill="currentColor" class="bi bi-circle text-lightgray"
+                                                        fill="currentColor" class="text-lighter-gray bi bi-record-circle-fill"
                                                         viewBox="0 0 16 16">
                                                         <path
-                                                            d="M8 15A7 7 0 1 1 8 1a7 7 0 0 1 0 14zm0 1A8 8 0 1 0 8 0a8 8 0 0 0 0 16z" />
-                                                    </svg>
-                                                </div>
-                                            </div>
-                                        </div>
-                                        <div class="tab fontSz">
-                                            <div class="left">
-                                                <img class="icon" src="./assets/image/이미지추가.png" alt="">
-                                                내용추가
-                                            </div>
-                                            <div class="right">
-                                                <div class="check">
-                                                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16"
-                                                        fill="currentColor" class="bi bi-circle text-lightgray"
-                                                        viewBox="0 0 16 16">
-                                                        <path
-                                                            d="M8 15A7 7 0 1 1 8 1a7 7 0 0 1 0 14zm0 1A8 8 0 1 0 8 0a8 8 0 0 0 0 16z" />
-                                                    </svg>
-                                                </div>
-                                                <div class="check">
-                                                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16"
-                                                        fill="currentColor" class="bi bi-circle text-lightgray"
-                                                        viewBox="0 0 16 16">
-                                                        <path
-                                                            d="M8 15A7 7 0 1 1 8 1a7 7 0 0 1 0 14zm0 1A8 8 0 1 0 8 0a8 8 0 0 0 0 16z" />
+                                                            d="M16 8A8 8 0 1 1 0 8a8 8 0 0 1 16 0zm-8 3a3 3 0 1 0 0-6 3 3 0 0 0 0 6z" />
                                                     </svg>
                                                 </div>
                                             </div>
@@ -2486,18 +2403,18 @@
                                             <div class="right">
                                                 <div class="check">
                                                     <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16"
-                                                        fill="currentColor" class="bi bi-circle text-lightgray"
+                                                        fill="currentColor" class="text-lighter-gray bi bi-record-circle-fill"
                                                         viewBox="0 0 16 16">
                                                         <path
-                                                            d="M8 15A7 7 0 1 1 8 1a7 7 0 0 1 0 14zm0 1A8 8 0 1 0 8 0a8 8 0 0 0 0 16z" />
+                                                            d="M16 8A8 8 0 1 1 0 8a8 8 0 0 1 16 0zm-8 3a3 3 0 1 0 0-6 3 3 0 0 0 0 6z" />
                                                     </svg>
                                                 </div>
                                                 <div class="check">
                                                     <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16"
-                                                        fill="currentColor" class="bi bi-circle text-lightgray"
+                                                        fill="currentColor" class="text-lighter-gray bi bi-record-circle-fill"
                                                         viewBox="0 0 16 16">
                                                         <path
-                                                            d="M8 15A7 7 0 1 1 8 1a7 7 0 0 1 0 14zm0 1A8 8 0 1 0 8 0a8 8 0 0 0 0 16z" />
+                                                            d="M16 8A8 8 0 1 1 0 8a8 8 0 0 1 16 0zm-8 3a3 3 0 1 0 0-6 3 3 0 0 0 0 6z" />
                                                     </svg>
                                                 </div>
                                             </div>
@@ -2510,10 +2427,34 @@
                                             <div class="right">
                                                 <div class="check">
                                                     <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16"
-                                                        fill="currentColor" class="bi bi-circle text-lightgray"
+                                                        fill="currentColor" class="text-lighter-gray bi bi-record-circle-fill"
                                                         viewBox="0 0 16 16">
                                                         <path
-                                                            d="M8 15A7 7 0 1 1 8 1a7 7 0 0 1 0 14zm0 1A8 8 0 1 0 8 0a8 8 0 0 0 0 16z" />
+                                                            d="M16 8A8 8 0 1 1 0 8a8 8 0 0 1 16 0zm-8 3a3 3 0 1 0 0-6 3 3 0 0 0 0 6z" />
+                                                    </svg>
+                                                </div>
+                                                <div class="check">
+                                                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16"
+                                                        fill="currentColor" class="text-lighter-gray bi bi-record-circle-fill"
+                                                        viewBox="0 0 16 16">
+                                                        <path
+                                                            d="M16 8A8 8 0 1 1 0 8a8 8 0 0 1 16 0zm-8 3a3 3 0 1 0 0-6 3 3 0 0 0 0 6z" />
+                                                    </svg>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="tab fontSz">
+                                            <div class="left">
+                                                <img class="icon" src="./assets/image/이미지추가.png" alt="">
+                                                내용추가
+                                            </div>
+                                            <div class="right">
+                                                <div class="check">
+                                                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16"
+                                                        fill="currentColor" class="text-lighter-gray bi bi-record-circle-fill"
+                                                        viewBox="0 0 16 16">
+                                                        <path
+                                                            d="M16 8A8 8 0 1 1 0 8a8 8 0 0 1 16 0zm-8 3a3 3 0 1 0 0-6 3 3 0 0 0 0 6z" />
                                                     </svg>
                                                 </div>
                                                 <div class="check">
@@ -2545,10 +2486,10 @@
                                                 </div>
                                                 <div class="check">
                                                     <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16"
-                                                        fill="currentColor" class="bi bi-circle text-lightgray"
+                                                        fill="currentColor" class="text-lighter-gray bi bi-record-circle-fill"
                                                         viewBox="0 0 16 16">
                                                         <path
-                                                            d="M8 15A7 7 0 1 1 8 1a7 7 0 0 1 0 14zm0 1A8 8 0 1 0 8 0a8 8 0 0 0 0 16z" />
+                                                            d="M16 8A8 8 0 1 1 0 8a8 8 0 0 1 16 0zm-8 3a3 3 0 1 0 0-6 3 3 0 0 0 0 6z" />
                                                     </svg>
                                                 </div>
                                             </div>

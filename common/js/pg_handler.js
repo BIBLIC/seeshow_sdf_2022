@@ -19,6 +19,7 @@ $('.nav_btn_wrap').css('display', 'none');
 var audio_stat = 1;
 var pwArr = [];
 var selcArr = [];
+var selc3Arr = [];
 var multiArr = [];
 
 //popovers 초기화 작업
@@ -702,7 +703,6 @@ document.querySelector("main").addEventListener("click", function (e) {//메인 
         } 
 
 
-
         //----비번6자리 있을 경우 + dot 자동 -------------------
         //pw_auto_input pg_n_answer pwn input_(키패드 넘버)
         else if (e.target.className.includes("pw_auto_input")) {
@@ -737,7 +737,6 @@ document.querySelector("main").addEventListener("click", function (e) {//메인 
                         next(real_pg);
                         for ( i =0; i <6; i++) {
                             $(".dot"+i).css("background-color", "#a9a9a9");//버튼누르면 색칠초기화
-
                         }
                         pwArr = []; //배열 초기화
                     } 
@@ -798,11 +797,8 @@ document.querySelector("main").addEventListener("click", function (e) {//메인 
                     if (multiArr.length==3) {
                         $(".multi_next_btn").addClass("pg_" + real_pg + "_answer");
                     }
-                
             });
-            
         }
-
         
         //----1개 선택하면 버튼 활성화 되는 경우 -------------------
         //active_selc_input pg_n_answer 
@@ -823,8 +819,26 @@ document.querySelector("main").addEventListener("click", function (e) {//메인 
                     selcArr = [...set];
                     console.log(selcArr);
                     console.log(selcArr.length)
-                    $(".input_" + j).addClass("pg_" + real_pg + "_selected_css");
+                    $(".css_edit_" + j).addClass("pg_" + real_pg + "_selected_css");
                     if (selcArr.length==2) {
+                        $(".selc_next_btn").addClass("pg_" + real_pg + "_answer");
+                    }
+                } 
+            }
+        }
+
+        //----선택 3개 해야 하는 경우 -------------------
+        //selc_3_input pg_n_answer input_(셀렉트 넘버)
+        else if (e.target.className.includes("selc_3")) {
+            for (j = 0; j <= 3; j++) {
+                if (e.target.className.includes("input_" + j)) {
+                    selc3Arr.push(j);
+                    const set = new Set(selc3Arr);
+                    selc3Arr = [...set];
+                    console.log(selc3Arr);
+                    console.log(selc3Arr.length)
+                    $(".input_" + j).addClass("pg_" + real_pg + "_selected_css");
+                    if (selc3Arr.length==3) {
                         $(".selc_next_btn").addClass("pg_" + real_pg + "_answer");
                     }
                 } 

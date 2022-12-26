@@ -1,3 +1,11 @@
+.rotate-180 {
+    transform: rotate(-180deg);
+}
+
+.color-b {
+    color : #4666C9 !important;
+}
+
 .page_wrap {
     height: 87vh;
     display: flex;
@@ -165,6 +173,10 @@ svg {
     color:#b3b3b3;
 }
 
+.text-lighter-gray{
+    color:#dedede;
+}
+
 .text-gray {
     color: #737780;
 }
@@ -286,6 +298,10 @@ svg {
 #p5 .scroller {
     padding-top: 1.5em;
     padding-bottom: 1.5em;
+}
+
+.pg_2_selected_css {
+    color : #4666C9 ;
 }
 
 #p2 .wrapper {
@@ -449,6 +465,11 @@ svg {
 }
 
 /* ---------------- */
+.pg_4_selected_css {
+    color : #4666C9 ;
+}
+
+
 #p5 .scroller {
     scroll-behavior: unset;
     overflow-y: unset;
