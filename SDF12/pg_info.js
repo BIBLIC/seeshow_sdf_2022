@@ -1,4 +1,4 @@
-var total_page = 8;//페이지 수 -> 시나리오마다 total_page 수 바꾸기 
+var total_page = 9;//페이지 수 -> 시나리오마다 total_page 수 바꾸기 
 
 //오디오 배열 선언, 페이지 수 대로 배열에 mp3 넣기
 const audioArray = [];
@@ -46,6 +46,10 @@ const pageClickArea = [
         page: 8,
         correctAnswer: "pg_8_answer"
     },
+    {
+        page: 9,
+        correctAnswer: "pg_9_answer"
+    },
 ];
 
 const inputAnswer = [
@@ -56,6 +60,7 @@ const inputAnswer = [
         page: 3,
         inputableAnswer: "서울디지털재단"
     },
+    {},
     {},
     {},
     {},
@@ -99,6 +104,10 @@ const modalCont = [
     {
         page: 8,
         instruction: "택시가 호출되었습니다. 택시의 번호, 현재 위치, 그리고 내 위치까지 예상 소요시간을 확인할 수 있습니다. 택시 번호를 꼭 확인하고 탑승해주세요."
+    },
+    {
+        page: 9,
+        instruction: "완료"
     },
 ];
 
