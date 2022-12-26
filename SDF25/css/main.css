@@ -16,6 +16,10 @@ svg {
     align-items: center;
 }
 
+.image {
+    height: 100%;
+}
+
 /* ----------------------------------------- */
 .pg_top {
     width: 100%;
@@ -254,7 +258,7 @@ svg {
     word-wrap:break-word;
 }
 
-#p1 img {
+#p1 .onestop img {
     width: 3em;
     height: 3em;
     margin-bottom: .5em;
@@ -380,7 +384,8 @@ svg {
 #p5 .tab .left img {
     width: 2em;
     height: 2em!important;
-    background-color: #e0e0e0; /*이미지 삽입 후 주석처리*/
+    /*아래는 이미지 삽입 후 주석처리*/
+    /* background-color: #e0e0e0;  */
     border-radius: 5px;
     margin-right: .5em;
 }

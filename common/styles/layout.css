@@ -699,15 +699,15 @@ body {
 }
 
 .flex-start-start {
-  display: flex;
-  justify-content: flex-start;
-  align-items: flex-start;
+  display: flex!important;
+  justify-content: flex-start!important;
+  align-items: flex-start!important;
 }
 
-.flex-start-start {
-  display: flex;
-  justify-content: flex-start;
-  align-items: center;
+.flex-start-center {
+  display: flex!important;
+  justify-content: flex-start!important;
+  align-items: center!important;
 }
 
 .bg-image {
