@@ -44,6 +44,25 @@ body{
 }
 /* ---------------------------- */
 
+#p1 .icon,
+#p2 .icon,
+#p6 .icon,
+#p7 .icon,
+#p8 .icon,
+#p9 .icon,
+#p10 .icon,
+#p11 .icon,
+#p12 .icon{
+    border: unset;
+
+}
+
+
+#p1 .banner{
+    border: unset;
+    height: 6em;
+}
+
 #p1 .under_bar {
     
     width: 100%;
@@ -80,6 +99,8 @@ body{
     margin-right: 0;
 }
 
+/* ㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡ */
+
 #p3 .top {
     display: flex;
     justify-content: center;
@@ -93,6 +114,7 @@ body{
     margin-top: 3em;
     width: 20vw;
     min-height: 20vh;
+    border: unset;
 }
 #p3 .bottom {
     display: flex;
@@ -175,8 +197,8 @@ body{
     justify-content: center;
     align-items: center;
     margin-top: 5em;
-    width: 20vw;
-    min-height: 20vh;
+    width: 20vh;
+    height: 20vh;
 }
 #p6 .bottom {
     display: flex;
@@ -216,6 +238,9 @@ body{
     border: 1px solid #e0e0e0;;
 }
 
+#p7 .icon_wrap{
+    width: 45%;
+}
 
 #p7 .boxx {
     border: 2px solid #e0e0e0;
@@ -247,7 +272,7 @@ body{
     font-weight: bold;
 }
 #p8 .icon {
-    width: 8em;
+    width: 8.3em;
     height: 8em;
 }
 
@@ -257,6 +282,9 @@ body{
     width: 3em;
     height: 3em;
 }
+
+
+/* ㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡ */
 
 #p9 .icon {
     width: 100%;
@@ -307,6 +335,16 @@ body{
     background-color: #F5F5F5;
 }
 
+#p12 .profile{
+    width: 3.5em;
+    height: 3.5;
+}
+
+#p12 .icon{
+    width: 4.4em;
+    height: 3.1em;
+}
+
 #p12 .boxx {
     border: 2px solid #e0e0e0;
     border-radius: 20px;
@@ -330,7 +368,6 @@ body{
 #p12 .icon_card {
     width: 90%;
     min-height: 30vh;
-    border: 2px solid #e0e0e0;
     margin-left: 1.5em;
     margin-right: 2em;
 }
@@ -371,6 +408,8 @@ body{
     scroll-behavior: smooth;
     overflow-y: scroll;
 }
+
+
 
 #p13 .container .tab {
     padding-top: .5em;
