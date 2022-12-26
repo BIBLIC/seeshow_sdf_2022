@@ -13,6 +13,10 @@ main svg {
     color: #A42023;
 }
 
+.fontP {
+    color: #FCE8EA;
+}
+
 .gray {
     color: #DFE0E2;
 }
@@ -142,9 +146,9 @@ main svg {
     height: 2em;
 }
 
-#p7 .stop_btn
+#p7 .stop_btn,
 #p6 .stop_btn {
-    border: 1px solid #D3D3D3;
+    border: 1px solid #e0e0e0;
     padding: 0.5em;
     border-radius: 25px;
 }
@@ -187,6 +191,18 @@ main svg {
     background-color: #B75C54;
     border-radius: 20px;
 }
+
+#p6 .top_dot,
+#p7 .top_dot {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 2em;
+    height: 2em;
+    background-color: #F28D9B;
+    border-radius: 100%;
+}
+
 
 #p8 .gray_bar {
     border-radius: 25px;

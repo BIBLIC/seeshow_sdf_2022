@@ -36,6 +36,10 @@
     display: contents;
 }
 
+.fontP {
+    color: #3617CD;
+}
+
 #modal_ .content .title {
     font-weight: bold;
     margin-bottom: .5em;
@@ -205,7 +209,7 @@
 }
 
 #p4 .banner {
-    min-height: 23vh;
+    min-height: 21vh;
 }
 
 #p4 .tab_bar {
@@ -329,6 +333,10 @@
     min-height: 8em;
     width: auto;
     margin-bottom: .5em;
+}
+
+#p4 .phone {
+    width: 5em !important;
 }
 
 /* ------------------------------------------------------------------ */
@@ -519,7 +527,6 @@
     min-height: 7vh;
 }
 
-
 /* ------------------ */
 #p9 .bg-lightgray.detail,
 #p10 .bg-lightgray.detail {
@@ -559,4 +566,8 @@
 #p10 .bg-lightgray.detail .tab {
     min-height: 3vh;
     justify-content: flex-start;
+}
+
+#p10 .icon {
+    border: unset;
 }

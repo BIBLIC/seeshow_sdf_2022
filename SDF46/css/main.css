@@ -1,0 +1,305 @@
+.fontW {
+    color:#fff;
+}
+
+.fontB {
+    color:#2587DE;
+}
+
+.fontR {
+    color: #A42023;
+}
+
+.gray {
+    color: #DFE0E2;
+}
+
+.fontG {
+    color: #DADADA;
+}
+
+.fontSB {
+    color: #D6E3FC;
+}
+
+.bg-image {
+    width: auto;
+    height: 100%;
+}
+
+.btn_B {
+    display: flex;
+    justify-content: center;
+    width: 6em;
+    min-height: 5vh;
+    background-color: #2587DE;
+    color: #fff;
+    border-radius: 5px;
+}
+
+.bar {
+    background-color: #fff;
+    min-height: 8vh;
+    padding-left: 1em;
+    padding-right: 1em;
+    align-items: center;
+}
+
+.gray_bar {
+    width: 100%;
+    height: 0.5em;
+}
+
+
+.border_b {
+    border-bottom: 1px solid #e0e0e0;
+    
+}
+
+/* -------------------------------- */
+
+#p2 .gray_bar {
+    border-radius: 25px;
+    background-color: #F4F0F1;
+    padding: 0.5em;
+    
+}
+
+#p2 .box {
+    background-color: #2587DE;
+    color: #fff;
+    padding: 1em;
+    min-height: 20em;
+    border-radius: 15px;
+}
+
+#p2 .dot {
+    width: 2em;
+    height: 2em;
+    border-radius: 60%;
+    background-color: #1D79C2;
+}
+
+#p2 .container {
+    padding-left: 4em;
+    padding-right: 4em;
+}
+
+#p3 .txt {
+    color: #bebebe;
+    font-weight: bold;
+}
+
+#p3 .num {
+    font-size:xx-large;
+    width: 3em;
+    display: flex;
+    justify-content: center;
+    padding-top: .2em;
+}
+
+#p3 .under_bar_keypad {
+    position: absolute;
+    left: 0;
+    right: 0;
+    min-height: 35vh;
+}
+
+
+#p3 .nav .nav-item {
+    width: 100%;
+    display: flex;
+    align-items: center;
+}
+
+#p3 .container {
+    width: 100%;
+    padding-top: 30%;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+}
+
+#p3 .top-expl {
+    min-height: 20vh;
+}
+
+#p3 .dot {
+    display: block;
+    width: 2em;
+    height: 2em;
+    background: #EEEEEE;
+    border-radius: 25%;
+    margin: 0.5em;
+}
+
+#p3 .back { 
+    color: #bebebe;
+    padding-top: 2.5em;
+}
+
+#p4 .blue_box {
+    width: 100%;
+    min-height: 3vh;
+    background-color: #4862B6;
+}
+
+#p4 .top {
+    background-color: #5778DF;
+}
+
+#p4 .bar {
+    background-color: unset;
+}
+
+#p4 .box {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 6em;
+    min-height: 15vh;
+    border: 1px solid #e0e0e0;
+    background-color: #fff;
+    border-radius: 10px;
+}
+
+#p4 .item_box {
+    padding: 1em;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border: 1px solid #e0e0e0;
+    border-radius: 10px;
+    background: #fff;
+}
+
+#p4 .item_background {
+    padding: 1em;
+    background: #EEEEEE;
+}
+
+#p5 .menu {
+    font-size: larger;
+    font-weight: bold;
+}
+#p5 .menu .container .btn {
+    margin: 4em;
+}
+
+#p5 .under_bar {
+    
+    width: 100%;
+    height: 9vh;
+    padding-top: .5em;
+    min-height: 6vh;
+    
+}
+
+#p5 .container .icon {
+    border: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#p5 .under_bar {
+    
+    width: 100%;
+    height: 12vh;
+    background: #fff;
+    padding-top: 1em;
+    border-radius: 0;
+    min-height: 6vh;
+    
+}
+
+#p5 .logout {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 5em;
+    min-height: 3vh;
+    border: 1px solid #909497;
+    color: #909497;
+    border-radius: 5px;
+    font-size: small;
+}
+
+#p5 .menu_set {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 6em;
+    font-size: small;
+}
+
+#p5 .top_container {
+    padding: 1em
+}
+
+#p5 .bottom {
+    background-color: #F8F8F8;
+    padding: 1em;
+}
+
+#p5 .scroller {
+    height: 67vh;
+}
+
+#p7 .border_b,
+#p6 .border_b {
+    padding-top: 1em;
+    padding-bottom: 1em;
+    
+}
+
+#p8 .btn,
+#p7 .btn,
+#p6 .btn {
+    min-height: 8vh;
+    background-color: #2587DE;
+    color: #fff;
+    font-size: large;
+}
+
+#p7 .scroller,
+#p6 .scroller {
+    height: 71vh;
+}
+
+#p8 .box {
+    padding: 1em;
+    border: 2px solid #e0e0e0;
+    border-radius: 10px;
+    background-color: #F9F9F9;
+}
+
+#p8 .blue_box {
+    width: 100%;
+    min-height: 15vh;
+    background-color: #2587DE;
+    color: #ffffff;
+    padding: 1em;
+}
+
+#p8 .bank_box {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 6em;
+    height: 3.5vh;
+    background-color: #5A6588;
+    color: #fff;
+    border-radius: 5px;
+    font-size: small;
+}
+
+#p8 .under {
+    background-color: #F9F9F9;
+    color: #777777;
+}
+
+#p8 .scroller {
+    height: 56vh;
+}
