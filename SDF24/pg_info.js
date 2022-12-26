@@ -7,6 +7,11 @@ for (j = 1; j <= total_page; j++) {
     audioArray.push(audio);
 }
 
+$('#date-picker').datepicker({
+              
+    language: "ko",
+})
+
 // -----------------------------------------------------------------------------------------------------------------------
 //정답 처리할 영역 클래스 명
 //correctAnswer 로 지정한 class 외 영역 클릭 시 모달창 출력
@@ -154,98 +159,124 @@ const modalCont = [
 
 
 
-// //*******************************************************************************
-// //**************************+    커서   +*********************************** 
+//*******************************************************************************
+//**************************+    커서   +*********************************** 
 
-// const cursor_pos_1 = document.querySelector('.cursor_pos_1');
-// const cursor_pos_2 = document.querySelector('.cursor_pos_2');
-// // const cursor_pos_3 = document.querySelector('.cursor_pos_3');
-// // const cursor_pos_4 = document.querySelector('.cursor_pos_4');
-// // const cursor_pos_5 = document.querySelector('.cursor_pos_5');
-// // const cursor_pos_6 = document.querySelector('.cursor_pos_6');
+const cursor_pos_1 = document.querySelector('.cursor_pos_1');
+const cursor_pos_2 = document.querySelector('.cursor_pos_2');
+// const cursor_pos_3 = document.querySelector('.cursor_pos_3');
+// const cursor_pos_4 = document.querySelector('.cursor_pos_4');
+// const cursor_pos_5 = document.querySelector('.cursor_pos_5');
+// const cursor_pos_6 = document.querySelector('.cursor_pos_6');
 
-// const cursor_wrap_1 = document.querySelector('.cursor_wrap_1');
-// const cursor_wrap_2 = document.querySelector('.cursor_wrap_2');
-// // const cursor_wrap_3 = document.querySelector('.cursor_wrap_3');
-// // const cursor_wrap_4 = document.querySelector('.cursor_wrap_4');
-// // const cursor_wrap_5 = document.querySelector('.cursor_wrap_5');
-// // const cursor_wrap_6 = document.querySelector('.cursor_wrap_6');
-
-
-// cursor_wrap_1.style.zIndex = "100";
-// cursor_wrap_2.style.zIndex = "100";
-// // cursor_wrap_3.style.zIndex = "100";
-// // cursor_wrap_4.style.zIndex = "100";
-// // cursor_wrap_5.style.zIndex = "100";
-// // cursor_wrap_6.style.zIndex = "100";
+const cursor_wrap_1 = document.querySelector('.cursor_wrap_1');
+const cursor_wrap_2 = document.querySelector('.cursor_wrap_2');
+// const cursor_wrap_3 = document.querySelector('.cursor_wrap_3');
+// const cursor_wrap_4 = document.querySelector('.cursor_wrap_4');
+// const cursor_wrap_5 = document.querySelector('.cursor_wrap_5');
+// const cursor_wrap_6 = document.querySelector('.cursor_wrap_6');
 
 
-// const { createPopper } = Popper;
-// createPopper(cursor_pos_1, cursor_wrap_1, {
+cursor_wrap_1.style.zIndex = "100";
+cursor_wrap_2.style.zIndex = "100";
+// cursor_wrap_3.style.zIndex = "100";
+// cursor_wrap_4.style.zIndex = "100";
+// cursor_wrap_5.style.zIndex = "100";
+// cursor_wrap_6.style.zIndex = "100";
+
+
+const { createPopper } = Popper;
+createPopper(cursor_pos_1, cursor_wrap_1, {
+    placement: 'right',
+    modifiers: [
+        {
+            name: 'offset',
+            options: {
+                offset: [10,50],
+            },
+        },
+    ],
+});
+createPopper(cursor_pos_2, cursor_wrap_2, {
+    placement: 'right',
+    modifiers: [
+        {
+            name: 'offset',
+            options: {
+                offset: [100,100],
+            },
+        },
+    ],
+});
+// createPopper(cursor_pos_3, cursor_wrap_3, {
 //     placement: 'right',
 //     modifiers: [
 //         {
 //             name: 'offset',
 //             options: {
-//                 offset: [0,0],
+//                 offset: [70,80],
 //             },
 //         },
 //     ],
 // });
-// createPopper(cursor_pos_2, cursor_wrap_2, {
+// //cursor_wrap_4.style.left="60%";
+
+// createPopper(cursor_pos_4, cursor_wrap_4, {
+//     placement: 'bottom',
+//     modifiers: [
+//         {
+//             name: 'offset',
+//             options: {
+//                 offset: [250,10],
+//             },
+//         },
+//     ],
+// });
+// createPopper(cursor_pos_5, cursor_wrap_5, {
 //     placement: 'right',
 //     modifiers: [
 //         {
 //             name: 'offset',
 //             options: {
-//                 offset: [30,30],
+//                 offset: [25,200],
 //             },
 //         },
 //     ],
 // });
-// // createPopper(cursor_pos_3, cursor_wrap_3, {
-// //     placement: 'right',
-// //     modifiers: [
-// //         {
-// //             name: 'offset',
-// //             options: {
-// //                 offset: [70,80],
-// //             },
-// //         },
-// //     ],
-// // });
-// // //cursor_wrap_4.style.left="60%";
+// createPopper(cursor_pos_6, cursor_wrap_6, {
+//     placement: 'bottom',
+//     modifiers: [
+//         {
+//             name: 'offset',
+//             options: {
+//                 offset: [250,10],
+//             },
+//         },
+//     ],
+// });
 
-// // createPopper(cursor_pos_4, cursor_wrap_4, {
-// //     placement: 'bottom',
-// //     modifiers: [
-// //         {
-// //             name: 'offset',
-// //             options: {
-// //                 offset: [250,10],
-// //             },
-// //         },
-// //     ],
-// // });
-// // createPopper(cursor_pos_5, cursor_wrap_5, {
-// //     placement: 'right',
-// //     modifiers: [
-// //         {
-// //             name: 'offset',
-// //             options: {
-// //                 offset: [25,200],
-// //             },
-// //         },
-// //     ],
-// // });
-// // createPopper(cursor_pos_6, cursor_wrap_6, {
-// //     placement: 'bottom',
-// //     modifiers: [
-// //         {
-// //             name: 'offset',
-// //             options: {
-// //                 offset: [250,10],
-// //             },
-// //         },
-// //     ],
-// // });
+const txt_user_input_fill = document.querySelector('.txt_user_input_fill');
+const txt_user_input_fill2 = document.querySelector('.txt_user_input_fill2');
+//사용자가 입력한 내용 출력하기
+// $('.pg_9_answer').click(function () {
+//     txt_user_input_fill.innerText = user_input_txt_multi;
+// });
+
+$(document).on("click", "#next_btn", function () {
+    if (user_input_txt_multi != ''){
+        txt_user_input_fill.innerText = user_input_txt_multi;
+        txt_user_input_fill2.innerText = user_input_txt_multi2;
+    }
+});
+
+
+
+$(document).on("click", '.pg_9_answer', function () {
+        txt_user_input_fill.innerText = user_input_txt_multi;  
+        txt_user_input_fill2.innerText = user_input_txt_multi2;
+});
+
+$(document).on("click", '.pg_10_answer', function () {
+        txt_user_input_fill2.innerText = user_input_txt_multi;  
+        txt_user_input_fill2.innerText = user_input_txt_multi2;
+});

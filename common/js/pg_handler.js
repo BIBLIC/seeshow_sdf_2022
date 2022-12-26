@@ -1,5 +1,7 @@
 var page_num = 0; // 수정 XXX -> 맨 처음 페이지 초기화하기 위함
 var user_input_txt='';
+var user_input_txt_multi='';
+var user_input_txt_multi2='';
 
 const prevBtn = document.getElementById("prev");
 const nextBtn = document.getElementById("next");
@@ -17,6 +19,7 @@ $('.nav_btn_wrap').css('display', 'none');
 var audio_stat = 1;
 var pwArr = [];
 var selcArr = [];
+var multiArr = [];
 
 //popovers 초기화 작업
 const popoverTriggerList = document.querySelectorAll('[data-bs-toggle="popover"]')
@@ -371,9 +374,43 @@ document.querySelector("main").addEventListener("click", function (e) {//메인 
             //키보드 떼고 값 일치하면 다음 버튼 활성화되게 
             $('.' + real_pg + '_input').keyup(function(){
                 user_input_txt = this.value;
-                if (this.value.length >=1 ) {
+                if (this.value.length >=1) {
                     $(".input_nxt_btn").addClass("pg_" + real_pg + "_answer");
                     console.log(user_input_txt);
+                }
+            });
+        }
+         //answer_multi_any_txt_save pg_n_answer n_input
+         else if (e.target.className.includes("answer_multi_any_txt_save")) {
+            //키보드 떼고 값 일치하면 다음 버튼 활성화되게 
+            $('.' + real_pg + '_input').keyup(function(){
+                user_input_txt_multi = this.value;
+                if (this.value.length >=1) {
+                    multiArr.push('A');
+                    const set = new Set(multiArr);
+                    multiArr = [...set];
+                    console.log(multiArr);
+                    console.log(multiArr.length)
+                    if (multiArr.length==3) {
+                        $(".multi_next_btn").addClass("pg_" + real_pg + "_answer");
+                    }
+                }
+            });
+        }
+        //answer2_multi_any_txt_save pg_n_answer n_input
+        else if (e.target.className.includes("answer2_multi_any_txt_save")) {
+            //키보드 떼고 값 일치하면 다음 버튼 활성화되게 
+            $('.' + real_pg + '_input').keyup(function(){
+                user_input_txt_multi2 = this.value;
+                if (this.value.length >=1 ) {
+                    multiArr.push('B');
+                    const set = new Set(multiArr);
+                    multiArr = [...set];
+                    console.log(multiArr);
+                    console.log(multiArr.length)
+                    if (multiArr.length==3) {
+                        $(".multi_next_btn").addClass("pg_" + real_pg + "_answer");
+                    }
                 }
             });
         }
@@ -748,14 +785,25 @@ document.querySelector("main").addEventListener("click", function (e) {//메인 
 
         //----날짜 선택창 있는 경우 -------------------
         else if (e.target.className.includes("calendar")) {
-        
+
             $('.datepicker').click(function () {
                 $('.datepicker').css('display', 'none');
                 $(".cal_next_btn").addClass("pg_" + real_pg + "_answer");
+
+                multiArr.push('C');
+                    const set = new Set(multiArr);
+                    multiArr = [...set];
+                    console.log(multiArr);
+                    console.log(multiArr.length)
+                    if (multiArr.length==3) {
+                        $(".multi_next_btn").addClass("pg_" + real_pg + "_answer");
+                    }
                 
             });
+            
         }
 
+        
         //----1개 선택하면 버튼 활성화 되는 경우 -------------------
         //active_selc_input pg_n_answer 
         else if (e.target.className.includes("active_selc_input")) {
