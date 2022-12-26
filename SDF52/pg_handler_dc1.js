@@ -152,14 +152,44 @@ $(document).on("click", "#next_btn", function () {
     }
 
     //자동 스크롤
-    if (page_num == 3) {
-        //blog_main.scrollTop = blog_main.scrollHeight *0.6;
+    if (page_num == 2) {
+        //chat_main.scrollTop = chat_main.scrollHeight *0.6;
         if (textSizeValue == "2") {
-            let scrollPos = $('.blog_main').height() * 2.5;
-            $('.blog_main').scrollTop(scrollPos);
+            let scrollPos = $('.chat_main').height() * 1.8;
+            $('.chat_main').scrollTop(scrollPos);
         } else {
-            let scrollPos = $('.blog_main').height() * 1.6;
-            $('.blog_main').scrollTop(scrollPos);
+            let scrollPos = $('.chat_main').height() * 1.0;
+            $('.chat_main').scrollTop(scrollPos);
+        }
+    }
+    if (page_num == 3) {
+        //chat_main.scrollTop = chat_main.scrollHeight *0.6;
+        if (textSizeValue == "2") {
+            let scrollPos = $('.chat_main').height() * 1.9;
+            $('.chat_main').scrollTop(scrollPos);
+        } else {
+            let scrollPos = $('.chat_main').height() * 1.1;
+            $('.chat_main').scrollTop(scrollPos);
+        }
+    }
+    if (page_num == 4) {
+        //chat_main.scrollTop = chat_main.scrollHeight *0.6;
+        if (textSizeValue == "2") {
+            let scrollPos = $('.chat_main').height() * 2.9;
+            $('.chat_main').scrollTop(scrollPos);
+        } else {
+            let scrollPos = $('.chat_main').height() * 1.9;
+            $('.chat_main').scrollTop(scrollPos);
+        }
+    }
+    if (page_num == 5) {
+        //chat_main.scrollTop = chat_main.scrollHeight *0.6;
+        if (textSizeValue == "2") {
+            let scrollPos = $('.chat_main').height() * 4.0;
+            $('.chat_main').scrollTop(scrollPos);
+        } else {
+            let scrollPos = $('.chat_main').height() * 2.0;
+            $('.chat_main').scrollTop(scrollPos);
         }
     }
 });
@@ -207,14 +237,44 @@ $(document).on("click", "#prev_btn", function () {
         $(".ctrlbar").addClass("ctrlbar_shadow");
     }
     //자동 스크롤
-    if (page_num == 3) {
-        //blog_main.scrollTop = blog_main.scrollHeight *0.6;
+    if (page_num == 2) {
+        //chat_main.scrollTop = chat_main.scrollHeight *0.6;
         if (textSizeValue == "2") {
-            let scrollPos = $('.blog_main').height() * 2.5;
-            $('.blog_main').scrollTop(scrollPos);
+            let scrollPos = $('.chat_main').height() * 2.0;
+            $('.chat_main').scrollTop(scrollPos);
         } else {
-            let scrollPos = $('.blog_main').height() * 1.6;
-            $('.blog_main').scrollTop(scrollPos);
+            let scrollPos = $('.chat_main').height() * 1.0;
+            $('.chat_main').scrollTop(scrollPos);
+        }
+    }
+    if (page_num == 3) {
+        //chat_main.scrollTop = chat_main.scrollHeight *0.6;
+        if (textSizeValue == "2") {
+            let scrollPos = $('.chat_main').height() * 1.9;
+            $('.chat_main').scrollTop(scrollPos);
+        } else {
+            let scrollPos = $('.chat_main').height() * 1.1;
+            $('.chat_main').scrollTop(scrollPos);
+        }
+    }
+    if (page_num == 4) {
+        //chat_main.scrollTop = chat_main.scrollHeight *0.6;
+        if (textSizeValue == "2") {
+            let scrollPos = $('.chat_main').height() * 2.9;
+            $('.chat_main').scrollTop(scrollPos);
+        } else {
+            let scrollPos = $('.chat_main').height() * 1.9;
+            $('.chat_main').scrollTop(scrollPos);
+        }
+    }
+    if (page_num == 5) {
+        //chat_main.scrollTop = chat_main.scrollHeight *0.6;
+        if (textSizeValue == "2") {
+            let scrollPos = $('.chat_main').height() * 4.0;
+            $('.chat_main').scrollTop(scrollPos);
+        } else {
+            let scrollPos = $('.chat_main').height() * 2.0;
+            $('.chat_main').scrollTop(scrollPos);
         }
     }
 
@@ -331,14 +391,44 @@ function next() {
         audioArray[page_num - 2].pause();
     }
     //자동 스크롤
-    if (page_num == 3) {
-        //blog_main.scrollTop = blog_main.scrollHeight *0.6;
+    if (page_num == 2) {
+        //chat_main.scrollTop = chat_main.scrollHeight *0.6;
         if (textSizeValue == "2") {
-            let scrollPos = $('.blog_main').height() * 2.5;
-            $('.blog_main').scrollTop(scrollPos);
+            let scrollPos = $('.chat_main').height() * 2.0;
+            $('.chat_main').scrollTop(scrollPos);
         } else {
-            let scrollPos = $('.blog_main').height() * 1.6;
-            $('.blog_main').scrollTop(scrollPos);
+            let scrollPos = $('.chat_main').height() * 1.0;
+            $('.chat_main').scrollTop(scrollPos);
+        }
+    }
+    if (page_num == 3) {
+        //chat_main.scrollTop = chat_main.scrollHeight *0.6;
+        if (textSizeValue == "2") {
+            let scrollPos = $('.chat_main').height() * 1.9;
+            $('.chat_main').scrollTop(scrollPos);
+        } else {
+            let scrollPos = $('.chat_main').height() * 1.1;
+            $('.chat_main').scrollTop(scrollPos);
+        }
+    }
+    if (page_num == 4) {
+        //chat_main.scrollTop = chat_main.scrollHeight *0.6;
+        if (textSizeValue == "2") {
+            let scrollPos = $('.chat_main').height() * 2.9;
+            $('.chat_main').scrollTop(scrollPos);
+        } else {
+            let scrollPos = $('.chat_main').height() * 1.9;
+            $('.chat_main').scrollTop(scrollPos);
+        }
+    }
+    if (page_num == 5) {
+        //chat_main.scrollTop = chat_main.scrollHeight *0.6;
+        if (textSizeValue == "2") {
+            let scrollPos = $('.chat_main').height() * 4.0;
+            $('.chat_main').scrollTop(scrollPos);
+        } else {
+            let scrollPos = $('.chat_main').height() * 2.0;
+            $('.chat_main').scrollTop(scrollPos);
         }
     }
 }
@@ -351,19 +441,28 @@ $(document).on("click", ".pg_1_answer", function () {
 });
 $(document).on("click", ".okBtn1", function () {
     modal1.style.display = "none";
+    modal1_2.style.display = "";
+});
+$(document).on("click", ".okBtn1_1", function () {
+    modal1_2.style.display = "none";
     //console.log('전 p',real_pg);
     next();
     //console.log('후 p',real_pg);
 });
-
 
 //( 2 )++++++++++++++++++++++++++++
 $(document).on("click", ".pg_2_answer", function () {
     cursor_wrap_2.style.display = "none";
     modal2_1.style.display = "";
 });
-$(document).on("click", ".okBtn2", function () {
+$(document).on("click", ".nxtBtn2", function () {
     modal2_1.style.display = "none";
+    modal2_2.style.display = "";
+   
+    //console.log('후 p',real_pg);
+});
+$(document).on("click", ".okBtn2", function () {
+    modal2_2.style.display = "none";
     //console.log('전 p',real_pg);
     next();
     //console.log('후 p',real_pg);
@@ -377,23 +476,18 @@ $(document).on("click", ".pg_3_answer", function () {
 });
 $(document).on("click", ".nxtBtn3", function () {
     modal3_1.style.display = "none";
-    modal3_2.style.display = "";
-});
-$(document).on("click", ".okBtn3", function () {
-    modal3_2.style.display = "none";
     next();
 });
+// $(여식document).on("click", ".okBtn3", function () {
+//     modal3_2.style.display = "none";
+//     next();
+// });
 
 
 //( 4 )++++++++++++++++++++++++++++
 $(document).on("click", ".pg_4_answer", function () {
     cursor_wrap_4.style.display = "none";
-    my_wrap.style.display = "";
-});
-$(document).on("click", ".my_wrap", function () {
-    cursor_wrap_4_1.style.display = "none";
-    my_wrap.style.display = "none";
-    modal3_1.style.display = "";
+    modal4_1.style.display = "";
 });
 $(document).on("click", ".nxtBtn4", function () {
     modal4_1.style.display = "none";
@@ -408,6 +502,14 @@ $(document).on("click", ".okBtn4", function () {
 //( 5 )++++++++++++++++++++++++++++
 $(document).on("click", ".pg_5_answer", function () {
     cursor_wrap_5.style.display = "none";
+    modal5_1.style.display = "";
+});
+$(document).on("click", ".nxtBtn5", function () {
+    modal5_1.style.display = "none";
+    modal5_2.style.display = "";
+});
+$(document).on("click", ".okBtn5", function () {
+    modal5_2.style.display = "none";
     next();
 });
 

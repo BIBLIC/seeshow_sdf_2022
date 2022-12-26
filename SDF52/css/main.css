@@ -21,9 +21,6 @@
 }
 
 #main {
-    height: 70vh !important;
+    height: 64vh !important;
 }
 
-#p6 #main {
-    height: 87vh !important;
-}

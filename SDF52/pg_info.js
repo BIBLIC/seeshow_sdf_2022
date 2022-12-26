@@ -58,26 +58,30 @@ const share = document.querySelector('.share');
 const blog_main = document.querySelector('.blog_main');
 
 const modal1 = document.querySelector('.modal1');
+const modal1_2 = document.querySelector('.modal1_2');
 const modal2 = document.querySelector('.modal2');
 
 
 const modal2_1 = document.querySelector('.modal2_1');
 const modal2_2 = document.querySelector('.modal2_2');
 const modal3_1 = document.querySelector('.modal3_1');
-const modal3_2 = document.querySelector('.modal3_2');
+// const modal3_2 = document.querySelector('.modal3_2');
 const modal4_1 = document.querySelector('.modal4_1');
 const modal4_2 = document.querySelector('.modal4_2');
 const modal5_1 = document.querySelector('.modal5_1');
+const modal5_2 = document.querySelector('.modal5_2');
 const modal6_1 = document.querySelector('.modal6_1');
 const modal6_2 = document.querySelector('.modal6_2');
 
-
+modal1_2.style.display = "none";
 modal2_1.style.display = "none";
+modal2_2.style.display = "none";
 modal3_1.style.display = "none";
-modal3_2.style.display = "none";
+// modal3_2.style.display = "none";
 modal4_1.style.display = "none";
 modal4_2.style.display = "none";
 modal5_1.style.display = "none";
+modal5_2.style.display = "none";
 my_wrap.style.display = "none";
 my_wrap2.style.display = "none";
 modal6_1.style.display = "none";
@@ -85,74 +89,74 @@ modal6_2.style.display = "none";
 modal1.style.display = "none";
 
 
-// const cursor_pos_1 = document.querySelector('.cursor_pos_1');
-// const cursor_wrap_1 = document.querySelector('.cursor_wrap_1');
-// const cursor_pos_2 = document.querySelector('.cursor_pos_2');
-// const cursor_wrap_2 = document.querySelector('.cursor_wrap_2');
-// const cursor_pos_3 = document.querySelector('.cursor_pos_3');
-// const cursor_wrap_3 = document.querySelector('.cursor_wrap_3');
-// const cursor_pos_4 = document.querySelector('.cursor_pos_4');
-// const cursor_wrap_4 = document.querySelector('.cursor_wrap_4');
+const cursor_pos_1 = document.querySelector('.cursor_pos_1');
+const cursor_wrap_1 = document.querySelector('.cursor_wrap_1');
+const cursor_pos_2 = document.querySelector('.cursor_pos_2');
+const cursor_wrap_2 = document.querySelector('.cursor_wrap_2');
+const cursor_pos_3 = document.querySelector('.cursor_pos_3');
+const cursor_wrap_3 = document.querySelector('.cursor_wrap_3');
+const cursor_pos_4 = document.querySelector('.cursor_pos_4');
+const cursor_wrap_4 = document.querySelector('.cursor_wrap_4');
 // const cursor_pos_4_1 = document.querySelector('.cursor_pos_4_1');
 // const cursor_wrap_4_1 = document.querySelector('.cursor_wrap_4_1');
-// const cursor_pos_5 = document.querySelector('.cursor_pos_5');
-// const cursor_wrap_5 = document.querySelector('.cursor_wrap_5');
+const cursor_pos_5 = document.querySelector('.cursor_pos_5');
+const cursor_wrap_5 = document.querySelector('.cursor_wrap_5');
 // const cursor_pos_6 = document.querySelector('.cursor_pos_6');
 // const cursor_wrap_6 = document.querySelector('.cursor_wrap_6');
 
-// cursor_wrap_1.style.zIndex = "40";
-// cursor_wrap_2.style.zIndex = "40";
-// cursor_wrap_3.style.zIndex = "40";
-// cursor_wrap_4.style.zIndex = "40";
-// cursor_wrap_5.style.zIndex = "40";
+cursor_wrap_1.style.zIndex = "40";
+cursor_wrap_2.style.zIndex = "40";
+cursor_wrap_3.style.zIndex = "40";
+cursor_wrap_4.style.zIndex = "40";
+cursor_wrap_5.style.zIndex = "40";
 // cursor_wrap_6.style.zIndex = "40";
 
 
-// const { createPopper } = Popper;
-// createPopper(cursor_pos_1, cursor_wrap_1, {
-//     placement: 'bottom',
-//     modifiers: [
-//         {
-//             name: 'offset',
-//             options: {
-//                 offset: [30,0],
-//             },
-//         },
-//     ],
-// });
-// createPopper(cursor_pos_2, cursor_wrap_2, {
-//     placement: 'right',
-//     modifiers: [
-//         {
-//             name: 'offset',
-//             options: {
-//                 offset: [0,0],
-//             },
-//         },
-//     ],
-// });
-// createPopper(cursor_pos_3, cursor_wrap_3, {
-//     placement: 'top',
-//     modifiers: [
-//         {
-//             name: 'offset',
-//             options: {
-//                 offset: [0,-50],
-//             },
-//         },
-//     ],
-// });
-// createPopper(cursor_pos_4, cursor_wrap_4, {
-//     placement: 'right',
-//     modifiers: [
-//         {
-//             name: 'offset',
-//             options: {
-//                 offset: [0,60],
-//             },
-//         },
-//     ],
-// });
+const { createPopper } = Popper;
+createPopper(cursor_pos_1, cursor_wrap_1, {
+    placement: 'bottom',
+    modifiers: [
+        {
+            name: 'offset',
+            options: {
+                offset: [30,0],
+            },
+        },
+    ],
+});
+createPopper(cursor_pos_2, cursor_wrap_2, {
+    placement: 'right',
+    modifiers: [
+        {
+            name: 'offset',
+            options: {
+                offset: [0,-100],
+            },
+        },
+    ],
+});
+createPopper(cursor_pos_3, cursor_wrap_3, {
+    placement: 'top',
+    modifiers: [
+        {
+            name: 'offset',
+            options: {
+                offset: [0,-100],
+            },
+        },
+    ],
+});
+createPopper(cursor_pos_4, cursor_wrap_4, {
+    placement: 'top',
+    modifiers: [
+        {
+            name: 'offset',
+            options: {
+                offset: [0,-100],
+            },
+        },
+    ],
+});
 
 // createPopper(cursor_pos_4_1, cursor_wrap_4_1, {
 //     placement: 'top',
@@ -166,17 +170,17 @@ modal1.style.display = "none";
 //     ],
 // });
 
-// createPopper(cursor_pos_5, cursor_wrap_5, {
-//     placement: 'right',
-//     modifiers: [
-//         {
-//             name: 'offset',
-//             options: {
-//                 offset: [0,60],
-//             },
-//         },
-//     ],
-// });
+createPopper(cursor_pos_5, cursor_wrap_5, {
+    placement: 'right',
+    modifiers: [
+        {
+            name: 'offset',
+            options: {
+                offset: [0,-100],
+            },
+        },
+    ],
+});
 // createPopper(cursor_pos_6, cursor_wrap_6, {
 //     placement: 'right',
 //     modifiers: [

@@ -1,3 +1,7 @@
+.text-lg {
+  font-size: larger !important;
+}
+
 .character {
   position: absolute;
   bottom : 0;
