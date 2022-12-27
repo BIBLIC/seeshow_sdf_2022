@@ -407,7 +407,8 @@
 /* --------------------------------------- */
 #p7 .page_wrap,
 #p9 .page_wrap,
-#p10 .page_wrap {
+#p10 .page_wrap,
+#p11 .page_wrap {
     display: flex;
     flex-direction: column;
 }

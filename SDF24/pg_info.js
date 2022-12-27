@@ -1,4 +1,4 @@
-var total_page = 13;//페이지 수 -> 시나리오마다 total_page 수 바꾸기 
+var total_page = 12;//페이지 수 -> 시나리오마다 total_page 수 바꾸기 
 
 //오디오 배열 선언, 페이지 수 대로 배열에 mp3 넣기
 const audioArray = [];
@@ -69,18 +69,11 @@ const pageClickArea = [
         page: 12,
         correctAnswer: "pg_12_answer"
     },
-    {
-        page: 13,
-        correctAnswer: "pg_13_answer"
-    },
 ];
 
 // -=----------------------------------------------------------------------------------------------------------------------
 //페이지 수만큼 0부터 {}, 공간이 있어야 함
 const inputAnswer = [
-    {},
-    {},
-    {},
     {},
     {},
     {},
@@ -101,59 +94,55 @@ const inputAnswer = [
 const modalCont = [
     {
         page: 0,
-        instruction: ""
+        instruction: "'시작하기' 버튼을 눌러주세요."
     },
     {
         page: 1,
-        instruction: ""
+        instruction: "실물 주민등록증과 동일한 신분 확인 효력을 갖는 '주민등록증 모바일 확인 서비스'를 패스앱에서 실습해보겠습니다. '모바일 신분증' 메뉴를 눌러주세요,"
     },
     {
         page: 2,
-        instruction: ""
+        instruction: "주민등록증을 선택해주세요."
     },
     {
         page: 3,
-        instruction: ""
+        instruction: "앱 사용을 위한 접근 권한 허용입니다. '앱 사용 중에만 허용'을 선택해주세요,"
     },
     {
         page: 4,
-        instruction: ""
+        instruction: "'서비스 필수항목 모두 동의'를 눌러서 필수항목만 동의해주세요."
     },
     {
         page: 5,
-        instruction: ""
+        instruction: "서비스 필수 항목만 모두 동의하였습니다 확인 후 '가입' 버튼을 눌러주세요."
     },
     {
         page: 6,
-        instruction: ""
+        instruction: "패스앱에서 사용하는 비밀번호 여섯자리를 입력해 주세요."
     },
     {
         page: 7,
-        instruction: ""
+        instruction: "주민등록증 모바일 확인 서비스 등록을 위해 '등록'버튼을 눌러주세요,"
     },
     {
         page: 8,
-        instruction: ""
+        instruction: "주민등록증 정보 입력입니다 이름, 주민등록번호 그리고 주민등록증의 발급일을 모두 입력하고 ’등록’ 버튼을 눌러주세요,"
     },
     {
         page: 9,
-        instruction: ""
+        instruction: "주민등록증이 패스앱 모바일 신분쯩에 등록되었습니다. 이름과 생년월일, 주소 앞부분 그리고 QR코드를 확인할 수 있습니다. '상세정보 표시'를 눌러주세요,"
     },
     {
         page: 10,
-        instruction: ""
+        instruction: "상세정보를 표시하면 주민번호 뒤 첫자리와 주민등록번호 발급일까지 확인할 수 있습니다. 마지막으로 모든 정보를 표시해보겠습니다 스위치 모양의 토글을 눌러주세요"
     },
     {
         page: 11,
-        instruction: ""
+        instruction: "모든 정보가 숨김없이 표시됩니다. 'QR정보 표시' 버튼을 누르면 실습이 완료됩니다."
     },
     {
         page: 12,
-        instruction: ""
-    },
-    {
-        page: 13,
-        instruction: ""
+        instruction: "완료"
     },
 ];
 
