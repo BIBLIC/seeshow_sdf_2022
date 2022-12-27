@@ -39,7 +39,11 @@
 .contants {
     width: 5.5em;
     height: 14vh;
-    margin-right: 0.2em;
+    margin-right: 0.3em;
+}
+
+.container {
+    padding: 0.5em;
 }
 
 
@@ -132,6 +136,11 @@
     width: 7.5em;
 }
 
+#p6 .scroller,
+#p4 .scroller {
+    height: 80vh;
+}
+
 #p5 .scroller {
     height: 85vh;
 }
@@ -189,5 +198,5 @@
 }
 
 #p8 .profile_add {
-    width: 58%;
+    width: 13em;
 }
