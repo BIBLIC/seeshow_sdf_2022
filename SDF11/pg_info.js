@@ -159,7 +159,7 @@ const modalCont = [
         instruction: "가입이 완료되었습니다. 가입 완료 버튼을 눌러주세요,"
     },
     {
-        page: 14,
+        page: 15,
         instruction: "완료"
     },
 ];

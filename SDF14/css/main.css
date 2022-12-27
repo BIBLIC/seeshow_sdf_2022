@@ -26,6 +26,31 @@
     color: #227BE4;
 }
 
+#p11 .icon {
+    border: 0;
+    width : 40%;
+    height: unset;
+}
+
+
+#p11 .page_wrap {
+    display: unset;
+}
+
+#p11 .under_bar {
+    width: 100%;
+    min-height: 70%;
+    background: #fff;
+    padding-top: 1em;
+}
+
+#p11 .btn {
+    min-height: 5vh;
+}
+
+#p11 .fontB {
+    color: #227BE4;
+}
 
 
 #p2 .under_bar {

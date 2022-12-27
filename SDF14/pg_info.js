@@ -1,4 +1,4 @@
-var total_page = 11;//페이지 수 -> 시나리오마다 total_page 수 바꾸기 
+var total_page = 12;//페이지 수 -> 시나리오마다 total_page 수 바꾸기 
 
 //오디오 배열 선언, 페이지 수 대로 배열에 mp3 넣기
 const audioArray = [];
@@ -59,6 +59,10 @@ const pageClickArea = [
         page: 11,
         correctAnswer: "pg_11_answer"
     },
+    {
+        page: 12,
+        correctAnswer: "pg_12_answer"
+    },
 ];
 
 // -=----------------------------------------------------------------------------------------------------------------------
@@ -115,19 +119,19 @@ const modalCont = [
     },
     {
         page: 6,
-        instruction: "'약관 전체동의'를 눌러주세요."
+        instruction: "'필수항목 전체동의'를 눌러주세요."
     },
     {
         page: 7,
-        instruction: "'확인' 버튼을 눌러주세요."
+        instruction: "필수항목만 모두 동의하였습니다.'확인'버튼을 눌러 약관 동의를 완료합니다."
     },
     {
         page: 8,
-        instruction: "이름을 입력해주세요."
+        instruction: "이름란에 이름을 한글로만 입력해 주세요"
     },
     {
         page: 9,
-        instruction: "'-'을 제외한 주민등록번호 13자리를 입력해주세요."
+        instruction: "주민등록번호 13자리를 숫자만 입력해주세요,"
     },
     {
         page: 10,
@@ -135,7 +139,11 @@ const modalCont = [
     },
     {
         page: 11,
-        instruction: "마지막 페이지"
+        instruction: "완료"
+    },
+    {
+        page: 12,
+        instruction: "완료"
     },
 ];
 
