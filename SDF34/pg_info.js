@@ -87,6 +87,8 @@ const inputAnswer = [
     {},
     {},
     {},
+    {},
+    {},
 ];
 
 
@@ -94,47 +96,47 @@ const inputAnswer = [
 const modalCont = [
     {
         page: 0,
-        instruction: "'시작하기' 버튼을 눌러주세요."
+        instruction: ""
     },
     {
         page: 1,
-        instruction: "'다음' 버튼을 눌러주세요."
+        instruction: ""
     },
     {
         page: 2,
-        instruction: "'허용'을 눌러주세요"
+        instruction: ""
     },
     {
         page: 3,
-        instruction: "'바로 시작하기' 버튼을 눌러주세요."
+        instruction: ""
     },
     {
         page: 4,
-        instruction: "좌측 상단의 메뉴를 눌러주세요."
+        instruction: ""
     },
     {
         page: 5,
-        instruction: "'로그인해주세요'를 눌러주세요."
+        instruction: ""
     },
     {
         page: 6,
-        instruction: "'간편 로그인'을 눌러주세요."
+        instruction: ""
     },
     {
         page: 7,
-        instruction: "생년월일 6자리 입력 후 '간편 로그인' 버튼을 눌러주세요."
+        instruction: ""
     },
     {
         page: 8,
-        instruction: "'나의 데이터/통화' 영역을 눌러주세요."
+        instruction: ""
     },
     {
         page: 9,
-        instruction: "'실시간 잔여량' 영역을 눌러주세요."
+        instruction: ""
     },
     {
         page: 10,
-        instruction: "조회된 실시간 잔여량 확인 후 네비게이션 바의 '다음' 버튼을 눌러주세요."
+        instruction: ""
     },
     {
         page: 11,
@@ -155,52 +157,52 @@ const modalCont = [
 // //*******************************************************************************
 // //**************************+    커서   +*********************************** 
 
-const cursor_pos_1 = document.querySelector('.cursor_pos_1');
-const cursor_pos_2 = document.querySelector('.cursor_pos_2');
+// const cursor_pos_1 = document.querySelector('.cursor_pos_1');
+// const cursor_pos_2 = document.querySelector('.cursor_pos_2');
 // // const cursor_pos_3 = document.querySelector('.cursor_pos_3');
 // // const cursor_pos_4 = document.querySelector('.cursor_pos_4');
 // // const cursor_pos_5 = document.querySelector('.cursor_pos_5');
 // // const cursor_pos_6 = document.querySelector('.cursor_pos_6');
 
-const cursor_wrap_1 = document.querySelector('.cursor_wrap_1');
-const cursor_wrap_2 = document.querySelector('.cursor_wrap_2');
+// const cursor_wrap_1 = document.querySelector('.cursor_wrap_1');
+// const cursor_wrap_2 = document.querySelector('.cursor_wrap_2');
 // // const cursor_wrap_3 = document.querySelector('.cursor_wrap_3');
 // // const cursor_wrap_4 = document.querySelector('.cursor_wrap_4');
 // // const cursor_wrap_5 = document.querySelector('.cursor_wrap_5');
 // // const cursor_wrap_6 = document.querySelector('.cursor_wrap_6');
 
 
-cursor_wrap_1.style.zIndex = "100";
-cursor_wrap_2.style.zIndex = "100";
+// cursor_wrap_1.style.zIndex = "100";
+// cursor_wrap_2.style.zIndex = "100";
 // // cursor_wrap_3.style.zIndex = "100";
 // // cursor_wrap_4.style.zIndex = "100";
 // // cursor_wrap_5.style.zIndex = "100";
 // // cursor_wrap_6.style.zIndex = "100";
 
 
-const { createPopper } = Popper;
-createPopper(cursor_pos_1, cursor_wrap_1, {
-    placement: 'right',
-    modifiers: [
-        {
-            name: 'offset',
-            options: {
-                offset: [0,30],
-            },
-        },
-    ],
-});
-createPopper(cursor_pos_2, cursor_wrap_2, {
-    placement: 'right',
-    modifiers: [
-        {
-            name: 'offset',
-            options: {
-                offset: [0,-20],
-            },
-        },
-    ],
-});
+// const { createPopper } = Popper;
+// createPopper(cursor_pos_1, cursor_wrap_1, {
+//     placement: 'right',
+//     modifiers: [
+//         {
+//             name: 'offset',
+//             options: {
+//                 offset: [0,0],
+//             },
+//         },
+//     ],
+// });
+// createPopper(cursor_pos_2, cursor_wrap_2, {
+//     placement: 'right',
+//     modifiers: [
+//         {
+//             name: 'offset',
+//             options: {
+//                 offset: [30,30],
+//             },
+//         },
+//     ],
+// });
 // // createPopper(cursor_pos_3, cursor_wrap_3, {
 // //     placement: 'right',
 // //     modifiers: [
