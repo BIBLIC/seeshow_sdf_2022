@@ -1,6 +1,19 @@
 main svg {
     margin: 1em;
 }
+
+.floating-button {
+    display: flex;
+    flex-direction: column;
+    min-width: 50%;
+    justify-content: flex-end;
+    align-items: flex-end;
+    position: absolute;
+    right: 5%;
+    bottom: 12%;
+    z-index: 10;
+}
+
 .fontW {
     color:#fff;
 }
