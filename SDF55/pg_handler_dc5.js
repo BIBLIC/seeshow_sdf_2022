@@ -1,6 +1,6 @@
 var page_num = 0; // 수정 XXX -> 맨 처음 페이지 초기화하기 위함
 var user_input_txt = '';
-
+var total_height = $('.cafe-main').height();
 const prevBtn = document.getElementById("prev");
 const nextBtn = document.getElementById("next");
 
@@ -97,7 +97,7 @@ $('#start-btn').click(function () {
     } else {
         $(".ctrlbar").addClass("ctrlbar_shadow");
     }
-
+    total_height = $('.cafe-main').height();
 });
 
 
@@ -154,31 +154,32 @@ $(document).on("click", "#next_btn", function () {
     //자동 스크롤
     if (page_num == 3) {
         if (textSizeValue == "2") {
-            let scrollPos = $('.cafe_main').height() * 0.7;
+            let scrollPos = total_height * 0.3;
             $('.cafe_main').scrollTop(scrollPos);
         } else {
-            let scrollPos = $('.cafe_main').height() * 0.5;
+            let scrollPos = total_height * 0.3;
             $('.cafe_main').scrollTop(scrollPos);
         }
     }
     if (page_num == 4) {
         if (textSizeValue == "2") {
-            let scrollPos = $('.cafe_main').height() * 2.0;
+            let scrollPos = total_height * 1.2;
             $('.cafe_main').scrollTop(scrollPos);
         } else {
-            let scrollPos = $('.cafe_main').height() * 1.5;
+            let scrollPos = total_height * 0.7;
             $('.cafe_main').scrollTop(scrollPos);
         }
     }
     if (page_num == 5) {
         if (textSizeValue == "2") {
-            let scrollPos = $('.cafe_main').height() * 3.5;
+            let scrollPos = total_height * 1.7;
             $('.cafe_main').scrollTop(scrollPos);
         } else {
-            let scrollPos = $('.cafe_main').height() * 1.9;
+            let scrollPos = total_height * 0.9;
             $('.cafe_main').scrollTop(scrollPos);
         }
     }
+
 });
 
 
@@ -226,28 +227,28 @@ $(document).on("click", "#prev_btn", function () {
     //자동 스크롤
     if (page_num == 3) {
         if (textSizeValue == "2") {
-            let scrollPos = $('.cafe_main').height() * 0.7;
+            let scrollPos = total_height * 0.3;
             $('.cafe_main').scrollTop(scrollPos);
         } else {
-            let scrollPos = $('.cafe_main').height() * 0.5;
+            let scrollPos = total_height * 0.3;
             $('.cafe_main').scrollTop(scrollPos);
         }
     }
     if (page_num == 4) {
         if (textSizeValue == "2") {
-            let scrollPos = $('.cafe_main').height() * 2.0;
+            let scrollPos = total_height * 1.2;
             $('.cafe_main').scrollTop(scrollPos);
         } else {
-            let scrollPos = $('.cafe_main').height() * 1.5;
+            let scrollPos = total_height * 0.7;
             $('.cafe_main').scrollTop(scrollPos);
         }
     }
     if (page_num == 5) {
         if (textSizeValue == "2") {
-            let scrollPos = $('.cafe_main').height() * 3.5;
+            let scrollPos = total_height * 1.7;
             $('.cafe_main').scrollTop(scrollPos);
         } else {
-            let scrollPos = $('.cafe_main').height() * 1.9;
+            let scrollPos = total_height * 0.9;
             $('.cafe_main').scrollTop(scrollPos);
         }
     }
@@ -367,28 +368,28 @@ function next() {
     //자동 스크롤
     if (page_num == 3) {
         if (textSizeValue == "2") {
-            let scrollPos = $('.cafe_main').height() * 0.7;
+            let scrollPos = total_height * 0.3;
             $('.cafe_main').scrollTop(scrollPos);
         } else {
-            let scrollPos = $('.cafe_main').height() * 0.5;
+            let scrollPos = total_height * 0.3;
             $('.cafe_main').scrollTop(scrollPos);
         }
     }
     if (page_num == 4) {
         if (textSizeValue == "2") {
-            let scrollPos = $('.cafe_main').height() * 2.0;
+            let scrollPos = total_height * 1.2;
             $('.cafe_main').scrollTop(scrollPos);
         } else {
-            let scrollPos = $('.cafe_main').height() * 1.5;
+            let scrollPos = total_height * 0.7;
             $('.cafe_main').scrollTop(scrollPos);
         }
     }
     if (page_num == 5) {
         if (textSizeValue == "2") {
-            let scrollPos = $('.cafe_main').height() * 3.5;
+            let scrollPos = total_height * 1.7;
             $('.cafe_main').scrollTop(scrollPos);
         } else {
-            let scrollPos = $('.cafe_main').height() * 1.9;
+            let scrollPos = total_height * 0.9;
             $('.cafe_main').scrollTop(scrollPos);
         }
     }

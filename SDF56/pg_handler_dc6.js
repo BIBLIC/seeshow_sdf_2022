@@ -1,6 +1,6 @@
 var page_num = 0; // 수정 XXX -> 맨 처음 페이지 초기화하기 위함
 var user_input_txt = '';
-var total_height = $('.chat-main').height();
+var total_height = $('.blog-main').height();
 const prevBtn = document.getElementById("prev");
 const nextBtn = document.getElementById("next");
 
@@ -97,7 +97,8 @@ $('#start-btn').click(function () {
     } else {
         $(".ctrlbar").addClass("ctrlbar_shadow");
     }
-    total_height = $('.chat-main').height();
+    //var number = $('.blog-main').height();
+    total_height = $('.blog-main').height();
 });
 
 
@@ -153,45 +154,51 @@ $(document).on("click", "#next_btn", function () {
 
     //자동 스크롤
     if (page_num == 2) {
-        //chat_main.scrollTop = chat_main.scrollHeight *0.6;
         if (textSizeValue == "2") {
-            let scrollPos = total_height * 0.6;
-            $('.chat_main').scrollTop(scrollPos);
+            let scrollPos = total_height * 0.8;
+            $('.blog_main').scrollTop(scrollPos);
         } else {
-            let scrollPos = total_height * 0.3;
-            $('.chat_main').scrollTop(scrollPos);
+            let scrollPos = total_height * 0.45;
+            $('.blog_main').scrollTop(scrollPos);
         }
     }
     if (page_num == 3) {
-        //chat_main.scrollTop = chat_main.scrollHeight *0.6;
         if (textSizeValue == "2") {
-            let scrollPos = total_height * 0.7;
-            $('.chat_main').scrollTop(scrollPos);
+            let scrollPos = total_height * 0.9;
+            $('.blog_main').scrollTop(scrollPos);
         } else {
-            let scrollPos = total_height * 0.35;
-            $('.chat_main').scrollTop(scrollPos);
+            let scrollPos = total_height * 0.55;
+            $('.blog_main').scrollTop(scrollPos);
         }
     }
     if (page_num == 4) {
-        //chat_main.scrollTop = chat_main.scrollHeight *0.6;
         if (textSizeValue == "2") {
-            let scrollPos = total_height * 1.3;
-            $('.chat_main').scrollTop(scrollPos);
+            let scrollPos = total_height * 1.2;
+            $('.blog_main').scrollTop(scrollPos);
         } else {
-            let scrollPos = total_height * 1.9;
-            $('.chat_main').scrollTop(scrollPos);
+            let scrollPos = total_height * 0.7;
+            $('.blog_main').scrollTop(scrollPos);
         }
     }
     if (page_num == 5) {
-        //chat_main.scrollTop = chat_main.scrollHeight *0.6;
         if (textSizeValue == "2") {
-            let scrollPos = total_height * 2;
-            $('.chat_main').scrollTop(scrollPos);
+            let scrollPos = total_height * 1.25;
+            $('.blog_main').scrollTop(scrollPos);
         } else {
-            let scrollPos = total_height * 2.0;
-            $('.chat_main').scrollTop(scrollPos);
+            let scrollPos = total_height * 0.8;
+            $('.blog_main').scrollTop(scrollPos);
         }
     }
+    if (page_num == 6) {
+        if (textSizeValue == "2") {
+            let scrollPos = total_height * 1.5;
+            $('.blog_main').scrollTop(scrollPos);
+        } else {
+            let scrollPos = total_height * 1.0;
+            $('.blog_main').scrollTop(scrollPos);
+        }
+    }
+
 });
 
 
@@ -230,53 +237,54 @@ $(document).on("click", "#prev_btn", function () {
         audioArray[page_num - 1].play();
     }
 
-    //---------ctrlbar shadow
-    if (page_num == 0) {
-        $(".ctrlbar").removeClass("ctrlbar_shadow");
-    } else {
-        $(".ctrlbar").addClass("ctrlbar_shadow");
-    }
-    //자동 스크롤
-    if (page_num == 2) {
-        //chat_main.scrollTop = chat_main.scrollHeight *0.6;
+     //자동 스크롤
+     if (page_num == 2) {
         if (textSizeValue == "2") {
-            let scrollPos = total_height * 2.0;
-            $('.chat_main').scrollTop(scrollPos);
+            let scrollPos = total_height * 0.8;
+            $('.blog_main').scrollTop(scrollPos);
         } else {
-            let scrollPos = total_height * 1.0;
-            $('.chat_main').scrollTop(scrollPos);
+            let scrollPos = total_height * 0.45;
+            $('.blog_main').scrollTop(scrollPos);
         }
     }
     if (page_num == 3) {
-        //chat_main.scrollTop = chat_main.scrollHeight *0.6;
         if (textSizeValue == "2") {
-            let scrollPos = total_height * 1.9;
-            $('.chat_main').scrollTop(scrollPos);
+            let scrollPos = total_height * 0.9;
+            $('.blog_main').scrollTop(scrollPos);
         } else {
-            let scrollPos = total_height * 1.1;
-            $('.chat_main').scrollTop(scrollPos);
+            let scrollPos = total_height * 0.55;
+            $('.blog_main').scrollTop(scrollPos);
         }
     }
     if (page_num == 4) {
-        //chat_main.scrollTop = chat_main.scrollHeight *0.6;
         if (textSizeValue == "2") {
-            let scrollPos = total_height * 2.9;
-            $('.chat_main').scrollTop(scrollPos);
+            let scrollPos = total_height * 1.2;
+            $('.blog_main').scrollTop(scrollPos);
         } else {
-            let scrollPos = total_height * 1.9;
-            $('.chat_main').scrollTop(scrollPos);
+            let scrollPos = total_height * 0.7;
+            $('.blog_main').scrollTop(scrollPos);
         }
     }
     if (page_num == 5) {
-        //chat_main.scrollTop = chat_main.scrollHeight *0.6;
         if (textSizeValue == "2") {
-            let scrollPos = total_height * 4.0;
-            $('.chat_main').scrollTop(scrollPos);
+            let scrollPos = total_height * 1.25;
+            $('.blog_main').scrollTop(scrollPos);
         } else {
-            let scrollPos = total_height * 2.0;
-            $('.chat_main').scrollTop(scrollPos);
+            let scrollPos = total_height * 0.8;
+            $('.blog_main').scrollTop(scrollPos);
         }
     }
+    if (page_num == 6) {
+        if (textSizeValue == "2") {
+            let scrollPos = total_height * 1.5;
+            $('.blog_main').scrollTop(scrollPos);
+        } else {
+            let scrollPos = total_height * 1.0;
+            $('.blog_main').scrollTop(scrollPos);
+        }
+    }
+   
+   
 
 });
 
@@ -369,7 +377,6 @@ slider.oninput = function () {
 //     $('.border_darker').toggleClass("mk_border_darker");
 // })
 
-
 //*******************************************************************************
 //**************************+    클릭 제어   +*********************************** 
 
@@ -390,45 +397,50 @@ function next() {
     if (page_num > 1) {
         audioArray[page_num - 2].pause();
     }
-    //자동 스크롤
-    if (page_num == 2) {
-        //chat_main.scrollTop = chat_main.scrollHeight *0.6;
+     //자동 스크롤
+     if (page_num == 2) {
         if (textSizeValue == "2") {
-            let scrollPos = total_height * 2.0;
-            $('.chat_main').scrollTop(scrollPos);
+            let scrollPos = total_height * 0.8;
+            $('.blog_main').scrollTop(scrollPos);
         } else {
-            let scrollPos = total_height * 1.0;
-            $('.chat_main').scrollTop(scrollPos);
+            let scrollPos = total_height * 0.45;
+            $('.blog_main').scrollTop(scrollPos);
         }
     }
     if (page_num == 3) {
-        //chat_main.scrollTop = chat_main.scrollHeight *0.6;
         if (textSizeValue == "2") {
-            let scrollPos = total_height * 1.9;
-            $('.chat_main').scrollTop(scrollPos);
+            let scrollPos = total_height * 0.9;
+            $('.blog_main').scrollTop(scrollPos);
         } else {
-            let scrollPos = total_height * 1.1;
-            $('.chat_main').scrollTop(scrollPos);
+            let scrollPos = total_height * 0.55;
+            $('.blog_main').scrollTop(scrollPos);
         }
     }
     if (page_num == 4) {
-        //chat_main.scrollTop = chat_main.scrollHeight *0.6;
         if (textSizeValue == "2") {
-            let scrollPos = total_height * 2.9;
-            $('.chat_main').scrollTop(scrollPos);
+            let scrollPos = total_height * 1.2;
+            $('.blog_main').scrollTop(scrollPos);
         } else {
-            let scrollPos = total_height * 1.9;
-            $('.chat_main').scrollTop(scrollPos);
+            let scrollPos = total_height * 0.7;
+            $('.blog_main').scrollTop(scrollPos);
         }
     }
     if (page_num == 5) {
-        //chat_main.scrollTop = chat_main.scrollHeight *0.6;
         if (textSizeValue == "2") {
-            let scrollPos = total_height * 4.0;
-            $('.chat_main').scrollTop(scrollPos);
+            let scrollPos = total_height * 1.25;
+            $('.blog_main').scrollTop(scrollPos);
         } else {
-            let scrollPos = total_height * 2.0;
-            $('.chat_main').scrollTop(scrollPos);
+            let scrollPos = total_height * 0.8;
+            $('.blog_main').scrollTop(scrollPos);
+        }
+    }
+    if (page_num == 6) {
+        if (textSizeValue == "2") {
+            let scrollPos = total_height * 1.5;
+            $('.blog_main').scrollTop(scrollPos);
+        } else {
+            let scrollPos = total_height * 1.0;
+            $('.blog_main').scrollTop(scrollPos);
         }
     }
 }
@@ -476,12 +488,16 @@ $(document).on("click", ".pg_3_answer", function () {
 });
 $(document).on("click", ".nxtBtn3", function () {
     modal3_1.style.display = "none";
-    next();
+    modal3_2.style.display = "";
+   
+    //console.log('후 p',real_pg);
 });
-// $(여식document).on("click", ".okBtn3", function () {
-//     modal3_2.style.display = "none";
-//     next();
-// });
+$(document).on("click", ".okBtn3", function () {
+    modal3_2.style.display = "none";
+    //console.log('전 p',real_pg);
+    next();
+    //console.log('후 p',real_pg);
+});
 
 
 //( 4 )++++++++++++++++++++++++++++
@@ -517,11 +533,6 @@ $(document).on("click", ".okBtn5", function () {
 //( 6 )++++++++++++++++++++++++++++
 $(document).on("click", ".pg_6_answer", function () {
     cursor_wrap_6.style.display = "none";
-    my_wrap2.style.display = "";
-});
-$(document).on("click", ".my_wrap2", function () {
-    //cursor_wrap_6.style.display = "none";
-    my_wrap2.style.display = "none";
     modal6_1.style.display = "";
 });
 $(document).on("click", ".nxtBtn6", function () {

@@ -571,6 +571,11 @@ ul {
   align-items: center;
 }
 
+.hd_type {
+  background: #6279b7;
+  height : 15vh;
+}
+
 #hd_GvFakeSite {
   width: 100%;
   height: 80%;
