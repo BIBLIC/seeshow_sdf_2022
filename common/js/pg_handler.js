@@ -837,7 +837,7 @@ document.querySelector("main").addEventListener("click", function (e) {//메인 
                     selc3Arr = [...set];
                     console.log(selc3Arr);
                     console.log(selc3Arr.length)
-                    $(".input_" + j).addClass("pg_" + real_pg + "_selected_css");
+                    $(".css_edit_" + j).addClass("pg_" + real_pg + "_selected_css");
                     if (selc3Arr.length==3) {
                         $(".selc_next_btn").addClass("pg_" + real_pg + "_answer");
                     }
