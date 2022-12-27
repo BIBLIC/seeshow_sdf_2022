@@ -1,6 +1,6 @@
 var page_num = 0; // 수정 XXX -> 맨 처음 페이지 초기화하기 위함
 var user_input_txt = '';
-
+var total_height = $('.news-main').height();
 const prevBtn = document.getElementById("prev");
 const nextBtn = document.getElementById("next");
 
@@ -97,6 +97,20 @@ $('#start-btn').click(function () {
     } else {
         $(".ctrlbar").addClass("ctrlbar_shadow");
     }
+    //var number = $('.news-main').height();
+    total_height = $('.news-main').height();
+    console.log (total_height);
+
+    //자동 스크롤
+    if (page_num == 1) {
+        if (textSizeValue == "2") {
+            let scrollPos = total_height * 1.8;
+            $('.news_main').scrollTop(scrollPos);
+        } else {
+            let scrollPos = total_height * 0.2;
+            $('.news_main').scrollTop(scrollPos);
+        }
+    }
 
 });
 
@@ -152,24 +166,43 @@ $(document).on("click", "#next_btn", function () {
     }
 
     //자동 스크롤
+    if (page_num == 1) {
+        if (textSizeValue == "2") {
+            let scrollPos = total_height * 1.8;
+            $('.news_main').scrollTop(scrollPos);
+        } else {
+            let scrollPos = total_height * 0.9;
+            $('.news_main').scrollTop(scrollPos);
+        }
+    }
+    if (page_num == 2) {
+        if (textSizeValue == "2") {
+            let scrollPos = total_height * 2.1;
+            $('.news_main').scrollTop(scrollPos);
+        } else {
+            let scrollPos = total_height * 1.4;
+            $('.news_main').scrollTop(scrollPos);
+        }
+    }
     if (page_num == 3) {
         if (textSizeValue == "2") {
-            let scrollPos = $('.cafe_main').height() * 0.7;
-            $('.cafe_main').scrollTop(scrollPos);
+            let scrollPos = total_height * 3.4;
+            $('.news_main').scrollTop(scrollPos);
         } else {
-            let scrollPos = $('.cafe_main').height() * 0.5;
-            $('.cafe_main').scrollTop(scrollPos);
+            let scrollPos = total_height * 2.3;
+            $('.news_main').scrollTop(scrollPos);
         }
     }
     if (page_num == 4) {
         if (textSizeValue == "2") {
-            let scrollPos = $('.cafe_main').height() * 1.5;
-            $('.cafe_main').scrollTop(scrollPos);
+            let scrollPos = total_height * 5.2;
+            $('.news_main').scrollTop(scrollPos);
         } else {
-            let scrollPos = $('.cafe_main').height() * 1.0;
-            $('.cafe_main').scrollTop(scrollPos);
+            let scrollPos = total_height * 3.1;
+            $('.news_main').scrollTop(scrollPos);
         }
     }
+
 });
 
 
@@ -215,24 +248,16 @@ $(document).on("click", "#prev_btn", function () {
         $(".ctrlbar").addClass("ctrlbar_shadow");
     }
     //자동 스크롤
-    if (page_num == 3) {
+    if (page_num == 1) {
         if (textSizeValue == "2") {
-            let scrollPos = $('.cafe_main').height() * 0.7;
-            $('.cafe_main').scrollTop(scrollPos);
+            let scrollPos = total_height * 1.8;
+            $('.news_main').scrollTop(scrollPos);
         } else {
-            let scrollPos = $('.cafe_main').height() * 0.5;
-            $('.cafe_main').scrollTop(scrollPos);
+            let scrollPos = total_height * 0.9;
+            $('.news_main').scrollTop(scrollPos);
         }
     }
-    if (page_num == 4) {
-        if (textSizeValue == "2") {
-            let scrollPos = $('.cafe_main').height() * 1.5;
-            $('.cafe_main').scrollTop(scrollPos);
-        } else {
-            let scrollPos = $('.cafe_main').height() * 1.0;
-            $('.cafe_main').scrollTop(scrollPos);
-        }
-    }
+   
 
 });
 
@@ -349,20 +374,20 @@ function next() {
     //자동 스크롤
     if (page_num == 3) {
         if (textSizeValue == "2") {
-            let scrollPos = $('.cafe_main').height() * 0.7;
-            $('.cafe_main').scrollTop(scrollPos);
+            let scrollPos = total_height * 0.7;
+            $('.news_main').scrollTop(scrollPos);
         } else {
-            let scrollPos = $('.cafe_main').height() * 0.5;
-            $('.cafe_main').scrollTop(scrollPos);
+            let scrollPos = total_height * 0.5;
+            $('.news_main').scrollTop(scrollPos);
         }
     }
     if (page_num == 4) {
         if (textSizeValue == "2") {
-            let scrollPos = $('.cafe_main').height() * 1.5;
-            $('.cafe_main').scrollTop(scrollPos);
+            let scrollPos = total_height * 1.5;
+            $('.news_main').scrollTop(scrollPos);
         } else {
-            let scrollPos = $('.cafe_main').height() * 1.0;
-            $('.cafe_main').scrollTop(scrollPos);
+            let scrollPos = total_height * 1.0;
+            $('.news_main').scrollTop(scrollPos);
         }
     }
 }

@@ -107,7 +107,7 @@ cursor_wrap_6.style.zIndex = "40";
 
 const { createPopper } = Popper;
 createPopper(cursor_pos_1, cursor_wrap_1, {
-    placement: 'bottom',
+    placement: 'top',
     modifiers: [
         {
             name: 'offset',
@@ -118,7 +118,7 @@ createPopper(cursor_pos_1, cursor_wrap_1, {
     ],
 });
 createPopper(cursor_pos_2, cursor_wrap_2, {
-    placement: 'right',
+    placement: 'top',
     modifiers: [
         {
             name: 'offset',
@@ -134,53 +134,41 @@ createPopper(cursor_pos_3, cursor_wrap_3, {
         {
             name: 'offset',
             options: {
-                offset: [0,-50],
+                offset: [0,0],
             },
         },
     ],
 });
 createPopper(cursor_pos_4, cursor_wrap_4, {
-    placement: 'right',
+    placement: 'top',
     modifiers: [
         {
             name: 'offset',
             options: {
-                offset: [0,-100],
+                offset: [0,0],
             },
         },
     ],
 });
 
-// createPopper(cursor_pos_4_1, cursor_wrap_4_1, {
-//     placement: 'top',
-//     modifiers: [
-//         {
-//             name: 'offset',
-//             options: {
-//                 offset: [145,70],
-//             },
-//         },
-//     ],
-// });
-
 createPopper(cursor_pos_5, cursor_wrap_5, {
-    placement: 'right',
+    placement: 'top',
     modifiers: [
         {
             name: 'offset',
             options: {
-                offset: [-20,60],
+                offset: [0,0],
             },
         },
     ],
 });
 createPopper(cursor_pos_6, cursor_wrap_6, {
-    placement: 'right',
+    placement: 'top',
     modifiers: [
         {
             name: 'offset',
             options: {
-                offset: [50,60],
+                offset: [0,0],
             },
         },
     ],
