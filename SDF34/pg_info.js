@@ -158,29 +158,29 @@ const modalCont = [
 // //**************************+    커서   +*********************************** 
 
 // const cursor_pos_1 = document.querySelector('.cursor_pos_1');
-// const cursor_pos_2 = document.querySelector('.cursor_pos_2');
-// // const cursor_pos_3 = document.querySelector('.cursor_pos_3');
-// // const cursor_pos_4 = document.querySelector('.cursor_pos_4');
-// // const cursor_pos_5 = document.querySelector('.cursor_pos_5');
-// // const cursor_pos_6 = document.querySelector('.cursor_pos_6');
+const cursor_pos_2 = document.querySelector('.cursor_pos_2');
+const cursor_pos_3 = document.querySelector('.cursor_pos_3');
+// const cursor_pos_4 = document.querySelector('.cursor_pos_4');
+// const cursor_pos_5 = document.querySelector('.cursor_pos_5');
+// const cursor_pos_6 = document.querySelector('.cursor_pos_6');
 
 // const cursor_wrap_1 = document.querySelector('.cursor_wrap_1');
-// const cursor_wrap_2 = document.querySelector('.cursor_wrap_2');
-// // const cursor_wrap_3 = document.querySelector('.cursor_wrap_3');
-// // const cursor_wrap_4 = document.querySelector('.cursor_wrap_4');
-// // const cursor_wrap_5 = document.querySelector('.cursor_wrap_5');
-// // const cursor_wrap_6 = document.querySelector('.cursor_wrap_6');
+const cursor_wrap_2 = document.querySelector('.cursor_wrap_2');
+const cursor_wrap_3 = document.querySelector('.cursor_wrap_3');
+// const cursor_wrap_4 = document.querySelector('.cursor_wrap_4');
+// const cursor_wrap_5 = document.querySelector('.cursor_wrap_5');
+// const cursor_wrap_6 = document.querySelector('.cursor_wrap_6');
 
 
-// cursor_wrap_1.style.zIndex = "100";
-// cursor_wrap_2.style.zIndex = "100";
-// // cursor_wrap_3.style.zIndex = "100";
-// // cursor_wrap_4.style.zIndex = "100";
-// // cursor_wrap_5.style.zIndex = "100";
-// // cursor_wrap_6.style.zIndex = "100";
+//  cursor_wrap_1.style.zIndex = "100";
+cursor_wrap_2.style.zIndex = "100";
+cursor_wrap_3.style.zIndex = "100";
+// cursor_wrap_4.style.zIndex = "100";
+// cursor_wrap_5.style.zIndex = "100";
+// cursor_wrap_6.style.zIndex = "100";
 
 
-// const { createPopper } = Popper;
+const { createPopper } = Popper;
 // createPopper(cursor_pos_1, cursor_wrap_1, {
 //     placement: 'right',
 //     modifiers: [
@@ -192,60 +192,98 @@ const modalCont = [
 //         },
 //     ],
 // });
-// createPopper(cursor_pos_2, cursor_wrap_2, {
+createPopper(cursor_pos_2, cursor_wrap_2, {
+    placement: 'right',
+    modifiers: [
+        {
+            name: 'offset',
+            options: {
+                offset: [0,-35],
+            },
+        },
+    ],
+});
+createPopper(cursor_pos_3, cursor_wrap_3, {
+    placement: 'right',
+    modifiers: [
+        {
+            name: 'offset',
+            options: {
+                offset: [0,-35],
+            },
+        },
+    ],
+});
+// //cursor_wrap_4.style.left="60%";
+
+// createPopper(cursor_pos_4, cursor_wrap_4, {
+//     placement: 'bottom',
+//     modifiers: [
+//         {
+//             name: 'offset',
+//             options: {
+//                 offset: [250,10],
+//             },
+//         },
+//     ],
+// });
+// createPopper(cursor_pos_5, cursor_wrap_5, {
 //     placement: 'right',
 //     modifiers: [
 //         {
 //             name: 'offset',
 //             options: {
-//                 offset: [30,30],
+//                 offset: [25,200],
 //             },
 //         },
 //     ],
 // });
-// // createPopper(cursor_pos_3, cursor_wrap_3, {
-// //     placement: 'right',
-// //     modifiers: [
-// //         {
-// //             name: 'offset',
-// //             options: {
-// //                 offset: [70,80],
-// //             },
-// //         },
-// //     ],
-// // });
-// // //cursor_wrap_4.style.left="60%";
+// createPopper(cursor_pos_6, cursor_wrap_6, {
+//     placement: 'bottom',
+//     modifiers: [
+//         {
+//             name: 'offset',
+//             options: {
+//                 offset: [250,10],
+//             },
+//         },
+//     ],
+// });
 
-// // createPopper(cursor_pos_4, cursor_wrap_4, {
-// //     placement: 'bottom',
-// //     modifiers: [
-// //         {
-// //             name: 'offset',
-// //             options: {
-// //                 offset: [250,10],
-// //             },
-// //         },
-// //     ],
-// // });
-// // createPopper(cursor_pos_5, cursor_wrap_5, {
-// //     placement: 'right',
-// //     modifiers: [
-// //         {
-// //             name: 'offset',
-// //             options: {
-// //                 offset: [25,200],
-// //             },
-// //         },
-// //     ],
-// // });
-// // createPopper(cursor_pos_6, cursor_wrap_6, {
-// //     placement: 'bottom',
-// //     modifiers: [
-// //         {
-// //             name: 'offset',
-// //             options: {
-// //                 offset: [250,10],
-// //             },
-// //         },
-// //     ],
-// // });
+
+
+$(document).on("click", '#start-btn', function () {
+    if (page_num === 1) {
+        $( document ).ready(function() {
+            setTimeout(function () {
+                if (page_num === 1) {
+                    next();
+                }
+            }, 800);
+          });  
+    }
+});
+
+$(document).on("click", "#next_btn", function () {
+    if (page_num === 0) {
+        $( document ).ready(function() {
+            setTimeout(function () {
+                if (page_num === 1) {
+                    next();
+                }
+            }, 800);
+          });  
+    }
+});
+
+$(document).on("click", "#prev_btn", function () {
+    if (page_num === 2) {
+        $( document ).ready(function() {
+            setTimeout(function () {
+                if (page_num === 1) {
+                    next();
+                }
+            }, 800);
+          });  
+    }
+});

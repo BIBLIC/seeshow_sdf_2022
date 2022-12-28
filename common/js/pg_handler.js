@@ -287,10 +287,13 @@ $('#hint_btn').click(function () {
     $(".pg_" + real_pg + "_answer:first").toggleClass("box-shadow-unset");
     $(".pg_" + real_pg + "_answer:first").toggleClass("addShadow");
     $(".pg_" + real_pg + '_shadow_ext').toggleClass("addShadow");
+    $(".pg_" + real_pg + '_shadow_more_darker').toggleClass("addShadow-more-darker");
     $(".pg_" + real_pg + "_shadow_inner").toggleClass("addInnerShadow");
+    $(".pg_" + real_pg + "_shadow_inner_darker").toggleClass("addInnerShadow-darker");
     $('.border_darker').toggleClass("mk_border_darker");
     $('.txt_darker').toggleClass("mk_txt_darker");
     $(".pg_" + real_pg + '_txt_darker').toggleClass("mk_txt_darker");
+    $(".pg_" + real_pg + '_txt_more_darker').toggleClass("mk_txt_more_darker");
     $(".pg_" + real_pg + '_border_darker').toggleClass("mk_txt_darker");
     $(".pg_" + real_pg + '_border_b').toggleClass("mk_border_b_darker");
     $(".pg_" + real_pg + '_css_chng').toggleClass("css_toggle");

@@ -179,7 +179,12 @@ svg {
 }
 
 .addShadow-darker {
-  box-shadow : rgba(0,0,0,0.5) 0 0 0 9999px;
+  box-shadow : rgba(0,0,0,0.5) 0 0 0 9999px !important;
+  z-index : 30;
+}
+
+.addShadow-more-darker {
+  box-shadow : rgba(0,0,0,0.8) 0 0 0 9999px !important;
   z-index : 30;
 }
 
@@ -194,12 +199,21 @@ svg {
   z-index : 30;
 }
 
+.addInnerShadow-darker {
+  box-shadow : inset rgba(0,0,0,0.5) 0 0 0 9999px;
+  z-index : 30;
+}
+
 .mk_border_darker {
   border: 2px solid #B2B2B2 !important;
 }
 
 .mk_txt_darker {
   filter: brightness(70%);
+}
+
+.mk_txt_more_darker {
+  filter: brightness(10%);
 }
 
 .mk_border_b_darker {

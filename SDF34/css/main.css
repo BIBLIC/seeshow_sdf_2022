@@ -1,3 +1,18 @@
+.cursor {
+
+    width: 2em;
+    height: 2em;
+}
+
+#p2 .container,
+#p3 .container {
+    height:34vh !important;
+}
+
+#p2 .scroller {
+    scroll-behavior: smooth;
+    overflow-y: scroll;
+}
 
 .text-red {
     color: #E30A15;
@@ -48,7 +63,8 @@
 
 
 /* ---------------------------- */
-#p0 .page_wrap {
+#p0 .page_wrap,
+#p13 .page_wrap {
     background-color: #fff;
 }
 
@@ -201,6 +217,9 @@
     width: 13em;
 }
 
+.pg_8_wrap {
+    height : 79vh;
+}
 
 /* ------------------ JEI ------------------ */
 /* .bg-darkgray {
@@ -229,7 +248,17 @@
     margin-right: 1em;
 }
 
-.scroller {
+#p5 .scroller {
+    width: 100%;
+    height: 87vh;
+}
+
+#p4 .scroller,
+#p6 .scroller,
+#p9 .scroller,
+#p10 .scroller,
+#p11 .scroller,
+#p12 .scroller {
     width: 100%;
     height: 79vh;
 }
