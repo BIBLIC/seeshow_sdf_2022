@@ -177,7 +177,7 @@ const modalCont = [
     },
     {
         page: 15,
-        instruction: "'직접 입력하기' 버튼을 눌러주세요."
+        instruction: "휴대폰으로 카드를 촬영하여 카드 정보를 자동 입력하겠습니다. 화면의 신용카드를 눌러주세요."
     },
     {
         page: 16,
