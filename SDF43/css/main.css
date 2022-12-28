@@ -138,6 +138,12 @@
     padding: 0.5em;
 }
 
+#p11 .file,
+#p10 .file {
+    width: 6em;
+    height: 6em;
+}
+
 #p11 .icon {
     width: 6em;
     height: 6em;
