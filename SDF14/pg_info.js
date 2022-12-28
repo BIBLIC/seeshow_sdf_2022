@@ -139,7 +139,7 @@ const modalCont = [
     },
     {
         page: 11,
-        instruction: "완료"
+        instruction: "'호출하기' 버튼을 눌러주세요."
     },
     {
         page: 12,

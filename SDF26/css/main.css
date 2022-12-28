@@ -205,7 +205,12 @@
 
 #p3 .under_bar .baricon_wrap .bartext,
 #p8 .under_bar .baricon_wrap .bartext {
-    font-size: smaller;
+    font-size: smaller0.76;
+}
+
+#p3 .bartext,
+#p8 .bartext{
+    font-size: 0.76em;
 }
 
 .w-48{

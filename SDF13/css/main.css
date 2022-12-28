@@ -3,6 +3,10 @@
     background-position: center;
 }
 
+#p8 .bartext {
+    font-size: 1em;
+}
+
 #p3 .btn,
 #p7 .btn {
     min-height: 6vh;
