@@ -114,7 +114,7 @@ const modalCont = [
     },
     {
         page: 1,
-        instruction: "'병원비 돌려받기'를 클릭하세요."
+        instruction: "병원비 돌려받기를 시작합니다. '내 병원비 돌려받기' 버튼을 눌러주세요."
     },
     {
         page: 2,
@@ -126,7 +126,7 @@ const modalCont = [
     },
     {
         page: 4,
-        instruction: "'△△해상화재보험'을 클릭하세요."
+        instruction: "'병원비를 돌려받을 보험사 선택 화면입니다. 실습에서는 △△해상화재를 선택해 주세요."
     },
     {
         page: 5,
