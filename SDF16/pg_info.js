@@ -1,4 +1,4 @@
-var total_page = 14;//페이지 수 -> 시나리오마다 total_page 수 바꾸기 
+var total_page = 15;//페이지 수 -> 시나리오마다 total_page 수 바꾸기 
 
 //오디오 배열 선언, 페이지 수 대로 배열에 mp3 넣기
 const audioArray = [];
@@ -72,11 +72,16 @@ const pageClickArea = [
         page: 14,
         correctAnswer: "pg_14_answer"
     },
+    {
+        page: 15,
+        correctAnswer: "pg_15_answer"
+    },
 ];
 
 // -=----------------------------------------------------------------------------------------------------------------------
 //페이지 수만큼 0부터 {}, 공간이 있어야 함
 const inputAnswer = [
+    {},
     {},
     {},
     {},
@@ -127,7 +132,7 @@ const modalCont = [
     },
     {
         page: 7,
-        instruction: "좌석 선택 화면입니다. 원하는 자리르 선택할 수 있습니다. 실습에서는 1번 좌석을 선택해 주세요"
+        instruction: "좌석 선택 화면입니다. 원하는 자리를 선택할 수 있습니다. 실습에서는 1번 좌석을 선택해 주세요."
     },
     {
         page: 8,
