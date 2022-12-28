@@ -244,8 +244,8 @@
 }
 
 #p2 .ticket_img {
-    width: 19.5em;
-    height: 7em;
+    width: 90%;
+    height: auto;
 }
 
 #p2 .middle_box {
@@ -260,14 +260,23 @@
 }
 
 #p2 .under_boxx {
+    height: fit-content;
     display: flex;
+    justify-content: flex-start;
+    align-items: center;
     background-color: #fff;
     border-top-left-radius: 5px;
     border-top-right-radius: 5px;
-    margin-top: 1em;
     margin-left: 1em;
     margin-right: 1em;
     padding: 1em;
+}
+
+#p2 .under_boxx svg {
+    color: #51BED4;
+    width: 1.8em;
+    height: 1.8em;
+    margin-right: .5em;
 }
 
 
@@ -280,7 +289,7 @@
 #p2 .scroller,
 #p3 .scroller,
 #p4 .scroller {
-    padding-top: 1em;
+    /* padding-top: 1em; */
     height: 81vh;
 }
 
@@ -496,7 +505,7 @@
     justify-content: center;
     align-content: center;
     flex-direction: column;
-    padding: 0.5em;
+    padding: 1.5em;
     padding-top: 0;
 }
 
@@ -586,6 +595,9 @@
     padding-left: 1em;
     padding-right: 1em;
     border: 1px solid #D6D7D9;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 #p6 .day_bar {
@@ -779,8 +791,9 @@
 }
 
 #p9 .container,
-#p10 .container {
-    padding: 0.5em;
+#p10 .container,
+#p11 .container {
+    padding: 1em;
 }
 
 #p9 .tab,
@@ -845,10 +858,6 @@ svg.bi.bi-check-circle.selc_2_input.pg_11_answer.input_2.pg_11_selected_css {
 
 #p11 .page_wrap {
     background-color: #F4F5F7;
-}
-
-#p11 .container {
-    padding: 0.5em;
 }
 
 #p11 .tab {
@@ -950,9 +959,10 @@ svg.bi.bi-check-circle.selc_2_input.pg_11_answer.input_2.pg_11_selected_css {
     background-color: #3B434E;
     color: #fff;
     width: 100%;
-    min-height: 6vh;
+    height: 6vh;
 }
 
-#p13 .scroller {
+#p13 .scroller,
+#p14 .scroller {
     height: 81vh;
 }
