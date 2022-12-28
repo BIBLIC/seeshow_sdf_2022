@@ -158,7 +158,7 @@ const modalCont = [
     },
     {
         page: 12,
-        instruction: "'입출금 통장'을 클릭하세요."
+        instruction: "계좌 목록에서 '○○뱅크 통장'을 선택해 주세요."
     },
     {
         page: 13,
