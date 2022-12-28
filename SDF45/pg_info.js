@@ -99,23 +99,23 @@ const modalCont = [
     },
     {
         page: 4,
-        instruction: ""
+        instruction: "인증을 위해 이름, 휴대폰번호, 생년월일을 모두 입력하고, '확인' 버튼을 눌러주세요."
     },
     {
         page: 5,
-        instruction: ""
+        instruction: "문자가 오면 화면에 보이는 확인코드 36을 받은 문자에 답장해주세요,"
     },
     {
         page: 6,
-        instruction: ""
+        instruction: "숫자 36을 입력하고 문자 보내기 버튼을 눌러주세요"
     },
     {
         page: 7,
-        instruction: ""
+        instruction: "금융 인증서 조회가 완료되었습니다. 금융 인증서를 누르면 실습이 완료됩니다."
     },
     {
         page: 8,
-        instruction: ""
+        instruction: "완료"
     },
     {
         page: 9,
