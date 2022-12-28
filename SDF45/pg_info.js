@@ -7,6 +7,12 @@ for (j = 1; j <= total_page; j++) {
     audioArray.push(audio);
 }
 
+$('#date-picker').datepicker({
+              
+    language: "ko",
+})
+
+
 // -----------------------------------------------------------------------------------------------------------------------
 //정답 처리할 영역 클래스 명
 //correctAnswer 로 지정한 class 외 영역 클릭 시 모달창 출력
@@ -230,7 +236,7 @@ $(document).on("click", '.pg_4_answer', function () {
                 if (page_num === 5) {
                     next();
                 }
-            }, 2000);
+            }, 8000);
           });  
     }
 });
@@ -242,7 +248,7 @@ $(document).on("click", "#next_btn", function () {
                 if (page_num === 5) {
                     next();
                 }
-            }, 2000);
+            }, 8000);
           });  
     }
 });
@@ -254,7 +260,7 @@ $(document).on("click", "#prev_btn", function () {
                 if (page_num === 5) {
                     next();
                 }
-            }, 2000);
+            }, 8000);
           });  
     }
 });

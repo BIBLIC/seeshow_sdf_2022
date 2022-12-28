@@ -384,6 +384,7 @@ document.querySelector("main").addEventListener("click", function (e) {//메인 
                 }
             });
         }
+        //아무거나 입력해도 배열길이 +1
          //answer_multi_any_txt_save pg_n_answer n_input
          else if (e.target.className.includes("answer_multi_any_txt_save")) {
             //키보드 떼고 값 일치하면 다음 버튼 활성화되게 
@@ -401,13 +402,32 @@ document.querySelector("main").addEventListener("click", function (e) {//메인 
                 }
             });
         }
+        //13자리 충족해야 배열길이 +1
         //answer2_multi_any_txt_save pg_n_answer n_input
         else if (e.target.className.includes("answer2_multi_any_txt_save")) {
             //키보드 떼고 값 일치하면 다음 버튼 활성화되게 
             $('.' + real_pg + '_input').keyup(function(){
                 user_input_txt_multi2 = this.value;
-                if (this.value.length >=1 ) {
+                if (this.value.length >=13 ) {
                     multiArr.push('B');
+                    const set = new Set(multiArr);
+                    multiArr = [...set];
+                    console.log(multiArr);
+                    console.log(multiArr.length)
+                    if (multiArr.length==3) {
+                        $(".multi_next_btn").addClass("pg_" + real_pg + "_answer");
+                    }
+                }
+            });
+        }
+        //11자리 충족해야 배열길이 +1
+        //answer3_multi_any_txt_save pg_n_answer n_input
+        else if (e.target.className.includes("answer3_multi_any_txt_save")) {
+            //키보드 떼고 값 일치하면 다음 버튼 활성화되게 
+            $('.' + real_pg + '_input').keyup(function(){
+                user_input_txt_multi3 = this.value;
+                if (this.value.length >=11 ) {
+                    multiArr.push('D');
                     const set = new Set(multiArr);
                     multiArr = [...set];
                     console.log(multiArr);
