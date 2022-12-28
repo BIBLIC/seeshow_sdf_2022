@@ -77,11 +77,7 @@ const inputAnswer = [
     {},
     {},
     {},
-    {},
-    {},
-    {},
-    {},
-    {},
+    
 ];
 
 
@@ -109,23 +105,23 @@ const modalCont = [
     },
     {
         page: 5,
-        instruction: "문자가 오면 화면에 보이는 확인코드 36을 받은 문자에 답장해주세요,"
+        instruction: "문자가 오면 화면에 보이는 확인코드 36을 받은 문자에 답장해주세요."
     },
     {
         page: 6,
-        instruction: "숫자 36을 입력하고 문자 보내기 버튼을 눌러주세요"
+        instruction: "숫자 36을 입력하고 문자 보내기 버튼을 눌러주세요."
     },
     {
         page: 7,
-        instruction: "금융 인증서 조회가 완료되었습니다. 금융 인증서를 누르면 실습이 완료됩니다."
+        instruction: "페이지가 자동으로 넘어갑니다."
     },
     {
         page: 8,
-        instruction: "완료"
+        instruction: "금융 인증서 조회가 완료되었습니다. 금융 인증서를 누르면 실습이 완료됩니다."
     },
     {
         page: 9,
-        instruction: ""
+        instruction: "완료"
     },
 
 ];
@@ -253,6 +249,7 @@ $(document).on("click", "#next_btn", function () {
     }
 });
 
+
 $(document).on("click", "#prev_btn", function () {
     if (page_num === 6) {
         $( document ).ready(function() {
@@ -261,6 +258,44 @@ $(document).on("click", "#prev_btn", function () {
                     next();
                 }
             }, 8000);
+          });  
+    }
+});
+
+//  =====================================================
+
+$(document).on("click", '.pg_6_answer', function () {
+    if (page_num === 7) {
+        $( document ).ready(function() {
+            setTimeout(function () {
+                if (page_num === 7) {
+                    next();
+                }
+            }, 1500);
+          });  
+    }
+});
+
+$(document).on("click", "#next_btn", function () {
+    if (page_num === 6) {
+        $( document ).ready(function() {
+            setTimeout(function () {
+                if (page_num === 7) {
+                    next();
+                }
+            }, 1500);
+          });  
+    }
+});
+
+$(document).on("click", "#prev_btn", function () {
+    if (page_num === 8) {
+        $( document ).ready(function() {
+            setTimeout(function () {
+                if (page_num === 7) {
+                    next();
+                }
+            }, 1500);
           });  
     }
 });
