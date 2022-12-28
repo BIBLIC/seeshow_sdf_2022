@@ -96,7 +96,7 @@ const modalCont = [
     },
     {
         page: 2,
-        instruction: "'예약하기' 버튼을 눌러주세요"
+        instruction: "'예약' 버튼을 눌러주세요"
     },
     {
         page: 3,
