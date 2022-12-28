@@ -70,39 +70,39 @@ const inputAnswer = [
 const modalCont = [
     {
         page: 0,
-        instruction: ""
+        instruction: "시작하기 버튼을 눌러주세요."
     },
     {
         page: 1,
-        instruction: ""
+        instruction: "로딩중입니다."
     },
     {
         page: 2,
-        instruction: ""
+        instruction: "어카운트 인포는 금융결제원에서 운영하는 서비스입니다. 휴면계좌 한눈에 서비스 이용을 위해 어카운트 인포에 금융인증서로 로그인하겠습니다. 금융인증서를 눌러주세요"
     },
     {
         page: 3,
-        instruction: ""
+        instruction: "금융인증서 비밀번호 6자리를 입력해 주세요."
     },
     {
         page: 4,
-        instruction: ""
+        instruction: "우측 하단 점 세개 아이콘의 '더보기' 버튼을 눌러주세요."
     },
     {
         page: 5,
-        instruction: ""
+        instruction: "메뉴에서 '휴면예금/보험금 조회'를 찾아서 눌러주세요."
     },
     {
         page: 6,
-        instruction: ""
+        instruction: "휴면예금/보험금 조회를 위한 동의 항목에 체크하여 동의해 주세요. 모든 동의가 필수입니다. 모두 동의하고 '다음'버튼을 눌러주세요."
     },
     {
         page: 7,
-        instruction: ""
+        instruction: "휴면예금 보험금이 조회되었습니다. 총 1개의 계좌를 찾았습니다. 조회 된 계좌를 누르면 실습이 완료됩니다."
     },
     {
         page: 8,
-        instruction: ""
+        instruction: "완료"
     },
 
 ];
