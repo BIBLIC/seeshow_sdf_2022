@@ -453,10 +453,6 @@ $(document).on("click", ".pg_1_answer", function () {
 });
 $(document).on("click", ".okBtn1", function () {
     modal1.style.display = "none";
-    modal1_2.style.display = "";
-});
-$(document).on("click", ".okBtn1_1", function () {
-    modal1_2.style.display = "none";
     //console.log('전 p',real_pg);
     next();
     //console.log('후 p',real_pg);
