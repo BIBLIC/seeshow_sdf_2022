@@ -146,7 +146,7 @@ const modalCont = [
     },
     {
         page: 10,
-        instruction: "키워드 입력란에 '자전거'를 입력하고 '등록'을 눌러하세요."
+        instruction: "키워드 입력란에 '자전거'를 입력하고 '등록'을 눌러주세요."
     },
     {
         page: 11,
