@@ -104,7 +104,7 @@ const modalCont = [
     },
     {
         page: 3,
-        instruction: "팝업창의 '예' 버튼을 클릭하세요"
+        instruction: "알림창의 '예' 버튼을 클릭하세요"
     },
     {
         page: 4,
