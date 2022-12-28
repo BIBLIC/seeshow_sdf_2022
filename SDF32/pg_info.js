@@ -121,7 +121,7 @@ const modalCont = [
     },
     {
         page: 1,
-        instruction: "우측 하단의 메뉴 영역을 눌러주세요"
+        instruction: "카카오톡 선물하기는 카카오톡에서 시작합니다. 우측 하단 점세개 모양의 더보기를 클릭해주세요."
     },
     {
         page: 2,
@@ -169,7 +169,7 @@ const modalCont = [
     },
     {
         page: 13,
-        instruction: "'약관 전체동의'를 눌러주세요."
+        instruction: "'필수 약관에만 동의해주세요."
     },
     {
         page: 14,
