@@ -100,6 +100,9 @@ const modalCont = [
 
 const cursor_pos_1 = document.querySelector('.cursor_pos_1');
 const cursor_pos_2 = document.querySelector('.cursor_pos_2');
+const cursor_pos_2_2 = document.querySelector('.cursor_pos_2_2');
+const cursor_pos_2_3 = document.querySelector('.cursor_pos_2_3');
+const cursor_pos_2_4 = document.querySelector('.cursor_pos_2_4');
 // const cursor_pos_3 = document.querySelector('.cursor_pos_3');
 // const cursor_pos_4 = document.querySelector('.cursor_pos_4');
 // const cursor_pos_5 = document.querySelector('.cursor_pos_5');
@@ -107,6 +110,9 @@ const cursor_pos_2 = document.querySelector('.cursor_pos_2');
 
 const cursor_wrap_1 = document.querySelector('.cursor_wrap_1');
 const cursor_wrap_2 = document.querySelector('.cursor_wrap_2');
+const cursor_wrap_2_2 = document.querySelector('.cursor_wrap_2_2');
+const cursor_wrap_2_3 = document.querySelector('.cursor_wrap_2_3');
+const cursor_wrap_2_4 = document.querySelector('.cursor_wrap_2_4');
 // const cursor_wrap_3 = document.querySelector('.cursor_wrap_3');
 // const cursor_wrap_4 = document.querySelector('.cursor_wrap_4');
 // const cursor_wrap_5 = document.querySelector('.cursor_wrap_5');
@@ -115,6 +121,9 @@ const cursor_wrap_2 = document.querySelector('.cursor_wrap_2');
 
 cursor_wrap_1.style.zIndex = "100";
 cursor_wrap_2.style.zIndex = "100";
+cursor_wrap_2_2.style.zIndex = "100";
+cursor_wrap_2_3.style.zIndex = "100";
+cursor_wrap_2_4.style.zIndex = "100";
 // cursor_wrap_3.style.zIndex = "100";
 // cursor_wrap_4.style.zIndex = "100";
 // cursor_wrap_5.style.zIndex = "100";
@@ -134,12 +143,45 @@ createPopper(cursor_pos_1, cursor_wrap_1, {
     ],
 });
 createPopper(cursor_pos_2, cursor_wrap_2, {
-    placement: 'right',
+    placement: 'top',
     modifiers: [
         {
             name: 'offset',
             options: {
-                offset: [30,0],
+                offset: [0,10],
+            },
+        },
+    ],
+});
+createPopper(cursor_pos_2_2, cursor_wrap_2_2, {
+    placement: 'top',
+    modifiers: [
+        {
+            name: 'offset',
+            options: {
+                offset: [0,10],
+            },
+        },
+    ],
+});
+createPopper(cursor_pos_2_3, cursor_wrap_2_3, {
+    placement: 'top',
+    modifiers: [
+        {
+            name: 'offset',
+            options: {
+                offset: [0,10],
+            },
+        },
+    ],
+});
+createPopper(cursor_pos_2_4, cursor_wrap_2_4, {
+    placement: 'top',
+    modifiers: [
+        {
+            name: 'offset',
+            options: {
+                offset: [0,0],
             },
         },
     ],
@@ -190,3 +232,19 @@ createPopper(cursor_pos_2, cursor_wrap_2, {
 //         },
 //     ],
 // });
+
+
+
+$(document).on("click", "#hint_btn", function () {
+    if (page_num === 2) {
+
+        var total_height = $('.scroller').height();
+        let scrollPos = total_height * 0 + 100;
+        $('.scroller').scrollTop(scrollPos);
+
+        $(".cursor_wrap_2_2").toggleClass('show');
+        $(".cursor_wrap_2_3").toggleClass('show');
+        $(".cursor_wrap_2_4").toggleClass('show');
+    }
+});
+
