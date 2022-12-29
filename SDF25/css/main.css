@@ -344,6 +344,10 @@ svg {
 
 
 /* ---------------------------------------- */
+#p4 .upper {
+    z-index: 100;
+}
+
 #p3 .tab ,
 #p4 .tab ,
 #p5 .tab {
@@ -384,6 +388,7 @@ svg {
     border-bottom-right-radius: 0;
     word-break: break-all;
     word-wrap:break-word;
+    background-color: white;
 }
 
 #p3 .tab .left,
