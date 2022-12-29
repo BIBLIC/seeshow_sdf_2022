@@ -96,59 +96,59 @@ const inputAnswer = [
 const modalCont = [
     {
         page: 0,
-        instruction: ""
+        instruction: "시작하기 버튼을 눌러주세요."
     },
     {
         page: 1,
-        instruction: ""
+        instruction: "로딩중입니다."
     },
     {
         page: 2,
-        instruction: ""
+        instruction: "OTT플랫폼 이용하기를 실습하겠습니다. 첫 화면에서 '시리즈 또는 영화를 눌러서 원하는 콘텐츠를 볼 수 있습니다. 시리즈 또는 영화를 누르면 다음 기능을 소개해 드립니다."
     },
     {
         page: 3,
-        instruction: ""
+        instruction: "NEW & HOT 기능에서는 공개 예정, TOP 10, 그리고 인기 콘텐츠 등을 확인할 수 있습니다. NEW & HOT을 누르면 다음 기능을 소개해 드립니다."
     },
     {
         page: 4,
-        instruction: ""
+        instruction: "카테고리에서는 다양한 콘텐츠 분류를 확인할 수 있습니다. 카테고리를 찾아서 눌러주세요."
     },
     {
         page: 5,
-        instruction: ""
+        instruction: "카테고리를 선택해서 원하는 콘텐츠를 찾을 수 있습니다. 엑스표 모양의 닫기 버튼을 눌러주세요."
     },
     {
         page: 6,
-        instruction: ""
+        instruction: "이어서 콘텐츠를 볼 때 자막을 크게하는 방법을 실습하겠습니다. 우측 상단 스마일 모양의 프로필을 눌러주세요."
     },
     {
         page: 7,
-        instruction: ""
+        instruction: "프로필 및 기타 설정 화면에서 프로필 관리 버튼을 눌러주세요."
     },
     {
         page: 8,
-        instruction: ""
+        instruction: "프로필 중에서 월디 프로필을 선택해 주세요,"
     },
     {
         page: 9,
-        instruction: ""
+        instruction: "메뉴에서 자막 표시 설정을 찾아서 눌러주세요,"
     },
     {
         page: 10,
-        instruction: ""
+        instruction: "글자 크기에서 가장 큰 '가'자를 눌러주세요,"
     },
     {
         page: 11,
-        instruction: ""
+        instruction: "화면에 샘플 글자 크기를 확인하고 저장 버튼을 눌러주세요."
     },
     {
         page: 12,
-        instruction: ""
+        instruction: "자막 글자 크기 설정이 저장되었습니다. 화면을 누르면 실습이 완료됩니다."
     },
     {
         page: 13,
-        instruction: ""
+        instruction: "완료"
     },
 ];
 
