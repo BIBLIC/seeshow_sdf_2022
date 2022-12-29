@@ -187,7 +187,7 @@ const modalCont = [
 
 //*******************************************************************************
 //**************************+    커서   +*********************************** 
-
+const cursor_pos_1 = document.querySelector('.cursor_pos_1');
 const cursor_pos_2 = document.querySelector('.cursor_pos_2');
 const cursor_pos_3 = document.querySelector('.cursor_pos_3');
 // const cursor_pos_3 = document.querySelector('.cursor_pos_3');
@@ -198,7 +198,7 @@ const cursor_pos_3 = document.querySelector('.cursor_pos_3');
 // const cursor_pos_8 = document.querySelector('.cursor_pos_8');
 // const cursor_pos_9 = document.querySelector('.cursor_pos_9');
 // const cursor_pos_10 = document.querySelector('.cursor_pos_10');
-
+const cursor_wrap_1 = document.querySelector('.cursor_wrap_1');
 const cursor_wrap_2 = document.querySelector('.cursor_wrap_2');
 const cursor_wrap_3 = document.querySelector('.cursor_wrap_3');
 // const cursor_wrap_3 = document.querySelector('.cursor_wrap_3');
@@ -210,7 +210,7 @@ const cursor_wrap_3 = document.querySelector('.cursor_wrap_3');
 // const cursor_wrap_9 = document.querySelector('.cursor_wrap_9');
 // const cursor_wrap_10 = document.querySelector('.cursor_wrap_10');
 
-
+cursor_wrap_1.style.zIndex = "100";
 cursor_wrap_2.style.zIndex = "100";
 cursor_wrap_3.style.zIndex = "100";
 // cursor_wrap_3.style.zIndex = "100";
@@ -224,6 +224,17 @@ cursor_wrap_3.style.zIndex = "100";
 
 
 const { createPopper } = Popper;
+createPopper(cursor_pos_1, cursor_wrap_1, {
+    placement: 'right',
+    modifiers: [
+        {
+            name: 'offset',
+            options: {
+                offset: [0,0],
+            },
+        },
+    ],
+});
 createPopper(cursor_pos_2, cursor_wrap_2, {
     placement: 'bottom',
     modifiers: [
