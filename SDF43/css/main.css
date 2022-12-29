@@ -26,33 +26,67 @@
     justify-content: center;
 }
 
-#p5 .dot {
-    display: block;
-    width: .5em;
-    height: .5em;
-    background: #000000;
-    border-radius: 100%;
-    margin-left: .6em;
-    margin-right: .6em;
+
+.under_bar .btn-b .btn-c{
+    min-height: 6vh;
 }
 
-#p5 .dot_none {
-    display: block;
-    width: .5em;
-    height: .5em;
-    background: #ffffff;
-    border-radius: 100%;
-    margin-left: .6em;
-    margin-right: .6em;
+.under_bar {
+    
+    width: 100%;
+    height: 15vh;
+    background: #fff;
+    padding-top: 1em;
+    border-radius: 0;
+    min-height: 6vh;
+    
 }
 
-/* ------------------------------------------P1------------------------------------------- */
-#p1 .menu {
-    font-size: larger;
-    font-weight: bold;
+#p1 .btn {
+    width: 20%;
 }
-#p1 .menu .container .btn {
-    margin: 4em;
+
+#p1 .top_bar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0.5em;
+}
+#p1 .box {
+    width: 100%;
+    min-height: 6vh;
+    background-color: #ffffff;
+    border-radius: 10px;
+    padding: 1em;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+ }
+
+#p1 .gap {
+    width: 100%;
+    padding: 1em;
+    padding-bottom: 0.5em;
+}
+
+#p1 .icon {
+    padding: 1em;
+}
+
+#p1 .btn {
+    min-height: 3vh;
+}
+
+#p1 .btn_edit {
+    border : none !important;
+}
+
+#p1 .dot {
+    display: block;
+    width: 4.3em;
+    height: 3em;
+    background: #1F4EF5;
+    border-radius: 100%;
 }
 
 #p1  .under_bar {
@@ -64,55 +98,83 @@
     
 }
 
-#p1 .container .icon,
+
+/* --------------------------------------------------------------- */
+#p2 .menu {
+    font-size: larger;
+    font-weight: bold;
+}
+#p2 .menu .container .btn {
+    margin: 4em;
+}
+
+#p2  .under_bar {
+    
+    width: 100%;
+    height: 9vh;
+    padding-top: .5em;
+    min-height: 6vh;
+    
+}
+
 #p2 .container .icon,
 #p3 .container .icon,
 #p4 .container .icon,
-#p12 .container .icon {
+#p5 .container .icon,
+#p13 .container .icon {
     border: 0;
     display: flex;
     justify-content: center;
     align-items: center;
 }
 
- .under_bar {
-    
-    width: 100%;
-    height: 15vh;
-    background: #fff;
-    padding-top: 1em;
-    border-radius: 0;
-    min-height: 6vh;
-    
-}
 
-#p2 .icon {
-    height: 40vh;
-}
-
-.under_bar .btn-b .btn-c{
-    min-height: 6vh;
-}
 
 #p3 .icon {
     height: 40vh;
 }
 
-#p8 .icon {
+
+
+#p4 .icon {
+    height: 40vh;
+}
+
+#p6 .dot {
+    display: block;
+    width: .5em;
+    height: .5em;
+    background: #000000;
+    border-radius: 100%;
+    margin-left: .6em;
+    margin-right: .6em;
+}
+
+#p6 .dot_none {
+    display: block;
+    width: .5em;
+    height: .5em;
+    background: #ffffff;
+    border-radius: 100%;
+    margin-left: .6em;
+    margin-right: .6em;
+}
+
+#p9 .icon {
     width: 10vw;
     height: 10vh;
     background-color: rgb(214, 214, 214);
 }
-#p8 .box {
+#p9 .box {
     background-color: #FAFAFB;
     height: 8vh;
 }
 
-#p8 .pat {
+#p9 .pat {
     padding-top: 3em;
 }
 
-#p9 .pop {
+#p10 .pop {
     position: absolute;
     top: 40%;
     left: 10%;
@@ -122,24 +184,7 @@
 }
 
 /*추후 삭제 요망*/
-#p9 .icon {
-    width: 6em;
-    height: 6em;
-}
-
 #p10 .icon {
-    width: 6em;
-    height: 6em;
-}
-
-#p10 .top_bar {
-    display: flex;
-    justify-content: space-between;
-    padding: 0.5em;
-}
-
-#p11 .file,
-#p10 .file {
     width: 6em;
     height: 6em;
 }
@@ -149,7 +194,24 @@
     height: 6em;
 }
 
-#p12 .under_bar {
+#p11 .top_bar {
+    display: flex;
+    justify-content: space-between;
+    padding: 0.5em;
+}
+
+#p12 .file,
+#p11 .file {
+    width: 6em;
+    height: 6em;
+}
+
+#p12 .icon {
+    width: 6em;
+    height: 6em;
+}
+
+#p13 .under_bar {
     width: 100%;
     height: 40%;
     background: #fff;
@@ -158,25 +220,25 @@
     justify-content: flex-start;
     
 }
-#p12 {
+#p13 {
     background-color: #4C4C4C;
 }
 
-#p13 .infomation {
+#p14 .infomation {
     padding: 1em;
     font-size: large;
 }
 
-#p13 .file {
+#p14 .file {
     width: 100%;
     height: 50vh;
 }
 
-#p13 .scroller {
+#p14 .scroller {
     height: 70vh;
 }
 
-#p13 .btn {
+#p14 .btn {
     position:absolute;
     bottom: 0;
 }
