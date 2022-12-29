@@ -1,7 +1,7 @@
 var page_num = 0; // 수정 XXX -> 맨 처음 페이지 초기화하기 위함
-var user_input_txt='';
-var user_input_txt_multi='';
-var user_input_txt_multi2='';
+var user_input_txt = '';
+var user_input_txt_multi = '';
+var user_input_txt_multi2 = '';
 
 const prevBtn = document.getElementById("prev");
 const nextBtn = document.getElementById("next");
@@ -43,9 +43,9 @@ window.addEventListener("resize", () => {
 //         document.body.style.height = (document.documentElement.clientHeight + 5) + 'px';
 //         window.scrollTo(0, 1);
 //     }, false);
-        
+
 // } else {// 모바일 외
-    
+
 // }
 
 
@@ -129,9 +129,9 @@ $(document).on("click", "#next_btn", function () {
             $("#p" + page_num).toggleClass("pactive");
             $(".pactive").fadeIn(0);
         });
-//         $('.shadow_ext').removeClass("addShadow");
-// $('.shadow_inner').removeClass("addInnerShadow");
-// $('.border_darker').removeClass("mk_border_darker");
+        //         $('.shadow_ext').removeClass("addShadow");
+        // $('.shadow_inner').removeClass("addInnerShadow");
+        // $('.border_darker').removeClass("mk_border_darker");
     }
     console.log(page_num);
     audioArray[page_num - 1].load();
@@ -177,9 +177,9 @@ $(document).on("click", "#prev_btn", function () {
             $("#p" + page_num).toggleClass("pactive");
             $(".pactive").fadeIn(0);
         });
-//         $('.shadow_ext').removeClass("addShadow");
-// $('.shadow_inner').removeClass("addInnerShadow");
-// $('.border_darker').removeClass("mk_border_darker");
+        //         $('.shadow_ext').removeClass("addShadow");
+        // $('.shadow_inner').removeClass("addInnerShadow");
+        // $('.border_darker').removeClass("mk_border_darker");
     }
     console.log(page_num);
     if (page_num != 0) {
@@ -363,40 +363,40 @@ document.querySelector("main").addEventListener("click", function (e) {//메인 
                 }
             });
             //키보드 떼고 값 일치하면 다음 버튼 활성화되게 
-            $('.' + real_pg + '_input').keyup(function(){
+            $('.' + real_pg + '_input').keyup(function () {
                 let unspacedValue = this.value.split(' ').join('');
                 if (unspacedValue == inputableAnswer) {
                     $(".input_nxt_btn_txt").addClass("pg_" + real_pg + "_answer");
                 }
             });
         }
-        
+
 
         //----자동으로 페이지 넘겨야할 때 : 사용자 입력 값 저장??해두기?----------------
         //answer_auto_any_txt_save pg_n_answer n_input
         else if (e.target.className.includes("answer_auto_any_txt_save")) {
             //키보드 떼고 값 일치하면 다음 버튼 활성화되게 
-            $('.' + real_pg + '_input').keyup(function(){
+            $('.' + real_pg + '_input').keyup(function () {
                 user_input_txt = this.value;
-                if (this.value.length >=1) {
+                if (this.value.length >= 1) {
                     $(".input_nxt_btn").addClass("pg_" + real_pg + "_answer");
                     console.log(user_input_txt);
                 }
             });
         }
         //아무거나 입력해도 배열길이 +1
-         //answer_multi_any_txt_save pg_n_answer n_input
-         else if (e.target.className.includes("answer_multi_any_txt_save")) {
+        //answer_multi_any_txt_save pg_n_answer n_input
+        else if (e.target.className.includes("answer_multi_any_txt_save")) {
             //키보드 떼고 값 일치하면 다음 버튼 활성화되게 
-            $('.' + real_pg + '_input').keyup(function(){
+            $('.' + real_pg + '_input').keyup(function () {
                 user_input_txt_multi = this.value;
-                if (this.value.length >=1) {
+                if (this.value.length >= 1) {
                     multiArr.push('A');
                     const set = new Set(multiArr);
                     multiArr = [...set];
                     console.log(multiArr);
                     console.log(multiArr.length)
-                    if (multiArr.length==3) {
+                    if (multiArr.length == 3) {
                         $(".multi_next_btn").addClass("pg_" + real_pg + "_answer");
                     }
                 }
@@ -406,15 +406,15 @@ document.querySelector("main").addEventListener("click", function (e) {//메인 
         //answer2_multi_any_txt_save pg_n_answer n_input
         else if (e.target.className.includes("answer2_multi_any_txt_save")) {
             //키보드 떼고 값 일치하면 다음 버튼 활성화되게 
-            $('.' + real_pg + '_input').keyup(function(){
+            $('.' + real_pg + '_input').keyup(function () {
                 user_input_txt_multi2 = this.value;
-                if (this.value.length >=13 ) {
+                if (this.value.length >= 13) {
                     multiArr.push('B');
                     const set = new Set(multiArr);
                     multiArr = [...set];
                     console.log(multiArr);
                     console.log(multiArr.length)
-                    if (multiArr.length==3) {
+                    if (multiArr.length == 3) {
                         $(".multi_next_btn").addClass("pg_" + real_pg + "_answer");
                     }
                 }
@@ -424,15 +424,15 @@ document.querySelector("main").addEventListener("click", function (e) {//메인 
         //answer3_multi_any_txt_save pg_n_answer n_input
         else if (e.target.className.includes("answer3_multi_any_txt_save")) {
             //키보드 떼고 값 일치하면 다음 버튼 활성화되게 
-            $('.' + real_pg + '_input').keyup(function(){
+            $('.' + real_pg + '_input').keyup(function () {
                 user_input_txt_multi3 = this.value;
-                if (this.value.length >=11 ) {
+                if (this.value.length >= 11) {
                     multiArr.push('D');
                     const set = new Set(multiArr);
                     multiArr = [...set];
                     console.log(multiArr);
                     console.log(multiArr.length)
-                    if (multiArr.length==3) {
+                    if (multiArr.length == 3) {
                         $(".multi_next_btn").addClass("pg_" + real_pg + "_answer");
                     }
                 }
@@ -443,10 +443,10 @@ document.querySelector("main").addEventListener("click", function (e) {//메인 
         //ID1_auto_txt pg_n_answer n_input
         else if (e.target.className.includes("ID1_auto_txt")) {
             //키보드 떼고 값 일치하면 다음 버튼 활성화되게 
-            $('.' + real_pg + '_input').keyup(function(){
-                if (this.value.length ==1) {
+            $('.' + real_pg + '_input').keyup(function () {
+                if (this.value.length == 1) {
                     next(real_pg);
-                    
+
                 }
             });
         }
@@ -455,10 +455,10 @@ document.querySelector("main").addEventListener("click", function (e) {//메인 
         //ID6_auto_txt pg_n_answer n_input
         else if (e.target.className.includes("ID6_auto_txt")) {
             //키보드 떼고 값 일치하면 다음 버튼 활성화되게 
-            $('.' + real_pg + '_input').keyup(function(){
-                if (this.value.length ==6) {
+            $('.' + real_pg + '_input').keyup(function () {
+                if (this.value.length == 6) {
                     next(real_pg);
-                    
+
                 }
             });
         }
@@ -467,20 +467,20 @@ document.querySelector("main").addEventListener("click", function (e) {//메인 
         //ID7_auto_txt pg_n_answer n_input
         else if (e.target.className.includes("ID7_auto_txt")) {
             //키보드 떼고 값 일치하면 다음 버튼 활성화되게 
-            $('.' + real_pg + '_input').keyup(function(){
-                if (this.value.length ==7) {
+            $('.' + real_pg + '_input').keyup(function () {
+                if (this.value.length == 7) {
                     next(real_pg);
-                    
+
                 }
             });
         }
-      
+
 
         //----자동으로 페이지 넘겨야할 때 : 텍스트 입력 --토스 등등-----------------
         //answer_auto_txt pg_n_answer n_input
         else if (e.target.className.includes("answer_auto_txt")) {
             //키보드 떼고 값 일치하면 다음 버튼 활성화되게 
-            $('.' + real_pg + '_input').keyup(function(){
+            $('.' + real_pg + '_input').keyup(function () {
                 let unspacedValue = this.value.split(' ').join('');
                 if (unspacedValue == inputableAnswer) {
                     next(real_pg);
@@ -496,7 +496,7 @@ document.querySelector("main").addEventListener("click", function (e) {//메인 
             $('.' + real_pg + '_input').keydown(function (e) {
                 if (event.which === 13) {
                     let unspacedValue = this.value.split(' ').join('');
-                    if (unspacedValue.length >= 1 ) {
+                    if (unspacedValue.length >= 1) {
                         console.log(unspacedValue);
                         console.log(unspacedValue.length);
                         next(real_pg);
@@ -508,21 +508,21 @@ document.querySelector("main").addEventListener("click", function (e) {//메인 
             });
 
             //키보드 떼고 1자리 이상이면 다음 버튼 활성화되게 
-            $('.' + real_pg + '_input').keyup(function(){
-                if (this.value.length >=1 ) {
+            $('.' + real_pg + '_input').keyup(function () {
+                if (this.value.length >= 1) {
                     $(".input_nxt_btn").addClass("pg_" + real_pg + "_answer");
                     $(".nxt_btn_able").addClass("btn_able_color");
                 }
             });
         }
 
-        
+
         //----아무거나 입력해도 될 때 // 다 입력하고 다음 값 입력할 수 있도록 페이지 넘겨줄 때 -------------------
         //answer_autoNxt_any_txt pg_n_answer n_input
         else if (e.target.className.includes("answer_autoNxt_any_txt")) {
 
-            $('.' + real_pg + '_input').keyup(function(){
-                if (this.value.length >=1 ) {
+            $('.' + real_pg + '_input').keyup(function () {
+                if (this.value.length >= 1) {
                     $(".nxt_Input").addClass("pg_" + real_pg + "_answer");
                 }
             });
@@ -536,7 +536,7 @@ document.querySelector("main").addEventListener("click", function (e) {//메인 
             $('.' + real_pg + '_input').keydown(function (e) {
                 if (event.which === 13) {
                     let unspacedValue = this.value.split(' ').join('');
-                    if (unspacedValue.length == 13 ) {
+                    if (unspacedValue.length == 13) {
                         console.log(unspacedValue);
                         console.log(unspacedValue.length);
                         next(real_pg);
@@ -548,8 +548,8 @@ document.querySelector("main").addEventListener("click", function (e) {//메인 
             });
 
             //키보드 떼고 13자리 이상이면 다음 버튼 활성화되게 
-            $('.' + real_pg + '_input').keyup(function(){
-                if (this.value.length ==13 ) {
+            $('.' + real_pg + '_input').keyup(function () {
+                if (this.value.length == 13) {
                     $(".input_nxt_btn").addClass("pg_" + real_pg + "_answer");
                 }
             });
@@ -559,8 +559,8 @@ document.querySelector("main").addEventListener("click", function (e) {//메인 
         // ID_num14 pg_n_answer n_input
         else if (e.target.className.includes("ID_num14")) {
             //키보드 떼고 14자리 이상이면 다음 버튼 활성화되게 
-            $('.' + real_pg + '_input').keyup(function(){
-                if (this.value.length ==14 ) {
+            $('.' + real_pg + '_input').keyup(function () {
+                if (this.value.length == 14) {
                     next(real_pg);
                 }
             });
@@ -571,8 +571,8 @@ document.querySelector("main").addEventListener("click", function (e) {//메인 
         // ID_num10 pg_n_answer n_input
         else if (e.target.className.includes("ID_num10")) {
             //키보드 떼고 10자리 이상이면 다음 버튼 활성화되게 
-            $('.' + real_pg + '_input').keyup(function(){
-                if (this.value.length == 10 ) {
+            $('.' + real_pg + '_input').keyup(function () {
+                if (this.value.length == 10) {
                     $(".nxt_btn_able").addClass("btn_able_color");
                     $(".input_nxt_btn").addClass("pg_" + real_pg + "_answer");
                 }
@@ -587,7 +587,7 @@ document.querySelector("main").addEventListener("click", function (e) {//메인 
             $('.' + real_pg + '_input').keydown(function (e) {
                 if (event.which === 13) {
                     let unspacedValue = this.value.split(' ').join('');
-                    if (unspacedValue.length == 11 ) {
+                    if (unspacedValue.length == 11) {
                         console.log(unspacedValue);
                         console.log(unspacedValue.length);
                         next(real_pg);
@@ -599,8 +599,8 @@ document.querySelector("main").addEventListener("click", function (e) {//메인 
             });
 
             //키보드 떼고 11자리 이상이면 다음 버튼 활성화되게 
-            $('.' + real_pg + '_input').keyup(function(){
-                if (this.value.length ==11 ) {
+            $('.' + real_pg + '_input').keyup(function () {
+                if (this.value.length == 11) {
                     if (e.target.className.includes("toss_btn_chng")) {
                         $(".input_nxt_btn").removeClass("btn-disabled");
                         $(".input_nxt_btn").addClass("btn-b");
@@ -616,8 +616,8 @@ document.querySelector("main").addEventListener("click", function (e) {//메인 
 
 
             //키보드 떼고 6자리 이상이면 다음 버튼 활성화되게 
-            $('.' + real_pg + '_input').keyup(function(){
-                if (this.value.length == 6 ) {
+            $('.' + real_pg + '_input').keyup(function () {
+                if (this.value.length == 6) {
                     $(".input_nxt_btn").addClass("pg_" + real_pg + "_answer");
                     $(".input_nxt_btn").removeClass("btn-g");
                     $(".input_nxt_btn").addClass("btn-r");
@@ -633,7 +633,7 @@ document.querySelector("main").addEventListener("click", function (e) {//메인 
             $('.' + real_pg + '_input').keydown(function (e) {
                 if (event.which === 13) {
                     let unspacedValue = this.value.split(' ').join('');
-                    if (unspacedValue.length == 4 ) {
+                    if (unspacedValue.length == 4) {
                         console.log(unspacedValue);
                         console.log(unspacedValue.length);
                         next(real_pg);
@@ -645,8 +645,8 @@ document.querySelector("main").addEventListener("click", function (e) {//메인 
             });
 
             //키보드 떼고 4자리 이상이면 다음 버튼 활성화되게 
-            $('.' + real_pg + '_input').keyup(function(){
-                if (this.value.length ==4 ) {
+            $('.' + real_pg + '_input').keyup(function () {
+                if (this.value.length == 4) {
                     $(".input_nxt_btn").addClass("pg_" + real_pg + "_answer");
                 }
             });
@@ -680,14 +680,14 @@ document.querySelector("main").addEventListener("click", function (e) {//메인 
                             console.log(pw_set);
                             $(".submit_btn").addClass("pg_" + real_pg + "_answer");
                             pwArr = [];
-                            for ( i =0; i <4; i++) {
-                                $(".dot"+i).css("background-color", "#4f4f5a");//버튼누르면 색칠초기화
+                            for (i = 0; i < 4; i++) {
+                                $(".dot" + i).css("background-color", "#4f4f5a");//버튼누르면 색칠초기화
                             }
                         });
                     }
                 }
             }
-        } 
+        }
 
         //----비번6자리 있을 경우 + dot -------------------
         //pw_input pg_n_answer pwn input_(키패드 넘버)
@@ -716,14 +716,14 @@ document.querySelector("main").addEventListener("click", function (e) {//메인 
                             console.log(pw_set);
                             $(".submit_btn").addClass("pg_" + real_pg + "_answer");
                             pwArr = [];
-                            for ( i =0; i <6; i++) {
-                                $(".dot"+i).css("background-color", "#a9a9a9");//버튼누르면 색칠초기화
+                            for (i = 0; i < 6; i++) {
+                                $(".dot" + i).css("background-color", "#a9a9a9");//버튼누르면 색칠초기화
                             }
                         });
                     }
                 }
             }
-        } 
+        }
 
 
         //----비번6자리 있을 경우 + dot 자동 -------------------
@@ -753,21 +753,21 @@ document.querySelector("main").addEventListener("click", function (e) {//메인 
                             console.log(pw_set);
                             $(".submit_btn").addClass("pg_" + real_pg + "_answer");
                             pwArr = [];
-                            for ( i =0; i <6; i++) {
-                                $(".dot"+i).css("background-color", "#a9a9a9");//버튼누르면 색칠초기화
+                            for (i = 0; i < 6; i++) {
+                                $(".dot" + i).css("background-color", "#a9a9a9");//버튼누르면 색칠초기화
                             }
                         });
                         next(real_pg);
-                        for ( i =0; i <6; i++) {
-                            $(".dot"+i).css("background-color", "#a9a9a9");//버튼누르면 색칠초기화
+                        for (i = 0; i < 6; i++) {
+                            $(".dot" + i).css("background-color", "#a9a9a9");//버튼누르면 색칠초기화
                         }
                         pwArr = []; //배열 초기화
-                    } 
+                    }
                 }
             }
-        } 
+        }
 
-        
+
 
         //----주민번호 뒷자리만 입력하는 경우  + dot -------------------
         //input_8 pg_n_answer IDn_input pw(키패드 넘버)
@@ -796,40 +796,52 @@ document.querySelector("main").addEventListener("click", function (e) {//메인 
                             console.log(pw_set);
                             $(".submit_btn").addClass("pg_" + real_pg + "_answer");
                             pwArr = [];
-                            for ( i =0; i <7; i++) {
-                                $(".dot_"+i).css("background-color", "#fff");//버튼누르면 색칠초기화
+                            for (i = 0; i < 7; i++) {
+                                $(".dot_" + i).css("background-color", "#fff");//버튼누르면 색칠초기화
                             }
                         });
                     }
-                } 
+                }
             }
-        } 
+        }
 
         //----날짜 선택창 있는 경우 -------------------
+        // head 부분에 ui cdn 추가
+        // 하단에 script 추가
         else if (e.target.className.includes("calendar")) {
 
-            $('.datepicker').click(function () {
-                $('.datepicker').css('display', 'none');
-                $(".cal_next_btn").addClass("pg_" + real_pg + "_answer");
-
-                multiArr.push('C');
+            $(".cal_next_btn").click(function (e) {
+                var date = $.datepicker.formatDate("yymmdd", $("#datepicker").datepicker("getDate"));
+                date = $("#datepicker").val();
+                if (date.length >= 1) {
+                    $(".cal_next_btn").addClass("pg_" + real_pg + "_answer");
+                }
+            });
+            
+            $(".multi_next_btn").click(function (e) {
+                var date = $.datepicker.formatDate("yymmdd", $("#datepicker").datepicker("getDate"));
+                date = $("#datepicker").val();
+                if (date.length >= 1) {
+                    multiArr.push('C');
                     const set = new Set(multiArr);
                     multiArr = [...set];
                     console.log(multiArr);
                     console.log(multiArr.length)
-                    if (multiArr.length==3) {
+                    if (multiArr.length == 3) {
                         $(".multi_next_btn").addClass("pg_" + real_pg + "_answer");
                     }
+                }
             });
+
         }
-        
+
         //----1개 선택하면 버튼 활성화 되는 경우 -------------------
         //active_selc_input pg_n_answer 
         else if (e.target.className.includes("active_selc_input")) {
             $(".selected").addClass("pg_" + real_pg + "_selected")
             $(".disabled_btn").addClass("pg_" + real_pg + "_answer");
-            $(".disabled_btn").removeClass("pg_" + real_pg +"_css_remove");
-           
+            $(".disabled_btn").removeClass("pg_" + real_pg + "_css_remove");
+
         }
 
         //----선택 2개 해야 하는 경우 -------------------
@@ -843,10 +855,10 @@ document.querySelector("main").addEventListener("click", function (e) {//메인 
                     console.log(selcArr);
                     console.log(selcArr.length)
                     $(".css_edit_" + j).addClass("pg_" + real_pg + "_selected_css");
-                    if (selcArr.length==2) {
+                    if (selcArr.length == 2) {
                         $(".selc_next_btn").addClass("pg_" + real_pg + "_answer");
                     }
-                } 
+                }
             }
         }
 
@@ -860,14 +872,14 @@ document.querySelector("main").addEventListener("click", function (e) {//메인 
                     selc3Arr = [...set];
                     console.log(selc3Arr);
                     console.log(selc3Arr.length)
-                    $(".pg_"+real_pg+"_css_edit_" + j).addClass("pg_" + real_pg + "_selected_css");
-                    if (selc3Arr.length==3) {
+                    $(".pg_" + real_pg + "_css_edit_" + j).addClass("pg_" + real_pg + "_selected_css");
+                    if (selc3Arr.length == 3) {
                         $(".selc_next_btn").addClass("pg_" + real_pg + "_answer");
                     }
-                } 
+                }
             }
         }
-        
+
         //암것도 없으면 모달 띄우기
         else {
             next(real_pg);//다음 페이지로 이동
