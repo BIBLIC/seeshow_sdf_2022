@@ -897,6 +897,16 @@ svg.bi.bi-check-circle.selc_2_input.pg_11_answer.input_2.pg_11_selected_css {
     background-color: #F4F5F7;
 }
 
+#p13 .tab:nth-child(1),
+#p13 .tab:nth-child(2) {
+    background-color: #fff;
+    border: 1px solid #e0e0e0;
+    padding: 0.5em;
+    padding-bottom: 0;
+    padding-top: 0;
+    border-radius: 5px;
+}
+
 #p13 .tab {
     background-color: #fff;
     border: 1px solid #e0e0e0;

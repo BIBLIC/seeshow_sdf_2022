@@ -2,6 +2,10 @@ svg {
   pointer-events: none;
 }
 
+.z-100{
+  z-index: 100;
+}
+
 .absolute-bottom {
   position: absolute;
   left: 0;
