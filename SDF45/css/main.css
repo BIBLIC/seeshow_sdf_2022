@@ -124,7 +124,7 @@ main svg {
 #p4 .form-control {
     border-radius: 0;
     border: 0;
-    padding-left: 3em;;
+    /* padding-left: 3em;; */
 }
 
 #p4 .form {
@@ -176,6 +176,7 @@ main svg {
 #p6 .pink_box {
     background-color: #FADADD;
     border-radius: 20px;
+    margin-left: 1.5em;
 }
 
 #p7 .under_bar,
@@ -203,6 +204,7 @@ main svg {
 #p7 .red_box {
     background-color: #B75C54;
     border-radius: 20px;
+    margin-right: 1.5em;
 }
 
 #p6 .top_dot,

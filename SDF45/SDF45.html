@@ -2,7 +2,8 @@
 <html>
 
 <head>
-    <meta name="viewport" content="width=device-width,height=640,initial-scale=1.0,minimum-scale=1.0,maximum-scale=1.0">
+    <meta name="viewport"
+        content="width=device-width,height=device-height,initial-scale=1.0,minimum-scale=1.0,maximum-scale=1.0">
     <title>SDF</title>
     <link href="../common/styles/reset.css" rel="stylesheet" />
     <link href="./css/main.css" rel="stylesheet" />
@@ -16,19 +17,10 @@
         integrity="sha384-OERcA2EqjJCMA+/3y+gxIOqMEjwtxJY7qPCqsdltbNJuaOe923+mo//f6V8Qbsw3"
         crossorigin="anonymous"></script>
     <script src="https://code.jquery.com/jquery-3.6.1.min.js"></script>
-    <!-- DatePicker -->
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-datepicker/1.9.0/js/bootstrap-datepicker.min.js"
-        integrity="sha512-T/tUfKSV1bihCnd+MxKD0Hm1uBBroVYBOYSk1knyvQ9VyZJpc/ALb4P0r6ubwVPSGB2GvjeoMAJJImBG12TiaQ=="
-        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
-    <link rel="stylesheet"
-        href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-datepicker/1.9.0/css/bootstrap-datepicker.min.css"
-        integrity="sha512-mSYUmp1HYZDFaVKK//63EcZq4iFWFjxSL+Z3T/aCt4IO9Cejm03q3NKKYN6pFQzY0SBOr8h+eCIAZHPXcpZaNw=="
-        crossorigin="anonymous" referrerpolicy="no-referrer" />
-    <script
-        src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-datepicker/1.9.0/locales/bootstrap-datepicker.ko.min.js"
-        integrity="sha512-L4qpL1ZotXZLLe8Oo0ZyHrj/SweV7CieswUODAAPN/tnqN3PA1P+4qPu5vIryNor6HQ5o22NujIcAZIfyVXwbQ=="
-        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
     <script src="https://unpkg.com/@popperjs/core@2"></script>
+    <!-- calendar UI -->
+    <link rel="stylesheet" href="https://code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css">
+    <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
 </head>
 
 
@@ -253,15 +245,13 @@
                         </div>
 
                         <!------------------------------ page 4 ------------------------------>
-                        <div class="page" id="p4">
+                        <div class="page active pactive" id="p4" style="display: block;">
                             <div class="page_wrap">
                                 <h1 class="pg_title" style="color: #fff;">Page4</h1>
                                 <div class="bar d-flex justify-content-between align-items-center pg_4_shadow_inner">
                                     <div class=""></div>
-                                    <svg xmlns="http://www.w3.org/2000/svg" width="25" height="25" fill="currentColor"
-                                        class="bi bi-x-lg" viewBox="0 0 16 16">
-                                        <path
-                                            d="M2.146 2.854a.5.5 0 1 1 .708-.708L8 7.293l5.146-5.147a.5.5 0 0 1 .708.708L8.707 8l5.147 5.146a.5.5 0 0 1-.708.708L8 8.707l-5.146 5.147a.5.5 0 0 1-.708-.708L7.293 8 2.146 2.854Z" />
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="25" height="25" fill="currentColor" class="bi bi-x-lg" viewBox="0 0 16 16">
+                                        <path d="M2.146 2.854a.5.5 0 1 1 .708-.708L8 7.293l5.146-5.147a.5.5 0 0 1 .708.708L8.707 8l5.147 5.146a.5.5 0 0 1-.708.708L8 8.707l-5.146 5.147a.5.5 0 0 1-.708-.708L7.293 8 2.146 2.854Z"></path>
                                     </svg>
                                 </div>
                                 <div class="container scroller fontSz">
@@ -270,29 +260,25 @@
                                     </div>
                                     <div class="d-flex flex-column mt-4 pg_4_answer">
                                         <div class="form d-flex align-items-center mb-1" role="search">
-                                            <div class="px-4">이름</div>
-                                            <input class="form-control answer_multi_any_txt_save pg_4_answer 4_input"
-                                                placeholder="이름">
+                                            <div class="px-4 w-40">이름</div>
+                                            <input class="form-control answer_multi_any_txt_save pg_4_answer 4_input" placeholder="이름">
                                         </div>
                                         <div class="form d-flex align-items-center mb-1" role="search">
-                                            <div class="px-4">휴대폰번호</div>
-                                            <input class="form-control answer3_multi_any_txt_save pg_4_answer 4_input"
-                                                type="password" placeholder="'-' 없이 휴대폰번호 11자리" maxlength='11'>
+                                            <div class="px-4 w-40">휴대폰번호</div>
+                                            <input class="form-control answer3_multi_any_txt_save pg_4_answer 4_input" type="password" placeholder="'-' 없이 휴대폰번호 11자리" maxlength="11">
                                         </div>
                                         <div class="form d-flex align-items-center mb-1" role="search">
-                                            <div class="px-4">생년월일</div>
-                                            <input type="text"
+                                            <div class="px-4 w-40">생년월일</div>
+                                            <!-- <input type="text"
                                                 class="tab w-90 d-flex justify-content-center fontSz form-control pg_4_answer calendar"
-                                                id="date-picker" placeholder="생년월일">
+                                                id="date-picker" placeholder="생년월일"> -->
+                                                <input type="text" class="tab w-90 d-flex justify-content-center form-control pg_4_answer calendar hasDatepicker" id="datepicker" placeholder="날짜를 선택해주세요">
                                         </div>
                                     </div>
                                     <div class="py-4 text-lg">
-                                        <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20"
-                                            fill="currentColor" class="bi bi-check-square gray m-0 pg_4_txt_darker" viewBox="0 0 16 16">
-                                            <path
-                                                d="M14 1a1 1 0 0 1 1 1v12a1 1 0 0 1-1 1H2a1 1 0 0 1-1-1V2a1 1 0 0 1 1-1h12zM2 0a2 2 0 0 0-2 2v12a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V2a2 2 0 0 0-2-2H2z" />
-                                            <path
-                                                d="M10.97 4.97a.75.75 0 0 1 1.071 1.05l-3.992 4.99a.75.75 0 0 1-1.08.02L4.324 8.384a.75.75 0 1 1 1.06-1.06l2.094 2.093 3.473-4.425a.235.235 0 0 1 .02-.022z" />
+                                        <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor" class="bi bi-check-square gray m-0 pg_4_txt_darker" viewBox="0 0 16 16">
+                                            <path d="M14 1a1 1 0 0 1 1 1v12a1 1 0 0 1-1 1H2a1 1 0 0 1-1-1V2a1 1 0 0 1 1-1h12zM2 0a2 2 0 0 0-2 2v12a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V2a2 2 0 0 0-2-2H2z"></path>
+                                            <path d="M10.97 4.97a.75.75 0 0 1 1.071 1.05l-3.992 4.99a.75.75 0 0 1-1.08.02L4.324 8.384a.75.75 0 1 1 1.06-1.06l2.094 2.093 3.473-4.425a.235.235 0 0 1 .02-.022z"></path>
                                         </svg> &nbsp; 자동로그인
                                     </div>
                                     <div class="text_box text-sm mt-0 pg_4_shadow_inner">
@@ -300,16 +286,15 @@
                                     </div>
                                     <!-- <button type="button" class="btn mt-4 pg_4_answer">확인</button> -->
                                     <div class="cursor_pos_4">
-                                        <div
-                                            class="btn mt-4 d-flex justify-content-center align-items-center multi_next_btn">
-                                            <div class="multi_next_btn">확인</div>
+                                        <div class="btn mt-4 d-flex justify-content-center align-items-center multi_next_btn pg_4_answer">
+                                            <div class="multi_next_btn pg_4_answer">확인</div>
                                             <!-- 커서 가이드 -->
-                                            <div class="cursor_wrap cursor_wrap_4 pg_4_answer">
+                                            <div class="cursor_wrap cursor_wrap_4 pg_4_answer" data-popper-placement="bottom" style="z-index: 100; position: absolute; inset: 0px auto auto 0px; margin: 0px; transform: translate3d(325.5px, 605px, 0px); display: none;">
                                                 <span class="cursor pg_4_answer" x-placement="bottom">
                                                     <button class="react-joyride__beacon pg_4_answer" type="button">
                                                         <span class="cursor_outer pg_4_answer"></span>
                                                         <span class="cursor_inner pg_4_answer"><span>
-                                                    </button>
+                                                    </span></span></button>
                                                 </span>
                                             </div>
                                             <!-- 커서 가이드 -->
@@ -752,6 +737,23 @@
     </div>
     <script src="pg_info.js"> </script>
     <script src="../common/js/pg_handler.js"> </script>
+    <script>
+        $(function () {
+            $("#datepicker").datepicker();
+        });
+        $.datepicker.setDefaults({
+            dateFormat: 'yy년 mm월 dd일',
+            prevText: '이전 달',
+            nextText: '다음 달',
+            monthNames: ['1월', '2월', '3월', '4월', '5월', '6월', '7월', '8월', '9월', '10월', '11월', '12월'],
+            monthNamesShort: ['1월', '2월', '3월', '4월', '5월', '6월', '7월', '8월', '9월', '10월', '11월', '12월'],
+            dayNames: ['일', '월', '화', '수', '목', '금', '토'],
+            dayNamesShort: ['일', '월', '화', '수', '목', '금', '토'],
+            dayNamesMin: ['일', '월', '화', '수', '목', '금', '토'],
+            showMonthAfterYear: true,
+            yearSuffix: '년'
+        });
+    </script>
 </body>
 
 </html>

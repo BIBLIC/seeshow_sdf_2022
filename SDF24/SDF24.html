@@ -2,7 +2,8 @@
 <html>
 
 <head>
-    <meta name="viewport" content="width=device-width,height=640,initial-scale=1.0,minimum-scale=1.0,maximum-scale=1.0">
+    <meta name="viewport"
+        content="width=device-width,height=device-height,initial-scale=1.0,minimum-scale=1.0,maximum-scale=1.0">
     <title>SDF</title>
     <link href="../common/styles/reset.css" rel="stylesheet" />
     <link href="./css/main.css" rel="stylesheet" />
@@ -16,20 +17,12 @@
         integrity="sha384-OERcA2EqjJCMA+/3y+gxIOqMEjwtxJY7qPCqsdltbNJuaOe923+mo//f6V8Qbsw3"
         crossorigin="anonymous"></script>
     <script src="https://code.jquery.com/jquery-3.6.1.min.js"></script>
-    <!-- DatePicker -->
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-datepicker/1.9.0/js/bootstrap-datepicker.min.js"
-        integrity="sha512-T/tUfKSV1bihCnd+MxKD0Hm1uBBroVYBOYSk1knyvQ9VyZJpc/ALb4P0r6ubwVPSGB2GvjeoMAJJImBG12TiaQ=="
-        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
-    <link rel="stylesheet"
-        href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-datepicker/1.9.0/css/bootstrap-datepicker.min.css"
-        integrity="sha512-mSYUmp1HYZDFaVKK//63EcZq4iFWFjxSL+Z3T/aCt4IO9Cejm03q3NKKYN6pFQzY0SBOr8h+eCIAZHPXcpZaNw=="
-        crossorigin="anonymous" referrerpolicy="no-referrer" />
-    <script
-        src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-datepicker/1.9.0/locales/bootstrap-datepicker.ko.min.js"
-        integrity="sha512-L4qpL1ZotXZLLe8Oo0ZyHrj/SweV7CieswUODAAPN/tnqN3PA1P+4qPu5vIryNor6HQ5o22NujIcAZIfyVXwbQ=="
-        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
     <script src="https://unpkg.com/@popperjs/core@2"></script>
+    <!-- calendar UI -->
+    <link rel="stylesheet" href="https://code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css">
+    <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
 </head>
+
 
 <body>
     <div class="bg_phone">
@@ -840,14 +833,12 @@
 
                                         <div class="tab">
                                             발급일
-                                            <div class="form">
-                                                <!-- date picker 처리좀요... 제발 -->
-                                                <!-- <input type="text" class="w-75 d-flex justify-content-center form-control calendar" id="date-picker"
-                                                    placeholder="발급일을 선택하세요"> -->
+                                            <div class="form date_form">
 
-                                                    <input type="date" class="tab d-flex justify-content-center fontSz form-control pg_8_answer calendar" placeholder="발급일을 선택하세요">
+                                                <input type="text"
+                                                    class="date_form tab d-flex justify-content-center fontSz form-control pg_8_answer calendar"
+                                                    id="datepicker" placeholder="날짜를 선택해주세요">
 
-                                               
                                             </div>
                                         </div>
 
@@ -1083,6 +1074,23 @@
     </div>
     <script src="pg_info.js"> </script>
     <script src="../common/js/pg_handler.js"> </script>
+    <script>
+        $(function () {
+            $("#datepicker").datepicker();
+        });
+        $.datepicker.setDefaults({
+            dateFormat: 'yy년 mm월 dd일',
+            prevText: '이전 달',
+            nextText: '다음 달',
+            monthNames: ['1월', '2월', '3월', '4월', '5월', '6월', '7월', '8월', '9월', '10월', '11월', '12월'],
+            monthNamesShort: ['1월', '2월', '3월', '4월', '5월', '6월', '7월', '8월', '9월', '10월', '11월', '12월'],
+            dayNames: ['일', '월', '화', '수', '목', '금', '토'],
+            dayNamesShort: ['일', '월', '화', '수', '목', '금', '토'],
+            dayNamesMin: ['일', '월', '화', '수', '목', '금', '토'],
+            showMonthAfterYear: true,
+            yearSuffix: '년'
+        });
+    </script>
 </body>
 
 </html>
