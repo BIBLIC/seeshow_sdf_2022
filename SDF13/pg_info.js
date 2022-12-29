@@ -71,13 +71,13 @@ const inputAnswer = [
     {},
     {
         page: 4,
-        inputableAnswer: "서울남부터미널"
+        inputableAnswer: "남부터미널"
     },
     {},
     {},
     {
         page: 7,
-        inputableAnswer: "강남세브란스병원"
+        inputableAnswer: "강남세브란스"
     },
     {},
     {},
@@ -104,7 +104,7 @@ const modalCont = [
     },
     {
         page: 4,
-        instruction: "출발지 검색란에 '서울남부터미널'을 입력하고 엔터를 눌러주세요."
+        instruction: "출발지 입력창에 '남부터미널'을 입력하고 검색해 주세요"
     },
     {
         page: 5,
@@ -116,7 +116,7 @@ const modalCont = [
     },
     {
         page: 7,
-        instruction: "도착지 검색란에 '강남세브란스병원'을 입력하고 엔터를 눌러주세요."
+        instruction: "도착지 입력창에 '강남세브란스'을 입력하고 검색해 주세요."
     },
     {
         page: 8,
