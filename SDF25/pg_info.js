@@ -239,7 +239,7 @@ $(document).on("click", "#hint_btn", function () {
     if (page_num === 2) {
 
         var total_height = $('.scroller').height();
-        let scrollPos = total_height * 0 + 100;
+        let scrollPos = total_height * 0 + 1;
         $('.scroller').scrollTop(scrollPos);
 
         $(".cursor_wrap_2_2").toggleClass('show');
