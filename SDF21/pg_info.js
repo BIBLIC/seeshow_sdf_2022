@@ -282,3 +282,151 @@ $(document).on("click", "#prev_btn", function () {
           });  
     }
 });
+
+
+
+
+
+
+
+
+// -------------------------------------------------------
+$(document).on("click", "#hint_btn", function () {
+    if (page_num === 2) {
+
+        var total_height = $('.scroller').height();
+        let scrollPos = total_height * 0 + 1;
+        $('.scroller').scrollTop(scrollPos);
+
+        $(".cursor_wrap_2_2").toggleClass('show');
+        $(".cursor_wrap_2_3").toggleClass('show');
+        $(".cursor_wrap_2_4").toggleClass('show');
+    }
+
+    if (page_num === 4) {
+
+        // var total_height = $('.scroller').height();
+        // let scrollPos = total_height * 0 + 1;
+        // $('.scroller').scrollTop(scrollPos);
+
+        $(".cursor_wrap_4_2").toggleClass('show');
+        $(".cursor_wrap_4_3").toggleClass('show');
+    }
+});
+
+
+// ------------------------------------------------------------------
+$(document).on("click", "#hint_btn", function () {
+    if (page_num === 6 || page_num === 7) {
+
+        var total_height = $('.scroller').height();
+        let scrollPos = total_height * 0.7;
+        $('.scroller').scrollTop(scrollPos);
+
+    }
+
+    if (page_num === 8) {
+
+        var total_height = $('.scroller').height();
+        let scrollPos = total_height * 1.7;
+        $('.scroller').scrollTop(scrollPos);
+
+    }
+});
+
+// ------------------------------------------------------------------
+$(document).on("click", ".pg_5_answer", function () {
+    if (page_num === 6) {
+        $( document ).ready(function() {
+                if (page_num === 6) {
+                    var total_height = $('.scroller').height();
+                    let scrollPos = total_height * 0.7;
+                    $('.scroller').scrollTop(scrollPos);            
+                }
+          });  
+    }
+});
+
+$(document).on("click", ".pg_6_answer", function () {
+    if (page_num === 7) {
+        $( document ).ready(function() {
+                if (page_num === 7) {
+                    var total_height = $('.scroller').height();
+                    let scrollPos = total_height * 0.7;
+                    $('.scroller').scrollTop(scrollPos);            
+                }
+          });  
+    }
+});
+
+$(document).on("click", ".pg_7_answer", function () {
+    if (page_num === 8) {
+        $( document ).ready(function() {
+                if (page_num === 8) {
+                    var total_height = $('.scroller').height();
+                    let scrollPos = total_height * 1.7;
+                    $('.scroller').scrollTop(scrollPos);            
+                }
+          });  
+    }
+});
+
+// ------------------------------------------------------------------
+$(document).on("click", "#next_btn", function () {
+    if (page_num === 5 || page_num === 6) {
+
+        $( document ).ready(function() {
+                if (page_num === 6 || page_num === 7) {
+                    var total_height = $('.scroller').height();
+                    let scrollPos = total_height * 0.7;
+                    $('.scroller').scrollTop(scrollPos);            
+                }
+          });  
+    }
+
+    if (page_num === 7) {
+
+        $( document ).ready(function() {
+                if (page_num === 8) {
+                    var total_height = $('.scroller').height();
+                    let scrollPos = total_height * 1.7;
+                    $('.scroller').scrollTop(scrollPos);            
+                }
+          });  
+    }
+});
+
+// ------------------------------------------------------------------
+$(document).on("click", "#prev_btn", function () {
+    
+
+    if (page_num === 5 || page_num === 6) {
+        $( document ).ready(function() {
+                if (page_num === 4 || page_num === 5) {
+                    var total_height = $('.scroller').height();
+                    let scrollPos = total_height * 0;
+                    $('.scroller').scrollTop(scrollPos);            
+                }
+          });  
+    }
+    
+    if (page_num === 7 || page_num === 8) {
+        $( document ).ready(function() {
+                if (page_num === 6 || page_num === 7) {
+                    var total_height = $('.scroller').height();
+                    let scrollPos = total_height * 0.7;
+                    $('.scroller').scrollTop(scrollPos);            
+                }
+          });  
+    }
+
+    if (page_num === 9) {
+        $( document ).ready(function() {
+                if (page_num === 8) {
+                    var total_height = $('.scroller').height();
+                    let scrollPos = total_height * 1.7;
+                    $('.scroller').scrollTop(scrollPos);            
+                }
+          });  
+    }
+});
