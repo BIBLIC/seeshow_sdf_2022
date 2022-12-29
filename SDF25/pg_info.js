@@ -89,11 +89,7 @@ const modalCont = [
     },
     {
         page: 6,
-        instruction: ""
-    },
-    {
-        page: 7,
-        instruction: ""
+        instruction: "완료"
     },
 ];
 
