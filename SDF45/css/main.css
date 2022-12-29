@@ -157,6 +157,7 @@ main svg {
 #p4 .icon {
     width: 2em;
     height: 2em;
+    border: unset;
 }
 
 #p7 .stop_btn,
