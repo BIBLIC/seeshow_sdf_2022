@@ -143,7 +143,7 @@ const modalCont = [
     },
     {
         page: 6,
-        instruction: "주민번호를 입력 후 '다음' 버튼을 클릭하세요."
+        instruction: "주민번호 뒤 7자리를 입력 후 '다음' 버튼을 눌러주세요."
     },
     {
         page: 7,
