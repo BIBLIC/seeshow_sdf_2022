@@ -123,7 +123,7 @@ const modalCont = [
     },
     {
         page: 1,
-        instruction: "우측 하단에 '전체' 버튼을 클릭하세요."
+        instruction: "첫 화면에서 우측 하단 전체를 눌러 메뉴를 열어주세요."
     },
     {
         page: 2,
