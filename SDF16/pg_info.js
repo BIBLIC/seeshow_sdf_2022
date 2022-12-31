@@ -138,7 +138,7 @@ const modalCont = [
     },
     {
         page: 6,
-        instruction: "시긴 산텍에서 14시를 눌러서 선택해 주세요."
+        instruction: "시간 선택에서 14시를 눌러서 선택해 주세요."
     },
     {
         page: 7,

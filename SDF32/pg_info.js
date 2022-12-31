@@ -1,4 +1,4 @@
-var total_page = 18;//페이지 수 -> 시나리오마다 total_page 수 바꾸기 
+var total_page = 19;//페이지 수 -> 시나리오마다 total_page 수 바꾸기 
 
 //오디오 배열 선언, 페이지 수 대로 배열에 mp3 넣기
 const audioArray = [];
@@ -86,6 +86,10 @@ const pageClickArea = [
         page: 18,
         correctAnswer: "pg_18_answer"
     },
+    {
+        page: 19,
+        correctAnswer: "pg_19_answer"
+    },
 ];
 
 const inputAnswer = [
@@ -102,8 +106,9 @@ const inputAnswer = [
     {},
     {},
     {},
+    {},
     {
-        page: 13,
+        page: 14,
         inputableAnswer: "123456"
     },
     {},
@@ -117,7 +122,7 @@ const inputAnswer = [
 const modalCont = [
     {
         page: 0,
-        instruction: "'시작하기' 버튼을 눌러주세요."
+        instruction: "‘시작하기’ 버튼을 눌러주세요."
     },
     {
         page: 1,
@@ -125,7 +130,7 @@ const modalCont = [
     },
     {
         page: 2,
-        instruction: "'선물하기' 버튼을 눌러주세요."
+        instruction: "‘선물하기’ 버튼을 눌러주세요."
     },
     {
         page: 3,
@@ -133,62 +138,66 @@ const modalCont = [
     },
     {
         page: 4,
-        instruction: "'전체동의'를 눌러주세요."
+        instruction: "‘전체동의’를 눌러주세요."
     },
     {
         page: 5,
-        instruction: "'다음' 버튼을 눌러주세요."
+        instruction: "선택 항목은 동의하지 않아도 서비스 이용이 가능합니다. 선택 항목은 체크를 해제해 주세요."
     },
     {
         page: 6,
-        instruction: "'메인으로 이동하기' 버튼을 눌러주세요."
+        instruction: "이제 필수 항목만 선택되었습니다. ‘다음’ 버튼을 눌러주세요."
     },
     {
         page: 7,
-        instruction: "'생일' 버튼을 눌러주세요."
+        instruction: "‘메인으로 이동하기’ 버튼을 눌러주세요."
     },
     {
         page: 8,
-        instruction: "수제 케이크를 찾아 눌러주세요."
+        instruction: "‘생일’ 버튼을 눌러주세요."
     },
     {
         page: 9,
-        instruction: "'선물하기' 버튼을 눌러주세요."
+        instruction: "수제 케이크를 찾아 눌러주세요."
     },
     {
         page: 10,
-        instruction: "친구 목록 중 '김한국'을 영역을 눌러주세요."
+        instruction: "‘선물하기’ 버튼을 눌러주세요."
     },
     {
         page: 11,
-        instruction: "'확인' 버튼을 눌러주세요."
+        instruction: "선물 할 상대로, 친구 목록 중 ‘월디’를 찾아서 눌러주세요."
     },
     {
         page: 12,
-        instruction: "'선물과 함께 보낼 메시지를 적어보세요' 부분에 텍스트를 입력하고 스크롤을 내려 '카드 입력'을 눌러주세요."
+        instruction: "‘확인’ 버튼을 눌러주세요."
     },
     {
         page: 13,
-        instruction: "'필수 약관에만 동의해주세요."
+        instruction: "선물과 함께 보낼 메시지를 입력하고, 결제를 위해 빠른 결제탭에서 카드 입력을 눌러주세요"
     },
     {
         page: 14,
-        instruction: "'확인' 버튼을 눌러주세요."
+        instruction: "필수 항목만 전체 동의 체크해 주세요. 선택 항목은 동의하지 않아도 서비스 이용이 가능합니다."
     },
     {
         page: 15,
-        instruction: "휴대폰으로 카드를 촬영하여 카드 정보를 자동 입력하겠습니다. 화면의 신용카드를 눌러주세요."
+        instruction: "‘확인’ 버튼을 눌러주세요."
     },
     {
         page: 16,
-        instruction: "카드 비밀번호 4자리를 입력하고 '완료' 버튼을 눌러주세요."
+        instruction: "휴대폰으로 카드를 촬영하여 카드 정보를 자동 입력하겠습니다. 화면의 신용카드를 눌러주세요."
     },
     {
         page: 17,
-        instruction: "카드 등록 내용을 확인하고 '29,900원 결제하기' 버튼을 눌러주세요."
+        instruction: "카드 비밀번호 4자리를 입력하고 ‘완료’ 버튼을 눌러주세요."
     },
     {
         page: 18,
+        instruction: "카드 등록 내용을 확인하고, 29,900원 결제하기 버튼을 눌러주세요."
+    },
+    {
+        page: 19,
         instruction: "완료"
     },
 ];
