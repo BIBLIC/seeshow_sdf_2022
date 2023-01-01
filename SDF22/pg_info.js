@@ -76,35 +76,35 @@ const inputAnswer = [
 const modalCont = [
     {
         page: 0,
-        instruction: "'시작하기' 버튼을 눌러주세요."
+        instruction: "‘시작하기’ 버튼을 눌러주세요."
     },
     {
         page: 1,
-        instruction: "'신청ㆍ제출' 탭을 눌러주세요."
+        instruction: "‘신청ㆍ제출’ 탭을 눌러주세요."
     },
     {
         page: 2,
-        instruction: "스크롤을 내려 '세무서류신청-공통분야'를 눌러주세요."
+        instruction: "스크롤을 내려 ‘세무서류신청-공통분야’를 눌러주세요."
     },
     {
         page: 3,
-        instruction: "'전자고지 신청/해지'를 눌러주세요."
+        instruction: "‘전자고지 신청/해지’를 눌러주세요."
     },
     {
         page: 4,
-        instruction: "손택스에 등록된 정보를 확인하고 하단의 '다음' 버튼을 눌러주세요."
+        instruction: "손택스에 등록된 정보를 확인하고 하단의 ‘다음’ 버튼을 눌러주세요."
     },
     {
         page: 5,
-        instruction: "전자송달 신청 이용 안내를 모두 확인하고 화면하단의 '위의 내용을 확인함'을 체크해 주세요."
+        instruction: "전자송달 신청 이용 안내를 모두 확인하고 화면하단의 ‘위의 내용을 확인함’을 체크해 주세요."
     },
     {
         page: 6,
-        instruction: "'전자송달 신청하기'를 눌러주세요."
+        instruction: "‘전자송달 신청하기’를 눌러주세요."
     },
     {
         page: 7,
-        instruction: "주의사항을 확인하고 '확인'을 눌러주세요"
+        instruction: "주의사항을 확인하고 ‘확인’을 눌러주세요"
     },
     {
         page: 8,

@@ -92,11 +92,11 @@ const inputAnswer = [
 const modalCont = [
     {
         page: 0,
-        instruction: "'시작하기' 버튼을 클릭하세요."
+        instruction: "‘시작하기’ 버튼을 클릭하세요."
     },
     {
         page: 1,
-        instruction: "'로그인' 버튼을 클릭하세요."
+        instruction: "‘로그인’ 버튼을 클릭하세요."
     },
     {
         page: 2,
@@ -104,7 +104,7 @@ const modalCont = [
     },
     {
         page: 3,
-        instruction: "알림창의 '예' 버튼을 클릭하세요"
+        instruction: "알림창의 ‘예’ 버튼을 클릭하세요"
     },
     {
         page: 4,
@@ -112,27 +112,27 @@ const modalCont = [
     },
     {
         page: 5,
-        instruction: "주민번호 13자리를 입력하고 입력하고 엔터를 누르거나 '다음'버튼을 클릭하세요"
+        instruction: "주민번호 13자리를 입력하고 입력하고 엔터를 누르거나 ‘다음’버튼을 클릭하세요"
     },
     {
         page: 6,
-        instruction: "비밀번호 6자리를 입력하고 '입력완료' 버튼을 클릭하세요."
+        instruction: "비밀번호 6자리를 입력하고 ‘입력완료’ 버튼을 클릭하세요."
     },
     {
         page: 7,
-        instruction: "'확인' 버튼을 클릭하세요."
+        instruction: "‘확인’ 버튼을 클릭하세요."
     },
     {
         page: 8,
-        instruction: "'공과금 통합조회' 탭을 클릭하세요."
+        instruction: "‘공과금 통합조회’ 탭을 클릭하세요."
     },
     {
         page: 9,
-        instruction: "주민번호 13자리를 입력하고 엔터를 누르거나 '다음'버튼을 클릭하세요"
+        instruction: "주민번호 13자리를 숫자만 입력하고 ‘다음’버튼을 눌러주세요."
     },
     {
         page: 10,
-        instruction: "'국세' 탭을 클릭하세요."
+        instruction: "‘국세’ 탭을 클릭하세요."
     },
     {
         page: 11,

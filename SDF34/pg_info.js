@@ -96,7 +96,7 @@ const inputAnswer = [
 const modalCont = [
     {
         page: 0,
-        instruction: "시작하기 버튼을 눌러주세요."
+        instruction: "‘시작하기’ 버튼을 눌러주세요."
     },
     {
         page: 1,
@@ -104,7 +104,7 @@ const modalCont = [
     },
     {
         page: 2,
-        instruction: "OTT플랫폼 이용하기를 실습하겠습니다. 첫 화면에서 '시리즈 또는 영화를 눌러서 원하는 콘텐츠를 볼 수 있습니다. 시리즈 또는 영화를 누르면 다음 기능을 소개해 드립니다."
+        instruction: "OTT플랫폼 이용하기를 실습하겠습니다. 첫 화면에서 시리즈 또는 영화를 눌러서 원하는 콘텐츠를 볼 수 있습니다. 시리즈 또는 영화를 누르면 다음 기능을 소개해 드립니다."
     },
     {
         page: 3,
@@ -128,15 +128,15 @@ const modalCont = [
     },
     {
         page: 8,
-        instruction: "프로필 중에서 월디 프로필을 선택해 주세요,"
+        instruction: "프로필 중에서 월디 프로필을 선택해 주세요."
     },
     {
         page: 9,
-        instruction: "메뉴에서 자막 표시 설정을 찾아서 눌러주세요,"
+        instruction: "메뉴에서 자막 표시 설정을 찾아서 눌러주세요."
     },
     {
         page: 10,
-        instruction: "글자 크기에서 가장 큰 '가'자를 눌러주세요,"
+        instruction: "글자 크기에서 가장 큰 ‘가’자를 눌러주세요."
     },
     {
         page: 11,

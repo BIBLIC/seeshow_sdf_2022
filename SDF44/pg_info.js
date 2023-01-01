@@ -99,19 +99,19 @@ const inputAnswer = [
 const modalCont = [
     {
         page: 0,
-        instruction: "'시작하기' 버튼을 눌러주세요."
+        instruction: "‘시작하기’ 버튼을 눌러주세요."
     },
     {
         page: 1,
-        instruction: "'조회/납부' 영역을 눌러주세요."
+        instruction: "‘조회/납부’ 영역을 눌러주세요."
     },
     {
         page: 2,
-        instruction: "'전기요금' 버튼을 눌러주세요."
+        instruction: "‘전기요금’ 버튼을 눌러주세요."
     },
     {
         page: 3,
-        instruction: "숫자 10자리 입력 후 '납부'버튼을 눌러주세요."
+        instruction: "숫자 10자리 입력 후 ‘납부’버튼을 눌러주세요."
     },
     {
         page: 4,
@@ -119,35 +119,35 @@ const modalCont = [
     },
     {
         page: 5,
-        instruction: "'다음' 버튼을 눌러주세요."
+        instruction: "‘다음’ 버튼을 눌러주세요."
     },
     {
         page: 6,
-        instruction: "'은행선택' 영역을 눌러주세요."
+        instruction: "‘은행선택’ 영역을 눌러주세요."
     },
     {
         page: 7,
-        instruction: "'국민'을 눌러주세요."
+        instruction: "거래 은행을 선택해 주세요."
     },
     {
         page: 8,
-        instruction: "'-'를 제외한 계좌번호 14자리를 입력해주세요."
+        instruction: "계좌번호 14자리를 숫자만 입력해 주세요."
     },
     {
         page: 9,
-        instruction: "4자리 숫자입력 후 '다음' 버튼을 눌러주세요."
+        instruction: "4자리 숫자입력 후 ‘다음’ 버튼을 눌러주세요."
     },
     {
         page: 10,
-        instruction: "전기요금 납부 내용을 확인하고 '다음' 버튼을 눌러주세요."
+        instruction: "전기요금 납부 내용을 확인하고 ‘다음’ 버튼을 눌러주세요."
     },
     {
         page: 11,
-        instruction: "'확인' 버튼을 눌러주세요."
+        instruction: "‘확인’ 버튼을 눌러주세요."
     },
     {
         page: 12,
-        instruction: "마지막 페이지"
+        instruction: "완료"
     },
 ];
 

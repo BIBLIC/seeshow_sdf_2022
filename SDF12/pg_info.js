@@ -71,7 +71,7 @@ const inputAnswer = [
 const modalCont = [
     {
         page: 0,
-        instruction: "'시작하기' 버튼을 클릭하세요."
+        instruction: "‘시작하기’ 버튼을 클릭하세요."
     },
     {
         page: 1,
@@ -91,7 +91,7 @@ const modalCont = [
     },
     {
         page: 5,
-        instruction: "택시의 유형을 선택할 수 있는 화면입니다. 설명을 읽고, 알맞은 택시를 선택합니다. 실습에서는 ‘일반호출’을 눌러주세요."
+        instruction: "택시의 유형을 선택할 수 있는 화면입니다. 설명을 읽고 알맞은 택시를 선택합니다. 실습에서는 ‘일반호출’을 눌러주세요."
     },
     {
         page: 6,

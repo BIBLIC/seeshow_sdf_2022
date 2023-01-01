@@ -90,11 +90,11 @@ const inputAnswer = [
 const modalCont = [
     {
         page: 0,
-        instruction: "'시작하기' 버튼을 클릭하세요."
+        instruction: "‘시작하기’ 버튼을 클릭하세요."
     },
     {
         page: 1,
-        instruction: "이름 입력란에 '김서울'을 입력하세요."
+        instruction: "이름 입력란에 ‘김서울’을 입력하세요."
     },
     {
         page: 2,
@@ -106,27 +106,27 @@ const modalCont = [
     },
     {
         page: 4,
-        instruction: "휴대폰 통신사 선택지 중 'SKT'를 선택하세요."
+        instruction: "휴대폰 통신사 선택지 중 ‘SKT’를 선택하세요."
     },
     {
         page: 5,
-        instruction: "'-'를 제외한 휴대폰 번호 11자리를 휴대폰 번호 입력란에 입력하고 '본인 인증하기' 버튼을 클릭하세요."
+        instruction: "휴대폰 번호 11자리를 휴대폰 번호 입력란에 숫자만 입력하고 ‘본인 인증하기’ 버튼을 클릭하세요."
     },
     {
         page: 6,
-        instruction: "약관 내용 확인 후 '동의하기' 버튼을 클릭하세요. 선택항목은 동의하지 않아도 서비스 이용이 가능합니다."
+        instruction: "약관 내용 확인 후 ‘동의하기’ 버튼을 클릭하세요. 선택항목은 동의하지 않아도 서비스 이용이 가능합니다."
     },
     {
         page: 7,
-        instruction: "인증번호 입력란에 '123456'을 입력하세요."
+        instruction: "인증번호 입력란에 ‘123456’을 입력하세요."
     },
     {
         page: 8,
-        instruction: "전화 걸기 권한을 허용하기 위해 '허용'을 클릭하세요."
+        instruction: "전화 걸기 권한을 허용하기 위해 ‘허용’을 클릭하세요."
     },
     {
         page: 9,
-        instruction: "'인증 전화 받기' 버튼을 클릭하세요."
+        instruction: "‘인증 전화 받기’ 버튼을 클릭하세요."
     },
     {
         page: 10,
@@ -138,7 +138,7 @@ const modalCont = [
     },
     {
         page: 12,
-        instruction: "가입된 정보를 확인하고 하단 네비게이션 바의 '다음'버튼을 클릭하세요."
+        instruction: "가입이 완료되엇습니다. 화면을 누르면 실습이 완료됩니다."
     },
 ];
 

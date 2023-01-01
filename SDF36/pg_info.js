@@ -116,23 +116,23 @@ const inputAnswer = [
 const modalCont = [
     {
         page: 0,
-        instruction: "'시작하기' 버튼을 클릭하세요."
+        instruction: "‘시작하기’ 버튼을 클릭하세요."
     },
     {
         page: 1,
-        instruction: "우측 하단 주황색 '+' 버튼을 눌러주세요."
+        instruction: "우측 하단 주황색 ‘+’ 버튼을 눌러주세요."
     },
     {
         page: 2,
-        instruction: "'내 물건 팔기'를 눌러주세요."
+        instruction: "‘내 물건 팔기’를 눌러주세요."
     },
     {
         page: 3,
-        instruction: "'지금 동네 인증하기' 버튼을 눌러주세요."
+        instruction: "‘지금 동네 인증하기’ 버튼을 눌러주세요."
     },
     {
         page: 4,
-        instruction: "'동네인증 완료하기' 버튼을 눌러주세요."
+        instruction: "‘동네인증 완료하기’ 버튼을 눌러주세요."
     },
     {
         page: 5,
@@ -144,35 +144,35 @@ const modalCont = [
     },
     {
         page: 7,
-        instruction: "글 제목 입력란에 '자전거 판매'를 입력해주세요."
+        instruction: "글 제목 입력란에 ‘자전거 판매’를 입력해주세요."
     },
     {
         page: 8,
-        instruction: "분류에서 '스포츠/레저'를 선택해 주세요."
+        instruction: "분류에서 ‘스포츠/레저’를 선택해 주세요."
     },
     {
         page: 9,
-        instruction: "가격 입력란에 '100000'을 숫자로만 입력해주세요."
+        instruction: "가격 입력란에 ‘100000’을 숫자로만 입력해주세요."
     },
     {
         page: 10,
-        instruction: "게시글 내용을 작성하고 '장소 선택' 부분을 눌러주세요."
+        instruction: "게시글 내용을 작성하고 ‘장소 선택’ 부분을 눌러주세요."
     },
     {
         page: 11,
-        instruction: "'선택 완료' 버튼을 눌러주세요." 
+        instruction: "‘선택 완료’ 버튼을 눌러주세요." 
     },
     {
         page: 12,
-        instruction: "입력란에 '안국역'을 입력해주세요."
+        instruction: "입력란에 ‘안국역’을 입력해주세요."
     },
     {
         page: 13,
-        instruction: "오른쪽 상단의 '완료'를 눌러 게시글 작성을 완료해주세요. "
+        instruction: "오른쪽 상단의 ‘완료’를 눌러 게시글 작성을 완료해주세요. "
     },
     {
         page: 14,
-        instruction: "마지막 페이지"
+        instruction: "완료"
     },
 ];
 

@@ -119,7 +119,7 @@ const modalCont = [
 
     {
         page: 0,
-        instruction: "'시작하기' 버튼을 눌러주세요."
+        instruction: "‘시작하기’ 버튼을 눌러주세요."
     },
     {
         page: 1,
@@ -127,39 +127,39 @@ const modalCont = [
     },
     {
         page: 2,
-        instruction: "병원비 돌려받기를 시작합니다. '내 병원비 돌려받기' 버튼을 클릭하세요."
+        instruction: "메뉴에서 ‘병원비 돌려받기’를 찾아서 눌러주세요."
     },
     {
         page: 3,
-        instruction: "'받았어요' 버튼을 클릭하세요."
+        instruction: "병원비 돌려받기를 시작합니다. ‘내 병원비 돌려받기’ 버튼을 클릭하세요."
     },
     {
         page: 4,
-        instruction: "서류를 받았다면 '받았어요' 버튼을 클릭하세요."
+        instruction: "청구에 필요한 서류를 모두 받으셨다면 ‘받았어요’ 버튼을 클릭하세요."
     },
     {
         page: 5,
-        instruction: "'병원비를 돌려받을 보험사 선택 화면입니다. 실습에서는 △△해상화재를 선택해 주세요."
+        instruction: "'병원비를 돌려받을 보험사 선택 화면입니다. 실습에서는 ‘△△해상화재’를 선택해 주세요."
     },
     {
         page: 6,
-        instruction: "주민번호 뒤 7자리를 입력 후 '다음' 버튼을 눌러주세요."
+        instruction: "주민번호 뒤 7자리를 입력 후 ‘다음’ 버튼을 눌러주세요."
     },
     {
         page: 7,
-        instruction: "병원에 방문한 이유를 간단하게 작성 후 '다음'버튼을 클릭하세요."
+        instruction: "병원에 방문한 이유를 간단하게 작성 후 ‘다음’버튼을 클릭하세요."
     },
     {
         page: 8,
-        instruction: "날짜를 입력한 후 '다음'버튼을 클릭하세요."
+        instruction: "날짜를 입력한 후 ‘다음’버튼을 클릭하세요."
     },
     {
         page: 9,
-        instruction: "병원에서 받은 서류 사진을 올리기 위해 '사진 첨부' 버튼을 클릭하세요."
+        instruction: "병원에서 받은 서류 사진을 올리기 위해 ‘사진 첨부’ 버튼을 클릭하세요."
     },
     {
         page: 10,
-        instruction: "'사진첩에서 가져오기' 버튼을 클릭하세요."
+        instruction: "‘사진첩에서 가져오기’ 버튼을 클릭하세요."
     },
     {
         page: 11,
@@ -167,15 +167,15 @@ const modalCont = [
     },
     {
         page: 12,
-        instruction: "선택된 사진을 확인 후 '다음' 버튼을 클릭하세요."
+        instruction: "선택된 사진을 확인 후 ‘다음’ 버튼을 클릭하세요."
     },
     {
         page: 13,
-        instruction: "계좌 목록에서 '○○뱅크 통장'을 선택해 주세요."
+        instruction: "계좌 목록에서 ‘○○뱅크 통장’을 선택해 주세요."
     },
     {
         page: 14,
-        instruction: "신청 정보를 확인 후 '버튼'을 클릭하세요."
+        instruction: "신청 정보를 확인 후 ‘확인’ 버튼을 클릭하세요."
     },
     {
         page: 15,

@@ -130,7 +130,7 @@ const inputAnswer = [
 const modalCont = [
     {
         page: 0,
-        instruction: "'시작하기' 버튼을 눌러주세요."
+        instruction: "‘시작하기’ 버튼을 눌러주세요."
     },
     {
         page: 1,
@@ -138,7 +138,7 @@ const modalCont = [
     },
     {
         page: 2,
-        instruction: "앱 접근 권한을 확인하고 '확인' 버튼을 눌러주세요. 필수 접근 허용 항목은 서비스 이용을 위해 동의가 필요합니다."
+        instruction: "앱 접근 권한을 확인하고 ‘확인’ 버튼을 눌러주세요. 필수 접근 허용 항목은 서비스 이용을 위해 동의가 필요합니다."
     },
     {
         page: 3,
@@ -154,7 +154,7 @@ const modalCont = [
     },
     {
         page: 6,
-        instruction: "'시작하기' 버튼을 눌러주세요."
+        instruction: "‘시작하기’ 버튼을 눌러주세요."
     },
     {
         page: 7,
@@ -162,7 +162,7 @@ const modalCont = [
     },
     {
         page: 8,
-        instruction: "이름 입력란에 '김서울'을 입력해주세요."
+        instruction: "이름 입력란에 ‘김서울’을 입력해주세요."
     },
     {
         page: 9,
@@ -174,11 +174,11 @@ const modalCont = [
     },
     {
         page: 11,
-        instruction: "휴대폰번호 11자리를 숫자만 입력 후 '확인' 버튼을 눌러주세요."
+        instruction: "휴대폰번호 11자리를 숫자만 입력 후 ‘확인’ 버튼을 눌러주세요."
     },
     {
         page: 12,
-        instruction: "인증번호 입력란에 '123456'을 입력하고 '확인'버튼을 눌러주세요."
+        instruction: "인증번호 입력란에 ‘123456’을 입력하고 ‘확인’버튼을 눌러주세요."
     },
     {
         page: 13,
@@ -190,7 +190,7 @@ const modalCont = [
     },
     {
         page: 15,
-        instruction: "선택 항목은 동의하지 않아도 서비스 이용에 제한이 없습니다 확인하고 다음 버튼을 눌러주세요."
+        instruction: "선택 항목은 동의하지 않아도 서비스 이용에 제한이 없습니다. 확인하고 다음 버튼을 눌러주세요."
     },
     {
         page: 16,
@@ -198,11 +198,11 @@ const modalCont = [
     },
     {
         page: 17,
-        instruction: "티머니GO 가입이 완료되었습니다. '티머니GO 시작하기' 버튼을 눌러주세요."
+        instruction: "티머니GO 가입이 완료되었습니다. ‘티머니GO 시작하기’ 버튼을 눌러주세요."
     },
     {
         page: 18,
-        instruction: "티머니GO 메인 화면입니다. 네비게이션바의 '다음' 버튼을 누르면 실습이 완료됩니다."
+        instruction: "티머니GO 메인 화면입니다. 네비게이션바의 ‘다음’ 버튼을 누르면 실습이 완료됩니다."
     },
     {
         page: 19,

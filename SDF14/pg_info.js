@@ -95,35 +95,35 @@ const inputAnswer = [
 const modalCont = [
     {
         page: 0,
-        instruction: "'시작하기' 버튼을 클릭하세요."
+        instruction: "‘시작하기’ 버튼을 클릭하세요."
     },
     {
         page: 1,
-        instruction: "'자동결제 등록' 문구 부분을 눌러주세요."
+        instruction: "‘자동결제 등록’ 문구 부분을 눌러주세요."
     },
     {
         page: 2,
-        instruction: "'편리한 자동 결제 수단 등록' 박스를 눌러주세요."
+        instruction: "‘편리한 자동 결제 수단 등록’ 박스를 눌러주세요."
     },
     {
         page: 3,
-        instruction: "'신용/체크카드' 영역을 눌러주세요."
+        instruction: "‘신용/체크카드’ 영역을 눌러주세요."
     },
     {
         page: 4,
-        instruction: "'전체 동의하기'를 눌러주세요."
+        instruction: "‘전체 동의하기’를 눌러주세요."
     },
     {
         page: 5,
-        instruction: "'동의하고 계속하기' 버튼을 눌러주세요."
+        instruction: "‘동의하고 계속하기’ 버튼을 눌러주세요."
     },
     {
         page: 6,
-        instruction: "'필수항목 전체동의'를 눌러주세요."
+        instruction: "‘필수항목 전체동의’를 눌러주세요."
     },
     {
         page: 7,
-        instruction: "필수항목만 모두 동의하였습니다.'확인'버튼을 눌러 약관 동의를 완료합니다."
+        instruction: "필수항목만 모두 동의하였습니다.‘확인’버튼을 눌러 약관 동의를 완료합니다."
     },
     {
         page: 8,
@@ -131,15 +131,15 @@ const modalCont = [
     },
     {
         page: 9,
-        instruction: "주민등록번호 13자리를 숫자만 입력해주세요,"
+        instruction: "주민등록번호 13자리를 숫자만 입력해주세요."
     },
     {
         page: 10,
-        instruction: "'-'을 제외한 휴대폰번호 11자리를 입력하고 '인증번호 요청'을 눌러주세요."
+        instruction: "휴대폰번호 11자리를 숫자만 입력하고 ‘인증번호 요청’을 눌러주세요."
     },
     {
         page: 11,
-        instruction: "'호출하기' 버튼을 눌러주세요."
+        instruction: "‘호출하기’ 버튼을 눌러주세요."
     },
     {
         page: 12,

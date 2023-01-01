@@ -85,31 +85,31 @@ const inputAnswer = [
 const modalCont = [
     {
         page: 0,
-        instruction: "'시작하기' 버튼을 눌러주세요."
+        instruction: "‘시작하기’ 버튼을 눌러주세요."
     },
     {
         page: 1,
-        instruction: "예스키는 금융결제원에서 제공하는 서비스입니다. 금융인증서 발급 및 관리를 위한"
+        instruction: "예스키는 금융결제원에서 제공하는 금융인증서 발급 및 관리를 위한 서비스입니다."
     },
     {
         page: 2,
-        instruction: "화면에서 금융인증서 '관리하기'를 찾아서 눌러주세요,"
+        instruction: "화면에서 금융인증서 ‘관리하기’를 찾아서 눌러주세요."
     },
     {
         page: 3,
-        instruction: "인증서 유형을 개인으로 선택해 주세요,"
+        instruction: "인증서 유형을 개인으로 선택해 주세요."
     },
     {
         page: 4,
-        instruction: "인증을 위해 이름, 휴대폰번호, 생년월일을 모두 입력하고, '확인' 버튼을 눌러주세요."
+        instruction: "인증을 위해 이름, 휴대폰번호, 생년월일을 모두 입력하고, ‘확인’ 버튼을 눌러주세요."
     },
     {
         page: 5,
-        instruction: "문자가 오면 화면에 보이는 확인코드 36을 받은 문자에 답장해주세요."
+        instruction: "문자가 오면 화면에 보이는 확인코드 ‘36’을 받은 문자에 답장해주세요."
     },
     {
         page: 6,
-        instruction: "숫자 36을 입력하고 문자 보내기 버튼을 눌러주세요."
+        instruction: "숫자 ‘36’을 입력하고 문자 보내기 버튼을 눌러주세요."
     },
     {
         page: 7,

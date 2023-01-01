@@ -61,15 +61,15 @@ const inputAnswer = [
 const modalCont = [
     {
         page: 0,
-        instruction: "'시작하기' 버튼을 클릭하세요."
+        instruction: "‘시작하기’ 버튼을 클릭하세요."
     },
     {
         page: 1,
-        instruction: "계좌 조회를 위해 '연결한 계좌'를 눌러주세요"
+        instruction: "계좌 조회를 위해 ‘연결한 계좌’를 눌러주세요"
     },
     {
         page: 2,
-        instruction: "등록된 전체 계좌 목록을 확인할 수 있습니다. 계좌 등록을 위해 '계좌 추가하기'를 눌러주세요"
+        instruction: "등록된 전체 계좌 목록을 확인할 수 있습니다. 계좌 등록을 위해 ‘계좌 추가하기’를 눌러주세요"
     },
     {
         page: 3,
@@ -77,23 +77,23 @@ const modalCont = [
     },
     {
         page: 4,
-        instruction: "계좌번호 '123456-789-10'를 입력 후 '다음' 버튼을 클릭하세요."
+        instruction: "계좌번호 ‘123456-789-10’를 입력 후 ‘다음’ 버튼을 클릭하세요."
     },
     {
         page: 5,
-        instruction: "계좌 비밀번호 4자리 입력 후 '다음' 버튼을 클릭하세요."
+        instruction: "계좌 비밀번호 4자리 입력 후 ‘다음’ 버튼을 클릭하세요."
     },
     {
         page: 6,
-        instruction: "출금이체 동의를 위해 '동의하기' 버튼을 클릭하세요."
+        instruction: "출금이체 동의를 위해 ‘동의하기’ 버튼을 클릭하세요."
     },
     {
         page: 7,
-        instruction: "추가된 계좌 정보를 확인하고 하단 바의 '다음'버튼을 클릭하세요."
+        instruction: "추가된 계좌 정보를 확인하고 하단 바의 ‘다음’버튼을 클릭하세요."
     },
     {
         page: 8,
-        instruction: "마지막 페이지"
+        instruction: "완료"
     },
 ];
 

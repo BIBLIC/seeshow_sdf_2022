@@ -106,55 +106,55 @@ const inputAnswer = [
 const modalCont = [
     {
         page: 0,
-        instruction: "'시작하기' 버튼을 클릭하세요."
+        instruction: "‘시작하기’ 버튼을 클릭하세요."
     },
     {
         page: 1,
-        instruction: "'시작하기' 버튼을 클릭하세요."
+        instruction: "당근마켓을 시작합니다. ‘시작하기’ 버튼을 눌러주세요."
     },
     {
         page: 2,
-        instruction: "'인사동'을 입력하고 검색해 주세요."
+        instruction: "‘인사동’을 입력하고 검색해 주세요."
     },
     {
         page: 3,
-        instruction: "검색 결과에서 '서울 종로구 인사동'을 클릭하세요."
+        instruction: "검색 결과에서 ‘서울 종로구 인사동’을 클릭하세요."
     },
     {
         page: 4,
-        instruction: "'필수 항목'만 선택해 주세요. '선택 항목'은 동의하지 않아도 서비스 이용이 가능합니다."
+        instruction: "‘필수 항목’만 선택해 주세요. ‘선택 항목’은 동의하지 않아도 서비스 이용이 가능합니다."
     },
     {
         page: 5,
-        instruction: "'시작하기' 버튼을 클릭하세요."
+        instruction: "‘시작하기’ 버튼을 클릭하세요."
     },
     {
         page: 6,
-        instruction: "'-'없이 휴대폰 번호 11자리를 입력하고 '인증문자 받기' 버튼을 클릭하세요."
+        instruction: "휴대폰 번호 11자리를 숫자만 입력하고 ‘인증문자 받기’ 버튼을 클릭하세요."
     },
     {
         page: 7,
-        instruction: "인증번호 입력란에 인증번호 '123456'을 입력 후 '동의하고 시작하기' 버튼을 클릭하세요." 
+        instruction: "인증번호 입력란에 인증번호 ‘123456’을 입력 후 ‘동의하고 시작하기’ 버튼을 클릭하세요." 
     },
     {
         page: 8,
-        instruction: "'나의 당근'탭을 클릭하세요.'"
+        instruction: "‘나의 당근’탭을 클릭하세요."
     },
     {
         page: 9,
-        instruction: "'알림 키워드 설정' 메뉴를 찾아서 눌러주세요."
+        instruction: "‘알림 키워드 설정’ 메뉴를 찾아서 눌러주세요."
     },
     {
         page: 10,
-        instruction: "키워드 입력란에 '자전거'를 입력하고 '등록'을 눌러주세요."
+        instruction: "키워드 입력란에 ‘자전거’를 입력하고 ‘등록’을 눌러주세요."
     },
     {
         page: 11,
-        instruction: "등록된 키워드를 확인하고 하단 바의 '다음'버튼을 클릭하세요."
+        instruction: "등록된 키워드를 확인하고 하단 바의 ‘다음’버튼을 클릭하세요."
     },
     {
         page: 12,
-        instruction: "마지막 페이지"
+        instruction: "완료"
     },
 ];
 

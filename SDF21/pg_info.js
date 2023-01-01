@@ -91,19 +91,19 @@ const inputAnswer = [
 const modalCont = [
     {
         page: 0,
-        instruction: "'시작하기' 버튼을 눌러주세요."
+        instruction: "‘시작하기’ 버튼을 눌러주세요."
     },
     {
         page: 1,
-        instruction: "국세청 손택스 메인화면에서 조회/발급 탭을 눌러 주세요."
+        instruction: "국세청 손택스 메인화면에서 ‘조회/발급’ 탭을 눌러 주세요."
     },
     {
         page: 2,
-        instruction: "'연말정산서비스'를 눌러주세요."
+        instruction: "‘연말정산서비스’를 눌러주세요."
     },
     {
         page: 3,
-        instruction: "'근로자 소득ㆍ세액공제 자료조회'를 눌러주세요."
+        instruction: "‘근로자 소득ㆍ세액공제 자료조회’를 눌러주세요."
     },
     {
         page: 4,
@@ -127,11 +127,11 @@ const modalCont = [
     },
     {
         page: 9,
-        instruction: "조회한 항목들을 내려받겠습니다 '일괄/점자 내려받기' 버튼을 눌러주세요."
+        instruction: "조회한 항목들을 내려받겠습니다. ‘일괄/점자 내려받기’ 버튼을 눌러주세요."
     },
     {
         page: 10,
-        instruction: "내려받기 버튼을 누르면 다운로드가 시작되고 실습이 완료됩니다. 내려받기 버튼을 눌러주세요."
+        instruction: "내려받기 버튼을 누르면 다운로드가 시작되고 실습이 완료됩니다. ‘내려받기’ 버튼을 눌러주세요."
     },
     {
         page: 11,
