@@ -241,41 +241,47 @@ const modalCont = [
 // //*******************************************************************************
 // //**************************+    커서   +*********************************** 
 
-// const cursor_pos_1 = document.querySelector('.cursor_pos_1');
 const cursor_pos_2 = document.querySelector('.cursor_pos_2');
 const cursor_pos_3 = document.querySelector('.cursor_pos_3');
 const cursor_pos_4 = document.querySelector('.cursor_pos_4');
 const cursor_pos_5 = document.querySelector('.cursor_pos_5');
 const cursor_pos_8 = document.querySelector('.cursor_pos_8');
+const cursor_pos_13 = document.querySelector('.cursor_pos_13');
+const cursor_pos_17 = document.querySelector('.cursor_pos_17');
+const cursor_pos_18 = document.querySelector('.cursor_pos_18');
+const cursor_pos_19 = document.querySelector('.cursor_pos_19');
+const cursor_pos_20 = document.querySelector('.cursor_pos_20');
+const cursor_pos_21 = document.querySelector('.cursor_pos_21');
 
-// const cursor_wrap_1 = document.querySelector('.cursor_wrap_1');
+
 const cursor_wrap_2 = document.querySelector('.cursor_wrap_2');
 const cursor_wrap_3 = document.querySelector('.cursor_wrap_3');
 const cursor_wrap_4 = document.querySelector('.cursor_wrap_4');
 const cursor_wrap_5 = document.querySelector('.cursor_wrap_5');
 const cursor_wrap_8 = document.querySelector('.cursor_wrap_8');
+const cursor_wrap_13 = document.querySelector('.cursor_wrap_13');
+const cursor_wrap_17 = document.querySelector('.cursor_wrap_17');
+const cursor_wrap_18 = document.querySelector('.cursor_wrap_18');
+const cursor_wrap_19 = document.querySelector('.cursor_wrap_19');
+const cursor_wrap_20 = document.querySelector('.cursor_wrap_20');
+const cursor_wrap_21 = document.querySelector('.cursor_wrap_21');
 
 
-// cursor_wrap_1.style.zIndex = "100";
 cursor_wrap_2.style.zIndex = "100";
 cursor_wrap_3.style.zIndex = "100";
 cursor_wrap_4.style.zIndex = "100";
 cursor_wrap_5.style.zIndex = "100";
 cursor_wrap_8.style.zIndex = "100";
+cursor_wrap_13.style.zIndex = "100";
+cursor_wrap_17.style.zIndex = "100";
+cursor_wrap_18.style.zIndex = "100";
+cursor_wrap_19.style.zIndex = "100";
+cursor_wrap_20.style.zIndex = "100";
+cursor_wrap_21.style.zIndex = "100";
+
 
 
 const { createPopper } = Popper;
-// createPopper(cursor_pos_1, cursor_wrap_1, {
-//     placement: 'right',
-//     modifiers: [
-//         {
-//             name: 'offset',
-//             options: {
-//                 offset: [0,0],
-//             },
-//         },
-//     ],
-// });
 createPopper(cursor_pos_2, cursor_wrap_2, {
     placement: 'bottom',
     modifiers: [
@@ -327,7 +333,73 @@ createPopper(cursor_pos_8, cursor_wrap_8, {
         {
             name: 'offset',
             options: {
-                offset: [320,10],
+                offset: [280,10],
+            },
+        },
+    ],
+});
+createPopper(cursor_pos_13, cursor_wrap_13, {
+    placement: 'bottom',
+    modifiers: [
+        {
+            name: 'offset',
+            options: {
+                offset: [280,300],
+            },
+        },
+    ],
+});
+createPopper(cursor_pos_17, cursor_wrap_17, {
+    placement: 'bottom',
+    modifiers: [
+        {
+            name: 'offset',
+            options: {
+                offset: [150,260],
+            },
+        },
+    ],
+});
+createPopper(cursor_pos_18, cursor_wrap_18, {
+    placement: 'bottom',
+    modifiers: [
+        {
+            name: 'offset',
+            options: {
+                offset: [220,10],
+            },
+        },
+    ],
+});
+createPopper(cursor_pos_19, cursor_wrap_19, {
+    placement: 'bottom',
+    modifiers: [
+        {
+            name: 'offset',
+            options: {
+                offset: [220,10],
+            },
+        },
+    ],
+});
+createPopper(cursor_pos_20, cursor_wrap_20, {
+    placement: 'bottom',
+    modifiers: [
+        {
+            name: 'offset',
+            options: {
+                offset: [220,10],
+            },
+        },
+    ],
+});
+createPopper(cursor_pos_21, cursor_wrap_21, {
+    placement: 'bottom',
+    modifiers: [
+        {
+            name: 'offset',
+            options: {
+                offset: [220,10],
             },
         },
     ],
