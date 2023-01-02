@@ -166,7 +166,7 @@ $(document).on("click", "#next_btn", function () {
 //이전 버튼
 $(document).on("click", "#prev_btn", function () {
     console.log("이전");
-    if (page_num > 0) {
+    if (page_num > 1) {
         page_num -= 1;
         $(".active").removeClass("active");//active 클래스에서 'active'클래스 제거하고 -> 없어도 되는 코드
         $("#p" + page_num).addClass("active");//클릭한 곳에 'active' 클래스 추가
@@ -180,8 +180,29 @@ $(document).on("click", "#prev_btn", function () {
         //         $('.shadow_ext').removeClass("addShadow");
         // $('.shadow_inner').removeClass("addInnerShadow");
         // $('.border_darker').removeClass("mk_border_darker");
+        $(".ctrlbar").addClass("ctrlbar_shadow");
+    } else if ( page_num==1 ){
+
+        $("#p1").removeClass("active");//active 클래스에서 'active'클래스 제거하고 -> 없어도 되는 코드
+        $("#p0").addClass("active");//클릭한 곳에 'active' 클래스 추가
+        $(".pactive").fadeOut(0).promise().done(function () {//pactive -> active 추가된 p?
+            //promise() -> 자바스크립트 비동기 처리에 사용되는 객체 -> fadeout 완료 후 실행되는 함수
+            //.toggleClass('추가클래스') //해당 jquery로 가져온 요소를 클릭마다 클래스를 추가하고 삭제.
+            $(".pactive").toggleClass("pactive");
+            $("#p0").toggleClass("pactive");
+            $(".pactive").fadeIn(0);
+        });
+        $('.wrap_toggle').wrapAll('<div class="nav_btn_wrap"></div>');
+        $('.nav_btn_wrap').css('display', 'none');
+            //$('.nav_btn_wrap').css('display', 'flex');
+        $('.start_btn_wrap').css('display', '');
+            //$('.nav_btn_wrap').unwrap();
+            $(".ctrlbar").removeClass("ctrlbar_shadow");
+            ctrlbar.style.background = "#FFFFFF";
     }
+
     console.log(page_num);
+
     if (page_num != 0) {
         audioArray[page_num - 1].load();
         audioArray[page_num - 1].play();
@@ -191,13 +212,6 @@ $(document).on("click", "#prev_btn", function () {
         audioArray[page_num - 1].pause();
     } else if (audio_stat == 1) {
         audioArray[page_num - 1].play();
-    }
-
-    //---------ctrlbar shadow
-    if (page_num == 0) {
-        $(".ctrlbar").removeClass("ctrlbar_shadow");
-    } else {
-        $(".ctrlbar").addClass("ctrlbar_shadow");
     }
 
 });
