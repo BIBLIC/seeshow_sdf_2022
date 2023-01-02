@@ -265,10 +265,12 @@ svg {
     width: 100%;
     min-height: 15vh;
     resize: none;
-    margin-top: 1em;
+    margin-top: .5em;
+    padding: .5em;
+    border: 1px solid #ced4da;
 }
 
-#p3 .under_bar, #p5 .under_bar, #p7 .under_bar, #p8 .under_bar, #p9 .under_bar, #p10 .under_bar {
+#p3 .under_bar, #p5 .under_bar, #p7 .under_bar, #p8 .under_bar, #p9 .under_bar, #p10 .under_bar, #p13 .under_bar {
     height: 5vh;
     /* justify-content: flex-start; */
     padding-left: 1em;
