@@ -1,3 +1,16 @@
+.hd_msg,
+.hd_newslist,
+.hd_blog,
+.hd_cafe{
+  height: 8vh;
+}
+.chat_main,
+.news_main,
+.blog_main,
+.cafe_main{
+  height : 71vh !important;
+}
+
 h1 {
   line-height: unset !important;
 }

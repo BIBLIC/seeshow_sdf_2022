@@ -240,27 +240,27 @@ $(document).on("click", "#prev_btn", function () {
     if (page_num == 2) {
         //chat_main.scrollTop = chat_main.scrollHeight *0.6;
         if (textSizeValue == "2") {
-            let scrollPos = total_height * 2.0;
+            let scrollPos = total_height * 0.6;
             $('.chat_main').scrollTop(scrollPos);
         } else {
-            let scrollPos = total_height * 1.0;
+            let scrollPos = total_height * 0.3;
             $('.chat_main').scrollTop(scrollPos);
         }
     }
     if (page_num == 3) {
         //chat_main.scrollTop = chat_main.scrollHeight *0.6;
         if (textSizeValue == "2") {
-            let scrollPos = total_height * 1.9;
+            let scrollPos = total_height * 0.7;
             $('.chat_main').scrollTop(scrollPos);
         } else {
-            let scrollPos = total_height * 1.1;
+            let scrollPos = total_height * 0.35;
             $('.chat_main').scrollTop(scrollPos);
         }
     }
     if (page_num == 4) {
         //chat_main.scrollTop = chat_main.scrollHeight *0.6;
         if (textSizeValue == "2") {
-            let scrollPos = total_height * 2.9;
+            let scrollPos = total_height * 1.3;
             $('.chat_main').scrollTop(scrollPos);
         } else {
             let scrollPos = total_height * 1.9;
@@ -270,7 +270,7 @@ $(document).on("click", "#prev_btn", function () {
     if (page_num == 5) {
         //chat_main.scrollTop = chat_main.scrollHeight *0.6;
         if (textSizeValue == "2") {
-            let scrollPos = total_height * 4.0;
+            let scrollPos = total_height * 2;
             $('.chat_main').scrollTop(scrollPos);
         } else {
             let scrollPos = total_height * 2.0;
@@ -390,47 +390,47 @@ function next() {
     if (page_num > 1) {
         audioArray[page_num - 2].pause();
     }
-    //자동 스크롤
-    if (page_num == 2) {
-        //chat_main.scrollTop = chat_main.scrollHeight *0.6;
-        if (textSizeValue == "2") {
-            let scrollPos = total_height * 2.0;
-            $('.chat_main').scrollTop(scrollPos);
-        } else {
-            let scrollPos = total_height * 1.0;
-            $('.chat_main').scrollTop(scrollPos);
-        }
+   //자동 스크롤
+   if (page_num == 2) {
+    //chat_main.scrollTop = chat_main.scrollHeight *0.6;
+    if (textSizeValue == "2") {
+        let scrollPos = total_height * 0.6;
+        $('.chat_main').scrollTop(scrollPos);
+    } else {
+        let scrollPos = total_height * 0.3;
+        $('.chat_main').scrollTop(scrollPos);
     }
-    if (page_num == 3) {
-        //chat_main.scrollTop = chat_main.scrollHeight *0.6;
-        if (textSizeValue == "2") {
-            let scrollPos = total_height * 1.9;
-            $('.chat_main').scrollTop(scrollPos);
-        } else {
-            let scrollPos = total_height * 1.1;
-            $('.chat_main').scrollTop(scrollPos);
-        }
+}
+if (page_num == 3) {
+    //chat_main.scrollTop = chat_main.scrollHeight *0.6;
+    if (textSizeValue == "2") {
+        let scrollPos = total_height * 0.7;
+        $('.chat_main').scrollTop(scrollPos);
+    } else {
+        let scrollPos = total_height * 0.35;
+        $('.chat_main').scrollTop(scrollPos);
     }
-    if (page_num == 4) {
-        //chat_main.scrollTop = chat_main.scrollHeight *0.6;
-        if (textSizeValue == "2") {
-            let scrollPos = total_height * 2.9;
-            $('.chat_main').scrollTop(scrollPos);
-        } else {
-            let scrollPos = total_height * 1.9;
-            $('.chat_main').scrollTop(scrollPos);
-        }
+}
+if (page_num == 4) {
+    //chat_main.scrollTop = chat_main.scrollHeight *0.6;
+    if (textSizeValue == "2") {
+        let scrollPos = total_height * 1.3;
+        $('.chat_main').scrollTop(scrollPos);
+    } else {
+        let scrollPos = total_height * 1.9;
+        $('.chat_main').scrollTop(scrollPos);
     }
-    if (page_num == 5) {
-        //chat_main.scrollTop = chat_main.scrollHeight *0.6;
-        if (textSizeValue == "2") {
-            let scrollPos = total_height * 4.0;
-            $('.chat_main').scrollTop(scrollPos);
-        } else {
-            let scrollPos = total_height * 2.0;
-            $('.chat_main').scrollTop(scrollPos);
-        }
+}
+if (page_num == 5) {
+    //chat_main.scrollTop = chat_main.scrollHeight *0.6;
+    if (textSizeValue == "2") {
+        let scrollPos = total_height * 2;
+        $('.chat_main').scrollTop(scrollPos);
+    } else {
+        let scrollPos = total_height * 2.0;
+        $('.chat_main').scrollTop(scrollPos);
     }
+}
 }
 
 //( 1 )++++++++++++++++++++++++++++
@@ -476,12 +476,16 @@ $(document).on("click", ".pg_3_answer", function () {
 });
 $(document).on("click", ".nxtBtn3", function () {
     modal3_1.style.display = "none";
-    next();
+    modal3_3.style.display = "";
+   
+    //console.log('후 p',real_pg);
 });
-// $(여식document).on("click", ".okBtn3", function () {
-//     modal3_2.style.display = "none";
-//     next();
-// });
+$(document).on("click", ".okBtn3", function () {
+    modal3_2.style.display = "none";
+    //console.log('전 p',real_pg);
+    next();
+    //console.log('후 p',real_pg);
+});
 
 
 //( 4 )++++++++++++++++++++++++++++

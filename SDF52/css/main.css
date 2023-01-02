@@ -19,8 +19,3 @@
     height: clamp(24px, 15px + 2.3vw, 2.3em);
     padding-bottom: 5px;
 }
-
-#main {
-    height: 64vh !important;
-}
-

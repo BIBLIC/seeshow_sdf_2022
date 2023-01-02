@@ -103,7 +103,7 @@ $('#start-btn').click(function () {
     //자동 스크롤
     if (page_num == 1) {
         if (textSizeValue == "2") {
-            let scrollPos = total_height * 1.8;
+            let scrollPos = total_height * 0.3;
             $('.news_main').scrollTop(scrollPos);
         } else {
             let scrollPos = total_height * 0.2;
@@ -176,46 +176,46 @@ $(document).on("click", "#next_btn", function () {
     }
     if (page_num == 2) {
         if (textSizeValue == "2") {
-            let scrollPos = total_height * 0.45;
+            let scrollPos = total_height * 0.3;
             $('.news_main').scrollTop(scrollPos);
         } else {
-            let scrollPos = total_height * 0.3;
+            let scrollPos = total_height * 0.2;
             $('.news_main').scrollTop(scrollPos);
         }
     }
     if (page_num == 3) {
         if (textSizeValue == "2") {
-            let scrollPos = total_height * 0.7;
+            let scrollPos = total_height * 0.65;
             $('.news_main').scrollTop(scrollPos);
         } else {
-            let scrollPos = total_height * 0.5;
+            let scrollPos = total_height * 0.45;
             $('.news_main').scrollTop(scrollPos);
         }
     }
     if (page_num == 4) {
         if (textSizeValue == "2") {
-            let scrollPos = total_height * 1.1;
+            let scrollPos = total_height * 0.9;
+            $('.news_main').scrollTop(scrollPos);
+        } else {
+            let scrollPos = total_height * 0.6;
+            $('.news_main').scrollTop(scrollPos);
+        }
+    }
+    if (page_num == 5) {
+        if (textSizeValue == "2") {
+            let scrollPos = total_height * 1.05;
             $('.news_main').scrollTop(scrollPos);
         } else {
             let scrollPos = total_height * 0.7;
             $('.news_main').scrollTop(scrollPos);
         }
     }
-    if (page_num == 5) {
+    if (page_num == 6) {
         if (textSizeValue == "2") {
             let scrollPos = total_height * 1.25;
             $('.news_main').scrollTop(scrollPos);
         } else {
             let scrollPos = total_height * 0.8;
-            $('.news_main').scrollTop(scrollPos);
-        }
-    }
-    if (page_num == 6) {
-        if (textSizeValue == "2") {
-            let scrollPos = total_height * 1.35;
-            $('.news_main').scrollTop(scrollPos);
-        } else {
-            let scrollPos = total_height * 1.0;
             $('.news_main').scrollTop(scrollPos);
         }
     }
