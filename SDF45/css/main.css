@@ -128,6 +128,7 @@ main svg {
 }
 
 #p4 .form {
+    height: 7vh;
     border: 1px solid #e0e0e0;
     border-radius: 10px;
     margin-top: 0.5em;
@@ -136,10 +137,50 @@ main svg {
 #p4 .btn {
     font-size: large;
     width: 100%;
-    min-height: 8vh;
+    height: 7vh;
     background-color: #C8C8C8;
 }
 
+#p4 .banner {
+    height: auto;
+    width: 100%;
+    border: 0;
+}
+
+#p4 .tab_bottom {
+    width: 100%;
+    height: 7vh;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 1em;
+}
+
+#p4 .tab_bottom .item {
+    width: 33%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-left: 1em;
+    padding-right: 1em;
+}
+#p4 .tab_bottom .item:not(:last-child) {
+    border-right: 1px solid #ced4da;
+}
+
+#p4 .tab_bottom .item .txt {
+    flex: 1;
+}
+
+#p4 .tab_bottom .item svg {
+    width: 2em;
+    height: auto;
+    margin: 0;
+    margin-right: .5em;
+}
+
+/* ------------------------------------- */
 #p5 .container,
 #p4 .container {
     padding: 1em;
@@ -153,8 +194,7 @@ main svg {
 }
 
 #p7 .icon,
-#p6 .icon,
-#p4 .icon {
+#p6 .icon {
     width: 2em;
     height: 2em;
     border: unset;
@@ -188,8 +228,10 @@ main svg {
 
 #p7 .input_bar,
 #p6 .input_bar {
+    width: 75%;
     min-height: 2vh;
     padding: 0.5em;
+    padding-left: 1em;
     background-color: #F4F0F1;
     border-radius: 25px;
 }

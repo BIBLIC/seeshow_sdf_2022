@@ -243,9 +243,8 @@
                                 </div>
                             </div>
                         </div>
-
                         <!------------------------------ page 4 ------------------------------>
-                        <div class="page active pactive" id="p4" style="display: block;">
+                        <div class="page" id="p4">
                             <div class="page_wrap">
                                 <h1 class="pg_title" style="color: #fff;">Page4</h1>
                                 <div class="bar d-flex justify-content-between align-items-center pg_4_shadow_inner">
@@ -284,7 +283,7 @@
                                     </div>
                                     <div class="py-4 text-lg">
                                         <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20"
-                                            fill="currentColor" class="bi bi-check-square gray m-0 pg_4_txt_darker"
+                                            fill="currentColor" class="bi bi-check-square gray m-0 me-2 pg_4_txt_darker"
                                             viewBox="0 0 16 16">
                                             <path
                                                 d="M14 1a1 1 0 0 1 1 1v12a1 1 0 0 1-1 1H2a1 1 0 0 1-1-1V2a1 1 0 0 1 1-1h12zM2 0a2 2 0 0 0-2 2v12a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V2a2 2 0 0 0-2-2H2z">
@@ -292,7 +291,8 @@
                                             <path
                                                 d="M10.97 4.97a.75.75 0 0 1 1.071 1.05l-3.992 4.99a.75.75 0 0 1-1.08.02L4.324 8.384a.75.75 0 1 1 1.06-1.06l2.094 2.093 3.473-4.425a.235.235 0 0 1 .02-.022z">
                                             </path>
-                                        </svg> &nbsp; 자동로그인
+                                        </svg>
+                                        자동로그인
                                     </div>
                                     <div class="text_box text-sm mt-0 pg_4_shadow_inner">
                                         연결상태를 유지한 기기에서는 추가인증 없이 인증서에 접근할 수 있습니다. 안전한 서비스 이용을 위해 개인PC, 모바일에서만 선택해 주세요.
@@ -322,21 +322,30 @@
                                         <div class="px-2">|</div>
                                         <div>마이인포웹인증</div>
                                     </div>
-                                    <img src="./assets/image/banner.png" class="" width="100%">
-                                    <div class="d-flex mt-4">
-                                        <div class="d-flex">
-                                            <img src="./assets/image/15.png" class="icon pe-1">
-                                            <div>이용안내</div>
+                                    <img src="./assets/image/banner.png" class="banner">
+
+                                    <div class="tab_bottom">
+                                        <div class="item">
+                                            <!-- <img src="./assets/image/15.png" class="icon"> -->
+                                            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-file-earmark-text" viewBox="0 0 16 16">
+                                                <path d="M5.5 7a.5.5 0 0 0 0 1h5a.5.5 0 0 0 0-1h-5zM5 9.5a.5.5 0 0 1 .5-.5h5a.5.5 0 0 1 0 1h-5a.5.5 0 0 1-.5-.5zm0 2a.5.5 0 0 1 .5-.5h2a.5.5 0 0 1 0 1h-2a.5.5 0 0 1-.5-.5z"/>
+                                                <path d="M9.5 0H4a2 2 0 0 0-2 2v12a2 2 0 0 0 2 2h8a2 2 0 0 0 2-2V4.5L9.5 0zm0 1v2A1.5 1.5 0 0 0 11 4.5h2V14a1 1 0 0 1-1 1H4a1 1 0 0 1-1-1V2a1 1 0 0 1 1-1h5.5z"/>
+                                              </svg>
+                                            <div class="text-center txt">이용안내</div>
                                         </div>
-                                        <div class="px-2">|</div>
-                                        <div class="d-flex">
-                                            <img src="./assets/image/19.png" class="icon pe-1">
-                                            <div>금융결제원<br>고객센터</div>
+                                        <div class="item">
+                                            <!-- <img src="./assets/image/19.png" class="icon"> -->
+                                            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-headset" viewBox="0 0 16 16">
+                                                <path d="M8 1a5 5 0 0 0-5 5v1h1a1 1 0 0 1 1 1v3a1 1 0 0 1-1 1H3a1 1 0 0 1-1-1V6a6 6 0 1 1 12 0v6a2.5 2.5 0 0 1-2.5 2.5H9.366a1 1 0 0 1-.866.5h-1a1 1 0 1 1 0-2h1a1 1 0 0 1 .866.5H11.5A1.5 1.5 0 0 0 13 12h-1a1 1 0 0 1-1-1V8a1 1 0 0 1 1-1h1V6a5 5 0 0 0-5-5z"/>
+                                              </svg>
+                                            <div class="text-center txt">금융결제원<br>고객센터</div>
                                         </div>
-                                        <div class="px-2">|</div>
-                                        <div class="d-flex">
-                                            <img src="./assets/image/20.png" class="icon pe-1">
-                                            <div>해외전화<br>이용</div>
+                                        <div class="item">
+                                            <!-- <img src="./assets/image/20.png" class="icon"> -->
+                                            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-globe" viewBox="0 0 16 16">
+                                                <path d="M0 8a8 8 0 1 1 16 0A8 8 0 0 1 0 8zm7.5-6.923c-.67.204-1.335.82-1.887 1.855A7.97 7.97 0 0 0 5.145 4H7.5V1.077zM4.09 4a9.267 9.267 0 0 1 .64-1.539 6.7 6.7 0 0 1 .597-.933A7.025 7.025 0 0 0 2.255 4H4.09zm-.582 3.5c.03-.877.138-1.718.312-2.5H1.674a6.958 6.958 0 0 0-.656 2.5h2.49zM4.847 5a12.5 12.5 0 0 0-.338 2.5H7.5V5H4.847zM8.5 5v2.5h2.99a12.495 12.495 0 0 0-.337-2.5H8.5zM4.51 8.5a12.5 12.5 0 0 0 .337 2.5H7.5V8.5H4.51zm3.99 0V11h2.653c.187-.765.306-1.608.338-2.5H8.5zM5.145 12c.138.386.295.744.468 1.068.552 1.035 1.218 1.65 1.887 1.855V12H5.145zm.182 2.472a6.696 6.696 0 0 1-.597-.933A9.268 9.268 0 0 1 4.09 12H2.255a7.024 7.024 0 0 0 3.072 2.472zM3.82 11a13.652 13.652 0 0 1-.312-2.5h-2.49c.062.89.291 1.733.656 2.5H3.82zm6.853 3.472A7.024 7.024 0 0 0 13.745 12H11.91a9.27 9.27 0 0 1-.64 1.539 6.688 6.688 0 0 1-.597.933zM8.5 12v2.923c.67-.204 1.335-.82 1.887-1.855.173-.324.33-.682.468-1.068H8.5zm3.68-1h2.146c.365-.767.594-1.61.656-2.5h-2.49a13.65 13.65 0 0 1-.312 2.5zm2.802-3.5a6.959 6.959 0 0 0-.656-2.5H12.18c.174.782.282 1.623.312 2.5h2.49zM11.27 2.461c.247.464.462.98.64 1.539h1.835a7.024 7.024 0 0 0-3.072-2.472c.218.284.418.598.597.933zM10.855 4a7.966 7.966 0 0 0-.468-1.068C9.835 1.897 9.17 1.282 8.5 1.077V4h2.355z"/>
+                                              </svg>
+                                            <div class="text-center txt">해외전화<br>이용</div>
                                         </div>
                                     </div>
                                 </div>
@@ -345,49 +354,49 @@
                         </div>
                         <!------------------------------ page 5 ------------------------------>
                         <div class="page" id="p5">
-                            <div class="page_wrap pg_5_answer">
-                                <h1 class="pg_5_answer pg_title" style="color: #fff;">Page5</h1>
-                                <div class="pg_5_answer bar d-flex justify-content-between align-items-center">
+                            <div class="page_wrap">
+                                <h1 class="pg_title" style="color: #fff;">Page5</h1>
+                                <div class="bar d-flex justify-content-between align-items-center pg_5_shadow_inner">
                                     <svg xmlns="http://www.w3.org/2000/svg" width="25" height="25" fill="currentColor"
-                                        class="pg_5_answer bi bi-chevron-left" viewBox="0 0 16 16">
+                                        class="bi bi-chevron-left" viewBox="0 0 16 16">
                                         <path fill-rule="evenodd"
                                             d="M11.354 1.646a.5.5 0 0 1 0 .708L5.707 8l5.647 5.646a.5.5 0 0 1-.708.708l-6-6a.5.5 0 0 1 0-.708l6-6a.5.5 0 0 1 .708 0z" />
                                     </svg>
                                     <svg xmlns="http://www.w3.org/2000/svg" width="25" height="25" fill="currentColor"
-                                        class="pg_5_answer bi bi-x-lg" viewBox="0 0 16 16">
+                                        class="bi bi-x-lg" viewBox="0 0 16 16">
                                         <path
                                             d="M2.146 2.854a.5.5 0 1 1 .708-.708L8 7.293l5.146-5.147a.5.5 0 0 1 .708.708L8.707 8l5.147 5.146a.5.5 0 0 1-.708.708L8 8.707l-5.146 5.147a.5.5 0 0 1-.708-.708L7.293 8 2.146 2.854Z" />
                                     </svg>
                                 </div>
-                                <div class="pg_5_answer container scroller fontSz">
-                                    <div class="pg_5_answer d-flex flex-center-center flex-column p-2">
-                                        <div class="pg_5_answer d-flex fs-4">
-                                            <div class="pg_5_answer fw-bold">SMS문자</div>
+                                <div class="container scroller fontSz">
+                                    <div class="d-flex flex-center-center flex-column p-2">
+                                        <div class="d-flex fs-4">
+                                            <div class="fw-bold">SMS문자</div>
                                             <div>를 받으신 후</div>
                                         </div>
-                                        <div class="pg_5_answer d-flex fs-4">
-                                            <div class="pg_5_answer fw-bold">확인코드 숫자</div>
+                                        <div class="d-flex fs-4">
+                                            <div class="fw-bold">확인코드 숫자</div>
                                             <div>를 입력해 주세요</div>
                                         </div>
-                                        <div class="pg_5_answer text-sm py-2">SMS문자 1688-4932</div>
+                                        <div class="text-sm py-2">SMS문자 1688-4932</div>
                                     </div>
                                     <div class="pg_5_answer text_box d-flex flex-center-center">
-                                        <div class="pg_5_answer fw-bold">확인코드</div>
-                                        <div class="pg_5_answer text-sm my-2 d-flex align-items-center">
+                                        <div class="fw-bold">확인코드</div>
+                                        <div class="text-sm my-2 d-flex align-items-center">
                                             <svg xmlns="http://www.w3.org/2000/svg" width="12" height="12"
-                                                fill="currentColor" class="pg_5_answer bi bi-clock fontG m-0"
+                                                fill="currentColor" class="bi bi-clock fontG m-0"
                                                 viewBox="0 0 16 16">
                                                 <path
                                                     d="M8 3.5a.5.5 0 0 0-1 0V9a.5.5 0 0 0 .252.434l3.5 2a.5.5 0 0 0 .496-.868L8 8.71V3.5z" />
                                                 <path
                                                     d="M8 16A8 8 0 1 0 8 0a8 8 0 0 0 0 16zm7-8A7 7 0 1 1 1 8a7 7 0 0 1 14 0z" />
                                             </svg>
-                                            <div class="pg_5_answer fontR ms-2">4:41</div>
+                                            <div class="fontR ms-2">4:41</div>
                                         </div>
-                                        <div class="pg_5_answer fontB fw-bold" style="font-size: 7em;">36</div>
+                                        <div class="fontB fw-bold" style="font-size: 7em;">36</div>
                                     </div>
                                     <ul>
-                                        <li class="pg_5_answer text-sm mt-4">이용중인 통신요금제에 따라 문자메세지 발송 비용이 발생할 수
+                                        <li class="text-sm mt-4">이용중인 통신요금제에 따라 문자메세지 발송 비용이 발생할 수
                                             있습니다.<br>(정보이용료는 추가
                                             발생하지 않습니다)</li>
                                     </ul>
@@ -452,9 +461,8 @@
                                             <path fill-rule="evenodd"
                                                 d="M4.646 1.646a.5.5 0 0 1 .708 0l6 6a.5.5 0 0 1 0 .708l-6 6a.5.5 0 0 1-.708-.708L10.293 8 4.646 2.354a.5.5 0 0 1 0-.708z" />
                                         </svg>
-                                        <div
-                                            class="input_bar d-flex justify-content-between align-items-center pg_6_answer 6_input">
-                                            <input type="number" class="answer_txt pg_6_answer 6_input"></input>
+                                        <div class="input_bar d-flex justify-content-between align-items-center pg_6_answer 6_input">
+                                            <input type="number" class="answer_txt pg_6_answer 6_input w-80"></input>
                                             <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16"
                                                 fill="currentColor" class="bi bi-emoji-smile m-0 mx-2"
                                                 viewBox="0 0 16 16">
