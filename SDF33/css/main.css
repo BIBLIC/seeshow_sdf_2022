@@ -168,7 +168,9 @@
 
 #p1 .under_bar .btn {
     min-height: 6vh;
-    
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 #p1 .bg-lightgray {
