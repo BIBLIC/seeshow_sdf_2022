@@ -166,11 +166,21 @@
     min-height: 21vh;
     background: #fff;
     position: unset;
+    justify-content: space-evenly;
+    padding: 1em;
+    padding-top: .5em;
+    padding-bottom: .5em;
 }
 
 #p2 .btn {
     border-radius: 90px;
 }
+
+#p2 svg {
+    width: 0.8em;
+    height: 0.8em;
+}
+/* ----------------------------------- */
 
 #p3 .under_bar {
     width: 100%;
