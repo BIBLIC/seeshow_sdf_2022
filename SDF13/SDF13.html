@@ -1003,12 +1003,12 @@
                     </main>
 
                     <div class="ctrlbar-bg"></div>
-                <div class="ctrlbar" id="ctrlbar">
-                    <div class="start_btn_wrap">
-                        <button type="button" class="btn start_btn btn-lg" id="start-btn">시작하기</button>
+                    <div class="ctrlbar" id="ctrlbar">
+                        <div class="start_btn_wrap">
+                            <button type="button" class="btn start_btn btn-lg" id="start-btn">시작하기</button>
                         </div>
                         <div class="nav_btn_wrap">
-                            <div class="baricon_wrap prev" id="prev_btn">
+                            <div class="baricon_wrap prev wrap_toggle" id="prev_btn">
                                 <div class="baricon">
                                     <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
                                         class="bi bi-caret-left-fill svg" viewBox="0 0 16 16">
@@ -1018,23 +1018,23 @@
                                 </div>
                                 <div class="bartext">이전</div>
                             </div>
-                            <div class="baricon_wrap pause">
-
+                            <div class="baricon_wrap pause wrap_toggle">
+    
                                 <div class="stop" id="pause_btn">
                                     <div class="baricon">
-                                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16"
-                                            fill="currentColor" class="bi bi-volume-mute-fill svg" viewBox="0 0 16 16">
+                                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+                                            class="bi bi-volume-mute-fill svg" viewBox="0 0 16 16">
                                             <path
                                                 d="M6.717 3.55A.5.5 0 0 1 7 4v8a.5.5 0 0 1-.812.39L3.825 10.5H1.5A.5.5 0 0 1 1 10V6a.5.5 0 0 1 .5-.5h2.325l2.363-1.89a.5.5 0 0 1 .529-.06zm7.137 2.096a.5.5 0 0 1 0 .708L12.207 8l1.647 1.646a.5.5 0 0 1-.708.708L11.5 8.707l-1.646 1.647a.5.5 0 0 1-.708-.708L10.793 8 9.146 6.354a.5.5 0 1 1 .708-.708L11.5 7.293l1.646-1.647a.5.5 0 0 1 .708 0z" />
                                         </svg>
                                     </div>
                                     <div class="bartext text-center">멈춤</div>
                                 </div>
-
+    
                                 <div class="play" id="play_btn">
                                     <div class="baricon">
-                                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16"
-                                            fill="currentColor" class="bi bi-volume-up-fill svg" viewBox="0 0 16 16">
+                                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+                                            class="bi bi-volume-up-fill svg" viewBox="0 0 16 16">
                                             <path
                                                 d="M11.536 14.01A8.473 8.473 0 0 0 14.026 8a8.473 8.473 0 0 0-2.49-6.01l-.708.707A7.476 7.476 0 0 1 13.025 8c0 2.071-.84 3.946-2.197 5.303l.708.707z" />
                                             <path
@@ -1045,9 +1045,9 @@
                                     </div>
                                     <div class="bartext text-center">재생</div>
                                 </div>
-
+    
                             </div>
-                            <div class="baricon_wrap" id="hint_btn">
+                            <div class="baricon_wrap wrap_toggle" id="hint_btn wrap_toggle">
                                 <div class="baricon">
                                     <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
                                         class="bi bi-lightbulb-fill svg hint" viewBox="0 0 16 16">
@@ -1062,7 +1062,7 @@
                                 </div>
                                 <div class="bartext">힌트</div>
                             </div>
-                            <div class="baricon_wrap" id="size_btn">
+                            <div class="baricon_wrap wrap_toggle" id="size_btn">
                                 <div id="tSlider" class="baricon" data-bs-toggle="popover">
                                     <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
                                         class="bi bi-type svg" viewBox="0 0 16 16">
@@ -1072,7 +1072,7 @@
                                 </div>
                                 <div class="bartext">크기</div>
                             </div>
-                            <div class="baricon_wrap next" id="next_btn">
+                            <div class="baricon_wrap next wrap_toggle" id="next_btn">
                                 <div class="baricon">
                                     <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
                                         class="bi bi-caret-right-fill svg" viewBox="0 0 16 16">
@@ -1086,7 +1086,7 @@
                         <!-- popover : slider --------------- -->
                         <div hidden>
                             <div data-name="popover-content" class="d-flex justify-content-center align-items-center">
-
+    
                                 <!-- /////////////// -->
                                 <div class="txt_ex1 fw-bold">가</div>
                                 <!-- <input type="range" name="slider" id="slider" value="0" min="0" max="2"  /> -->
@@ -1094,7 +1094,7 @@
                                 <!-- <p>Value: <span id="value"></span></p> -->
                                 <div class="txt_ex2 fs-3 fw-bold">가</div>
                                 <!-- /////////////// -->
-
+    
                             </div>
                         </div>
                     </div>
