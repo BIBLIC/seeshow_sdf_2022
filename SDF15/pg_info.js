@@ -321,11 +321,19 @@ $(document).on("click", '#start-btn', function () {
 });
 
 $(document).on("click", "#prev_btn", function () {
+    console.log('이전 버튼 누름');
+    console.log("1번째",page_num);
     if (page_num === 2) {
+        console.log("2번째",page_num);
         $( document ).ready(function() {
+            console.log("3번째",page_num);
             setTimeout(function () {
+                console.log("4번째",page_num);
                 if (page_num === 1) {
+                    console.log("5번째",page_num);
                     next();
+                    console.log("next 이후 ",page_num);
+                    console.log("-------------------------------");
                 }
             }, 800);
           });  
