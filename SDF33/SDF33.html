@@ -1721,7 +1721,7 @@
                         <button type="button" class="btn start_btn btn-lg" id="start-btn">시작하기</button>
                     </div>
                     <div class="nav_btn_wrap">
-                        <div class="baricon_wrap prev" id="prev_btn">
+                        <div class="baricon_wrap prev wrap_toggle" id="prev_btn">
                             <div class="baricon">
                                 <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
                                     class="bi bi-caret-left-fill svg" viewBox="0 0 16 16">
@@ -1731,7 +1731,7 @@
                             </div>
                             <div class="bartext">이전</div>
                         </div>
-                        <div class="baricon_wrap pause">
+                        <div class="baricon_wrap pause wrap_toggle">
 
                             <div class="stop" id="pause_btn">
                                 <div class="baricon">
@@ -1760,7 +1760,7 @@
                             </div>
 
                         </div>
-                        <div class="baricon_wrap" id="hint_btn">
+                        <div class="baricon_wrap wrap_toggle" id="hint_btn wrap_toggle">
                             <div class="baricon">
                                 <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
                                     class="bi bi-lightbulb-fill svg hint" viewBox="0 0 16 16">
@@ -1775,7 +1775,7 @@
                             </div>
                             <div class="bartext">힌트</div>
                         </div>
-                        <div class="baricon_wrap" id="size_btn">
+                        <div class="baricon_wrap wrap_toggle" id="size_btn">
                             <div id="tSlider" class="baricon" data-bs-toggle="popover">
                                 <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
                                     class="bi bi-type svg" viewBox="0 0 16 16">
@@ -1785,7 +1785,7 @@
                             </div>
                             <div class="bartext">크기</div>
                         </div>
-                        <div class="baricon_wrap next" id="next_btn">
+                        <div class="baricon_wrap next wrap_toggle" id="next_btn">
                             <div class="baricon">
                                 <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
                                     class="bi bi-caret-right-fill svg" viewBox="0 0 16 16">
@@ -1801,11 +1801,11 @@
                         <div data-name="popover-content" class="d-flex justify-content-center align-items-center">
 
                             <!-- /////////////// -->
-                            <div class="txt_ex1 fw-bold fw-bold">가</div>
+                            <div class="txt_ex1 fw-bold">가</div>
                             <!-- <input type="range" name="slider" id="slider" value="0" min="0" max="2"  /> -->
                             <input type="range" min="0" max="2" value="0" class="slider" id="tSliderRange">
                             <!-- <p>Value: <span id="value"></span></p> -->
-                            <div class="txt_ex2 fw-bold fs-3 fw-bold">가</div>
+                            <div class="txt_ex2 fs-3 fw-bold">가</div>
                             <!-- /////////////// -->
 
                         </div>
