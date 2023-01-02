@@ -209,25 +209,30 @@ const modalCont = [
 
 const cursor_pos_1 = document.querySelector('.cursor_pos_1');
 const cursor_pos_2 = document.querySelector('.cursor_pos_2');
-// // const cursor_pos_3 = document.querySelector('.cursor_pos_3');
-// // const cursor_pos_4 = document.querySelector('.cursor_pos_4');
-// // const cursor_pos_5 = document.querySelector('.cursor_pos_5');
-// // const cursor_pos_6 = document.querySelector('.cursor_pos_6');
+const cursor_pos_6 = document.querySelector('.cursor_pos_6');
+const cursor_pos_10 = document.querySelector('.cursor_pos_10');
+const cursor_pos_12 = document.querySelector('.cursor_pos_12');
+const cursor_pos_16 = document.querySelector('.cursor_pos_16');
+const cursor_pos_18 = document.querySelector('.cursor_pos_18');
+
 
 const cursor_wrap_1 = document.querySelector('.cursor_wrap_1');
 const cursor_wrap_2 = document.querySelector('.cursor_wrap_2');
-// // const cursor_wrap_3 = document.querySelector('.cursor_wrap_3');
-// // const cursor_wrap_4 = document.querySelector('.cursor_wrap_4');
-// // const cursor_wrap_5 = document.querySelector('.cursor_wrap_5');
-// // const cursor_wrap_6 = document.querySelector('.cursor_wrap_6');
+const cursor_wrap_6 = document.querySelector('.cursor_wrap_6');
+const cursor_wrap_10 = document.querySelector('.cursor_wrap_10');
+const cursor_wrap_12 = document.querySelector('.cursor_wrap_12');
+const cursor_wrap_16 = document.querySelector('.cursor_wrap_16');
+const cursor_wrap_18 = document.querySelector('.cursor_wrap_18');
+
 
 
 cursor_wrap_1.style.zIndex = "100";
 cursor_wrap_2.style.zIndex = "100";
-// // cursor_wrap_3.style.zIndex = "100";
-// // cursor_wrap_4.style.zIndex = "100";
-// // cursor_wrap_5.style.zIndex = "100";
-// // cursor_wrap_6.style.zIndex = "100";
+cursor_wrap_6.style.zIndex = "100";
+cursor_wrap_10.style.zIndex = "100";
+cursor_wrap_12.style.zIndex = "100";
+cursor_wrap_16.style.zIndex = "100";
+cursor_wrap_18.style.zIndex = "100";
 
 
 const { createPopper } = Popper;
@@ -253,52 +258,62 @@ createPopper(cursor_pos_2, cursor_wrap_2, {
         },
     ],
 });
-// // createPopper(cursor_pos_3, cursor_wrap_3, {
-// //     placement: 'right',
-// //     modifiers: [
-// //         {
-// //             name: 'offset',
-// //             options: {
-// //                 offset: [70,80],
-// //             },
-// //         },
-// //     ],
-// // });
-// // //cursor_wrap_4.style.left="60%";
+createPopper(cursor_pos_6, cursor_wrap_6, {
+    placement: 'bottom',
+    modifiers: [
+        {
+            name: 'offset',
+            options: {
+                offset: [280,10],
+            },
+        },
+    ],
+});
 
-// // createPopper(cursor_pos_4, cursor_wrap_4, {
-// //     placement: 'bottom',
-// //     modifiers: [
-// //         {
-// //             name: 'offset',
-// //             options: {
-// //                 offset: [250,10],
-// //             },
-// //         },
-// //     ],
-// // });
-// // createPopper(cursor_pos_5, cursor_wrap_5, {
-// //     placement: 'right',
-// //     modifiers: [
-// //         {
-// //             name: 'offset',
-// //             options: {
-// //                 offset: [25,200],
-// //             },
-// //         },
-// //     ],
-// // });
-// // createPopper(cursor_pos_6, cursor_wrap_6, {
-// //     placement: 'bottom',
-// //     modifiers: [
-// //         {
-// //             name: 'offset',
-// //             options: {
-// //                 offset: [250,10],
-// //             },
-// //         },
-// //     ],
-// // });
+createPopper(cursor_pos_10, cursor_wrap_10, {
+    placement: 'bottom',
+    modifiers: [
+        {
+            name: 'offset',
+            options: {
+                offset: [130,10],
+            },
+        },
+    ],
+});
+createPopper(cursor_pos_12, cursor_wrap_12, {
+    placement: 'bottom',
+    modifiers: [
+        {
+            name: 'offset',
+            options: {
+                offset: [450,10],
+            },
+        },
+    ],
+});
+createPopper(cursor_pos_16, cursor_wrap_16, {
+    placement: 'bottom',
+    modifiers: [
+        {
+            name: 'offset',
+            options: {
+                offset: [200,200],
+            },
+        },
+    ],
+});
+createPopper(cursor_pos_18, cursor_wrap_18, {
+    placement: 'bottom',
+    modifiers: [
+        {
+            name: 'offset',
+            options: {
+                offset: [400,50],
+            },
+        },
+    ],
+});
 
 
 
