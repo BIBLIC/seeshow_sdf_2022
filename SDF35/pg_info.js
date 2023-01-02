@@ -1,4 +1,4 @@
-var total_page = 12;//페이지 수 -> 시나리오마다 total_page 수 바꾸기 
+var total_page = 13;//페이지 수 -> 시나리오마다 total_page 수 바꾸기 
 
 //오디오 배열 선언, 페이지 수 대로 배열에 mp3 넣기
 const audioArray = [];
@@ -99,6 +99,7 @@ const inputAnswer = [
     },
     {},
     {},
+    {},
 ];
 
 
@@ -154,6 +155,10 @@ const modalCont = [
     },
     {
         page: 12,
+        instruction: "지시문 추가 필요"
+    },
+    {
+        page: 13,
         instruction: "완료"
     },
 ];
@@ -255,3 +260,40 @@ createPopper(cursor_pos_2, cursor_wrap_2, {
 //         },
 //     ],
 // });
+
+$(document).on("click", '.pg_11_answer', function () {
+    if (page_num === 12) {
+        $( document ).ready(function() {
+            setTimeout(function () {
+                if (page_num === 12) {
+                    next();
+                }
+            }, 10500);
+          });  
+    }
+});
+
+$(document).on("click", "#next_btn", function () {
+    if (page_num === 11) {
+        $( document ).ready(function() {
+            setTimeout(function () {
+                if (page_num === 12) {
+                    next();
+                }
+            }, 10500);
+          });  
+    }
+});
+
+
+$(document).on("click", "#prev_btn", function () {
+    if (page_num === 13) {
+        $( document ).ready(function() {
+            setTimeout(function () {
+                if (page_num === 12) {
+                    next();
+                }
+            }, 10500);
+          });  
+    }
+});
