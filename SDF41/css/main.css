@@ -360,3 +360,7 @@
 #p12 .btn {
     width: 20%;
 }
+
+#p12 .scroller {
+    height: 79vh;
+}
