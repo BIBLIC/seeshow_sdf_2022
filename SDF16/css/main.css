@@ -1004,16 +1004,40 @@ svg.bi.bi-check-circle.selc_2_input.pg_11_answer.input_2.pg_11_selected_css {
     border: 2px solid #e0e0e0;
 }
 
-#p15 .btn,
-#p16 .btn {
+#p15 .btn {
     margin-top: 1em;
     background-color: #3B434E;
     color: #fff;
     width: 100%;
-    height: 6vh;
 }
 
-#p15 .scroller,
-#p16 .scroller {
+#p15 .scroller {
     height: 81vh;
+}
+
+/* ------------------------ */
+#p16 .under_bar {
+    height: 8vh;
+    border-radius: 0;
+    background: #F4F5F7;
+}
+
+#p16 .scroller {
+    height: 73vh;
+    background: #F4F5F7;
+}
+
+#p16 .container {
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 1.5em;
+}
+
+#p16 .btn {
+    background-color: #3B434E;
+    color: #fff;
+    width: 100%;
+    min-height: 6vh;
 }
