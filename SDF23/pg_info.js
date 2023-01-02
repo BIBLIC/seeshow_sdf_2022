@@ -277,23 +277,23 @@ const { createPopper } = Popper;
 //     ],
 // });
 createPopper(cursor_pos_2, cursor_wrap_2, {
-    placement: 'right',
+    placement: 'bottom',
     modifiers: [
         {
             name: 'offset',
             options: {
-                offset: [0,100],
+                offset: [250,10],
             },
         },
     ],
 });
 createPopper(cursor_pos_3, cursor_wrap_3, {
-    placement: 'right',
+    placement: 'bottom',
     modifiers: [
         {
             name: 'offset',
             options: {
-                offset: [0,100],
+                offset: [250,10],
             },
         },
     ],

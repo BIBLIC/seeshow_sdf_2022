@@ -157,41 +157,34 @@ const modalCont = [
 // //*******************************************************************************
 // //**************************+    커서   +*********************************** 
 
-// const cursor_pos_1 = document.querySelector('.cursor_pos_1');
+
 const cursor_pos_2 = document.querySelector('.cursor_pos_2');
+const cursor_pos_21 = document.querySelector('.cursor_pos_21');
 const cursor_pos_3 = document.querySelector('.cursor_pos_3');
 const cursor_pos_4 = document.querySelector('.cursor_pos_4');
 const cursor_pos_5 = document.querySelector('.cursor_pos_5');
-// const cursor_pos_6 = document.querySelector('.cursor_pos_6');
+const cursor_pos_12 = document.querySelector('.cursor_pos_12');
 
-// const cursor_wrap_1 = document.querySelector('.cursor_wrap_1');
+
 const cursor_wrap_2 = document.querySelector('.cursor_wrap_2');
+const cursor_wrap_21 = document.querySelector('.cursor_wrap_21');
 const cursor_wrap_3 = document.querySelector('.cursor_wrap_3');
 const cursor_wrap_4 = document.querySelector('.cursor_wrap_4');
 const cursor_wrap_5 = document.querySelector('.cursor_wrap_5');
-// const cursor_wrap_6 = document.querySelector('.cursor_wrap_6');
+const cursor_wrap_12 = document.querySelector('.cursor_wrap_12');
 
 
-//  cursor_wrap_1.style.zIndex = "100";
+
 cursor_wrap_2.style.zIndex = "100";
+cursor_wrap_21.style.zIndex = "100";
 cursor_wrap_3.style.zIndex = "100";
 cursor_wrap_4.style.zIndex = "100";
 cursor_wrap_5.style.zIndex = "100";
-// cursor_wrap_6.style.zIndex = "100";
+cursor_wrap_12.style.zIndex = "100";
 
 
 const { createPopper } = Popper;
-// createPopper(cursor_pos_1, cursor_wrap_1, {
-//     placement: 'right',
-//     modifiers: [
-//         {
-//             name: 'offset',
-//             options: {
-//                 offset: [0,0],
-//             },
-//         },
-//     ],
-// });
+
 createPopper(cursor_pos_2, cursor_wrap_2, {
     placement: 'right',
     modifiers: [
@@ -199,6 +192,17 @@ createPopper(cursor_pos_2, cursor_wrap_2, {
             name: 'offset',
             options: {
                 offset: [150,220],
+            },
+        },
+    ],
+});
+createPopper(cursor_pos_21, cursor_wrap_21, {
+    placement: 'bottom',
+    modifiers: [
+        {
+            name: 'offset',
+            options: {
+                offset: [90,80],
             },
         },
     ],
@@ -237,17 +241,17 @@ createPopper(cursor_pos_5, cursor_wrap_5, {
         },
     ],
 });
-// createPopper(cursor_pos_6, cursor_wrap_6, {
-//     placement: 'bottom',
-//     modifiers: [
-//         {
-//             name: 'offset',
-//             options: {
-//                 offset: [250,10],
-//             },
-//         },
-//     ],
-// });
+createPopper(cursor_pos_12, cursor_wrap_12, {
+    placement: 'bottom',
+    modifiers: [
+        {
+            name: 'offset',
+            options: {
+                offset: [250,450],
+            },
+        },
+    ],
+});
 
 
 
@@ -284,5 +288,19 @@ $(document).on("click", "#prev_btn", function () {
                 }
             }, 800);
           });  
+    }
+});
+
+
+
+$(document).on("click", "#hint_btn", function () {
+    if (page_num === 2) {
+
+        // var total_height = $('.scroller').height();
+        // let scrollPos = total_height * 0 + 1;
+        // $('.scroller').scrollTop(scrollPos);
+
+        $(".cursor_wrap_21").toggleClass('show');
+        
     }
 });
