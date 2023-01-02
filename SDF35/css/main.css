@@ -29,6 +29,78 @@ svg {
     margin: 0;
 }
 
+/* ---------------------------------- */
+.floating-notice {
+    width: 100%;
+    position: absolute;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    top: 8%;
+    z-index: 10;
+}
+
+.floating-notice .bg-white {
+    z-index: unset;
+    width: 90%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    border-radius: 25px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.25);
+}
+
+.floating-notice .bg-white .tab_pop {
+    min-height: 5vh;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    padding-left: 1em;
+    padding-right: 1em;
+    padding-top: .7em;
+    padding-bottom: .7em;
+}
+
+.floating-notice .bg-white .tab_pop .icon {
+    width: 2em;
+    height: 2em;
+    margin-top: .2em;
+    margin-right: .5em;
+    border: 0;
+    border-radius: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.floating-notice .bg-white .tab_pop .icon .image {
+    width: auto;
+    height: 100%;
+    border-radius: 100%;
+}
+
+.floating-notice .bg-white .tab_pop .txt {
+    flex: 1;
+}
+
+.floating-notice .btn-w {
+    min-width: 3.5em;
+    min-height: 3.5em;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 100%;
+}
+
+.floating-notice > div svg {
+    width: 1.5em;
+    height: 1.5em;
+}
+
+
+/* ------------------------ */
 #p1 .pg_top{
     width: 100%;
     min-height: 83%;
@@ -325,7 +397,8 @@ svg {
 }
 
 #p10 .tab,
-#p11 .tab {
+#p11 .tab ,
+#p12 .tab {
     min-height: 5vh;
     display: flex;
     justify-content: space-between;
@@ -335,11 +408,13 @@ svg {
 }
 
 #p10 .tab > input,
-#p11 .tab > input {
+#p11 .tab > input ,
+#p12 .tab > input {
     border: 0;
 }
 
-#p11 .keyword {
+#p11 .keyword ,
+#p12 .keyword {
     border: 1px solid #ced4da;
     padding: .5em;
     padding-left: 1em;
