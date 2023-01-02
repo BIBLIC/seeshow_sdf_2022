@@ -70,6 +70,7 @@ function firstPageLoader() {
 }
 
 
+
 //*******************************************************************************
 //**************************+    시작하기 버튼   +***********************************  
 
@@ -165,8 +166,8 @@ $(document).on("click", "#next_btn", function () {
 
 //이전 버튼
 $(document).on("click", "#prev_btn", function () {
-    console.log("이전");
-    if (page_num > 0) {
+    console.log("이전",page_num);
+    if (page_num > 1) {
         page_num -= 1;
         $(".active").removeClass("active");//active 클래스에서 'active'클래스 제거하고 -> 없어도 되는 코드
         $("#p" + page_num).addClass("active");//클릭한 곳에 'active' 클래스 추가
@@ -180,8 +181,27 @@ $(document).on("click", "#prev_btn", function () {
         //         $('.shadow_ext').removeClass("addShadow");
         // $('.shadow_inner').removeClass("addInnerShadow");
         // $('.border_darker').removeClass("mk_border_darker");
+    } else if ( page_num==1 ){
+
+        $("#p1").removeClass("active");//active 클래스에서 'active'클래스 제거하고 -> 없어도 되는 코드
+        $("#p0").addClass("active");//클릭한 곳에 'active' 클래스 추가
+        $(".pactive").fadeOut(0).promise().done(function () {//pactive -> active 추가된 p?
+            //promise() -> 자바스크립트 비동기 처리에 사용되는 객체 -> fadeout 완료 후 실행되는 함수
+            //.toggleClass('추가클래스') //해당 jquery로 가져온 요소를 클릭마다 클래스를 추가하고 삭제.
+            $(".pactive").toggleClass("pactive");
+            $("#p0").toggleClass("pactive");
+            $(".pactive").fadeIn(0);
+        });
+        $('.wrap_toggle').wrapAll('<div class="nav_btn_wrap"></div>');
+        $('.nav_btn_wrap').css('display', 'none');
+            //$('.nav_btn_wrap').css('display', 'flex');
+        $('.start_btn_wrap').css('display', '');
+            //$('.nav_btn_wrap').unwrap();
+            $(".ctrlbar").removeClass("ctrlbar_shadow");
+            ctrlbar.style.background = "#FFFFFF";
     }
-    console.log(page_num);
+
+    console.log("이후",page_num);
     if (page_num != 0) {
         audioArray[page_num - 1].load();
         audioArray[page_num - 1].play();
@@ -194,11 +214,11 @@ $(document).on("click", "#prev_btn", function () {
     }
 
     //---------ctrlbar shadow
-    if (page_num == 0) {
-        $(".ctrlbar").removeClass("ctrlbar_shadow");
-    } else {
-        $(".ctrlbar").addClass("ctrlbar_shadow");
-    }
+    // if (page_num == 0) {
+    //     $(".ctrlbar").removeClass("ctrlbar_shadow");
+    // } else {
+    //     $(".ctrlbar").addClass("ctrlbar_shadow");
+    // }
 
 });
 
@@ -322,7 +342,26 @@ function next(real_pg) {
     $(".submit_btn").removeClass("pg_" + real_pg + "_answer");
     $('.shadow_ext').removeClass("addShadow");
 }
-
+//이전으로 가기 함수 
+function prev(real_pg) {
+    page_num -= 1;
+    $(".active").removeClass("active");//active 클래스에서 'active'클래스 제거하고 -> 없어도 되는 코드
+    $("#p" + page_num).addClass("active");//클릭한 곳에 'active' 클래스 추가
+    $(".pactive").fadeOut(0).promise().done(function () {//pactive -> active 추가된 p?
+        //promise() -> 자바스크립트 비동기 처리에 사용되는 객체 -> fadeout 완료 후 실행되는 함수
+        //.toggleClass('추가클래스') //해당 jquery로 가져온 요소를 클릭마다 클래스를 추가하고 삭제.
+        $(".pactive").toggleClass("pactive");
+        $("#p" + page_num).toggleClass("pactive");
+        $(".pactive").fadeIn(0);
+    });
+    audioArray[page_num - 1].load();
+    audioArray[page_num - 1].play();
+    if (page_num > 1) {
+        audioArray[page_num - 2].pause();
+    }
+    $(".submit_btn").removeClass("pg_" + real_pg + "_answer");
+    $('.shadow_ext').removeClass("addShadow");
+}
 
 
 //특정 영역 외 클릭시 이벤트 처리 (class 명으로 가져오기)
@@ -817,7 +856,7 @@ document.querySelector("main").addEventListener("click", function (e) {//메인 
                     $(".cal_next_btn").addClass("pg_" + real_pg + "_answer");
                 }
             });
-            
+
             $(".multi_next_btn").click(function (e) {
                 var date = $.datepicker.formatDate("yymmdd", $("#datepicker").datepicker("getDate"));
                 date = $("#datepicker").val();
