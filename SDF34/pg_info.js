@@ -186,12 +186,12 @@ cursor_wrap_12.style.zIndex = "100";
 const { createPopper } = Popper;
 
 createPopper(cursor_pos_2, cursor_wrap_2, {
-    placement: 'right',
+    placement: 'bottom',
     modifiers: [
         {
             name: 'offset',
             options: {
-                offset: [150,220],
+                offset: [210,70],
             },
         },
     ],
