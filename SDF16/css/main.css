@@ -307,7 +307,7 @@
     min-height: 7vh;
     padding: 0.5em;
     padding-top: 1em;
-    border: 1px solid #D6D7D9;
+    /* border: 1px solid #D6D7D9; */
 }
 
 #p3 .search_bar {
@@ -388,7 +388,7 @@
     min-height: 7vh;
     padding: 0.5em;
     padding-top: 1em;
-    border: 1px solid #D6D7D9;
+    /* border: 1px solid #D6D7D9; */
 }
 
 #p4 .search_bar {
@@ -878,8 +878,12 @@
     color: #ffffff;
 }
 
-svg.bi.bi-check-circle.selc_2_input.pg_11_answer.input_1.pg_11_selected_css ,
+/* svg.bi.bi-check-circle.selc_2_input.pg_11_answer.input_1.pg_11_selected_css ,
 svg.bi.bi-check-circle.selc_2_input.pg_11_answer.input_2.pg_11_selected_css {
+    color: #57BCD2 !important;
+} */
+
+.pg_13_selected_css{
     color: #57BCD2 !important;
 }
 
