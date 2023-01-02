@@ -366,7 +366,7 @@ createPopper(cursor_pos_18, cursor_wrap_18, {
         {
             name: 'offset',
             options: {
-                offset: [220,10],
+                offset: [280,10],
             },
         },
     ],
@@ -377,7 +377,7 @@ createPopper(cursor_pos_19, cursor_wrap_19, {
         {
             name: 'offset',
             options: {
-                offset: [220,10],
+                offset: [280,10],
             },
         },
     ],
@@ -388,7 +388,7 @@ createPopper(cursor_pos_20, cursor_wrap_20, {
         {
             name: 'offset',
             options: {
-                offset: [220,10],
+                offset: [320,10],
             },
         },
     ],
@@ -399,7 +399,7 @@ createPopper(cursor_pos_21, cursor_wrap_21, {
         {
             name: 'offset',
             options: {
-                offset: [220,10],
+                offset: [280,10],
             },
         },
     ],

@@ -107,7 +107,7 @@ const cursor_pos_2_4 = document.querySelector('.cursor_pos_2_4');
 const cursor_pos_4 = document.querySelector('.cursor_pos_4');
 const cursor_pos_4_2 = document.querySelector('.cursor_pos_4_2');
 const cursor_pos_4_3 = document.querySelector('.cursor_pos_4_3');
-// const cursor_pos_5 = document.querySelector('.cursor_pos_5');
+const cursor_pos_5 = document.querySelector('.cursor_pos_5');
 // const cursor_pos_6 = document.querySelector('.cursor_pos_6');
 
 const cursor_wrap_1 = document.querySelector('.cursor_wrap_1');
@@ -119,7 +119,7 @@ const cursor_wrap_2_4 = document.querySelector('.cursor_wrap_2_4');
 const cursor_wrap_4 = document.querySelector('.cursor_wrap_4');
 const cursor_wrap_4_2 = document.querySelector('.cursor_wrap_4_2');
 const cursor_wrap_4_3 = document.querySelector('.cursor_wrap_4_3');
-// const cursor_wrap_5 = document.querySelector('.cursor_wrap_5');
+const cursor_wrap_5 = document.querySelector('.cursor_wrap_5');
 // const cursor_wrap_6 = document.querySelector('.cursor_wrap_6');
 
 
@@ -132,7 +132,7 @@ cursor_wrap_2_4.style.zIndex = "100";
 cursor_wrap_4.style.zIndex = "100";
 cursor_wrap_4_2.style.zIndex = "100";
 cursor_wrap_4_3.style.zIndex = "100";
-// cursor_wrap_5.style.zIndex = "100";
+cursor_wrap_5.style.zIndex = "100";
 // cursor_wrap_6.style.zIndex = "100";
 
 
@@ -237,17 +237,17 @@ createPopper(cursor_pos_4_3, cursor_wrap_4_3, {
         },
     ],
 });
-// createPopper(cursor_pos_5, cursor_wrap_5, {
-//     placement: 'right',
-//     modifiers: [
-//         {
-//             name: 'offset',
-//             options: {
-//                 offset: [25,200],
-//             },
-//         },
-//     ],
-// });
+createPopper(cursor_pos_5, cursor_wrap_5, {
+    placement: 'bottom',
+    modifiers: [
+        {
+            name: 'offset',
+            options: {
+                offset: [220,5],
+            },
+        },
+    ],
+});
 // createPopper(cursor_pos_6, cursor_wrap_6, {
 //     placement: 'bottom',
 //     modifiers: [
