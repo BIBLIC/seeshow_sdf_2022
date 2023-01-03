@@ -933,7 +933,20 @@
                                         </div>
                                         <div class="week fontSz">
                                             <div class="day text-black-50">11</div>
-                                            <div class="day pg_5_answer">12</div>
+                                            <div class="cursor_pos_5">
+                                                <div class="day pg_5_answer">12</div>
+                                                <!-- 커서 가이드 -->
+                                                <div class="cursor_wrap cursor_wrap_5 pg_5_answer">
+                                                    <span class="cursor" x-placement="bottom pg_5_answer">
+                                                        <button class="react-joyride__beacon pg_5_answer"
+                                                            type="button">
+                                                            <span class="cursor_outer pg_5_answer"></span>
+                                                            <span class="cursor_inner pg_5_answer"><span>
+                                                        </button>
+                                                    </span>
+                                                </div>
+                                                <!-- 커서 가이드 -->
+                                            </div>
                                             <div class="day">13</div>
                                             <div class="day">14</div>
                                             <div class="day">15</div>
@@ -1249,7 +1262,7 @@
                                             </button>
                                             <!-- 커서 가이드 -->
                                             <div class="cursor_wrap cursor_wrap_7 pg_7_answer">
-                                                <span class="cursor pg_7_answer" x-placement="right">
+                                                <span class="cursor pg_7_answer" x-placement="bottom">
                                                     <button class="react-joyride__beacon pg_7_answer" type="button">
                                                         <span class="cursor_outer pg_7_answer"></span>
                                                         <span class="cursor_inner pg_7_answer"><span>
@@ -1671,7 +1684,7 @@
                                     <div class="container">
                                         <div
                                             class="d-flex mt-2 px-0 mb-2 justify-content-between align-items-center px-2">
-                                            <div class="d-flex align-items-center active_selc_input pg_11_answer">
+                                            <div class="d-flex align-items-center active_selc_input pg_11_answer cursor_pos_11">
                                                 <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16"
                                                     fill="currentColor"
                                                     class="active_selc_input pg_11_answer selected bi bi-check-circle-fill"
@@ -1682,6 +1695,17 @@
                                                 <div class="active_selc_input pg_11_answer ps-2 fontSz">
                                                     여정
                                                 </div>
+                                                <!-- 커서 가이드 -->
+                                                <div class="cursor_wrap cursor_wrap_11 selc_next_btn active_selc_input">
+                                                    <span class="cursor selc_next_btn" x-placement="bottom">
+                                                        <button class="react-joyride__beacon selc_next_btn active_selc_input"
+                                                            type="button">
+                                                            <span class="cursor_outer selc_next_btn active_selc_input"></span>
+                                                            <span class="cursor_inner selc_next_btn active_selc_input"><span>
+                                                        </button>
+                                                    </span>
+                                                </div>
+                                                <!-- 커서 가이드 -->
                                             </div>
                                             <div class="d-flex align-items-center">
                                                 <button>
@@ -1819,11 +1843,11 @@
                                                 앱을 종료하거나, 출발 5분(시외 10분)전 여정은 취소됩니다.
                                             </div>
                                         </div>
-                                        <div class="cursor_pos_11 z-100">
+                                        <div class="cursor_pos_11_1 z-100">
                                             <button type="button"
                                                 class="btn pg_11_css_remove d-flex flex-center-center pg_11_answer fontSz my-2 disabled_btn">결제하기</button>
                                             <!-- 커서 가이드 -->
-                                            <div class="cursor_wrap cursor_wrap_11 pg_11_answer">
+                                            <div class="cursor_wrap cursor_wrap_11_1 pg_11_answer">
                                                 <span class="cursor" x-placement="bottom pg_11_answer">
                                                     <button class="react-joyride__beacon pg_11_answer" type="button">
                                                         <span class="cursor_outer pg_11_answer"></span>
@@ -1949,103 +1973,53 @@
                                                         d="M4.646 1.646a.5.5 0 0 1 .708 0l6 6a.5.5 0 0 1 0 .708l-6 6a.5.5 0 0 1-.708-.708L10.293 8 4.646 2.354a.5.5 0 0 1 0-.708z" />
                                                 </svg>
                                             </div>
-                                            <div class="cursor_pos_12">
-                                                <div class="">
-                                                    <div class="text-black-50 fs-sm p-2 fontSz">위 구매조건을 모두 확인하였으며, 결제에
-                                                        동의합니다.
-                                                    </div>
-                                                    <div class="d-flex justify-content-between p-2">
-                                                        <div class=" fs-sm fontSz"><svg
-                                                                xmlns="http://www.w3.org/2000/svg" width="16"
-                                                                height="16" fill="currentColor"
-                                                                class="bi bi-check-circle me-2 pg_12_border_b"
-                                                                viewBox="0 0 16 16" style="color: #e0e0e0;">
-                                                                <path
-                                                                    d="M8 15A7 7 0 1 1 8 1a7 7 0 0 1 0 14zm0 1A8 8 0 1 0 8 0a8 8 0 0 0 0 16z" />
-                                                                <path
-                                                                    d="M10.97 4.97a.235.235 0 0 0-.02.022L7.477 9.417 5.384 7.323a.75.75 0 0 0-1.06 1.06L6.97 11.03a.75.75 0 0 0 1.079-.02l3.992-4.99a.75.75 0 0 0-1.071-1.05z" />
-                                                            </svg>개인정보 수집 동의(필수)
-                                                        </div>
-                                                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16"
-                                                            fill="currentColor" class="bi bi-chevron-right"
-                                                            viewBox="0 0 16 16">
-                                                            <path fill-rule="evenodd"
-                                                                d="M4.646 1.646a.5.5 0 0 1 .708 0l6 6a.5.5 0 0 1 0 .708l-6 6a.5.5 0 0 1-.708-.708L10.293 8 4.646 2.354a.5.5 0 0 1 0-.708z" />
-                                                        </svg>
-                                                    </div>
-                                                    <!-- 커서 가이드 -->
-                                                    <div
-                                                        class="selc_3_input cursor_wrap cursor_wrap_12 pg_12_answer input_1">
-                                                        <span class="selc_3_input cursor pg_12_answer input_1"
-                                                            x-placement="bottom">
-                                                            <button
-                                                                class="selc_3_input react-joyride__beacon pg_12_answer input_1"
-                                                                type="button">
-                                                                <span
-                                                                    class="selc_3_input cursor_outer pg_12_answer input_1"></span>
-                                                                <span
-                                                                    class="selc_3_input cursor_inner pg_12_answer input_1"><span>
-                                                            </button>
-                                                        </span>
-                                                    </div>
-                                                    <!-- 커서 가이드 -->
+                                            <div class="">
+                                                <div class="text-black-50 fs-sm p-2 fontSz">위 구매조건을 모두 확인하였으며, 결제에
+                                                    동의합니다.
                                                 </div>
-                                                <div class="cursor_pos_12_1">
-                                                    <div class="d-flex justify-content-between p-2">
-                                                        <div class=" fs-sm fontSz">
-                                                            <svg xmlns="http://www.w3.org/2000/svg" width="16"
-                                                                height="16" fill="currentColor"
-                                                                class="bi bi-check-circle me-2 pg_12_border_b"
-                                                                viewBox="0 0 16 16" style="color: #e0e0e0;">
-                                                                <path
-                                                                    d="M8 15A7 7 0 1 1 8 1a7 7 0 0 1 0 14zm0 1A8 8 0 1 0 8 0a8 8 0 0 0 0 16z" />
-                                                                <path
-                                                                    d="M10.97 4.97a.235.235 0 0 0-.02.022L7.477 9.417 5.384 7.323a.75.75 0 0 0-1.06 1.06L6.97 11.03a.75.75 0 0 0 1.079-.02l3.992-4.99a.75.75 0 0 0-1.071-1.05z" />
-                                                            </svg>전자금융거래 이용약관 동의(필수)
-                                                        </div>
-                                                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16"
-                                                            fill="currentColor" class="bi bi-chevron-right"
-                                                            viewBox="0 0 16 16">
-                                                            <path fill-rule="evenodd"
-                                                                d="M4.646 1.646a.5.5 0 0 1 .708 0l6 6a.5.5 0 0 1 0 .708l-6 6a.5.5 0 0 1-.708-.708L10.293 8 4.646 2.354a.5.5 0 0 1 0-.708z" />
-                                                        </svg>
+                                                <div class="d-flex justify-content-between p-2">
+                                                    <div class=" fs-sm fontSz"><svg
+                                                            xmlns="http://www.w3.org/2000/svg" width="16"
+                                                            height="16" fill="currentColor"
+                                                            class="bi bi-check-circle me-2 pg_12_border_b"
+                                                            viewBox="0 0 16 16" style="color: #e0e0e0;">
+                                                            <path
+                                                                d="M8 15A7 7 0 1 1 8 1a7 7 0 0 1 0 14zm0 1A8 8 0 1 0 8 0a8 8 0 0 0 0 16z" />
+                                                            <path
+                                                                d="M10.97 4.97a.235.235 0 0 0-.02.022L7.477 9.417 5.384 7.323a.75.75 0 0 0-1.06 1.06L6.97 11.03a.75.75 0 0 0 1.079-.02l3.992-4.99a.75.75 0 0 0-1.071-1.05z" />
+                                                        </svg>개인정보 수집 동의(필수)
                                                     </div>
-                                                    <!-- 커서 가이드 -->
-                                                    <div
-                                                        class="selc_3_input cursor_wrap cursor_wrap_12 pg_12_answer input_2">
-                                                        <span class="selc_3_input cursor pg_12_answer input_2"
-                                                            x-placement="bottom">
-                                                            <button
-                                                                class="selc_3_input react-joyride__beacon pg_12_answer input_2"
-                                                                type="button">
-                                                                <span
-                                                                    class="selc_3_input cursor_outer pg_12_answer input_2"></span>
-                                                                <span
-                                                                    class="selc_3_input cursor_inner pg_12_answer input_2"><span>
-                                                            </button>
-                                                        </span>
-                                                    </div>
-                                                    <!-- 커서 가이드 -->
+                                                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16"
+                                                        fill="currentColor" class="bi bi-chevron-right"
+                                                        viewBox="0 0 16 16">
+                                                        <path fill-rule="evenodd"
+                                                            d="M4.646 1.646a.5.5 0 0 1 .708 0l6 6a.5.5 0 0 1 0 .708l-6 6a.5.5 0 0 1-.708-.708L10.293 8 4.646 2.354a.5.5 0 0 1 0-.708z" />
+                                                    </svg>
                                                 </div>
+                                            </div>
+                                            <div class="d-flex justify-content-between p-2">
+                                                <div class=" fs-sm fontSz">
+                                                    <svg xmlns="http://www.w3.org/2000/svg" width="16"
+                                                        height="16" fill="currentColor"
+                                                        class="bi bi-check-circle me-2 pg_12_border_b"
+                                                        viewBox="0 0 16 16" style="color: #e0e0e0;">
+                                                        <path
+                                                            d="M8 15A7 7 0 1 1 8 1a7 7 0 0 1 0 14zm0 1A8 8 0 1 0 8 0a8 8 0 0 0 0 16z" />
+                                                        <path
+                                                            d="M10.97 4.97a.235.235 0 0 0-.02.022L7.477 9.417 5.384 7.323a.75.75 0 0 0-1.06 1.06L6.97 11.03a.75.75 0 0 0 1.079-.02l3.992-4.99a.75.75 0 0 0-1.071-1.05z" />
+                                                    </svg>전자금융거래 이용약관 동의(필수)
+                                                </div>
+                                                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16"
+                                                    fill="currentColor" class="bi bi-chevron-right"
+                                                    viewBox="0 0 16 16">
+                                                    <path fill-rule="evenodd"
+                                                        d="M4.646 1.646a.5.5 0 0 1 .708 0l6 6a.5.5 0 0 1 0 .708l-6 6a.5.5 0 0 1-.708-.708L10.293 8 4.646 2.354a.5.5 0 0 1 0-.708z" />
+                                                </svg>
                                             </div>
                                         </div>
                                     </div>
-                                    <div class="cursor_pos_12_2">
-                                        <button type="button"
-                                            class="btn btn-g d-flex flex-center-center pg_12_shadow_inner fontSz">결제하기</button>
-                                        <!-- 커서 가이드 -->
-                                        <div class="selc_3_input cursor_wrap cursor_wrap_12 pg_12_answer input_3">
-                                            <span class="selc_3_input cursor pg_12_answer input_3" x-placement="bottom">
-                                                <button class="selc_3_input react-joyride__beacon pg_12_answer input_3"
-                                                    type="button">
-                                                    <span class="selc_3_input cursor_outer pg_12_answer input_3"></span>
-                                                    <span class="selc_3_input cursor_inner pg_12_answer input_3"><span>
-                                                </button>
-                                            </span>
-                                        </div>
-                                        <!-- 커서 가이드 -->
-                                    </div>
-
+                                    <button type="button"
+                                        class="btn btn-g d-flex flex-center-center pg_12_shadow_inner fontSz">결제하기</button>
                                 </div>
                             </div>
                         </div>
@@ -2204,8 +2178,21 @@
                                             </div>
                                         </div>
                                     </div>
-                                    <button type="button"
-                                        class="btn d-flex flex-center-center selc_next_btn fontSz">결제하기</button>
+                                    <div class="cursor_pos_13">
+                                        <button type="button"
+                                            class="btn d-flex flex-center-center selc_next_btn fontSz">결제하기</button>
+                                        <!-- 커서 가이드 -->
+                                        <div class="cursor_wrap cursor_wrap_13 pg_13_answer">
+                                            <span class="cursor" x-placement="bottom pg_13_answer">
+                                                <button class="react-joyride__beacon pg_13_answer"
+                                                    type="button">
+                                                    <span class="cursor_outer pg_13_answer"></span>
+                                                    <span class="cursor_inner pg_13_answer"><span>
+                                                </button>
+                                            </span>
+                                        </div>
+                                        <!-- 커서 가이드 -->
+                                    </div>
                                 </div>
                             </div>
                         </div>
@@ -2237,10 +2224,21 @@
                                     <div class="w-100 d-flex flex-center-center fontW fw-bold pg_14_txt_darker">
                                         카드를 사각형에 맞춰 주세요.
                                     </div>
-                                    <div class="w-100 d-flex flex-center-center">
+                                    <div class="w-100 d-flex flex-center-center cursor_pos_14">
                                         <div class="camera d-flex flex-center-center">
                                             <img class="pg_14_answer" src="./assets/image/cc.png" width="100%">
                                         </div>
+                                        <!-- 커서 가이드 -->
+                                        <div class="cursor_wrap cursor_wrap_14 pg_14_answer">
+                                            <span class="cursor" x-placement="bottom pg_14_answer">
+                                                <button class="react-joyride__beacon pg_14_answer"
+                                                    type="button">
+                                                    <span class="cursor_outer pg_14_answer"></span>
+                                                    <span class="cursor_inner pg_14_answer"><span>
+                                                </button>
+                                            </span>
+                                        </div>
+                                        <!-- 커서 가이드 -->
                                     </div>
                                     <div class="fontW fs-sm p-4 fontSz pg_14_txt_darker">
                                         ㆍ본인 명의의 카드를 등록해주세요.<br>
@@ -2329,9 +2327,22 @@
                                             </svg>
                                             &nbsp; 카드번호, 유효기간(MMYY), 생년월일(YYMMDD)를 확인해주십시오.
                                         </div>
-                                        <button type="button" class="btn d-flex flex-center-center fontSz pg_15_answer">
-                                            결제하기
-                                        </button>
+                                        <div class="cursor_pos_15">
+                                            <button type="button" class="btn d-flex flex-center-center fontSz pg_15_answer">
+                                                결제하기
+                                            </button>
+                                            <!-- 커서 가이드 -->
+                                            <div class="cursor_wrap cursor_wrap_15 pg_15_answer">
+                                                <span class="cursor" x-placement="bottom pg_15_answer">
+                                                    <button class="react-joyride__beacon pg_15_answer"
+                                                        type="button">
+                                                        <span class="cursor_outer pg_15_answer"></span>
+                                                        <span class="cursor_inner pg_15_answer"><span>
+                                                    </button>
+                                                </span>
+                                            </div>
+                                            <!-- 커서 가이드 -->
+                                        </div>
                                     </div>
                                 </div>
                             </div>

@@ -197,8 +197,10 @@ const cursor_pos_5 = document.querySelector('.cursor_pos_5');
 const cursor_pos_7 = document.querySelector('.cursor_pos_7');
 const cursor_pos_10 = document.querySelector('.cursor_pos_10');
 const cursor_pos_11 = document.querySelector('.cursor_pos_11');
-const cursor_pos_12 = document.querySelector('.cursor_pos_12');
+const cursor_pos_11_1 = document.querySelector('.cursor_pos_11_1');
 const cursor_pos_13 = document.querySelector('.cursor_pos_13');
+const cursor_pos_14 = document.querySelector('.cursor_pos_14');
+const cursor_pos_15 = document.querySelector('.cursor_pos_15');
 
 const cursor_wrap_1 = document.querySelector('.cursor_wrap_1');
 const cursor_wrap_2 = document.querySelector('.cursor_wrap_2');
@@ -206,8 +208,10 @@ const cursor_wrap_5 = document.querySelector('.cursor_wrap_5');
 const cursor_wrap_7 = document.querySelector('.cursor_wrap_7');
 const cursor_wrap_10 = document.querySelector('.cursor_wrap_10');
 const cursor_wrap_11 = document.querySelector('.cursor_wrap_11');
-const cursor_wrap_12 = document.querySelector('.cursor_wrap_12');
+const cursor_wrap_11_1 = document.querySelector('.cursor_wrap_11_1');
 const cursor_wrap_13 = document.querySelector('.cursor_wrap_13');
+const cursor_wrap_14 = document.querySelector('.cursor_wrap_14');
+const cursor_wrap_15 = document.querySelector('.cursor_wrap_15');
 
 
 cursor_wrap_1.style.zIndex = "100";
@@ -216,7 +220,10 @@ cursor_wrap_5.style.zIndex = "100";
 cursor_wrap_7.style.zIndex = "100";
 cursor_wrap_10.style.zIndex = "100";
 cursor_wrap_11.style.zIndex = "100";
+cursor_wrap_11_1.style.zIndex = "100";
 cursor_wrap_13.style.zIndex = "100";
+cursor_wrap_14.style.zIndex = "100";
+cursor_wrap_15.style.zIndex = "100";
 
 
 const { createPopper } = Popper;
@@ -248,18 +255,18 @@ createPopper(cursor_pos_5, cursor_wrap_5, {
         {
             name: 'offset',
             options: {
-                offset: [200,10],
+                offset: [10,10],
             },
         },
     ],
 });
 createPopper(cursor_pos_7, cursor_wrap_7, {
-    placement: 'right',
+    placement: 'bottom',
     modifiers: [
         {
             name: 'offset',
             options: {
-                offset: [250,100],
+                offset: [100,-20],
             },
         },
     ],
@@ -270,7 +277,7 @@ createPopper(cursor_pos_10, cursor_wrap_10, {
         {
             name: 'offset',
             options: {
-                offset: [0,-50],
+                offset: [100,-10],
             },
         },
     ],
@@ -282,54 +289,75 @@ createPopper(cursor_pos_11, cursor_wrap_11, {
         {
             name: 'offset',
             options: {
-                offset: [150,250],
+                offset: [0,-10],
             },
         },
     ],
 });
-createPopper(cursor_pos_12, cursor_wrap_12, {
+createPopper(cursor_pos_11_1, cursor_wrap_11_1, {
     placement: 'bottom',
     modifiers: [
         {
             name: 'offset',
             options: {
-                offset: [150,250],
+                offset: [150,-70],
             },
         },
     ],
 });
+// createPopper(cursor_pos_12, cursor_wrap_12, {
+//     placement: 'bottom',
+//     modifiers: [
+//         {
+//             name: 'offset',
+//             options: {
+//                 offset: [150,-70],
+//             },
+//         },
+//     ],
+// });
 createPopper(cursor_pos_13, cursor_wrap_13, {
     placement: 'bottom',
     modifiers: [
         {
             name: 'offset',
             options: {
-                offset: [220,610],
+                offset: [100,-50],
             },
         },
     ],
 });
-// // createPopper(cursor_pos_6, cursor_wrap_6, {
-// //     placement: 'bottom',
-// //     modifiers: [
-// //         {
-// //             name: 'offset',
-// //             options: {
-// //                 offset: [250,10],
-// //             },
-// //         },
-// //     ],
-// // });
+createPopper(cursor_pos_14, cursor_wrap_14, {
+    placement: 'bottom',
+    modifiers: [
+        {
+            name: 'offset',
+            options: {
+                offset: [200,150],
+            },
+        },
+    ],
+});
+createPopper(cursor_pos_15, cursor_wrap_15, {
+    placement: 'bottom',
+    modifiers: [
+        {
+            name: 'offset',
+            options: {
+                offset: [300,600],
+            },
+        },
+    ],
+});
 
 $(document).on("click", "#hint_btn", function () {
-    if (page_num === 12) {
+    if (page_num === 11) {
 
         var total_height = $('.scroller').height();
         let scrollPos = total_height * 0 + 1;
         $('.scroller').scrollTop(scrollPos);
 
-        $(".cursor_wrap_12_2").toggleClass('show');
-        $(".cursor_wrap_12_3").toggleClass('show');
+        $(".cursor_wrap_11_1").toggleClass('show');
     }
 
     
