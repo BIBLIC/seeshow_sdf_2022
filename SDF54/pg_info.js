@@ -57,8 +57,8 @@ const my_wrap2 = document.querySelector('.my_wrap2');
 
 // const blog_main = document.querySelector('.blog_main');
 
-const modal1 = document.querySelector('.modal1');
-// const modal1_2 = document.querySelector('.modal1_2');
+const modal1 = document.querySelector('.modal1_1');
+const modal1_2 = document.querySelector('.modal1_2');
 const modal2 = document.querySelector('.modal2');
 
 
@@ -73,9 +73,10 @@ const modal5_2 = document.querySelector('.modal5_2');
 const modal6_1 = document.querySelector('.modal6_1');
 const modal6_2 = document.querySelector('.modal6_2');
 
-// modal1_2.style.display = "none";
+modal1.style.display = "none";
+modal1_2.style.display = "none";
 modal2_1.style.display = "none";
-modal2_2.style.display = "none";
+// modal2_2.style.display = "none";
 modal3_1.style.display = "none";
 modal3_2.style.display = "none";
 modal4_1.style.display = "none";
@@ -86,7 +87,7 @@ my_wrap.style.display = "none";
 my_wrap2.style.display = "none";
 modal6_1.style.display = "none";
 modal6_2.style.display = "none";
-modal1.style.display = "none";
+// modal1.style.display = "none";
 
 
 const cursor_pos_1 = document.querySelector('.cursor_pos_1');

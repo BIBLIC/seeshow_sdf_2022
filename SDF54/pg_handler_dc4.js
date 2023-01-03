@@ -450,8 +450,14 @@ $(document).on("click", ".pg_1_answer", function () {
     modal1.style.display = "";
     //console.log('정답 누르고 p',real_pg);
 });
-$(document).on("click", ".okBtn1", function () {
+$(document).on("click", ".nxtBtn1", function () {
     modal1.style.display = "none";
+    modal1_2.style.display = "";
+   
+    //console.log('후 p',real_pg);
+});
+$(document).on("click", ".okBtn1", function () {
+    modal1_2.style.display = "none";
     //console.log('전 p',real_pg);
     next();
     //console.log('후 p',real_pg);
@@ -462,14 +468,8 @@ $(document).on("click", ".pg_2_answer", function () {
     cursor_wrap_2.style.display = "none";
     modal2_1.style.display = "";
 });
-$(document).on("click", ".nxtBtn2", function () {
-    modal2_1.style.display = "none";
-    modal2_2.style.display = "";
-   
-    //console.log('후 p',real_pg);
-});
 $(document).on("click", ".okBtn2", function () {
-    modal2_2.style.display = "none";
+    modal2_1.style.display = "none";
     //console.log('전 p',real_pg);
     next();
     //console.log('후 p',real_pg);
