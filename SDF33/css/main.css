@@ -196,6 +196,11 @@
     justify-content: center;
     align-items: center;
 }
+#p3 img {
+    width: 50%;
+    position: absolute;
+    top: 20%;
+}
 /* ----------------------------------------------------------------- */
 #p4{
     background: #F4F4F4;
