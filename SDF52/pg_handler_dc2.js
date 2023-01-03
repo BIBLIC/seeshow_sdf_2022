@@ -128,6 +128,13 @@ $(document).on("click", "#next_btn", function () {
         // $('.shadow_inner').removeClass("addInnerShadow");
         // $('.border_darker').removeClass("mk_border_darker");
     }
+
+    if (page_num==total_page){
+        setTimeout(function () {
+            startConfetti();
+        }, 500);
+    }
+
     console.log(page_num);
     audioArray[page_num - 1].load();
     audioArray[page_num - 1].play();
@@ -460,6 +467,11 @@ if (page_num == 6) {
         let scrollPos = total_height * 2.0;
         $('.chat_main').scrollTop(scrollPos);
     }
+}
+if (page_num==total_page){
+    setTimeout(function () {
+        startConfetti();
+    }, 500);
 }
 }
 
