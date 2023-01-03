@@ -175,6 +175,16 @@ $(document).on("click", "#next_btn", function () {
     if (page_num == 4) {
         //chat_main.scrollTop = chat_main.scrollHeight *0.6;
         if (textSizeValue == "2") {
+            let scrollPos = total_height * 1.0;
+            $('.chat_main').scrollTop(scrollPos);
+        } else {
+            let scrollPos = total_height * 0.5;
+            $('.chat_main').scrollTop(scrollPos);
+        }
+    }
+    if (page_num == 5) {
+        //chat_main.scrollTop = chat_main.scrollHeight *0.6;
+        if (textSizeValue == "2") {
             let scrollPos = total_height * 1.3;
             $('.chat_main').scrollTop(scrollPos);
         } else {
@@ -182,7 +192,7 @@ $(document).on("click", "#next_btn", function () {
             $('.chat_main').scrollTop(scrollPos);
         }
     }
-    if (page_num == 5) {
+    if (page_num == 6) {
         //chat_main.scrollTop = chat_main.scrollHeight *0.6;
         if (textSizeValue == "2") {
             let scrollPos = total_height * 2;
@@ -260,6 +270,16 @@ $(document).on("click", "#prev_btn", function () {
     if (page_num == 4) {
         //chat_main.scrollTop = chat_main.scrollHeight *0.6;
         if (textSizeValue == "2") {
+            let scrollPos = total_height * 1.0;
+            $('.chat_main').scrollTop(scrollPos);
+        } else {
+            let scrollPos = total_height * 0.5;
+            $('.chat_main').scrollTop(scrollPos);
+        }
+    }
+    if (page_num == 5) {
+        //chat_main.scrollTop = chat_main.scrollHeight *0.6;
+        if (textSizeValue == "2") {
             let scrollPos = total_height * 1.3;
             $('.chat_main').scrollTop(scrollPos);
         } else {
@@ -267,7 +287,7 @@ $(document).on("click", "#prev_btn", function () {
             $('.chat_main').scrollTop(scrollPos);
         }
     }
-    if (page_num == 5) {
+    if (page_num == 6) {
         //chat_main.scrollTop = chat_main.scrollHeight *0.6;
         if (textSizeValue == "2") {
             let scrollPos = total_height * 2;
@@ -414,6 +434,16 @@ if (page_num == 3) {
 if (page_num == 4) {
     //chat_main.scrollTop = chat_main.scrollHeight *0.6;
     if (textSizeValue == "2") {
+        let scrollPos = total_height * 1.0;
+        $('.chat_main').scrollTop(scrollPos);
+    } else {
+        let scrollPos = total_height * 0.5;
+        $('.chat_main').scrollTop(scrollPos);
+    }
+}
+if (page_num == 5) {
+    //chat_main.scrollTop = chat_main.scrollHeight *0.6;
+    if (textSizeValue == "2") {
         let scrollPos = total_height * 1.3;
         $('.chat_main').scrollTop(scrollPos);
     } else {
@@ -421,7 +451,7 @@ if (page_num == 4) {
         $('.chat_main').scrollTop(scrollPos);
     }
 }
-if (page_num == 5) {
+if (page_num == 6) {
     //chat_main.scrollTop = chat_main.scrollHeight *0.6;
     if (textSizeValue == "2") {
         let scrollPos = total_height * 2;

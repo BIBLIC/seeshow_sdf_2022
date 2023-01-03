@@ -1,4 +1,4 @@
-var total_page = 6;//페이지 수 -> 시나리오마다 total_page 수 바꾸기 
+var total_page = 7;//페이지 수 -> 시나리오마다 total_page 수 바꾸기 
 
 //오디오 배열 선언, 페이지 수 대로 배열에 mp3 넣기
 const audioArray = [];
@@ -40,6 +40,10 @@ const pageClickArea = [
     {
         page: 6,
         correctAnswer: "pg_6_answer"
+    },
+    {
+        page: 7,
+        correctAnswer: "pg_7_answer"
     },
 ];
 
@@ -96,25 +100,25 @@ const cursor_wrap_4 = document.querySelector('.cursor_wrap_4');
 // const cursor_wrap_4_1 = document.querySelector('.cursor_wrap_4_1');
 const cursor_pos_5 = document.querySelector('.cursor_pos_5');
 const cursor_wrap_5 = document.querySelector('.cursor_wrap_5');
-// const cursor_pos_6 = document.querySelector('.cursor_pos_6');
-// const cursor_wrap_6 = document.querySelector('.cursor_wrap_6');
+const cursor_pos_6 = document.querySelector('.cursor_pos_6');
+const cursor_wrap_6 = document.querySelector('.cursor_wrap_6');
 
 cursor_wrap_1.style.zIndex = "40";
 cursor_wrap_2.style.zIndex = "40";
 cursor_wrap_3.style.zIndex = "40";
 cursor_wrap_4.style.zIndex = "40";
 cursor_wrap_5.style.zIndex = "40";
-// cursor_wrap_6.style.zIndex = "40";
+cursor_wrap_6.style.zIndex = "40";
 
 
 const { createPopper } = Popper;
 createPopper(cursor_pos_1, cursor_wrap_1, {
-    placement: 'bottom',
+    placement: 'top',
     modifiers: [
         {
             name: 'offset',
             options: {
-                offset: [30,0],
+                offset: [280,10],
             },
         },
     ],
@@ -136,7 +140,7 @@ createPopper(cursor_pos_3, cursor_wrap_3, {
         {
             name: 'offset',
             options: {
-                offset: [0,-100],
+                offset: [120,-230],
             },
         },
     ],
@@ -147,7 +151,7 @@ createPopper(cursor_pos_4, cursor_wrap_4, {
         {
             name: 'offset',
             options: {
-                offset: [0,-100],
+                offset: [120,-80],
             },
         },
     ],
@@ -176,14 +180,15 @@ createPopper(cursor_pos_5, cursor_wrap_5, {
         },
     ],
 });
-// createPopper(cursor_pos_6, cursor_wrap_6, {
-//     placement: 'right',
-//     modifiers: [
-//         {
-//             name: 'offset',
-//             options: {
-//                 offset: [0,60],
-//             },
-//         },
-//     ],
-// });
+
+createPopper(cursor_pos_6, cursor_wrap_6, {
+    placement: 'top',
+    modifiers: [
+        {
+            name: 'offset',
+            options: {
+                offset: [120,-40],
+            },
+        },
+    ],
+});
