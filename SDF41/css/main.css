@@ -161,7 +161,7 @@
     margin-bottom: 0;
 }
 
-#p7 button {
+#p7 .btn {
     min-width: 20vh;
 }
 
@@ -182,6 +182,7 @@
 }
 
 #p9 .under_bar {
+    width: 100%;
     padding-bottom: 4em;
 }
 #p9 .btn {
