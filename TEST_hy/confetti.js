@@ -1,36 +1,43 @@
-var maxParticleCount = 100; //set max confetti count
-var particleSpeed = 1; //set the particle animation speed
+var maxParticleCount = 150; //set max confetti count
+var particleSpeed = 2; //set the particle animation speed
 var startConfetti; //call to start confetti animation
+var stopConfetti; //call to stop adding confetti
+var toggleConfetti; //call to start or stop the confetti animation depending on whether it's already running
+var removeConfetti; //call to stop the confetti animation and remove all confetti immediately
 
 (function (i, s, o, g, r, a, m) {
 	i['GoogleAnalyticsObject'] = r; i[r] = i[r] || function () {
 
-		(i[r].q = i[r].q || []).push(arguments)
+	  (i[r].q = i[r].q || []).push(arguments)
 	}, i[r].l = 1 * new Date(); a = s.createElement(o),
 
-		m = s.getElementsByTagName(o)[0]; a.async = 1; a.src = g; m.parentNode.insertBefore(a, m)
+	  m = s.getElementsByTagName(o)[0]; a.async = 1; a.src = g; m.parentNode.insertBefore(a, m)
 
-})(window, document, 'script', '//www.google-analytics.com/analytics.js', 'ga');
-
-ga('create', 'UA-46156385-1', 'cssscript.com');
-
-ga('send', 'pageview');
+  })(window, document, 'script', '//www.google-analytics.com/analytics.js', 'ga');
 
 
-(function () {
+
+  ga('create', 'UA-46156385-1', 'cssscript.com');
+
+  ga('send', 'pageview');
+
+  
+(function() {
 	startConfetti = startConfettiInner;
-
-	var colors = ["rgb(162, 196, 232)", "rgb(210, 177, 252)", "rgb(250, 175, 170)", "rgb(255,220,115)"]
+	stopConfetti = stopConfettiInner;
+	toggleConfetti = toggleConfettiInner;
+	removeConfetti = removeConfettiInner;
+	var colors = ["DodgerBlue", "OliveDrab", "Gold", "Pink", "SlateBlue", "LightBlue", "Violet", "PaleGreen", "SteelBlue", "SandyBrown", "Chocolate", "Crimson"]
 	var streamingConfetti = false;
 	var animationTimer = null;
 	var particles = [];
 	var waveAngle = 0;
-
+	
 	function resetParticle(particle, width, height) {
 		particle.color = colors[(Math.random() * colors.length) | 0];
 		particle.x = Math.random() * width;
 		particle.y = Math.random() * height - height;
-		particle.diameter = Math.random() * 5 + 5;
+		particle.diameter = Math.random() * 10 + 5;
 		particle.tilt = Math.random() * 10 - 10;
 		particle.tiltAngleIncrement = Math.random() * 0.07 + 0.05;
 		particle.tiltAngle = 0;
@@ -40,7 +47,7 @@ ga('send', 'pageview');
 	function startConfettiInner() {
 		var width = window.innerWidth;
 		var height = window.innerHeight;
-		window.requestAnimFrame = (function () {
+		window.requestAnimFrame = (function() {
 			return window.requestAnimationFrame ||
 				window.webkitRequestAnimationFrame ||
 				window.mozRequestAnimationFrame ||
@@ -58,7 +65,7 @@ ga('send', 'pageview');
 			document.body.appendChild(canvas);
 			canvas.width = width;
 			canvas.height = height;
-			window.addEventListener("resize", function () {
+			window.addEventListener("resize", function() {
 				canvas.width = window.innerWidth;
 				canvas.height = window.innerHeight;
 			}, true);
@@ -79,6 +86,22 @@ ga('send', 'pageview');
 				}
 			})();
 		}
+	}
+
+	function stopConfettiInner() {
+		streamingConfetti = false;
+	}
+
+	function removeConfettiInner() {
+		stopConfetti();
+		particles = [];
+	}
+
+	function toggleConfettiInner() {
+		if (streamingConfetti)
+			stopConfettiInner();
+		else
+			startConfettiInner();
 	}
 
 	function drawParticles(context) {

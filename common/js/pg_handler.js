@@ -36,18 +36,6 @@ window.addEventListener("resize", () => {
     document.documentElement.style.setProperty("--vh", `${vh}px`);
 });
 
-// ios 또는 android Chrome 일 때 스크롤 맨 밑으로 스크롤 해서 어쩌구 보류 
-// function Mobile() {return /Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent);}
-// if (Mobile()){// 모바일일 경우
-//     window.addEventListener('load', function(){
-//         document.body.style.height = (document.documentElement.clientHeight + 5) + 'px';
-//         window.scrollTo(0, 1);
-//     }, false);
-
-// } else {// 모바일 외
-
-// }
-
 
 //*******************************************************************************
 //**************************+   이벤트 동작   +*********************************** 
@@ -107,9 +95,6 @@ $('#start-btn').click(function () {
 
 
 
-
-
-
 //*******************************************************************************
 //**************************+    다음 버튼   +*********************************** 
 
@@ -129,9 +114,7 @@ $(document).on("click", "#next_btn", function () {
             $("#p" + page_num).toggleClass("pactive");
             $(".pactive").fadeIn(0);
         });
-        //         $('.shadow_ext').removeClass("addShadow");
-        // $('.shadow_inner').removeClass("addInnerShadow");
-        // $('.border_darker').removeClass("mk_border_darker");
+
     }
     console.log(page_num);
     audioArray[page_num - 1].load();
@@ -144,16 +127,17 @@ $(document).on("click", "#next_btn", function () {
     } else if (audio_stat == 1) {
         audioArray[page_num - 1].play();
     }
-    //if ($(".active").children().hasClass(".answer_txt")){
-    // if ($(".active > .answer_txt")){
-    // alert('폼 영역 확인');
-    // }
 
     //---------ctrlbar shadow
     if (page_num == 0) {
         $(".ctrlbar").removeClass("ctrlbar_shadow");
     } else {
         $(".ctrlbar").addClass("ctrlbar_shadow");
+    }
+    if (page_num==total_page){
+        setTimeout(function () {
+            startConfetti();
+        }, 500);
     }
 });
 
@@ -216,7 +200,6 @@ $(document).on("click", "#prev_btn", function () {
     }
 
 });
-
 
 
 //*******************************************************************************
@@ -351,12 +334,6 @@ document.querySelector("main").addEventListener("click", function (e) {//메인 
     let inputableAnswer = inputAnswer[real_pg].inputableAnswer;//페이지별 입력 정답 불러오기
     let instruction = modalCont[real_pg].instruction;//페이지별 모달 내용 불러오기
     let introModalCont = modalCont[0].instruction;//첫 번째 페이지 모달 내용
-
-    // if($("#div_test").hasClass("apple") === true) {
-
-    // //     // 속성값이 존재함.
-
-    // }
 
 
     if (e.target.className.includes(clickableArea)) {
