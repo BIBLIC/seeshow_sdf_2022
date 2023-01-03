@@ -160,6 +160,14 @@
     margin-right: .6em;
 }
 
+#p7 .absolute-bottom,
+#p8 .absolute-bottom {
+    position: absolute;
+    right: 0;
+    left: 0;
+    bottom: 0;
+}
+
 #p9 .icon {
     width: 10vw;
     height: 10vh;

@@ -167,7 +167,7 @@ createPopper(cursor_pos_1, cursor_wrap_1, {
         {
             name: 'offset',
             options: {
-                offset: [0,30],
+                offset: [0,-30],
             },
         },
     ],
@@ -212,7 +212,7 @@ createPopper(cursor_pos_5, cursor_wrap_5, {
         {
             name: 'offset',
             options: {
-                offset: [100,0],
+                offset: [60,0],
             },
         },
     ],

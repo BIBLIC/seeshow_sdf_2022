@@ -212,6 +212,7 @@ const cursor_pos_2 = document.querySelector('.cursor_pos_2');
 const cursor_pos_6 = document.querySelector('.cursor_pos_6');
 const cursor_pos_10 = document.querySelector('.cursor_pos_10');
 const cursor_pos_12 = document.querySelector('.cursor_pos_12');
+const cursor_pos_13 = document.querySelector('.cursor_pos_13');
 const cursor_pos_16 = document.querySelector('.cursor_pos_16');
 const cursor_pos_18 = document.querySelector('.cursor_pos_18');
 
@@ -221,6 +222,7 @@ const cursor_wrap_2 = document.querySelector('.cursor_wrap_2');
 const cursor_wrap_6 = document.querySelector('.cursor_wrap_6');
 const cursor_wrap_10 = document.querySelector('.cursor_wrap_10');
 const cursor_wrap_12 = document.querySelector('.cursor_wrap_12');
+const cursor_wrap_13 = document.querySelector('.cursor_wrap_13');
 const cursor_wrap_16 = document.querySelector('.cursor_wrap_16');
 const cursor_wrap_18 = document.querySelector('.cursor_wrap_18');
 
@@ -231,6 +233,7 @@ cursor_wrap_2.style.zIndex = "100";
 cursor_wrap_6.style.zIndex = "100";
 cursor_wrap_10.style.zIndex = "100";
 cursor_wrap_12.style.zIndex = "100";
+cursor_wrap_13.style.zIndex = "100";
 cursor_wrap_16.style.zIndex = "100";
 cursor_wrap_18.style.zIndex = "100";
 
@@ -276,7 +279,7 @@ createPopper(cursor_pos_10, cursor_wrap_10, {
         {
             name: 'offset',
             options: {
-                offset: [130,10],
+                offset: [100,-10],
             },
         },
     ],
@@ -287,7 +290,18 @@ createPopper(cursor_pos_12, cursor_wrap_12, {
         {
             name: 'offset',
             options: {
-                offset: [450,10],
+                offset: [280,10],
+            },
+        },
+    ],
+});
+createPopper(cursor_pos_13, cursor_wrap_13, {
+    placement: 'bottom',
+    modifiers: [
+        {
+            name: 'offset',
+            options: {
+                offset: [150,-20],
             },
         },
     ],
@@ -309,7 +323,7 @@ createPopper(cursor_pos_18, cursor_wrap_18, {
         {
             name: 'offset',
             options: {
-                offset: [400,50],
+                offset: [280,50],
             },
         },
     ],
