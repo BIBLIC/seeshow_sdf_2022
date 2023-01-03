@@ -335,29 +335,29 @@ $(document).on("click", "#hint_btn", function () {
 });
 
 // ------------------------------------------------------------------
-$(document).on("click", ".pg_5_answer", function () {
-    if (page_num === 6) {
-        $( document ).ready(function() {
-                if (page_num === 6) {
-                    var total_height = $('.scroller').height();
-                    let scrollPos = total_height * 0.7;
-                    $('.scroller').scrollTop(scrollPos);            
-                }
-          });  
-    }
-});
+// $(document).on("click", ".pg_5_answer", function () {
+//     if (page_num === 6) {
+//         $( document ).ready(function() {
+//                 if (page_num === 6) {
+//                     var total_height = $('.scroller').height();
+//                     let scrollPos = total_height * 0.7;
+//                     $('.scroller').scrollTop(scrollPos);            
+//                 }
+//           });  
+//     }
+// });
 
-$(document).on("click", ".pg_6_answer", function () {
-    if (page_num === 7) {
-        $( document ).ready(function() {
-                if (page_num === 7) {
-                    var total_height = $('.scroller').height();
-                    let scrollPos = total_height * 0.7;
-                    $('.scroller').scrollTop(scrollPos);            
-                }
-          });  
-    }
-});
+// $(document).on("click", ".pg_6_answer", function () {
+//     if (page_num === 7) {
+//         $( document ).ready(function() {
+//                 if (page_num === 7) {
+//                     var total_height = $('.scroller').height();
+//                     let scrollPos = total_height * 0.7;
+//                     $('.scroller').scrollTop(scrollPos);            
+//                 }
+//           });  
+//     }
+// });
 
 $(document).on("click", ".pg_7_answer", function () {
     if (page_num === 8) {
