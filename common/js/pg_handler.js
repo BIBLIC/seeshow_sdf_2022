@@ -101,7 +101,7 @@ $('#start-btn').click(function () {
 
 //다음 버튼 : 클릭 시 페이지 이동, 해당 페이지오디오만 재생(배열 인덱스라 페이지 넘버-1) 
 $(document).on("click", "#next_btn", function () {
-    console.log("다음");
+    console.log("다음",page_num);
     //$('#next_btn').click(function () {
     if (page_num < total_page) {
         page_num += 1;
@@ -115,6 +115,12 @@ $(document).on("click", "#next_btn", function () {
             $(".pactive").fadeIn(0);
         });
 
+    } 
+    
+    if (page_num==total_page){
+        setTimeout(function () {
+            startConfetti();
+        }, 500);
     }
     console.log(page_num);
     audioArray[page_num - 1].load();
@@ -134,11 +140,7 @@ $(document).on("click", "#next_btn", function () {
     } else {
         $(".ctrlbar").addClass("ctrlbar_shadow");
     }
-    if (page_num==total_page){
-        setTimeout(function () {
-            startConfetti();
-        }, 500);
-    }
+    
 });
 
 
@@ -319,6 +321,12 @@ function next(real_pg) {
     }
     $(".submit_btn").removeClass("pg_" + real_pg + "_answer");
     $('.shadow_ext').removeClass("addShadow");
+    
+    if (page_num==total_page){
+        setTimeout(function () {
+            startConfetti();
+        }, 500);
+    }
 }
 
 
