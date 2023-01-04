@@ -285,12 +285,12 @@ createPopper(cursor_pos_10, cursor_wrap_10, {
     ],
 });
 createPopper(cursor_pos_12, cursor_wrap_12, {
-    placement: 'bottom',
+    placement: 'right',
     modifiers: [
         {
             name: 'offset',
             options: {
-                offset: [280,10],
+                offset: [30,310],
             },
         },
     ],
