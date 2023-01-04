@@ -243,7 +243,7 @@ createPopper(cursor_pos_5, cursor_wrap_5, {
         {
             name: 'offset',
             options: {
-                offset: [220,5],
+                offset: [170,5],
             },
         },
     ],
