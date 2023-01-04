@@ -283,68 +283,67 @@ $(document).on("click", "#prev_btn", function () {
      //자동 스크롤
      if (page_num == 1) {
         if (textSizeValue == "2") {
-            let scrollPos = total_height * 0.;
+            let scrollPos = total_height * 0.001;
             $('.news_main').scrollTop(scrollPos);
         } else {
-            let scrollPos = total_height * 0;
+            let scrollPos = total_height * 0.001;
             $('.news_main').scrollTop(scrollPos);
         }
     }
     if (page_num == 2) {
         if (textSizeValue == "2") {
-            let scrollPos = total_height * 0.45;
+            let scrollPos = total_height * 0.001;
             $('.news_main').scrollTop(scrollPos);
         } else {
-            let scrollPos = total_height * 0.3;
+            let scrollPos = total_height * 0.001;
             $('.news_main').scrollTop(scrollPos);
         }
     }
     if (page_num == 3) {
         if (textSizeValue == "2") {
-            let scrollPos = total_height * 0.7;
+            let scrollPos = total_height * 0.3;
             $('.news_main').scrollTop(scrollPos);
         } else {
-            let scrollPos = total_height * 0.5;
+            let scrollPos = total_height * 0.15;
             $('.news_main').scrollTop(scrollPos);
         }
     }
     if (page_num == 4) {
         if (textSizeValue == "2") {
-            let scrollPos = total_height * 1.1;
+            let scrollPos = total_height * 0.9;
             $('.news_main').scrollTop(scrollPos);
         } else {
-            let scrollPos = total_height * 0.7;
+            let scrollPos = total_height * 0.6;
             $('.news_main').scrollTop(scrollPos);
         }
     }
     if (page_num == 5) {
         if (textSizeValue == "2") {
-            let scrollPos = total_height * 1.25;
+            let scrollPos = total_height * 1.5;
             $('.news_main').scrollTop(scrollPos);
         } else {
-            let scrollPos = total_height * 0.8;
+            let scrollPos = total_height * 1;
             $('.news_main').scrollTop(scrollPos);
         }
     }
     if (page_num == 6) {
         if (textSizeValue == "2") {
-            let scrollPos = total_height * 1.35;
+            let scrollPos = total_height * 1.8;
             $('.news_main').scrollTop(scrollPos);
         } else {
-            let scrollPos = total_height * 1.0;
+            let scrollPos = total_height * 1.5;
             $('.news_main').scrollTop(scrollPos);
         }
     }
     if (page_num == 7) {
         if (textSizeValue == "2") {
-            let scrollPos = total_height * 1.35;
+            let scrollPos = total_height * 2;
             $('.news_main').scrollTop(scrollPos);
         } else {
-            let scrollPos = total_height * 1.0;
+            let scrollPos = total_height * 2;
             $('.news_main').scrollTop(scrollPos);
         }
-    } 
-
+    }
 });
 
 
@@ -457,64 +456,64 @@ function next() {
     //자동 스크롤
     if (page_num == 1) {
         if (textSizeValue == "2") {
-            let scrollPos = total_height * 0.;
+            let scrollPos = total_height * 0.001;
             $('.news_main').scrollTop(scrollPos);
         } else {
-            let scrollPos = total_height * 0;
+            let scrollPos = total_height * 0.001;
             $('.news_main').scrollTop(scrollPos);
         }
     }
     if (page_num == 2) {
         if (textSizeValue == "2") {
-            let scrollPos = total_height * 0.45;
+            let scrollPos = total_height * 0.001;
             $('.news_main').scrollTop(scrollPos);
         } else {
-            let scrollPos = total_height * 0.3;
+            let scrollPos = total_height * 0.001;
             $('.news_main').scrollTop(scrollPos);
         }
     }
     if (page_num == 3) {
         if (textSizeValue == "2") {
-            let scrollPos = total_height * 0.7;
+            let scrollPos = total_height * 0.3;
             $('.news_main').scrollTop(scrollPos);
         } else {
-            let scrollPos = total_height * 0.5;
+            let scrollPos = total_height * 0.15;
             $('.news_main').scrollTop(scrollPos);
         }
     }
     if (page_num == 4) {
         if (textSizeValue == "2") {
-            let scrollPos = total_height * 1.1;
+            let scrollPos = total_height * 0.9;
             $('.news_main').scrollTop(scrollPos);
         } else {
-            let scrollPos = total_height * 0.7;
+            let scrollPos = total_height * 0.6;
             $('.news_main').scrollTop(scrollPos);
         }
     }
     if (page_num == 5) {
         if (textSizeValue == "2") {
-            let scrollPos = total_height * 1.25;
+            let scrollPos = total_height * 1.5;
             $('.news_main').scrollTop(scrollPos);
         } else {
-            let scrollPos = total_height * 0.8;
+            let scrollPos = total_height * 1;
             $('.news_main').scrollTop(scrollPos);
         }
     }
     if (page_num == 6) {
         if (textSizeValue == "2") {
-            let scrollPos = total_height * 1.35;
+            let scrollPos = total_height * 1.8;
             $('.news_main').scrollTop(scrollPos);
         } else {
-            let scrollPos = total_height * 1.0;
+            let scrollPos = total_height * 1.5;
             $('.news_main').scrollTop(scrollPos);
         }
     }
     if (page_num == 7) {
         if (textSizeValue == "2") {
-            let scrollPos = total_height * 1.35;
+            let scrollPos = total_height * 2;
             $('.news_main').scrollTop(scrollPos);
         } else {
-            let scrollPos = total_height * 1.0;
+            let scrollPos = total_height * 2;
             $('.news_main').scrollTop(scrollPos);
         }
     }
@@ -531,11 +530,11 @@ $(document).on("click", ".pg_1_answer", function () {
     modal1.style.display = "";
     //console.log('정답 누르고 p',real_pg);
 });
-$(document).on("click", ".okBtn1", function () {
+$(document).on("click", ".nxtBtn1", function () {
     modal1.style.display = "none";
     modal1_2.style.display = "";
 });
-$(document).on("click", ".okBtn1_1", function () {
+$(document).on("click", ".okBtn1", function () {
     modal1_2.style.display = "none";
     //console.log('전 p',real_pg);
     next();
