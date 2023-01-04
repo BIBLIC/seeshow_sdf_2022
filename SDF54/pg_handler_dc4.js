@@ -551,3 +551,22 @@ $(document).on("click", ".okBtn6", function () {
     modal6_2.style.display = "none";
     next();
 });
+
+//( 7 )++++++++++++++++++++++++++++
+$(document).on("click", ".pg_7_answer", function () {
+    cursor_wrap_7.style.display = "none";
+    my_wrap2.style.display = "";
+});
+$(document).on("click", ".my_wrap2", function () {
+    //cursor_wrap_7.style.display = "none";
+    my_wrap2.style.display = "none";
+    modal7_1.style.display = "";
+});
+$(document).on("click", ".nxtBtn7", function () {
+    modal7_1.style.display = "none";
+    modal7_2.style.display = "";
+});
+$(document).on("click", ".okBtn7", function () {
+    modal7_2.style.display = "none";
+    next();
+});

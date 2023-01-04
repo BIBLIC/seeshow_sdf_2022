@@ -75,6 +75,8 @@ const modal5_1 = document.querySelector('.modal5_1');
 const modal5_2 = document.querySelector('.modal5_2');
 const modal6_1 = document.querySelector('.modal6_1');
 const modal6_2 = document.querySelector('.modal6_2');
+const modal7_1 = document.querySelector('.modal7_1');
+const modal7_2 = document.querySelector('.modal7_2');
 
 modal1.style.display = "none";
 modal1_2.style.display = "none";
@@ -90,6 +92,8 @@ my_wrap.style.display = "none";
 my_wrap2.style.display = "none";
 modal6_1.style.display = "none";
 modal6_2.style.display = "none";
+modal7_1.style.display = "none";
+modal7_2.style.display = "none";
 // modal1.style.display = "none";
 
 
@@ -107,6 +111,8 @@ const cursor_pos_5 = document.querySelector('.cursor_pos_5');
 const cursor_wrap_5 = document.querySelector('.cursor_wrap_5');
 const cursor_pos_6 = document.querySelector('.cursor_pos_6');
 const cursor_wrap_6 = document.querySelector('.cursor_wrap_6');
+const cursor_pos_7 = document.querySelector('.cursor_pos_7');
+const cursor_wrap_7 = document.querySelector('.cursor_wrap_7');
 
 cursor_wrap_1.style.zIndex = "40";
 cursor_wrap_2.style.zIndex = "40";
@@ -114,6 +120,7 @@ cursor_wrap_3.style.zIndex = "40";
 cursor_wrap_4.style.zIndex = "40";
 cursor_wrap_5.style.zIndex = "40";
 cursor_wrap_6.style.zIndex = "40";
+cursor_wrap_7.style.zIndex = "40";
 
 
 const { createPopper } = Popper;
@@ -180,6 +187,17 @@ createPopper(cursor_pos_6, cursor_wrap_6, {
             name: 'offset',
             options: {
                 offset: [150,-300],
+            },
+        },
+    ],
+});
+createPopper(cursor_pos_7, cursor_wrap_7, {
+    placement: 'right',
+    modifiers: [
+        {
+            name: 'offset',
+            options: {
+                offset: [0,100],
             },
         },
     ],
