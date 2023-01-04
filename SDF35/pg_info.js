@@ -260,14 +260,14 @@ createPopper(cursor_pos_7, cursor_wrap_7, {
 //     ],
 // });
 
-$(document).on("click", '.pg_10_answer', function () {
+$(document).on("click", '.pg_11_answer', function () {
     if (page_num === 11) {
         $( document ).ready(function() {
             setTimeout(function () {
                 if (page_num === 11) {
                     next();
                 }
-            }, 10500);
+            }, 14500);
           });  
     }
 });
@@ -278,7 +278,7 @@ $(document).on("click", "#next_btn", function () {
                 if (page_num === 11) {
                     next();
                 }
-            }, 10500);
+            }, 14500);
           });  
     }
 });
@@ -302,7 +302,7 @@ $(document).on("click", '#start-btn', function () {
                 if (page_num === 11) {
                     next();
                 }
-            }, 800);
+            }, 13000);
           });  
     }
 });
@@ -314,7 +314,7 @@ $(document).on("click", "#next_btn", function () {
                 if (page_num === 11) {
                     next();
                 }
-            }, 800);
+            }, 13000);
           });  
     }
 });
@@ -326,7 +326,7 @@ $(document).on("click", "#prev_btn", function () {
                 if (page_num === 11) {
                     next();
                 }
-            }, 800);
+            }, 13000);
           });  
     }
 });
