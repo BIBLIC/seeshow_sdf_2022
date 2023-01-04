@@ -518,7 +518,7 @@ $(document).on("click", ".pg_3_answer", function () {
 });
 $(document).on("click", ".nxtBtn3", function () {
     modal3_1.style.display = "none";
-    modal3_3.style.display = "";
+    modal3_2.style.display = "";
    
     //console.log('후 p',real_pg);
 });
