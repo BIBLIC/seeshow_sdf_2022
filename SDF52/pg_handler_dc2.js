@@ -563,11 +563,6 @@ $(document).on("click", ".okBtn5", function () {
 //( 6 )++++++++++++++++++++++++++++
 $(document).on("click", ".pg_6_answer", function () {
     cursor_wrap_6.style.display = "none";
-    my_wrap2.style.display = "";
-});
-$(document).on("click", ".my_wrap2", function () {
-    //cursor_wrap_6.style.display = "none";
-    my_wrap2.style.display = "none";
     modal6_1.style.display = "";
 });
 $(document).on("click", ".nxtBtn6", function () {
