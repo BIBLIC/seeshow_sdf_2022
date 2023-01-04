@@ -37,6 +37,17 @@ window.addEventListener("resize", () => {
 });
 
 
+
+function runConfetti () {
+    confetti({
+        particleCount: 100,
+        spread: 50
+        // any other options from the global
+        // confetti function
+      });
+}
+
+
 //*******************************************************************************
 //**************************+   이벤트 동작   +*********************************** 
 
@@ -44,6 +55,8 @@ window.addEventListener("resize", () => {
 $(document).ready(function () {
     //$('.nav_btn_wrap').css('display', 'none');
     firstPageLoader();
+    
+
 });
 
 
@@ -118,13 +131,9 @@ $(document).on("click", "#next_btn", function () {
     } 
     
     if (page_num==total_page){
-        
         setTimeout(function () {
-            alert('ghgh');
-            var confetti_canvas = document.getElementById("#confetti-canvas");
-            party.confetti(confetti_canvas);
-           
-        }, 500);
+            runConfetti();
+        }, 200);
     }
     console.log(page_num);
     audioArray[page_num - 1].load();
