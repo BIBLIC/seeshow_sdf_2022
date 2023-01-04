@@ -2640,7 +2640,7 @@ align-items: center;
 /* -----0926 복사 모달 전체 수정----------------------------------------------------------------- */
 #paste_modal {
   min-height: 10em;
-  background-color: #eee;
+  background-color: #fefefe;
   padding: 0;
   left: 50%;
   top: 50%;
