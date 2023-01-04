@@ -31,17 +31,6 @@ window.addEventListener("resize", () => {
     document.documentElement.style.setProperty("--vh", `${vh}px`);
 });
 
-// ios 또는 android Chrome 일 때 스크롤 맨 밑으로 스크롤 해서 어쩌구 보류 
-// function Mobile() {return /Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent);}
-// if (Mobile()){// 모바일일 경우
-//     window.addEventListener('load', function(){
-//         document.body.style.height = (document.documentElement.clientHeight + 5) + 'px';
-//         window.scrollTo(0, 1);
-//     }, false);
-
-// } else {// 모바일 외
-
-// }
 
 
 //*******************************************************************************
@@ -62,47 +51,48 @@ function firstPageLoader() {
         $("#p" + page_num).toggleClass("pactive");
         $(".pactive").fadeIn(0);
     });
+    $('.nav_btn_wrap').css('display', 'block');
+    $('.nav_btn_wrap').contents().unwrap();
+    ctrlbar.style.background = "#E0E0E0";
+    $(".ctrlbar").addClass("ctrlbar_shadow");
 }
 
 
 //*******************************************************************************
 //**************************+    시작하기 버튼   +***********************************  
 
-//시작하기 버튼 클릭 후 컨트롤 바 내부 변경
-$('#start-btn').click(function () {
-    $('.nav_btn_wrap').css('display', 'block');
-    //$('.nav_btn_wrap').css('display', 'flex');
-    $('.start_btn_wrap').css('display', 'none');
-    //$('.nav_btn_wrap').unwrap();
-    $('.nav_btn_wrap').contents().unwrap();
+// //시작하기 버튼 클릭 후 컨트롤 바 내부 변경
+// $('#start-btn').click(function () {
+//     $('.nav_btn_wrap').css('display', 'block');
+//     //$('.nav_btn_wrap').css('display', 'flex');
+//     $('.start_btn_wrap').css('display', 'none');
+//     //$('.nav_btn_wrap').unwrap();
+//     $('.nav_btn_wrap').contents().unwrap();
 
-    //시작하기 버튼 클릭 후 페이지 1로 전환되게 하기
-    page_num = 1;
-    $(".active").removeClass("active");//active 클래스에서 'active'클래스 제거하고 -> 없어도 되는 코드
-    $("#p" + page_num).addClass("active");//클릭한 곳에 'active' 클래스 추가
-    $(".pactive").fadeOut(0).promise().done(function () {//pactive -> active 추가된 p?
-        //promise() -> 자바스크립트 비동기 처리에 사용되는 객체 -> fadeout 완료 후 실행되는 함수
-        //.toggleClass('추가클래스') //해당 jquery로 가져온 요소를 클릭마다 클래스를 추가하고 삭제.
-        $(".pactive").toggleClass("pactive");
-        $("#p" + page_num).toggleClass("pactive");
-        $(".pactive").fadeIn(0);
-    });
-    ctrlbar.style.background = "#E0E0E0";
-    audioArray[page_num - 1].load();// 해당 페이지 오디오 로딩
-    audioArray[page_num - 1].play();// 해당 페이지 오디오 재생
+//     //시작하기 버튼 클릭 후 페이지 1로 전환되게 하기
+//     page_num = 1;
+//     $(".active").removeClass("active");//active 클래스에서 'active'클래스 제거하고 -> 없어도 되는 코드
+//     $("#p" + page_num).addClass("active");//클릭한 곳에 'active' 클래스 추가
+//     $(".pactive").fadeOut(0).promise().done(function () {//pactive -> active 추가된 p?
+//         //promise() -> 자바스크립트 비동기 처리에 사용되는 객체 -> fadeout 완료 후 실행되는 함수
+//         //.toggleClass('추가클래스') //해당 jquery로 가져온 요소를 클릭마다 클래스를 추가하고 삭제.
+//         $(".pactive").toggleClass("pactive");
+//         $("#p" + page_num).toggleClass("pactive");
+//         $(".pactive").fadeIn(0);
+//     });
+//     ctrlbar.style.background = "#E0E0E0";
+//     audioArray[page_num - 1].load();// 해당 페이지 오디오 로딩
+//     audioArray[page_num - 1].play();// 해당 페이지 오디오 재생
 
-    //---------ctrlbar shadow
-    if (page_num == 0) {
-        $(".ctrlbar").removeClass("ctrlbar_shadow");
-    } else {
-        $(".ctrlbar").addClass("ctrlbar_shadow");
-    }
-    //var number = $('.blog-main').height();
-    total_height = $('.blog-main').height();
-});
-
-
-
+//     //---------ctrlbar shadow
+//     if (page_num == 0) {
+//         $(".ctrlbar").removeClass("ctrlbar_shadow");
+//     } else {
+//         $(".ctrlbar").addClass("ctrlbar_shadow");
+//     }
+//     //var number = $('.blog-main').height();
+//     total_height = $('.blog-main').height();
+// });
 
 
 
@@ -125,9 +115,6 @@ $(document).on("click", "#next_btn", function () {
             $("#p" + page_num).toggleClass("pactive");
             $(".pactive").fadeIn(0);
         });
-        //         $('.shadow_ext').removeClass("addShadow");
-        // $('.shadow_inner').removeClass("addInnerShadow");
-        // $('.border_darker').removeClass("mk_border_darker");
     }
     console.log(page_num);
     audioArray[page_num - 1].load();
@@ -140,10 +127,6 @@ $(document).on("click", "#next_btn", function () {
     } else if (audio_stat == 1) {
         audioArray[page_num - 1].play();
     }
-    //if ($(".active").children().hasClass(".answer_txt")){
-    // if ($(".active > .answer_txt")){
-    // alert('폼 영역 확인');
-    // }
 
     //---------ctrlbar shadow
     if (page_num == 0) {
@@ -221,9 +204,6 @@ $(document).on("click", "#prev_btn", function () {
             $("#p" + page_num).toggleClass("pactive");
             $(".pactive").fadeIn(0);
         });
-        //         $('.shadow_ext').removeClass("addShadow");
-        // $('.shadow_inner').removeClass("addInnerShadow");
-        // $('.border_darker').removeClass("mk_border_darker");
     }
     console.log(page_num);
     if (page_num != 0) {
@@ -397,149 +377,5 @@ function next() {
     if (page_num > 1) {
         audioArray[page_num - 2].pause();
     }
-     //자동 스크롤
-     if (page_num == 2) {
-        if (textSizeValue == "2") {
-            let scrollPos = total_height * 0.8;
-            $('.blog_main').scrollTop(scrollPos);
-        } else {
-            let scrollPos = total_height * 0.45;
-            $('.blog_main').scrollTop(scrollPos);
-        }
-    }
-    if (page_num == 3) {
-        if (textSizeValue == "2") {
-            let scrollPos = total_height * 0.9;
-            $('.blog_main').scrollTop(scrollPos);
-        } else {
-            let scrollPos = total_height * 0.55;
-            $('.blog_main').scrollTop(scrollPos);
-        }
-    }
-    if (page_num == 4) {
-        if (textSizeValue == "2") {
-            let scrollPos = total_height * 1.2;
-            $('.blog_main').scrollTop(scrollPos);
-        } else {
-            let scrollPos = total_height * 0.7;
-            $('.blog_main').scrollTop(scrollPos);
-        }
-    }
-    if (page_num == 5) {
-        if (textSizeValue == "2") {
-            let scrollPos = total_height * 1.25;
-            $('.blog_main').scrollTop(scrollPos);
-        } else {
-            let scrollPos = total_height * 0.8;
-            $('.blog_main').scrollTop(scrollPos);
-        }
-    }
-    if (page_num == 6) {
-        if (textSizeValue == "2") {
-            let scrollPos = total_height * 1.5;
-            $('.blog_main').scrollTop(scrollPos);
-        } else {
-            let scrollPos = total_height * 1.0;
-            $('.blog_main').scrollTop(scrollPos);
-        }
-    }
+     
 }
-
-//( 1 )++++++++++++++++++++++++++++
-$(document).on("click", ".pg_1_answer", function () {
-    cursor_wrap_1.style.display = "none";
-    modal1.style.display = "";
-    //console.log('정답 누르고 p',real_pg);
-});
-$(document).on("click", ".okBtn1", function () {
-    modal1.style.display = "none";
-    modal1_2.style.display = "";
-});
-$(document).on("click", ".okBtn1_1", function () {
-    modal1_2.style.display = "none";
-    //console.log('전 p',real_pg);
-    next();
-    //console.log('후 p',real_pg);
-});
-
-//( 2 )++++++++++++++++++++++++++++
-$(document).on("click", ".pg_2_answer", function () {
-    cursor_wrap_2.style.display = "none";
-    modal2_1.style.display = "";
-});
-$(document).on("click", ".nxtBtn2", function () {
-    modal2_1.style.display = "none";
-    modal2_2.style.display = "";
-   
-    //console.log('후 p',real_pg);
-});
-$(document).on("click", ".okBtn2", function () {
-    modal2_2.style.display = "none";
-    //console.log('전 p',real_pg);
-    next();
-    //console.log('후 p',real_pg);
-});
-
-
-//( 3 )++++++++++++++++++++++++++++
-$(document).on("click", ".pg_3_answer", function () {
-    cursor_wrap_3.style.display = "none";
-    modal3_1.style.display = "";
-});
-$(document).on("click", ".nxtBtn3", function () {
-    modal3_1.style.display = "none";
-    modal3_2.style.display = "";
-   
-    //console.log('후 p',real_pg);
-});
-$(document).on("click", ".okBtn3", function () {
-    modal3_2.style.display = "none";
-    //console.log('전 p',real_pg);
-    next();
-    //console.log('후 p',real_pg);
-});
-
-
-//( 4 )++++++++++++++++++++++++++++
-$(document).on("click", ".pg_4_answer", function () {
-    cursor_wrap_4.style.display = "none";
-    modal4_1.style.display = "";
-});
-$(document).on("click", ".nxtBtn4", function () {
-    modal4_1.style.display = "none";
-    modal4_2.style.display = "";
-});
-$(document).on("click", ".okBtn4", function () {
-    modal4_2.style.display = "none";
-    next();
-});
-
-
-//( 5 )++++++++++++++++++++++++++++
-$(document).on("click", ".pg_5_answer", function () {
-    cursor_wrap_5.style.display = "none";
-    modal5_1.style.display = "";
-});
-$(document).on("click", ".nxtBtn5", function () {
-    modal5_1.style.display = "none";
-    modal5_2.style.display = "";
-});
-$(document).on("click", ".okBtn5", function () {
-    modal5_2.style.display = "none";
-    next();
-});
-
-
-//( 6 )++++++++++++++++++++++++++++
-$(document).on("click", ".pg_6_answer", function () {
-    cursor_wrap_6.style.display = "none";
-    modal6_1.style.display = "";
-});
-$(document).on("click", ".nxtBtn6", function () {
-    modal6_1.style.display = "none";
-    modal6_2.style.display = "";
-});
-$(document).on("click", ".okBtn6", function () {
-    modal6_2.style.display = "none";
-    next();
-});
