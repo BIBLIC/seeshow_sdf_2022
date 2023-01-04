@@ -161,31 +161,33 @@ $(document).on("click", "#next_btn", function () {
     //자동 스크롤
     if (page_num == 3) {
         if (textSizeValue == "2") {
-            let scrollPos = total_height * 0.3;
+            let scrollPos = total_height * 0.001;
             $('.cafe_main').scrollTop(scrollPos);
         } else {
-            let scrollPos = total_height * 0.3;
+            let scrollPos = total_height * 0.001;
             $('.cafe_main').scrollTop(scrollPos);
         }
     }
     if (page_num == 4) {
         if (textSizeValue == "2") {
-            let scrollPos = total_height * 1.2;
+            let scrollPos = total_height * 0.5;
             $('.cafe_main').scrollTop(scrollPos);
         } else {
-            let scrollPos = total_height * 0.7;
+            let scrollPos = total_height * 0.001;
             $('.cafe_main').scrollTop(scrollPos);
         }
     }
     if (page_num == 5) {
         if (textSizeValue == "2") {
-            let scrollPos = total_height * 1.7;
+            let scrollPos = total_height * 2.0;
             $('.cafe_main').scrollTop(scrollPos);
         } else {
-            let scrollPos = total_height * 0.9;
+            let scrollPos = total_height * 0.8;
             $('.cafe_main').scrollTop(scrollPos);
         }
     }
+
+
 
 });
 
@@ -231,31 +233,31 @@ $(document).on("click", "#prev_btn", function () {
     } else {
         $(".ctrlbar").addClass("ctrlbar_shadow");
     }
-    //자동 스크롤
-    if (page_num == 3) {
+     //자동 스크롤
+     if (page_num == 3) {
         if (textSizeValue == "2") {
-            let scrollPos = total_height * 0.3;
+            let scrollPos = total_height * 0.001;
             $('.cafe_main').scrollTop(scrollPos);
         } else {
-            let scrollPos = total_height * 0.3;
+            let scrollPos = total_height * 0.001;
             $('.cafe_main').scrollTop(scrollPos);
         }
     }
     if (page_num == 4) {
         if (textSizeValue == "2") {
-            let scrollPos = total_height * 1.2;
+            let scrollPos = total_height * 0.5;
             $('.cafe_main').scrollTop(scrollPos);
         } else {
-            let scrollPos = total_height * 0.7;
+            let scrollPos = total_height * 0.001;
             $('.cafe_main').scrollTop(scrollPos);
         }
     }
     if (page_num == 5) {
         if (textSizeValue == "2") {
-            let scrollPos = total_height * 1.7;
+            let scrollPos = total_height * 2.0;
             $('.cafe_main').scrollTop(scrollPos);
         } else {
-            let scrollPos = total_height * 0.9;
+            let scrollPos = total_height * 0.8;
             $('.cafe_main').scrollTop(scrollPos);
         }
     }
@@ -375,35 +377,30 @@ function next() {
     //자동 스크롤
     if (page_num == 3) {
         if (textSizeValue == "2") {
-            let scrollPos = total_height * 0.3;
+            let scrollPos = total_height * 0.001;
             $('.cafe_main').scrollTop(scrollPos);
         } else {
-            let scrollPos = total_height * 0.3;
+            let scrollPos = total_height * 0.001;
             $('.cafe_main').scrollTop(scrollPos);
         }
     }
     if (page_num == 4) {
         if (textSizeValue == "2") {
-            let scrollPos = total_height * 1.2;
+            let scrollPos = total_height * 0.5;
             $('.cafe_main').scrollTop(scrollPos);
         } else {
-            let scrollPos = total_height * 0.7;
+            let scrollPos = total_height * 0.001;
             $('.cafe_main').scrollTop(scrollPos);
         }
     }
     if (page_num == 5) {
         if (textSizeValue == "2") {
-            let scrollPos = total_height * 1.7;
+            let scrollPos = total_height * 2.0;
             $('.cafe_main').scrollTop(scrollPos);
         } else {
-            let scrollPos = total_height * 0.9;
+            let scrollPos = total_height * 0.8;
             $('.cafe_main').scrollTop(scrollPos);
         }
-    }
-    if (page_num==total_page){
-        setTimeout(function () {
-            startConfetti();
-        }, 500);
     }
 }
 
@@ -413,11 +410,13 @@ $(document).on("click", ".pg_1_answer", function () {
     modal1.style.display = "";
     //console.log('정답 누르고 p',real_pg);
 });
-$(document).on("click", ".okBtn1", function () {
+$(document).on("click", ".nxtBtn1", function () {
     modal1.style.display = "none";
-    //console.log('전 p',real_pg);
+    modal1_2.style.display = "";
+});
+$(document).on("click", ".okBtn1", function () {
+    modal1_2.style.display = "none";
     next();
-    //console.log('후 p',real_pg);
 });
 
 
@@ -426,12 +425,15 @@ $(document).on("click", ".pg_2_answer", function () {
     cursor_wrap_2.style.display = "none";
     modal2_1.style.display = "";
 });
-$(document).on("click", ".okBtn2", function () {
+$(document).on("click", ".nxtBtn2", function () {
     modal2_1.style.display = "none";
-    //console.log('전 p',real_pg);
-    next();
-    //console.log('후 p',real_pg);
+    modal2_2.style.display = "";
 });
+$(document).on("click", ".okBtn2", function () {
+    modal2_2.style.display = "none";
+    next();
+});
+
 
 
 //( 3 )++++++++++++++++++++++++++++
@@ -485,20 +487,45 @@ $(document).on("click", ".okBtn5", function () {
 
 //( 6 )++++++++++++++++++++++++++++
 $(document).on("click", ".pg_6_answer", function () {
+    cursor_wrap_6.style.display = "none";
+    modal6_1.style.display = "";
+});
+$(document).on("click", ".nxtBtn6", function () {
+    modal6_1.style.display = "none";
+    modal6_2.style.display = "";
+});
+$(document).on("click", ".okBtn6", function () {
+    modal6_2.style.display = "none";
+    next();
+});
+
+//( 7 )++++++++++++++++++++++++++++
+$(document).on("click", ".pg_7_answer", function () {
     next();
 });
 
 
-//( 7 )++++++++++++++++++++++++++++
-$(document).on("click", ".pg_7_answer", function () {
-    cursor_wrap_7.style.display = "none";
-    modal7_1.style.display = "";
+//( 8 )++++++++++++++++++++++++++++
+$(document).on("click", ".pg_8_answer", function () {
+    cursor_wrap_8.style.display = "none";
+    modal8_1.style.display = "";
 });
-$(document).on("click", ".nxtBtn7", function () {
-    modal7_1.style.display = "none";
-    modal7_2.style.display = "";
+$(document).on("click", ".nxtBtn8", function () {
+    modal8_1.style.display = "none";
+    modal8_2.style.display = "";
 });
-$(document).on("click", ".okBtn7", function () {
-    modal7_2.style.display = "none";
+$(document).on("click", ".okBtn8", function () {
+    modal8_2.style.display = "none";
+    next();
+});
+
+//( 9 )++++++++++++++++++++++++++++
+$(document).on("click", ".pg_9_answer", function () {
+    cursor_wrap_9.style.display = "none";
+    modal9_1.style.display = "";
+});
+
+$(document).on("click", ".okBtn9", function () {
+    modal9_1.style.display = "none";
     next();
 });

@@ -1,4 +1,4 @@
-var total_page = 8;//페이지 수 -> 시나리오마다 total_page 수 바꾸기 
+var total_page = 10;//페이지 수 -> 시나리오마다 total_page 수 바꾸기 
 
 //오디오 배열 선언, 페이지 수 대로 배열에 mp3 넣기
 const audioArray = [];
@@ -49,6 +49,10 @@ const pageClickArea = [
         page: 8,
         correctAnswer: "pg_8_answer"
     },
+    {
+        page: 9,
+        correctAnswer: "pg_9_answer"
+    },
 ];
 
 // ----------------------------------------------------------------------------------------------------------------------- 
@@ -61,6 +65,7 @@ const share = document.querySelector('.share');
 const blog_main = document.querySelector('.blog_main');
 
 const modal1 = document.querySelector('.modal1');
+const modal1_2 = document.querySelector('.modal1_2');
 const modal2 = document.querySelector('.modal2');
 
 const modal2_1 = document.querySelector('.modal2_1');
@@ -71,22 +76,27 @@ const modal4_1 = document.querySelector('.modal4_1');
 const modal4_2 = document.querySelector('.modal4_2');
 const modal5_1 = document.querySelector('.modal5_1');
 const modal5_2 = document.querySelector('.modal5_2');
-// const modal6_1 = document.querySelector('.modal6_1');
-// const modal6_2 = document.querySelector('.modal6_2');
-const modal7_1 = document.querySelector('.modal7_1');
-const modal7_2 = document.querySelector('.modal7_2');
+const modal6_1 = document.querySelector('.modal6_1');
+const modal6_2 = document.querySelector('.modal6_2');
+const modal8_1 = document.querySelector('.modal8_1');
+const modal8_2 = document.querySelector('.modal8_2');
+const modal9_1 = document.querySelector('.modal9_1');
 
+modal1.style.display = "none";
+modal1_2.style.display = "none";
 modal2_1.style.display = "none";
+modal2_2.style.display = "none";
 modal3_1.style.display = "none";
 modal3_2.style.display = "none";
 modal4_1.style.display = "none";
 modal4_2.style.display = "none";
 modal5_1.style.display = "none";
 modal5_2.style.display = "none";
-// modal6_1.style.display = "none";
-// modal6_2.style.display = "none";
-modal7_1.style.display = "none";
-modal7_2.style.display = "none";
+modal6_1.style.display = "none";
+modal6_2.style.display = "none";
+modal8_1.style.display = "none";
+modal8_2.style.display = "none";
+modal9_1.style.display = "none";
 my_wrap2.style.display = "none";
 modal1.style.display = "none";
 
@@ -106,6 +116,10 @@ const cursor_pos_6 = document.querySelector('.cursor_pos_6');
 const cursor_wrap_6 = document.querySelector('.cursor_wrap_6');
 const cursor_pos_7 = document.querySelector('.cursor_pos_7');
 const cursor_wrap_7 = document.querySelector('.cursor_wrap_7');
+const cursor_pos_8 = document.querySelector('.cursor_pos_8');
+const cursor_wrap_8 = document.querySelector('.cursor_wrap_8');
+const cursor_pos_9 = document.querySelector('.cursor_pos_9');
+const cursor_wrap_9 = document.querySelector('.cursor_wrap_9');
 
 cursor_wrap_1.style.zIndex = "40";
 cursor_wrap_2.style.zIndex = "40";
@@ -114,6 +128,7 @@ cursor_wrap_4.style.zIndex = "40";
 cursor_wrap_5.style.zIndex = "40";
 cursor_wrap_6.style.zIndex = "40";
 cursor_wrap_7.style.zIndex = "40";
+cursor_wrap_8.style.zIndex = "40";
 
 const { createPopper } = Popper;
 createPopper(cursor_pos_1, cursor_wrap_1, {
@@ -122,7 +137,7 @@ createPopper(cursor_pos_1, cursor_wrap_1, {
         {
             name: 'offset',
             options: {
-                offset: [0,0],
+                offset: [0,40],
             },
         },
     ],
@@ -139,12 +154,12 @@ createPopper(cursor_pos_2, cursor_wrap_2, {
     ],
 });
 createPopper(cursor_pos_3, cursor_wrap_3, {
-    placement: 'top',
+    placement: 'right',
     modifiers: [
         {
             name: 'offset',
             options: {
-                offset: [0,-50],
+                offset: [0,-100],
             },
         },
     ],
@@ -189,12 +204,34 @@ createPopper(cursor_pos_6, cursor_wrap_6, {
         {
             name: 'offset',
             options: {
-                offset: [-20,60],
+                offset: [0,50],
             },
         },
     ],
 });
 createPopper(cursor_pos_7, cursor_wrap_7, {
+    placement: 'right',
+    modifiers: [
+        {
+            name: 'offset',
+            options: {
+                offset: [0,0],
+            },
+        },
+    ],
+});
+createPopper(cursor_pos_8, cursor_wrap_8, {
+    placement: 'right',
+    modifiers: [
+        {
+            name: 'offset',
+            options: {
+                offset: [-100,0],
+            },
+        },
+    ],
+});
+createPopper(cursor_pos_9, cursor_wrap_9, {
     placement: 'right',
     modifiers: [
         {
