@@ -155,7 +155,7 @@ const modalCont = [
     },
     {
         page: 12,
-        instruction: "지시문 추가 필요"
+        instruction: "새 알림이 도착했습니다. 키워드 자전거가 포함된 새로운 게시물이 등록되었네요. 알림 메세지를 누르면 실습이 완료됩니다."
     },
     {
         page: 13,
@@ -260,18 +260,17 @@ createPopper(cursor_pos_7, cursor_wrap_7, {
 //     ],
 // });
 
-$(document).on("click", '.#next_btn', function () {
-    if (page_num === 10) {
+$(document).on("click", '.pg_11_answer', function () {
+    if (page_num === 12) {
         $( document ).ready(function() {
             setTimeout(function () {
-                if (page_num === 11) {
+                if (page_num === 12) {
                     next();
                 }
-            }, 8500);
+            }, 10500);
           });  
     }
 });
-
 $(document).on("click", "#next_btn", function () {
     if (page_num === 11) {
         $( document ).ready(function() {
@@ -279,12 +278,10 @@ $(document).on("click", "#next_btn", function () {
                 if (page_num === 12) {
                     next();
                 }
-            }, 14500);
+            }, 10500);
           });  
     }
 });
-
-
 $(document).on("click", "#prev_btn", function () {
     if (page_num === 13) {
         $( document ).ready(function() {
