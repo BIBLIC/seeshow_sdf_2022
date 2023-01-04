@@ -1,0 +1,174 @@
+@import url(https://hangeul.pstatic.net/hangeul_static/css/nanum-square-round.css);
+@import url(https://hangeul.pstatic.net/hangeul_static/css/nanum-barun-gothic.css);
+
+@font-face {
+  font-family: 'NanumSquareRound';
+  src: url(https://hangeul.pstatic.net/hangeul_static/webfont/NanumSquareRound/NanumSquareRoundR.eot);
+  src: url(https://hangeul.pstatic.net/hangeul_static/webfont/NanumSquareRound/NanumSquareRoundR.eot?#iefix) format("embedded-opentype"),url(https://hangeul.pstatic.net/hangeul_static/webfont/NanumSquareRound/NanumSquareRoundR.woff2) format("woff2"), url(https://hangeul.pstatic.net/hangeul_static/webfont/NanumSquareRound/NanumSquareRoundR.woff) format("woff"), url(https://hangeul.pstatic.net/hangeul_static/webfont/NanumSquareRound/NanumSquareRoundR.ttf) format("truetype");
+}
+
+@font-face {
+  font-family: 'NanumSquareRoundB';
+  src: url(https://hangeul.pstatic.net/hangeul_static/webfont/NanumSquareRound/NanumSquareRoundB.eot);
+  src: url(https://hangeul.pstatic.net/hangeul_static/webfont/NanumSquareRound/NanumSquareRoundB.eot?#iefix) format("embedded-opentype"), url(https://hangeul.pstatic.net/hangeul_static/webfont/NanumSquareRound/NanumSquareRoundB.woff2) format("woff2"), url(https://hangeul.pstatic.net/hangeul_static/webfont/NanumSquareRound/NanumSquareRoundB.woff) format("woff"), url(https://hangeul.pstatic.net/hangeul_static/webfont/NanumSquareRound/NanumSquareRoundB.ttf) format("truetype");
+}
+
+@font-face {
+  font-family: 'NanumSquareRoundEB';
+  src: url(https://hangeul.pstatic.net/hangeul_static/webfont/NanumSquareRound/NanumSquareRoundEB.eot);
+  src: url(https://hangeul.pstatic.net/hangeul_static/webfont/NanumSquareRound/NanumSquareRoundEB.eot?#iefix) format("embedded-opentype"), url(https://hangeul.pstatic.net/hangeul_static/webfont/NanumSquareRound/NanumSquareRoundEB.woff2) format("woff2"), url(https://hangeul.pstatic.net/hangeul_static/webfont/NanumSquareRound/NanumSquareRoundEB.woff) format("woff"), url(https://hangeul.pstatic.net/hangeul_static/webfont/NanumSquareRound/NanumSquareRoundEB.ttf) format("truetype");
+}
+
+@font-face {
+  font-family: 'NanumSquareRoundL';
+  src: url(https://hangeul.pstatic.net/hangeul_static/webfont/NanumSquareRound/NanumSquareRoundL.eot);
+  src: url(https://hangeul.pstatic.net/hangeul_static/webfont/NanumSquareRound/NanumSquareRoundL.eot?#iefix) format("embedded-opentype"), url(https://hangeul.pstatic.net/hangeul_static/webfont/NanumSquareRound/NanumSquareRoundL.woff2) format("woff2"), url(https://hangeul.pstatic.net/hangeul_static/webfont/NanumSquareRound/NanumSquareRoundL.woff) format("woff"), url(https://hangeul.pstatic.net/hangeul_static/webfont/NanumSquareRound/NanumSquareRoundL.ttf) format("truetype");
+}
+
+@font-face {
+  font-family: 'NanumBarunGothic';
+  src: url(https://hangeul.pstatic.net/hangeul_static/webfont/NanumBarunGothic/NanumBarunGothicWeb.eot);
+  src: url(https://hangeul.pstatic.net/hangeul_static/webfont/NanumBarunGothic/NanumBarunGothicWeb.eot?#iefix) format("embedded-opentype"), url(https://hangeul.pstatic.net/hangeul_static/webfont/NanumBarunGothic/NanumBarunGothicWeb.woff) format("woff"), url(https://hangeul.pstatic.net/hangeul_static/webfont/NanumBarunGothic/NanumBarunGothicWeb.ttf) format("truetype");
+}
+
+@font-face {
+  font-family: 'NanumBareunGothicLight';
+  src: url(https://hangeul.pstatic.net/hangeul_static/webfont/NanumBarunGothicL/NanumBarunGothicWebLight.eot);
+  src: url(https://hangeul.pstatic.net/hangeul_static/webfont/NanumBarunGothicL/NanumBarunGothicWebLight.eot?#iefix) format("embedded-opentype"), url(https://hangeul.pstatic.net/hangeul_static/webfont/NanumBarunGothicL/NanumBarunGothicWebLight.woff) format("woff"), url(https://hangeul.pstatic.net/hangeul_static/webfont/NanumBarunGothicL/NanumBarunGothicWebLight.ttf) format("truetype");
+}
+
+@font-face {
+  font-family: 'NanumBarunGothicBold';
+  src: url(https://hangeul.pstatic.net/hangeul_static/webfont/NanumBarunGothic/NanumBarunGothicWebBold.eot);
+  src: url(https://hangeul.pstatic.net/hangeul_static/webfont/NanumBarunGothic/NanumBarunGothicWebBold.eot?#iefix) format("embedded-opentype"), url(https://hangeul.pstatic.net/hangeul_static/webfont/NanumBarunGothic/NanumBarunGothicWebBold.woff) format("woff"), url(https://hangeul.pstatic.net/hangeul_static/webfont/NanumBarunGothic/NanumBarunGothicWebBold.ttf) format("truetype");
+}
+
+@font-face {
+  font-family: 'NanumBareunGothicUltraLight';
+  src: url(https://hangeul.pstatic.net/hangeul_static/webfont/NanumBarunGothicL/NanumBarunGothicWebUltraLight.eot);
+  src: url(https://hangeul.pstatic.net/hangeul_static/webfont/NanumBarunGothicL/NanumBarunGothicWebUltraLight.eot?#iefix) format("embedded-opentype"), url(https://hangeul.pstatic.net/hangeul_static/webfont/NanumBarunGothicL/NanumBarunGothicWebUltraLight.woff) format("woff"), url(https://hangeul.pstatic.net/hangeul_static/webfont/NanumBarunGothicL/NanumBarunGothicWebUltraLight.ttf) format("truetype");
+}
+
+
+* {
+  box-sizing: border-box;
+}
+
+/* @supports (font-variation-settings: normal) {
+  body {
+    font-family: 'NanumSquareRound', sans-serif;
+  }
+} */
+
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+button,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+font,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+hgroup,
+menu,
+nav,
+input,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  outline: 0;
+  vertical-align: baseline;
+  background: transparent;
+  font-family: 'NanumBarunGothic', 'NanumSquareRound', 'Apple SD Gothic Neo', -apple-system, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+  font-weight: 100;
+  letter-spacing: 0px;
+}
+
+article,
+main,
+aside,
+details,
+div,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section,
+h1,
+h2 {
+  display: block;
+}

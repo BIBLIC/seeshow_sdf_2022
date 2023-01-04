@@ -1,0 +1,2231 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta name="viewport"
+        content="width=device-width,height=device-height,initial-scale=1.0,minimum-scale=1.0,maximum-scale=1.0">
+    <title>SDF</title>
+    <link href="../common/styles/reset.css" rel="stylesheet" />
+    <link href="./css/main.css" rel="stylesheet" />
+    <link href="../common/styles/layout.css" rel="stylesheet" />
+    <link href="../common/styles/layout_dc.css" rel="stylesheet" />
+    <link href="../common/styles/main_dc.css" rel="stylesheet" />
+    <!-- <link href="../common/styles/animate.css" rel="stylesheet" /> -->
+    <!-- CSS only -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" crossorigin="anonymous">
+    <!-- JavaScript Bundle with Popper -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-OERcA2EqjJCMA+/3y+gxIOqMEjwtxJY7qPCqsdltbNJuaOe923+mo//f6V8Qbsw3"
+        crossorigin="anonymous"></script>
+    <script src="https://code.jquery.com/jquery-3.6.1.min.js"></script>
+    <script src="https://unpkg.com/@popperjs/core@2"></script>
+    <script src="https://cdn.jsdelivr.net/npm/canvas-confetti@1.5.1/dist/confetti.browser.min.js"></script>
+</head>
+
+
+<body>
+    <div class="bg_phone">
+        <!--form-theme-background-->
+        <div id="wrap">
+            <div class="view">
+                <div class="contain">
+                    <main class="main" role="main">
+                        <!-- Modal : alert -->
+                        <div class="modal fade" id="staticBackdrop">
+                            <div class="modal-dialog modal-sm">
+                                <div class="modal-content justify-content-center align-items-center">
+                                    <div class="modal-header border-0 w-100">
+                                        <!-- <h5 class="modal-title">
+                                            체크 포인트
+                                        </h5> -->
+                                        <button class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                                    </div>
+                                    <div class="modal-body fs-4 text-center ps-4 pe-4 pt-4 pb-4">
+                                        모달 내용
+                                    </div>
+                                    <div class="modal-footer border-0">
+                                        <button class="btn btn-secondary btn-lg" data-bs-dismiss="modal">확인</button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- Modal : text adj -->
+                        <div class="modal fade" id="textModal" data-backdrop="false">
+                            <div class="modal-dialog modal-sm">
+                                <div class="modal-content">
+                                    <div class="modal-header border-0">
+                                        <h5 class="modal-title">
+                                            텍스트 사이즈 조정
+                                        </h5>
+                                        <button class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                                    </div>
+                                    <div class="modal-body">
+                                        모달 내용물
+                                    </div>
+                                    <div class="modal-footer border-0 ">
+                                        <button class="btn btn-secondary btn-lg" data-bs-dismiss="modal">확인</button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <!------------------------------ page 0 (시작 화면) ------------------------------>
+                        <div class="page" id="p0">
+                            <div class="page_wrap">
+                                <img src="./assets/image/0.png" class="pt-5" width="100%">
+                                <div class="w-100 flex-center-center">
+                                    <h3 class="fontSz">💎💎💎</h3>
+                                </div>
+                            </div>
+                        </div>
+                        <!------------------------------ page 1 ------------------------------>
+                        <div class="page" id="p1">
+                            <h1 class="pg_title" style="color: #fff;">Page1</h1>
+                            <div class="page_wrap">
+                                <div id="total_wrap">
+                                    <div
+                                        class="hd_newslist top w-100 d-flex justify-content-between align-items-center px-4 py-3">
+                                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16"
+                                            fill="currentColor" class="bi bi-chevron-left" viewBox="0 0 16 16">
+                                            <path fill-rule="evenodd"
+                                                d="M11.354 1.646a.5.5 0 0 1 0 .708L5.707 8l5.647 5.646a.5.5 0 0 1-.708.708l-6-6a.5.5 0 0 1 0-.708l6-6a.5.5 0 0 1 .708 0z" />
+                                        </svg>
+                                        <div class="flex-fill h-100 d-flex justify-content-center align-items-center">
+                                            <div class="hd_center">
+                                                <h1 class="title_h1">서울디지뉴스</h1>
+                                            </div>
+                                        </div>
+                                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16"
+                                            fill="currentColor" class="bi bi-three-dots" viewBox="0 0 16 16">
+                                            <path
+                                                d="M3 9.5a1.5 1.5 0 1 1 0-3 1.5 1.5 0 0 1 0 3zm5 0a1.5 1.5 0 1 1 0-3 1.5 1.5 0 0 1 0 3zm5 0a1.5 1.5 0 1 1 0-3 1.5 1.5 0 0 1 0 3z" />
+                                        </svg>
+                                    </div>
+                                    <div id="main" class="news news_main news1">
+                                        <div class="news_item item1 news-scene">
+
+                                            <div class="info_wrap">
+                                                <div class="news-info">
+                                                    <div class="news-cont">
+                                                        <div class="info">
+                                                            <div class="category fontSz">생활</div>
+                                                        </div>
+                                                        <div class="cursor_pos_1">
+                                                            <div class="title">
+                                                                <h2 class="fw-bold pg_1_answer addShadow-highlighter-yellow">
+                                                                    암을 유발하는 전자레인지를 조심하세요
+                                                                </h2>
+                                                                <!-- 커서 가이드 -->
+                                                                <div class="cursor_wrap cursor_wrap_1 pg_1_answer">
+                                                                    <span class="cursor pg_1_answer"
+                                                                        x-placement="bottom">
+                                                                        <button class="digital-e__beacon pg_1_answer">
+                                                                            <span
+                                                                                class="cursor_outer pg_1_answer"></span>
+                                                                            <span
+                                                                                class="cursor_inner pg_1_answer"><span>
+                                                                        </button>
+                                                                    </span>
+                                                                </div>
+                                                                <!-- 커서 가이드 -->
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="writer-info">
+                                                    <div class="info date_info">
+                                                        <div class="date fontSz">입력 20YY.MM.DD</div>
+                                                        <div class="views fontSz">13:57</div>
+
+                                                    </div>
+
+                                                    <div class="writer-profile ">
+                                                        <div class="virtual">
+                                                            <!--프로필 사진 추가-->
+                                                            <img src="./assets/image/1.png" class="icon_img profile">
+                                                        </div>
+                                                        <div class="name news-writer fontSz">김○○ 기자</div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="news-main ">
+                                                <div class="news-cont fontSz">
+
+
+                                                    <div class="" style="font-size: 1.4em !important">
+                                                        간편하게 조리하거나 식은 음식을 데울 때 자주 사용하는 전자레인지. 건강에는 괜찮은 걸까요?
+                                                        <br><br>
+                                                    </div>
+                                                    <div style="font-size: 1.4em !important" class="">
+                                                        연구 결과에 따르면 전자레인지로 조리할 때 나오는 전자파가 암을 유발하고 
+                                                        면역시스템을 약화시켜 호르몬 분비에도 영향을 준다고 합니다.
+                                                    </div>
+                                                    <div style="font-size: 1.4em !important">
+                                                        <br>
+                                                    </div>
+                                                    <img src="./assets/image/2.png" alt="" class="news_img">
+                                                    <div style="font-size: 1.4em !important">
+                                                        <br>
+                                                    </div>
+                                                    <div style="font-size: 1.4em !important">
+                                                        과학자 윌리엄은 음식을 전자레인지에 넣고 가열하면 발암물질이 만들어지고, 
+                                                        성분들이 비정상적으로 변하고 유용한 영양분들이 파괴되며 음식으로서 생명력을 잃게 된다고 말했습니다. 
+                                                        이런 음식을 자주 먹게 되면 인체 세포가 파괴되어 병약한 체질로 변하게 된다고 경고했습니다.
+                                                    </div>
+                                                    <div style="font-size: 1.4em !important">
+                                                        <br>
+                                                    </div>
+                                                    <div style="font-size: 1.4em !important">
+                                                        한스 박사는 “전자레인지로 가열한 음식을 먹으면 혈액의 헤모글로빈이 감소하고 
+                                                        나쁜 콜레스테롤이 증가한다”고 하였습니다.
+                                                    </div>
+                                                    <div style="font-size: 1.4em !important">
+                                                        <br>
+                                                    </div>
+                                                    <div style="font-size: 1.4em !important">
+                                                        전자레인지를 사용하기 전, 전자파에 대해 꼭 체크하고 다른 주방 기구를 선택하는 것이 좋겠습니다.<br><br>
+                                                    </div>
+
+                                                    <div class="writer-info_wrap">
+                                                        <div class="info">
+                                                            <div class="name">
+                                                                <img src="./assets/image/1.png"
+                                                                    class="icon_img video-comment profile">
+                                                                <div style="flex: 1;" class="fontSz">&nbsp; 서울디지뉴스 김○○
+                                                                    기자
+                                                                </div>
+                                                                <!-- <img src="img/icon/camera.svg" class="icon_img ccc"><br> -->
+                                                            </div>
+                                                            <div class="another-news more_news fontSz">
+                                                                다른 기사 보기
+                                                                <svg xmlns="http://www.w3.org/2000/svg" width="16"
+                                                                    height="16" fill="currentColor"
+                                                                    class="icon_img bi bi-chevron-right"
+                                                                    viewBox="0 0 16 16">
+                                                                    <path fill-rule="evenodd"
+                                                                        d="M4.646 1.646a.5.5 0 0 1 .708 0l6 6a.5.5 0 0 1 0 .708l-6 6a.5.5 0 0 1-.708-.708L10.293 8 4.646 2.354a.5.5 0 0 1 0-.708z" />
+                                                                </svg>
+                                                            </div>
+                                                        </div>
+                                                        <div class="email fontSz">KimOO@gazzanew2.com<br></div>
+                                                    </div>
+                                                    <div class="fontSz">
+                                                        <br>저작권자 ⓒ서울디지뉴스 무단 전재 및 재배포 금지
+                                                    </div>
+                                                </div>
+                                            </div>
+
+
+                                            <div class="reactions  ">
+
+                                                <div class="react_wrap fontSz">
+                                                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16"
+                                                        fill="currentColor" class="icon_img emoji bi bi-emoji-angry"
+                                                        viewBox="0 0 16 16">
+                                                        <path
+                                                            d="M8 15A7 7 0 1 1 8 1a7 7 0 0 1 0 14zm0 1A8 8 0 1 0 8 0a8 8 0 0 0 0 16z" />
+                                                        <path
+                                                            d="M4.285 12.433a.5.5 0 0 0 .683-.183A3.498 3.498 0 0 1 8 10.5c1.295 0 2.426.703 3.032 1.75a.5.5 0 0 0 .866-.5A4.498 4.498 0 0 0 8 9.5a4.5 4.5 0 0 0-3.898 2.25.5.5 0 0 0 .183.683zm6.991-8.38a.5.5 0 1 1 .448.894l-1.009.504c.176.27.285.64.285 1.049 0 .828-.448 1.5-1 1.5s-1-.672-1-1.5c0-.247.04-.48.11-.686a.502.502 0 0 1 .166-.761l2-1zm-6.552 0a.5.5 0 0 0-.448.894l1.009.504A1.94 1.94 0 0 0 5 6.5C5 7.328 5.448 8 6 8s1-.672 1-1.5c0-.247-.04-.48-.11-.686a.502.502 0 0 0-.166-.761l-2-1z" />
+                                                    </svg>
+                                                    화나요
+                                                    <div>4</div>
+                                                </div>
+                                                <div class="react_wrap fontSz">
+                                                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16"
+                                                        fill="currentColor" class="icon_img emoji bi bi-emoji-laughing"
+                                                        viewBox="0 0 16 16">
+                                                        <path
+                                                            d="M8 15A7 7 0 1 1 8 1a7 7 0 0 1 0 14zm0 1A8 8 0 1 0 8 0a8 8 0 0 0 0 16z" />
+                                                        <path
+                                                            d="M12.331 9.5a1 1 0 0 1 0 1A4.998 4.998 0 0 1 8 13a4.998 4.998 0 0 1-4.33-2.5A1 1 0 0 1 4.535 9h6.93a1 1 0 0 1 .866.5zM7 6.5c0 .828-.448 0-1 0s-1 .828-1 0S5.448 5 6 5s1 .672 1 1.5zm4 0c0 .828-.448 0-1 0s-1 .828-1 0S9.448 5 10 5s1 .672 1 1.5z" />
+                                                    </svg>
+                                                    웃겨요
+                                                    <div>10</div>
+                                                </div>
+                                                <div class="react_wrap fontSz">
+                                                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16"
+                                                        fill="currentColor" class="icon_img emoji bi bi-emoji-neutral"
+                                                        viewBox="0 0 16 16">
+                                                        <path
+                                                            d="M8 15A7 7 0 1 1 8 1a7 7 0 0 1 0 14zm0 1A8 8 0 1 0 8 0a8 8 0 0 0 0 16z" />
+                                                        <path
+                                                            d="M4 10.5a.5.5 0 0 0 .5.5h7a.5.5 0 0 0 0-1h-7a.5.5 0 0 0-.5.5zm3-4C7 5.672 6.552 5 6 5s-1 .672-1 1.5S5.448 8 6 8s1-.672 1-1.5zm4 0c0-.828-.448-1.5-1-1.5s-1 .672-1 1.5S9.448 8 10 8s1-.672 1-1.5z" />
+                                                    </svg>
+                                                    별로예요
+                                                    <div>16</div>
+                                                </div>
+                                                <div class="react_wrap fontSz">
+                                                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16"
+                                                        fill="currentColor" class="icon_img emoji bi bi-emoji-wink"
+                                                        viewBox="0 0 16 16">
+                                                        <path
+                                                            d="M8 15A7 7 0 1 1 8 1a7 7 0 0 1 0 14zm0 1A8 8 0 1 0 8 0a8 8 0 0 0 0 16z" />
+                                                        <path
+                                                            d="M4.285 9.567a.5.5 0 0 1 .683.183A3.498 3.498 0 0 0 8 11.5a3.498 3.498 0 0 0 3.032-1.75.5.5 0 1 1 .866.5A4.498 4.498 0 0 1 8 12.5a4.498 4.498 0 0 1-3.898-2.25.5.5 0 0 1 .183-.683zM7 6.5C7 7.328 6.552 8 6 8s-1-.672-1-1.5S5.448 5 6 5s1 .672 1 1.5zm1.757-.437a.5.5 0 0 1 .68.194.934.934 0 0 0 .813.493c.339 0 .645-.19.813-.493a.5.5 0 1 1 .874.486A1.934 1.934 0 0 1 10.25 7.75c-.73 0-1.356-.412-1.687-1.007a.5.5 0 0 1 .194-.68z" />
+                                                    </svg>
+                                                    공감돼요
+                                                    <div>45</div>
+                                                </div>
+                                                <div class="react_wrap fontSz">
+                                                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16"
+                                                        fill="currentColor"
+                                                        class="icon_img emoji bi bi-emoji-heart-eyes"
+                                                        viewBox="0 0 16 16">
+                                                        <path
+                                                            d="M8 15A7 7 0 1 1 8 1a7 7 0 0 1 0 14zm0 1A8 8 0 1 0 8 0a8 8 0 0 0 0 16z" />
+                                                        <path
+                                                            d="M11.315 10.014a.5.5 0 0 1 .548.736A4.498 4.498 0 0 1 7.965 13a4.498 4.498 0 0 1-3.898-2.25.5.5 0 0 1 .548-.736h.005l.017.005.067.015.252.055c.215.046.515.108.857.169.693.124 1.522.242 2.152.242.63 0 1.46-.118 2.152-.242a26.58 26.58 0 0 0 1.109-.224l.067-.015.017-.004.005-.002zM4.756 4.566c.763-1.424 4.02-.12.952 3.434-4.496-1.596-2.35-4.298-.952-3.434zm6.488 0c1.398-.864 3.544 1.838-.952 3.434-3.067-3.554.19-4.858.952-3.434z" />
+                                                    </svg>
+                                                    좋아요
+                                                    <div>18</div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                    <div class="cafebar">
+                                        <div class="reactions">
+                                            <div class="like like_topside">
+                                                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16"
+                                                    fill="currentColor" class="icon_img bar bi bi-chat-right-text"
+                                                    viewBox="0 0 16 16">
+                                                    <path
+                                                        d="M2 1a1 1 0 0 0-1 1v8a1 1 0 0 0 1 1h9.586a2 2 0 0 1 1.414.586l2 2V2a1 1 0 0 0-1-1H2zm12-1a2 2 0 0 1 2 2v12.793a.5.5 0 0 1-.854.353l-2.853-2.853a1 1 0 0 0-.707-.293H2a2 2 0 0 1-2-2V2a2 2 0 0 1 2-2h12z" />
+                                                    <path
+                                                        d="M3 3.5a.5.5 0 0 1 .5-.5h9a.5.5 0 0 1 0 1h-9a.5.5 0 0 1-.5-.5zM3 6a.5.5 0 0 1 .5-.5h9a.5.5 0 0 1 0 1h-9A.5.5 0 0 1 3 6zm0 2.5a.5.5 0 0 1 .5-.5h5a.5.5 0 0 1 0 1h-5a.5.5 0 0 1-.5-.5z" />
+                                                </svg>
+                                                &nbsp댓글
+                                            </div>
+                                            <div class="comment">
+                                                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16"
+                                                    fill="currentColor" class="icon_img bar bi bi-share-fill"
+                                                    viewBox="0 0 16 16">
+                                                    <path
+                                                        d="M11 2.5a2.5 2.5 0 1 1 .603 1.628l-6.718 3.12a2.499 2.499 0 0 1 0 1.504l6.718 3.12a2.5 2.5 0 1 1-.488.876l-6.718-3.12a2.5 2.5 0 1 1 0-3.256l6.718-3.12A2.5 2.5 0 0 1 11 2.5z" />
+                                                </svg>
+                                                &nbsp공유
+
+                                            </div>
+                                        </div>
+                                    </div>
+
+
+                                </div>
+
+
+                            </div>
+                        </div>
+
+                        <!------------------------------ page 2 ------------------------------>
+                        <div class="page" id="p2">
+                            <h1 class="pg_title" style="color: #fff;">Page2</h1>
+                            <div class="page_wrap">
+                                <div id="total_wrap">
+                                    <div
+                                        class="hd_newslist top w-100 d-flex justify-content-between align-items-center px-4 py-3">
+                                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16"
+                                            fill="currentColor" class="bi bi-chevron-left" viewBox="0 0 16 16">
+                                            <path fill-rule="evenodd"
+                                                d="M11.354 1.646a.5.5 0 0 1 0 .708L5.707 8l5.647 5.646a.5.5 0 0 1-.708.708l-6-6a.5.5 0 0 1 0-.708l6-6a.5.5 0 0 1 .708 0z" />
+                                        </svg>
+                                        <div class="flex-fill h-100 d-flex justify-content-center align-items-center">
+                                            <div class="hd_center">
+                                                <h1 class="title_h1">서울디지뉴스</h1>
+                                            </div>
+                                        </div>
+                                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16"
+                                            fill="currentColor" class="bi bi-three-dots" viewBox="0 0 16 16">
+                                            <path
+                                                d="M3 9.5a1.5 1.5 0 1 1 0-3 1.5 1.5 0 0 1 0 3zm5 0a1.5 1.5 0 1 1 0-3 1.5 1.5 0 0 1 0 3zm5 0a1.5 1.5 0 1 1 0-3 1.5 1.5 0 0 1 0 3z" />
+                                        </svg>
+                                    </div>
+                                    <div id="main" class="news news_main news1">
+                                        <div class="news_item item1 news-scene">
+
+                                            <div class="info_wrap">
+                                                <div class="news-info">
+                                                    <div class="news-cont">
+                                                        <div class="info">
+                                                            <div class="category fontSz">생활</div>
+                                                        </div>
+                                                        <div class="">
+                                                            <h2 class="title" style="font-size: 2.0em !important">암을 유발하는 전자레인지를
+                                                                조심하세요</h2>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="writer-info">
+                                                    <div class="info date_info">
+                                                        <div class="cursor_pos_2">
+                                                            <div class="date pg_2_answer addShadow-highlighter-yellow fontSz">
+                                                                입력 20YY.MM.DD
+                                                            </div>
+                                                            <!-- 커서 가이드 -->
+                                                            <div class="cursor_wrap cursor_wrap_2 pg_2_answer">
+                                                                <span class="cursor pg_2_answer"
+                                                                    x-placement="bottom">
+                                                                    <button class="digital-e__beacon pg_2_answer">
+                                                                        <span
+                                                                            class="cursor_outer pg_2_answer"></span>
+                                                                        <span
+                                                                            class="cursor_inner pg_2_answer"><span>
+                                                                    </button>
+                                                                </span>
+                                                            </div>
+                                                            <!-- 커서 가이드 -->
+                                                        </div>
+                                                        <div class="views fontSz">13:57</div>
+                                                    </div>
+
+                                                    <div class="writer-profile ">
+                                                        <div class="virtual">
+                                                            <!--프로필 사진 추가-->
+                                                            <img src="./assets/image/1.png" class="icon_img profile">
+                                                        </div>
+                                                        <div class="name news-writer fontSz">김○○ 기자</div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="news-main ">
+                                                <div class="news-cont fontSz">
+
+
+                                                    <div class="" style="font-size: 1.4em !important">
+                                                        간편하게 조리하거나 식은 음식을 데울 때 자주 사용하는 전자레인지. 건강에는 괜찮은 걸까요?
+                                                        <br><br>
+                                                    </div>
+                                                    <div style="font-size: 1.4em !important" class="">
+                                                        연구 결과에 따르면 전자레인지로 조리할 때 나오는 전자파가 암을 유발하고 
+                                                        면역시스템을 약화시켜 호르몬 분비에도 영향을 준다고 합니다.
+                                                    </div>
+                                                    <div style="font-size: 1.4em !important">
+                                                        <br>
+                                                    </div>
+                                                    <img src="./assets/image/2.png" alt="" class="news_img">
+                                                    <div style="font-size: 1.4em !important">
+                                                        <br>
+                                                    </div>
+                                                    <div style="font-size: 1.4em !important">
+                                                        과학자 윌리엄은 음식을 전자레인지에 넣고 가열하면 발암물질이 만들어지고, 
+                                                        성분들이 비정상적으로 변하고 유용한 영양분들이 파괴되며 음식으로서 생명력을 잃게 된다고 말했습니다. 
+                                                        이런 음식을 자주 먹게 되면 인체 세포가 파괴되어 병약한 체질로 변하게 된다고 경고했습니다.
+                                                    </div>
+                                                    <div style="font-size: 1.4em !important">
+                                                        <br>
+                                                    </div>
+                                                    <div style="font-size: 1.4em !important">
+                                                        한스 박사는 “전자레인지로 가열한 음식을 먹으면 혈액의 헤모글로빈이 감소하고 
+                                                        나쁜 콜레스테롤이 증가한다”고 하였습니다.
+                                                    </div>
+                                                    <div style="font-size: 1.4em !important">
+                                                        <br>
+                                                    </div>
+                                                    <div style="font-size: 1.4em !important">
+                                                        전자레인지를 사용하기 전, 전자파에 대해 꼭 체크하고 다른 주방 기구를 선택하는 것이 좋겠습니다.<br><br>
+                                                    </div>
+
+                                                    <div class="writer-info_wrap">
+                                                        <div class="info">
+                                                            <div class="name">
+                                                                <img src="./assets/image/1.png"
+                                                                    class="icon_img video-comment profile">
+                                                                <div style="flex: 1;" class="fontSz">&nbsp; 서울디지뉴스 김○○
+                                                                    기자
+                                                                </div>
+                                                                <!-- <img src="img/icon/camera.svg" class="icon_img ccc"><br> -->
+                                                            </div>
+                                                            <div class="another-news more_news fontSz">
+                                                                다른 기사 보기
+                                                                <svg xmlns="http://www.w3.org/2000/svg" width="16"
+                                                                    height="16" fill="currentColor"
+                                                                    class="icon_img bi bi-chevron-right"
+                                                                    viewBox="0 0 16 16">
+                                                                    <path fill-rule="evenodd"
+                                                                        d="M4.646 1.646a.5.5 0 0 1 .708 0l6 6a.5.5 0 0 1 0 .708l-6 6a.5.5 0 0 1-.708-.708L10.293 8 4.646 2.354a.5.5 0 0 1 0-.708z" />
+                                                                </svg>
+                                                            </div>
+                                                        </div>
+                                                        <div class="email fontSz">KimOO@gazzanew2.com<br></div>
+                                                    </div>
+                                                    <div class="fontSz">
+                                                        <br>저작권자 ⓒ서울디지뉴스 무단 전재 및 재배포 금지
+                                                    </div>
+                                                </div>
+                                            </div>
+
+
+                                            <div class="reactions  ">
+
+                                                <div class="react_wrap fontSz">
+                                                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16"
+                                                        fill="currentColor" class="icon_img emoji bi bi-emoji-angry"
+                                                        viewBox="0 0 16 16">
+                                                        <path
+                                                            d="M8 15A7 7 0 1 1 8 1a7 7 0 0 1 0 14zm0 1A8 8 0 1 0 8 0a8 8 0 0 0 0 16z" />
+                                                        <path
+                                                            d="M4.285 12.433a.5.5 0 0 0 .683-.183A3.498 3.498 0 0 1 8 10.5c1.295 0 2.426.703 3.032 1.75a.5.5 0 0 0 .866-.5A4.498 4.498 0 0 0 8 9.5a4.5 4.5 0 0 0-3.898 2.25.5.5 0 0 0 .183.683zm6.991-8.38a.5.5 0 1 1 .448.894l-1.009.504c.176.27.285.64.285 1.049 0 .828-.448 1.5-1 1.5s-1-.672-1-1.5c0-.247.04-.48.11-.686a.502.502 0 0 1 .166-.761l2-1zm-6.552 0a.5.5 0 0 0-.448.894l1.009.504A1.94 1.94 0 0 0 5 6.5C5 7.328 5.448 8 6 8s1-.672 1-1.5c0-.247-.04-.48-.11-.686a.502.502 0 0 0-.166-.761l-2-1z" />
+                                                    </svg>
+                                                    화나요
+                                                    <div>4</div>
+                                                </div>
+                                                <div class="react_wrap fontSz">
+                                                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16"
+                                                        fill="currentColor" class="icon_img emoji bi bi-emoji-laughing"
+                                                        viewBox="0 0 16 16">
+                                                        <path
+                                                            d="M8 15A7 7 0 1 1 8 1a7 7 0 0 1 0 14zm0 1A8 8 0 1 0 8 0a8 8 0 0 0 0 16z" />
+                                                        <path
+                                                            d="M12.331 9.5a1 1 0 0 1 0 1A4.998 4.998 0 0 1 8 13a4.998 4.998 0 0 1-4.33-2.5A1 1 0 0 1 4.535 9h6.93a1 1 0 0 1 .866.5zM7 6.5c0 .828-.448 0-1 0s-1 .828-1 0S5.448 5 6 5s1 .672 1 1.5zm4 0c0 .828-.448 0-1 0s-1 .828-1 0S9.448 5 10 5s1 .672 1 1.5z" />
+                                                    </svg>
+                                                    웃겨요
+                                                    <div>10</div>
+                                                </div>
+                                                <div class="react_wrap fontSz">
+                                                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16"
+                                                        fill="currentColor" class="icon_img emoji bi bi-emoji-neutral"
+                                                        viewBox="0 0 16 16">
+                                                        <path
+                                                            d="M8 15A7 7 0 1 1 8 1a7 7 0 0 1 0 14zm0 1A8 8 0 1 0 8 0a8 8 0 0 0 0 16z" />
+                                                        <path
+                                                            d="M4 10.5a.5.5 0 0 0 .5.5h7a.5.5 0 0 0 0-1h-7a.5.5 0 0 0-.5.5zm3-4C7 5.672 6.552 5 6 5s-1 .672-1 1.5S5.448 8 6 8s1-.672 1-1.5zm4 0c0-.828-.448-1.5-1-1.5s-1 .672-1 1.5S9.448 8 10 8s1-.672 1-1.5z" />
+                                                    </svg>
+                                                    별로예요
+                                                    <div>16</div>
+                                                </div>
+                                                <div class="react_wrap fontSz">
+                                                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16"
+                                                        fill="currentColor" class="icon_img emoji bi bi-emoji-wink"
+                                                        viewBox="0 0 16 16">
+                                                        <path
+                                                            d="M8 15A7 7 0 1 1 8 1a7 7 0 0 1 0 14zm0 1A8 8 0 1 0 8 0a8 8 0 0 0 0 16z" />
+                                                        <path
+                                                            d="M4.285 9.567a.5.5 0 0 1 .683.183A3.498 3.498 0 0 0 8 11.5a3.498 3.498 0 0 0 3.032-1.75.5.5 0 1 1 .866.5A4.498 4.498 0 0 1 8 12.5a4.498 4.498 0 0 1-3.898-2.25.5.5 0 0 1 .183-.683zM7 6.5C7 7.328 6.552 8 6 8s-1-.672-1-1.5S5.448 5 6 5s1 .672 1 1.5zm1.757-.437a.5.5 0 0 1 .68.194.934.934 0 0 0 .813.493c.339 0 .645-.19.813-.493a.5.5 0 1 1 .874.486A1.934 1.934 0 0 1 10.25 7.75c-.73 0-1.356-.412-1.687-1.007a.5.5 0 0 1 .194-.68z" />
+                                                    </svg>
+                                                    공감돼요
+                                                    <div>45</div>
+                                                </div>
+                                                <div class="react_wrap fontSz">
+                                                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16"
+                                                        fill="currentColor"
+                                                        class="icon_img emoji bi bi-emoji-heart-eyes"
+                                                        viewBox="0 0 16 16">
+                                                        <path
+                                                            d="M8 15A7 7 0 1 1 8 1a7 7 0 0 1 0 14zm0 1A8 8 0 1 0 8 0a8 8 0 0 0 0 16z" />
+                                                        <path
+                                                            d="M11.315 10.014a.5.5 0 0 1 .548.736A4.498 4.498 0 0 1 7.965 13a4.498 4.498 0 0 1-3.898-2.25.5.5 0 0 1 .548-.736h.005l.017.005.067.015.252.055c.215.046.515.108.857.169.693.124 1.522.242 2.152.242.63 0 1.46-.118 2.152-.242a26.58 26.58 0 0 0 1.109-.224l.067-.015.017-.004.005-.002zM4.756 4.566c.763-1.424 4.02-.12.952 3.434-4.496-1.596-2.35-4.298-.952-3.434zm6.488 0c1.398-.864 3.544 1.838-.952 3.434-3.067-3.554.19-4.858.952-3.434z" />
+                                                    </svg>
+                                                    좋아요
+                                                    <div>18</div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                    <div class="cafebar">
+                                        <div class="reactions">
+                                            <div class="like like_topside">
+                                                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16"
+                                                    fill="currentColor" class="icon_img bar bi bi-chat-right-text"
+                                                    viewBox="0 0 16 16">
+                                                    <path
+                                                        d="M2 1a1 1 0 0 0-1 1v8a1 1 0 0 0 1 1h9.586a2 2 0 0 1 1.414.586l2 2V2a1 1 0 0 0-1-1H2zm12-1a2 2 0 0 1 2 2v12.793a.5.5 0 0 1-.854.353l-2.853-2.853a1 1 0 0 0-.707-.293H2a2 2 0 0 1-2-2V2a2 2 0 0 1 2-2h12z" />
+                                                    <path
+                                                        d="M3 3.5a.5.5 0 0 1 .5-.5h9a.5.5 0 0 1 0 1h-9a.5.5 0 0 1-.5-.5zM3 6a.5.5 0 0 1 .5-.5h9a.5.5 0 0 1 0 1h-9A.5.5 0 0 1 3 6zm0 2.5a.5.5 0 0 1 .5-.5h5a.5.5 0 0 1 0 1h-5a.5.5 0 0 1-.5-.5z" />
+                                                </svg>
+                                                &nbsp댓글
+                                            </div>
+                                            <div class="comment">
+                                                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16"
+                                                    fill="currentColor" class="icon_img bar bi bi-share-fill"
+                                                    viewBox="0 0 16 16">
+                                                    <path
+                                                        d="M11 2.5a2.5 2.5 0 1 1 .603 1.628l-6.718 3.12a2.499 2.499 0 0 1 0 1.504l6.718 3.12a2.5 2.5 0 1 1-.488.876l-6.718-3.12a2.5 2.5 0 1 1 0-3.256l6.718-3.12A2.5 2.5 0 0 1 11 2.5z" />
+                                                </svg>
+                                                &nbsp공유
+
+                                            </div>
+                                        </div>
+                                    </div>
+
+
+                                </div>
+
+
+                            </div>
+                        </div>
+
+                        <!------------------------------ page 3 ------------------------------>
+                        <div class="page" id="p3">
+                            <h1 class="pg_title" style="color: #fff;">Page3</h1>
+                            <div class="page_wrap">
+                                <div id="total_wrap">
+                                    <div
+                                        class="hd_newslist top w-100 d-flex justify-content-between align-items-center px-4 py-3">
+                                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16"
+                                            fill="currentColor" class="bi bi-chevron-left" viewBox="0 0 16 16">
+                                            <path fill-rule="evenodd"
+                                                d="M11.354 1.646a.5.5 0 0 1 0 .708L5.707 8l5.647 5.646a.5.5 0 0 1-.708.708l-6-6a.5.5 0 0 1 0-.708l6-6a.5.5 0 0 1 .708 0z" />
+                                        </svg>
+                                        <div class="flex-fill h-100 d-flex justify-content-center align-items-center">
+                                            <div class="hd_center">
+                                                <h1 class="title_h1">서울디지뉴스</h1>
+                                            </div>
+                                        </div>
+                                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16"
+                                            fill="currentColor" class="bi bi-three-dots" viewBox="0 0 16 16">
+                                            <path
+                                                d="M3 9.5a1.5 1.5 0 1 1 0-3 1.5 1.5 0 0 1 0 3zm5 0a1.5 1.5 0 1 1 0-3 1.5 1.5 0 0 1 0 3zm5 0a1.5 1.5 0 1 1 0-3 1.5 1.5 0 0 1 0 3z" />
+                                        </svg>
+                                    </div>
+                                    <div id="main" class="news news_main news1">
+                                        <div class="news_item item1 news-scene">
+
+                                            <div class="info_wrap">
+                                                <div class="news-info">
+                                                    <div class="news-cont">
+                                                        <div class="info">
+                                                            <div class="category fontSz">생활</div>
+                                                        </div>
+                                                        <div class="">
+                                                            <h2 class="title" style="font-size: 2.0em !important">암을 유발하는 전자레인지를
+                                                                조심하세요</h2>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="writer-info">
+                                                    <div class="info date_info">
+                                                        <div class="date fontSz">입력 20YY.MM.DD</div>
+                                                        <div class="views fontSz">13:57</div>
+
+                                                    </div>
+
+                                                    <div class="writer-profile ">
+                                                        <div class="virtual">
+                                                            <!--프로필 사진 추가-->
+                                                            <img src="./assets/image/1.png" class="icon_img profile">
+                                                        </div>
+                                                        <div class="name news-writer fontSz">김○○ 기자</div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="news-main ">
+                                                <div class="news-cont fontSz">
+
+
+                                                    <div class="" style="font-size: 1.4em !important">
+                                                        간편하게 조리하거나 식은 음식을 데울 때 자주 사용하는 전자레인지. 건강에는 괜찮은 걸까요?
+                                                        <br><br>
+                                                    </div>
+                                                    <div class="cursor_pos_3">
+                                                        <div class="pg_3_answer addShadow-highlighter-yellow" style="font-size: 1.4em !important">
+                                                            연구 결과에 따르면 전자레인지로 조리할 때 나오는 전자파가 암을 유발하고
+                                                            면역시스템을 약화시켜 호르몬 분비에도 영향을 준다고 합니다.
+                                                        </div>
+                                                        <!-- 커서 가이드 -->
+                                                        <div class="cursor_wrap cursor_wrap_3 pg_3_answer">
+                                                            <span class="cursor pg_3_answer" x-placement="bottom">
+                                                                <button class="digital-e__beacon pg_3_answer">
+                                                                    <span class="cursor_outer pg_3_answer"></span>
+                                                                    <span class="cursor_inner pg_3_answer"><span>
+                                                                </button>
+                                                            </span>
+                                                        </div>
+                                                        <!-- 커서 가이드 -->
+                                                    </div>
+                                                    <div style="font-size: 1.4em !important">
+                                                        <br>
+                                                    </div>
+                                                    <img src="./assets/image/2.png" alt="" class="news_img">
+                                                    <div style="font-size: 1.4em !important">
+                                                        <br>
+                                                    </div>
+                                                    <div style="font-size: 1.4em !important">
+                                                        과학자 윌리엄은 음식을 전자레인지에 넣고 가열하면 발암물질이 만들어지고, 
+                                                        성분들이 비정상적으로 변하고 유용한 영양분들이 파괴되며 음식으로서 생명력을 잃게 된다고 말했습니다. 
+                                                        이런 음식을 자주 먹게 되면 인체 세포가 파괴되어 병약한 체질로 변하게 된다고 경고했습니다.
+                                                    </div>
+                                                    <div style="font-size: 1.4em !important">
+                                                        <br>
+                                                    </div>
+                                                    <div style="font-size: 1.4em !important">
+                                                        한스 박사는 “전자레인지로 가열한 음식을 먹으면 혈액의 헤모글로빈이 감소하고 
+                                                        나쁜 콜레스테롤이 증가한다”고 하였습니다.
+                                                    </div>
+                                                    <div style="font-size: 1.4em !important">
+                                                        <br>
+                                                    </div>
+                                                    <div style="font-size: 1.4em !important">
+                                                        전자레인지를 사용하기 전, 전자파에 대해 꼭 체크하고 다른 주방 기구를 선택하는 것이 좋겠습니다.<br><br>
+                                                    </div>
+
+                                                    <div class="writer-info_wrap">
+                                                        <div class="info">
+                                                            <div class="name">
+                                                                <img src="./assets/image/1.png"
+                                                                    class="icon_img video-comment profile">
+                                                                <div style="flex: 1;" class="fontSz">&nbsp; 서울디지뉴스 김○○
+                                                                    기자
+                                                                </div>
+                                                                <!-- <img src="img/icon/camera.svg" class="icon_img ccc"><br> -->
+                                                            </div>
+                                                            <div class="another-news more_news fontSz">
+                                                                다른 기사 보기
+                                                                <svg xmlns="http://www.w3.org/2000/svg" width="16"
+                                                                    height="16" fill="currentColor"
+                                                                    class="icon_img bi bi-chevron-right"
+                                                                    viewBox="0 0 16 16">
+                                                                    <path fill-rule="evenodd"
+                                                                        d="M4.646 1.646a.5.5 0 0 1 .708 0l6 6a.5.5 0 0 1 0 .708l-6 6a.5.5 0 0 1-.708-.708L10.293 8 4.646 2.354a.5.5 0 0 1 0-.708z" />
+                                                                </svg>
+                                                            </div>
+                                                        </div>
+                                                        <div class="email fontSz">KimOO@gazzanew2.com<br></div>
+                                                    </div>
+                                                    <div class="fontSz">
+                                                        <br>저작권자 ⓒ서울디지뉴스 무단 전재 및 재배포 금지
+                                                    </div>
+                                                </div>
+                                            </div>
+
+
+                                            <div class="reactions  ">
+
+                                                <div class="react_wrap fontSz">
+                                                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16"
+                                                        fill="currentColor" class="icon_img emoji bi bi-emoji-angry"
+                                                        viewBox="0 0 16 16">
+                                                        <path
+                                                            d="M8 15A7 7 0 1 1 8 1a7 7 0 0 1 0 14zm0 1A8 8 0 1 0 8 0a8 8 0 0 0 0 16z" />
+                                                        <path
+                                                            d="M4.285 12.433a.5.5 0 0 0 .683-.183A3.498 3.498 0 0 1 8 10.5c1.295 0 2.426.703 3.032 1.75a.5.5 0 0 0 .866-.5A4.498 4.498 0 0 0 8 9.5a4.5 4.5 0 0 0-3.898 2.25.5.5 0 0 0 .183.683zm6.991-8.38a.5.5 0 1 1 .448.894l-1.009.504c.176.27.285.64.285 1.049 0 .828-.448 1.5-1 1.5s-1-.672-1-1.5c0-.247.04-.48.11-.686a.502.502 0 0 1 .166-.761l2-1zm-6.552 0a.5.5 0 0 0-.448.894l1.009.504A1.94 1.94 0 0 0 5 6.5C5 7.328 5.448 8 6 8s1-.672 1-1.5c0-.247-.04-.48-.11-.686a.502.502 0 0 0-.166-.761l-2-1z" />
+                                                    </svg>
+                                                    화나요
+                                                    <div>4</div>
+                                                </div>
+                                                <div class="react_wrap fontSz">
+                                                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16"
+                                                        fill="currentColor" class="icon_img emoji bi bi-emoji-laughing"
+                                                        viewBox="0 0 16 16">
+                                                        <path
+                                                            d="M8 15A7 7 0 1 1 8 1a7 7 0 0 1 0 14zm0 1A8 8 0 1 0 8 0a8 8 0 0 0 0 16z" />
+                                                        <path
+                                                            d="M12.331 9.5a1 1 0 0 1 0 1A4.998 4.998 0 0 1 8 13a4.998 4.998 0 0 1-4.33-2.5A1 1 0 0 1 4.535 9h6.93a1 1 0 0 1 .866.5zM7 6.5c0 .828-.448 0-1 0s-1 .828-1 0S5.448 5 6 5s1 .672 1 1.5zm4 0c0 .828-.448 0-1 0s-1 .828-1 0S9.448 5 10 5s1 .672 1 1.5z" />
+                                                    </svg>
+                                                    웃겨요
+                                                    <div>10</div>
+                                                </div>
+                                                <div class="react_wrap fontSz">
+                                                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16"
+                                                        fill="currentColor" class="icon_img emoji bi bi-emoji-neutral"
+                                                        viewBox="0 0 16 16">
+                                                        <path
+                                                            d="M8 15A7 7 0 1 1 8 1a7 7 0 0 1 0 14zm0 1A8 8 0 1 0 8 0a8 8 0 0 0 0 16z" />
+                                                        <path
+                                                            d="M4 10.5a.5.5 0 0 0 .5.5h7a.5.5 0 0 0 0-1h-7a.5.5 0 0 0-.5.5zm3-4C7 5.672 6.552 5 6 5s-1 .672-1 1.5S5.448 8 6 8s1-.672 1-1.5zm4 0c0-.828-.448-1.5-1-1.5s-1 .672-1 1.5S9.448 8 10 8s1-.672 1-1.5z" />
+                                                    </svg>
+                                                    별로예요
+                                                    <div>16</div>
+                                                </div>
+                                                <div class="react_wrap fontSz">
+                                                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16"
+                                                        fill="currentColor" class="icon_img emoji bi bi-emoji-wink"
+                                                        viewBox="0 0 16 16">
+                                                        <path
+                                                            d="M8 15A7 7 0 1 1 8 1a7 7 0 0 1 0 14zm0 1A8 8 0 1 0 8 0a8 8 0 0 0 0 16z" />
+                                                        <path
+                                                            d="M4.285 9.567a.5.5 0 0 1 .683.183A3.498 3.498 0 0 0 8 11.5a3.498 3.498 0 0 0 3.032-1.75.5.5 0 1 1 .866.5A4.498 4.498 0 0 1 8 12.5a4.498 4.498 0 0 1-3.898-2.25.5.5 0 0 1 .183-.683zM7 6.5C7 7.328 6.552 8 6 8s-1-.672-1-1.5S5.448 5 6 5s1 .672 1 1.5zm1.757-.437a.5.5 0 0 1 .68.194.934.934 0 0 0 .813.493c.339 0 .645-.19.813-.493a.5.5 0 1 1 .874.486A1.934 1.934 0 0 1 10.25 7.75c-.73 0-1.356-.412-1.687-1.007a.5.5 0 0 1 .194-.68z" />
+                                                    </svg>
+                                                    공감돼요
+                                                    <div>45</div>
+                                                </div>
+                                                <div class="react_wrap fontSz">
+                                                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16"
+                                                        fill="currentColor"
+                                                        class="icon_img emoji bi bi-emoji-heart-eyes"
+                                                        viewBox="0 0 16 16">
+                                                        <path
+                                                            d="M8 15A7 7 0 1 1 8 1a7 7 0 0 1 0 14zm0 1A8 8 0 1 0 8 0a8 8 0 0 0 0 16z" />
+                                                        <path
+                                                            d="M11.315 10.014a.5.5 0 0 1 .548.736A4.498 4.498 0 0 1 7.965 13a4.498 4.498 0 0 1-3.898-2.25.5.5 0 0 1 .548-.736h.005l.017.005.067.015.252.055c.215.046.515.108.857.169.693.124 1.522.242 2.152.242.63 0 1.46-.118 2.152-.242a26.58 26.58 0 0 0 1.109-.224l.067-.015.017-.004.005-.002zM4.756 4.566c.763-1.424 4.02-.12.952 3.434-4.496-1.596-2.35-4.298-.952-3.434zm6.488 0c1.398-.864 3.544 1.838-.952 3.434-3.067-3.554.19-4.858.952-3.434z" />
+                                                    </svg>
+                                                    좋아요
+                                                    <div>18</div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                    <div class="cafebar">
+                                        <div class="reactions">
+                                            <div class="like like_topside">
+                                                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16"
+                                                    fill="currentColor" class="icon_img bar bi bi-chat-right-text"
+                                                    viewBox="0 0 16 16">
+                                                    <path
+                                                        d="M2 1a1 1 0 0 0-1 1v8a1 1 0 0 0 1 1h9.586a2 2 0 0 1 1.414.586l2 2V2a1 1 0 0 0-1-1H2zm12-1a2 2 0 0 1 2 2v12.793a.5.5 0 0 1-.854.353l-2.853-2.853a1 1 0 0 0-.707-.293H2a2 2 0 0 1-2-2V2a2 2 0 0 1 2-2h12z" />
+                                                    <path
+                                                        d="M3 3.5a.5.5 0 0 1 .5-.5h9a.5.5 0 0 1 0 1h-9a.5.5 0 0 1-.5-.5zM3 6a.5.5 0 0 1 .5-.5h9a.5.5 0 0 1 0 1h-9A.5.5 0 0 1 3 6zm0 2.5a.5.5 0 0 1 .5-.5h5a.5.5 0 0 1 0 1h-5a.5.5 0 0 1-.5-.5z" />
+                                                </svg>
+                                                &nbsp댓글
+                                            </div>
+                                            <div class="comment">
+                                                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16"
+                                                    fill="currentColor" class="icon_img bar bi bi-share-fill"
+                                                    viewBox="0 0 16 16">
+                                                    <path
+                                                        d="M11 2.5a2.5 2.5 0 1 1 .603 1.628l-6.718 3.12a2.499 2.499 0 0 1 0 1.504l6.718 3.12a2.5 2.5 0 1 1-.488.876l-6.718-3.12a2.5 2.5 0 1 1 0-3.256l6.718-3.12A2.5 2.5 0 0 1 11 2.5z" />
+                                                </svg>
+                                                &nbsp공유
+
+                                            </div>
+                                        </div>
+                                    </div>
+
+
+                                </div>
+
+
+                            </div>
+                        </div>
+
+                        <!------------------------------ page 4 ------------------------------>
+                        <div class="page" id="p4">
+                            <h1 class="pg_title" style="color: #fff;">Page4</h1>
+                            <div class="page_wrap">
+                                <div id="total_wrap">
+                                    <div
+                                        class="hd_newslist top w-100 d-flex justify-content-between align-items-center px-4 py-3">
+                                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16"
+                                            fill="currentColor" class="bi bi-chevron-left" viewBox="0 0 16 16">
+                                            <path fill-rule="evenodd"
+                                                d="M11.354 1.646a.5.5 0 0 1 0 .708L5.707 8l5.647 5.646a.5.5 0 0 1-.708.708l-6-6a.5.5 0 0 1 0-.708l6-6a.5.5 0 0 1 .708 0z" />
+                                        </svg>
+                                        <div class="flex-fill h-100 d-flex justify-content-center align-items-center">
+                                            <div class="hd_center">
+                                                <h1 class="title_h1">서울디지뉴스</h1>
+                                            </div>
+                                        </div>
+                                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16"
+                                            fill="currentColor" class="bi bi-three-dots" viewBox="0 0 16 16">
+                                            <path
+                                                d="M3 9.5a1.5 1.5 0 1 1 0-3 1.5 1.5 0 0 1 0 3zm5 0a1.5 1.5 0 1 1 0-3 1.5 1.5 0 0 1 0 3zm5 0a1.5 1.5 0 1 1 0-3 1.5 1.5 0 0 1 0 3z" />
+                                        </svg>
+                                    </div>
+                                    <div id="main" class="news news_main news1">
+                                        <div class="news_item item1 news-scene">
+
+                                            <div class="info_wrap">
+                                                <div class="news-info">
+                                                    <div class="news-cont">
+                                                        <div class="info">
+                                                            <div class="category fontSz">생활</div>
+                                                        </div>
+                                                        <div class="">
+                                                            <h2 class="title" style="font-size: 2.0em !important">암을 유발하는 전자레인지를
+                                                                조심하세요</h2>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="writer-info">
+                                                    <div class="info date_info">
+                                                        <div class="date fontSz">입력 20YY.MM.DD</div>
+                                                        <div class="views fontSz">13:57</div>
+
+                                                    </div>
+
+                                                    <div class="writer-profile ">
+                                                        <div class="virtual">
+                                                            <!--프로필 사진 추가-->
+                                                            <img src="./assets/image/1.png" class="icon_img profile">
+                                                        </div>
+                                                        <div class="name news-writer fontSz">김○○ 기자</div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="news-main ">
+                                                <div class="news-cont fontSz">
+
+
+                                                    <div class="" style="font-size: 1.4em !important">
+                                                        간편하게 조리하거나 식은 음식을 데울 때 자주 사용하는 전자레인지. 건강에는 괜찮은 걸까요?
+                                                        <br><br>
+                                                    </div>
+                                                    <div style="font-size: 1.4em !important" class="">
+                                                        연구 결과에 따르면 전자레인지로 조리할 때 나오는 전자파가 암을 유발하고 
+                                                        면역시스템을 약화시켜 호르몬 분비에도 영향을 준다고 합니다.
+                                                    </div>
+                                                    <div style="font-size: 1.4em !important">
+                                                        <br>
+                                                    </div>
+                                                    <img src="./assets/image/2.png" alt="" class="news_img">
+                                                    <div style="font-size: 1.4em !important">
+                                                        <br>
+                                                    </div>
+                                                    <div class="cursor_pos_4">
+                                                        <div class="pg_4_answer addShadow-highlighter-yellow" style="font-size: 1.4em !important">
+                                                            과학자 윌리엄은 음식을 전자레인지에 넣고 가열하면 발암물질이 만들어지고, 
+                                                            성분들이 비정상적으로 변하고 유용한 영양분들이 파괴되며 음식으로서 생명력을 잃게 된다고 말했습니다. 
+                                                            이런 음식을 자주 먹게 되면 인체 세포가 파괴되어 병약한 체질로 변하게 된다고 경고했습니다.
+                                                        </div>
+                                                        <!-- 커서 가이드 -->
+                                                        <div class="cursor_wrap cursor_wrap_4 pg_4_answer">
+                                                            <span class="cursor pg_4_answer"
+                                                                x-placement="bottom">
+                                                                <button class="digital-e__beacon pg_4_answer">
+                                                                    <span
+                                                                        class="cursor_outer pg_4_answer"></span>
+                                                                    <span
+                                                                        class="cursor_inner pg_4_answer"><span>
+                                                                </button>
+                                                            </span>
+                                                        </div>
+                                                        <!-- 커서 가이드 -->
+                                                    </div>
+                                                    <div style="font-size: 1.4em !important">
+                                                        <br>
+                                                    </div>
+                                                    <div style="font-size: 1.4em !important">
+                                                        한스 박사는 “전자레인지로 가열한 음식을 먹으면 혈액의 헤모글로빈이 감소하고 
+                                                        나쁜 콜레스테롤이 증가한다”고 하였습니다.
+                                                    </div>
+                                                    <div style="font-size: 1.4em !important">
+                                                        <br>
+                                                    </div>
+                                                    <div style="font-size: 1.4em !important">
+                                                        전자레인지를 사용하기 전, 전자파에 대해 꼭 체크하고 다른 주방 기구를 선택하는 것이 좋겠습니다.<br><br>
+                                                    </div>
+
+                                                    <div class="writer-info_wrap">
+                                                        <div class="info">
+                                                            <div class="name">
+                                                                <img src="./assets/image/1.png"
+                                                                    class="icon_img video-comment profile">
+                                                                <div style="flex: 1;" class="fontSz">&nbsp; 서울디지뉴스 김○○
+                                                                    기자
+                                                                </div>
+                                                                <!-- <img src="img/icon/camera.svg" class="icon_img ccc"><br> -->
+                                                            </div>
+                                                            <div class="another-news more_news fontSz">
+                                                                다른 기사 보기
+                                                                <svg xmlns="http://www.w3.org/2000/svg" width="16"
+                                                                    height="16" fill="currentColor"
+                                                                    class="icon_img bi bi-chevron-right"
+                                                                    viewBox="0 0 16 16">
+                                                                    <path fill-rule="evenodd"
+                                                                        d="M4.646 1.646a.5.5 0 0 1 .708 0l6 6a.5.5 0 0 1 0 .708l-6 6a.5.5 0 0 1-.708-.708L10.293 8 4.646 2.354a.5.5 0 0 1 0-.708z" />
+                                                                </svg>
+                                                            </div>
+                                                        </div>
+                                                        <div class="email fontSz">KimOO@gazzanew2.com<br></div>
+                                                    </div>
+                                                    <div class="fontSz">
+                                                        <br>저작권자 ⓒ서울디지뉴스 무단 전재 및 재배포 금지
+                                                    </div>
+                                                </div>
+                                            </div>
+
+
+                                            <div class="reactions  ">
+
+                                                <div class="react_wrap fontSz">
+                                                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16"
+                                                        fill="currentColor" class="icon_img emoji bi bi-emoji-angry"
+                                                        viewBox="0 0 16 16">
+                                                        <path
+                                                            d="M8 15A7 7 0 1 1 8 1a7 7 0 0 1 0 14zm0 1A8 8 0 1 0 8 0a8 8 0 0 0 0 16z" />
+                                                        <path
+                                                            d="M4.285 12.433a.5.5 0 0 0 .683-.183A3.498 3.498 0 0 1 8 10.5c1.295 0 2.426.703 3.032 1.75a.5.5 0 0 0 .866-.5A4.498 4.498 0 0 0 8 9.5a4.5 4.5 0 0 0-3.898 2.25.5.5 0 0 0 .183.683zm6.991-8.38a.5.5 0 1 1 .448.894l-1.009.504c.176.27.285.64.285 1.049 0 .828-.448 1.5-1 1.5s-1-.672-1-1.5c0-.247.04-.48.11-.686a.502.502 0 0 1 .166-.761l2-1zm-6.552 0a.5.5 0 0 0-.448.894l1.009.504A1.94 1.94 0 0 0 5 6.5C5 7.328 5.448 8 6 8s1-.672 1-1.5c0-.247-.04-.48-.11-.686a.502.502 0 0 0-.166-.761l-2-1z" />
+                                                    </svg>
+                                                    화나요
+                                                    <div>4</div>
+                                                </div>
+                                                <div class="react_wrap fontSz">
+                                                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16"
+                                                        fill="currentColor" class="icon_img emoji bi bi-emoji-laughing"
+                                                        viewBox="0 0 16 16">
+                                                        <path
+                                                            d="M8 15A7 7 0 1 1 8 1a7 7 0 0 1 0 14zm0 1A8 8 0 1 0 8 0a8 8 0 0 0 0 16z" />
+                                                        <path
+                                                            d="M12.331 9.5a1 1 0 0 1 0 1A4.998 4.998 0 0 1 8 13a4.998 4.998 0 0 1-4.33-2.5A1 1 0 0 1 4.535 9h6.93a1 1 0 0 1 .866.5zM7 6.5c0 .828-.448 0-1 0s-1 .828-1 0S5.448 5 6 5s1 .672 1 1.5zm4 0c0 .828-.448 0-1 0s-1 .828-1 0S9.448 5 10 5s1 .672 1 1.5z" />
+                                                    </svg>
+                                                    웃겨요
+                                                    <div>10</div>
+                                                </div>
+                                                <div class="react_wrap fontSz">
+                                                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16"
+                                                        fill="currentColor" class="icon_img emoji bi bi-emoji-neutral"
+                                                        viewBox="0 0 16 16">
+                                                        <path
+                                                            d="M8 15A7 7 0 1 1 8 1a7 7 0 0 1 0 14zm0 1A8 8 0 1 0 8 0a8 8 0 0 0 0 16z" />
+                                                        <path
+                                                            d="M4 10.5a.5.5 0 0 0 .5.5h7a.5.5 0 0 0 0-1h-7a.5.5 0 0 0-.5.5zm3-4C7 5.672 6.552 5 6 5s-1 .672-1 1.5S5.448 8 6 8s1-.672 1-1.5zm4 0c0-.828-.448-1.5-1-1.5s-1 .672-1 1.5S9.448 8 10 8s1-.672 1-1.5z" />
+                                                    </svg>
+                                                    별로예요
+                                                    <div>16</div>
+                                                </div>
+                                                <div class="react_wrap fontSz">
+                                                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16"
+                                                        fill="currentColor" class="icon_img emoji bi bi-emoji-wink"
+                                                        viewBox="0 0 16 16">
+                                                        <path
+                                                            d="M8 15A7 7 0 1 1 8 1a7 7 0 0 1 0 14zm0 1A8 8 0 1 0 8 0a8 8 0 0 0 0 16z" />
+                                                        <path
+                                                            d="M4.285 9.567a.5.5 0 0 1 .683.183A3.498 3.498 0 0 0 8 11.5a3.498 3.498 0 0 0 3.032-1.75.5.5 0 1 1 .866.5A4.498 4.498 0 0 1 8 12.5a4.498 4.498 0 0 1-3.898-2.25.5.5 0 0 1 .183-.683zM7 6.5C7 7.328 6.552 8 6 8s-1-.672-1-1.5S5.448 5 6 5s1 .672 1 1.5zm1.757-.437a.5.5 0 0 1 .68.194.934.934 0 0 0 .813.493c.339 0 .645-.19.813-.493a.5.5 0 1 1 .874.486A1.934 1.934 0 0 1 10.25 7.75c-.73 0-1.356-.412-1.687-1.007a.5.5 0 0 1 .194-.68z" />
+                                                    </svg>
+                                                    공감돼요
+                                                    <div>45</div>
+                                                </div>
+                                                <div class="react_wrap fontSz">
+                                                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16"
+                                                        fill="currentColor"
+                                                        class="icon_img emoji bi bi-emoji-heart-eyes"
+                                                        viewBox="0 0 16 16">
+                                                        <path
+                                                            d="M8 15A7 7 0 1 1 8 1a7 7 0 0 1 0 14zm0 1A8 8 0 1 0 8 0a8 8 0 0 0 0 16z" />
+                                                        <path
+                                                            d="M11.315 10.014a.5.5 0 0 1 .548.736A4.498 4.498 0 0 1 7.965 13a4.498 4.498 0 0 1-3.898-2.25.5.5 0 0 1 .548-.736h.005l.017.005.067.015.252.055c.215.046.515.108.857.169.693.124 1.522.242 2.152.242.63 0 1.46-.118 2.152-.242a26.58 26.58 0 0 0 1.109-.224l.067-.015.017-.004.005-.002zM4.756 4.566c.763-1.424 4.02-.12.952 3.434-4.496-1.596-2.35-4.298-.952-3.434zm6.488 0c1.398-.864 3.544 1.838-.952 3.434-3.067-3.554.19-4.858.952-3.434z" />
+                                                    </svg>
+                                                    좋아요
+                                                    <div>18</div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                    <div class="cafebar">
+                                        <div class="reactions">
+                                            <div class="like like_topside">
+                                                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16"
+                                                    fill="currentColor" class="icon_img bar bi bi-chat-right-text"
+                                                    viewBox="0 0 16 16">
+                                                    <path
+                                                        d="M2 1a1 1 0 0 0-1 1v8a1 1 0 0 0 1 1h9.586a2 2 0 0 1 1.414.586l2 2V2a1 1 0 0 0-1-1H2zm12-1a2 2 0 0 1 2 2v12.793a.5.5 0 0 1-.854.353l-2.853-2.853a1 1 0 0 0-.707-.293H2a2 2 0 0 1-2-2V2a2 2 0 0 1 2-2h12z" />
+                                                    <path
+                                                        d="M3 3.5a.5.5 0 0 1 .5-.5h9a.5.5 0 0 1 0 1h-9a.5.5 0 0 1-.5-.5zM3 6a.5.5 0 0 1 .5-.5h9a.5.5 0 0 1 0 1h-9A.5.5 0 0 1 3 6zm0 2.5a.5.5 0 0 1 .5-.5h5a.5.5 0 0 1 0 1h-5a.5.5 0 0 1-.5-.5z" />
+                                                </svg>
+                                                &nbsp댓글
+                                            </div>
+                                            <div class="comment">
+                                                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16"
+                                                    fill="currentColor" class="icon_img bar bi bi-share-fill"
+                                                    viewBox="0 0 16 16">
+                                                    <path
+                                                        d="M11 2.5a2.5 2.5 0 1 1 .603 1.628l-6.718 3.12a2.499 2.499 0 0 1 0 1.504l6.718 3.12a2.5 2.5 0 1 1-.488.876l-6.718-3.12a2.5 2.5 0 1 1 0-3.256l6.718-3.12A2.5 2.5 0 0 1 11 2.5z" />
+                                                </svg>
+                                                &nbsp공유
+
+                                            </div>
+                                        </div>
+                                    </div>
+
+
+                                </div>
+
+
+                            </div>
+                        </div>
+
+                        <!------------------------------ page 5 ------------------------------>
+                        <div class="page" id="p5">
+                            <h1 class="pg_title" style="color: #fff;">Page5</h1>
+                            <div class="page_wrap">
+                                <div id="total_wrap">
+                                    <div
+                                        class="hd_newslist top w-100 d-flex justify-content-between align-items-center px-4 py-3">
+                                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16"
+                                            fill="currentColor" class="bi bi-chevron-left" viewBox="0 0 16 16">
+                                            <path fill-rule="evenodd"
+                                                d="M11.354 1.646a.5.5 0 0 1 0 .708L5.707 8l5.647 5.646a.5.5 0 0 1-.708.708l-6-6a.5.5 0 0 1 0-.708l6-6a.5.5 0 0 1 .708 0z" />
+                                        </svg>
+                                        <div class="flex-fill h-100 d-flex justify-content-center align-items-center">
+                                            <div class="hd_center">
+                                                <h1 class="title_h1">서울디지뉴스</h1>
+                                            </div>
+                                        </div>
+                                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16"
+                                            fill="currentColor" class="bi bi-three-dots" viewBox="0 0 16 16">
+                                            <path
+                                                d="M3 9.5a1.5 1.5 0 1 1 0-3 1.5 1.5 0 0 1 0 3zm5 0a1.5 1.5 0 1 1 0-3 1.5 1.5 0 0 1 0 3zm5 0a1.5 1.5 0 1 1 0-3 1.5 1.5 0 0 1 0 3z" />
+                                        </svg>
+                                    </div>
+                                    <div id="main" class="news news_main news1">
+                                        <div class="news_item item1 news-scene">
+
+                                            <div class="info_wrap">
+                                                <div class="news-info">
+                                                    <div class="news-cont">
+                                                        <div class="info">
+                                                            <div class="category fontSz">생활</div>
+                                                        </div>
+                                                        <div class="">
+                                                            <h2 class="title" style="font-size: 2.0em !important">암을 유발하는 전자레인지를
+                                                                조심하세요</h2>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="writer-info">
+                                                    <div class="info date_info">
+                                                        <div class="date fontSz">입력 20YY.MM.DD</div>
+                                                        <div class="views fontSz">13:57</div>
+
+                                                    </div>
+
+                                                    <div class="writer-profile ">
+                                                        <div class="virtual">
+                                                            <!--프로필 사진 추가-->
+                                                            <img src="./assets/image/1.png" class="icon_img profile">
+                                                        </div>
+                                                        <div class="name news-writer fontSz">김○○ 기자</div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="news-main ">
+                                                <div class="news-cont fontSz">
+
+
+                                                    <div class="" style="font-size: 1.4em !important">
+                                                        간편하게 조리하거나 식은 음식을 데울 때 자주 사용하는 전자레인지. 건강에는 괜찮은 걸까요?
+                                                        <br><br>
+                                                    </div>
+                                                    <div style="font-size: 1.4em !important" class="">
+                                                        연구 결과에 따르면 전자레인지로 조리할 때 나오는 전자파가 암을 유발하고 
+                                                        면역시스템을 약화시켜 호르몬 분비에도 영향을 준다고 합니다.
+                                                    </div>
+                                                    <div style="font-size: 1.4em !important">
+                                                        <br>
+                                                    </div>
+                                                    <img src="./assets/image/2.png" alt="" class="news_img">
+                                                    <div style="font-size: 1.4em !important">
+                                                        <br>
+                                                    </div>
+                                                    <div style="font-size: 1.4em !important">
+                                                        과학자 윌리엄은 음식을 전자레인지에 넣고 가열하면 발암물질이 만들어지고, 
+                                                        성분들이 비정상적으로 변하고 유용한 영양분들이 파괴되며 음식으로서 생명력을 잃게 된다고 말했습니다. 
+                                                        이런 음식을 자주 먹게 되면 인체 세포가 파괴되어 병약한 체질로 변하게 된다고 경고했습니다.
+                                                    </div>
+                                                    <div style="font-size: 1.4em !important">
+                                                        <br>
+                                                    </div>
+                                                    <div style="font-size: 1.4em !important">
+                                                        한스 박사는 “전자레인지로 가열한 음식을 먹으면 혈액의 헤모글로빈이 감소하고 
+                                                        나쁜 콜레스테롤이 증가한다”고 하였습니다.
+                                                    </div>
+                                                    <div style="font-size: 1.4em !important">
+                                                        <br>
+                                                    </div>
+                                                    <div class="cursor_pos_5">
+                                                        <div class="pg_5_answer addShadow-highlighter-yellow" style="font-size: 1.4em !important">
+                                                            전자레인지를 사용하기 전, 전자파에 대해 꼭 체크하고 다른 주방 기구를 선택하는 것이 좋겠습니다.<br>
+                                                        </div>
+                                                        <!-- 커서 가이드 -->
+                                                        <div class="cursor_wrap cursor_wrap_5 pg_5_answer">
+                                                            <span class="cursor pg_5_answer"
+                                                                x-placement="bottom">
+                                                                <button class="digital-e__beacon pg_5_answer">
+                                                                    <span
+                                                                        class="cursor_outer pg_5_answer"></span>
+                                                                    <span
+                                                                        class="cursor_inner pg_5_answer"><span>
+                                                                </button>
+                                                            </span>
+                                                        </div>
+                                                        <!-- 커서 가이드 -->
+                                                    </div>
+                                                    <div style="font-size: 1.4em !important">
+                                                        <br>
+                                                    </div>
+
+                                                    <div class="writer-info_wrap">
+                                                        <div class="info">
+                                                            <div class="name">
+                                                                <img src="./assets/image/1.png"
+                                                                    class="icon_img video-comment profile">
+                                                                <div style="flex: 1;" class="fontSz">&nbsp; 서울디지뉴스 김○○
+                                                                    기자
+                                                                </div>
+                                                                <!-- <img src="img/icon/camera.svg" class="icon_img ccc"><br> -->
+                                                            </div>
+                                                            <div class="another-news more_news fontSz">
+                                                                다른 기사 보기
+                                                                <svg xmlns="http://www.w3.org/2000/svg" width="16"
+                                                                    height="16" fill="currentColor"
+                                                                    class="icon_img bi bi-chevron-right"
+                                                                    viewBox="0 0 16 16">
+                                                                    <path fill-rule="evenodd"
+                                                                        d="M4.646 1.646a.5.5 0 0 1 .708 0l6 6a.5.5 0 0 1 0 .708l-6 6a.5.5 0 0 1-.708-.708L10.293 8 4.646 2.354a.5.5 0 0 1 0-.708z" />
+                                                                </svg>
+                                                            </div>
+                                                        </div>
+                                                        <div class="email fontSz">KimOO@gazzanew2.com<br></div>
+                                                    </div>
+                                                    <div class="fontSz">
+                                                        <br>저작권자 ⓒ서울디지뉴스 무단 전재 및 재배포 금지
+                                                    </div>
+                                                </div>
+                                            </div>
+
+
+                                            <div class="reactions  ">
+
+                                                <div class="react_wrap fontSz">
+                                                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16"
+                                                        fill="currentColor" class="icon_img emoji bi bi-emoji-angry"
+                                                        viewBox="0 0 16 16">
+                                                        <path
+                                                            d="M8 15A7 7 0 1 1 8 1a7 7 0 0 1 0 14zm0 1A8 8 0 1 0 8 0a8 8 0 0 0 0 16z" />
+                                                        <path
+                                                            d="M4.285 12.433a.5.5 0 0 0 .683-.183A3.498 3.498 0 0 1 8 10.5c1.295 0 2.426.703 3.032 1.75a.5.5 0 0 0 .866-.5A4.498 4.498 0 0 0 8 9.5a4.5 4.5 0 0 0-3.898 2.25.5.5 0 0 0 .183.683zm6.991-8.38a.5.5 0 1 1 .448.894l-1.009.504c.176.27.285.64.285 1.049 0 .828-.448 1.5-1 1.5s-1-.672-1-1.5c0-.247.04-.48.11-.686a.502.502 0 0 1 .166-.761l2-1zm-6.552 0a.5.5 0 0 0-.448.894l1.009.504A1.94 1.94 0 0 0 5 6.5C5 7.328 5.448 8 6 8s1-.672 1-1.5c0-.247-.04-.48-.11-.686a.502.502 0 0 0-.166-.761l-2-1z" />
+                                                    </svg>
+                                                    화나요
+                                                    <div>4</div>
+                                                </div>
+                                                <div class="react_wrap fontSz">
+                                                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16"
+                                                        fill="currentColor" class="icon_img emoji bi bi-emoji-laughing"
+                                                        viewBox="0 0 16 16">
+                                                        <path
+                                                            d="M8 15A7 7 0 1 1 8 1a7 7 0 0 1 0 14zm0 1A8 8 0 1 0 8 0a8 8 0 0 0 0 16z" />
+                                                        <path
+                                                            d="M12.331 9.5a1 1 0 0 1 0 1A4.998 4.998 0 0 1 8 13a4.998 4.998 0 0 1-4.33-2.5A1 1 0 0 1 4.535 9h6.93a1 1 0 0 1 .866.5zM7 6.5c0 .828-.448 0-1 0s-1 .828-1 0S5.448 5 6 5s1 .672 1 1.5zm4 0c0 .828-.448 0-1 0s-1 .828-1 0S9.448 5 10 5s1 .672 1 1.5z" />
+                                                    </svg>
+                                                    웃겨요
+                                                    <div>10</div>
+                                                </div>
+                                                <div class="react_wrap fontSz">
+                                                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16"
+                                                        fill="currentColor" class="icon_img emoji bi bi-emoji-neutral"
+                                                        viewBox="0 0 16 16">
+                                                        <path
+                                                            d="M8 15A7 7 0 1 1 8 1a7 7 0 0 1 0 14zm0 1A8 8 0 1 0 8 0a8 8 0 0 0 0 16z" />
+                                                        <path
+                                                            d="M4 10.5a.5.5 0 0 0 .5.5h7a.5.5 0 0 0 0-1h-7a.5.5 0 0 0-.5.5zm3-4C7 5.672 6.552 5 6 5s-1 .672-1 1.5S5.448 8 6 8s1-.672 1-1.5zm4 0c0-.828-.448-1.5-1-1.5s-1 .672-1 1.5S9.448 8 10 8s1-.672 1-1.5z" />
+                                                    </svg>
+                                                    별로예요
+                                                    <div>16</div>
+                                                </div>
+                                                <div class="react_wrap fontSz">
+                                                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16"
+                                                        fill="currentColor" class="icon_img emoji bi bi-emoji-wink"
+                                                        viewBox="0 0 16 16">
+                                                        <path
+                                                            d="M8 15A7 7 0 1 1 8 1a7 7 0 0 1 0 14zm0 1A8 8 0 1 0 8 0a8 8 0 0 0 0 16z" />
+                                                        <path
+                                                            d="M4.285 9.567a.5.5 0 0 1 .683.183A3.498 3.498 0 0 0 8 11.5a3.498 3.498 0 0 0 3.032-1.75.5.5 0 1 1 .866.5A4.498 4.498 0 0 1 8 12.5a4.498 4.498 0 0 1-3.898-2.25.5.5 0 0 1 .183-.683zM7 6.5C7 7.328 6.552 8 6 8s-1-.672-1-1.5S5.448 5 6 5s1 .672 1 1.5zm1.757-.437a.5.5 0 0 1 .68.194.934.934 0 0 0 .813.493c.339 0 .645-.19.813-.493a.5.5 0 1 1 .874.486A1.934 1.934 0 0 1 10.25 7.75c-.73 0-1.356-.412-1.687-1.007a.5.5 0 0 1 .194-.68z" />
+                                                    </svg>
+                                                    공감돼요
+                                                    <div>45</div>
+                                                </div>
+                                                <div class="react_wrap fontSz">
+                                                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16"
+                                                        fill="currentColor"
+                                                        class="icon_img emoji bi bi-emoji-heart-eyes"
+                                                        viewBox="0 0 16 16">
+                                                        <path
+                                                            d="M8 15A7 7 0 1 1 8 1a7 7 0 0 1 0 14zm0 1A8 8 0 1 0 8 0a8 8 0 0 0 0 16z" />
+                                                        <path
+                                                            d="M11.315 10.014a.5.5 0 0 1 .548.736A4.498 4.498 0 0 1 7.965 13a4.498 4.498 0 0 1-3.898-2.25.5.5 0 0 1 .548-.736h.005l.017.005.067.015.252.055c.215.046.515.108.857.169.693.124 1.522.242 2.152.242.63 0 1.46-.118 2.152-.242a26.58 26.58 0 0 0 1.109-.224l.067-.015.017-.004.005-.002zM4.756 4.566c.763-1.424 4.02-.12.952 3.434-4.496-1.596-2.35-4.298-.952-3.434zm6.488 0c1.398-.864 3.544 1.838-.952 3.434-3.067-3.554.19-4.858.952-3.434z" />
+                                                    </svg>
+                                                    좋아요
+                                                    <div>18</div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                    <div class="cafebar">
+                                        <div class="reactions">
+                                            <div class="like like_topside">
+                                                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16"
+                                                    fill="currentColor" class="icon_img bar bi bi-chat-right-text"
+                                                    viewBox="0 0 16 16">
+                                                    <path
+                                                        d="M2 1a1 1 0 0 0-1 1v8a1 1 0 0 0 1 1h9.586a2 2 0 0 1 1.414.586l2 2V2a1 1 0 0 0-1-1H2zm12-1a2 2 0 0 1 2 2v12.793a.5.5 0 0 1-.854.353l-2.853-2.853a1 1 0 0 0-.707-.293H2a2 2 0 0 1-2-2V2a2 2 0 0 1 2-2h12z" />
+                                                    <path
+                                                        d="M3 3.5a.5.5 0 0 1 .5-.5h9a.5.5 0 0 1 0 1h-9a.5.5 0 0 1-.5-.5zM3 6a.5.5 0 0 1 .5-.5h9a.5.5 0 0 1 0 1h-9A.5.5 0 0 1 3 6zm0 2.5a.5.5 0 0 1 .5-.5h5a.5.5 0 0 1 0 1h-5a.5.5 0 0 1-.5-.5z" />
+                                                </svg>
+                                                &nbsp댓글
+                                            </div>
+                                            <div class="comment">
+                                                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16"
+                                                    fill="currentColor" class="icon_img bar bi bi-share-fill"
+                                                    viewBox="0 0 16 16">
+                                                    <path
+                                                        d="M11 2.5a2.5 2.5 0 1 1 .603 1.628l-6.718 3.12a2.499 2.499 0 0 1 0 1.504l6.718 3.12a2.5 2.5 0 1 1-.488.876l-6.718-3.12a2.5 2.5 0 1 1 0-3.256l6.718-3.12A2.5 2.5 0 0 1 11 2.5z" />
+                                                </svg>
+                                                &nbsp공유
+
+                                            </div>
+                                        </div>
+                                    </div>
+
+
+                                </div>
+
+
+                            </div>
+                        </div>
+
+                        <!------------------------------ page 6 ------------------------------>
+                        <div class="page" id="p6">
+                            <h1 class="pg_title" style="color: #fff;">Page6</h1>
+                            <div class="page_wrap">
+                                <div id="total_wrap">
+                                    <div
+                                        class="hd_newslist top w-100 d-flex justify-content-between align-items-center px-4 py-3">
+                                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16"
+                                            fill="currentColor" class="bi bi-chevron-left" viewBox="0 0 16 16">
+                                            <path fill-rule="evenodd"
+                                                d="M11.354 1.646a.5.5 0 0 1 0 .708L5.707 8l5.647 5.646a.5.5 0 0 1-.708.708l-6-6a.5.5 0 0 1 0-.708l6-6a.5.5 0 0 1 .708 0z" />
+                                        </svg>
+                                        <div class="flex-fill h-100 d-flex justify-content-center align-items-center">
+                                            <div class="hd_center">
+                                                <h1 class="title_h1">서울디지뉴스</h1>
+                                            </div>
+                                        </div>
+                                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16"
+                                            fill="currentColor" class="bi bi-three-dots" viewBox="0 0 16 16">
+                                            <path
+                                                d="M3 9.5a1.5 1.5 0 1 1 0-3 1.5 1.5 0 0 1 0 3zm5 0a1.5 1.5 0 1 1 0-3 1.5 1.5 0 0 1 0 3zm5 0a1.5 1.5 0 1 1 0-3 1.5 1.5 0 0 1 0 3z" />
+                                        </svg>
+                                    </div>
+                                    <div id="main" class="news news_main news1">
+                                        <div class="news_item item1 news-scene">
+
+                                            <div class="info_wrap">
+                                                <div class="news-info">
+                                                    <div class="news-cont">
+                                                        <div class="info">
+                                                            <div class="category fontSz">생활</div>
+                                                        </div>
+                                                        <div class="">
+                                                            <h2 class="title" style="font-size: 2.0em !important">암을 유발하는 전자레인지를
+                                                                조심하세요</h2>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="writer-info">
+                                                    <div class="info date_info">
+                                                        <div class="date fontSz">입력 20YY.MM.DD</div>
+                                                        <div class="views fontSz">13:57</div>
+
+                                                    </div>
+
+                                                    <div class="writer-profile ">
+                                                        <div class="virtual">
+                                                            <!--프로필 사진 추가-->
+                                                            <img src="./assets/image/1.png" class="icon_img profile">
+                                                        </div>
+                                                        <div class="name news-writer fontSz">김○○ 기자</div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="news-main ">
+                                                <div class="news-cont fontSz">
+
+
+                                                    <div class="" style="font-size: 1.4em !important">
+                                                        간편하게 조리하거나 식은 음식을 데울 때 자주 사용하는 전자레인지. 건강에는 괜찮은 걸까요?
+                                                        <br><br>
+                                                    </div>
+                                                    <div style="font-size: 1.4em !important" class="">
+                                                        연구 결과에 따르면 전자레인지로 조리할 때 나오는 전자파가 암을 유발하고 
+                                                        면역시스템을 약화시켜 호르몬 분비에도 영향을 준다고 합니다.
+                                                    </div>
+                                                    <div style="font-size: 1.4em !important">
+                                                        <br>
+                                                    </div>
+                                                    <img src="./assets/image/2.png" alt="" class="news_img">
+                                                    <div style="font-size: 1.4em !important">
+                                                        <br>
+                                                    </div>
+                                                    <div style="font-size: 1.4em !important">
+                                                        과학자 윌리엄은 음식을 전자레인지에 넣고 가열하면 발암물질이 만들어지고, 
+                                                        성분들이 비정상적으로 변하고 유용한 영양분들이 파괴되며 음식으로서 생명력을 잃게 된다고 말했습니다. 
+                                                        이런 음식을 자주 먹게 되면 인체 세포가 파괴되어 병약한 체질로 변하게 된다고 경고했습니다.
+                                                    </div>
+                                                    <div style="font-size: 1.4em !important">
+                                                        <br>
+                                                    </div>
+                                                    <div style="font-size: 1.4em !important">
+                                                        한스 박사는 “전자레인지로 가열한 음식을 먹으면 혈액의 헤모글로빈이 감소하고 
+                                                        나쁜 콜레스테롤이 증가한다”고 하였습니다.
+                                                    </div>
+                                                    <div style="font-size: 1.4em !important">
+                                                        <br>
+                                                    </div>
+                                                    <div style="font-size: 1.4em !important">
+                                                        전자레인지를 사용하기 전, 전자파에 대해 꼭 체크하고 다른 주방 기구를 선택하는 것이 좋겠습니다.<br><br>
+                                                    </div>
+
+                                                    <div class="cursor_pos_6">
+                                                        <div class="pg_6_answer addShadow-highlighter-yellow writer-info_wrap">
+                                                            <div class="pg_6_answer info">
+                                                                <div class="pg_6_answer name">
+                                                                    <img src="./assets/image/1.png" class="icon_img video-comment profile">
+                                                                    <div style="flex: 1;" class="fontSz">&nbsp; 서울디지뉴스 김○○
+                                                                        기자
+                                                                    </div>
+                                                                    <!-- <img src="img/icon/camera.svg" class="icon_img ccc"><br> -->
+                                                                </div>
+                                                                <div class="pg_6_answer another-news more_news fontSz">
+                                                                    다른 기사 보기
+                                                                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+                                                                        class="icon_img bi bi-chevron-right" viewBox="0 0 16 16">
+                                                                        <path fill-rule="evenodd"
+                                                                            d="M4.646 1.646a.5.5 0 0 1 .708 0l6 6a.5.5 0 0 1 0 .708l-6 6a.5.5 0 0 1-.708-.708L10.293 8 4.646 2.354a.5.5 0 0 1 0-.708z" />
+                                                                    </svg>
+                                                                </div>
+                                                            </div>                                 
+                                                            <div class="pg_6_answer email fontSz">KimOO@gazzanew2.com<br></div>
+
+                                                            <!-- 커서 가이드 -->
+                                                            <div class="cursor_wrap cursor_wrap_6 pg_6_answer">
+                                                                <span class="cursor pg_6_answer" x-placement="bottom">
+                                                                    <button class="digital-e__beacon pg_6_answer">
+                                                                        <span class="cursor_outer pg_6_answer"></span>
+                                                                        <span class="cursor_inner pg_6_answer"><span>
+                                                                    </button>
+                                                                </span>
+                                                            </div>
+                                                            <!-- 커서 가이드 -->
+                                                        </div>
+                                                    </div>
+                                                    <div class="fontSz">
+                                                        <br>저작권자 ⓒ서울디지뉴스 무단 전재 및 재배포 금지
+                                                    </div>
+                                                </div>
+                                            </div>
+
+
+                                            <div class="reactions  ">
+
+                                                <div class="react_wrap fontSz">
+                                                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16"
+                                                        fill="currentColor" class="icon_img emoji bi bi-emoji-angry"
+                                                        viewBox="0 0 16 16">
+                                                        <path
+                                                            d="M8 15A7 7 0 1 1 8 1a7 7 0 0 1 0 14zm0 1A8 8 0 1 0 8 0a8 8 0 0 0 0 16z" />
+                                                        <path
+                                                            d="M4.285 12.433a.5.5 0 0 0 .683-.183A3.498 3.498 0 0 1 8 10.5c1.295 0 2.426.703 3.032 1.75a.5.5 0 0 0 .866-.5A4.498 4.498 0 0 0 8 9.5a4.5 4.5 0 0 0-3.898 2.25.5.5 0 0 0 .183.683zm6.991-8.38a.5.5 0 1 1 .448.894l-1.009.504c.176.27.285.64.285 1.049 0 .828-.448 1.5-1 1.5s-1-.672-1-1.5c0-.247.04-.48.11-.686a.502.502 0 0 1 .166-.761l2-1zm-6.552 0a.5.5 0 0 0-.448.894l1.009.504A1.94 1.94 0 0 0 5 6.5C5 7.328 5.448 8 6 8s1-.672 1-1.5c0-.247-.04-.48-.11-.686a.502.502 0 0 0-.166-.761l-2-1z" />
+                                                    </svg>
+                                                    화나요
+                                                    <div>4</div>
+                                                </div>
+                                                <div class="react_wrap fontSz">
+                                                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16"
+                                                        fill="currentColor" class="icon_img emoji bi bi-emoji-laughing"
+                                                        viewBox="0 0 16 16">
+                                                        <path
+                                                            d="M8 15A7 7 0 1 1 8 1a7 7 0 0 1 0 14zm0 1A8 8 0 1 0 8 0a8 8 0 0 0 0 16z" />
+                                                        <path
+                                                            d="M12.331 9.5a1 1 0 0 1 0 1A4.998 4.998 0 0 1 8 13a4.998 4.998 0 0 1-4.33-2.5A1 1 0 0 1 4.535 9h6.93a1 1 0 0 1 .866.5zM7 6.5c0 .828-.448 0-1 0s-1 .828-1 0S5.448 5 6 5s1 .672 1 1.5zm4 0c0 .828-.448 0-1 0s-1 .828-1 0S9.448 5 10 5s1 .672 1 1.5z" />
+                                                    </svg>
+                                                    웃겨요
+                                                    <div>10</div>
+                                                </div>
+                                                <div class="react_wrap fontSz">
+                                                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16"
+                                                        fill="currentColor" class="icon_img emoji bi bi-emoji-neutral"
+                                                        viewBox="0 0 16 16">
+                                                        <path
+                                                            d="M8 15A7 7 0 1 1 8 1a7 7 0 0 1 0 14zm0 1A8 8 0 1 0 8 0a8 8 0 0 0 0 16z" />
+                                                        <path
+                                                            d="M4 10.5a.5.5 0 0 0 .5.5h7a.5.5 0 0 0 0-1h-7a.5.5 0 0 0-.5.5zm3-4C7 5.672 6.552 5 6 5s-1 .672-1 1.5S5.448 8 6 8s1-.672 1-1.5zm4 0c0-.828-.448-1.5-1-1.5s-1 .672-1 1.5S9.448 8 10 8s1-.672 1-1.5z" />
+                                                    </svg>
+                                                    별로예요
+                                                    <div>16</div>
+                                                </div>
+                                                <div class="react_wrap fontSz">
+                                                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16"
+                                                        fill="currentColor" class="icon_img emoji bi bi-emoji-wink"
+                                                        viewBox="0 0 16 16">
+                                                        <path
+                                                            d="M8 15A7 7 0 1 1 8 1a7 7 0 0 1 0 14zm0 1A8 8 0 1 0 8 0a8 8 0 0 0 0 16z" />
+                                                        <path
+                                                            d="M4.285 9.567a.5.5 0 0 1 .683.183A3.498 3.498 0 0 0 8 11.5a3.498 3.498 0 0 0 3.032-1.75.5.5 0 1 1 .866.5A4.498 4.498 0 0 1 8 12.5a4.498 4.498 0 0 1-3.898-2.25.5.5 0 0 1 .183-.683zM7 6.5C7 7.328 6.552 8 6 8s-1-.672-1-1.5S5.448 5 6 5s1 .672 1 1.5zm1.757-.437a.5.5 0 0 1 .68.194.934.934 0 0 0 .813.493c.339 0 .645-.19.813-.493a.5.5 0 1 1 .874.486A1.934 1.934 0 0 1 10.25 7.75c-.73 0-1.356-.412-1.687-1.007a.5.5 0 0 1 .194-.68z" />
+                                                    </svg>
+                                                    공감돼요
+                                                    <div>45</div>
+                                                </div>
+                                                <div class="react_wrap fontSz">
+                                                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16"
+                                                        fill="currentColor"
+                                                        class="icon_img emoji bi bi-emoji-heart-eyes"
+                                                        viewBox="0 0 16 16">
+                                                        <path
+                                                            d="M8 15A7 7 0 1 1 8 1a7 7 0 0 1 0 14zm0 1A8 8 0 1 0 8 0a8 8 0 0 0 0 16z" />
+                                                        <path
+                                                            d="M11.315 10.014a.5.5 0 0 1 .548.736A4.498 4.498 0 0 1 7.965 13a4.498 4.498 0 0 1-3.898-2.25.5.5 0 0 1 .548-.736h.005l.017.005.067.015.252.055c.215.046.515.108.857.169.693.124 1.522.242 2.152.242.63 0 1.46-.118 2.152-.242a26.58 26.58 0 0 0 1.109-.224l.067-.015.017-.004.005-.002zM4.756 4.566c.763-1.424 4.02-.12.952 3.434-4.496-1.596-2.35-4.298-.952-3.434zm6.488 0c1.398-.864 3.544 1.838-.952 3.434-3.067-3.554.19-4.858.952-3.434z" />
+                                                    </svg>
+                                                    좋아요
+                                                    <div>18</div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                    <div class="cafebar">
+                                        <div class="reactions">
+                                            <div class="like like_topside">
+                                                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16"
+                                                    fill="currentColor" class="icon_img bar bi bi-chat-right-text"
+                                                    viewBox="0 0 16 16">
+                                                    <path
+                                                        d="M2 1a1 1 0 0 0-1 1v8a1 1 0 0 0 1 1h9.586a2 2 0 0 1 1.414.586l2 2V2a1 1 0 0 0-1-1H2zm12-1a2 2 0 0 1 2 2v12.793a.5.5 0 0 1-.854.353l-2.853-2.853a1 1 0 0 0-.707-.293H2a2 2 0 0 1-2-2V2a2 2 0 0 1 2-2h12z" />
+                                                    <path
+                                                        d="M3 3.5a.5.5 0 0 1 .5-.5h9a.5.5 0 0 1 0 1h-9a.5.5 0 0 1-.5-.5zM3 6a.5.5 0 0 1 .5-.5h9a.5.5 0 0 1 0 1h-9A.5.5 0 0 1 3 6zm0 2.5a.5.5 0 0 1 .5-.5h5a.5.5 0 0 1 0 1h-5a.5.5 0 0 1-.5-.5z" />
+                                                </svg>
+                                                &nbsp댓글
+                                            </div>
+                                            <div class="comment">
+                                                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16"
+                                                    fill="currentColor" class="icon_img bar bi bi-share-fill"
+                                                    viewBox="0 0 16 16">
+                                                    <path
+                                                        d="M11 2.5a2.5 2.5 0 1 1 .603 1.628l-6.718 3.12a2.499 2.499 0 0 1 0 1.504l6.718 3.12a2.5 2.5 0 1 1-.488.876l-6.718-3.12a2.5 2.5 0 1 1 0-3.256l6.718-3.12A2.5 2.5 0 0 1 11 2.5z" />
+                                                </svg>
+                                                &nbsp공유
+
+                                            </div>
+                                        </div>
+                                    </div>
+
+
+                                </div>
+
+
+                            </div>
+                        </div>
+
+                        <!------------------------------ page 7 ------------------------------>
+                        <div class="page" id="p7">
+                            <h1 class="pg_title" style="color: #fff;">Page7</h1>
+                            <div class="page_wrap">
+                                <div id="total_wrap">
+                                    <div
+                                        class="hd_newslist top w-100 d-flex justify-content-between align-items-center px-4 py-3">
+                                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16"
+                                            fill="currentColor" class="bi bi-chevron-left" viewBox="0 0 16 16">
+                                            <path fill-rule="evenodd"
+                                                d="M11.354 1.646a.5.5 0 0 1 0 .708L5.707 8l5.647 5.646a.5.5 0 0 1-.708.708l-6-6a.5.5 0 0 1 0-.708l6-6a.5.5 0 0 1 .708 0z" />
+                                        </svg>
+                                        <div class="flex-fill h-100 d-flex justify-content-center align-items-center">
+                                            <div class="hd_center">
+                                                <h1 class="title_h1">서울디지뉴스</h1>
+                                            </div>
+                                        </div>
+                                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16"
+                                            fill="currentColor" class="bi bi-three-dots" viewBox="0 0 16 16">
+                                            <path
+                                                d="M3 9.5a1.5 1.5 0 1 1 0-3 1.5 1.5 0 0 1 0 3zm5 0a1.5 1.5 0 1 1 0-3 1.5 1.5 0 0 1 0 3zm5 0a1.5 1.5 0 1 1 0-3 1.5 1.5 0 0 1 0 3z" />
+                                        </svg>
+                                    </div>
+                                    <div id="main" class="news news_main news1">
+                                        <div class="news_item item1 news-scene">
+
+                                            <div class="info_wrap">
+                                                <div class="news-info">
+                                                    <div class="news-cont">
+                                                        <div class="info">
+                                                            <div class="category fontSz">생활</div>
+                                                        </div>
+                                                        <div class="">
+                                                            <h2 class="title" style="font-size: 2.0em !important">암을 유발하는 전자레인지를
+                                                                조심하세요</h2>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="writer-info">
+                                                    <div class="info date_info">
+                                                        <div class="date fontSz">입력 20YY.MM.DD</div>
+                                                        <div class="views fontSz">13:57</div>
+
+                                                    </div>
+
+                                                    <div class="writer-profile ">
+                                                        <div class="virtual">
+                                                            <!--프로필 사진 추가-->
+                                                            <img src="./assets/image/1.png" class="icon_img profile">
+                                                        </div>
+                                                        <div class="name news-writer fontSz">김○○ 기자</div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="news-main ">
+                                                <div class="news-cont fontSz">
+
+
+                                                    <div class="" style="font-size: 1.4em !important">
+                                                        간편하게 조리하거나 식은 음식을 데울 때 자주 사용하는 전자레인지. 건강에는 괜찮은 걸까요?
+                                                        <br><br>
+                                                    </div>
+                                                    <div style="font-size: 1.4em !important" class="">
+                                                        연구 결과에 따르면 전자레인지로 조리할 때 나오는 전자파가 암을 유발하고 
+                                                        면역시스템을 약화시켜 호르몬 분비에도 영향을 준다고 합니다.
+                                                    </div>
+                                                    <div style="font-size: 1.4em !important">
+                                                        <br>
+                                                    </div>
+                                                    <img src="./assets/image/2.png" alt="" class="news_img">
+                                                    <div style="font-size: 1.4em !important">
+                                                        <br>
+                                                    </div>
+                                                    <div style="font-size: 1.4em !important">
+                                                        과학자 윌리엄은 음식을 전자레인지에 넣고 가열하면 발암물질이 만들어지고, 
+                                                        성분들이 비정상적으로 변하고 유용한 영양분들이 파괴되며 음식으로서 생명력을 잃게 된다고 말했습니다. 
+                                                        이런 음식을 자주 먹게 되면 인체 세포가 파괴되어 병약한 체질로 변하게 된다고 경고했습니다.
+                                                    </div>
+                                                    <div style="font-size: 1.4em !important">
+                                                        <br>
+                                                    </div>
+                                                    <div style="font-size: 1.4em !important">
+                                                        한스 박사는 “전자레인지로 가열한 음식을 먹으면 혈액의 헤모글로빈이 감소하고 
+                                                        나쁜 콜레스테롤이 증가한다”고 하였습니다.
+                                                    </div>
+                                                    <div style="font-size: 1.4em !important">
+                                                        <br>
+                                                    </div>
+                                                    <div style="font-size: 1.4em !important">
+                                                        전자레인지를 사용하기 전, 전자파에 대해 꼭 체크하고 다른 주방 기구를 선택하는 것이 좋겠습니다.<br><br>
+                                                    </div>
+
+                                                    <div class="writer-info_wrap">
+                                                        <div class="info">
+                                                            <div class="name">
+                                                                <img src="./assets/image/1.png"
+                                                                    class="icon_img video-comment profile">
+                                                                <div style="flex: 1;" class="fontSz">&nbsp; 서울디지뉴스 김○○
+                                                                    기자
+                                                                </div>
+                                                                <!-- <img src="img/icon/camera.svg" class="icon_img ccc"><br> -->
+                                                            </div>
+                                                            <div class="another-news more_news fontSz">
+                                                                다른 기사 보기
+                                                                <svg xmlns="http://www.w3.org/2000/svg" width="16"
+                                                                    height="16" fill="currentColor"
+                                                                    class="icon_img bi bi-chevron-right"
+                                                                    viewBox="0 0 16 16">
+                                                                    <path fill-rule="evenodd"
+                                                                        d="M4.646 1.646a.5.5 0 0 1 .708 0l6 6a.5.5 0 0 1 0 .708l-6 6a.5.5 0 0 1-.708-.708L10.293 8 4.646 2.354a.5.5 0 0 1 0-.708z" />
+                                                                </svg>
+                                                            </div>
+                                                        </div>
+                                                        <div class="email fontSz">KimOO@gazzanew2.com<br></div>
+                                                    </div>
+                                                    <div class="fontSz">
+                                                        <br>저작권자 ⓒ서울디지뉴스 무단 전재 및 재배포 금지
+                                                    </div>
+                                                </div>
+                                            </div>
+
+
+                                            <div class="cursor_pos_7 w-100">
+                                                <div class="reactions pg_7_answer addShadow-highlighter-yellow">
+                                                    <div class="react_wrap fontSz">
+                                                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16"
+                                                            fill="currentColor" class="icon_img emoji bi bi-emoji-angry"
+                                                            viewBox="0 0 16 16">
+                                                            <path
+                                                                d="M8 15A7 7 0 1 1 8 1a7 7 0 0 1 0 14zm0 1A8 8 0 1 0 8 0a8 8 0 0 0 0 16z" />
+                                                            <path
+                                                                d="M4.285 12.433a.5.5 0 0 0 .683-.183A3.498 3.498 0 0 1 8 10.5c1.295 0 2.426.703 3.032 1.75a.5.5 0 0 0 .866-.5A4.498 4.498 0 0 0 8 9.5a4.5 4.5 0 0 0-3.898 2.25.5.5 0 0 0 .183.683zm6.991-8.38a.5.5 0 1 1 .448.894l-1.009.504c.176.27.285.64.285 1.049 0 .828-.448 1.5-1 1.5s-1-.672-1-1.5c0-.247.04-.48.11-.686a.502.502 0 0 1 .166-.761l2-1zm-6.552 0a.5.5 0 0 0-.448.894l1.009.504A1.94 1.94 0 0 0 5 6.5C5 7.328 5.448 8 6 8s1-.672 1-1.5c0-.247-.04-.48-.11-.686a.502.502 0 0 0-.166-.761l-2-1z" />
+                                                        </svg>
+                                                        화나요
+                                                        <div>4</div>
+                                                    </div>
+                                                    <div class="react_wrap fontSz">
+                                                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16"
+                                                            fill="currentColor" class="icon_img emoji bi bi-emoji-laughing"
+                                                            viewBox="0 0 16 16">
+                                                            <path
+                                                                d="M8 15A7 7 0 1 1 8 1a7 7 0 0 1 0 14zm0 1A8 8 0 1 0 8 0a8 8 0 0 0 0 16z" />
+                                                            <path
+                                                                d="M12.331 9.5a1 1 0 0 1 0 1A4.998 4.998 0 0 1 8 13a4.998 4.998 0 0 1-4.33-2.5A1 1 0 0 1 4.535 9h6.93a1 1 0 0 1 .866.5zM7 6.5c0 .828-.448 0-1 0s-1 .828-1 0S5.448 5 6 5s1 .672 1 1.5zm4 0c0 .828-.448 0-1 0s-1 .828-1 0S9.448 5 10 5s1 .672 1 1.5z" />
+                                                        </svg>
+                                                        웃겨요
+                                                        <div>10</div>
+                                                    </div>
+                                                    <div class="react_wrap fontSz">
+                                                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16"
+                                                            fill="currentColor" class="icon_img emoji bi bi-emoji-neutral"
+                                                            viewBox="0 0 16 16">
+                                                            <path
+                                                                d="M8 15A7 7 0 1 1 8 1a7 7 0 0 1 0 14zm0 1A8 8 0 1 0 8 0a8 8 0 0 0 0 16z" />
+                                                            <path
+                                                                d="M4 10.5a.5.5 0 0 0 .5.5h7a.5.5 0 0 0 0-1h-7a.5.5 0 0 0-.5.5zm3-4C7 5.672 6.552 5 6 5s-1 .672-1 1.5S5.448 8 6 8s1-.672 1-1.5zm4 0c0-.828-.448-1.5-1-1.5s-1 .672-1 1.5S9.448 8 10 8s1-.672 1-1.5z" />
+                                                        </svg>
+                                                        별로예요
+                                                        <div>16</div>
+                                                    </div>
+                                                    <div class="react_wrap fontSz">
+                                                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16"
+                                                            fill="currentColor" class="icon_img emoji bi bi-emoji-wink"
+                                                            viewBox="0 0 16 16">
+                                                            <path
+                                                                d="M8 15A7 7 0 1 1 8 1a7 7 0 0 1 0 14zm0 1A8 8 0 1 0 8 0a8 8 0 0 0 0 16z" />
+                                                            <path
+                                                                d="M4.285 9.567a.5.5 0 0 1 .683.183A3.498 3.498 0 0 0 8 11.5a3.498 3.498 0 0 0 3.032-1.75.5.5 0 1 1 .866.5A4.498 4.498 0 0 1 8 12.5a4.498 4.498 0 0 1-3.898-2.25.5.5 0 0 1 .183-.683zM7 6.5C7 7.328 6.552 8 6 8s-1-.672-1-1.5S5.448 5 6 5s1 .672 1 1.5zm1.757-.437a.5.5 0 0 1 .68.194.934.934 0 0 0 .813.493c.339 0 .645-.19.813-.493a.5.5 0 1 1 .874.486A1.934 1.934 0 0 1 10.25 7.75c-.73 0-1.356-.412-1.687-1.007a.5.5 0 0 1 .194-.68z" />
+                                                        </svg>
+                                                        공감돼요
+                                                        <div>45</div>
+                                                    </div>
+                                                    <div class="react_wrap fontSz">
+                                                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16"
+                                                            fill="currentColor"
+                                                            class="icon_img emoji bi bi-emoji-heart-eyes"
+                                                            viewBox="0 0 16 16">
+                                                            <path
+                                                                d="M8 15A7 7 0 1 1 8 1a7 7 0 0 1 0 14zm0 1A8 8 0 1 0 8 0a8 8 0 0 0 0 16z" />
+                                                            <path
+                                                                d="M11.315 10.014a.5.5 0 0 1 .548.736A4.498 4.498 0 0 1 7.965 13a4.498 4.498 0 0 1-3.898-2.25.5.5 0 0 1 .548-.736h.005l.017.005.067.015.252.055c.215.046.515.108.857.169.693.124 1.522.242 2.152.242.63 0 1.46-.118 2.152-.242a26.58 26.58 0 0 0 1.109-.224l.067-.015.017-.004.005-.002zM4.756 4.566c.763-1.424 4.02-.12.952 3.434-4.496-1.596-2.35-4.298-.952-3.434zm6.488 0c1.398-.864 3.544 1.838-.952 3.434-3.067-3.554.19-4.858.952-3.434z" />
+                                                        </svg>
+                                                        좋아요
+                                                        <div>18</div>
+                                                    </div>
+                                                </div>
+                                                <!-- 커서 가이드 -->
+                                                <div class="cursor_wrap cursor_wrap_7 pg_7_answer">
+                                                    <span class="cursor pg_7_answer"
+                                                        x-placement="bottom">
+                                                        <button class="digital-e__beacon pg_7_answer">
+                                                            <span
+                                                                class="cursor_outer pg_7_answer"></span>
+                                                            <span
+                                                                class="cursor_inner pg_7_answer"><span>
+                                                        </button>
+                                                    </span>
+                                                </div>
+                                                <!-- 커서 가이드 -->
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                    <div class="cafebar">
+                                        <div class="reactions">
+                                            <div class="like like_topside">
+                                                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16"
+                                                    fill="currentColor" class="icon_img bar bi bi-chat-right-text"
+                                                    viewBox="0 0 16 16">
+                                                    <path
+                                                        d="M2 1a1 1 0 0 0-1 1v8a1 1 0 0 0 1 1h9.586a2 2 0 0 1 1.414.586l2 2V2a1 1 0 0 0-1-1H2zm12-1a2 2 0 0 1 2 2v12.793a.5.5 0 0 1-.854.353l-2.853-2.853a1 1 0 0 0-.707-.293H2a2 2 0 0 1-2-2V2a2 2 0 0 1 2-2h12z" />
+                                                    <path
+                                                        d="M3 3.5a.5.5 0 0 1 .5-.5h9a.5.5 0 0 1 0 1h-9a.5.5 0 0 1-.5-.5zM3 6a.5.5 0 0 1 .5-.5h9a.5.5 0 0 1 0 1h-9A.5.5 0 0 1 3 6zm0 2.5a.5.5 0 0 1 .5-.5h5a.5.5 0 0 1 0 1h-5a.5.5 0 0 1-.5-.5z" />
+                                                </svg>
+                                                &nbsp댓글
+                                            </div>
+                                            <div class="comment">
+                                                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16"
+                                                    fill="currentColor" class="icon_img bar bi bi-share-fill"
+                                                    viewBox="0 0 16 16">
+                                                    <path
+                                                        d="M11 2.5a2.5 2.5 0 1 1 .603 1.628l-6.718 3.12a2.499 2.499 0 0 1 0 1.504l6.718 3.12a2.5 2.5 0 1 1-.488.876l-6.718-3.12a2.5 2.5 0 1 1 0-3.256l6.718-3.12A2.5 2.5 0 0 1 11 2.5z" />
+                                                </svg>
+                                                &nbsp공유
+
+                                            </div>
+                                        </div>
+                                    </div>
+
+
+                                </div>
+
+
+                            </div>
+                        </div>
+
+                        <!------------------------------ page 8 ------------------------------>
+                        <div class="page" id="p8">
+                            <div class="page_wrap">
+                                <h1 class="pg_title" style="color: #fff;">Page8</h1>
+                                 <canvas id="confetti-canvas" class="canvas" width="465" height="1224"></canvas>
+                                <h1 class="title_h1"><img src="../common/images/done1.png" width="100%"></h1>
+                            </div>
+                        </div>
+
+                        <div class="modal_wrap">
+                            <div class="FactCheck1_wrap">
+                                <!--  모달창 입니다  -->
+                                <div class="modal1 popup" id="modal1">
+                                    <div class="title">체크 포인트</div>
+                                    <div class="content">
+                                        <p class="fc_msg text1">
+                                            관심을 끌기 위한 자극적인 제목일 수 있습니다. 특히 내용에 부합하는 제목인지 확인해 보세요. 
+                                        </p>
+                                    </div>
+                                    <div class="cmd">
+                                        <div class="btn btn-next btn_nxt_pg nxtBtn1" raised="true" id="okBtn1">다음</div>
+                                    </div>
+                                </div>
+                                <!-- 여기까지 모달창 -->
+                                <!--  모달창 입니다  -->
+                                <div class="modal1_2 popup" id="modal1">
+                                    <div class="title">체크 포인트</div>
+                                    <div class="content">
+                                        <p class="fc_msg text1">
+                                            제목의 근거로 사용될 출처나 자료가 본문에 기재되어 있는지 확인합니다.
+                                        </p>
+                                    </div>
+                                    <div class="cmd">
+                                        <div class="btn btn-next btn_nxt_pg okBtn1" raised="true" id="okBtn1">확인</div>
+                                    </div>
+                                </div>
+                                <!-- 여기까지 모달창 -->
+
+                            </div>
+                            <div class="FactCheck2_wrap">
+
+
+
+                                <!--  모달창 입니다  -->
+                                <div class="modal2_1 popup" id="modal1">
+                                    <div class="title">체크 포인트</div>
+                                    <div class="content">
+                                        <p class="fc_msg text1">
+                                            입력/작성일이 너무 오래된 날짜가 아닌지 확인해 주세요. 너무 오래된 정보는 정확하지 않을 수 있습니다.
+                                        </p>
+                                    </div>
+                                    <div class="cmd">
+                                        <div class="btn btn-next okBtn2" raised="true" id="okBtn1">확인</div>
+                                    </div>
+                                </div>
+                                <!-- 여기까지 모달창 -->
+
+                                <!--  모달창 입니다  -->
+                                <!-- <div class="modal2_2 popup" id="modal1">
+                                    <div class="title">체크 포인트</div>
+                                    <div class="content">
+                                        <p class="fc_msg text1">
+                                            기준과 출처가 표기되지 않은 연구는 뒷받침되는 근거로 사용할 수 없습니다.
+                                        </p>
+                                    </div>
+                                    <div class="cmd">
+                                        <div class="btn btn-next okBtn2" raised="true" id="okBtn1">다음</div>
+                                    </div>
+                                </div> -->
+                                <!-- 여기까지 모달창 -->
+                            </div>
+                            <div class="FactCheck3_wrap">
+
+                                <!--  모달창 입니다  -->
+                                <div class="modal3_1 popup" id="modal1">
+                                    <div class="title">체크 포인트</div>
+                                    <div class="content">
+                                        <p class="fc_msg text1">
+                                            해당 기사는 정확한 연구 결과를 인용하여 작성되지 않았습니다. 연구의 출처 및 기준이 명확하게 나타나 있지 않습니다.
+                                        </p>
+                                    </div>
+                                    <div class="cmd">
+                                        <div class="btn btn-next nxtBtn3" raised="true" id="okBtn3">다음</div>
+                                    </div>
+                                </div>
+                                <!-- 여기까지 모달창 -->
+                                <!--  모달창 입니다  -->
+                                <div class="modal3_2 popup" id="modal1">
+                                    <div class="title">체크 포인트</div>
+                                    <div class="content">
+                                        <p class="fc_msg text1">
+                                            연구의 출처와 세부 내용이 표기되지 않은 연구는 뒷받침되는 근거로 사용할 수 없습니다.
+                                        </p>
+                                    </div>
+                                    <div class="cmd">
+                                        <div class="btn btn-next okBtn3" raised="true" id="okBtn3">다음</div>
+                                    </div>
+                                </div>
+                                <!-- 여기까지 모달창 -->
+
+                            </div>
+                            <div class="FactCheck4_wrap">
+                                <!--  모달창 입니다  -->
+                                <div class="modal4_1 popup" id="modal1">
+                                    <div class="title">체크 포인트</div>
+                                    <div class="content">
+                                        <p class="fc_msg text1">
+                                            해당 연구자와 연구 결과에 대해 실제 게시 된 자료를 근거로 작성되었는지 확인이 필요합니다.
+                                        </p>
+                                    </div>
+                                    <div class="cmd">
+                                        <div class="btn btn-next nxtBtn4" raised="true" id="okBtn1" onclick="next_4()">
+                                            다음</div>
+                                    </div>
+                                </div>
+                                <!-- 여기까지 모달창 -->
+                                <!--  모달창 입니다  -->
+                                <div class="modal4_2 popup" id="modal1">
+                                    <div class="title">체크 포인트</div>
+                                    <div class="content">
+                                        <p class="fc_msg text1">
+                                            뉴스의 경우, 인용 밎 출처 표기된 정보를 기반으로 작성했는지 확인합니다.
+                                        </p>
+                                    </div>
+                                    <div class="cmd">
+                                        <div class="btn btn-next okBtn4" raised="true" id="okBtn1" onclick="ok_4()">확인
+                                        </div>
+                                    </div>
+                                </div>
+                                <!-- 여기까지 모달창 -->
+
+
+                            </div>
+                            <div class="FactCheck5_wrap">
+
+
+                                <!--  모달창 입니다  -->
+                                <div class="modal5_1 popup" id="modal1">
+                                    <div class="title">체크 포인트</div>
+                                    <div class="content">
+                                        <p class="fc_msg text1">
+                                            해당 게시글은 과학적으로 검증되지 않은 내용을 정보인 것처럼 작성한 것입니다. 기사 내용을 그대로 받아들이지 않고, 복수의 자료를 찾아보고 검토해야 합니다.
+                                        </p>
+                                    </div>
+                                    <div class="cmd">
+                                        <div class="btn btn-next nxtBtn5" raised="true" id="okBtn1" onclick="next_5()">
+                                            다음</div>
+                                    </div>
+                                </div>
+                                <!-- 여기까지 모달창 -->
+                                <!--  모달창 입니다  -->
+                                <div class="modal5_2 popup" id="modal1">
+                                    <div class="title">체크 포인트</div>
+                                    <div class="content">
+                                        <p class="fc_msg text1">
+                                            정확한 정보를 얻기 위해서는 여러 기관의 자료를 찾아보고 확인하는 습관이 필요합니다. 
+                                        </p>
+                                    </div>
+                                    <div class="cmd">
+                                        <div class="btn btn-next okBtn5" raised="true" id="okBtn1" onclick="ok_5()">확인
+                                        </div>
+                                    </div>
+                                </div>
+                                <!-- 여기까지 모달창 -->
+                            </div>
+                            <div class="FactCheck6_wrap">
+                                <!--  모달창 입니다  -->
+                                <div class="modal6_1 popup" id="modal1">
+                                    <div class="title">체크 포인트</div>
+                                    <div class="content">
+                                        <p class="fc_msg text1">
+                                            기자의 정보와 이메일 주소가 정확하지 않은 기사는 단순 보도 자료 및 기사형 광고 송출일 수 있습니다. 
+                                        </p>
+                                    </div>
+                                    <div class="cmd">
+                                        <div class="btn btn-next nxtBtn6" raised="true" id="okBtn1" onclick="next_6()">
+                                            다음</div>
+                                    </div>
+                                </div>
+                                <!-- 여기까지 모달창 -->
+                                <!--  모달창 입니다  -->
+                                <div class="modal6_2 popup" id="modal1">
+                                    <div class="title">체크 포인트</div>
+                                    <div class="content">
+                                        <p class="fc_msg text1">
+                                            기자 페이지 또는 다른 기사 보기를 이용하여 기사 작성자의 다른 기사를 살펴보고 객관적인 기사를 작성하는지 확인해 보세요.
+                                        </p>
+                                    </div>
+                                    <div class="cmd">
+                                        <div class="btn btn-next okBtn6" raised="true" id="okBtn1" onclick="ok_6()">확인
+                                        </div>
+                                    </div>
+                                </div>
+                                <!-- 여기까지 모달창 -->
+                            </div>
+
+                            <div class="FactCheck7_wrap">
+                                <!--  모달창 입니다  -->
+                                <div class="modal7_1 popup" id="modal1">
+                                    <div class="title">체크 포인트</div>
+                                    <div class="content">
+                                        <p class="fc_msg text1">
+                                            좋아요 또는 공감 수가 많아도 정확하고 신뢰할 만한 정보가 아닐 수 있습니다. 게시물의 반응을 과하게 중요시 여기지 않도록 주의하세요.
+                                        </p>
+                                    </div>
+                                    <div class="cmd">
+                                        <div class="btn btn-next nxtBtn7" raised="true" id="okBtn1" onclick="next_7()">
+                                            다음</div>
+                                    </div>
+                                </div>
+                                <!-- 여기까지 모달창 -->
+                                <!--  모달창 입니다  -->
+                                <div class="modal7_2 popup" id="modal1">
+                                    <div class="title">체크 포인트</div>
+                                    <div class="content">
+                                        <p class="fc_msg text1">
+                                            사람들이 많이 공감하거나 좋아하는 정보가 있더라도, 정보의 정확성을 꼭 확인하고 검증해야 합니다.
+                                        </p>
+                                    </div>
+                                    <div class="cmd">
+                                        <div class="btn btn-next okBtn7" raised="true" id="okBtn1" onclick="ok_7()">확인
+                                        </div>
+                                    </div>
+                                </div>
+                                <!-- 여기까지 모달창 -->
+                            </div>
+
+                            <div class="my_wrap ">
+                                <div class=" paste_modal blog_modal" id="paste_modal" onclick="entry_4()">
+                                    <div class="text_wrap cursor_pos_4_1">
+                                        <div class="paste_title paste_title">
+                                            <div class="title share ">
+                                                공유하기
+                                            </div>
+                                        </div>
+                                        <div class="paste_wrap _1">
+                                            <div class="paste-icon_wrap wrap1">
+                                                <div class="paste-icon icon1">
+                                                    <svg class="icon_img white" xmlns="http://www.w3.org/2000/svg"
+                                                        width="16" height="16" fill="currentColor"
+                                                        class="bi bi-chat-dots-fill" viewBox="0 0 16 16">
+                                                        <path
+                                                            d="M16 8c0 3.866-3.582 7-8 7a9.06 9.06 0 0 1-2.347-.306c-.584.296-1.925.864-4.181 1.234-.2.032-.352-.176-.273-.362.354-.836.674-1.95.77-2.966C.744 11.37 0 9.76 0 8c0-3.866 3.582-7 8-7s8 3.134 8 7zM5 8a1 1 0 1 0-2 0 1 1 0 0 0 2 0zm4 0a1 1 0 1 0-2 0 1 1 0 0 0 2 0zm3 1a1 1 0 1 0 0-2 1 1 0 0 0 0 2z" />
+                                                    </svg>
+                                                    메신저
+                                                </div>
+                                                <div class="paste-icon icon2">
+                                                    <svg class="icon_img white" xmlns="http://www.w3.org/2000/svg"
+                                                        width="16" height="16" fill="currentColor"
+                                                        class="bi bi-envelope-fill" viewBox="0 0 16 16">
+                                                        <path
+                                                            d="M.05 3.555A2 2 0 0 1 2 2h12a2 2 0 0 1 1.95 1.555L8 8.414.05 3.555ZM0 4.697v7.104l5.803-3.558L0 4.697ZM6.761 8.83l-6.57 4.027A2 2 0 0 0 2 14h12a2 2 0 0 0 1.808-1.144l-6.57-4.027L8 9.586l-1.239-.757Zm3.436-.586L16 11.801V4.697l-5.803 3.546Z" />
+                                                    </svg>
+                                                    메시지
+                                                </div>
+                                            </div>
+                                            <div class="paste-icon_wrap wrap2">
+                                                <div class="paste-icon icon3" style="color: #fff;">
+                                                    <svg class="icon_img" xmlns="http://www.w3.org/2000/svg" width="16"
+                                                        height="16" fill="currentColor" class="bi bi-file-earmark-post"
+                                                        viewBox="0 0 16 16">
+                                                        <path
+                                                            d="M14 4.5V14a2 2 0 0 1-2 2H4a2 2 0 0 1-2-2V2a2 2 0 0 1 2-2h5.5L14 4.5zm-3 0A1.5 1.5 0 0 1 9.5 3V1H4a1 1 0 0 0-1 1v12a1 1 0 0 0 1 1h8a1 1 0 0 0 1-1V4.5h-2z" />
+                                                        <path
+                                                            d="M4 6.5a.5.5 0 0 1 .5-.5h7a.5.5 0 0 1 .5.5v7a.5.5 0 0 1-.5.5h-7a.5.5 0 0 1-.5-.5v-7zm0-3a.5.5 0 0 1 .5-.5H7a.5.5 0 0 1 0 1H4.5a.5.5 0 0 1-.5-.5z" />
+                                                    </svg>
+                                                    카페
+                                                </div>
+                                                <div class="paste-icon icon4">
+                                                    <svg class="icon_img white" xmlns="http://www.w3.org/2000/svg"
+                                                        width="16" height="16" fill="currentColor"
+                                                        class="bi bi-blockquote-left" viewBox="0 0 16 16">
+                                                        <path
+                                                            d="M2.5 3a.5.5 0 0 0 0 1h11a.5.5 0 0 0 0-1h-11zm5 3a.5.5 0 0 0 0 1h6a.5.5 0 0 0 0-1h-6zm0 3a.5.5 0 0 0 0 1h6a.5.5 0 0 0 0-1h-6zm-5 3a.5.5 0 0 0 0 1h11a.5.5 0 0 0 0-1h-11zm.79-5.373c.112-.078.26-.17.444-.275L3.524 6c-.122.074-.272.17-.452.287-.18.117-.35.26-.51.428a2.425 2.425 0 0 0-.398.562c-.11.207-.164.438-.164.692 0 .36.072.65.217.873.144.219.385.328.72.328.215 0 .383-.07.504-.211a.697.697 0 0 0 .188-.463c0-.23-.07-.404-.211-.521-.137-.121-.326-.182-.568-.182h-.282c.024-.203.065-.37.123-.498a1.38 1.38 0 0 1 .252-.37 1.94 1.94 0 0 1 .346-.298zm2.167 0c.113-.078.262-.17.445-.275L5.692 6c-.122.074-.272.17-.452.287-.18.117-.35.26-.51.428a2.425 2.425 0 0 0-.398.562c-.11.207-.164.438-.164.692 0 .36.072.65.217.873.144.219.385.328.72.328.215 0 .383-.07.504-.211a.697.697 0 0 0 .188-.463c0-.23-.07-.404-.211-.521-.137-.121-.326-.182-.568-.182h-.282a1.75 1.75 0 0 1 .118-.492c.058-.13.144-.254.257-.375a1.94 1.94 0 0 1 .346-.3z" />
+                                                    </svg>
+                                                    블로그
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="guide_wrap " id="guide_wrap_4_1" onclick="entry_4()">
+                                            <!-- 커서 가이드 -->
+                                            <div class="cursor_wrap cursor_wrap_4_1">
+                                                <span class="cursor" x-placement="bottom">
+                                                    <button class="digital-e__beacon" type="button">
+                                                        <span class="cursor_outer"></span>
+                                                        <span class="cursor_inner"><span>
+                                                    </button>
+                                                </span>
+                                            </div>
+                                            <!-- 커서 가이드 -->
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <!--  모달창 입니다 : 복사하기 -->
+                            <div class="my_wrap2">
+
+                                <div class=" paste_modal" id="paste_modal" onclick="entry()">
+                                    <div class="text_wrap">
+                                        <div class="paste_title paste_title1">
+                                            <div class="title copy" id="cafe_title">
+                                                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16"
+                                                    fill="currentColor" class="icon_img bar bi bi-link-45deg"
+                                                    viewBox="0 0 16 16">
+                                                    <path
+                                                        d="M4.715 6.542 3.343 7.914a3 3 0 1 0 4.243 4.243l1.828-1.829A3 3 0 0 0 8.586 5.5L8 6.086a1.002 1.002 0 0 0-.154.199 2 2 0 0 1 .861 3.337L6.88 11.45a2 2 0 1 1-2.83-2.83l.793-.792a4.018 4.018 0 0 1-.128-1.287z" />
+                                                    <path
+                                                        d="M6.586 4.672A3 3 0 0 0 7.414 9.5l.775-.776a2 2 0 0 1-.896-3.346L9.12 3.55a2 2 0 1 1 2.83 2.83l-.793.792c.112.42.155.855.128 1.287l1.372-1.372a3 3 0 1 0-4.243-4.243L6.586 4.672z" />
+                                                </svg>
+                                                링크복사
+                                            </div>
+                                        </div>
+                                        <div class="paste_title paste_title2 cursor_pos_2">
+                                            <div class="title send" id="cafe_title">
+                                                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16"
+                                                    fill="currentColor" class="icon_img bar bi bi-box-arrow-up-right"
+                                                    viewBox="0 0 16 16">
+                                                    <path fill-rule="evenodd"
+                                                        d="M8.636 3.5a.5.5 0 0 0-.5-.5H1.5A1.5 1.5 0 0 0 0 4.5v10A1.5 1.5 0 0 0 1.5 16h10a1.5 1.5 0 0 0 1.5-1.5V7.864a.5.5 0 0 0-1 0V14.5a.5.5 0 0 1-.5.5h-10a.5.5 0 0 1-.5-.5v-10a.5.5 0 0 1 .5-.5h6.636a.5.5 0 0 0 .5-.5z" />
+                                                    <path fill-rule="evenodd"
+                                                        d="M16 .5a.5.5 0 0 0-.5-.5h-5a.5.5 0 0 0 0 1h3.793L6.146 9.146a.5.5 0 1 0 .708.708L15 1.707V5.5a.5.5 0 0 0 1 0v-5z" />
+                                                </svg>
+                                                전달하기
+                                            </div>
+                                        </div>
+
+                                        <div class="paste_title paste_title3">
+                                            <div class="title share" id="cafe_title">
+                                                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16"
+                                                    fill="currentColor" class="icon_img bar bi bi-share"
+                                                    viewBox="0 0 16 16">
+                                                    <path
+                                                        d="M13.5 1a1.5 1.5 0 1 0 0 3 1.5 1.5 0 0 0 0-3zM11 2.5a2.5 2.5 0 1 1 .603 1.628l-6.718 3.12a2.499 2.499 0 0 1 0 1.504l6.718 3.12a2.5 2.5 0 1 1-.488.876l-6.718-3.12a2.5 2.5 0 1 1 0-3.256l6.718-3.12A2.5 2.5 0 0 1 11 2.5zm-8.5 4a1.5 1.5 0 1 0 0 3 1.5 1.5 0 0 0 0-3zm11 5.5a1.5 1.5 0 1 0 0 3 1.5 1.5 0 0 0 0-3z" />
+                                                </svg>
+                                                공유하기
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="guide_wrap" , id="guide_wrap2">
+
+                                        <!-- 커서 가이드 -->
+                                        <div class="cursor_wrap">
+                                            <span class="cursor2" x-placement="bottom">
+                                                <button class="digital-e__beacon" type="button">
+                                                    <span class="cursor_outer"></span>
+                                                    <span class="cursor_inner"><span>
+                                                </button>
+                                            </span>
+                                        </div>
+                                        <!-- 커서 가이드 -->
+                                    </div>
+                                </div>
+
+
+
+                            </div>
+
+                            <!-- 여기까지 모달창 -->
+                        </div>
+
+                    </main>
+
+                    <div class="ctrlbar-bg"></div>
+                    <div class="ctrlbar" id="ctrlbar">
+                        <div class="start_btn_wrap">
+                            <button class="btn start_btn btn-lg" id="start-btn">시작하기</button>
+                        </div>
+                        <div class="nav_btn_wrap">
+                            <div class="baricon_wrap prev" id="prev_btn">
+                                <div class="baricon">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+                                        class="bi bi-caret-left-fill svg" viewBox="0 0 16 16">
+                                        <path
+                                            d="m3.86 8.753 5.482 4.796c.646.566 1.658.106 1.658-.753V3.204a1 1 0 0 0-1.659-.753l-5.48 4.796a1 1 0 0 0 0 1.506z" />
+                                    </svg>
+                                </div>
+                                <div class="bartext">이전</div>
+                            </div>
+                            <div class="baricon_wrap pause">
+
+                                <div class="stop" id="pause_btn">
+                                    <div class="baricon">
+                                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16"
+                                            fill="currentColor" class="bi bi-volume-mute-fill svg" viewBox="0 0 16 16">
+                                            <path
+                                                d="M6.717 3.55A.5.5 0 0 1 7 4v8a.5.5 0 0 1-.812.39L3.825 10.5H1.5A.5.5 0 0 1 1 10V6a.5.5 0 0 1 .5-.5h2.325l2.363-1.89a.5.5 0 0 1 .529-.06zm7.137 2.096a.5.5 0 0 1 0 .708L12.207 8l1.647 1.646a.5.5 0 0 1-.708.708L11.5 8.707l-1.646 1.647a.5.5 0 0 1-.708-.708L10.793 8 9.146 6.354a.5.5 0 1 1 .708-.708L11.5 7.293l1.646-1.647a.5.5 0 0 1 .708 0z" />
+                                        </svg>
+                                    </div>
+                                    <div class="bartext text-center">멈춤</div>
+                                </div>
+
+                                <div class="play" id="play_btn">
+                                    <div class="baricon">
+                                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16"
+                                            fill="currentColor" class="bi bi-volume-up-fill svg" viewBox="0 0 16 16">
+                                            <path
+                                                d="M11.536 14.01A8.473 8.473 0 0 0 14.026 8a8.473 8.473 0 0 0-2.49-6.01l-.708.707A7.476 7.476 0 0 1 13.025 8c0 2.071-.84 3.946-2.197 5.303l.708.707z" />
+                                            <path
+                                                d="M10.121 12.596A6.48 6.48 0 0 0 12.025 8a6.48 6.48 0 0 0-1.904-4.596l-.707.707A5.483 5.483 0 0 1 11.025 8a5.483 5.483 0 0 1-1.61 3.89l.706.706z" />
+                                            <path
+                                                d="M8.707 11.182A4.486 4.486 0 0 0 10.025 8a4.486 4.486 0 0 0-1.318-3.182L8 5.525A3.489 3.489 0 0 1 9.025 8 3.49 3.49 0 0 1 8 10.475l.707.707zM6.717 3.55A.5.5 0 0 1 7 4v8a.5.5 0 0 1-.812.39L3.825 10.5H1.5A.5.5 0 0 1 1 10V6a.5.5 0 0 1 .5-.5h2.325l2.363-1.89a.5.5 0 0 1 .529-.06z" />
+                                        </svg>
+                                    </div>
+                                    <div class="bartext text-center">재생</div>
+                                </div>
+
+                            </div>
+                            <div class="baricon_wrap" id="character">
+                                <!-- <div class="baricon">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+                                    class="bi bi-lightbulb-fill svg hint" viewBox="0 0 16 16">
+                                    <path
+                                        d="M2 6a6 6 0 1 1 10.174 4.31c-.203.196-.359.4-.453.619l-.762 1.769A.5.5 0 0 1 10.5 13h-5a.5.5 0 0 1-.46-.302l-.761-1.77a1.964 1.964 0 0 0-.453-.618A5.984 5.984 0 0 1 2 6zm3 8.5a.5.5 0 0 1 .5-.5h5a.5.5 0 0 1 0 1l-.224.447a1 1 0 0 1-.894.553H6.618a1 1 0 0 1-.894-.553L5.5 15a.5.5 0 0 1-.5-.5z" />
+                                </svg>
+                                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+                                    class="bi bi-question svg front" viewBox="0 0 16 16">
+                                    <path
+                                        d="M5.255 5.786a.237.237 0 0 0 .241.247h.825c.138 0 .248-.113.266-.25.09-.656.54-1.134 1.342-1.134.686 0 1.314.343 1.314 1.168 0 .635-.374.927-.965 1.371-.673.489-1.206 1.06-1.168 1.987l.003.217a.25.25 0 0 0 .25.246h.811a.25.25 0 0 0 .25-.25v-.105c0-.718.273-.927 1.01-1.486.609-.463 1.244-.977 1.244-2.056 0-1.511-1.276-2.241-2.673-2.241-1.267 0-2.655.59-2.75 2.286zm1.557 5.763c0 .533.425.927 1.01.927.609 0 1.028-.394 1.028-.927 0-.552-.42-.94-1.029-.94-.584 0-1.009.388-1.009.94z" />
+                                </svg>
+                               
+                            </div>
+                            <div class="bartext"></div> -->
+                                <img src="../common/images/character1.png" class="character" width="100%">
+                            </div>
+                            <div class="baricon_wrap" id="size_btn">
+                                <div id="tSlider" class="baricon" data-bs-toggle="popover">
+                                    <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"
+                                        width="44" zoomAndPan="magnify" viewBox="0 0 375 374.999991" height="44"
+                                        preserveAspectRatio="xMidYMid meet" version="1.0">
+                                        <defs>
+                                            <g />
+                                        </defs>
+                                        <g fill="#000000" fill-opacity="1">
+                                            <g transform="translate(-55.71148, 314.999979)">
+                                                <g>
+                                                    <path
+                                                        d="M 97.234375 -205.578125 C 89.242188 -205.578125 85.25 -211.9375 85.25 -224.65625 C 85.25 -237.09375 89.539062 -243.3125 98.125 -243.3125 L 257.96875 -243.3125 C 269.507812 -243.3125 275.28125 -236.648438 275.28125 -223.328125 L 275.28125 -112.78125 C 275.28125 -83.46875 263.882812 -68.8125 241.09375 -68.8125 L 227.328125 -68.8125 L 227.328125 -205.578125 Z M 97.234375 -205.578125 " />
+                                                </g>
+                                            </g>
+                                        </g>
+                                        <g fill="#000000" fill-opacity="1">
+                                            <g transform="translate(187.499992, 317.537478)">
+                                                <g>
+                                                    <path
+                                                        d="M 51.25 -108.34375 C 47.03125 -108.34375 44.921875 -111.695312 44.921875 -118.40625 C 44.921875 -124.957031 47.1875 -128.234375 51.71875 -128.234375 L 135.953125 -128.234375 C 142.035156 -128.234375 145.078125 -124.722656 145.078125 -117.703125 L 145.078125 -59.4375 C 145.078125 -43.988281 139.070312 -36.265625 127.0625 -36.265625 L 119.8125 -36.265625 L 119.8125 -108.34375 Z M 51.25 -108.34375 " />
+                                                </g>
+                                            </g>
+                                        </g>
+                                    </svg>
+                                </div>
+                                <div class="bartext">크기</div>
+                            </div>
+                            <div class="baricon_wrap next" id="next_btn">
+                                <div class="baricon">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+                                        class="bi bi-caret-right-fill svg" viewBox="0 0 16 16">
+                                        <path
+                                            d="m12.14 8.753-5.482 4.796c-.646.566-1.658.106-1.658-.753V3.204a1 1 0 0 1 1.659-.753l5.48 4.796a1 1 0 0 1 0 1.506z" />
+                                    </svg>
+                                </div>
+                                <div class="bartext">다음</div>
+                            </div>
+                        </div>
+                        <!-- popover : slider --------------- -->
+                        <div hidden>
+                            <div data-name="popover-content" class="d-flex justify-content-center align-items-center">
+
+                                <!-- /////////////// -->
+                                <div class="txt_ex1 fw-bold">가</div>
+                                <!-- <input type="range" name="slider" id="slider" value="0" min="0" max="2"  /> -->
+                                <input type="range" min="0" max="2" value="0" class="slider" id="tSliderRange">
+                                <!-- <p>Value: <span id="value"></span></p> -->
+                                <div class="txt_ex2 fs-3 fw-bold">가</div>
+                                <!-- /////////////// -->
+
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+
+
+
+
+
+
+            </div>
+        </div>
+    </div>
+    <script src="pg_info.js"> </script>
+    
+    <script src="pg_handler_dc3.js"> </script>
+    <!-- <script type="text/javascript" src="bootstrap-slider.js"></script> -->
+</body>
+
+</html>

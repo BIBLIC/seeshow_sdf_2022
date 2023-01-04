@@ -1,0 +1,30 @@
+.top svg {
+    width: 2em;
+    height: 2em;
+    color: white;
+}
+
+.font-red {
+    color: #E83A1A;
+}
+
+/* .icon_img.white{
+    background : white;
+} */
+
+.info div {
+    color: #bdbdbd;
+}
+
+.icon3 svg
+ {
+    color : white;
+    width: clamp(24px, 15px + 2.3vw, 2.3em);
+    height: clamp(24px, 15px + 2.3vw, 2.3em);
+    padding-bottom: 5px;
+}
+
+#main {
+    /* height: 70vh !important; */
+}
+
