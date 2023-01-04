@@ -362,7 +362,8 @@ ul {
   min-width: 375px;
   max-width: 480px;
   width: 100%;
-  height: 100%;
+  height: 100vh; /* Fallback for browsers that do not support Custom Properties */
+  height: calc(var(--vh, 1vh) * 100);
   background: #eee;
 }
 
@@ -371,7 +372,8 @@ ul {
   box-sizing: content-box;
   flex-basis: var(--screen-width);
   width: 100vw;
-  height: 100vh;
+  height: 100vh; /* Fallback for browsers that do not support Custom Properties */
+  height: calc(var(--vh, 1vh) * 100);  
   position: relative;
   background: #fff;
 }
