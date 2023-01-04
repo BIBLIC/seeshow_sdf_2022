@@ -260,11 +260,11 @@ createPopper(cursor_pos_7, cursor_wrap_7, {
 //     ],
 // });
 
-$(document).on("click", '.pg_11_answer', function () {
-    if (page_num === 12) {
+$(document).on("click", '.pg_10_answer', function () {
+    if (page_num === 11) {
         $( document ).ready(function() {
             setTimeout(function () {
-                if (page_num === 12) {
+                if (page_num === 11) {
                     next();
                 }
             }, 10500);
@@ -272,10 +272,10 @@ $(document).on("click", '.pg_11_answer', function () {
     }
 });
 $(document).on("click", "#next_btn", function () {
-    if (page_num === 11) {
+    if (page_num === 10) {
         $( document ).ready(function() {
             setTimeout(function () {
-                if (page_num === 12) {
+                if (page_num === 11) {
                     next();
                 }
             }, 10500);
@@ -283,10 +283,10 @@ $(document).on("click", "#next_btn", function () {
     }
 });
 $(document).on("click", "#prev_btn", function () {
-    if (page_num === 13) {
+    if (page_num === 12) {
         $( document ).ready(function() {
             setTimeout(function () {
-                if (page_num === 12) {
+                if (page_num === 11) {
                     next();
                 }
             }, 10500);
