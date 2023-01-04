@@ -1,7 +1,11 @@
 .top svg {
-    width: 1.5em;
-    height: 1.5em;
+    width: 2em;
+    height: 2em;
     color: white;
+}
+
+.font-red {
+    color: #E83A1A;
 }
 
 /* .icon_img.white{
