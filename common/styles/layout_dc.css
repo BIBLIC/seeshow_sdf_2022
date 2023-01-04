@@ -295,8 +295,6 @@ a[x-apple-data-detectors] {
 
 /* ----------------------------- 0915 추가 끝 -------------------------------*/
 .bg_phone{
-  width: 100vw;
-  height: 100vh; /* Fallback for browsers that do not support Custom Properties */
   background: #eee;
 }
 
@@ -371,8 +369,8 @@ ul {
   box-sizing: content-box;
   flex-basis: var(--screen-width);
   width: 100vw;
-  width: 100vw;
   height: 100vh; /* Fallback for browsers that do not support Custom Properties */
+  height: calc(var(--vh, 1vh) * 100);
   position: relative;
   background: #fff;
 }
