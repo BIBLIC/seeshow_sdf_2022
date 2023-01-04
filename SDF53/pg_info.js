@@ -1,4 +1,4 @@
-var total_page = 7;//페이지 수 -> 시나리오마다 total_page 수 바꾸기 
+var total_page = 8;//페이지 수 -> 시나리오마다 total_page 수 바꾸기 
 
 //오디오 배열 선언, 페이지 수 대로 배열에 mp3 넣기
 const audioArray = [];
@@ -45,7 +45,10 @@ const pageClickArea = [
         page: 7,
         correctAnswer: "pg_7_answer"
     },
-    
+    {
+        page: 8,
+        correctAnswer: "pg_8_answer"
+    },
 ];
 
 // ----------------------------------------------------------------------------------------------------------------------- 
@@ -72,10 +75,14 @@ const modal5_1 = document.querySelector('.modal5_1');
 const modal5_2 = document.querySelector('.modal5_2');
 const modal6_1 = document.querySelector('.modal6_1');
 const modal6_2 = document.querySelector('.modal6_2');
+const modal7_1 = document.querySelector('.modal7_1');
+const modal7_2 = document.querySelector('.modal7_2');
 
+
+modal1.style.display = "none";
 modal1_2.style.display = "none";
 modal2_1.style.display = "none";
-modal2_2.style.display = "none";
+// modal2_2.style.display = "none";
 modal3_1.style.display = "none";
 modal3_2.style.display = "none";
 modal4_1.style.display = "none";
@@ -86,7 +93,8 @@ my_wrap.style.display = "none";
 my_wrap2.style.display = "none";
 modal6_1.style.display = "none";
 modal6_2.style.display = "none";
-modal1.style.display = "none";
+modal7_1.style.display = "none";
+modal7_2.style.display = "none";
 
 
 const cursor_pos_1 = document.querySelector('.cursor_pos_1');
@@ -103,6 +111,8 @@ const cursor_pos_5 = document.querySelector('.cursor_pos_5');
 const cursor_wrap_5 = document.querySelector('.cursor_wrap_5');
 const cursor_pos_6 = document.querySelector('.cursor_pos_6');
 const cursor_wrap_6 = document.querySelector('.cursor_wrap_6');
+const cursor_pos_7 = document.querySelector('.cursor_pos_7');
+const cursor_wrap_7 = document.querySelector('.cursor_wrap_7');
 
 cursor_wrap_1.style.zIndex = "40";
 cursor_wrap_2.style.zIndex = "40";
@@ -110,6 +120,7 @@ cursor_wrap_3.style.zIndex = "40";
 cursor_wrap_4.style.zIndex = "40";
 cursor_wrap_5.style.zIndex = "40";
 cursor_wrap_6.style.zIndex = "40";
+cursor_wrap_7.style.zIndex = "40";
 
 
 const { createPopper } = Popper;
@@ -119,7 +130,7 @@ createPopper(cursor_pos_1, cursor_wrap_1, {
         {
             name: 'offset',
             options: {
-                offset: [0,0],
+                offset: [100,-30],
             },
         },
     ],
@@ -130,7 +141,7 @@ createPopper(cursor_pos_2, cursor_wrap_2, {
         {
             name: 'offset',
             options: {
-                offset: [0,0],
+                offset: [60,-10],
             },
         },
     ],
@@ -141,7 +152,7 @@ createPopper(cursor_pos_3, cursor_wrap_3, {
         {
             name: 'offset',
             options: {
-                offset: [0,0],
+                offset: [130,-80],
             },
         },
     ],
@@ -152,7 +163,7 @@ createPopper(cursor_pos_4, cursor_wrap_4, {
         {
             name: 'offset',
             options: {
-                offset: [0,0],
+                offset: [150,-210],
             },
         },
     ],
@@ -164,7 +175,7 @@ createPopper(cursor_pos_5, cursor_wrap_5, {
         {
             name: 'offset',
             options: {
-                offset: [0,0],
+                offset: [150,-80],
             },
         },
     ],
@@ -175,7 +186,18 @@ createPopper(cursor_pos_6, cursor_wrap_6, {
         {
             name: 'offset',
             options: {
-                offset: [0,0],
+                offset: [40,-30],
+            },
+        },
+    ],
+});
+createPopper(cursor_pos_7, cursor_wrap_7, {
+    placement: 'top',
+    modifiers: [
+        {
+            name: 'offset',
+            options: {
+                offset: [130,-90],
             },
         },
     ],
