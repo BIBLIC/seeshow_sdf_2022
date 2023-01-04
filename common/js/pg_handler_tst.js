@@ -337,7 +337,7 @@ function next(real_pg) {
     
     if (page_num==total_page){
         setTimeout(function () {
-            startConfetti();
+            runConfetti();
         }, 500);
     }
 }

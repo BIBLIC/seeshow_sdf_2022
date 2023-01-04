@@ -31,6 +31,15 @@ window.addEventListener("resize", () => {
     document.documentElement.style.setProperty("--vh", `${vh}px`);
 });
 
+function runConfetti () {
+    confetti({
+        particleCount: 100,
+        spread: 30
+        // any other options from the global
+        // confetti function
+      });
+}
+
 // ios 또는 android Chrome 일 때 스크롤 맨 밑으로 스크롤 해서 어쩌구 보류 
 // function Mobile() {return /Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent);}
 // if (Mobile()){// 모바일일 경우
@@ -131,10 +140,9 @@ $(document).on("click", "#next_btn", function () {
 
     if (page_num==total_page){
         setTimeout(function () {
-            startConfetti();
-        }, 500);
+            runConfetti();
+        }, 200);
     }
-
     console.log(page_num);
     audioArray[page_num - 1].load();
     audioArray[page_num - 1].play();
@@ -470,7 +478,7 @@ if (page_num == 6) {
 }
 if (page_num==total_page){
     setTimeout(function () {
-        startConfetti();
+        runConfetti();
     }, 500);
 }
 }

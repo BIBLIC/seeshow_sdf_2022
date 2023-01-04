@@ -43,6 +43,14 @@ window.addEventListener("resize", () => {
 
 // }
 
+function runConfetti () {
+    confetti({
+        particleCount: 100,
+        spread: 30
+        // any other options from the global
+        // confetti function
+      });
+}
 
 //*******************************************************************************
 //**************************+   이벤트 동작   +*********************************** 
@@ -144,7 +152,7 @@ $(document).on("click", "#next_btn", function () {
 
     if (page_num==total_page){
         setTimeout(function () {
-            startConfetti();
+            runConfetti();
         }, 500);
     }
 
@@ -519,7 +527,7 @@ function next() {
     }
     if (page_num==total_page){
         setTimeout(function () {
-            startConfetti();
+            runConfetti();
         }, 500);
     }
 }

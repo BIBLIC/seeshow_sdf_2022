@@ -31,17 +31,14 @@ window.addEventListener("resize", () => {
     document.documentElement.style.setProperty("--vh", `${vh}px`);
 });
 
-// ios 또는 android Chrome 일 때 스크롤 맨 밑으로 스크롤 해서 어쩌구 보류 
-// function Mobile() {return /Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent);}
-// if (Mobile()){// 모바일일 경우
-//     window.addEventListener('load', function(){
-//         document.body.style.height = (document.documentElement.clientHeight + 5) + 'px';
-//         window.scrollTo(0, 1);
-//     }, false);
-
-// } else {// 모바일 외
-
-// }
+function runConfetti () {
+    confetti({
+        particleCount: 100,
+        spread: 30
+        // any other options from the global
+        // confetti function
+      });
+}
 
 
 //*******************************************************************************
@@ -131,7 +128,7 @@ $(document).on("click", "#next_btn", function () {
 
     if (page_num==total_page){
         setTimeout(function () {
-            startConfetti();
+            runConfetti();
         }, 500);
     }
 
@@ -401,6 +398,11 @@ function next() {
             let scrollPos = total_height * 0.8;
             $('.cafe_main').scrollTop(scrollPos);
         }
+    }
+    if (page_num==total_page){
+        setTimeout(function () {
+            runConfetti();
+        }, 500);
     }
 }
 
