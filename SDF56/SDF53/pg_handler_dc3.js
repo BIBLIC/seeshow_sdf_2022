@@ -1,6 +1,6 @@
 var page_num = 0; // 수정 XXX -> 맨 처음 페이지 초기화하기 위함
 var user_input_txt = '';
-var total_height = $('.news_main').height();
+var total_height = $('.news-main').height();
 const prevBtn = document.getElementById("prev");
 const nextBtn = document.getElementById("next");
 
