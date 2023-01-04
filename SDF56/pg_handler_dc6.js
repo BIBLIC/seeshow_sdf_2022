@@ -61,26 +61,70 @@ function firstPageLoader() {
 }
 
 
+
+
+
+const cmplt_img_1 = document.querySelector('.cmplt_img_1');
+const cmplt_img_2 = document.querySelector('.cmplt_img_2');
+const cmplt_img_3 = document.querySelector('.cmplt_img_3');
+const cmplt_img_4 = document.querySelector('.cmplt_img_4');
+
+const img_pos_1 = document.querySelector('.img_pos_1');
+const img_pos_2 = document.querySelector('.img_pos_2');
+const img_pos_3 = document.querySelector('.img_pos_3');
+const img_pos_4 = document.querySelector('.img_pos_4');
+
+cmplt_img_1.style.right="4em";
+cmplt_img_2.style.right="4em";
+cmplt_img_3.style.right="4em";
+cmplt_img_4.style.right="4em";
+
+cmplt_img_1.style.display = "none";
+cmplt_img_2.style.display = "none";
+cmplt_img_3.style.display = "none";
+cmplt_img_4.style.display = "none";
+
+cmplt_img_1.style.zIndex = "40";
+cmplt_img_2.style.zIndex = "40";
+cmplt_img_3.style.zIndex = "40";
+cmplt_img_4.style.zIndex = "40";
+
+
+const { createPopper } = Popper;
+// createPopper(img_pos_1, cmplt_img_1, {
+//     placement: 'left',
+//     modifiers: [
+//         {
+//             name: 'offset',
+//             options: {
+//                 offset: [0,-150],
+//             },
+//         },
+//     ],
+// });
+
 //각 유형 진행 체크
 function type_done_check() {
     if (msg_data=="done"){
         $('.msg_btn').css({ "opacity":"0.4"})
+        cmplt_img_1.style.display = "";
     }
     if (news_data=="done"){
         $('.news_btn').css({ "opacity":"0.4"})
+        cmplt_img_2.style.display = "";
     }
     if (blog_data=="done"){
         $('.blog_btn').css({ "opacity":"0.4"})
+        cmplt_img_3.style.display = "";
     }
     if (community_data=="done"){
         $('.community_btn').css({ "opacity":"0.4"})
+        cmplt_img_4.style.display = "";
     }
     if ((blog_data=="done")&&(news_data=="done")&&(blog_data=="done")&&(community_data=="done")){
         
     }
 }
-
-
 
 //*******************************************************************************
 //**************************+    클릭 제어   +*********************************** 

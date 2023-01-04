@@ -1,3 +1,16 @@
+.cmplt_img{
+    position: absolute;
+    width : 5em;
+    height: 5em;
+}
+
+.img_pos_1,
+.img_pos_2,
+.img_pos_3,
+.img_pos_4 {
+    position: relative;
+  }
+
 .type-list .type-icon {
     display: flex;
     justify-content: center;
