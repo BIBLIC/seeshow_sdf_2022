@@ -40,8 +40,8 @@ window.addEventListener("resize", () => {
 
 function runConfetti () {
     confetti({
-        particleCount: 100,
-        spread: 50
+        particleCount: 333,
+        spread: 66
         // any other options from the global
         // confetti function
       });
