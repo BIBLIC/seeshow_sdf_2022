@@ -131,7 +131,7 @@ const modalCont = [
     },
     {
         page: 9,
-        instruction: "주민등록번호 13자리를 숫자만 입력해주세요."
+        instruction: "주민등록번호 13자리를 숫자만 입력해 주세요."
     },
     {
         page: 10,

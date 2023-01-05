@@ -100,7 +100,7 @@ const modalCont = [
     },
     {
         page: 1,
-        instruction: "로딩중입니다."
+        instruction: "로딩 중입니다."
     },
     {
         page: 2,
@@ -120,7 +120,7 @@ const modalCont = [
     },
     {
         page: 6,
-        instruction: "이어서 콘텐츠를 볼 때 자막을 크게하는 방법을 실습하겠습니다. 우측 상단 스마일 모양의 프로필을 눌러주세요."
+        instruction: "이어서 콘텐츠를 볼 때 자막을 크게 하는 방법을 실습하겠습니다. 우측 상단 스마일 모양의 프로필을 눌러주세요."
     },
     {
         page: 7,

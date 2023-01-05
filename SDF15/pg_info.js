@@ -162,7 +162,7 @@ const modalCont = [
     },
     {
         page: 8,
-        instruction: "이름 입력란에 ‘김서울’을 입력해주세요."
+        instruction: "이름 입력란에 ‘김서울’을 입력해 주세요."
     },
     {
         page: 9,
@@ -170,7 +170,7 @@ const modalCont = [
     },
     {
         page: 10,
-        instruction: "주민번호 뒷자리의 제일 첫번째 숫자를 입력해주세요."
+        instruction: "주민번호 뒷자리의 제일 첫 번째 숫자를 입력해 주세요."
     },
     {
         page: 11,

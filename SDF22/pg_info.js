@@ -84,7 +84,7 @@ const modalCont = [
     },
     {
         page: 2,
-        instruction: "스크롤을 내려 ‘세무서류신청-공통분야’를 눌러주세요."
+        instruction: "스크롤을 내려 ‘세무서류 신청-공통분야’를 눌러주세요."
     },
     {
         page: 3,
@@ -96,7 +96,7 @@ const modalCont = [
     },
     {
         page: 5,
-        instruction: "전자송달 신청 이용 안내를 모두 확인하고 화면하단의 ‘위의 내용을 확인함’을 체크해 주세요."
+        instruction: "전자송달 신청 이용 안내를 모두 확인하고 화면 하단의 ‘위의 내용을 확인함’을 체크해 주세요."
     },
     {
         page: 6,
@@ -108,7 +108,7 @@ const modalCont = [
     },
     {
         page: 8,
-        instruction: "확인을 누르면 전자송달신청과 실습이 완료됩니다."
+        instruction: "확인을 누르면 전자송달 신청 실습이 완료됩니다."
     },
     {
         page: 9,

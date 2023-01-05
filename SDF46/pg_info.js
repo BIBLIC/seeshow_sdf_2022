@@ -74,7 +74,7 @@ const modalCont = [
     },
     {
         page: 1,
-        instruction: "로딩중입니다."
+        instruction: "로딩 중입니다."
     },
     {
         page: 2,
@@ -86,7 +86,7 @@ const modalCont = [
     },
     {
         page: 4,
-        instruction: "우측 하단 점 세개 아이콘의 ‘더보기’ 버튼을 눌러주세요."
+        instruction: "우측 하단 점 세 개 아이콘의 ‘더보기’ 버튼을 눌러주세요."
     },
     {
         page: 5,
@@ -98,7 +98,7 @@ const modalCont = [
     },
     {
         page: 7,
-        instruction: "휴면예금 보험금이 조회되었습니다. 총 1개의 계좌를 찾았습니다. 조회 된 계좌를 누르면 실습이 완료됩니다."
+        instruction: "휴면예금 보험금이 조회되었습니다. 총 1개의 계좌를 찾았습니다. 조회된 계좌를 누르면 실습이 완료됩니다."
     },
     {
         page: 8,

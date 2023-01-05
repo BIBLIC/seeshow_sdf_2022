@@ -439,7 +439,7 @@ function createInput(currentX, currentY, currentWidth, currentHeight) {
     inputAnswer.style.top = currentY + "px";
     inputAnswer.style.width = currentWidth + "px";
     inputAnswer.style.height = currentHeight + "px";
-    inputAnswer.placeholder = "여기에 정답을 입력해주세요.";
+    inputAnswer.placeholder = "여기에 정답을 입력해 주세요.";
     practiceClickArea.appendChild(inputAnswer);
 }
 

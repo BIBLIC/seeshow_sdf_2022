@@ -104,7 +104,7 @@ const modalCont = [
     },
     {
         page: 5,
-        instruction: "‘로그인해주세요’를 눌러주세요."
+        instruction: "‘로그인해 주세요’를 눌러주세요."
     },
     {
         page: 6,

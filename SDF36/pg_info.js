@@ -144,7 +144,7 @@ const modalCont = [
     },
     {
         page: 7,
-        instruction: "글 제목 입력란에 ‘자전거 판매’를 입력해주세요."
+        instruction: "글 제목 입력란에 ‘자전거 판매’를 입력해 주세요."
     },
     {
         page: 8,
@@ -152,7 +152,7 @@ const modalCont = [
     },
     {
         page: 9,
-        instruction: "가격 입력란에 ‘100000’을 숫자로만 입력해주세요."
+        instruction: "가격 입력란에 ‘100000’을 숫자로만 입력해 주세요."
     },
     {
         page: 10,
@@ -164,11 +164,11 @@ const modalCont = [
     },
     {
         page: 12,
-        instruction: "입력란에 ‘안국역’을 입력해주세요."
+        instruction: "입력란에 ‘안국역’을 입력해 주세요."
     },
     {
         page: 13,
-        instruction: "오른쪽 상단의 ‘완료’를 눌러 게시글 작성을 완료해주세요. "
+        instruction: "오른쪽 상단의 ‘완료’를 눌러 게시글 작성을 완료해 주세요. "
     },
     {
         page: 14,

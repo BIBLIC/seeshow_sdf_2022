@@ -108,7 +108,7 @@ const modalCont = [
     },
     {
         page: 4,
-        instruction: "개인정보동의 체크박스를 클릭하세요"
+        instruction: "개인정보 동의 체크박스를 클릭하세요"
     },
     {
         page: 5,
