@@ -1,0 +1,482 @@
+                        <!------------------------------ page 7 ------------------------------>
+                        <div class="page" id="p7">
+                            <div class="page_wrap">
+                                <!-- 기존(버튼無) SDF52.html의 pg7 내용 전체 -->
+                                <!-- 
+                                    <h1 class="pg_title" style="color: #fff;">Page7</h1>
+                                    <canvas id="confetti-canvas" class="canvas" width="465" height="1224"></canvas>
+                                    <h1 class="title_h1"><img src="../common/images/done.png" width="100%"></h1>
+                                -->
+
+                                <!-- 수정 후(버튼有) -->
+                                <h1 class="pg_title" style="color: #fff;">Page7</h1>
+                                <canvas id="confetti-canvas" class="canvas"></canvas>
+                                <div class="btn_wrap">
+                                    <div class="w-100 mb-3">
+                                        <div class="btn retry fontSz" onclick="window.location.reload()">
+                                            다시하기
+                                        </div>
+                                    </div>
+                                    <div class="w-100 mt-3">
+                                        <div class="btn pg-type fontSz" onclick="location.href='../SDF56.html'">
+                                            유형선택 바로가기
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="modal_wrap">
+                            <div class="FactCheck1_wrap">
+                                <!--  모달창 입니다  -->
+                                <div class="modal1 popup" id="modal1">
+                                    <div class="title">체크 포인트</div>
+                                    <div class="content">
+                                        <p class="fc_msg text1">
+                                            신용카드 모집인은 연회비의 10%를 초과하는 과도한 경제적 이익을 제공할 수 없습니다.
+                                        </p>
+                                    </div>
+                                    <div class="cmd">
+                                        <button type="button" class="btn btn-next btn_nxt_pg okBtn1" raised="true" id="okBtn1">다음</button>
+                                    </div>
+                                </div>
+                                <!-- 여기까지 모달창 -->
+                                <!--  모달창 입니다  -->
+                                <div class="modal1_2 popup" id="modal1">
+                                    <div class="title">체크 포인트</div>
+                                    <div class="content">
+                                        <p class="fc_msg text1">
+                                            또한 현금을 지급하며 발급을 유도하는 행위는 엄연한 불법 모집입니다.
+                                        </p>
+                                    </div>
+                                    <div class="cmd">
+                                        <button type="button" class="btn btn-next btn_nxt_pg okBtn1_1" raised="true" id="okBtn1">확인</button>
+                                    </div>
+                                </div>
+                                <!-- 여기까지 모달창 -->
+
+                            </div>
+
+                            <div class="FactCheck2_wrap">
+                                <!--  모달창 입니다  -->
+                                <div class="modal2_1 popup" id="modal1">
+                                    <div class="title">체크 포인트</div>
+                                    <div class="content">
+                                        <p class="fc_msg text1">
+                                            신용카드사는 문자 메시지를 통한 비대면 카드 발급을 하지 않습니다.
+                                        </p>
+                                    </div>
+                                    <div class="cmd">
+                                        <button type="button" class="btn btn-next nxtBtn2" raised="true" id="okBtn1">다음</button>
+                                    </div>
+                                </div>
+                                <!-- 여기까지 모달창 -->
+                                <!--  모달창 입니다  -->
+                                <div class="modal2_2 popup" id="modal1">
+                                    <div class="title">체크 포인트</div>
+                                    <div class="content">
+                                        <p class="fc_msg text1">
+                                            개인정보를 문자·이메일 등 온라인으로 제출 및 전송하여 카드를 신청하지 마세요.
+                                        </p>
+                                    </div>
+                                    <div class="cmd">
+                                        <button type="button" class="btn btn-next okBtn2" raised="true" id="okBtn1">확인</button>
+                                    </div>
+                                </div>
+                                <!-- 여기까지 모달창 -->
+                            </div>
+
+
+                            <div class="FactCheck3_wrap">
+                                <!--  모달창 입니다  -->
+                                <div class="modal3_1 popup" id="modal1">
+                                    <div class="title">체크 포인트</div>
+                                    <div class="content">
+                                        <p class="fc_msg text1">
+                                            문자에 첨부된 링크는 피싱이나 안전하지 않은 사이트로 접속될 수 있어 각별한 주의가 필요합니다.
+                                        </p>
+                                    </div>
+                                    <div class="cmd">
+                                        <button type="button" class="btn btn-next nxtBtn3" raised="true" id="okBtn1" onclick="next_3()">다음</button>
+                                    </div>
+                                </div>
+                                <!-- 여기까지 모달창 -->
+                                <!--  20230102 희영님 이거 작동하게 부탁해요 모달창 입니다  -->
+                                <div class="modal3_2 popup" id="modal1">
+                                    <div class="title">체크 포인트</div>
+                                    <div class="content">
+                                        <p class="fc_msg text1">
+                                            혜택을 받기 위해 보유 중인 카드와 연동해야 한다며 카드 실물과 개인 정보를 요구한다면 피싱입니다.
+                                        </p>
+                                    </div>
+                                    <div class="cmd">
+                                        <button type="button" class="btn btn-next okBtn3" raised="true" id="okBtn1" onclick="ok_3()">확인</button>
+                                    </div>
+                                </div>
+                                <!-- 여기까지 모달창 -->
+
+                            </div>
+
+
+                            <div class="FactCheck4_wrap">
+                                <!--  모달창 입니다  -->
+                                <div class="modal4_1 popup" id="modal1">
+                                    <div class="title">체크 포인트</div>
+                                    <div class="content">
+                                        <p class="fc_msg text1">
+                                            신용카드 모집인과 직접 대면하여 카드를 신청하고, 여신금융협회에서 신용카드 모집인 조회를 이용하여 정보를 확인할 수 있습니다. </p>
+                                    </div>
+                                    <div class="cmd">
+                                        <button type="button" class="btn btn-next nxtBtn4" raised="true" id="okBtn1" onclick="next_4()">
+                                            다음</button>
+                                    </div>
+                                </div>
+                                <!-- 여기까지 모달창 -->
+                                <!--  모달창 입니다  -->
+                                <div class="modal4_2 popup" id="modal1">
+                                    <div class="title">체크 포인트</div>
+                                    <div class="content">
+                                        <p class="fc_msg text1">
+                                            ◈여신금융협회◈<br>
+                                            소비자지원센터<br>
+                                        <p class="link">https://customer.crefia.or.kr</p>
+                                        </p>
+                                    </div>
+                                    <div class="cmd">
+                                        <button type="button" class="btn btn-next okBtn4" raised="true" id="okBtn1" onclick="ok_4()">확인</button>
+                                    </div>
+                                </div>
+                                <!-- 여기까지 모달창 -->
+                            </div>
+
+
+                            <div class="FactCheck5_wrap">
+                                <!--  모달창 입니다  -->
+                                <div class="modal5_1 popup" id="modal1">
+                                    <div class="title">체크 포인트</div>
+                                    <div class="content">
+                                        <p class="fc_msg text1">
+                                            미확인 번호로 수신된 문자의 연락처로 회신하지 않도록 주의하세요. 
+                                        </p>
+                                    </div>
+                                    <div class="cmd">
+                                        <button type="button" class="btn btn-next nxtBtn5" raised="true" id="okBtn1" onclick="next_5()">
+                                            다음</button>
+                                    </div>
+                                </div>
+                                <!-- 여기까지 모달창 -->
+                                <!--  모달창 입니다  -->
+                                <div class="modal5_2 popup" id="modal1">
+                                    <div class="title">체크 포인트</div>
+                                    <div class="content">
+                                        <p class="fc_msg text1">
+                                            개인 번호나 메신저로 접근할 경우 번호를 저장하지 않고 연락을 중단하는 것이 좋습니다.
+                                        </p>
+                                    </div>
+                                    <div class="cmd">
+                                        <button type="button" class="btn btn-next okBtn5" raised="true" id="okBtn1" onclick="ok_5()">확인</button>
+                                    </div>
+                                </div>
+                                <!-- 여기까지 모달창 -->
+                            </div>
+
+
+                            <div class="FactCheck6_wrap">
+                                <!--  모달창 입니다  -->
+                                <div class="modal6_1 popup" id="modal1">
+                                    <div class="title">체크 포인트</div>
+                                    <div class="content">
+                                        <p class="fc_msg text1">
+                                            문자의 고객 센터, 무료 수신 거부  등을 빙자한 번호로 전화를 유도한 후 개인정보를 탈취하는 보이스 피싱 사례가 있습니다.
+                                        </p>
+                                    </div>
+                                    <div class="cmd">
+                                        <button type="button" class="btn btn-next nxtBtn6" raised="true" id="okBtn1" onclick="next_6()">
+                                            다음</button>
+                                    </div>
+                                </div>
+                                <!-- 여기까지 모달창 -->
+                                <!--  모달창 입니다  -->
+                                <div class="modal6_2 popup" id="modal1">
+                                    <div class="title">체크 포인트</div>
+                                    <div class="content">
+                                        <p class="fc_msg text1">
+                                            수신 거부는 본인 휴대 전화의 거부/차단 기능을 사용하고, 문의할 사항이 있다면 공공 기관 번호를 직접 검색하여 전화해 보세요.
+                                        </p>
+                                    </div>
+                                    <div class="cmd">
+                                        <button type="button" class="btn btn-next okBtn6" raised="true" id="okBtn1" onclick="ok_6()">확인</button>
+                                    </div>
+                                </div>
+                                <!-- 여기까지 모달창 -->
+                            </div>
+
+                            <div class="my_wrap ">
+                                <div class=" paste_modal blog_modal" id="paste_modal" onclick="entry_4()">
+                                    <div class="text_wrap cursor_pos_4_1">
+                                        <div class="paste_title paste_title">
+                                            <div class="title share ">
+                                                공유하기
+                                            </div>
+                                        </div>
+                                        <div class="paste_wrap _1">
+                                            <div class="paste-icon_wrap wrap1">
+                                                <div class="paste-icon icon1">
+                                                    <svg class="icon_img white" xmlns="http://www.w3.org/2000/svg"
+                                                        width="16" height="16" fill="currentColor"
+                                                        class="bi bi-chat-dots-fill" viewBox="0 0 16 16">
+                                                        <path
+                                                            d="M16 8c0 3.866-3.582 7-8 7a9.06 9.06 0 0 1-2.347-.306c-.584.296-1.925.864-4.181 1.234-.2.032-.352-.176-.273-.362.354-.836.674-1.95.77-2.966C.744 11.37 0 9.76 0 8c0-3.866 3.582-7 8-7s8 3.134 8 7zM5 8a1 1 0 1 0-2 0 1 1 0 0 0 2 0zm4 0a1 1 0 1 0-2 0 1 1 0 0 0 2 0zm3 1a1 1 0 1 0 0-2 1 1 0 0 0 0 2z" />
+                                                    </svg>
+                                                    메신저
+                                                </div>
+                                                <div class="paste-icon icon2">
+                                                    <svg class="icon_img white" xmlns="http://www.w3.org/2000/svg"
+                                                        width="16" height="16" fill="currentColor"
+                                                        class="bi bi-envelope-fill" viewBox="0 0 16 16">
+                                                        <path
+                                                            d="M.05 3.555A2 2 0 0 1 2 2h12a2 2 0 0 1 1.95 1.555L8 8.414.05 3.555ZM0 4.697v7.104l5.803-3.558L0 4.697ZM6.761 8.83l-6.57 4.027A2 2 0 0 0 2 14h12a2 2 0 0 0 1.808-1.144l-6.57-4.027L8 9.586l-1.239-.757Zm3.436-.586L16 11.801V4.697l-5.803 3.546Z" />
+                                                    </svg>
+                                                    메시지
+                                                </div>
+                                            </div>
+                                            <div class="paste-icon_wrap wrap2">
+                                                <div class="paste-icon icon3" style="color: #fff;">
+                                                    <svg class="icon_img" xmlns="http://www.w3.org/2000/svg" width="16"
+                                                        height="16" fill="currentColor" class="bi bi-file-earmark-post"
+                                                        viewBox="0 0 16 16">
+                                                        <path
+                                                            d="M14 4.5V14a2 2 0 0 1-2 2H4a2 2 0 0 1-2-2V2a2 2 0 0 1 2-2h5.5L14 4.5zm-3 0A1.5 1.5 0 0 1 9.5 3V1H4a1 1 0 0 0-1 1v12a1 1 0 0 0 1 1h8a1 1 0 0 0 1-1V4.5h-2z" />
+                                                        <path
+                                                            d="M4 6.5a.5.5 0 0 1 .5-.5h7a.5.5 0 0 1 .5.5v7a.5.5 0 0 1-.5.5h-7a.5.5 0 0 1-.5-.5v-7zm0-3a.5.5 0 0 1 .5-.5H7a.5.5 0 0 1 0 1H4.5a.5.5 0 0 1-.5-.5z" />
+                                                    </svg>
+                                                    카페
+                                                </div>
+                                                <div class="paste-icon icon4">
+                                                    <svg class="icon_img white" xmlns="http://www.w3.org/2000/svg"
+                                                        width="16" height="16" fill="currentColor"
+                                                        class="bi bi-blockquote-left" viewBox="0 0 16 16">
+                                                        <path
+                                                            d="M2.5 3a.5.5 0 0 0 0 1h11a.5.5 0 0 0 0-1h-11zm5 3a.5.5 0 0 0 0 1h6a.5.5 0 0 0 0-1h-6zm0 3a.5.5 0 0 0 0 1h6a.5.5 0 0 0 0-1h-6zm-5 3a.5.5 0 0 0 0 1h11a.5.5 0 0 0 0-1h-11zm.79-5.373c.112-.078.26-.17.444-.275L3.524 6c-.122.074-.272.17-.452.287-.18.117-.35.26-.51.428a2.425 2.425 0 0 0-.398.562c-.11.207-.164.438-.164.692 0 .36.072.65.217.873.144.219.385.328.72.328.215 0 .383-.07.504-.211a.697.697 0 0 0 .188-.463c0-.23-.07-.404-.211-.521-.137-.121-.326-.182-.568-.182h-.282c.024-.203.065-.37.123-.498a1.38 1.38 0 0 1 .252-.37 1.94 1.94 0 0 1 .346-.298zm2.167 0c.113-.078.262-.17.445-.275L5.692 6c-.122.074-.272.17-.452.287-.18.117-.35.26-.51.428a2.425 2.425 0 0 0-.398.562c-.11.207-.164.438-.164.692 0 .36.072.65.217.873.144.219.385.328.72.328.215 0 .383-.07.504-.211a.697.697 0 0 0 .188-.463c0-.23-.07-.404-.211-.521-.137-.121-.326-.182-.568-.182h-.282a1.75 1.75 0 0 1 .118-.492c.058-.13.144-.254.257-.375a1.94 1.94 0 0 1 .346-.3z" />
+                                                    </svg>
+                                                    블로그
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="guide_wrap " id="guide_wrap_4_1" onclick="entry_4()">
+                                            <!-- 커서 가이드 -->
+                                            <div class="cursor_wrap cursor_wrap_4_1">
+                                                <span class="cursor" x-placement="bottom">
+                                                    <button class="digital-e__beacon" type="button">
+                                                        <span class="cursor_outer"></span>
+                                                        <span class="cursor_inner"><span>
+                                                    </button>
+                                                </span>
+                                            </div>
+                                            <!-- 커서 가이드 -->
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <!--  모달창 입니다 : 복사하기 -->
+                            <div class="my_wrap2">
+
+                                <div class=" paste_modal" id="paste_modal" onclick="entry()">
+                                    <div class="text_wrap">
+                                        <div class="paste_title paste_title1">
+                                            <div class="title copy" id="cafe_title">
+                                                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16"
+                                                    fill="currentColor" class="icon_img bar bi bi-link-45deg"
+                                                    viewBox="0 0 16 16">
+                                                    <path
+                                                        d="M4.715 6.542 3.343 7.914a3 3 0 1 0 4.243 4.243l1.828-1.829A3 3 0 0 0 8.586 5.5L8 6.086a1.002 1.002 0 0 0-.154.199 2 2 0 0 1 .861 3.337L6.88 11.45a2 2 0 1 1-2.83-2.83l.793-.792a4.018 4.018 0 0 1-.128-1.287z" />
+                                                    <path
+                                                        d="M6.586 4.672A3 3 0 0 0 7.414 9.5l.775-.776a2 2 0 0 1-.896-3.346L9.12 3.55a2 2 0 1 1 2.83 2.83l-.793.792c.112.42.155.855.128 1.287l1.372-1.372a3 3 0 1 0-4.243-4.243L6.586 4.672z" />
+                                                </svg>
+                                                링크복사
+                                            </div>
+                                        </div>
+                                        <div class="paste_title paste_title2 cursor_pos_2">
+                                            <div class="title send" id="cafe_title">
+                                                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16"
+                                                    fill="currentColor" class="icon_img bar bi bi-box-arrow-up-right"
+                                                    viewBox="0 0 16 16">
+                                                    <path fill-rule="evenodd"
+                                                        d="M8.636 3.5a.5.5 0 0 0-.5-.5H1.5A1.5 1.5 0 0 0 0 4.5v10A1.5 1.5 0 0 0 1.5 16h10a1.5 1.5 0 0 0 1.5-1.5V7.864a.5.5 0 0 0-1 0V14.5a.5.5 0 0 1-.5.5h-10a.5.5 0 0 1-.5-.5v-10a.5.5 0 0 1 .5-.5h6.636a.5.5 0 0 0 .5-.5z" />
+                                                    <path fill-rule="evenodd"
+                                                        d="M16 .5a.5.5 0 0 0-.5-.5h-5a.5.5 0 0 0 0 1h3.793L6.146 9.146a.5.5 0 1 0 .708.708L15 1.707V5.5a.5.5 0 0 0 1 0v-5z" />
+                                                </svg>
+                                                전달하기
+                                            </div>
+                                        </div>
+
+                                        <div class="paste_title paste_title3">
+                                            <div class="title share" id="cafe_title">
+                                                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16"
+                                                    fill="currentColor" class="icon_img bar bi bi-share"
+                                                    viewBox="0 0 16 16">
+                                                    <path
+                                                        d="M13.5 1a1.5 1.5 0 1 0 0 3 1.5 1.5 0 0 0 0-3zM11 2.5a2.5 2.5 0 1 1 .603 1.628l-6.718 3.12a2.499 2.499 0 0 1 0 1.504l6.718 3.12a2.5 2.5 0 1 1-.488.876l-6.718-3.12a2.5 2.5 0 1 1 0-3.256l6.718-3.12A2.5 2.5 0 0 1 11 2.5zm-8.5 4a1.5 1.5 0 1 0 0 3 1.5 1.5 0 0 0 0-3zm11 5.5a1.5 1.5 0 1 0 0 3 1.5 1.5 0 0 0 0-3z" />
+                                                </svg>
+                                                공유하기
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="guide_wrap" , id="guide_wrap2">
+
+                                        <!-- 커서 가이드 -->
+                                        <div class="cursor_wrap">
+                                            <span class="cursor2" x-placement="bottom">
+                                                <button class="digital-e__beacon" type="button">
+                                                    <span class="cursor_outer"></span>
+                                                    <span class="cursor_inner"><span>
+                                                </button>
+                                            </span>
+                                        </div>
+                                        <!-- 커서 가이드 -->
+                                    </div>
+                                </div>
+
+
+
+                            </div>
+
+                            <!-- 여기까지 모달창 -->
+                        </div>
+
+                    </main>
+
+                    <div class="ctrlbar-bg"></div>
+                    <div class="ctrlbar" id="ctrlbar">
+                        <div class="start_btn_wrap">
+                            <button class="btn start_btn btn-lg" id="start-btn">시작하기</button>
+                        </div>
+                        <div class="nav_btn_wrap">
+                            <div class="baricon_wrap prev" id="prev_btn">
+                                <div class="baricon">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+                                        class="bi bi-caret-left-fill svg" viewBox="0 0 16 16">
+                                        <path
+                                            d="m3.86 8.753 5.482 4.796c.646.566 1.658.106 1.658-.753V3.204a1 1 0 0 0-1.659-.753l-5.48 4.796a1 1 0 0 0 0 1.506z" />
+                                    </svg>
+                                </div>
+                                <div class="bartext">이전</div>
+                            </div>
+                            <div class="baricon_wrap pause">
+
+                                <div class="stop" id="pause_btn">
+                                    <div class="baricon">
+                                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16"
+                                            fill="currentColor" class="bi bi-volume-mute-fill svg" viewBox="0 0 16 16">
+                                            <path
+                                                d="M6.717 3.55A.5.5 0 0 1 7 4v8a.5.5 0 0 1-.812.39L3.825 10.5H1.5A.5.5 0 0 1 1 10V6a.5.5 0 0 1 .5-.5h2.325l2.363-1.89a.5.5 0 0 1 .529-.06zm7.137 2.096a.5.5 0 0 1 0 .708L12.207 8l1.647 1.646a.5.5 0 0 1-.708.708L11.5 8.707l-1.646 1.647a.5.5 0 0 1-.708-.708L10.793 8 9.146 6.354a.5.5 0 1 1 .708-.708L11.5 7.293l1.646-1.647a.5.5 0 0 1 .708 0z" />
+                                        </svg>
+                                    </div>
+                                    <div class="bartext text-center">멈춤</div>
+                                </div>
+
+                                <div class="play" id="play_btn">
+                                    <div class="baricon">
+                                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16"
+                                            fill="currentColor" class="bi bi-volume-up-fill svg" viewBox="0 0 16 16">
+                                            <path
+                                                d="M11.536 14.01A8.473 8.473 0 0 0 14.026 8a8.473 8.473 0 0 0-2.49-6.01l-.708.707A7.476 7.476 0 0 1 13.025 8c0 2.071-.84 3.946-2.197 5.303l.708.707z" />
+                                            <path
+                                                d="M10.121 12.596A6.48 6.48 0 0 0 12.025 8a6.48 6.48 0 0 0-1.904-4.596l-.707.707A5.483 5.483 0 0 1 11.025 8a5.483 5.483 0 0 1-1.61 3.89l.706.706z" />
+                                            <path
+                                                d="M8.707 11.182A4.486 4.486 0 0 0 10.025 8a4.486 4.486 0 0 0-1.318-3.182L8 5.525A3.489 3.489 0 0 1 9.025 8 3.49 3.49 0 0 1 8 10.475l.707.707zM6.717 3.55A.5.5 0 0 1 7 4v8a.5.5 0 0 1-.812.39L3.825 10.5H1.5A.5.5 0 0 1 1 10V6a.5.5 0 0 1 .5-.5h2.325l2.363-1.89a.5.5 0 0 1 .529-.06z" />
+                                        </svg>
+                                    </div>
+                                    <div class="bartext text-center">재생</div>
+                                </div>
+
+                            </div>
+                            <div class="baricon_wrap" id="character">
+                                <!-- <div class="baricon">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+                                    class="bi bi-lightbulb-fill svg hint" viewBox="0 0 16 16">
+                                    <path
+                                        d="M2 6a6 6 0 1 1 10.174 4.31c-.203.196-.359.4-.453.619l-.762 1.769A.5.5 0 0 1 10.5 13h-5a.5.5 0 0 1-.46-.302l-.761-1.77a1.964 1.964 0 0 0-.453-.618A5.984 5.984 0 0 1 2 6zm3 8.5a.5.5 0 0 1 .5-.5h5a.5.5 0 0 1 0 1l-.224.447a1 1 0 0 1-.894.553H6.618a1 1 0 0 1-.894-.553L5.5 15a.5.5 0 0 1-.5-.5z" />
+                                </svg>
+                                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+                                    class="bi bi-question svg front" viewBox="0 0 16 16">
+                                    <path
+                                        d="M5.255 5.786a.237.237 0 0 0 .241.247h.825c.138 0 .248-.113.266-.25.09-.656.54-1.134 1.342-1.134.686 0 1.314.343 1.314 1.168 0 .635-.374.927-.965 1.371-.673.489-1.206 1.06-1.168 1.987l.003.217a.25.25 0 0 0 .25.246h.811a.25.25 0 0 0 .25-.25v-.105c0-.718.273-.927 1.01-1.486.609-.463 1.244-.977 1.244-2.056 0-1.511-1.276-2.241-2.673-2.241-1.267 0-2.655.59-2.75 2.286zm1.557 5.763c0 .533.425.927 1.01.927.609 0 1.028-.394 1.028-.927 0-.552-.42-.94-1.029-.94-.584 0-1.009.388-1.009.94z" />
+                                </svg>
+                               
+                            </div>
+                            <div class="bartext"></div> -->
+                                <img src="../common/images/character1.png" class="character" width="100%">
+                            </div>
+                            <div class="baricon_wrap" id="size_btn">
+                                <div id="tSlider" class="baricon" data-bs-toggle="popover">
+                                    <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"
+                                        width="44" zoomAndPan="magnify" viewBox="0 0 375 374.999991" height="44"
+                                        preserveAspectRatio="xMidYMid meet" version="1.0">
+                                        <defs>
+                                            <g />
+                                        </defs>
+                                        <g fill="#000000" fill-opacity="1">
+                                            <g transform="translate(-55.71148, 314.999979)">
+                                                <g>
+                                                    <path
+                                                        d="M 97.234375 -205.578125 C 89.242188 -205.578125 85.25 -211.9375 85.25 -224.65625 C 85.25 -237.09375 89.539062 -243.3125 98.125 -243.3125 L 257.96875 -243.3125 C 269.507812 -243.3125 275.28125 -236.648438 275.28125 -223.328125 L 275.28125 -112.78125 C 275.28125 -83.46875 263.882812 -68.8125 241.09375 -68.8125 L 227.328125 -68.8125 L 227.328125 -205.578125 Z M 97.234375 -205.578125 " />
+                                                </g>
+                                            </g>
+                                        </g>
+                                        <g fill="#000000" fill-opacity="1">
+                                            <g transform="translate(187.499992, 317.537478)">
+                                                <g>
+                                                    <path
+                                                        d="M 51.25 -108.34375 C 47.03125 -108.34375 44.921875 -111.695312 44.921875 -118.40625 C 44.921875 -124.957031 47.1875 -128.234375 51.71875 -128.234375 L 135.953125 -128.234375 C 142.035156 -128.234375 145.078125 -124.722656 145.078125 -117.703125 L 145.078125 -59.4375 C 145.078125 -43.988281 139.070312 -36.265625 127.0625 -36.265625 L 119.8125 -36.265625 L 119.8125 -108.34375 Z M 51.25 -108.34375 " />
+                                                </g>
+                                            </g>
+                                        </g>
+                                    </svg>
+                                </div>
+                                <div class="bartext">크기</div>
+                            </div>
+                            <div class="baricon_wrap next" id="next_btn">
+                                <div class="baricon">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+                                        class="bi bi-caret-right-fill svg" viewBox="0 0 16 16">
+                                        <path
+                                            d="m12.14 8.753-5.482 4.796c-.646.566-1.658.106-1.658-.753V3.204a1 1 0 0 1 1.659-.753l5.48 4.796a1 1 0 0 1 0 1.506z" />
+                                    </svg>
+                                </div>
+                                <div class="bartext">다음</div>
+                            </div>
+                        </div>
+                        <!-- popover : slider --------------- -->
+                        <div hidden>
+                            <div data-name="popover-content" class="d-flex justify-content-center align-items-center">
+
+                                <!-- /////////////// -->
+                                <div class="txt_ex1 fw-bold">가</div>
+                                <!-- <input type="range" name="slider" id="slider" value="0" min="0" max="2"  /> -->
+                                <input type="range" min="0" max="2" value="0" class="slider" id="tSliderRange">
+                                <!-- <p>Value: <span id="value"></span></p> -->
+                                <div class="txt_ex2 fs-3 fw-bold">가</div>
+                                <!-- /////////////// -->
+
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+
+
+
+
+
+
+            </div>
+        </div>
+    </div>
+    <script src="pg_info.js"> </script>
+    
+    <script src="pg_handler_dc2.js"> </script>
+    <!-- <script type="text/javascript" src="bootstrap-slider.js"></script> -->
+</body>
+
+</html>
