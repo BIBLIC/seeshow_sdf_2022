@@ -1,5 +1,9 @@
 .icon { border: 0;}
 
+.radius {
+    border-radius: 10px;
+}
+
 /* ------------------------------------------P1------------------------------------------- */
 .text-lightgray {
     color: #8E9198;
@@ -130,6 +134,8 @@
     justify-content: center;
     align-items: center;
 }
+
+
 
 #p2 .under_bar {
     width: 100%;
