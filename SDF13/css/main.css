@@ -3,6 +3,10 @@
     background-position: center;
 }
 
+.radius {
+    border-radius: 10px;
+}
+
 #p8 .bartext {
     font-size: 1em;
 }
