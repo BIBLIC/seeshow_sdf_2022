@@ -127,7 +127,7 @@ const modalCont = [
     },
     {
         page: 8,
-        instruction: "이름란에 이름을 한글로만 입력해 주세요"
+        instruction: "이름 란에 이름을 한글로만 입력해 주세요"
     },
     {
         page: 9,
