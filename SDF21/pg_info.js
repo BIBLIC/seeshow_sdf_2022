@@ -137,10 +137,6 @@ const modalCont = [
         page: 11,
         instruction: "다운로드 시작"
     },
-    {
-        page: 12,
-        instruction: "완료"
-    },
 ];
 
 

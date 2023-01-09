@@ -140,10 +140,6 @@ const modalCont = [
         page: 12,
         instruction: "가입이 완료되었습니다. 화면을 누르면 실습이 완료됩니다."
     },
-    {
-        page: 13,
-        instruction: "완료"
-    },
 ];
 
 

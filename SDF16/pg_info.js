@@ -180,10 +180,6 @@ const modalCont = [
         page: 16,
         instruction: "예매 및 결제가 완료되고 고속버스 탑승 시 사용 가능한 승차권이 발권되었습니다. 승차권을 누르면 실습이 완료됩니다."
     },
-    {
-        page: 17,
-        instruction: "완료"
-    },
 ];
 
 

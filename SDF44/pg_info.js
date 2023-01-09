@@ -145,10 +145,6 @@ const modalCont = [
         page: 11,
         instruction: "‘확인’ 버튼을 눌러주세요."
     },
-    {
-        page: 12,
-        instruction: "완료"
-    },
 ];
 
 

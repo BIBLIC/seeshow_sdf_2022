@@ -157,10 +157,6 @@ const modalCont = [
         page: 12,
         instruction: "새 알림이 도착했습니다. 키워드 자전거가 포함된 새로운 게시물이 등록되었네요. 알림 메시지를 누르면 실습이 완료됩니다."
     },
-    {
-        page: 13,
-        instruction: "완료"
-    },
 ];
 
 

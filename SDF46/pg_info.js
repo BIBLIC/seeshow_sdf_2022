@@ -100,11 +100,6 @@ const modalCont = [
         page: 7,
         instruction: "휴면예금 보험금이 조회되었습니다. 총 1개의 계좌를 찾았습니다. 조회된 계좌를 누르면 실습이 완료됩니다."
     },
-    {
-        page: 8,
-        instruction: "완료"
-    },
-
 ];
 
 

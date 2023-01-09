@@ -140,10 +140,6 @@ const modalCont = [
         page: 11,
         instruction: "모든 정보가 숨김없이 표시됩니다. ‘QR정보 표시’ 버튼을 누르면 실습이 완료됩니다."
     },
-    {
-        page: 12,
-        instruction: "완료"
-    },
 ];
 
 

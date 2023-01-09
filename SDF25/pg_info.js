@@ -87,10 +87,6 @@ const modalCont = [
         page: 5,
         instruction: "건강검진 항목이 신청되었습니다. '확인' 버튼을 눌러주세요."
     },
-    {
-        page: 6,
-        instruction: "완료"
-    },
 ];
 
 

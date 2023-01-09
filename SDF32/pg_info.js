@@ -196,10 +196,6 @@ const modalCont = [
         page: 18,
         instruction: "카드 등록 내용을 확인하고 ‘29,900원 결제하기’ 버튼을 눌러주세요."
     },
-    {
-        page: 19,
-        instruction: "완료"
-    },
 ];
 
 

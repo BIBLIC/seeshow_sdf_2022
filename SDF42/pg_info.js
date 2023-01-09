@@ -91,10 +91,6 @@ const modalCont = [
         page: 7,
         instruction: "계좌 추가가 완료되었습니다. 추가된 계좌 정보를 확인하고 화면을 누르면 실습이 완료됩니다."
     },
-    {
-        page: 8,
-        instruction: "완료"
-    },
 ];
 
 

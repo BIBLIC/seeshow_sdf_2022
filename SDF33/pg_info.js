@@ -126,10 +126,6 @@ const modalCont = [
         page: 10,
         instruction: "조회된 실시간 잔여량 확인 후 네비게이션 바의 ‘다음’ 버튼을 눌러주세요."
     },
-    {
-        page: 11,
-        instruction: "완료"
-    },
 ];
 
 

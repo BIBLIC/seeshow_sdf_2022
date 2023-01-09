@@ -146,10 +146,6 @@ const modalCont = [
         page: 12,
         instruction: "자막 글자 크기 설정이 저장되었습니다. 화면을 누르면 실습이 완료됩니다."
     },
-    {
-        page: 13,
-        instruction: "완료"
-    },
 ];
 
 

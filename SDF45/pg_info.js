@@ -119,11 +119,6 @@ const modalCont = [
         page: 8,
         instruction: "금융 인증서 조회가 완료되었습니다. 금융 인증서를 누르면 실습이 완료됩니다."
     },
-    {
-        page: 9,
-        instruction: "완료"
-    },
-
 ];
 
 

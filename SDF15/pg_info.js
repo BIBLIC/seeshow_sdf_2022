@@ -204,10 +204,6 @@ const modalCont = [
         page: 18,
         instruction: "티머니GO 메인 화면입니다. 화면을 누르면 실습이 완료됩니다."
     },
-    {
-        page: 19,
-        instruction: "완료"
-    },
 ];
 
 

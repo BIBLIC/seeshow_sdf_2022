@@ -170,10 +170,6 @@ const modalCont = [
         page: 13,
         instruction: "오른쪽 상단의 ‘완료’를 눌러 게시글 작성을 완료해 주세요. "
     },
-    {
-        page: 14,
-        instruction: "완료"
-    },
 ];
 
 

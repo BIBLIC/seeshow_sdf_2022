@@ -110,10 +110,6 @@ const modalCont = [
         page: 8,
         instruction: "확인을 누르면 전자송달 신청 실습이 완료됩니다."
     },
-    {
-        page: 9,
-        instruction: "완료"
-    },
 ];
 
 

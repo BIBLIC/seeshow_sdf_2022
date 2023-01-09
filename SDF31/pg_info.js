@@ -173,10 +173,6 @@ const modalCont = [
         page: 15,
         instruction: "주문이 완료되었습니다. 화면의 하트파이를 누르면 실습이 완료됩니다."
     },
-    {
-        page: 16,
-        instruction: "완료"
-    }
 ];
 
 

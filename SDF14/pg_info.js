@@ -141,10 +141,6 @@ const modalCont = [
         page: 11,
         instruction: "‘호출하기’ 버튼을 눌러주세요."
     },
-    {
-        page: 12,
-        instruction: "완료"
-    },
 ];
 
 

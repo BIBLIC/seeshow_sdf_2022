@@ -177,10 +177,6 @@ const modalCont = [
         page: 14,
         instruction: "신청 정보를 확인 후 ‘확인’ 버튼을 클릭하세요."
     },
-    {
-        page: 15,
-        instruction: ""
-    },
 ];
 
 
