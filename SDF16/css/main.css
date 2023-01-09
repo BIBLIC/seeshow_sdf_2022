@@ -511,7 +511,8 @@
     height: 5vh;
     display: flex;
     justify-content: space-between;
-    align-content: center;
+    flex-wrap: nowrap;
+    align-items: center;
     padding-top: 0.5em;    
 } 
 
