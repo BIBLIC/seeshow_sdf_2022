@@ -100,7 +100,7 @@ const modalCont = [
     },
     {
         page: 4,
-        instruction: "좌측 상단의 메뉴를 눌러주세요."
+        instruction: "좌측 상단에 가로줄 세 개로 된 햄버거 메뉴를 눌러주세요."
     },
     {
         page: 5,
