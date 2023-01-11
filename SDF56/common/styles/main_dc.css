@@ -2,13 +2,13 @@
 .hd_newslist,
 .hd_blog,
 .hd_cafe{
-  height: 8vh;
+  height: calc(var(--vh, 1vh)*8);
 }
 .chat_main,
 .news_main,
 .blog_main,
 .cafe_main{
-  height : 71vh !important;
+  height: calc(var(--vh, 1vh)*71) !important;
 }
 
 h1 {

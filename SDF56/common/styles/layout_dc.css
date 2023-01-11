@@ -15,7 +15,7 @@
 }
 
 #total_wrap {
-  height: 87vh;
+  height: calc(var(--vh, 1vh)*79);
 }
 
 
