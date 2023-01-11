@@ -434,8 +434,8 @@ Firefox 브라우저를 위해서는 -moz- 를 사용하세요 */
 
 .page .page_wrap {
   width: 100%;
-  height: 87vh;
-  /* height: calc(var(--vh, 1vh)*100); */
+  /* height: 87vh; */
+  height: calc(var(--vh, 1vh)*87);
   word-break: keep-all;
   word-wrap: break-word;
 }
