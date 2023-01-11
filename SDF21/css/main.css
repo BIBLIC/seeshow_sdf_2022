@@ -45,6 +45,12 @@
     color: #fff!important;
 }
 
+.btn-orange {
+    background: #FE6C33!important;
+    color: #fff!important;
+    border:1px solid #56647E!important;
+}
+
 .btn-outline-grayb {
     background: #fff!important;
     border:1px solid #56647E!important;
@@ -105,6 +111,9 @@
     font-size: x-small;
   }
 
+.w-32 {
+    width: 32%;
+}
 
 /* ---------------------------------------- */
 .under_bar {
