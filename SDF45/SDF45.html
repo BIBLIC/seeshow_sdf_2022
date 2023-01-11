@@ -71,12 +71,24 @@
                                         <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-house" viewBox="0 0 16 16">
                                             <path d="M8.707 1.5a1 1 0 0 0-1.414 0L.646 8.146a.5.5 0 0 0 .708.708L2 8.207V13.5A1.5 1.5 0 0 0 3.5 15h9a1.5 1.5 0 0 0 1.5-1.5V8.207l.646.647a.5.5 0 0 0 .708-.708L13 5.793V2.5a.5.5 0 0 0-.5-.5h-1a.5.5 0 0 0-.5.5v1.293L8.707 1.5ZM13 7.207V13.5a.5.5 0 0 1-.5.5h-9a.5.5 0 0 1-.5-.5V7.207l5-5 5 5Z"/>
                                           </svg>
-                                        <div class="link rounded-pill px-3 py-1 m-0">
+                                        <div class="link rounded-pill px-3 py-1 m-0 answer_auto_txt pg_1_answer">
                                             <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-lock-fill" viewBox="0 0 16 16">
                                                 <path d="M8 1a2 2 0 0 1 2 2v4H6V3a2 2 0 0 1 2-2zm3 6V3a3 3 0 0 0-6 0v4a2 2 0 0 0-2 2v5a2 2 0 0 0 2 2h6a2 2 0 0 0 2-2V9a2 2 0 0 0-2-2z"/>
                                               </svg>
-                                            <div class="h-100 flex-fill flex-start-center">
-                                                <input class="link-input answer_txt pg_1_answer 1_input" placeholder="주소 입력">
+                                            <div class="h-100 flex-fill flex-start-center answer_auto_txt pg_1_answer">
+                                                <div class="cursor_pos_1">
+                                                    <input class="link-input answer_auto_txt pg_1_answer 1_input" placeholder="주소 입력">
+                                                    <!-- 커서 가이드 -->
+                                                <div class="cursor_wrap cursor_wrap_1 ">
+                                                    <span class="cursor " x-placement="bottom">
+                                                        <button class="react-joyride__beacon " type="button">
+                                                            <span class="cursor_outer "></span>
+                                                            <span class="cursor_inner "><span>
+                                                        </button>
+                                                    </span>
+                                                </div>
+                                                <!-- 커서 가이드 -->
+                                                </div>
                                             </div>
                                         </div>
                                     </div>
@@ -94,7 +106,7 @@
                                     </div>
                                 </div>                               
 
-                                <div class="absolute-bottom flex-center-center h-35 rounded border border-5 border-danger p-3 m-3 mb-4">
+                                <div class="absolute-bottom flex-center-center h-35 rounded border border-5 border-danger p-3 m-3 mb-4 z-100">
                                     <h4 class="text-danger fw-bold m-0">
                                         금융결제원 예스키는 앱이 아닌 웹사이트에서 제공하는 서비스입니다.
                                         웹사이트 주소 'yeskey.or.kr'를 입력하고 접속해주세요.

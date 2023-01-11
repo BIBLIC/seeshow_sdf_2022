@@ -364,17 +364,17 @@ document.querySelector("main").addEventListener("click", function (e) {//메인 
         //----엔터값 있을 경우-------------------
         //answer_txt pg_n_answer n_input
         if (e.target.className.includes("answer_txt")) {
-            $('.' + real_pg + '_input').keydown(function (e) {
-                if (event.which === 13) {
-                    let unspacedValue = this.value.split(' ').join('');
-                    if (unspacedValue == inputableAnswer) {
-                        next(real_pg);
-                    } else {
-                        $('.modal-body').text(instruction);
-                        $('#staticBackdrop').modal('show');
-                    }
-                }
-            });
+            // $('.' + real_pg + '_input').keydown(function (e) {
+            //     if (event.which === 13) {
+            //         let unspacedValue = this.value.split(' ').join('');
+            //         if (unspacedValue == inputableAnswer) {
+            //             next(real_pg);
+            //         } else {
+            //             $('.modal-body').text(instruction);
+            //             $('#staticBackdrop').modal('show');
+            //         }
+            //     }
+            // });
             //키보드 떼고 값 일치하면 다음 버튼 활성화되게 
             $('.' + real_pg + '_input').keyup(function () {
                 let unspacedValue = this.value.split(' ').join('');

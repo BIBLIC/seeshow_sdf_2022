@@ -396,6 +396,11 @@ svg {
     height: 1.3em;
 }
 
+#p10 button {
+    background-color: white;
+    padding:0.5em;
+}
+
 #p10 .tab,
 #p11 .tab ,
 #p12 .tab {
