@@ -50,12 +50,12 @@ main svg {
 
 /* -------------------------------- */
 
-#p1 .bar {
+#p2 .bar {
     min-height: 8vh;
     border-bottom: 1px solid #ced4da;
 }
 
-#p1 .btn {
+#p2 .btn {
     width: 6em;
     min-height: 4em;
     border-radius: 45px;
@@ -67,17 +67,17 @@ main svg {
     bottom: 1em;
 }
 
-#p2 .container {
+#p3 .container {
     padding: 1em;
 }
 
-#p2 .bar {
+#p3 .bar {
     border-bottom: 1px solid #ced4da;
 }
 
+#p6 .text_box,
 #p5 .text_box,
-#p4 .text_box,
-#p2 .text_box {
+#p3 .text_box {
     background-color: #F8F8F8;
     display: flex;
     flex-direction: column;
@@ -86,7 +86,7 @@ main svg {
     border-radius: 5px;
 }
 
-#p2 .btn {
+#p3 .btn {
     border: 2px solid #e0e0e0;
     background-color: #fff;
     display: flex;
@@ -95,11 +95,11 @@ main svg {
     
 }
 
-#p2 .scroller {
+#p3 .scroller {
     height: 79vh;
 }
 
-#p3 .btn_top {
+#p4 .btn_top {
     display: flex;
     justify-content: center;
     align-items: center;
@@ -110,7 +110,7 @@ main svg {
     border-radius: 15px;
 }
 
-#p3 .btn_under {
+#p4 .btn_under {
     display: flex;
     justify-content: center;
     align-items: center;
@@ -121,33 +121,33 @@ main svg {
     border-radius: 15px;
 }
 
-#p4 .form-control {
+#p5 .form-control {
     border-radius: 0;
     border: 0;
     /* padding-left: 3em;; */
 }
 
-#p4 .form {
+#p5 .form {
     height: 7vh;
     border: 1px solid #e0e0e0;
     border-radius: 10px;
     margin-top: 0.5em;
 }
 
-#p4 .btn {
+#p5 .btn {
     font-size: large;
     width: 100%;
     height: 7vh;
     background-color: #C8C8C8;
 }
 
-#p4 .banner {
+#p5 .banner {
     height: auto;
     width: 100%;
     border: 0;
 }
 
-#p4 .tab_bottom {
+#p5 .tab_bottom {
     width: 100%;
     height: 7vh;
     display: flex;
@@ -156,7 +156,7 @@ main svg {
     margin-top: 1em;
 }
 
-#p4 .tab_bottom .item {
+#p5 .tab_bottom .item {
     width: 33%;
     height: 100%;
     display: flex;
@@ -165,15 +165,15 @@ main svg {
     padding-left: 1em;
     padding-right: 1em;
 }
-#p4 .tab_bottom .item:not(:last-child) {
+#p5 .tab_bottom .item:not(:last-child) {
     border-right: 1px solid #ced4da;
 }
 
-#p4 .tab_bottom .item .txt {
+#p5 .tab_bottom .item .txt {
     flex: 1;
 }
 
-#p4 .tab_bottom .item svg {
+#p5 .tab_bottom .item svg {
     width: 2em;
     height: auto;
     margin: 0;
@@ -181,53 +181,53 @@ main svg {
 }
 
 /* ------------------------------------- */
-#p5 .container,
-#p4 .container {
+#p6 .container,
+#p5 .container {
     padding: 1em;
 }
 
-#p3 .scroller,
 #p4 .scroller,
 #p5 .scroller,
-#p8 .scroller {
+#p6 .scroller,
+#p9 .scroller {
     height: 79vh;
 }
 
-#p7 .icon,
-#p6 .icon {
+#p8 .icon,
+#p7 .icon {
     width: 2em;
     height: 2em;
     border: unset;
 }
 
-#p7 .stop_btn,
-#p6 .stop_btn {
+#p8 .stop_btn,
+#p7 .stop_btn {
     border: 1px solid #e0e0e0;
     padding: 0.5em;
     border-radius: 25px;
 }
 
-#p7 .middle,
-#p6 .middle {
+#p8 .middle,
+#p7 .middle {
     height: 100%;
     background-color: #FBFBFB;
 }
 
-#p7 .pink_box,
-#p6 .pink_box {
+#p8 .pink_box,
+#p7 .pink_box {
     background-color: #FADADD;
     border-radius: 20px;
     margin-left: 1.5em;
 }
 
-#p7 .under_bar,
-#p6 .under_bar {
+#p8 .under_bar,
+#p7 .under_bar {
     min-height: 4vh;
     background-color: #fff;
 }
 
-#p7 .input_bar,
-#p6 .input_bar {
+#p8 .input_bar,
+#p7 .input_bar {
     width: 75%;
     min-height: 2vh;
     padding: 0.5em;
@@ -236,22 +236,22 @@ main svg {
     border-radius: 25px;
 }
 
-#p7 .dot,
-#p6 .dot {
+#p8 .dot,
+#p7 .dot {
     width: 2em;
     height: 2em;
     border-radius: 100%;
     background-color: #B95C57;
 }
 
-#p7 .red_box {
+#p8 .red_box {
     background-color: #B75C54;
     border-radius: 20px;
     margin-right: 1.5em;
 }
 
-#p6 .top_dot,
-#p7 .top_dot {
+#p7 .top_dot,
+#p8 .top_dot {
     display: flex;
     justify-content: center;
     align-items: center;
@@ -262,14 +262,14 @@ main svg {
 }
 
 
-#p8 .gray_bar {
+#p9 .gray_bar {
     border-radius: 25px;
     background-color: #F4F0F1;
     padding: 0.5em;
     
 }
 
-#p8 .box {
+#p9 .box {
     background-color: #2587DE;
     color: #fff;
     padding: 1em;
@@ -277,19 +277,19 @@ main svg {
     border-radius: 15px;
 }
 
-#p8 .dot {
+#p9 .dot {
     width: 2em;
     height: 2em;
     border-radius: 60%;
     background-color: #1D79C2;
 }
 
-#p8 .container {
+#p9 .container {
     padding-left: 4em;
     padding-right: 4em;
 }
 
-#p8 .border_b {
+#p9 .border_b {
     border-bottom: 1px solid;
     
 }

@@ -1,4 +1,4 @@
-var total_page = 9;//페이지 수 -> 시나리오마다 total_page 수 바꾸기 
+var total_page = 10;//페이지 수 -> 시나리오마다 total_page 수 바꾸기 
 
 //오디오 배열 선언, 페이지 수 대로 배열에 mp3 넣기
 const audioArray = [];
@@ -58,7 +58,10 @@ const pageClickArea = [
         page: 9,
         correctAnswer: "pg_9_answer"
     },
-
+    {
+        page: 10,
+        correctAnswer: "pg_10_answer"
+    },
 ];
 
 // -=----------------------------------------------------------------------------------------------------------------------
@@ -70,14 +73,14 @@ const inputAnswer = [
     {},
     {},
     {},
+    {},
     {
-        page: 6,
+        page: 7,
         inputableAnswer: "36"  
     },
     {},
     {},
     {},
-    
 ];
 
 
@@ -89,34 +92,38 @@ const modalCont = [
     },
     {
         page: 1,
-        instruction: "예스키는 금융결제원에서 제공하는 금융인증서 발급 및 관리를 위한 서비스입니다."
+        instruction: ""
     },
     {
         page: 2,
-        instruction: "화면에서 금융인증서 ‘관리하기’를 찾아서 눌러주세요."
+        instruction: "예스키는 금융결제원에서 제공하는 금융인증서 발급 및 관리를 위한 서비스입니다."
     },
     {
         page: 3,
-        instruction: "인증서 유형을 개인으로 선택해 주세요."
+        instruction: "화면에서 금융인증서 ‘관리하기’를 찾아서 눌러주세요."
     },
     {
         page: 4,
-        instruction: "인증을 위해 이름, 휴대폰번호, 생년월일을 모두 입력하고, ‘확인’ 버튼을 눌러주세요."
+        instruction: "인증서 유형을 개인으로 선택해 주세요."
     },
     {
         page: 5,
-        instruction: "문자가 오면 화면에 보이는 확인코드 ‘36’을 받은 문자에 답장해 주세요."
+        instruction: "인증을 위해 이름, 휴대폰번호, 생년월일을 모두 입력하고, ‘확인’ 버튼을 눌러주세요."
     },
     {
         page: 6,
-        instruction: "숫자 ‘36’을 입력하고 문자 보내기 버튼을 눌러주세요."
+        instruction: "문자가 오면 화면에 보이는 확인코드 ‘36’을 받은 문자에 답장해 주세요."
     },
     {
         page: 7,
-        instruction: "페이지가 자동으로 넘어갑니다."
+        instruction: "숫자 ‘36’을 입력하고 문자 보내기 버튼을 눌러주세요."
     },
     {
         page: 8,
+        instruction: "페이지가 자동으로 넘어갑니다."
+    },
+    {
+        page: 9,
         instruction: "금융 인증서 조회가 완료되었습니다. 금융 인증서를 누르면 실습이 완료됩니다."
     },
 ];
@@ -125,28 +132,29 @@ const modalCont = [
 
 // //*******************************************************************************
 // //**************************+    커서   +*********************************** 
-
 const cursor_pos_1 = document.querySelector('.cursor_pos_1');
 const cursor_pos_2 = document.querySelector('.cursor_pos_2');
 const cursor_pos_3 = document.querySelector('.cursor_pos_3');
 const cursor_pos_4 = document.querySelector('.cursor_pos_4');
-const cursor_pos_6 = document.querySelector('.cursor_pos_6');
-const cursor_pos_8 = document.querySelector('.cursor_pos_8');
+const cursor_pos_5 = document.querySelector('.cursor_pos_5');
+const cursor_pos_7 = document.querySelector('.cursor_pos_7');
+const cursor_pos_9 = document.querySelector('.cursor_pos_9');
 
 const cursor_wrap_1 = document.querySelector('.cursor_wrap_1');
 const cursor_wrap_2 = document.querySelector('.cursor_wrap_2');
 const cursor_wrap_3 = document.querySelector('.cursor_wrap_3');
 const cursor_wrap_4 = document.querySelector('.cursor_wrap_4');
-const cursor_wrap_6 = document.querySelector('.cursor_wrap_6');
-const cursor_wrap_8 = document.querySelector('.cursor_wrap_8');
-
+const cursor_wrap_5 = document.querySelector('.cursor_wrap_5');
+const cursor_wrap_7 = document.querySelector('.cursor_wrap_7');
+const cursor_wrap_9 = document.querySelector('.cursor_wrap_9');
 
 cursor_wrap_1.style.zIndex = "100";
 cursor_wrap_2.style.zIndex = "100";
 cursor_wrap_3.style.zIndex = "100";
 cursor_wrap_4.style.zIndex = "100";
-cursor_wrap_6.style.zIndex = "100";
-cursor_wrap_8.style.zIndex = "100";
+cursor_wrap_5.style.zIndex = "100";
+cursor_wrap_7.style.zIndex = "100";
+cursor_wrap_9.style.zIndex = "100";
 
 
 const { createPopper } = Popper;
@@ -167,12 +175,23 @@ createPopper(cursor_pos_2, cursor_wrap_2, {
         {
             name: 'offset',
             options: {
-                offset: [0,0],
+                offset: [10,10],
             },
         },
     ],
 });
 createPopper(cursor_pos_3, cursor_wrap_3, {
+    placement: 'top',
+    modifiers: [
+        {
+            name: 'offset',
+            options: {
+                offset: [0,0],
+            },
+        },
+    ],
+});
+createPopper(cursor_pos_4, cursor_wrap_4, {
     placement: 'right',
     modifiers: [
         {
@@ -184,7 +203,7 @@ createPopper(cursor_pos_3, cursor_wrap_3, {
     ],
 });
 
-createPopper(cursor_pos_4, cursor_wrap_4, {
+createPopper(cursor_pos_5, cursor_wrap_5, {
     placement: 'bottom',
     modifiers: [
         {
@@ -195,7 +214,7 @@ createPopper(cursor_pos_4, cursor_wrap_4, {
         },
     ],
 });
-createPopper(cursor_pos_6, cursor_wrap_6, {
+createPopper(cursor_pos_7, cursor_wrap_7, {
     placement: 'bottom',
     modifiers: [
         {
@@ -206,7 +225,7 @@ createPopper(cursor_pos_6, cursor_wrap_6, {
         },
     ],
 });
-createPopper(cursor_pos_8, cursor_wrap_8, {
+createPopper(cursor_pos_9, cursor_wrap_9, {
     placement: 'bottom',
     modifiers: [
         {
@@ -220,11 +239,13 @@ createPopper(cursor_pos_8, cursor_wrap_8, {
 
 
 
-$(document).on("click", '.pg_4_answer', function () {
-    if (page_num === 5) {
+
+// ---------------------------------------------------------------------
+$(document).on("click", '.pg_5_answer', function () {
+    if (page_num === 6) {
         $( document ).ready(function() {
             setTimeout(function () {
-                if (page_num === 5) {
+                if (page_num === 6) {
                     next();
                 }
             }, 8000);
@@ -233,10 +254,10 @@ $(document).on("click", '.pg_4_answer', function () {
 });
 
 $(document).on("click", "#next_btn", function () {
-    if (page_num === 4) {
+    if (page_num === 5) {
         $( document ).ready(function() {
             setTimeout(function () {
-                if (page_num === 5) {
+                if (page_num === 6) {
                     next();
                 }
             }, 8000);
@@ -246,10 +267,10 @@ $(document).on("click", "#next_btn", function () {
 
 
 $(document).on("click", "#prev_btn", function () {
-    if (page_num === 6) {
+    if (page_num === 7) {
         $( document ).ready(function() {
             setTimeout(function () {
-                if (page_num === 5) {
+                if (page_num === 6) {
                     next();
                 }
             }, 8000);
@@ -259,11 +280,11 @@ $(document).on("click", "#prev_btn", function () {
 
 //  =====================================================
 
-$(document).on("click", '.pg_6_answer', function () {
-    if (page_num === 7) {
+$(document).on("click", '.pg_7_answer', function () {
+    if (page_num === 8) {
         $( document ).ready(function() {
             setTimeout(function () {
-                if (page_num === 7) {
+                if (page_num === 8) {
                     next();
                 }
             }, 1500);
@@ -272,10 +293,10 @@ $(document).on("click", '.pg_6_answer', function () {
 });
 
 $(document).on("click", "#next_btn", function () {
-    if (page_num === 6) {
+    if (page_num === 7) {
         $( document ).ready(function() {
             setTimeout(function () {
-                if (page_num === 7) {
+                if (page_num === 8) {
                     next();
                 }
             }, 1500);
@@ -284,10 +305,10 @@ $(document).on("click", "#next_btn", function () {
 });
 
 $(document).on("click", "#prev_btn", function () {
-    if (page_num === 8) {
+    if (page_num === 9) {
         $( document ).ready(function() {
             setTimeout(function () {
-                if (page_num === 7) {
+                if (page_num === 8) {
                     next();
                 }
             }, 1500);
