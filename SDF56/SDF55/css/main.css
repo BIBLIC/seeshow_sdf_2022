@@ -8,7 +8,10 @@
     background : white;
 } */
 
-
+.cafebar {
+    padding-left: 1em;
+    padding-right: 1em;
+}
 
 .icon3 svg
  {
@@ -18,9 +21,6 @@
     padding-bottom: 5px;
 }
 
-#main {
-    height: 70vh !important;
-}
 
 #p8 #main,
 #p9 #main {

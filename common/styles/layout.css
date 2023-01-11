@@ -511,14 +511,6 @@ body {
   margin-top: auto; */
 }
 
-#main {
-  /* scroll-behavior: smooth;
-  overflow-y: scroll;
-  -ms-overflow-style: none; */
-
-  /* IE and Edge */
-}
-
 #main::-webkit-scrollbar {
   /* display: none; */
   /* Chrome, Safari, Opera*/
