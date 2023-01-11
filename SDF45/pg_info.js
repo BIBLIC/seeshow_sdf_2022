@@ -148,7 +148,7 @@ const cursor_wrap_5 = document.querySelector('.cursor_wrap_5');
 const cursor_wrap_7 = document.querySelector('.cursor_wrap_7');
 const cursor_wrap_9 = document.querySelector('.cursor_wrap_9');
 
-cursor_wrap_1.style.zIndex = "100";
+// cursor_wrap_1.style.zIndex = "100";
 cursor_wrap_2.style.zIndex = "100";
 cursor_wrap_3.style.zIndex = "100";
 cursor_wrap_4.style.zIndex = "100";

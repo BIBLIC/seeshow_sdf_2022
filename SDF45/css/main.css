@@ -49,6 +49,62 @@ main svg {
 }
 
 /* -------------------------------- */
+#p1 svg {
+    margin: 0;
+    width: 1.3em;
+    height: 1.3em;
+}
+
+#p1 .top {
+    width: 100%;
+    height: 9vh;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1.5em;
+    padding-top: .7em;
+    padding-bottom: .7em;
+}
+
+#p1 .top .left {
+    height: 100%;
+    flex: 1;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+#p1 .top .left svg {
+    margin-right: .7em;
+}
+
+#p1 .top .left .link {
+    flex: 1;
+    height: 100%;
+    background: #F6ECEB;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+#p1 .top .left .link svg {
+    width: 1em;
+    height: 1em;
+    margin-right: .5em;
+}
+
+#p1 .top .right {
+    width: fit-content;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+}
+
+#p1 .top .right svg {
+    margin-left: 1em;
+}
+
+/* -------------------------------- */
 
 #p2 .bar {
     min-height: 8vh;
