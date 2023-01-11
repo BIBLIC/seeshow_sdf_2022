@@ -68,7 +68,10 @@ const pageClickArea = [
 //페이지 수만큼 0부터 {}, 공간이 있어야 함
 const inputAnswer = [
     {},
-    {},
+    {
+        page: 1,
+        inputableAnswer: "yeskey.or.kr"
+    },
     {},
     {},
     {},
