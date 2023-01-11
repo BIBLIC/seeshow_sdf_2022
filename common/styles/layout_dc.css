@@ -869,15 +869,12 @@ ul {
   min-height: 45%;
   background-color: #fff;
   border-radius: 30px;
-  padding-left: 2em;
-  padding-right: 2em;
   box-shadow: 0 2px 55px -25px rgb(0 0 0 / 100%);
 }
 
 /*모달창 - 이후 팩트체크 내용
 같은 css적용 시 애니메이션 단계에서 적용이 다르게 돼서 분리해둠*/
-#modal1,
-#modal2,
+
 #app_modal {
   display: flex;
   flex-direction: column;
@@ -890,7 +887,7 @@ ul {
   transform: translate(-50%, -50%);
   width: 80%;
   min-height: 45%;
-  background-color: #fff;
+  background-color: #F9CF1C;
   border-radius: 0.5rem;
   padding-left: 2em;
   padding-right: 2em;
@@ -898,6 +895,27 @@ ul {
   line-height: var(--bs-body-line-height);
   color: var(--bs-body-color);
 }
+
+#modal1,
+#modal2 {
+  display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    z-index: 35;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 80%;
+    min-height: 38%;
+    background-color: #F9CF1C;
+    border-radius: 0.5rem;
+    box-shadow: 0 0 0 7px #000, 0 0 0 3px #999, 0 0 0 16px #fd0, 0 0 0 18px #000, 0 0 0 9999px rgb(0 0 0 / 40%);
+    line-height: var(--bs-body-line-height);
+    color: var(--bs-body-color);
+}
+
 
 #modal_loading {
   display: flex;
@@ -1187,15 +1205,18 @@ color: #51B400;
 
 /*--------------------------------------------- 모달창 ---------------------------------------------*/
 .popup .title {
-  margin-top: 0.5em;
   padding: 10px;
-  color: black;
   font-size: 2.5em;
   font-weight: bold;
+  background-color: #000;
+  color: white;
+  width: 100%;
+  text-align : center;
+  display: flex;
+    justify-content: center;
 }
 
 .compl-title {
-  
   margin-top: 0.5em;
   padding: 10px;
   color: black;
@@ -1235,20 +1256,21 @@ color: #51B400;
 
 .popup .cmd {
   width: 100%;
-  margin-top: 1em;
   margin-bottom: 1.5em;
   min-height: 40px;
   position: relative;
+  display: flex;
+  justify-content: center;
   /*0926 hy*/
 }
 
 .popup .cmd .btn {
-  background: #6C757D;
+  background: #000000;
   border-radius: 0.5rem;
   color: #fff;
   font-size: clamp(14px, 14px + 1.7vw, 1.7em);
   font-weight: 500;
-  width: 100%;
+  width: 50%;
   height: 2.3em;
 }
 
@@ -1257,3 +1279,28 @@ color: #51B400;
 }
 
 /* ------------------------------------------------------------ */
+
+#modal1 .content,
+#modal2 .content {
+  padding-left: 2em;
+  padding-right: 2em;
+}
+
+#modal1 .content p,
+#modal2 .content p {
+ margin-bottom: 0;
+ font-weight: bold;
+ padding: 1em;
+}
+
+#modal1 .title img,
+#modal2 .title img {
+  width: 1.5em;
+  height: 1.5em;
+}
+
+#modal1 .title .title_txt,
+#modal2 .title .title_txt {
+  padding-left: 0.5em;
+  padding-right: 0.5em;
+}
